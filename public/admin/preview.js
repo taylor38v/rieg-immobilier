@@ -692,7 +692,7 @@
       h("section", { style: { background: "var(--navy)", color: "var(--ivory)", padding: "5rem 0" } },
         h("div", { className: "max-w-7xl px-6" },
           h("div", { className: "text-xs uppercase tracking-[0.3em] text-gold" }, safe(d.cp), " · ", safe(d.intercommunalite)),
-          h("h1", { className: "font-serif text-5xl md:text-6xl mt-3" }, "[Nom de la commune dans le menu à gauche]"),
+          h("h1", { className: "font-serif text-5xl md:text-6xl mt-3" }, safe(d.nom, "(Nom de la commune)")),
           h("div", { className: "grid grid-cols-4 gap-6 mt-10", style: { maxWidth: "48rem" } },
             h("div", null, h("div", { className: "font-serif text-3xl text-gold" }, String(safe(d.population, 0)).toLocaleString ? Number(safe(d.population, 0)).toLocaleString("fr-FR") : safe(d.population)), h("div", { className: "text-[10px] uppercase tracking-widest text-ivory/60 mt-2" }, "Habitants")),
             h("div", null, h("div", { className: "font-serif text-3xl text-gold" }, safe(d.superficie) + " km²"), h("div", { className: "text-[10px] uppercase tracking-widest text-ivory/60 mt-2" }, "Superficie")),

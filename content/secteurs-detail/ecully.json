@@ -1,6 +1,7 @@
 {
+  "nom": "Écully",
   "population": 17944,
-  "superficie": 8.0,
+  "superficie": 8,
   "cp": "69130",
   "intercommunalite": "Métropole de Lyon",
   "altitude": "190 — 320 m",
@@ -11,40 +12,160 @@
     "Mix résidentiel : grandes propriétés historiques + résidences neuves de standing"
   ],
   "ecoles": [
-    { "nom": "Collège Laurent Mourguet", "type": "Collège", "precision": "Public, 3 bis rue Jean Rigaud" },
-    { "nom": "Collège Sacré-Cœur — Don Bosco Écully", "type": "Privé", "precision": "47 av. du Dr Terver — établissement notable de la commune" },
-    { "nom": "École Saint-Joseph", "type": "Privé", "precision": "Maternelle + primaire" },
-    { "nom": "EM Lyon Business School", "type": "Supérieur", "precision": "" },
-    { "nom": "École Centrale de Lyon", "type": "Supérieur", "precision": "" },
-    { "nom": "ECAM Lyon", "type": "Supérieur", "precision": "" },
-    { "nom": "Institut Paul Bocuse", "type": "Supérieur", "precision": "Hôtellerie-restauration de référence mondiale" }
+    {
+      "nom": "Collège Laurent Mourguet",
+      "type": "Collège",
+      "precision": "Public, 3 bis rue Jean Rigaud"
+    },
+    {
+      "nom": "Collège Sacré-Cœur — Don Bosco Écully",
+      "type": "Privé",
+      "precision": "47 av. du Dr Terver — établissement notable de la commune"
+    },
+    {
+      "nom": "École Saint-Joseph",
+      "type": "Privé",
+      "precision": "Maternelle + primaire"
+    },
+    {
+      "nom": "EM Lyon Business School",
+      "type": "Supérieur",
+      "precision": ""
+    },
+    {
+      "nom": "École Centrale de Lyon",
+      "type": "Supérieur",
+      "precision": ""
+    },
+    {
+      "nom": "ECAM Lyon",
+      "type": "Supérieur",
+      "precision": ""
+    },
+    {
+      "nom": "Institut Paul Bocuse",
+      "type": "Supérieur",
+      "precision": "Hôtellerie-restauration de référence mondiale"
+    }
   ],
   "restaurants": [
-    { "nom": "Saisons (Institut Paul Bocuse)", "cuisine": "Gastronomie d'application étoilée Michelin · 4,8★ (514 avis)", "gamme": "Étoilé" },
-    { "nom": "Au Bel Avenir", "cuisine": "Brasserie ouest lyonnais · 4,7★ (207 avis), 12 all. des Tullistes", "gamme": "Brasserie" },
-    { "nom": "Au Comptoir d'Écully", "cuisine": "Bistrot · 4,9★ (87 avis)", "gamme": "Bistrot" },
-    { "nom": "Volfoni Écully", "cuisine": "Italien · 4,6★ (279 avis), chem. Jean-Marie Vianney", "gamme": "Bistrot" },
-    { "nom": "Restaurant Le Village", "cuisine": "Bistrot / burger · 4,5★ (332 avis), av. du Dr Terver", "gamme": "Bistrot" },
-    { "nom": "L'Entre-Nous", "cuisine": "Italien · 4,5★ (617 avis), all. Moulin Berger", "gamme": "Bistrot" },
-    { "nom": "Kif Angkor", "cuisine": "Cambodgien · 5★ (44 avis), rue Marietton", "gamme": "Bistrot" },
-    { "nom": "Pâtisserie Sève (Richard Sève)", "cuisine": "Pâtisserie haute couture, CC Écully Grand Ouest", "gamme": "Café" }
+    {
+      "nom": "Saisons (Institut Paul Bocuse)",
+      "cuisine": "Gastronomie d'application étoilée Michelin · 4,8★ (514 avis)",
+      "gamme": "Étoilé"
+    },
+    {
+      "nom": "Au Bel Avenir",
+      "cuisine": "Brasserie ouest lyonnais · 4,7★ (207 avis), 12 all. des Tullistes",
+      "gamme": "Brasserie"
+    },
+    {
+      "nom": "Au Comptoir d'Écully",
+      "cuisine": "Bistrot · 4,9★ (87 avis)",
+      "gamme": "Bistrot"
+    },
+    {
+      "nom": "Volfoni Écully",
+      "cuisine": "Italien · 4,6★ (279 avis), chem. Jean-Marie Vianney",
+      "gamme": "Bistrot"
+    },
+    {
+      "nom": "Restaurant Le Village",
+      "cuisine": "Bistrot / burger · 4,5★ (332 avis), av. du Dr Terver",
+      "gamme": "Bistrot"
+    },
+    {
+      "nom": "L'Entre-Nous",
+      "cuisine": "Italien · 4,5★ (617 avis), all. Moulin Berger",
+      "gamme": "Bistrot"
+    },
+    {
+      "nom": "Kif Angkor",
+      "cuisine": "Cambodgien · 5★ (44 avis), rue Marietton",
+      "gamme": "Bistrot"
+    },
+    {
+      "nom": "Pâtisserie Sève (Richard Sève)",
+      "cuisine": "Pâtisserie haute couture, CC Écully Grand Ouest",
+      "gamme": "Café"
+    }
   ],
   "associations": [
-    { "nom": "Écully Sports", "activite": "Multisports : tennis, basket, judo, gymnastique" },
-    { "nom": "Écully Athlétisme", "activite": "Athlétisme amateur et compétition" },
-    { "nom": "MJC d'Écully", "activite": "Activités culturelles, théâtre, musique" },
-    { "nom": "Comité de jumelage Écully — Lourinhã (Portugal)", "activite": "Échanges internationaux" }
+    {
+      "nom": "Écully Sports",
+      "activite": "Multisports : tennis, basket, judo, gymnastique"
+    },
+    {
+      "nom": "Écully Athlétisme",
+      "activite": "Athlétisme amateur et compétition"
+    },
+    {
+      "nom": "MJC d'Écully",
+      "activite": "Activités culturelles, théâtre, musique"
+    },
+    {
+      "nom": "Comité de jumelage Écully — Lourinhã (Portugal)",
+      "activite": "Échanges internationaux"
+    }
   ],
   "quartiers": [
-    { "nom": "Le Centre", "description": "Centre-ville commerçant, mairie, marché du dimanche, résidences anciennes rénovées.", "prix_indicatif": "5 500 — 6 500 €/m²" },
-    { "nom": "Pérollier", "description": "Quartier familial avec écoles, parc, résidences récentes.", "prix_indicatif": "5 200 — 6 000 €/m²" },
-    { "nom": "Valvert", "description": "Hauteurs résidentielles, grandes maisons, calme.", "prix_indicatif": "6 200 — 7 500 €/m²" },
-    { "nom": "Le Coulouvrier", "description": "Mix maisons individuelles + petits collectifs, proche EM Lyon.", "prix_indicatif": "5 500 — 6 200 €/m²" }
+    {
+      "nom": "Le Centre",
+      "description": "Centre-ville commerçant, mairie, marché du dimanche, résidences anciennes rénovées.",
+      "prix_indicatif": "5 500 — 6 500 €/m²"
+    },
+    {
+      "nom": "Pérollier",
+      "description": "Quartier familial avec écoles, parc, résidences récentes.",
+      "prix_indicatif": "5 200 — 6 000 €/m²"
+    },
+    {
+      "nom": "Valvert",
+      "description": "Hauteurs résidentielles, grandes maisons, calme.",
+      "prix_indicatif": "6 200 — 7 500 €/m²"
+    },
+    {
+      "nom": "Le Coulouvrier",
+      "description": "Mix maisons individuelles + petits collectifs, proche EM Lyon.",
+      "prix_indicatif": "5 500 — 6 200 €/m²"
+    }
   ],
   "evolution_prix": [
-    { "annee": 2020, "prixM2": 5100 }, { "annee": 2021, "prixM2": 5500 }, { "annee": 2022, "prixM2": 5800 },
-    { "annee": 2023, "prixM2": 5850 }, { "annee": 2024, "prixM2": 5870 }, { "annee": 2025, "prixM2": 5900 }
+    {
+      "annee": 2020,
+      "prixM2": 5100
+    },
+    {
+      "annee": 2021,
+      "prixM2": 5500
+    },
+    {
+      "annee": 2022,
+      "prixM2": 5800
+    },
+    {
+      "annee": 2023,
+      "prixM2": 5850
+    },
+    {
+      "annee": 2024,
+      "prixM2": 5870
+    },
+    {
+      "annee": 2025,
+      "prixM2": 5900
+    }
   ],
-  "video_insta": { "titre": "Pourquoi Écully attire les familles cadres", "duree": "1:30" },
-  "galerie": ["/photos/secteurs/ecully-1.jpg", "/photos/secteurs/ecully-2.jpg", "/photos/secteurs/ecully-3.jpg", "/photos/secteurs/ecully-4.jpg", "/photos/secteurs/ecully-5.jpg", "/photos/secteurs/ecully-6.jpg"]
+  "video_insta": {
+    "titre": "Pourquoi Écully attire les familles cadres",
+    "duree": "1:30"
+  },
+  "galerie": [
+    "/photos/secteurs/ecully-1.jpg",
+    "/photos/secteurs/ecully-2.jpg",
+    "/photos/secteurs/ecully-3.jpg",
+    "/photos/secteurs/ecully-4.jpg",
+    "/photos/secteurs/ecully-5.jpg",
+    "/photos/secteurs/ecully-6.jpg"
+  ]
 }

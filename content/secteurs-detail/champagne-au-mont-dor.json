@@ -1,4 +1,5 @@
 {
+  "nom": "Champagne-au-Mont-d'Or",
   "population": 6311,
   "superficie": 2.6,
   "cp": "69410",
@@ -11,34 +12,131 @@
     "Une des seules communes du Mont d'Or avec un collège public sur son territoire"
   ],
   "ecoles": [
-    { "nom": "Groupe scolaire public du Centre", "type": "Primaire", "precision": "6 classes maternelle + 12 classes élémentaire" },
-    { "nom": "École Les Chartreux Saint-Joseph", "type": "Privé", "precision": "Maternelle + primaire, sous contrat" },
-    { "nom": "Collège Jean-Philippe Rameau", "type": "Collège", "precision": "Public, 646 élèves — collège de secteur du Mont d'Or" },
-    { "nom": "Lycée Jean Perrin (Lyon 9) ou La Martinière Duchère", "type": "Lycée", "precision": "Lycées publics les plus proches" }
+    {
+      "nom": "Groupe scolaire public du Centre",
+      "type": "Primaire",
+      "precision": "6 classes maternelle + 12 classes élémentaire"
+    },
+    {
+      "nom": "École Les Chartreux Saint-Joseph",
+      "type": "Privé",
+      "precision": "Maternelle + primaire, sous contrat"
+    },
+    {
+      "nom": "Collège Jean-Philippe Rameau",
+      "type": "Collège",
+      "precision": "Public, 646 élèves — collège de secteur du Mont d'Or"
+    },
+    {
+      "nom": "Lycée Jean Perrin (Lyon 9) ou La Martinière Duchère",
+      "type": "Lycée",
+      "precision": "Lycées publics les plus proches"
+    }
   ],
   "restaurants": [
-    { "nom": "O Platanes", "cuisine": "Française · 4,6★ (603 avis), av. de Lanessan", "gamme": "Bistrot" },
-    { "nom": "N'Autre MOnde", "cuisine": "Asiatique · 4,7★ (254 avis), av. de Montlouis", "gamme": "Bistrot" },
-    { "nom": "Le Rouge-Gorge", "cuisine": "Française · 4,3★ (343 avis), pl. Ludovic Monnier", "gamme": "Bistrot" },
-    { "nom": "Le Rictoria", "cuisine": "Française / américaine · 4,6★ (243 avis), chem. du Tronchon", "gamme": "Brasserie" },
-    { "nom": "Da Cocó by La Boîte Noire", "cuisine": "Italien / pizza · 4,7★ (197 avis), av. de Lanessan", "gamme": "Pizza" },
-    { "nom": "Ninkasi Champagne", "cuisine": "Burgers / brewpub · 4,4★ (668 avis)", "gamme": "Brasserie" },
-    { "nom": "La Ferme des Monts d'Or", "cuisine": "Française · 4,5★ (358 avis), av. de Lanessan", "gamme": "Bistrot" }
+    {
+      "nom": "O Platanes",
+      "cuisine": "Française · 4,6★ (603 avis), av. de Lanessan",
+      "gamme": "Bistrot"
+    },
+    {
+      "nom": "N'Autre MOnde",
+      "cuisine": "Asiatique · 4,7★ (254 avis), av. de Montlouis",
+      "gamme": "Bistrot"
+    },
+    {
+      "nom": "Le Rouge-Gorge",
+      "cuisine": "Française · 4,3★ (343 avis), pl. Ludovic Monnier",
+      "gamme": "Bistrot"
+    },
+    {
+      "nom": "Le Rictoria",
+      "cuisine": "Française / américaine · 4,6★ (243 avis), chem. du Tronchon",
+      "gamme": "Brasserie"
+    },
+    {
+      "nom": "Da Cocó by La Boîte Noire",
+      "cuisine": "Italien / pizza · 4,7★ (197 avis), av. de Lanessan",
+      "gamme": "Pizza"
+    },
+    {
+      "nom": "Ninkasi Champagne",
+      "cuisine": "Burgers / brewpub · 4,4★ (668 avis)",
+      "gamme": "Brasserie"
+    },
+    {
+      "nom": "La Ferme des Monts d'Or",
+      "cuisine": "Française · 4,5★ (358 avis), av. de Lanessan",
+      "gamme": "Bistrot"
+    }
   ],
   "associations": [
-    { "nom": "Champagne Football", "activite": "Foot jeunes et adultes" },
-    { "nom": "Tennis de Champagne", "activite": "Club avec courts" },
-    { "nom": "Comité des fêtes", "activite": "Marché de Noël, fête du village" }
+    {
+      "nom": "Champagne Football",
+      "activite": "Foot jeunes et adultes"
+    },
+    {
+      "nom": "Tennis de Champagne",
+      "activite": "Club avec courts"
+    },
+    {
+      "nom": "Comité des fêtes",
+      "activite": "Marché de Noël, fête du village"
+    }
   ],
   "quartiers": [
-    { "nom": "Centre", "description": "Cœur de village, commerces, mairie, église, marché.", "prix_indicatif": "5 400 — 6 200 €/m²" },
-    { "nom": "Les Bruyères", "description": "Quartier pavillonnaire des années 70-80, calme, accès rapide aux écoles.", "prix_indicatif": "5 200 — 5 800 €/m²" },
-    { "nom": "Le Rocher", "description": "Hauteurs, vues, résidences plus récentes.", "prix_indicatif": "5 800 — 6 500 €/m²" }
+    {
+      "nom": "Centre",
+      "description": "Cœur de village, commerces, mairie, église, marché.",
+      "prix_indicatif": "5 400 — 6 200 €/m²"
+    },
+    {
+      "nom": "Les Bruyères",
+      "description": "Quartier pavillonnaire des années 70-80, calme, accès rapide aux écoles.",
+      "prix_indicatif": "5 200 — 5 800 €/m²"
+    },
+    {
+      "nom": "Le Rocher",
+      "description": "Hauteurs, vues, résidences plus récentes.",
+      "prix_indicatif": "5 800 — 6 500 €/m²"
+    }
   ],
   "evolution_prix": [
-    { "annee": 2020, "prixM2": 4800 }, { "annee": 2021, "prixM2": 5200 }, { "annee": 2022, "prixM2": 5500 },
-    { "annee": 2023, "prixM2": 5650 }, { "annee": 2024, "prixM2": 5740 }, { "annee": 2025, "prixM2": 5800 }
+    {
+      "annee": 2020,
+      "prixM2": 4800
+    },
+    {
+      "annee": 2021,
+      "prixM2": 5200
+    },
+    {
+      "annee": 2022,
+      "prixM2": 5500
+    },
+    {
+      "annee": 2023,
+      "prixM2": 5650
+    },
+    {
+      "annee": 2024,
+      "prixM2": 5740
+    },
+    {
+      "annee": 2025,
+      "prixM2": 5800
+    }
   ],
-  "video_insta": { "titre": "Champagne — la commune la plus dynamique du Mont d'Or", "duree": "1:25" },
-  "galerie": ["/photos/secteurs/champagne-1.jpg", "/photos/secteurs/champagne-2.jpg", "/photos/secteurs/champagne-3.jpg", "/photos/secteurs/champagne-4.jpg", "/photos/secteurs/champagne-5.jpg", "/photos/secteurs/champagne-6.jpg"]
+  "video_insta": {
+    "titre": "Champagne — la commune la plus dynamique du Mont d'Or",
+    "duree": "1:25"
+  },
+  "galerie": [
+    "/photos/secteurs/champagne-1.jpg",
+    "/photos/secteurs/champagne-2.jpg",
+    "/photos/secteurs/champagne-3.jpg",
+    "/photos/secteurs/champagne-4.jpg",
+    "/photos/secteurs/champagne-5.jpg",
+    "/photos/secteurs/champagne-6.jpg"
+  ]
 }

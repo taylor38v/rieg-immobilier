@@ -829,8 +829,9 @@ collections:
     slug: "{{slug}}"
     extension: "json"
     format: "json"
-    summary: "{{cp}} · {{population}} hab."
+    summary: "{{nom}} · {{cp}}"
     fields:
+      - { name: "nom", label: "Nom de la commune", widget: "string" }
       - { name: "population", label: "Population", widget: "number" }
       - { name: "superficie", label: "Superficie (km²)", widget: "number" }
       - { name: "cp", label: "Code postal", widget: "string" }

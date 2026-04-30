@@ -1,4 +1,5 @@
 {
+  "nom": "Saint-Didier-au-Mont-d'Or",
   "population": 7435,
   "superficie": 7.7,
   "cp": "69370",
@@ -11,39 +12,152 @@
     "Forte présence de cadres dirigeants et de professions libérales"
   ],
   "ecoles": [
-    { "nom": "École publique du Bourg", "type": "Primaire", "precision": "Maternelle + élémentaire publique, centre village" },
-    { "nom": "École publique de Saint-Fortunat", "type": "Primaire", "precision": "Maternelle + élémentaire publique" },
-    { "nom": "Ensemble scolaire Fromente-Saint-François", "type": "Privé", "precision": "Maternelle au collège, sous contrat — la seule école privée sur la commune" },
-    { "nom": "Collège Jean-Philippe Rameau", "type": "Collège", "precision": "Public, à Champagne-au-Mont-d'Or — collège de secteur (~6 min)" },
-    { "nom": "Lycées lyonnais & Écully", "type": "Lycée", "precision": "Selon orientation : Cevert, La Martinière Duchère, lycées internationaux (10-15 min)" }
+    {
+      "nom": "École publique du Bourg",
+      "type": "Primaire",
+      "precision": "Maternelle + élémentaire publique, centre village"
+    },
+    {
+      "nom": "École publique de Saint-Fortunat",
+      "type": "Primaire",
+      "precision": "Maternelle + élémentaire publique"
+    },
+    {
+      "nom": "Ensemble scolaire Fromente-Saint-François",
+      "type": "Privé",
+      "precision": "Maternelle au collège, sous contrat — la seule école privée sur la commune"
+    },
+    {
+      "nom": "Collège Jean-Philippe Rameau",
+      "type": "Collège",
+      "precision": "Public, à Champagne-au-Mont-d'Or — collège de secteur (~6 min)"
+    },
+    {
+      "nom": "Lycées lyonnais & Écully",
+      "type": "Lycée",
+      "precision": "Selon orientation : Cevert, La Martinière Duchère, lycées internationaux (10-15 min)"
+    }
   ],
   "restaurants": [
-    { "nom": "L'Éclat de Pierre", "cuisine": "Bistronomie avec terrasse · 4,6★ (388 avis)", "gamme": "Gastro" },
-    { "nom": "Aux Montagnards", "cuisine": "Cuisine française traditionnelle / fondue · 4,2★ (1 533 avis)", "gamme": "Brasserie" },
-    { "nom": "La Cantine du Village", "cuisine": "Bistrot lyonnais · 4,4★ (283 avis)", "gamme": "Bistrot" },
-    { "nom": "La Boîte Noire", "cuisine": "Pizzeria de référence · 4,7★", "gamme": "Pizza" },
-    { "nom": "Comptoir Fortunella", "cuisine": "Table sarde familiale · 4,9★", "gamme": "Bistrot" },
-    { "nom": "Les Jardins de Saint-Didier", "cuisine": "Pizza & cuisine, terrasse pétanque · 4,5★", "gamme": "Pizza" }
+    {
+      "nom": "L'Éclat de Pierre",
+      "cuisine": "Bistronomie avec terrasse · 4,6★ (388 avis)",
+      "gamme": "Gastro"
+    },
+    {
+      "nom": "Aux Montagnards",
+      "cuisine": "Cuisine française traditionnelle / fondue · 4,2★ (1 533 avis)",
+      "gamme": "Brasserie"
+    },
+    {
+      "nom": "La Cantine du Village",
+      "cuisine": "Bistrot lyonnais · 4,4★ (283 avis)",
+      "gamme": "Bistrot"
+    },
+    {
+      "nom": "La Boîte Noire",
+      "cuisine": "Pizzeria de référence · 4,7★",
+      "gamme": "Pizza"
+    },
+    {
+      "nom": "Comptoir Fortunella",
+      "cuisine": "Table sarde familiale · 4,9★",
+      "gamme": "Bistrot"
+    },
+    {
+      "nom": "Les Jardins de Saint-Didier",
+      "cuisine": "Pizza & cuisine, terrasse pétanque · 4,5★",
+      "gamme": "Pizza"
+    }
   ],
   "associations": [
-    { "nom": "FCLDSD — Football Club Limonest-Dardilly-Saint-Didier", "activite": "Club mutualisé évoluant en National 3" },
-    { "nom": "HBCCD — Handball Club Saint-Cyr / Saint-Didier", "activite": "Handball, gymnase de Saint-Didier" },
-    { "nom": "Boule des Monts d'Or", "activite": "Sport boules lyonnaises" },
-    { "nom": "AGYD — Activités Gymniques de Saint-Didier", "activite": "Gymnastique et yoga toutes générations" },
-    { "nom": "Aïkido / Judo Ouest Grand Lyon", "activite": "Arts martiaux" },
-    { "nom": "Badmin d'Or", "activite": "Badminton" },
-    { "nom": "Comité d'animation de Saint-Didier", "activite": "Événements villageois, marché, fête de la Saint-Jean" }
+    {
+      "nom": "FCLDSD — Football Club Limonest-Dardilly-Saint-Didier",
+      "activite": "Club mutualisé évoluant en National 3"
+    },
+    {
+      "nom": "HBCCD — Handball Club Saint-Cyr / Saint-Didier",
+      "activite": "Handball, gymnase de Saint-Didier"
+    },
+    {
+      "nom": "Boule des Monts d'Or",
+      "activite": "Sport boules lyonnaises"
+    },
+    {
+      "nom": "AGYD — Activités Gymniques de Saint-Didier",
+      "activite": "Gymnastique et yoga toutes générations"
+    },
+    {
+      "nom": "Aïkido / Judo Ouest Grand Lyon",
+      "activite": "Arts martiaux"
+    },
+    {
+      "nom": "Badmin d'Or",
+      "activite": "Badminton"
+    },
+    {
+      "nom": "Comité d'animation de Saint-Didier",
+      "activite": "Événements villageois, marché, fête de la Saint-Jean"
+    }
   ],
   "quartiers": [
-    { "nom": "Centre village", "description": "Le cœur historique : place de la mairie, commerces de bouche, ruelles en pierres dorées. Très recherché pour son cachet.", "prix_indicatif": "7 000 — 8 500 €/m²" },
-    { "nom": "Saint-Fortunat", "description": "Hameau préservé, ambiance plus rurale, vues dégagées sur les coteaux.", "prix_indicatif": "6 800 — 8 000 €/m²" },
-    { "nom": "Plat de l'Air", "description": "Vastes propriétés sur les hauteurs, sous-bois, calme absolu — l'adresse historique des familles établies.", "prix_indicatif": "7 500 — 9 000 €/m²" },
-    { "nom": "Les Carrières / Le Tourillon", "description": "Mix maisons familiales rénovées et constructions contemporaines, proche du collège.", "prix_indicatif": "6 200 — 7 800 €/m²" }
+    {
+      "nom": "Centre village",
+      "description": "Le cœur historique : place de la mairie, commerces de bouche, ruelles en pierres dorées. Très recherché pour son cachet.",
+      "prix_indicatif": "7 000 — 8 500 €/m²"
+    },
+    {
+      "nom": "Saint-Fortunat",
+      "description": "Hameau préservé, ambiance plus rurale, vues dégagées sur les coteaux.",
+      "prix_indicatif": "6 800 — 8 000 €/m²"
+    },
+    {
+      "nom": "Plat de l'Air",
+      "description": "Vastes propriétés sur les hauteurs, sous-bois, calme absolu — l'adresse historique des familles établies.",
+      "prix_indicatif": "7 500 — 9 000 €/m²"
+    },
+    {
+      "nom": "Les Carrières / Le Tourillon",
+      "description": "Mix maisons familiales rénovées et constructions contemporaines, proche du collège.",
+      "prix_indicatif": "6 200 — 7 800 €/m²"
+    }
   ],
   "evolution_prix": [
-    { "annee": 2020, "prixM2": 5800 }, { "annee": 2021, "prixM2": 6300 }, { "annee": 2022, "prixM2": 6600 },
-    { "annee": 2023, "prixM2": 6700 }, { "annee": 2024, "prixM2": 6750 }, { "annee": 2025, "prixM2": 6800 }
+    {
+      "annee": 2020,
+      "prixM2": 5800
+    },
+    {
+      "annee": 2021,
+      "prixM2": 6300
+    },
+    {
+      "annee": 2022,
+      "prixM2": 6600
+    },
+    {
+      "annee": 2023,
+      "prixM2": 6700
+    },
+    {
+      "annee": 2024,
+      "prixM2": 6750
+    },
+    {
+      "annee": 2025,
+      "prixM2": 6800
+    }
   ],
-  "video_insta": { "titre": "Saint-Didier vu d'en haut — visite du Mont Cindre", "duree": "2:10" },
-  "galerie": ["/photos/secteurs/saint-didier-1.jpg", "/photos/secteurs/saint-didier-2.jpg", "/photos/secteurs/saint-didier-3.jpg", "/photos/secteurs/saint-didier-4.jpg", "/photos/secteurs/saint-didier-5.jpg", "/photos/secteurs/saint-didier-6.jpg"]
+  "video_insta": {
+    "titre": "Saint-Didier vu d'en haut — visite du Mont Cindre",
+    "duree": "2:10"
+  },
+  "galerie": [
+    "/photos/secteurs/saint-didier-1.jpg",
+    "/photos/secteurs/saint-didier-2.jpg",
+    "/photos/secteurs/saint-didier-3.jpg",
+    "/photos/secteurs/saint-didier-4.jpg",
+    "/photos/secteurs/saint-didier-5.jpg",
+    "/photos/secteurs/saint-didier-6.jpg"
+  ]
 }

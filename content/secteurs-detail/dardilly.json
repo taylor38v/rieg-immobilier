@@ -1,4 +1,5 @@
 {
+  "nom": "Dardilly",
   "population": 9221,
   "superficie": 13.99,
   "cp": "69570",
@@ -11,40 +12,161 @@
     "Parcours de golf Bluegreen Porte de Lyon, espaces naturels protégés"
   ],
   "ecoles": [
-    { "nom": "École des Noyeraies", "type": "Primaire", "precision": "Publique, 7 chem. des Écoliers" },
-    { "nom": "Groupe scolaire Le Grégoire", "type": "Primaire", "precision": "Maternelle + primaire publique, 42 chem. de Parsonge" },
-    { "nom": "École Saint-Joseph", "type": "Privé", "precision": "Mixte, 9 rue du Curé d'Ars" },
-    { "nom": "Pas de collège public à Dardilly", "type": "Collège", "precision": "Secteur public : Collège Jean-Philippe Rameau (Champagne, ~5 min) ou Victor Schœlcher (Lyon 9)" },
-    { "nom": "Collège Aux Lazaristes La Salle — site Limonest", "type": "Privé", "precision": "Limitrophe Dardilly à 5 min · 392 chem. de la Sablière" },
-    { "nom": "Lycée François Rabelais & GRETA-CFA Hôtelier", "type": "Lycée", "precision": "Lycée hôtelier réputé avec restaurant d'application Saint-Jean — 4 chem. du Dodin" },
-    { "nom": "Lycée Horticole, Paysage et Environnement Lyon-Dardilly", "type": "Lycée", "precision": "Lycée agricole, 26 chem. de la Bruyère" },
-    { "nom": "Maison Petite Enfance Dardy'gones", "type": "Maternelle", "precision": "Crèche / petite enfance, 54 all. du Levant" }
+    {
+      "nom": "École des Noyeraies",
+      "type": "Primaire",
+      "precision": "Publique, 7 chem. des Écoliers"
+    },
+    {
+      "nom": "Groupe scolaire Le Grégoire",
+      "type": "Primaire",
+      "precision": "Maternelle + primaire publique, 42 chem. de Parsonge"
+    },
+    {
+      "nom": "École Saint-Joseph",
+      "type": "Privé",
+      "precision": "Mixte, 9 rue du Curé d'Ars"
+    },
+    {
+      "nom": "Pas de collège public à Dardilly",
+      "type": "Collège",
+      "precision": "Secteur public : Collège Jean-Philippe Rameau (Champagne, ~5 min) ou Victor Schœlcher (Lyon 9)"
+    },
+    {
+      "nom": "Collège Aux Lazaristes La Salle — site Limonest",
+      "type": "Privé",
+      "precision": "Limitrophe Dardilly à 5 min · 392 chem. de la Sablière"
+    },
+    {
+      "nom": "Lycée François Rabelais & GRETA-CFA Hôtelier",
+      "type": "Lycée",
+      "precision": "Lycée hôtelier réputé avec restaurant d'application Saint-Jean — 4 chem. du Dodin"
+    },
+    {
+      "nom": "Lycée Horticole, Paysage et Environnement Lyon-Dardilly",
+      "type": "Lycée",
+      "precision": "Lycée agricole, 26 chem. de la Bruyère"
+    },
+    {
+      "nom": "Maison Petite Enfance Dardy'gones",
+      "type": "Maternelle",
+      "precision": "Crèche / petite enfance, 54 all. du Levant"
+    }
   ],
   "restaurants": [
-    { "nom": "Restaurant Bol d'Air", "cuisine": "Gastro / bistrot · 4,7★ (2 425 avis), 77 av. de Verdun", "gamme": "Gastro" },
-    { "nom": "Odyssée Restaurant", "cuisine": "Bistrot soigné · 4,9★ (153 avis), chem. de la Bruyère", "gamme": "Bistrot" },
-    { "nom": "L'Auberge du Village", "cuisine": "Française traditionnelle · 4,5★ (684 avis), pl. de l'Église", "gamme": "Brasserie" },
-    { "nom": "Restaurant Comme Avant", "cuisine": "Bistronomie · 4,8★ (87 avis), pl. de l'Église", "gamme": "Bistrot" },
-    { "nom": "La Table du Bas", "cuisine": "Cuisine française · 4,9★ (115 avis), av. de Verdun", "gamme": "Bistrot" },
-    { "nom": "Le Patio Dardilly", "cuisine": "Européen / français · 4,2★ (434 avis)", "gamme": "Brasserie" },
-    { "nom": "Café Marcel", "cuisine": "Café / végétarien · 5★ (86 avis), av. de Verdun", "gamme": "Café" },
-    { "nom": "Double 7 Dardilly", "cuisine": "Cuisine moderne · 4,5★ (353 avis), chem. des Peupliers", "gamme": "Bistrot" }
+    {
+      "nom": "Restaurant Bol d'Air",
+      "cuisine": "Gastro / bistrot · 4,7★ (2 425 avis), 77 av. de Verdun",
+      "gamme": "Gastro"
+    },
+    {
+      "nom": "Odyssée Restaurant",
+      "cuisine": "Bistrot soigné · 4,9★ (153 avis), chem. de la Bruyère",
+      "gamme": "Bistrot"
+    },
+    {
+      "nom": "L'Auberge du Village",
+      "cuisine": "Française traditionnelle · 4,5★ (684 avis), pl. de l'Église",
+      "gamme": "Brasserie"
+    },
+    {
+      "nom": "Restaurant Comme Avant",
+      "cuisine": "Bistronomie · 4,8★ (87 avis), pl. de l'Église",
+      "gamme": "Bistrot"
+    },
+    {
+      "nom": "La Table du Bas",
+      "cuisine": "Cuisine française · 4,9★ (115 avis), av. de Verdun",
+      "gamme": "Bistrot"
+    },
+    {
+      "nom": "Le Patio Dardilly",
+      "cuisine": "Européen / français · 4,2★ (434 avis)",
+      "gamme": "Brasserie"
+    },
+    {
+      "nom": "Café Marcel",
+      "cuisine": "Café / végétarien · 5★ (86 avis), av. de Verdun",
+      "gamme": "Café"
+    },
+    {
+      "nom": "Double 7 Dardilly",
+      "cuisine": "Cuisine moderne · 4,5★ (353 avis), chem. des Peupliers",
+      "gamme": "Bistrot"
+    }
   ],
   "associations": [
-    { "nom": "FCLDSD — Football Club Limonest-Dardilly-Saint-Didier", "activite": "Club mutualisé évoluant en National 3" },
-    { "nom": "Tennis Club de Dardilly", "activite": "Tennis, courts couverts" },
-    { "nom": "Golf Bluegreen Porte de Lyon", "activite": "Parcours 9 et 18 trous, école de golf" }
+    {
+      "nom": "FCLDSD — Football Club Limonest-Dardilly-Saint-Didier",
+      "activite": "Club mutualisé évoluant en National 3"
+    },
+    {
+      "nom": "Tennis Club de Dardilly",
+      "activite": "Tennis, courts couverts"
+    },
+    {
+      "nom": "Golf Bluegreen Porte de Lyon",
+      "activite": "Parcours 9 et 18 trous, école de golf"
+    }
   ],
   "quartiers": [
-    { "nom": "Le Paillet", "description": "Quartier résidentiel calme, proche centre, écoles à pied.", "prix_indicatif": "4 800 — 5 500 €/m²" },
-    { "nom": "La Beffe", "description": "Hauteurs, grandes maisons, vues dégagées sur la Saône.", "prix_indicatif": "5 500 — 6 500 €/m²" },
-    { "nom": "Porte de Lyon", "description": "Proximité commerciale (centre Carrefour), petites maisons et collectifs.", "prix_indicatif": "4 500 — 5 200 €/m²" },
-    { "nom": "Les Noyeraies", "description": "Quartier pavillonnaire, calme, proche parcours de golf.", "prix_indicatif": "5 200 — 6 000 €/m²" }
+    {
+      "nom": "Le Paillet",
+      "description": "Quartier résidentiel calme, proche centre, écoles à pied.",
+      "prix_indicatif": "4 800 — 5 500 €/m²"
+    },
+    {
+      "nom": "La Beffe",
+      "description": "Hauteurs, grandes maisons, vues dégagées sur la Saône.",
+      "prix_indicatif": "5 500 — 6 500 €/m²"
+    },
+    {
+      "nom": "Porte de Lyon",
+      "description": "Proximité commerciale (centre Carrefour), petites maisons et collectifs.",
+      "prix_indicatif": "4 500 — 5 200 €/m²"
+    },
+    {
+      "nom": "Les Noyeraies",
+      "description": "Quartier pavillonnaire, calme, proche parcours de golf.",
+      "prix_indicatif": "5 200 — 6 000 €/m²"
+    }
   ],
   "evolution_prix": [
-    { "annee": 2020, "prixM2": 4500 }, { "annee": 2021, "prixM2": 4900 }, { "annee": 2022, "prixM2": 5100 },
-    { "annee": 2023, "prixM2": 5150 }, { "annee": 2024, "prixM2": 5180 }, { "annee": 2025, "prixM2": 5200 }
+    {
+      "annee": 2020,
+      "prixM2": 4500
+    },
+    {
+      "annee": 2021,
+      "prixM2": 4900
+    },
+    {
+      "annee": 2022,
+      "prixM2": 5100
+    },
+    {
+      "annee": 2023,
+      "prixM2": 5150
+    },
+    {
+      "annee": 2024,
+      "prixM2": 5180
+    },
+    {
+      "annee": 2025,
+      "prixM2": 5200
+    }
   ],
-  "video_insta": { "titre": "Pourquoi Dardilly est sous-coté", "duree": "1:15" },
-  "galerie": ["/photos/secteurs/dardilly-1.jpg", "/photos/secteurs/dardilly-2.jpg", "/photos/secteurs/dardilly-3.jpg", "/photos/secteurs/dardilly-4.jpg", "/photos/secteurs/dardilly-5.jpg", "/photos/secteurs/dardilly-6.jpg"]
+  "video_insta": {
+    "titre": "Pourquoi Dardilly est sous-coté",
+    "duree": "1:15"
+  },
+  "galerie": [
+    "/photos/secteurs/dardilly-1.jpg",
+    "/photos/secteurs/dardilly-2.jpg",
+    "/photos/secteurs/dardilly-3.jpg",
+    "/photos/secteurs/dardilly-4.jpg",
+    "/photos/secteurs/dardilly-5.jpg",
+    "/photos/secteurs/dardilly-6.jpg"
+  ]
 }

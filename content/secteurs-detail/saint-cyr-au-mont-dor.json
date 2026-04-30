@@ -1,4 +1,5 @@
 {
+  "nom": "Saint-Cyr-au-Mont-d'Or",
   "population": 6327,
   "superficie": 7.29,
   "cp": "69450",
@@ -11,31 +12,116 @@
     "Patrimoine bâti en pierres dorées remarquable"
   ],
   "ecoles": [
-    { "nom": "École publique de Saint-Cyr (groupe scolaire centre)", "type": "Primaire", "precision": "Maternelle + élémentaire publique" },
-    { "nom": "Sainte-Marie Lyon — campus Saint-Cyr", "type": "Privé", "precision": "Établissement réputé de l'Ouest lyonnais — primaire & secondaire" },
-    { "nom": "Collège Jean-Philippe Rameau", "type": "Collège", "precision": "Public, à Champagne-au-Mont-d'Or — collège de secteur (~6 min)" },
-    { "nom": "Collège & lycée Sainte-Marie Lyon", "type": "Privé", "precision": "Section collège-lycée du campus Sainte-Marie sur Saint-Cyr" }
+    {
+      "nom": "École publique de Saint-Cyr (groupe scolaire centre)",
+      "type": "Primaire",
+      "precision": "Maternelle + élémentaire publique"
+    },
+    {
+      "nom": "Sainte-Marie Lyon — campus Saint-Cyr",
+      "type": "Privé",
+      "precision": "Établissement réputé de l'Ouest lyonnais — primaire & secondaire"
+    },
+    {
+      "nom": "Collège Jean-Philippe Rameau",
+      "type": "Collège",
+      "precision": "Public, à Champagne-au-Mont-d'Or — collège de secteur (~6 min)"
+    },
+    {
+      "nom": "Collège & lycée Sainte-Marie Lyon",
+      "type": "Privé",
+      "precision": "Section collège-lycée du campus Sainte-Marie sur Saint-Cyr"
+    }
   ],
   "restaurants": [
-    { "nom": "L'Ermitage Cuisine à Manger", "cuisine": "Bistronomie avec vue Lyon · 4,5★ (640 avis)", "gamme": "Gastro" },
-    { "nom": "Le Comptoir de St Cyr", "cuisine": "Brasserie · 4,3★ (1 188 avis), 17 rte de Lyon", "gamme": "Brasserie" },
-    { "nom": "Là-Haut sur la Colline", "cuisine": "Cuisine française · 4,3★ (1 183 avis), rte du Mont-Cindre", "gamme": "Bistrot" },
-    { "nom": "Brasserie des Monts d'Or", "cuisine": "Française · 3,9★ (905 avis), pl. de la République", "gamme": "Brasserie" }
+    {
+      "nom": "L'Ermitage Cuisine à Manger",
+      "cuisine": "Bistronomie avec vue Lyon · 4,5★ (640 avis)",
+      "gamme": "Gastro"
+    },
+    {
+      "nom": "Le Comptoir de St Cyr",
+      "cuisine": "Brasserie · 4,3★ (1 188 avis), 17 rte de Lyon",
+      "gamme": "Brasserie"
+    },
+    {
+      "nom": "Là-Haut sur la Colline",
+      "cuisine": "Cuisine française · 4,3★ (1 183 avis), rte du Mont-Cindre",
+      "gamme": "Bistrot"
+    },
+    {
+      "nom": "Brasserie des Monts d'Or",
+      "cuisine": "Française · 3,9★ (905 avis), pl. de la République",
+      "gamme": "Brasserie"
+    }
   ],
   "associations": [
-    { "nom": "Saint-Cyr Tennis", "activite": "Club de tennis, courts couverts" },
-    { "nom": "Patrimoine de Saint-Cyr", "activite": "Préservation des bastides et du bâti ancien" },
-    { "nom": "HBCCD — Handball Saint-Cyr / Saint-Didier", "activite": "Handball intercommunal, gymnase de Saint-Didier" }
+    {
+      "nom": "Saint-Cyr Tennis",
+      "activite": "Club de tennis, courts couverts"
+    },
+    {
+      "nom": "Patrimoine de Saint-Cyr",
+      "activite": "Préservation des bastides et du bâti ancien"
+    },
+    {
+      "nom": "HBCCD — Handball Saint-Cyr / Saint-Didier",
+      "activite": "Handball intercommunal, gymnase de Saint-Didier"
+    }
   ],
   "quartiers": [
-    { "nom": "Le Bourg", "description": "Cœur historique avec la mairie, l'église et les commerces. Bastides du XVIIIᵉ.", "prix_indicatif": "7 200 — 8 800 €/m²" },
-    { "nom": "Les Verrières", "description": "Quartier d'exception sur les hauteurs, propriétés avec parcs.", "prix_indicatif": "8 500 — 11 000 €/m²" },
-    { "nom": "Combe Blanche", "description": "Versant sud, vues magnifiques, propriétés isolées dans la végétation.", "prix_indicatif": "7 800 — 9 500 €/m²" }
+    {
+      "nom": "Le Bourg",
+      "description": "Cœur historique avec la mairie, l'église et les commerces. Bastides du XVIIIᵉ.",
+      "prix_indicatif": "7 200 — 8 800 €/m²"
+    },
+    {
+      "nom": "Les Verrières",
+      "description": "Quartier d'exception sur les hauteurs, propriétés avec parcs.",
+      "prix_indicatif": "8 500 — 11 000 €/m²"
+    },
+    {
+      "nom": "Combe Blanche",
+      "description": "Versant sud, vues magnifiques, propriétés isolées dans la végétation.",
+      "prix_indicatif": "7 800 — 9 500 €/m²"
+    }
   ],
   "evolution_prix": [
-    { "annee": 2020, "prixM2": 6100 }, { "annee": 2021, "prixM2": 6700 }, { "annee": 2022, "prixM2": 7000 },
-    { "annee": 2023, "prixM2": 7100 }, { "annee": 2024, "prixM2": 7150 }, { "annee": 2025, "prixM2": 7200 }
+    {
+      "annee": 2020,
+      "prixM2": 6100
+    },
+    {
+      "annee": 2021,
+      "prixM2": 6700
+    },
+    {
+      "annee": 2022,
+      "prixM2": 7000
+    },
+    {
+      "annee": 2023,
+      "prixM2": 7100
+    },
+    {
+      "annee": 2024,
+      "prixM2": 7150
+    },
+    {
+      "annee": 2025,
+      "prixM2": 7200
+    }
   ],
-  "video_insta": { "titre": "Bastide en pierres dorées — visite exclusive", "duree": "1:45" },
-  "galerie": ["/photos/secteurs/saint-cyr-1.jpg", "/photos/secteurs/saint-cyr-2.jpg", "/photos/secteurs/saint-cyr-3.jpg", "/photos/secteurs/saint-cyr-4.jpg", "/photos/secteurs/saint-cyr-5.jpg", "/photos/secteurs/saint-cyr-6.jpg"]
+  "video_insta": {
+    "titre": "Bastide en pierres dorées — visite exclusive",
+    "duree": "1:45"
+  },
+  "galerie": [
+    "/photos/secteurs/saint-cyr-1.jpg",
+    "/photos/secteurs/saint-cyr-2.jpg",
+    "/photos/secteurs/saint-cyr-3.jpg",
+    "/photos/secteurs/saint-cyr-4.jpg",
+    "/photos/secteurs/saint-cyr-5.jpg",
+    "/photos/secteurs/saint-cyr-6.jpg"
+  ]
 }
