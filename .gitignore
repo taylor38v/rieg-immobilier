@@ -48,3 +48,6 @@ dossier-validation-iad.pdf
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# generated content (rebuilt by scripts/build-content.mjs)
+/app/lib/_generated/

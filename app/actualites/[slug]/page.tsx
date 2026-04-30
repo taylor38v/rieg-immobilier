@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import { marked } from "marked";
 import { articles } from "../../lib/articles";
 
 export function generateStaticParams() {
@@ -26,6 +27,7 @@ export default async function Page(props: PageProps<"/actualites/[slug]">) {
   if (!a) notFound();
 
   const others = articles.filter((x) => x.slug !== slug).slice(0, 3);
+  const html = await marked.parse(a.body);
 
   return (
     <article>
@@ -40,7 +42,7 @@ export default async function Page(props: PageProps<"/actualites/[slug]">) {
               <span className="text-ivory/40">·</span>
               <span className="text-ivory/60">{formatDate(a.date)}</span>
               <span className="text-ivory/40">·</span>
-              <span className="text-ivory/60">{a.dureeLecture} min</span>
+              <span className="text-ivory/60">{a.duree_lecture} min</span>
             </div>
             <h1 className="font-serif text-4xl md:text-6xl mt-4 leading-[1.05]">{a.titre}</h1>
             <p className="text-ivory/80 text-lg md:text-xl mt-6 max-w-3xl leading-relaxed">{a.chapo}</p>
@@ -51,34 +53,10 @@ export default async function Page(props: PageProps<"/actualites/[slug]">) {
       <div className="max-w-3xl mx-auto px-6 py-16">
         <div className="text-sm text-muted pb-8 border-b border-ink/10">Par <span className="text-navy font-medium">{a.auteur}</span> · Conseiller iad · Mont d'Or & Ouest lyonnais</div>
 
-        <div className="mt-10 space-y-8">
-          {a.contenu.map((bloc, i) => {
-            if (bloc.type === "p") return <p key={i} className="text-lg leading-relaxed text-ink/85">{bloc.text}</p>;
-            if (bloc.type === "h2") return <h2 key={i} className="font-serif text-4xl md:text-5xl text-navy mt-8 leading-tight">{bloc.text}</h2>;
-            if (bloc.type === "quote") return (
-              <blockquote key={i} className="my-12 pl-6 border-l-2 border-gold">
-                <p className="font-serif text-2xl md:text-3xl text-navy italic leading-snug">"{bloc.text}"</p>
-              </blockquote>
-            );
-            if (bloc.type === "stat") return (
-              <div key={i} className="grid grid-cols-[auto_1fr] gap-6 items-baseline py-4 border-y border-ink/10">
-                <div className="font-serif text-5xl text-gold">{bloc.value}</div>
-                <div className="text-muted text-sm">{bloc.label}</div>
-              </div>
-            );
-            if (bloc.type === "list") return (
-              <ul key={i} className="space-y-3 my-6">
-                {bloc.items?.map((it, j) => (
-                  <li key={j} className="flex gap-4 items-start">
-                    <span className="font-serif text-2xl text-gold leading-none mt-1">·</span>
-                    <span className="text-lg leading-relaxed text-ink/85">{it}</span>
-                  </li>
-                ))}
-              </ul>
-            );
-            return null;
-          })}
-        </div>
+        <div
+          className="mt-10 prose-article"
+          dangerouslySetInnerHTML={{ __html: html }}
+        />
       </div>
 
       <section className="bg-ivory-deep py-20">

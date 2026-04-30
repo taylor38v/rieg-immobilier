@@ -33,7 +33,7 @@ export default function Page() {
           </div>
           <h2 className="font-serif text-3xl md:text-5xl mt-4 leading-tight text-navy group-hover:text-gold transition">{first.titre}</h2>
           <p className="text-muted mt-5 leading-relaxed">{first.chapo}</p>
-          <div className="mt-6 text-sm text-navy">{first.dureeLecture} min de lecture · par {first.auteur}</div>
+          <div className="mt-6 text-sm text-navy">{first.duree_lecture} min de lecture · par {first.auteur}</div>
         </div>
       </Link>
 

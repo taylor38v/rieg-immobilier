@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <title>Leads — Romain Rieg Immobilier</title>
+  <link rel="icon" href="/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #061b2c;
+      --gold: #c9a25f;
+      --ivory: #faf6ef;
+      --ivory-deep: #f1ebdf;
+      --ink: #1a1a1a;
+      --muted: #6b6355;
+    }
+    * { box-sizing: border-box; }
+    body { font-family: 'Montserrat', sans-serif; background: var(--ivory); color: var(--ink); margin: 0; padding: 0; }
+    header { background: var(--navy); color: var(--ivory); padding: 1.5rem 2rem; display: flex; align-items: center; justify-content: space-between; }
+    header h1 { font-family: 'Cormorant Garamond', serif; font-size: 1.75rem; font-weight: 500; margin: 0; }
+    header .links { display: flex; gap: 1.5rem; align-items: center; font-size: .85rem; }
+    header a { color: var(--ivory); text-decoration: none; opacity: .8; }
+    header a:hover { color: var(--gold); opacity: 1; }
+    main { max-width: 1400px; margin: 0 auto; padding: 2rem; }
+    .toolbar { display: flex; gap: 1rem; align-items: center; padding: 1rem 0 2rem; border-bottom: 1px solid rgba(0,0,0,.08); margin-bottom: 2rem; flex-wrap: wrap; }
+    .toolbar select, .toolbar input, .toolbar button { padding: .6rem 1rem; border: 1px solid rgba(0,0,0,.15); background: white; font-family: inherit; font-size: .9rem; }
+    .toolbar button { background: var(--navy); color: var(--ivory); border-color: var(--navy); cursor: pointer; }
+    .toolbar button:hover { background: var(--gold); color: var(--navy); border-color: var(--gold); }
+    .stats { display: flex; gap: 2rem; padding: 1rem 0 2rem; flex-wrap: wrap; }
+    .stat { padding: 1rem 1.5rem; background: white; border-left: 3px solid var(--gold); }
+    .stat .v { font-family: 'Cormorant Garamond', serif; font-size: 2rem; color: var(--navy); }
+    .stat .l { font-size: .7rem; text-transform: uppercase; letter-spacing: .15em; color: var(--muted); }
+    .leads { display: grid; gap: 1rem; }
+    .lead { background: white; padding: 1.5rem; border-left: 3px solid var(--gold); display: grid; grid-template-columns: 1fr auto; gap: 1rem; }
+    .lead.new { border-left-color: #c83a3a; }
+    .lead h3 { margin: 0 0 .5rem; font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; color: var(--navy); }
+    .lead .meta { font-size: .8rem; color: var(--muted); display: flex; gap: 1rem; flex-wrap: wrap; }
+    .lead .body { margin-top: .75rem; }
+    .lead .field { display: grid; grid-template-columns: 140px 1fr; gap: .5rem; padding: .25rem 0; font-size: .9rem; border-bottom: 1px dotted rgba(0,0,0,.05); }
+    .lead .field strong { color: var(--navy); font-weight: 500; }
+    .lead .actions { display: flex; flex-direction: column; gap: .5rem; align-items: flex-end; min-width: 140px; }
+    .lead .actions a { display: block; padding: .4rem .8rem; border: 1px solid rgba(0,0,0,.15); text-decoration: none; color: var(--ink); font-size: .8rem; text-align: center; }
+    .lead .actions a:hover { background: var(--navy); color: var(--ivory); border-color: var(--navy); }
+    .lead .badge { display: inline-block; padding: .15rem .6rem; background: var(--gold); color: var(--navy); font-size: .65rem; text-transform: uppercase; letter-spacing: .15em; }
+    .empty { padding: 4rem 2rem; text-align: center; color: var(--muted); background: white; border: 1px dashed rgba(0,0,0,.15); }
+    #loginGate { max-width: 480px; margin: 4rem auto; padding: 3rem; background: white; text-align: center; border-top: 4px solid var(--gold); }
+    #loginGate h2 { font-family: 'Cormorant Garamond', serif; font-size: 2rem; color: var(--navy); margin: 0 0 1rem; }
+    #loginGate p { color: var(--muted); margin: 0 0 2rem; line-height: 1.6; }
+    #loginGate button { padding: 1rem 2.5rem; background: var(--navy); color: var(--ivory); border: none; cursor: pointer; font-family: inherit; font-size: .9rem; letter-spacing: .1em; text-transform: uppercase; }
+    #loginGate button:hover { background: var(--gold); color: var(--navy); }
+    .error { padding: 1rem; background: #fff5f5; border-left: 3px solid #c83a3a; color: #c83a3a; margin: 1rem 0; }
+    @media (max-width: 700px) {
+      .lead { grid-template-columns: 1fr; }
+      .lead .actions { flex-direction: row; justify-content: stretch; }
+      .lead .actions a { flex: 1; }
+    }
+  </style>
+</head>
+<body>
+
+<div id="loginGate" style="display:none">
+  <h2>Espace privé</h2>
+  <p>Connectez-vous pour accéder aux leads et au CMS.</p>
+  <button onclick="netlifyIdentity.open()">Se connecter</button>
+</div>
+
+<div id="dashboard" style="display:none">
+  <header>
+    <h1>📨 Leads — Romain Rieg Immobilier</h1>
+    <div class="links">
+      <a href="/admin/">CMS</a>
+      <a href="/" target="_blank">Voir le site</a>
+      <a href="#" onclick="netlifyIdentity.logout(); return false">Déconnexion</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="toolbar">
+      <select id="formFilter">
+        <option value="">Tous les formulaires</option>
+        <option value="contact">Contact</option>
+        <option value="estimation">Avis de valeur</option>
+        <option value="recrutement">Recrutement</option>
+        <option value="bien">Demande sur un bien</option>
+      </select>
+      <select id="stateFilter">
+        <option value="">Tous les statuts</option>
+        <option value="ham">Légitimes (ham)</option>
+        <option value="spam">Spam</option>
+      </select>
+      <input type="text" id="search" placeholder="Rechercher (nom, mail, ville...)" />
+      <button onclick="loadLeads()">Rafraîchir</button>
+      <button onclick="exportCSV()">Export CSV</button>
+    </div>
+
+    <div class="stats" id="stats"></div>
+    <div id="errorBox"></div>
+    <div class="leads" id="leads"></div>
+  </main>
+</div>
+
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+  let allSubmissions = [];
+
+  netlifyIdentity.on("init", (user) => {
+    document.getElementById("loginGate").style.display = user ? "none" : "block";
+    document.getElementById("dashboard").style.display = user ? "block" : "none";
+    if (user) loadLeads();
+  });
+  netlifyIdentity.on("login", () => location.reload());
+  netlifyIdentity.on("logout", () => location.reload());
+
+  async function loadLeads() {
+    const user = netlifyIdentity.currentUser();
+    if (!user) return;
+
+    document.getElementById("errorBox").innerHTML = "";
+    document.getElementById("leads").innerHTML = "<div class='empty'>Chargement…</div>";
+
+    try {
+      const token = (await user.jwt()) || "";
+      const params = new URLSearchParams();
+      const state = document.getElementById("stateFilter").value;
+      if (state) params.set("state", state);
+
+      const res = await fetch(`/api/leads?${params}`, {
+        headers: { Authorization: `Bearer ${token}` },
+      });
+      const data = await res.json();
+
+      if (!res.ok) {
+        document.getElementById("errorBox").innerHTML = `<div class="error"><strong>Erreur ${res.status}</strong> — ${data.error || "Inconnue"}<br><small>${data.detail || ""}</small></div>`;
+        document.getElementById("leads").innerHTML = "";
+        return;
+      }
+
+      allSubmissions = data.submissions || [];
+      render();
+    } catch (e) {
+      document.getElementById("errorBox").innerHTML = `<div class="error">Erreur réseau — ${e.message}</div>`;
+      document.getElementById("leads").innerHTML = "";
+    }
+  }
+
+  function render() {
+    const formFilter = document.getElementById("formFilter").value.toLowerCase();
+    const search = document.getElementById("search").value.toLowerCase();
+
+    let filtered = allSubmissions;
+    if (formFilter) filtered = filtered.filter((s) => (s.form_name || "").toLowerCase().includes(formFilter));
+    if (search) {
+      filtered = filtered.filter((s) => {
+        const blob = JSON.stringify(s.data || {}).toLowerCase() + " " + (s.email || "").toLowerCase();
+        return blob.includes(search);
+      });
+    }
+
+    // Stats
+    const total = allSubmissions.length;
+    const last7 = allSubmissions.filter((s) => new Date(s.created_at) > new Date(Date.now() - 7 * 86400000)).length;
+    const last30 = allSubmissions.filter((s) => new Date(s.created_at) > new Date(Date.now() - 30 * 86400000)).length;
+    document.getElementById("stats").innerHTML = `
+      <div class="stat"><div class="v">${total}</div><div class="l">Total leads</div></div>
+      <div class="stat"><div class="v">${last7}</div><div class="l">7 derniers jours</div></div>
+      <div class="stat"><div class="v">${last30}</div><div class="l">30 derniers jours</div></div>
+      <div class="stat"><div class="v">${filtered.length}</div><div class="l">Affichés</div></div>
+    `;
+
+    // Leads
+    if (!filtered.length) {
+      document.getElementById("leads").innerHTML = `<div class="empty">Aucun lead à afficher.</div>`;
+      return;
+    }
+
+    document.getElementById("leads").innerHTML = filtered
+      .map((s) => {
+        const d = s.data || {};
+        const isNew = new Date(s.created_at) > new Date(Date.now() - 2 * 86400000);
+        const date = new Date(s.created_at).toLocaleString("fr-FR", { day: "2-digit", month: "short", year: "numeric", hour: "2-digit", minute: "2-digit" });
+        const fields = Object.entries(d)
+          .filter(([k]) => !["honey", "form-name", "honeypot"].includes(k))
+          .map(([k, v]) => `<div class="field"><strong>${escapeHtml(k)}</strong><span>${escapeHtml(String(v ?? ""))}</span></div>`)
+          .join("");
+        const email = d.email || s.email || "";
+        const tel = d.telephone || d.tel || d.phone || "";
+        const nom = d.nom || d.name || d.prenom || "Anonyme";
+        return `
+          <div class="lead ${isNew ? "new" : ""}">
+            <div>
+              <h3>${escapeHtml(nom)} ${isNew ? '<span class="badge">Nouveau</span>' : ""}</h3>
+              <div class="meta">
+                <span>📅 ${escapeHtml(date)}</span>
+                <span>📋 ${escapeHtml(s.form_name || "—")}</span>
+                ${s.state && s.state !== "ham" ? `<span>⚠️ ${escapeHtml(s.state)}</span>` : ""}
+              </div>
+              <div class="body">${fields || '<em>Aucune donnée</em>'}</div>
+            </div>
+            <div class="actions">
+              ${email ? `<a href="mailto:${escapeHtml(email)}">📧 Email</a>` : ""}
+              ${tel ? `<a href="tel:${escapeHtml(tel)}">📞 Appeler</a>` : ""}
+              ${tel ? `<a href="https://wa.me/${escapeHtml(String(tel).replace(/\\D/g, ""))}" target="_blank">💬 WhatsApp</a>` : ""}
+            </div>
+          </div>
+        `;
+      })
+      .join("");
+  }
+
+  function escapeHtml(s) {
+    return String(s || "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;" })[c]);
+  }
+
+  function exportCSV() {
+    if (!allSubmissions.length) return alert("Aucun lead à exporter.");
+    const allKeys = new Set(["created_at", "form_name"]);
+    allSubmissions.forEach((s) => Object.keys(s.data || {}).forEach((k) => allKeys.add(k)));
+    const headers = Array.from(allKeys);
+    const rows = allSubmissions.map((s) => headers.map((h) => {
+      let v = h === "created_at" ? s.created_at : h === "form_name" ? s.form_name : (s.data || {})[h];
+      v = String(v ?? "").replace(/"/g, '""');
+      return `"${v}"`;
+    }).join(","));
+    const csv = [headers.map((h) => `"${h}"`).join(","), ...rows].join("\n");
+    const blob = new Blob(["﻿" + csv], { type: "text/csv;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `leads-${new Date().toISOString().slice(0, 10)}.csv`;
+    a.click();
+  }
+
+  document.getElementById("formFilter").addEventListener("change", render);
+  document.getElementById("search").addEventListener("input", render);
+  document.getElementById("stateFilter").addEventListener("change", loadLeads);
+</script>
+
+</body>
+</html>

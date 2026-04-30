@@ -1,0 +1,140 @@
+backend:
+  name: git-gateway
+  branch: master
+  squash_merges: true
+  commit_messages:
+    create: 'CMS · {{collection}} ajouté · {{slug}}'
+    update: 'CMS · {{collection}} mis à jour · {{slug}}'
+    delete: 'CMS · {{collection}} supprimé · {{slug}}'
+    uploadMedia: 'CMS · upload média · {{path}}'
+    deleteMedia: 'CMS · suppression média · {{path}}'
+
+local_backend: true
+
+publish_mode: simple
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+site_url: https://rieg-immobilier-preview.netlify.app
+display_url: https://rieg-immobilier-preview.netlify.app
+logo_url: https://rieg-immobilier-preview.netlify.app/photos/IAD_LOGO_FINAL-removebg-preview.png
+
+locale: fr
+
+collections:
+
+  - name: "articles"
+    label: "Articles"
+    label_singular: "Article"
+    folder: "content/articles"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    summary: "{{titre}} · {{rubrique}} · {{date}}"
+    sortable_fields: [date, titre, rubrique]
+    fields:
+      - { name: "titre", label: "Titre", widget: "string" }
+      - { name: "chapo", label: "Chapô (résumé court)", widget: "text" }
+      - { name: "rubrique", label: "Rubrique", widget: "select", options: ["Baromètre", "Portrait", "Décryptage", "Patrimoine", "Conseils", "Actualité"] }
+      - { name: "date", label: "Date de publication", widget: "datetime", picker_utc: false, format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false }
+      - { name: "duree_lecture", label: "Durée de lecture (min)", widget: "number", default: 5, min: 1, max: 30 }
+      - { name: "auteur", label: "Auteur", widget: "string", default: "Romain Rieg" }
+      - { name: "image", label: "Image principale", widget: "image", required: false }
+      - { name: "publie", label: "Publié sur le site", widget: "boolean", default: true }
+      - { name: "body", label: "Contenu de l'article", widget: "markdown" }
+
+  - name: "biens"
+    label: "Biens en vitrine"
+    label_singular: "Bien"
+    folder: "content/biens"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    summary: "{{titre}} · {{ville}} · {{prix}} €"
+    sortable_fields: [prix, ville, statut]
+    fields:
+      - { name: "titre", label: "Titre commercial", widget: "string" }
+      - { name: "type", label: "Type de bien", widget: "select", options: ["Maison", "Maison d'architecte", "Villa familiale", "Appartement", "Loft", "Propriété", "Terrain", "Local commercial"] }
+      - { name: "statut", label: "Statut", widget: "select", options: ["Vente", "Location", "Vendu", "Off-market"] }
+      - { name: "ville", label: "Ville", widget: "string" }
+      - { name: "prix", label: "Prix (€)", widget: "number", min: 0 }
+      - { name: "surface", label: "Surface habitable (m²)", widget: "number", min: 0 }
+      - { name: "pieces", label: "Nombre de pièces", widget: "number", min: 1 }
+      - { name: "chambres", label: "Nombre de chambres", widget: "number", min: 0 }
+      - { name: "terrain", label: "Surface terrain (m²)", widget: "number", required: false, default: 0 }
+      - { name: "dpe", label: "DPE", widget: "select", options: ["A", "B", "C", "D", "E", "F", "G"] }
+      - { name: "ges", label: "GES", widget: "select", options: ["A", "B", "C", "D", "E", "F", "G"] }
+      - { name: "image", label: "Photo principale", widget: "image" }
+      - { name: "gallery", label: "Galerie", widget: "list", field: { name: "src", label: "Photo", widget: "image" } }
+      - { name: "atouts", label: "Atouts (badges)", widget: "list", default: [] }
+      - { name: "taxe_fonciere", label: "Taxe foncière (€/an)", widget: "number", required: false, default: 0 }
+      - { name: "charges", label: "Charges mensuelles (€)", widget: "number", required: false, default: 0 }
+      - { name: "chauffage", label: "Détails chauffage (pour FAQ)", widget: "text", required: false }
+      - { name: "travaux", label: "État / travaux (pour FAQ)", widget: "text", required: false }
+      - { name: "ecoles", label: "Écoles à proximité (pour FAQ)", widget: "text", required: false }
+      - { name: "description", label: "Description (paragraphes)", widget: "list", field: { name: "para", label: "Paragraphe", widget: "text" } }
+
+  - name: "temoignages"
+    label: "Témoignages clients"
+    label_singular: "Témoignage"
+    folder: "content/temoignages"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    summary: "{{nom}} · {{ville}} · {{note}}/5"
+    sortable_fields: [date, note]
+    fields:
+      - { name: "nom", label: "Nom du client (initiales possible)", widget: "string" }
+      - { name: "ville", label: "Ville", widget: "string" }
+      - { name: "contexte", label: "Contexte (Vendeur, Acheteur, type de bien…)", widget: "string" }
+      - { name: "note", label: "Note sur 5", widget: "number", min: 1, max: 5, default: 5 }
+      - { name: "date", label: "Date", widget: "datetime", picker_utc: false, format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false }
+      - { name: "publie", label: "Publié sur le site", widget: "boolean", default: true }
+      - { name: "body", label: "Témoignage", widget: "text" }
+
+  - name: "pages"
+    label: "Pages libres"
+    label_singular: "Page"
+    folder: "content/pages"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    summary: "{{titre}} · /{{slug}}/"
+    fields:
+      - { name: "titre", label: "Titre de la page", widget: "string" }
+      - { name: "description", label: "Meta description (SEO)", widget: "text", required: false }
+      - { name: "hero_image", label: "Image de couverture", widget: "image", required: false }
+      - { name: "publie", label: "Publié", widget: "boolean", default: true }
+      - { name: "body", label: "Contenu", widget: "markdown" }
+
+  - name: "config"
+    label: "Réglages globaux"
+    files:
+      - file: "content/settings.json"
+        label: "Coordonnées & infos site"
+        name: "settings"
+        format: "json"
+        fields:
+          - { name: "nom", label: "Nom complet", widget: "string" }
+          - { name: "titre", label: "Titre / fonction", widget: "string" }
+          - { name: "telephone", label: "Téléphone affiché", widget: "string" }
+          - { name: "telephone_lien", label: "Téléphone format international (+336…)", widget: "string" }
+          - { name: "email", label: "Email", widget: "string" }
+          - { name: "whatsapp", label: "WhatsApp (format international)", widget: "string" }
+          - { name: "rcs", label: "RCS", widget: "string" }
+          - { name: "carte_pro", label: "Carte pro / mention agent commercial", widget: "string" }
+          - { name: "garantie", label: "Garantie financière", widget: "string" }
+          - { name: "secteur_principal", label: "Secteur principal d'activité", widget: "string" }
+          - { name: "instagram", label: "Instagram URL", widget: "string", required: false }
+          - { name: "linkedin", label: "LinkedIn URL", widget: "string", required: false }
+          - { name: "facebook", label: "Facebook URL", widget: "string", required: false }
+          - { name: "calcom", label: "Lien Cal.com", widget: "string", required: false }
+          - { name: "horaires", label: "Horaires affichés", widget: "string" }
+          - { name: "delai_avis", label: "Délai promis pour l'avis de valeur", widget: "string", default: "24-48 h" }
+          - { name: "bio_courte", label: "Bio courte (footer / cards)", widget: "text" }
+          - { name: "bio_longue", label: "Bio longue (page À propos)", widget: "text" }
