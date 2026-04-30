@@ -1,0 +1,45 @@
+{
+  "population": 4012,
+  "superficie": 7.6,
+  "cp": "69760",
+  "intercommunalite": "Métropole de Lyon",
+  "altitude": "270 — 625 m",
+  "ce_qui_differencie": [
+    "Patrimoine en pierres dorées exceptionnel (50+ bastides classées ou inventoriées)",
+    "Mont Verdun (le point culminant du Mont d'Or) — vues à 360°",
+    "Une des communes les plus boisées de la Métropole",
+    "Pôle économique tertiaire (Techlid) côtoyant un cadre village préservé"
+  ],
+  "ecoles": [
+    { "nom": "École publique de Limonest", "type": "Primaire", "precision": "Maternelle + élémentaire publique" },
+    { "nom": "Collège Aux Lazaristes La Salle — site Limonest", "type": "Privé", "precision": "392 chem. de la Sablière — collège privé sous contrat, très demandé" },
+    { "nom": "Lycée Saint-Just (Lyon 5)", "type": "Lycée", "precision": "Lycée public, ~12 min" },
+    { "nom": "Lycées internationaux & ECAM (Lyon)", "type": "Lycée", "precision": "Accès rapide via les axes A6 / Lyon Ouest" }
+  ],
+  "restaurants": [
+    { "nom": "La Pièce du Boucher", "cuisine": "Viandes premium · 4,6★ (1 356 avis), av. Général de Gaulle", "gamme": "Gastro" },
+    { "nom": "Jols Lyon Limonest", "cuisine": "Poissons & fruits de mer · 4,3★ (1 748 avis)", "gamme": "Brasserie" },
+    { "nom": "La Casa Nostra", "cuisine": "Italien / pizza · 4,3★ (801 avis), pl. Decurel", "gamme": "Pizza" },
+    { "nom": "Restaurant Côté Balcon", "cuisine": "Bistrot avec vue · 4,6★ (240 avis), pl. du Griffon", "gamme": "Bistrot" },
+    { "nom": "Maison Savoure", "cuisine": "Française · 4,6★ (354 avis), Parc Swen", "gamme": "Gastro" },
+    { "nom": "ILO", "cuisine": "Restaurant / cantine / bar · 4,9★, all. des Frênes", "gamme": "Bistrot" },
+    { "nom": "Les Halles de Limonest", "cuisine": "Concept halles · 4,3★ (198 avis)", "gamme": "Brasserie" },
+    { "nom": "MIDI SEIZE", "cuisine": "Cuisine soignée · 5★ (98 avis), chem. de Champivost", "gamme": "Bistrot" }
+  ],
+  "associations": [
+    { "nom": "Limonest Tennis", "activite": "Tennis club avec école" },
+    { "nom": "Pierres Dorées en Mont d'Or", "activite": "Préservation du patrimoine bâti" },
+    { "nom": "FCLDSD — Football Club Limonest-Dardilly-Saint-Didier", "activite": "Club mutualisé évoluant en National 3" }
+  ],
+  "quartiers": [
+    { "nom": "Le Bourg", "description": "Centre village avec église, mairie, commerces de proximité.", "prix_indicatif": "5 200 — 6 200 €/m²" },
+    { "nom": "Les Grillons", "description": "Lotissement résidentiel des années 80, maisons familiales.", "prix_indicatif": "5 000 — 5 800 €/m²" },
+    { "nom": "Sans Souci", "description": "Hauteurs, grandes propriétés en pierres dorées, calme absolu.", "prix_indicatif": "6 500 — 8 500 €/m²" }
+  ],
+  "evolution_prix": [
+    { "annee": 2020, "prixM2": 4800 }, { "annee": 2021, "prixM2": 5200 }, { "annee": 2022, "prixM2": 5450 },
+    { "annee": 2023, "prixM2": 5530 }, { "annee": 2024, "prixM2": 5570 }, { "annee": 2025, "prixM2": 5600 }
+  ],
+  "video_insta": { "titre": "Sur les pas du Mont Verdun — patrimoine de Limonest", "duree": "2:00" },
+  "galerie": ["/photos/secteurs/limonest-1.jpg", "/photos/secteurs/limonest-2.jpg", "/photos/secteurs/limonest-3.jpg", "/photos/secteurs/limonest-4.jpg", "/photos/secteurs/limonest-5.jpg", "/photos/secteurs/limonest-6.jpg"]
+}

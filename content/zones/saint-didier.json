@@ -1,0 +1,16 @@
+{
+  "video": "/videos/secteurs/saint-didier.mp4",
+  "titre_seo": "Vendre à Saint-Didier-au-Mont-d'Or",
+  "h1": "Vendez votre bien au meilleur prix à Saint-Didier-au-Mont-d'Or.",
+  "intro": [
+    "Vendre votre maison ou appartement peut sembler compliqué… mais avec un accompagnement clair et personnalisé, tout devient simple.",
+    "Je suis Romain Rieg, conseiller immobilier indépendant du réseau iad France, et j'habite Saint-Didier-au-Mont-d'Or. Je vous accompagne à chaque étape pour vendre rapidement et au meilleur prix."
+  ],
+  "image": "/photos/Ville-de-saint-didier-au-mont-d-or_1920.jpg",
+  "communes_label": "Saint-Didier-au-Mont-d'Or",
+  "atouts": [
+    { "titre": "Expertise locale fine", "desc": "Je connais parfaitement le marché immobilier de Saint-Didier-au-Mont-d'Or. Votre bien sera évalué avec précision grâce aux ventes récentes et aux tendances du quartier." },
+    { "titre": "Accompagnement personnalisé", "desc": "Succession, divorce, projet de vie : chaque situation est unique. Je vous guide pas à pas et prends en charge toutes les démarches administratives." },
+    { "titre": "Mise en valeur premium", "desc": "Reportage photo UltraHD, drone si nécessaire, pour déclencher le coup de cœur dès la première annonce." }
+  ]
+}

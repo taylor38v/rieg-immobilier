@@ -107,6 +107,31 @@ export const pages: PageLibre[] = ${JSON.stringify(pages, null, 2)};
 `
 );
 
+// --- Helper : lit tous les .json d'un dossier en map { filename → contenu } ---
+function readJsonMap(folder) {
+  const dir = path.join(CONTENT, folder);
+  if (!fs.existsSync(dir)) return {};
+  return fs.readdirSync(dir)
+    .filter((f) => f.endsWith(".json"))
+    .reduce((acc, f) => {
+      const key = f.replace(/\.json$/, "");
+      acc[key] = JSON.parse(fs.readFileSync(path.join(dir, f), "utf8"));
+      return acc;
+    }, {});
+}
+
+// --- Zones (3 zones de vente) ---
+const zones = readJsonMap("zones");
+writeTs("zones.ts", `// AUTO-GENERATED — content/zones/*.json
+export const zonesContent = ${JSON.stringify(zones, null, 2)} as const;
+`);
+
+// --- Secteurs détaillés (7 communes) ---
+const secteursDetailContent = readJsonMap("secteurs-detail");
+writeTs("secteurs-detail.ts", `// AUTO-GENERATED — content/secteurs-detail/*.json
+export const secteursDetailContent: Record<string, any> = ${JSON.stringify(secteursDetailContent, null, 2)};
+`);
+
 // --- Pages du site (textes éditables des pages existantes) ---
 const SITE_DIR = path.join(CONTENT, "site");
 const sitePages = fs.existsSync(SITE_DIR)

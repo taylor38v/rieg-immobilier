@@ -1,0 +1,16 @@
+{
+  "video": "/videos/secteurs/saint-just.mp4",
+  "titre_seo": "Vendre dans la Plaine du Forez",
+  "h1": "Réussissez votre projet immobilier dans la Plaine du Forez.",
+  "intro": [
+    "Vous souhaitez vendre, acheter ou louer un bien à Saint-Just-Saint-Rambert, Andrézieux-Bouthéon ou alentours ?",
+    "Je suis Romain Rieg, conseiller immobilier indépendant du réseau iad France. Originaire de la Loire, j'y ai vécu 20 ans : je combine ma connaissance intime du territoire avec des outils marketing de pointe pour vendre rapidement au meilleur prix, acheter ou investir en toute sécurité, ou gérer la location de vos biens."
+  ],
+  "image": "/photos/IMG_7295.jpeg",
+  "communes_label": "Saint-Just-Saint-Rambert · Andrézieux-Bouthéon — et leurs limitrophes",
+  "atouts": [
+    { "titre": "L'enfant du pays", "desc": "20 ans de vie dans la Loire pour une expertise terrain sans faille." },
+    { "titre": "Réactivité", "desc": "Avis de valeur sous 24-48 h, suivi régulier, disponibilité." },
+    { "titre": "Force de frappe iad", "desc": "Votre bien visible partout, auprès de tout le réseau (+15 000 conseillers)." }
+  ]
+}

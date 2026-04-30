@@ -1,10 +1,13 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { articles } from "../lib/articles";
+import { site } from "../lib/_generated/site";
+
+const al = site["actualites-landing"];
 
 export const metadata: Metadata = {
-  title: "Actualités",
-  description: "Décryptage du marché immobilier local, événements et actualités du Mont d'Or et de l'Ouest lyonnais.",
+  title: al.meta_title,
+  description: al.meta_description,
 };
 
 const formatDate = (d: string) => new Date(d).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" });
@@ -14,11 +17,9 @@ export default function Page() {
   return (
     <div className="max-w-7xl mx-auto px-6 py-16 md:py-24">
       <div className="max-w-3xl">
-        <div className="text-xs uppercase tracking-[0.3em] text-gold">Actualités</div>
-        <h1 className="font-serif text-5xl md:text-7xl mt-3 leading-[1.05]">Actualités locales & marché.</h1>
-        <p className="text-muted mt-6 leading-relaxed text-lg">
-          Tendances de marché, repères patrimoniaux, baromètre trimestriel sur le Mont d'Or, l'Ouest lyonnais et la Plaine du Forez.
-        </p>
+        <div className="text-xs uppercase tracking-[0.3em] text-gold">{al.surtitre}</div>
+        <h1 className="font-serif text-5xl md:text-7xl mt-3 leading-[1.05]">{al.titre}</h1>
+        <p className="text-muted mt-6 leading-relaxed text-lg">{al.intro}</p>
       </div>
 
       <Link href={`/actualites/${first.slug}`} className="group block mt-16 grid lg:grid-cols-2 gap-10">

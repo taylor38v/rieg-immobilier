@@ -1,0 +1,48 @@
+{
+  "population": 15764,
+  "superficie": 40,
+  "cp": "42170",
+  "intercommunalite": "Loire Forez Agglomération",
+  "altitude": "385 — 510 m",
+  "ce_qui_differencie": [
+    "Ville à taille humaine entre Lyon (50 min) et Saint-Étienne (15 min)",
+    "Bords de Loire aménagés sur 6 km — attraction touristique majeure",
+    "Marché immobilier 2x à 3x moins cher que la Métropole de Lyon",
+    "Excellent rendement locatif (5 — 6%) — paradis des investisseurs"
+  ],
+  "ecoles": [
+    { "nom": "Écoles publiques Saint-Just & Saint-Rambert", "type": "Primaire", "precision": "Plusieurs groupes scolaires publics répartis sur les deux centres" },
+    { "nom": "École privée Saint-Joseph", "type": "Privé", "precision": "" },
+    { "nom": "Collège public Anne Frank", "type": "Collège", "precision": "897 élèves, section sport — récemment rénové (14 M€), un des plus gros de la Loire" },
+    { "nom": "Collège privé Saint-Joseph", "type": "Privé", "precision": "" },
+    { "nom": "Lycée polyvalent François Mauriac (Andrézieux-Bouthéon)", "type": "Lycée", "precision": "~8 min" }
+  ],
+  "restaurants": [
+    { "nom": "Le Minimaliste", "cuisine": "Restaurant tendance, planches & cocktails · 4,9★ (203 avis), av. du Stade", "gamme": "Bistrot" },
+    { "nom": "Les Serres Babylone", "cuisine": "Fleuriste-restaurant-bar · 4,6★ (337 avis), av. des Barques", "gamme": "Bistrot" },
+    { "nom": "Ô Benestar", "cuisine": "Cuisine sud-ouest · 4,5★ (317 avis), pl. du Pont", "gamme": "Bistrot" },
+    { "nom": "Les Remparts de Saint-Rambert", "cuisine": "Française dans bâti historique · 4,2★ (121 avis), rue de la Loire", "gamme": "Brasserie" },
+    { "nom": "Brasserie de l'Industrie", "cuisine": "Française · 4,1★ (963 avis), bd de l'Industrie", "gamme": "Brasserie" },
+    { "nom": "Aux 2 Ancres", "cuisine": "Bistrot / burgers / tapas · 4,5★ (352 avis), pl. Madeleine Rousseau", "gamme": "Bistrot" },
+    { "nom": "Le Rambertois Grill", "cuisine": "Turc / grillades · 4,5★ (629 avis), bd de la Libération", "gamme": "Brasserie" },
+    { "nom": "Lulu à Table", "cuisine": "Cuisine de saison · 4,5★ (267 avis), rte de Cordeyron", "gamme": "Bistrot" }
+  ],
+  "associations": [
+    { "nom": "La Pontoise Basket Club", "activite": "Club emblématique, équipe sénior masculine en Nationale 2" },
+    { "nom": "Saint-Just-Saint-Rambert Football", "activite": "Football amateur" },
+    { "nom": "Tennis Club Saint-Just-Saint-Rambert", "activite": "Tennis avec courts couverts" },
+    { "nom": "Aviron Forez", "activite": "Aviron sur le plan d'eau de Saint-Pierre" },
+    { "nom": "Office de tourisme Loire Forez", "activite": "Activités plein air et culturelles" }
+  ],
+  "quartiers": [
+    { "nom": "Centre Saint-Just", "description": "Centre commerçant, école, services, ambiance plus urbaine.", "prix_indicatif": "2 500 — 3 200 €/m²" },
+    { "nom": "Saint-Rambert", "description": "Vieille ville médiévale, prieuré du XIᵉ, ruelles charmantes.", "prix_indicatif": "2 600 — 3 500 €/m²" },
+    { "nom": "Les Bords de Loire", "description": "Maisons avec vue rivière, quartier prisé, balade fluviale aux pieds.", "prix_indicatif": "2 800 — 3 800 €/m²" }
+  ],
+  "evolution_prix": [
+    { "annee": 2020, "prixM2": 2400 }, { "annee": 2021, "prixM2": 2600 }, { "annee": 2022, "prixM2": 2750 },
+    { "annee": 2023, "prixM2": 2780 }, { "annee": 2024, "prixM2": 2790 }, { "annee": 2025, "prixM2": 2800 }
+  ],
+  "video_insta": { "titre": "La Plaine du Forez : pourquoi y investir maintenant", "duree": "1:50" },
+  "galerie": ["/photos/secteurs/saint-just-1.jpg", "/photos/secteurs/saint-just-2.jpg", "/photos/secteurs/saint-just-3.jpg", "/photos/secteurs/saint-just-4.jpg", "/photos/secteurs/saint-just-5.jpg", "/photos/secteurs/saint-just-6.jpg"]
+}

@@ -36,7 +36,7 @@ export default async function Page(props: PageProps<"/secteurs/[slug]">) {
   const d = secteursDetails[slug];
   if (!s) notFound();
 
-  const evolution = d?.evolutionPrix || [];
+  const evolution = d?.evolution_prix || [];
   const evolMin = evolution.length ? Math.min(...evolution.map((e) => e.prixM2)) : 0;
   const evolMax = evolution.length ? Math.max(...evolution.map((e) => e.prixM2)) : 0;
   const evolPct = evolMin > 0 ? ((evolMax - evolMin) / evolMin) * 100 : 0;
@@ -62,12 +62,12 @@ export default async function Page(props: PageProps<"/secteurs/[slug]">) {
         </div>
       </section>
 
-      {d?.ceQuiDifferencie && (
+      {d?.ce_qui_differencie && (
         <section className="max-w-7xl mx-auto px-6 py-20">
           <div className="text-xs uppercase tracking-[0.3em] text-gold">Ce qui différencie {s.nom}</div>
           <h2 className="font-serif text-5xl md:text-6xl mt-3">Pourquoi cette commune attire.</h2>
           <div className="grid md:grid-cols-2 gap-4 mt-10">
-            {d.ceQuiDifferencie.map((c, i) => (
+            {d.ce_qui_differencie.map((c, i) => (
               <div key={i} className="flex gap-4 p-5 bg-ivory-deep">
                 <span className="font-serif text-3xl text-gold leading-none">{String(i + 1).padStart(2, "0")}</span>
                 <p className="text-ink/85 leading-relaxed">{c}</p>
@@ -77,7 +77,7 @@ export default async function Page(props: PageProps<"/secteurs/[slug]">) {
         </section>
       )}
 
-      {d?.evolutionPrix && d.evolutionPrix.length > 0 && (
+      {d?.evolution_prix && d.evolution_prix.length > 0 && (
         <section className="bg-navy text-ivory py-20">
           <div className="max-w-7xl mx-auto px-6">
             <div className="text-xs uppercase tracking-[0.3em] text-gold">Évolution du marché</div>
@@ -91,12 +91,12 @@ export default async function Page(props: PageProps<"/secteurs/[slug]">) {
                   </text>
                 ))}
                 <polyline fill="none" stroke="#c9a25f" strokeWidth="2.5"
-                  points={d.evolutionPrix.map((e, i) => `${60 + (i / (d.evolutionPrix.length - 1)) * 720},${20 + ((evolMax - e.prixM2) / (evolMax - evolMin)) * 200}`).join(" ")} />
-                {d.evolutionPrix.map((e, i) => (
+                  points={d.evolution_prix.map((e, i) => `${60 + (i / (d.evolution_prix.length - 1)) * 720},${20 + ((evolMax - e.prixM2) / (evolMax - evolMin)) * 200}`).join(" ")} />
+                {d.evolution_prix.map((e, i) => (
                   <g key={i}>
-                    <circle cx={60 + (i / (d.evolutionPrix.length - 1)) * 720} cy={20 + ((evolMax - e.prixM2) / (evolMax - evolMin)) * 200} r="5" fill="#c9a25f" stroke="#061b2c" strokeWidth="2" />
-                    <text x={60 + (i / (d.evolutionPrix.length - 1)) * 720} y="270" fontSize="11" fill="#faf6ef" textAnchor="middle" opacity="0.6">{e.annee}</text>
-                    <text x={60 + (i / (d.evolutionPrix.length - 1)) * 720} y={10 + ((evolMax - e.prixM2) / (evolMax - evolMin)) * 200} fontSize="11" fill="#c9a25f" textAnchor="middle" fontWeight="600">{(e.prixM2 / 1000).toFixed(1)}k</text>
+                    <circle cx={60 + (i / (d.evolution_prix.length - 1)) * 720} cy={20 + ((evolMax - e.prixM2) / (evolMax - evolMin)) * 200} r="5" fill="#c9a25f" stroke="#061b2c" strokeWidth="2" />
+                    <text x={60 + (i / (d.evolution_prix.length - 1)) * 720} y="270" fontSize="11" fill="#faf6ef" textAnchor="middle" opacity="0.6">{e.annee}</text>
+                    <text x={60 + (i / (d.evolution_prix.length - 1)) * 720} y={10 + ((evolMax - e.prixM2) / (evolMax - evolMin)) * 200} fontSize="11" fill="#c9a25f" textAnchor="middle" fontWeight="600">{(e.prixM2 / 1000).toFixed(1)}k</text>
                   </g>
                 ))}
               </svg>
@@ -116,7 +116,7 @@ export default async function Page(props: PageProps<"/secteurs/[slug]">) {
             {d.quartiers.map((q) => (
               <div key={q.nom} className="p-7 bg-white border border-ink/10">
                 <div className="font-serif text-2xl text-navy">{q.nom}</div>
-                {q.prixIndicatif && <div className="text-xs text-gold mt-2 uppercase tracking-widest">{q.prixIndicatif}</div>}
+                {q.prix_indicatif && <div className="text-xs text-gold mt-2 uppercase tracking-widest">{q.prix_indicatif}</div>}
                 <p className="text-muted mt-4 leading-relaxed">{q.description}</p>
               </div>
             ))}
@@ -232,7 +232,7 @@ export default async function Page(props: PageProps<"/secteurs/[slug]">) {
           <p className="text-muted mt-3 max-w-2xl">Je tourne régulièrement sur place — visites, conseils, anecdotes du métier. Suivez tout sur mon compte Instagram.</p>
           <div className="grid md:grid-cols-3 gap-4 mt-10">
             {[
-              { titre: d?.videoInsta?.titre ?? `Visite à ${s.nom}`, duree: d?.videoInsta?.duree ?? "1:30", thumb: s.image ?? "/photos/IMG_7295.jpeg" },
+              { titre: d?.video_insta?.titre ?? `Visite à ${s.nom}`, duree: d?.video_insta?.duree ?? "1:30", thumb: s.image ?? "/photos/IMG_7295.jpeg" },
               { titre: `${s.nom} : focus marché immobilier`, duree: "0:50", thumb: "/photos/IMG_7282.jpeg" },
               { titre: `Mes coups de cœur à ${s.nom}`, duree: "1:15", thumb: "/photos/IMG_7134.jpeg" },
             ].map((v, i) => (

@@ -21,7 +21,7 @@ export default function Page() {
 
   const data = secteurs.map((s) => {
     const det = secteursDetails[s.slug];
-    const evol = det?.evolutionPrix.find((e) => e.annee === annee);
+    const evol = det?.evolution_prix.find((e) => e.annee === annee);
     const ratio = type === "maison" ? 1 : (s.prixM2Appart / s.prixM2Maison);
     const prix = evol ? Math.round(evol.prixM2 * ratio) : (type === "maison" ? s.prixM2Maison : s.prixM2Appart);
     return { ...s, prix, pos: positions[s.slug] };

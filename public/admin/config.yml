@@ -770,6 +770,17 @@ collections:
           - { name: "cta_secondary_label", label: "Bouton 2", widget: "string" }
           - { name: "cta_secondary_url", label: "Bouton 2 URL", widget: "string" }
 
+      - file: "content/site/actualites-landing.json"
+        label: "📰 Page Actualités (intro)"
+        name: "actualites-landing"
+        format: "json"
+        fields:
+          - { name: "meta_title", label: "Titre SEO", widget: "string" }
+          - { name: "meta_description", label: "Description SEO", widget: "text" }
+          - { name: "surtitre", label: "Surtitre", widget: "string" }
+          - { name: "titre", label: "Titre H1", widget: "string" }
+          - { name: "intro", label: "Intro", widget: "text" }
+
       - file: "content/site/mentions-legales.md"
         label: "⚖️ Mentions légales"
         name: "mentions-legales"
@@ -786,6 +797,88 @@ collections:
           - { name: "titre", label: "Titre H1", widget: "string" }
           - { name: "date_maj", label: "Date de mise à jour", widget: "string" }
           - { name: "body", label: "Contenu (markdown libre)", widget: "markdown" }
+
+  - name: "zones"
+    label: "Zones de vente (pages /vendre/...)"
+    label_singular: "Zone"
+    folder: "content/zones"
+    create: false
+    slug: "{{slug}}"
+    extension: "json"
+    format: "json"
+    summary: "{{titre_seo}}"
+    fields:
+      - { name: "video", label: "Vidéo de fond hero", widget: "file" }
+      - { name: "titre_seo", label: "Titre SEO", widget: "string" }
+      - { name: "h1", label: "Titre H1", widget: "string" }
+      - { name: "intro", label: "Paragraphes intro", widget: "list", field: { name: "p", label: "Paragraphe", widget: "text" } }
+      - { name: "image", label: "Image principale", widget: "image" }
+      - { name: "communes_label", label: "Liste des communes (texte)", widget: "string" }
+      - name: "atouts"
+        label: "Atouts (3)"
+        widget: "list"
+        fields:
+          - { name: "titre", label: "Titre", widget: "string" }
+          - { name: "desc", label: "Description", widget: "text" }
+
+  - name: "secteurs-detail"
+    label: "Secteurs (pages /secteurs/...)"
+    label_singular: "Secteur"
+    folder: "content/secteurs-detail"
+    create: false
+    slug: "{{slug}}"
+    extension: "json"
+    format: "json"
+    summary: "{{cp}} · {{population}} hab."
+    fields:
+      - { name: "population", label: "Population", widget: "number" }
+      - { name: "superficie", label: "Superficie (km²)", widget: "number" }
+      - { name: "cp", label: "Code postal", widget: "string" }
+      - { name: "intercommunalite", label: "Intercommunalité", widget: "string" }
+      - { name: "altitude", label: "Altitude (texte)", widget: "string", required: false }
+      - { name: "ce_qui_differencie", label: "Ce qui différencie (4 points)", widget: "list" }
+      - name: "ecoles"
+        label: "Écoles"
+        widget: "list"
+        fields:
+          - { name: "nom", label: "Nom", widget: "string" }
+          - { name: "type", label: "Type", widget: "select", options: ["Maternelle", "Primaire", "Collège", "Lycée", "Supérieur", "Privé"] }
+          - { name: "precision", label: "Précision", widget: "string", required: false }
+      - name: "restaurants"
+        label: "Restaurants"
+        widget: "list"
+        fields:
+          - { name: "nom", label: "Nom", widget: "string" }
+          - { name: "cuisine", label: "Cuisine / description", widget: "string" }
+          - { name: "gamme", label: "Gamme", widget: "select", options: ["Bistrot", "Gastro", "Étoilé", "Pizza", "Brasserie", "Café"] }
+      - name: "associations"
+        label: "Associations / clubs sportifs"
+        widget: "list"
+        fields:
+          - { name: "nom", label: "Nom", widget: "string" }
+          - { name: "activite", label: "Activité", widget: "string" }
+      - name: "quartiers"
+        label: "Quartiers"
+        widget: "list"
+        fields:
+          - { name: "nom", label: "Nom du quartier", widget: "string" }
+          - { name: "description", label: "Description", widget: "text" }
+          - { name: "prix_indicatif", label: "Prix indicatif (€/m²)", widget: "string", required: false }
+      - name: "evolution_prix"
+        label: "Évolution des prix au m² (par année)"
+        widget: "list"
+        fields:
+          - { name: "annee", label: "Année", widget: "number" }
+          - { name: "prixM2", label: "Prix m²", widget: "number" }
+      - name: "video_insta"
+        label: "Vidéo Instagram (placeholder)"
+        widget: "object"
+        required: false
+        fields:
+          - { name: "titre", label: "Titre du reel", widget: "string" }
+          - { name: "duree", label: "Durée (1:30)", widget: "string" }
+          - { name: "thumb", label: "Vignette", widget: "image", required: false }
+      - { name: "galerie", label: "Galerie photos", widget: "list", field: { name: "src", label: "Photo", widget: "image" } }
 
   - name: "config"
     label: "Réglages globaux"
