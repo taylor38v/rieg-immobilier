@@ -1,11 +1,13 @@
 ---
-titre: "Baromètre du Mont d'Or — T1 2026"
-chapo: "Hausse modérée des prix sur le secteur Saint-Didier / Saint-Cyr, accélération inattendue à Champagne-au-Mont-d'Or portée par l'effet métro. Décryptage trimestre par trimestre."
-rubrique: "Baromètre"
+titre: Baromètre du Mont d'Or — T1 2027
+chapo: Hausse modérée des prix sur le secteur Saint-Didier / Saint-Cyr,
+  accélération inattendue à Champagne-au-Mont-d'Or portée par l'effet métro.
+  Décryptage trimestre par trimestre.
+rubrique: Baromètre
 date: 2026-04-01
 duree_lecture: 6
-auteur: "Romain Rieg"
-image: "/photos/Ville-de-saint-didier-au-mont-d-or_1920.jpg"
+auteur: Romain Rieg
+image: /photos/Ville-de-saint-didier-au-mont-d-or_1920.jpg
 publie: true
 ---
 
