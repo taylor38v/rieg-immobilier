@@ -1,7 +1,7 @@
 "use client";
 import { useState, useMemo } from "react";
 import Link from "next/link";
-import { secteurs, biens, formatPrix } from "../../lib/data";
+import { secteurs, formatPrix } from "../../lib/data";
 
 export default function Page() {
   const [revenu, setRevenu] = useState(5500);
@@ -27,8 +27,6 @@ export default function Page() {
 
     return { mensualite: mensualiteMax, capacite, budgetTotal, budgetBien, fraisNotaire, communes };
   }, [revenu, apport, duree, taux, type]);
-
-  const exemples = biens.filter((b) => b.statut !== "Vendu" && b.prix <= result.budgetBien).slice(0, 3);
 
   return (
     <div className="max-w-7xl mx-auto px-6 py-16 md:py-20">
@@ -89,27 +87,6 @@ export default function Page() {
           </div>
         </div>
       </div>
-
-      {exemples.length > 0 && (
-        <div className="mt-16">
-          <div className="text-xs uppercase tracking-[0.3em] text-gold">Dans votre budget</div>
-          <h2 className="font-serif text-4xl md:text-5xl mt-3">Des biens accessibles</h2>
-          <div className="grid md:grid-cols-3 gap-8 mt-8">
-            {exemples.map((b) => (
-              <Link key={b.slug} href={`/biens/${b.slug}`} className="group">
-                <div className="aspect-[4/3] overflow-hidden bg-ivory-deep">
-                  <img src={b.image} alt={b.titre} className="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
-                </div>
-                <div className="pt-4">
-                  <div className="text-xs uppercase tracking-widest text-muted">{b.ville}</div>
-                  <div className="font-serif text-xl mt-1">{b.titre}</div>
-                  <div className="text-sm text-muted mt-2">{b.surface} m² · {formatPrix(b.prix)}</div>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </div>
-      )}
 
       <div className="bg-ivory-deep p-10 mt-16 text-center">
         <h3 className="font-serif text-3xl">Affinons ensemble votre projet</h3>

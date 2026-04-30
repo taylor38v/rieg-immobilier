@@ -45,38 +45,6 @@ collections:
       - { name: "publie", label: "Publié sur le site", widget: "boolean", default: true }
       - { name: "body", label: "Contenu de l'article", widget: "markdown" }
 
-  - name: "biens"
-    label: "Biens en vitrine"
-    label_singular: "Bien"
-    folder: "content/biens"
-    create: true
-    slug: "{{slug}}"
-    extension: "md"
-    format: "frontmatter"
-    summary: "{{titre}} · {{ville}} · {{prix}} €"
-    sortable_fields: [prix, ville, statut]
-    fields:
-      - { name: "titre", label: "Titre commercial", widget: "string" }
-      - { name: "type", label: "Type de bien", widget: "select", options: ["Maison", "Maison d'architecte", "Villa familiale", "Appartement", "Loft", "Propriété", "Terrain", "Local commercial"] }
-      - { name: "statut", label: "Statut", widget: "select", options: ["Vente", "Location", "Vendu", "Off-market"] }
-      - { name: "ville", label: "Ville", widget: "string" }
-      - { name: "prix", label: "Prix (€)", widget: "number", min: 0 }
-      - { name: "surface", label: "Surface habitable (m²)", widget: "number", min: 0 }
-      - { name: "pieces", label: "Nombre de pièces", widget: "number", min: 1 }
-      - { name: "chambres", label: "Nombre de chambres", widget: "number", min: 0 }
-      - { name: "terrain", label: "Surface terrain (m²)", widget: "number", required: false, default: 0 }
-      - { name: "dpe", label: "DPE", widget: "select", options: ["A", "B", "C", "D", "E", "F", "G"] }
-      - { name: "ges", label: "GES", widget: "select", options: ["A", "B", "C", "D", "E", "F", "G"] }
-      - { name: "image", label: "Photo principale", widget: "image" }
-      - { name: "gallery", label: "Galerie", widget: "list", field: { name: "src", label: "Photo", widget: "image" } }
-      - { name: "atouts", label: "Atouts (badges)", widget: "list", default: [] }
-      - { name: "taxe_fonciere", label: "Taxe foncière (€/an)", widget: "number", required: false, default: 0 }
-      - { name: "charges", label: "Charges mensuelles (€)", widget: "number", required: false, default: 0 }
-      - { name: "chauffage", label: "Détails chauffage (pour FAQ)", widget: "text", required: false }
-      - { name: "travaux", label: "État / travaux (pour FAQ)", widget: "text", required: false }
-      - { name: "ecoles", label: "Écoles à proximité (pour FAQ)", widget: "text", required: false }
-      - { name: "description", label: "Description (paragraphes)", widget: "list", field: { name: "para", label: "Paragraphe", widget: "text" } }
-
   - name: "temoignages"
     label: "Témoignages clients"
     label_singular: "Témoignage"
@@ -111,6 +79,713 @@ collections:
       - { name: "hero_image", label: "Image de couverture", widget: "image", required: false }
       - { name: "publie", label: "Publié", widget: "boolean", default: true }
       - { name: "body", label: "Contenu", widget: "markdown" }
+
+  - name: "site"
+    label: "Pages du site"
+    label_singular: "Page du site"
+    description: "Modifie les textes de chaque page existante du site (home, à propos, vendre, acheter…)."
+    files:
+      - file: "content/site/home.json"
+        label: "🏠 Accueil"
+        name: "home"
+        format: "json"
+        fields:
+          - name: "hero"
+            label: "1. Hero (haut de page)"
+            widget: "object"
+            fields:
+              - { name: "video", label: "Vidéo de fond (drone, .mp4)", widget: "file", media_library: { config: { multiple: false } }, hint: "Vidéos existantes dans /videos/secteurs/ : saint-cyr, ecully, limonest, saint-didier, saint-just. Tu peux aussi uploader la tienne." }
+              - { name: "chip", label: "Pastille (Saint-Didier · Ouest lyonnais...)", widget: "string" }
+              - { name: "titre", label: "Titre principal H1", widget: "string" }
+              - { name: "intro", label: "Paragraphe d'intro", widget: "text" }
+              - { name: "cta_primary_label", label: "Bouton principal — texte", widget: "string" }
+              - { name: "cta_primary_href", label: "Bouton principal — lien", widget: "string" }
+              - { name: "cta_secondary_label", label: "Bouton secondaire — texte", widget: "string" }
+              - { name: "cta_secondary_href", label: "Bouton secondaire — lien", widget: "string" }
+              - { name: "mention", label: "Mention rassurance (Zéro engagement...)", widget: "string" }
+              - name: "stats"
+                label: "Chiffres clés (4)"
+                widget: "list"
+                fields:
+                  - { name: "valeur", label: "Valeur", widget: "string" }
+                  - { name: "label", label: "Label", widget: "string" }
+          - name: "biens_iad"
+            label: "2. Bandeau biens iad"
+            widget: "object"
+            fields:
+              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "titre", label: "Titre", widget: "string" }
+              - { name: "desc", label: "Description", widget: "text" }
+              - { name: "cta_label", label: "Bouton — texte", widget: "string" }
+              - { name: "cta_url", label: "Bouton — lien (URL externe)", widget: "string" }
+          - name: "qui_suis_je"
+            label: "3. Qui suis-je"
+            widget: "object"
+            fields:
+              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "titre", label: "Titre H2", widget: "string" }
+              - { name: "paragraphes", label: "Paragraphes (markdown : **gras**, _italique_)", widget: "list", field: { name: "p", label: "Paragraphe", widget: "text" } }
+              - { name: "photo", label: "Photo (chemin /photos/...)", widget: "image" }
+              - { name: "photo_alt", label: "Photo — texte alternatif", widget: "string" }
+              - { name: "citation", label: "Citation (carte dorée)", widget: "string" }
+              - { name: "citation_auteur", label: "Citation — auteur", widget: "string" }
+              - { name: "cta_primary_label", label: "Bouton principal — texte", widget: "string" }
+              - { name: "cta_primary_href", label: "Bouton principal — lien", widget: "string" }
+              - { name: "cta_secondary_label", label: "Bouton secondaire — texte", widget: "string" }
+              - { name: "cta_secondary_href", label: "Bouton secondaire — lien", widget: "string" }
+          - name: "services"
+            label: "4. Mes services (4 cartes)"
+            widget: "object"
+            fields:
+              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "titre", label: "Titre H2", widget: "string" }
+              - name: "items"
+                label: "Services (4 max)"
+                widget: "list"
+                max: 4
+                fields:
+                  - { name: "titre", label: "Titre du service", widget: "string" }
+                  - { name: "desc", label: "Description", widget: "text" }
+                  - { name: "href", label: "Lien (page)", widget: "string" }
+          - name: "secteurs"
+            label: "5. Mes secteurs d'intervention (3 zones)"
+            widget: "object"
+            fields:
+              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "titre", label: "Titre H2", widget: "string" }
+              - { name: "intro", label: "Paragraphe d'intro", widget: "text" }
+              - name: "zones"
+                label: "Zones (3)"
+                widget: "list"
+                fields:
+                  - { name: "slug", label: "Slug (= sous /vendre/...)", widget: "string" }
+                  - { name: "titre", label: "Titre zone", widget: "string" }
+                  - { name: "desc", label: "Description", widget: "text" }
+                  - { name: "badge", label: "Badge en haut de la carte", widget: "string" }
+                  - { name: "image", label: "Image", widget: "image" }
+          - name: "instagram"
+            label: "6. Coulisses Instagram (3 reels)"
+            widget: "object"
+            fields:
+              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "titre", label: "Titre H2", widget: "string" }
+              - { name: "intro", label: "Paragraphe d'intro", widget: "text" }
+              - { name: "lien", label: "Lien Instagram global (profil)", widget: "string" }
+              - name: "videos"
+                label: "Vignettes reels (3)"
+                widget: "list"
+                fields:
+                  - { name: "titre", label: "Titre du reel", widget: "string" }
+                  - { name: "duree", label: "Durée (1:20)", widget: "string" }
+                  - { name: "thumb", label: "Vignette", widget: "image" }
+                  - { name: "url", label: "Lien direct du reel (https://instagram.com/reel/...)", widget: "string", required: false }
+              - { name: "cta_label", label: "Bouton bas — texte", widget: "string" }
+          - name: "avis"
+            label: "7. Avis Google (3 témoignages)"
+            widget: "object"
+            fields:
+              - { name: "note_chiffre", label: "Note (4,9/5)", widget: "string" }
+              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "titre", label: "Titre H2", widget: "string" }
+              - name: "items"
+                label: "Avis (3)"
+                widget: "list"
+                fields:
+                  - { name: "nom", label: "Nom client", widget: "string" }
+                  - { name: "contexte", label: "Contexte (Vendeur · Maison...)", widget: "string" }
+                  - { name: "texte", label: "Texte de l'avis", widget: "text" }
+              - { name: "cta_label", label: "Bouton — texte", widget: "string" }
+              - { name: "cta_url", label: "Bouton — lien Google", widget: "string" }
+          - name: "cta_final"
+            label: "8. CTA bas de page"
+            widget: "object"
+            fields:
+              - { name: "titre", label: "Titre", widget: "string" }
+              - { name: "intro", label: "Paragraphe", widget: "text" }
+              - { name: "cta_primary_label", label: "Bouton 1 — texte", widget: "string" }
+              - { name: "cta_primary_href", label: "Bouton 1 — lien", widget: "string" }
+              - { name: "cta_secondary_label", label: "Bouton 2 — texte", widget: "string" }
+              - { name: "cta_secondary_href", label: "Bouton 2 — lien (tel:..., mailto:...)", widget: "string" }
+
+      - file: "content/site/a-propos.json"
+        label: "👤 À propos"
+        name: "a-propos"
+        format: "json"
+        fields:
+          - { name: "meta_title", label: "Titre SEO", widget: "string" }
+          - { name: "meta_description", label: "Description SEO", widget: "text" }
+          - name: "hero"
+            label: "Hero"
+            widget: "object"
+            fields:
+              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "titre_l1", label: "Titre H1 (ligne 1)", widget: "string" }
+              - { name: "titre_l2", label: "Titre H1 (ligne 2)", widget: "string" }
+              - { name: "paragraphes", label: "Paragraphes", widget: "list", field: { name: "p", label: "Paragraphe", widget: "text" } }
+              - { name: "photo", label: "Photo", widget: "image" }
+              - { name: "photo_alt", label: "Photo — alt", widget: "string" }
+              - name: "stats"
+                label: "Stats (3)"
+                widget: "list"
+                fields:
+                  - { name: "valeur", label: "Valeur", widget: "string" }
+                  - { name: "label", label: "Label", widget: "string" }
+          - name: "engagements"
+            label: "Engagements"
+            widget: "object"
+            fields:
+              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "titre", label: "Titre H2", widget: "string" }
+              - name: "items"
+                label: "Engagements (6)"
+                widget: "list"
+                fields:
+                  - { name: "titre", label: "Titre", widget: "string" }
+                  - { name: "desc", label: "Description", widget: "text" }
+          - name: "cta_final"
+            label: "CTA bas de page"
+            widget: "object"
+            fields:
+              - { name: "titre", label: "Titre", widget: "string" }
+              - { name: "cta_label", label: "Bouton — texte", widget: "string" }
+              - { name: "cta_href", label: "Bouton — lien", widget: "string" }
+
+      - file: "content/site/contact.json"
+        label: "📞 Contact"
+        name: "contact"
+        format: "json"
+        fields:
+          - { name: "meta_title", label: "Titre SEO", widget: "string" }
+          - { name: "meta_description", label: "Description SEO", widget: "text" }
+          - name: "hero"
+            label: "Hero"
+            widget: "object"
+            fields:
+              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "titre", label: "Titre H1", widget: "string" }
+              - { name: "intro", label: "Intro", widget: "text" }
+              - { name: "garanties", label: "Garanties (3)", widget: "list" }
+          - name: "calendrier"
+            label: "Calendrier Cal.com"
+            widget: "object"
+            fields:
+              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "titre", label: "Titre", widget: "string" }
+              - { name: "intro", label: "Intro", widget: "text" }
+              - { name: "puces", label: "Puces (3)", widget: "list" }
+              - { name: "cal_url", label: "URL Cal.com", widget: "string" }
+              - { name: "cta_label", label: "Bouton — texte", widget: "string" }
+          - name: "sidebar"
+            label: "Sidebar contact"
+            widget: "object"
+            fields:
+              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "titre", label: "Titre", widget: "string" }
+              - { name: "telephone", label: "Téléphone affiché", widget: "string" }
+              - { name: "telephone_lien", label: "Téléphone format international", widget: "string" }
+              - { name: "whatsapp_label", label: "WhatsApp — label", widget: "string" }
+              - { name: "whatsapp_url", label: "WhatsApp — URL", widget: "string" }
+              - { name: "calcom_label", label: "Cal.com — label", widget: "string" }
+              - { name: "email", label: "Email", widget: "string" }
+              - { name: "horaires_titre", label: "Horaires titre", widget: "string" }
+              - { name: "horaires_detail", label: "Horaires détail", widget: "string" }
+              - { name: "horaires_note", label: "Horaires note", widget: "string" }
+          - name: "engagement"
+            label: "Encart engagement (bleu)"
+            widget: "object"
+            fields:
+              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "items", label: "Items (4)", widget: "list" }
+          - { name: "footer_form_note", label: "Note bas formulaire", widget: "text" }
+
+      - file: "content/site/honoraires.json"
+        label: "💰 Honoraires"
+        name: "honoraires"
+        format: "json"
+        fields:
+          - { name: "meta_title", label: "Titre SEO", widget: "string" }
+          - { name: "surtitre", label: "Surtitre", widget: "string" }
+          - { name: "titre", label: "Titre H1", widget: "string" }
+          - { name: "intro", label: "Intro", widget: "text" }
+          - name: "tranches"
+            label: "Tranches d'honoraires"
+            widget: "list"
+            fields:
+              - { name: "tranche", label: "Tranche (Jusqu'à...)", widget: "string" }
+              - { name: "pct", label: "Pourcentage", widget: "string" }
+              - { name: "mini", label: "Mention (minimum...)", widget: "string", required: false }
+          - { name: "mention_bas_de_page", label: "Mention bas de page", widget: "text" }
+
+      - file: "content/site/vendre.json"
+        label: "🏷️ Vendre"
+        name: "vendre"
+        format: "json"
+        fields:
+          - { name: "meta_title", label: "Titre SEO", widget: "string" }
+          - { name: "meta_description", label: "Description SEO", widget: "text" }
+          - name: "hero"
+            label: "Hero"
+            widget: "object"
+            fields:
+              - { name: "video", label: "Vidéo de fond", widget: "file" }
+              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "titre", label: "Titre H1", widget: "string" }
+              - { name: "intro", label: "Paragraphe intro", widget: "text" }
+              - { name: "cta_primary_label", label: "Bouton 1 — texte", widget: "string" }
+              - { name: "cta_primary_href", label: "Bouton 1 — lien", widget: "string" }
+              - { name: "cta_secondary_label", label: "Bouton 2 — texte", widget: "string" }
+              - { name: "cta_secondary_url", label: "Bouton 2 — URL (WhatsApp)", widget: "string" }
+              - { name: "mention", label: "Mention rassurance", widget: "string" }
+          - name: "pourquoi_moi"
+            label: "Pourquoi vendre avec moi"
+            widget: "object"
+            fields:
+              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "titre", label: "Titre H2", widget: "string" }
+              - name: "items"
+                label: "Raisons (5)"
+                widget: "list"
+                fields:
+                  - { name: "titre", label: "Titre", widget: "string" }
+                  - { name: "desc", label: "Description", widget: "text" }
+          - name: "comparatif"
+            label: "Comparatif vendre seul / avec moi"
+            widget: "object"
+            fields:
+              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "titre", label: "Titre H2", widget: "string" }
+              - { name: "label_avec", label: "Label colonne 'avec'", widget: "string" }
+              - { name: "label_sans", label: "Label colonne 'sans'", widget: "string" }
+              - name: "items"
+                label: "Lignes du comparatif"
+                widget: "list"
+                fields:
+                  - { name: "avec", label: "Avec moi", widget: "string" }
+                  - { name: "sans", label: "Tout seul", widget: "string" }
+          - name: "etapes"
+            label: "Étapes du processus"
+            widget: "object"
+            fields:
+              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "titre", label: "Titre H2", widget: "string" }
+              - name: "items"
+                label: "Étapes (4)"
+                widget: "list"
+                fields:
+                  - { name: "num", label: "Numéro (01, 02...)", widget: "string" }
+                  - { name: "titre", label: "Titre", widget: "string" }
+                  - { name: "desc", label: "Description", widget: "text" }
+          - name: "romain_card"
+            label: "Carte Romain"
+            widget: "object"
+            fields:
+              - { name: "titre", label: "Titre", widget: "string" }
+              - { name: "message", label: "Message", widget: "text" }
+          - name: "secteurs_section"
+            label: "Section secteurs (avec carte)"
+            widget: "object"
+            fields:
+              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "titre", label: "Titre", widget: "string" }
+              - { name: "intro", label: "Intro", widget: "text" }
+          - name: "zones_section"
+            label: "Section 3 zones"
+            widget: "object"
+            fields:
+              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "titre", label: "Titre", widget: "string" }
+              - name: "zones"
+                label: "Zones (3)"
+                widget: "list"
+                fields:
+                  - { name: "slug", label: "Slug", widget: "string" }
+                  - { name: "titre", label: "Titre", widget: "string" }
+                  - { name: "desc", label: "Description", widget: "text" }
+                  - { name: "image", label: "Image", widget: "image" }
+          - name: "cta_final"
+            label: "CTA bas de page"
+            widget: "object"
+            fields:
+              - { name: "titre", label: "Titre", widget: "string" }
+              - { name: "intro", label: "Intro", widget: "text" }
+              - { name: "cta_primary_label", label: "Bouton 1 — texte", widget: "string" }
+              - { name: "cta_primary_href", label: "Bouton 1 — lien", widget: "string" }
+              - { name: "cta_whatsapp_label", label: "Bouton WhatsApp", widget: "string" }
+              - { name: "cta_whatsapp_url", label: "Bouton WhatsApp URL", widget: "string" }
+
+      - file: "content/site/acheter.json"
+        label: "🔑 Acheter"
+        name: "acheter"
+        format: "json"
+        fields:
+          - { name: "meta_title", label: "Titre SEO", widget: "string" }
+          - { name: "meta_description", label: "Description SEO", widget: "text" }
+          - name: "hero"
+            label: "Hero"
+            widget: "object"
+            fields:
+              - { name: "video", label: "Vidéo de fond", widget: "file" }
+              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "titre", label: "Titre H1", widget: "string" }
+              - { name: "intro", label: "Intro", widget: "text" }
+              - { name: "argument_gold", label: "Argument doré (markdown : **gras**)", widget: "text" }
+              - { name: "presentation", label: "Paragraphe présentation (markdown)", widget: "text" }
+              - { name: "cta_primary_label", label: "Bouton 1 — texte", widget: "string" }
+              - { name: "cta_primary_href", label: "Bouton 1 — lien", widget: "string" }
+              - { name: "cta_secondary_label", label: "Bouton 2 — texte", widget: "string" }
+              - { name: "cta_secondary_url", label: "Bouton 2 — URL", widget: "string" }
+          - name: "piliers"
+            label: "Piliers"
+            widget: "object"
+            fields:
+              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "titre", label: "Titre", widget: "string" }
+              - name: "items"
+                label: "Piliers (4)"
+                widget: "list"
+                fields:
+                  - { name: "titre", label: "Titre", widget: "string" }
+                  - { name: "desc", label: "Description", widget: "text" }
+          - name: "services"
+            label: "Services"
+            widget: "object"
+            fields:
+              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "titre", label: "Titre", widget: "string" }
+              - name: "items"
+                label: "Services (4)"
+                widget: "list"
+                fields:
+                  - { name: "titre", label: "Titre", widget: "string" }
+                  - { name: "desc", label: "Description", widget: "text" }
+          - name: "secteurs_section"
+            label: "Section secteurs"
+            widget: "object"
+            fields:
+              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "titre", label: "Titre", widget: "string" }
+              - { name: "intro", label: "Intro", widget: "text" }
+          - name: "romain_card"
+            label: "Carte Romain"
+            widget: "object"
+            fields:
+              - { name: "titre", label: "Titre", widget: "string" }
+              - { name: "message", label: "Message", widget: "text" }
+          - name: "cta_final"
+            label: "CTA bas de page"
+            widget: "object"
+            fields:
+              - { name: "titre", label: "Titre", widget: "string" }
+              - { name: "intro", label: "Intro", widget: "text" }
+              - { name: "cta_primary_label", label: "Bouton 1", widget: "string" }
+              - { name: "cta_primary_href", label: "Bouton 1 — lien", widget: "string" }
+              - { name: "cta_whatsapp_label", label: "Bouton WhatsApp", widget: "string" }
+              - { name: "cta_whatsapp_url", label: "Bouton WhatsApp URL", widget: "string" }
+
+      - file: "content/site/location.json"
+        label: "🏠 Location"
+        name: "location"
+        format: "json"
+        fields:
+          - { name: "meta_title", label: "Titre SEO", widget: "string" }
+          - { name: "meta_description", label: "Description SEO", widget: "text" }
+          - name: "hero"
+            label: "Hero"
+            widget: "object"
+            fields:
+              - { name: "video", label: "Vidéo de fond", widget: "file" }
+              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "titre", label: "Titre H1", widget: "string" }
+              - { name: "intro1", label: "Paragraphe 1", widget: "text" }
+              - { name: "intro2", label: "Paragraphe 2", widget: "text" }
+              - { name: "cta_primary_label", label: "Bouton 1", widget: "string" }
+              - { name: "cta_primary_href", label: "Bouton 1 — lien", widget: "string" }
+              - { name: "cta_secondary_label", label: "Bouton 2", widget: "string" }
+              - { name: "cta_secondary_url", label: "Bouton 2 URL", widget: "string" }
+              - { name: "mention", label: "Mention", widget: "string" }
+          - name: "pourquoi"
+            label: "Pourquoi me confier votre bien"
+            widget: "object"
+            fields:
+              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "titre", label: "Titre", widget: "string" }
+              - name: "items"
+                label: "Piliers (6)"
+                widget: "list"
+                fields:
+                  - { name: "titre", label: "Titre", widget: "string" }
+                  - { name: "desc", label: "Description", widget: "text" }
+          - name: "services"
+            label: "Services"
+            widget: "object"
+            fields:
+              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "titre", label: "Titre", widget: "string" }
+              - name: "items"
+                label: "Services (4)"
+                widget: "list"
+                fields:
+                  - { name: "titre", label: "Titre", widget: "string" }
+                  - { name: "desc", label: "Description", widget: "text" }
+          - name: "secteurs_section"
+            label: "Section secteurs"
+            widget: "object"
+            fields:
+              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "titre", label: "Titre", widget: "string" }
+              - { name: "intro", label: "Intro", widget: "text" }
+          - name: "romain_card"
+            label: "Carte Romain"
+            widget: "object"
+            fields:
+              - { name: "titre", label: "Titre", widget: "string" }
+              - { name: "message", label: "Message", widget: "text" }
+          - name: "cta_final"
+            label: "CTA bas de page (2 colonnes)"
+            widget: "object"
+            fields:
+              - { name: "locataires_surtitre", label: "Locataires — surtitre", widget: "string" }
+              - { name: "locataires_titre", label: "Locataires — titre", widget: "string" }
+              - { name: "locataires_desc", label: "Locataires — desc", widget: "text" }
+              - { name: "locataires_cta_label", label: "Locataires — CTA", widget: "string" }
+              - { name: "locataires_cta_href", label: "Locataires — CTA lien", widget: "string" }
+              - { name: "question_surtitre", label: "Question — surtitre", widget: "string" }
+              - { name: "question_titre", label: "Question — titre", widget: "string" }
+              - { name: "question_desc", label: "Question — desc", widget: "text" }
+
+      - file: "content/site/avis-de-valeur.json"
+        label: "📊 Avis de valeur"
+        name: "avis-de-valeur"
+        format: "json"
+        fields:
+          - { name: "meta_title", label: "Titre SEO", widget: "string" }
+          - { name: "meta_description", label: "Description SEO", widget: "text" }
+          - name: "hero"
+            label: "Hero"
+            widget: "object"
+            fields:
+              - { name: "video", label: "Vidéo de fond", widget: "file" }
+              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "titre", label: "Titre H1", widget: "string" }
+              - { name: "intro1", label: "Paragraphe 1", widget: "text" }
+              - { name: "intro2", label: "Paragraphe 2", widget: "text" }
+              - { name: "cta_primary_label", label: "Bouton 1 — texte", widget: "string" }
+              - { name: "cta_secondary_label", label: "Bouton WhatsApp", widget: "string" }
+              - { name: "cta_secondary_url", label: "Bouton WhatsApp URL", widget: "string" }
+              - { name: "mention", label: "Mention", widget: "string" }
+          - name: "forces"
+            label: "Forces (3)"
+            widget: "object"
+            fields:
+              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "titre", label: "Titre", widget: "string" }
+              - name: "items"
+                label: "Forces (3)"
+                widget: "list"
+                fields:
+                  - { name: "titre", label: "Titre", widget: "string" }
+                  - { name: "desc", label: "Description", widget: "text" }
+          - name: "etapes"
+            label: "Étapes (4)"
+            widget: "object"
+            fields:
+              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "titre", label: "Titre", widget: "string" }
+              - name: "items"
+                label: "Étapes (4)"
+                widget: "list"
+                fields:
+                  - { name: "num", label: "Numéro", widget: "string" }
+                  - { name: "titre", label: "Titre", widget: "string" }
+                  - { name: "desc", label: "Description", widget: "text" }
+          - name: "romain_card"
+            label: "Carte Romain"
+            widget: "object"
+            fields:
+              - { name: "titre", label: "Titre", widget: "string" }
+              - { name: "message", label: "Message", widget: "text" }
+          - name: "cta_final"
+            label: "CTA"
+            widget: "object"
+            fields:
+              - { name: "titre", label: "Titre", widget: "string" }
+              - { name: "intro", label: "Intro", widget: "text" }
+              - { name: "cta_label", label: "Bouton", widget: "string" }
+          - name: "wizard_merci"
+            label: "Page de remerciement après wizard"
+            widget: "object"
+            fields:
+              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "titre_prefix", label: "Préfixe titre (Merci)", widget: "string" }
+              - { name: "intro", label: "Intro", widget: "text" }
+              - { name: "cta_label", label: "Bouton", widget: "string" }
+              - { name: "cta_href", label: "Bouton lien", widget: "string" }
+
+      - file: "content/site/rejoindre.json"
+        label: "🤝 Rejoindre"
+        name: "rejoindre"
+        format: "json"
+        fields:
+          - { name: "meta_title", label: "Titre SEO", widget: "string" }
+          - { name: "meta_description", label: "Description SEO", widget: "text" }
+          - name: "hero"
+            label: "Hero"
+            widget: "object"
+            fields:
+              - { name: "video", label: "Vidéo de fond", widget: "file" }
+              - { name: "logo_iad", label: "Logo iad", widget: "image" }
+              - { name: "logo_alt", label: "Logo alt", widget: "string" }
+              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "titre", label: "Titre H1", widget: "string" }
+              - { name: "intro", label: "Intro (markdown)", widget: "text" }
+              - { name: "cta_primary_label", label: "Bouton 1", widget: "string" }
+              - { name: "cta_primary_href", label: "Bouton 1 lien", widget: "string" }
+              - { name: "cta_whatsapp_label", label: "Bouton WhatsApp", widget: "string" }
+              - { name: "cta_whatsapp_url", label: "Bouton WhatsApp URL", widget: "string" }
+              - name: "stats"
+                label: "Stats (4)"
+                widget: "list"
+                fields:
+                  - { name: "valeur", label: "Valeur", widget: "string" }
+                  - { name: "label", label: "Label", widget: "string" }
+          - name: "piliers"
+            label: "Piliers (6)"
+            widget: "object"
+            fields:
+              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "titre", label: "Titre", widget: "string" }
+              - name: "items"
+                label: "Piliers (6)"
+                widget: "list"
+                fields:
+                  - { name: "titre", label: "Titre", widget: "string" }
+                  - { name: "desc", label: "Description", widget: "text" }
+              - { name: "source", label: "Source / mention légale", widget: "text" }
+          - name: "profils"
+            label: "Profils (4)"
+            widget: "object"
+            fields:
+              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "titre", label: "Titre", widget: "string" }
+              - name: "items"
+                label: "Profils (4)"
+                widget: "list"
+                fields:
+                  - { name: "titre", label: "Titre", widget: "string" }
+                  - { name: "desc", label: "Description", widget: "text" }
+          - name: "qui_suis_je"
+            label: "Qui suis-je"
+            widget: "object"
+            fields:
+              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "titre", label: "Titre", widget: "string" }
+              - { name: "paragraphes", label: "Paragraphes (markdown)", widget: "list", field: { name: "p", label: "Paragraphe", widget: "text" } }
+              - { name: "photo", label: "Photo", widget: "image" }
+              - { name: "photo_alt", label: "Photo alt", widget: "string" }
+              - { name: "citation", label: "Citation", widget: "string" }
+              - { name: "citation_auteur", label: "Citation auteur", widget: "string" }
+          - name: "parcours"
+            label: "Parcours (5 étapes)"
+            widget: "object"
+            fields:
+              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "titre", label: "Titre", widget: "string" }
+              - name: "etapes"
+                label: "Étapes (5)"
+                widget: "list"
+                fields:
+                  - { name: "num", label: "Numéro", widget: "string" }
+                  - { name: "titre", label: "Titre", widget: "string" }
+                  - { name: "desc", label: "Description", widget: "text" }
+          - name: "offre"
+            label: "Offre Starter +"
+            widget: "object"
+            fields:
+              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "titre", label: "Titre offre", widget: "string" }
+              - { name: "prix", label: "Prix", widget: "string" }
+              - { name: "desc", label: "Description", widget: "text" }
+              - { name: "mention", label: "Mention légale", widget: "text" }
+          - name: "cta_final"
+            label: "CTA bas de page"
+            widget: "object"
+            fields:
+              - { name: "titre", label: "Titre", widget: "string" }
+              - { name: "intro", label: "Intro", widget: "text" }
+              - { name: "cta_primary_label", label: "Bouton 1", widget: "string" }
+              - { name: "cta_primary_href", label: "Bouton 1 lien", widget: "string" }
+              - { name: "cta_secondary_label", label: "Bouton 2 (téléphone)", widget: "string" }
+              - { name: "cta_secondary_href", label: "Bouton 2 lien (tel:...)", widget: "string" }
+
+      - file: "content/site/outils-landing.json"
+        label: "🛠️ Page Outils (intro)"
+        name: "outils-landing"
+        format: "json"
+        fields:
+          - { name: "meta_title", label: "Titre SEO", widget: "string" }
+          - { name: "meta_description", label: "Description SEO", widget: "text" }
+          - { name: "surtitre", label: "Surtitre", widget: "string" }
+          - { name: "titre", label: "Titre H1", widget: "string" }
+          - { name: "intro", label: "Intro", widget: "text" }
+          - { name: "disclaimer", label: "Disclaimer (italique)", widget: "text" }
+          - { name: "cta_titre", label: "CTA — titre", widget: "string" }
+          - { name: "cta_intro", label: "CTA — intro", widget: "text" }
+          - { name: "cta_label", label: "CTA — bouton", widget: "string" }
+          - { name: "cta_href", label: "CTA — lien", widget: "string" }
+
+      - file: "content/site/secteurs-landing.json"
+        label: "🗺️ Page Secteurs (intro)"
+        name: "secteurs-landing"
+        format: "json"
+        fields:
+          - { name: "meta_title", label: "Titre SEO", widget: "string" }
+          - { name: "meta_description", label: "Description SEO", widget: "text" }
+          - { name: "surtitre", label: "Surtitre", widget: "string" }
+          - { name: "titre", label: "Titre H1", widget: "string" }
+          - { name: "intro", label: "Intro", widget: "text" }
+
+      - file: "content/site/merci.json"
+        label: "🙏 Page Merci"
+        name: "merci"
+        format: "json"
+        fields:
+          - { name: "meta_title", label: "Titre SEO", widget: "string" }
+          - { name: "surtitre", label: "Surtitre", widget: "string" }
+          - { name: "titre", label: "Titre", widget: "string" }
+          - { name: "intro", label: "Intro", widget: "text" }
+          - { name: "cta_label", label: "Bouton", widget: "string" }
+          - { name: "cta_href", label: "Bouton lien", widget: "string" }
+
+      - file: "content/site/not-found.json"
+        label: "❌ Page 404"
+        name: "not-found"
+        format: "json"
+        fields:
+          - { name: "surtitre", label: "Surtitre", widget: "string" }
+          - { name: "code", label: "Code 404", widget: "string" }
+          - { name: "titre", label: "Titre", widget: "string" }
+          - { name: "intro", label: "Intro", widget: "text" }
+          - { name: "cta_primary_label", label: "Bouton 1", widget: "string" }
+          - { name: "cta_primary_href", label: "Bouton 1 lien", widget: "string" }
+          - { name: "cta_secondary_label", label: "Bouton 2", widget: "string" }
+          - { name: "cta_secondary_url", label: "Bouton 2 URL", widget: "string" }
+
+      - file: "content/site/mentions-legales.md"
+        label: "⚖️ Mentions légales"
+        name: "mentions-legales"
+        fields:
+          - { name: "meta_title", label: "Titre SEO", widget: "string" }
+          - { name: "titre", label: "Titre H1", widget: "string" }
+          - { name: "body", label: "Contenu (markdown libre)", widget: "markdown" }
+
+      - file: "content/site/confidentialite.md"
+        label: "🔒 Politique de confidentialité"
+        name: "confidentialite"
+        fields:
+          - { name: "meta_title", label: "Titre SEO", widget: "string" }
+          - { name: "titre", label: "Titre H1", widget: "string" }
+          - { name: "date_maj", label: "Date de mise à jour", widget: "string" }
+          - { name: "body", label: "Contenu (markdown libre)", widget: "markdown" }
 
   - name: "config"
     label: "Réglages globaux"

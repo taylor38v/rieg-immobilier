@@ -1,25 +1,3 @@
-// Biens : exposés depuis le CMS (content/biens/*.md, généré dans _generated/biens.ts)
-export { biens, type Bien } from "./_generated/biens";
-import type { Bien } from "./_generated/biens";
-
-export type QA = { keywords: string[]; answer: string };
-
-// Génère un FAQ standard à partir des champs CMS du bien.
-// Les champs chauffage / travaux / ecoles / taxe_fonciere sont éditables dans Decap.
-export const qaCommun = (bien: Bien): QA[] => [
-  { keywords: ["chaudière", "chauffage", "pompe à chaleur", "pac"], answer: bien.chauffage || "Information disponible sur demande." },
-  { keywords: ["taxe foncière", "taxe", "fonciere", "impôt"], answer: bien.taxe_fonciere ? `La taxe foncière s'élève à environ ${bien.taxe_fonciere.toLocaleString("fr-FR")} € par an (avis 2025).` : "Informations fiscales disponibles sur demande." },
-  { keywords: ["travaux", "rénovation", "renovation", "neuf"], answer: bien.travaux || "État communiqué sur demande." },
-  { keywords: ["école", "ecole", "scolaire", "collège", "lycée"], answer: bien.ecoles || "Informations scolaires sur demande." },
-  { keywords: ["dpe", "diagnostic", "performance énergétique", "energie"], answer: "Le DPE complet (datant de moins de 6 mois) est disponible sur simple demande, ainsi que l'ensemble des diagnostics obligatoires (amiante, plomb, électricité, gaz, ERP)." },
-  { keywords: ["voisinage", "voisin", "quartier", "calme", "bruit"], answer: `Quartier résidentiel calme à ${bien.ville}, voisinage majoritairement composé de propriétaires occupants. Aucune nuisance signalée par les vendeurs.` },
-  { keywords: ["visite", "rdv", "rendez-vous", "voir"], answer: "Les visites se font sur rendez-vous qualifié, du lundi au samedi entre 9h et 19h. Romain vous accompagne personnellement, comptez environ 45 minutes." },
-  { keywords: ["négocier", "negocier", "négociation", "prix"], answer: "Le prix affiché correspond à l'estimation argumentée du bien. Toute offre est étudiée — Romain reviendra vers vous sous 24h avec la position des vendeurs." },
-  { keywords: ["disponible", "disponibilité", "libre", "occupé"], answer: "Le bien est libre à la vente sous 3 mois après signature de l'acte authentique." },
-  { keywords: ["financement", "prêt", "crédit", "banque"], answer: "Romain travaille avec deux courtiers partenaires de confiance. Mise en relation possible dès le premier rendez-vous, gratuite et sans engagement." },
-  { keywords: ["copropriété", "copro", "syndic"], answer: "Copropriété de standing bien gérée, sans procédure en cours. Les procès-verbaux des 3 dernières AG sont disponibles à la consultation." },
-];
-
 export type Secteur = {
   slug: string;
   nom: string;

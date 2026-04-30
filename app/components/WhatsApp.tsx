@@ -1,8 +1,10 @@
 "use client";
 import { useState, useEffect } from "react";
+import { settings } from "../lib/_generated/settings";
 
 export default function WhatsApp() {
   const [open, setOpen] = useState(false);
+  const wa = settings.whatsapp.replace(/\D/g, "");
 
   useEffect(() => {
     if (!open) return;
@@ -35,25 +37,23 @@ export default function WhatsApp() {
             <div className="relative bg-navy text-ivory px-6 pt-6 pb-5">
               <button onClick={() => setOpen(false)} aria-label="Fermer" className="absolute top-3 right-4 text-ivory/70 hover:text-gold text-2xl leading-none">×</button>
               <div className="flex items-center gap-4">
-                <img src="/photos/romain-pro.jpg" alt="Romain Rieg" className="w-20 h-20 rounded-full object-cover border-2 border-gold shrink-0" />
+                <img src="/photos/romain-pro.jpg" alt={settings.nom} className="w-20 h-20 rounded-full object-cover border-2 border-gold shrink-0" />
                 <div>
                   <div className="text-[10px] uppercase tracking-[0.3em] text-gold flex items-center gap-2">
                     <span className="w-2 h-2 bg-[#25D366] rounded-full animate-pulse" /> En ligne
                   </div>
-                  <div className="font-serif text-2xl text-ivory mt-1">Romain Rieg</div>
-                  <div className="text-xs text-ivory/70">Conseiller immobilier iad</div>
+                  <div className="font-serif text-2xl text-ivory mt-1">{settings.nom}</div>
+                  <div className="text-xs text-ivory/70">{settings.titre}</div>
                 </div>
               </div>
             </div>
 
             <div className="px-6 py-5">
-              <p className="text-sm text-ink/85 leading-relaxed italic">
-                "Passionné d'immobilier et originaire de la Loire, je suis aujourd'hui ancré au cœur des Monts d'Or. Mon objectif : un accompagnement humain, transparent et ultra-réactif."
-              </p>
+              <p className="text-sm text-ink/85 leading-relaxed italic">"{settings.bio_courte}"</p>
 
               <div className="mt-5 space-y-2">
                 <a
-                  href="https://wa.me/33679571473?text=Bonjour%20Romain%20!"
+                  href={`https://wa.me/${wa}?text=Bonjour%20${encodeURIComponent(settings.nom.split(" ")[0])}%20!`}
                   target="_blank"
                   rel="noopener"
                   className="flex items-center justify-between gap-3 px-4 py-3.5 bg-[#25D366] text-white hover:bg-[#20bd5a] transition rounded"
@@ -66,12 +66,12 @@ export default function WhatsApp() {
                 </a>
 
                 <a
-                  href="tel:+33679571473"
+                  href={`tel:${settings.telephone_lien}`}
                   className="flex items-center justify-between gap-3 px-4 py-3.5 bg-navy text-ivory hover:bg-gold hover:text-navy transition rounded"
                 >
                   <span className="flex items-center gap-3">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                    <span className="font-medium text-sm">06 79 57 14 73</span>
+                    <span className="font-medium text-sm">{settings.telephone}</span>
                   </span>
                   <span className="opacity-70">→</span>
                 </a>

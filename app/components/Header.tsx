@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
+import { settings } from "../lib/_generated/settings";
 
 const nav = [
   { href: "/rejoindre", label: "Rejoindre l'équipe", emphase: true },
@@ -26,9 +27,9 @@ export default function Header() {
               <span className="text-gold transition-transform group-hover:translate-x-0.5">→</span>
             </Link>
           </div>
-          <a href="tel:+33679571473" className="text-ivory/85 hover:text-gold transition flex items-center gap-2">
+          <a href={`tel:${settings.telephone_lien}`} className="text-ivory/85 hover:text-gold transition flex items-center gap-2">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            06 79 57 14 73
+            {settings.telephone}
           </a>
         </div>
       </div>
@@ -38,7 +39,7 @@ export default function Header() {
           <Link href="/" className="flex items-center gap-3 shrink-0 min-w-0">
             <img src="/photos/IAD_LOGO_FINAL-removebg-preview.png" alt="iad Prestige Immobilier" className="h-9 lg:h-11 w-auto" />
             <div className="hidden 2xl:block h-10 w-px bg-ink/15" />
-            <span className="hidden 2xl:block font-serif text-2xl text-navy whitespace-nowrap">Romain Rieg</span>
+            <span className="hidden 2xl:block font-serif text-2xl text-navy whitespace-nowrap">{settings.nom}</span>
           </Link>
           <nav className="hidden lg:flex items-center gap-4 xl:gap-5 text-[14px] xl:text-[15px]">
             {nav.map((n) => (
@@ -67,7 +68,7 @@ export default function Header() {
               {nav.map((n) => (
                 <Link key={n.href} href={n.href} onClick={() => setOpen(false)} className={`py-1 text-base ${n.emphase ? "text-navy font-semibold" : "text-ink/80"}`}>{n.label}</Link>
               ))}
-              <a href="tel:+33679571473" className="py-1 text-navy text-base">06 79 57 14 73</a>
+              <a href={`tel:${settings.telephone_lien}`} className="py-1 text-navy text-base">{settings.telephone}</a>
               <Link href="/contact" onClick={() => setOpen(false)} className="mt-2 px-5 py-3 bg-navy text-ivory text-center text-sm rounded-full">Contactez-moi</Link>
             </div>
           </div>

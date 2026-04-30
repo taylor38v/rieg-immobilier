@@ -1,0 +1,57 @@
+{
+  "meta_title": "Location & gestion locative",
+  "meta_description": "Mise en location et gestion locative sécurisées sur le Mont d'Or, l'Ouest lyonnais et la Plaine du Forez. Locataires sélectionnés, revenus sécurisés, zéro vacance grâce au réseau iad.",
+  "hero": {
+    "video": "/videos/secteurs/champagne.mp4",
+    "surtitre": "Location · Gestion locative",
+    "titre": "Louez votre bien en toute sérénité.",
+    "intro1": "Vous souhaitez mettre en location votre maison ou appartement rapidement et sans stress ? Je suis Romain Rieg, mandataire immobilier du réseau iad France, et je mets mon expertise locale au service des propriétaires pour sécuriser vos revenus et trouver le locataire idéal.",
+    "intro2": "Originaire de la Loire et résident des Monts d'Or, je combine connaissance du territoire et outils marketing premium pour sélectionner des locataires solvables, rédiger vos baux et gérer toute la partie administrative, et optimiser la rentabilité de votre bien.",
+    "cta_primary_label": "Étude personnalisée gratuite",
+    "cta_primary_href": "/contact",
+    "cta_secondary_label": "💬 WhatsApp",
+    "cta_secondary_url": "https://wa.me/33679571473?text=Bonjour%20Romain%2C%20je%20souhaite%20mettre%20mon%20bien%20en%20location.",
+    "mention": "Confidentiel · sans engagement"
+  },
+  "pourquoi": {
+    "surtitre": "Pourquoi me confier votre bien",
+    "titre": "Six piliers qui sécurisent vos revenus.",
+    "items": [
+      { "titre": "Expertise locale", "desc": "Je connais le marché locatif de chaque commune pour proposer un loyer au juste prix et attirer des locataires sérieux." },
+      { "titre": "Sécurité & sélection rigoureuse", "desc": "Vérification de la solvabilité et du profil de chaque locataire avant signature." },
+      { "titre": "Zéro vacance locative", "desc": "Grâce à la force de frappe d'iad, je trouve votre futur locataire avant même le départ du précédent." },
+      { "titre": "Gain de temps", "desc": "Je prends en charge toutes les démarches administratives, de la rédaction du bail à l'état des lieux." },
+      { "titre": "Visibilité maximale", "desc": "Diffusion sur tous les portails principaux et auprès du réseau iad (+15 000 conseillers)." },
+      { "titre": "Outils premium", "desc": "Mise en valeur professionnelle avec photos UltraHD pour que votre annonce sorte du lot." }
+    ]
+  },
+  "services": {
+    "surtitre": "Mes services pour la location",
+    "titre": "Quatre piliers, zéro corvée.",
+    "items": [
+      { "titre": "Recherche de locataires qualifiés", "desc": "Annonce optimisée pour attirer des profils sérieux. Accès aux candidats du réseau iad." },
+      { "titre": "Rédaction & suivi administratif", "desc": "Baux conformes à la législation. Gestion des documents, dépôt de garantie, états des lieux." },
+      { "titre": "Gestion complète ou partielle", "desc": "Possibilité de gérer de A à Z ou partiellement. Option loyers impayés disponible." },
+      { "titre": "Mise en valeur & visibilité", "desc": "Photos professionnelles. Publication sur +100 portails et réseau iad." }
+    ]
+  },
+  "secteurs_section": {
+    "surtitre": "Mes secteurs",
+    "titre": "Les communes où je gère vos locations.",
+    "intro": "Cliquez sur une commune pour découvrir le marché local — démographie, écoles, prix au m², quartiers détaillés."
+  },
+  "romain_card": {
+    "titre": "Vos revenus locatifs, sécurisés.",
+    "message": "Je sélectionne rigoureusement chaque locataire (solvabilité, profil), je rédige les baux conformes, et je m'occupe de tout l'administratif. Vous touchez votre loyer, je gère le reste."
+  },
+  "cta_final": {
+    "locataires_surtitre": "Pour les locataires aussi",
+    "locataires_titre": "Vous cherchez à louer ?",
+    "locataires_desc": "Inscrivez-vous à mes alertes biens à louer — vous serez notifié dès qu'un bien correspondant à vos critères est disponible.",
+    "locataires_cta_label": "Recevoir les alertes",
+    "locataires_cta_href": "/contact",
+    "question_surtitre": "Une question rapide ?",
+    "question_titre": "Je réponds directement.",
+    "question_desc": "Sans intermédiaire, sans standard. Téléphone ou WhatsApp, vous choisissez."
+  }
+}

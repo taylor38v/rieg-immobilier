@@ -1,0 +1,49 @@
+{
+  "meta_title": "Contact",
+  "meta_description": "Démarrez votre projet en 30 secondes — qualification intelligente, réponse personnelle de Romain Rieg sous 24 h.",
+  "hero": {
+    "surtitre": "Contact",
+    "titre": "Dites-moi tout en 30 secondes.",
+    "intro": "Quelques clics pour qualifier votre besoin — je reviens vers vous avec une réponse précise, jamais générique.",
+    "garanties": [
+      "Réponse personnelle sous 24 h",
+      "Aucune sollicitation commerciale",
+      "Données 100% confidentielles"
+    ]
+  },
+  "calendrier": {
+    "surtitre": "Le plus rapide",
+    "titre": "Réservez un créneau en ligne.",
+    "intro": "30 minutes en visio ou par téléphone — pour qualifier votre projet, répondre à vos questions et voir si on peut travailler ensemble.",
+    "puces": [
+      "Pas d'inscription, pas de spam",
+      "Annulation / report en un clic",
+      "Rappel automatique avant le rendez-vous"
+    ],
+    "cal_url": "https://cal.com/romain-rieg-ckdm4p/30min",
+    "cta_label": "Ouvrir le calendrier ↗"
+  },
+  "sidebar": {
+    "surtitre": "Vous préférez direct ?",
+    "titre": "Trois canaux, vous choisissez.",
+    "telephone": "06 79 57 14 73",
+    "telephone_lien": "+33679571473",
+    "whatsapp_label": "Démarrer un chat",
+    "whatsapp_url": "https://wa.me/33679571473",
+    "calcom_label": "Réserver 30 minutes",
+    "email": "romain.rieg@iadfrance.fr",
+    "horaires_titre": "Du lundi au samedi",
+    "horaires_detail": "8h30 — 20h",
+    "horaires_note": "Rendez-vous en soirée possibles sur demande."
+  },
+  "engagement": {
+    "surtitre": "L'engagement",
+    "items": [
+      "Réponse personnelle de Romain (jamais d'assistant)",
+      "Sous 24 h en semaine, 4 h si urgent",
+      "Aucun ajout à une liste de prospection automatique",
+      "Données strictement confidentielles, jamais revendues"
+    ]
+  },
+  "footer_form_note": "Pour gagner du temps — le vôtre comme le mien. En 30 secondes, je sais déjà ce qui va vous être utile et je peux préparer une réponse vraiment ciblée. C'est plus efficace qu'un formulaire générique « nom / email / message »."
+}

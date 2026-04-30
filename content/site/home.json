@@ -1,0 +1,95 @@
+{
+  "hero": {
+    "video": "/videos/secteurs/saint-cyr.mp4",
+    "chip": "Saint-Didier · Ouest lyonnais · Plaine du Forez",
+    "titre": "Votre conseiller immobilier du réseau iad.",
+    "intro": "Vous souhaitez vendre, acheter ou louer un bien à Saint-Didier-au-Mont-d'Or, dans l'Ouest lyonnais ou dans la Plaine du Forez ? Je vous accompagne dans toutes les étapes de votre projet immobilier avec réactivité, expertise locale et suivi personnalisé.",
+    "cta_primary_label": "Avis de valeur gratuit · 24-48 h",
+    "cta_primary_href": "/avis-de-valeur",
+    "cta_secondary_label": "Rejoindre mon équipe",
+    "cta_secondary_href": "/rejoindre",
+    "mention": "Zéro engagement · 100% confidentiel",
+    "stats": [
+      { "valeur": "50 776", "label": "Ventes iad 2024" },
+      { "valeur": "+18 000", "label": "Conseillers iad" },
+      { "valeur": "24-48 h", "label": "Délai d'avis de valeur" },
+      { "valeur": "7", "label": "Communes principales" }
+    ]
+  },
+  "biens_iad": {
+    "surtitre": "Mes biens à la vente",
+    "titre": "Retrouvez l'ensemble de mes mandats sur mon mini-site iad officiel.",
+    "desc": "Annonces actualisées en temps réel, fiches complètes, prise de RDV en ligne.",
+    "cta_label": "Voir mes biens iad ↗",
+    "cta_url": "https://www.iadfrance.fr/conseiller-immobilier/romain.rieg"
+  },
+  "qui_suis_je": {
+    "surtitre": "Qui suis-je",
+    "titre": "Passionné d'immobilier, ancré dans les Monts d'Or.",
+    "paragraphes": [
+      "Je m'appelle Romain Rieg, j'ai 28 ans et je suis passionné par l'immobilier. Après une reconversion professionnelle, j'ai choisi de devenir conseiller immobilier indépendant afin d'accompagner mes clients à ma manière : avec **transparence, engagement et conseils personnalisés**.",
+      "Membre du réseau iad France, j'utilise les outils technologiques les plus performants, couplés à une stratégie digitale moderne (réseaux sociaux, vidéos) pour assurer la meilleure diffusion de votre bien.",
+      "_Originaire de la Loire (j'y ai vécu 20 ans), je suis aujourd'hui ancré au cœur des Monts d'Or. Mon objectif : allier la puissance technologique du réseau iad à un accompagnement humain, transparent et ultra-réactif._"
+    ],
+    "photo": "/photos/IMG_6487_SnapseedCopy-1536x2048.jpg",
+    "photo_alt": "Romain Rieg, conseiller iad",
+    "citation": "Mon énergie au service de votre projet.",
+    "citation_auteur": "Romain Rieg · Conseiller immobilier iad",
+    "cta_primary_label": "Me rencontrer",
+    "cta_primary_href": "/contact",
+    "cta_secondary_label": "💬 WhatsApp",
+    "cta_secondary_href": "https://wa.me/33679571473"
+  },
+  "services": {
+    "surtitre": "Mes services sur-mesure",
+    "titre": "Quatre métiers, une exigence.",
+    "items": [
+      { "titre": "Avis de valeur · 24-48 h", "desc": "Recevez un avis de valeur fiable et personnalisé, sans engagement.", "href": "/avis-de-valeur" },
+      { "titre": "Vente immobilière", "desc": "Je vous accompagne de A à Z pour vendre votre maison ou appartement.", "href": "/vendre" },
+      { "titre": "Achat / Investissement", "desc": "Pour votre résidence principale, investissement locatif ou achat dans le neuf.", "href": "/acheter" },
+      { "titre": "Location & gestion locative", "desc": "Simplifiez la mise en location de votre bien, locataires sélectionnés.", "href": "/location" }
+    ]
+  },
+  "secteurs": {
+    "surtitre": "Mes secteurs d'intervention",
+    "titre": "Une présence locale, un suivi personnalisé.",
+    "intro": "Chaque commune bénéficie d'un suivi personnalisé, avec une stratégie adaptée à son marché et un avis de valeur fiable sous 24-48 h.",
+    "zones": [
+      { "slug": "ouest-lyonnais", "titre": "Ouest lyonnais", "desc": "Mon cœur d'activité. Écully · Dardilly · Limonest · Champagne · Saint-Cyr + toutes les communes limitrophes.", "badge": "Cœur d'activité", "image": "/photos/IMG_7282.jpeg" },
+      { "slug": "saint-didier", "titre": "Saint-Didier-au-Mont-d'Or", "desc": "Ma commune de résidence — présence quotidienne sur le terrain et expertise fine.", "badge": "Mon village", "image": "/photos/Ville-de-saint-didier-au-mont-d-or_1920.jpg" },
+      { "slug": "plaine-du-forez", "titre": "Plaine du Forez", "desc": "Saint-Just-Saint-Rambert prioritaire (j'y ai vécu 20 ans) + Andrézieux-Bouthéon et limitrophes.", "badge": "Mes secteurs d'enfance", "image": "/photos/IMG_7295.jpeg" }
+    ]
+  },
+  "instagram": {
+    "surtitre": "À voir",
+    "titre": "Mes coulisses sur Instagram.",
+    "intro": "Visites, conseils, anecdotes du métier — pour suivre mon quotidien de conseiller immobilier sur le Mont d'Or.",
+    "lien": "https://instagram.com/romain.rieg.immobilier",
+    "videos": [
+      { "titre": "Visite d'une bastide à Limonest", "duree": "1:20", "thumb": "/photos/IMG_6971.jpeg", "url": "" },
+      { "titre": "Le marché du Mont d'Or T1 2026", "duree": "0:45", "thumb": "/photos/IMG_7295.jpeg", "url": "" },
+      { "titre": "Pourquoi j'ai choisi iad", "duree": "1:55", "thumb": "/photos/romain-pro.jpg", "url": "" }
+    ],
+    "cta_label": "Voir tous mes contenus Instagram →"
+  },
+  "avis": {
+    "note_chiffre": "4,9/5",
+    "surtitre": "Avis Google · clients accompagnés",
+    "titre": "Des transactions racontées par celles et ceux qui les ont vécues.",
+    "items": [
+      { "nom": "Famille A. — Saint-Didier", "contexte": "Vendeurs · Maison familiale 180 m²", "texte": "On a accepté de signer un mandat exclusif après avoir vu trois autres agences. Romain a été le seul à venir avec un dossier comparatif chiffré et à nous expliquer où se positionner. Compromis signé 5 semaines plus tard, au prix demandé." },
+      { "nom": "Caroline D. — Écully", "contexte": "Acquéreuse · Appartement standing", "texte": "Je cherchais depuis 14 mois sans trouver. Romain m'a appelée pour un bien off-market avant publication. Visite le samedi, offre le lundi, signature 3 mois après. Je n'aurais jamais eu accès à ce bien autrement." },
+      { "nom": "M. & Mme B. — Dardilly", "contexte": "Vendeurs · Villa avec piscine", "texte": "Notre crainte : vendre la maison familiale après 28 ans. Romain a pris le temps, sans jamais nous brusquer. C'est un métier de sensibilité autant que de chiffres." }
+    ],
+    "cta_label": "Lire tous les avis Google →",
+    "cta_url": "https://www.google.com/search?sa=X&sca_esv=f27198b4d2287e35&hl=fr-FR&q=Romain+RIEG+Immobilier+iad+France+Avis&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxI2NDY3M7M0MjI0NbA0MrA0Mzcy3sDI-IpRLSg_NzEzTyHI09VdwTM3Nz8pMycztUghMzFFwa0oMS85VcGxLLN4ESuRCgG1w3wYbAAAAA&rldimm=1376692215092096723&tbm=lcl#lkt=LocalPoiReviews"
+  },
+  "cta_final": {
+    "titre": "Parlons de votre projet.",
+    "intro": "Vendre, acheter, louer, ou rejoindre l'équipe iad : un seul interlocuteur, à votre rythme.",
+    "cta_primary_label": "Contactez-moi",
+    "cta_primary_href": "/contact",
+    "cta_secondary_label": "06 79 57 14 73",
+    "cta_secondary_href": "tel:+33679571473"
+  }
+}

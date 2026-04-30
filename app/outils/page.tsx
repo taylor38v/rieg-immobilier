@@ -1,9 +1,12 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { site } from "../lib/_generated/site";
+
+const ol = site["outils-landing"];
 
 export const metadata: Metadata = {
-  title: "Outils",
-  description: "Calculateurs, simulateurs et carte interactive pour préparer votre projet immobilier sur le Mont d'Or et l'Ouest lyonnais.",
+  title: ol.meta_title,
+  description: ol.meta_description,
 };
 
 type Outil = { href: string; chiffre: string; sub: string; titre: string; desc: string };
@@ -43,14 +46,10 @@ export default function Page() {
   return (
     <div className="max-w-7xl mx-auto px-6 py-16 md:py-24">
       <div className="max-w-3xl">
-        <div className="text-xs uppercase tracking-[0.3em] text-gold">Boîte à outils</div>
-        <h1 className="font-serif text-5xl md:text-6xl mt-3">Huit outils, zéro promesse vide.</h1>
-        <p className="text-muted mt-6 leading-relaxed">
-          Le marché du Mont d'Or se décide sur des chiffres précis. J'ai construit ces outils pour vous donner les mêmes données que celles que j'utilise au quotidien — gratuitement, sans inscription.
-        </p>
-        <p className="text-xs text-muted mt-4 italic">
-          Les outils sont fournis à titre indicatif et ne se substituent pas à une analyse personnalisée. Pour toute décision engageante (vente, achat, fiscalité), un échange avec Romain est recommandé.
-        </p>
+        <div className="text-xs uppercase tracking-[0.3em] text-gold">{ol.surtitre}</div>
+        <h1 className="font-serif text-5xl md:text-6xl mt-3">{ol.titre}</h1>
+        <p className="text-muted mt-6 leading-relaxed">{ol.intro}</p>
+        <p className="text-xs text-muted mt-4 italic">{ol.disclaimer}</p>
       </div>
 
       {groupes.map((g) => (
@@ -79,9 +78,9 @@ export default function Page() {
       ))}
 
       <div className="bg-navy text-ivory p-10 mt-20 text-center">
-        <h3 className="font-serif text-3xl">Vous préférez parler à un humain ?</h3>
-        <p className="text-ivory/70 mt-3">Tous ces outils sont là pour préparer votre rendez-vous avec Romain — pas pour le remplacer.</p>
-        <Link href="/contact" className="inline-block mt-6 px-7 py-4 bg-gold text-navy hover:bg-gold-soft">Contactez-moi</Link>
+        <h3 className="font-serif text-3xl">{ol.cta_titre}</h3>
+        <p className="text-ivory/70 mt-3">{ol.cta_intro}</p>
+        <Link href={ol.cta_href} className="inline-block mt-6 px-7 py-4 bg-gold text-navy hover:bg-gold-soft">{ol.cta_label}</Link>
       </div>
     </div>
   );

@@ -1,13 +1,13 @@
 import Link from "next/link";
 import { zones } from "../lib/territoire";
+import { settings } from "../lib/_generated/settings";
 
 const IAD_MINISITE = "https://www.iadfrance.fr/conseiller-immobilier/romain.rieg";
 
 const SOCIALS = [
-  { label: "IG", href: "https://www.instagram.com/romainrieg.immo/" },
-  { label: "in", href: "https://www.linkedin.com/in/romain-rieg-17107/" },
-  { label: "Fb", href: "https://www.facebook.com/profile.php?id=61588451302644" },
-  { label: "Tk", href: "https://www.tiktok.com/@romainrieg.immo" },
+  ...(settings.instagram ? [{ label: "IG", href: settings.instagram }] : []),
+  ...(settings.linkedin ? [{ label: "in", href: settings.linkedin }] : []),
+  ...(settings.facebook ? [{ label: "Fb", href: settings.facebook }] : []),
 ];
 
 export default function Footer() {
@@ -21,13 +21,13 @@ export default function Footer() {
             </div>
           </div>
           <div className="text-center lg:text-left">
-            <div className="text-xs uppercase tracking-[0.3em] text-gold">Romain Rieg</div>
+            <div className="text-xs uppercase tracking-[0.3em] text-gold">{settings.nom}</div>
             <p className="font-serif text-2xl md:text-3xl text-ivory mt-3 leading-snug max-w-3xl">
-              "Passionné d'immobilier et originaire de la Loire, je suis aujourd'hui ancré au cœur des Monts d'Or. Mon objectif : allier la puissance technologique du réseau iad à un accompagnement humain, transparent et ultra-réactif. Que ce soit pour un avis de valeur en 24-48 h ou une stratégie de vente, je mets mon énergie au service de votre projet."
+              "{settings.bio_longue} Que ce soit pour un avis de valeur en {settings.delai_avis} ou une stratégie de vente, je mets mon énergie au service de votre projet."
             </p>
             <div className="flex flex-wrap justify-center lg:justify-start gap-3 mt-6">
-              <a href="tel:+33679571473" className="px-5 py-2.5 bg-gold text-navy text-sm hover:bg-gold-soft rounded-full">06 79 57 14 73</a>
-              <a href="https://wa.me/33679571473" target="_blank" rel="noopener" className="px-5 py-2.5 bg-[#25D366] text-white text-sm hover:bg-[#20bd5a] rounded-full">💬 WhatsApp</a>
+              <a href={`tel:${settings.telephone_lien}`} className="px-5 py-2.5 bg-gold text-navy text-sm hover:bg-gold-soft rounded-full">{settings.telephone}</a>
+              <a href={`https://wa.me/${settings.whatsapp.replace(/\D/g, "")}`} target="_blank" rel="noopener" className="px-5 py-2.5 bg-[#25D366] text-white text-sm hover:bg-[#20bd5a] rounded-full">💬 WhatsApp</a>
               <Link href="/contact" className="px-5 py-2.5 border border-ivory/30 text-ivory text-sm hover:bg-ivory/10 rounded-full">Contactez-moi →</Link>
             </div>
           </div>
@@ -68,9 +68,9 @@ export default function Footer() {
         <div>
           <div className="text-xs uppercase tracking-widest text-gold mb-4">Me joindre</div>
           <ul className="space-y-2.5 text-sm text-ivory/85">
-            <li><a href="tel:+33679571473" className="hover:text-gold">06 79 57 14 73</a></li>
-            <li><a href="https://wa.me/33679571473" target="_blank" rel="noopener" className="hover:text-gold">WhatsApp</a></li>
-            <li><a href="mailto:romain.rieg@iadfrance.fr" className="hover:text-gold">romain.rieg@iadfrance.fr</a></li>
+            <li><a href={`tel:${settings.telephone_lien}`} className="hover:text-gold">{settings.telephone}</a></li>
+            <li><a href={`https://wa.me/${settings.whatsapp.replace(/\D/g, "")}`} target="_blank" rel="noopener" className="hover:text-gold">WhatsApp</a></li>
+            <li><a href={`mailto:${settings.email}`} className="hover:text-gold">{settings.email}</a></li>
             <li><a href={IAD_MINISITE} target="_blank" rel="noopener" className="hover:text-gold">Mes biens iad ↗</a></li>
             <li>Saint-Didier-au-Mont-d'Or (69370)</li>
           </ul>
@@ -139,7 +139,7 @@ export default function Footer() {
 
       <div className="border-t border-ivory/10 bg-navy-soft">
         <div className="max-w-7xl mx-auto px-6 py-6 text-[11px] text-ivory/60 leading-relaxed">
-          EI Romain Rieg — Agent commercial de la SAS I@D France, immatriculé au RSAC de Lyon sous le n° <span className="text-ivory/85">101 157 410</span>, titulaire de la carte de démarchage immobilier pour le compte de la société I@D France SAS — SAS au capital de 2 640 523 €, siège social 2 ter boulevard de la Libération, 93200 Saint-Denis, RCS Bobigny 503 740 428. Carte professionnelle CPI 9301 2016 000 014 488 (CCI Seine-Saint-Denis).
+          EI {settings.nom} — {settings.carte_pro}. RSAC de Lyon : {settings.rcs.replace(/^RCS Lyon n°\s*/i, "")}. Garantie financière : {settings.garantie}.
         </div>
       </div>
 

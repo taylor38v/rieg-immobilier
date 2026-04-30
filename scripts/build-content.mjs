@@ -61,52 +61,6 @@ export const articles: Article[] = ${JSON.stringify(articles, null, 2)};
 `
 );
 
-// --- Biens ---
-const biens = readMdFolder("biens").map((b) => ({
-  ...b,
-  // normalisation : champs absents → valeurs par défaut
-  terrain: b.terrain || 0,
-  charges: b.charges || 0,
-  taxe_fonciere: b.taxe_fonciere || 0,
-  gallery: b.gallery || [],
-  atouts: b.atouts || [],
-  description: b.description || [],
-}));
-
-writeTs(
-  "biens.ts",
-  `// AUTO-GENERATED — ne pas éditer à la main.
-// Source : content/biens/*.md  ·  Régénéré par scripts/build-content.mjs
-
-export type Bien = {
-  slug: string;
-  type: string;
-  statut: "Vente" | "Location" | "Vendu" | "Off-market";
-  titre: string;
-  ville: string;
-  prix: number;
-  surface: number;
-  pieces: number;
-  chambres: number;
-  terrain: number;
-  dpe: "A" | "B" | "C" | "D" | "E" | "F" | "G";
-  ges: "A" | "B" | "C" | "D" | "E" | "F" | "G";
-  image: string;
-  gallery: string[];
-  atouts: string[];
-  taxe_fonciere: number;
-  charges: number;
-  chauffage: string;
-  travaux: string;
-  ecoles: string;
-  description: string[];
-  body: string;
-};
-
-export const biens: Bien[] = ${JSON.stringify(biens, null, 2)};
-`
-);
-
 // --- Témoignages ---
 const temoignages = readMdFolder("temoignages")
   .filter((t) => t.publie !== false)
@@ -153,6 +107,35 @@ export const pages: PageLibre[] = ${JSON.stringify(pages, null, 2)};
 `
 );
 
+// --- Pages du site (textes éditables des pages existantes) ---
+const SITE_DIR = path.join(CONTENT, "site");
+const sitePages = fs.existsSync(SITE_DIR)
+  ? fs.readdirSync(SITE_DIR).reduce((acc, f) => {
+      const full = path.join(SITE_DIR, f);
+      if (f.endsWith(".json")) {
+        const key = f.replace(/\.json$/, "");
+        acc[key] = JSON.parse(fs.readFileSync(full, "utf8"));
+      } else if (f.endsWith(".md")) {
+        const key = f.replace(/\.md$/, "");
+        const raw = fs.readFileSync(full, "utf8");
+        const { data, content } = matter(raw);
+        acc[key] = { ...data, body: content.trim() };
+      }
+      return acc;
+    }, {})
+  : {};
+
+writeTs(
+  "site.ts",
+  `// AUTO-GENERATED — ne pas éditer à la main.
+// Source : content/site/*.json  ·  Régénéré par scripts/build-content.mjs
+
+export const site = ${JSON.stringify(sitePages, null, 2)} as const;
+
+export type SiteContent = typeof site;
+`
+);
+
 // --- Settings ---
 const settingsPath = path.join(CONTENT, "settings.json");
 const settings = fs.existsSync(settingsPath)
@@ -189,4 +172,4 @@ export const settings: Settings = ${JSON.stringify(settings, null, 2)};
 `
 );
 
-console.log("\n✅ Content built : ", articles.length, "articles · ", biens.length, "biens · ", temoignages.length, "témoignages · ", pages.length, "pages libres");
+console.log("\n✅ Content built : ", articles.length, "articles · ", temoignages.length, "témoignages · ", pages.length, "pages libres · ", Object.keys(sitePages).length, "pages site");

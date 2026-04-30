@@ -3,6 +3,9 @@ import { useState } from "react";
 import Link from "next/link";
 import HeroBackground from "../components/HeroBackground";
 import RomainCard from "../components/RomainCard";
+import { site } from "../lib/_generated/site";
+
+const av = site["avis-de-valeur"];
 
 const types = ["Maison", "Appartement", "Villa", "Terrain", "Immeuble", "Local commercial"];
 const etats = ["Neuf", "Rénové récemment", "Bon état", "À rafraîchir", "Travaux importants"];
@@ -16,36 +19,28 @@ export default function Page() {
   return (
     <>
       <section className="relative text-ivory py-32 overflow-hidden bg-navy">
-        <HeroBackground video="/videos/secteurs/dardilly.mp4" overlay={0.65} />
+        <HeroBackground video={av.hero.video} overlay={0.65} />
         <div className="relative max-w-7xl mx-auto px-6">
-          <div className="text-xs uppercase tracking-[0.3em] text-gold">Avis de valeur · 24-48 h</div>
-          <h1 className="font-serif text-5xl md:text-7xl mt-3 leading-[1.05] max-w-4xl">Connaissez la valeur réelle de votre bien.</h1>
-          <p className="text-ivory/80 text-lg md:text-xl mt-8 max-w-3xl leading-relaxed">
-            Vous souhaitez connaître la valeur réelle de votre maison ou appartement à Saint-Didier-au-Mont-d'Or, dans l'Ouest lyonnais ou dans la Loire ?
-          </p>
-          <p className="text-ivory/80 text-base mt-4 max-w-3xl leading-relaxed">
-            Je suis Romain Rieg, conseiller immobilier du réseau iad France. Avec mon expérience locale et mes outils performants, je vous propose un avis de valeur rapide, précis et gratuit en 24-48 h. Originaire de la Loire (j'y ai vécu 20 ans) et basé à Saint-Didier-au-Mont-d'Or, je combine expertise terrain et force du réseau iad (+15 000 conseillers).
-          </p>
+          <div className="text-xs uppercase tracking-[0.3em] text-gold">{av.hero.surtitre}</div>
+          <h1 className="font-serif text-5xl md:text-7xl mt-3 leading-[1.05] max-w-4xl">{av.hero.titre}</h1>
+          <p className="text-ivory/80 text-lg md:text-xl mt-8 max-w-3xl leading-relaxed">{av.hero.intro1}</p>
+          <p className="text-ivory/80 text-base mt-4 max-w-3xl leading-relaxed">{av.hero.intro2}</p>
           <div className="flex flex-wrap gap-4 mt-10">
-            <button onClick={() => setShowForm(true)} className="px-7 py-4 bg-gold text-navy font-medium hover:bg-gold-soft">Demander mon avis de valeur</button>
-            <a href="https://wa.me/33679571473?text=Bonjour%20Romain%2C%20je%20souhaite%20un%20avis%20de%20valeur%20de%20mon%20bien." target="_blank" rel="noopener" className="px-7 py-4 border border-ivory/30 hover:bg-ivory/10">💬 WhatsApp</a>
+            <button onClick={() => setShowForm(true)} className="px-7 py-4 bg-gold text-navy font-medium hover:bg-gold-soft">{av.hero.cta_primary_label}</button>
+            <a href={av.hero.cta_secondary_url} target="_blank" rel="noopener" className="px-7 py-4 border border-ivory/30 hover:bg-ivory/10">{av.hero.cta_secondary_label}</a>
           </div>
-          <div className="mt-4 text-xs text-ivory/60">Zéro engagement · 100% confidentiel</div>
+          <div className="mt-4 text-xs text-ivory/60">{av.hero.mention}</div>
         </div>
       </section>
 
       <section className="max-w-7xl mx-auto px-6 py-24">
-        <div className="text-xs uppercase tracking-[0.3em] text-gold">Pourquoi faire estimer avec moi</div>
-        <h2 className="font-serif text-5xl md:text-6xl mt-3">Trois forces concrètes.</h2>
+        <div className="text-xs uppercase tracking-[0.3em] text-gold">{av.forces.surtitre}</div>
+        <h2 className="font-serif text-5xl md:text-6xl mt-3">{av.forces.titre}</h2>
         <div className="grid md:grid-cols-3 gap-6 mt-12">
-          {[
-            ["Expertise locale & comparatif précis", "Je connais parfaitement les marchés de Saint-Didier-au-Mont-d'Or, des Monts d'Or et de la Plaine du Forez. Chaque estimation s'appuie sur les ventes récentes dans votre quartier, les tendances actuelles du marché local ainsi que les caractéristiques uniques de votre logement."],
-            ["Outils premium & mise en valeur", "Mise en valeur premium avec photos UltraHD et prises de vue par drone si nécessaire. Analyse comparative détaillée présentée dans un dossier élégant, en version PDF ou papier, personnalisé avec mon logo — bien plus qu'un simple chiffre."],
-            ["Accompagnement complet & réactivité", "Filtrage des acquéreurs pour éviter les visites inutiles et conseils sur le prix optimal pour vendre rapidement et au meilleur prix. Votre bien bénéficie d'une visibilité étendue auprès de milliers de professionnels et acheteurs qualifiés (+15 000 conseillers iad)."],
-          ].map(([t, d]) => (
-            <div key={t} className="p-7 bg-white border border-ink/10">
-              <div className="font-serif text-2xl text-navy">{t}</div>
-              <p className="text-sm text-muted mt-3 leading-relaxed">{d}</p>
+          {av.forces.items.map((it) => (
+            <div key={it.titre} className="p-7 bg-white border border-ink/10">
+              <div className="font-serif text-2xl text-navy">{it.titre}</div>
+              <p className="text-sm text-muted mt-3 leading-relaxed">{it.desc}</p>
             </div>
           ))}
         </div>
@@ -53,20 +48,15 @@ export default function Page() {
 
       <section className="bg-navy text-ivory py-24">
         <div className="max-w-5xl mx-auto px-6">
-          <div className="text-xs uppercase tracking-[0.3em] text-gold">Comment ça se déroule</div>
-          <h2 className="font-serif text-5xl md:text-6xl mt-3">Quatre étapes en 24-48 h.</h2>
+          <div className="text-xs uppercase tracking-[0.3em] text-gold">{av.etapes.surtitre}</div>
+          <h2 className="font-serif text-5xl md:text-6xl mt-3">{av.etapes.titre}</h2>
           <div className="mt-12 space-y-8">
-            {[
-              ["01", "Contact & collecte d'informations", "Via le formulaire ou un contact direct par téléphone/email. Collecte des informations nécessaires pour une estimation précise (projet de vie, famille, etc.)."],
-              ["02", "Visite sur place", "Avis de valeur réalisé directement chez vous pour évaluer le bien et ses atouts. Mise en valeur premium : photos UltraHD, drone si nécessaire, description détaillée."],
-              ["03", "Rapport de valeur détaillé", "Rapport complet incluant prix estimé, fourchette de marché et conseils personnalisés. Visuel du dossier élégant pour montrer le sérieux et le professionnalisme du service format iad. Disponible sous 24-48 h."],
-              ["04", "Accompagnement pour la suite", "Conseils pour préparer la mise en vente, si vous souhaitez vendre. Stratégie personnalisée selon votre projet."],
-            ].map(([n, t, d]) => (
-              <div key={n} className="grid grid-cols-[auto_1fr] gap-6 md:gap-10 border-t border-ivory/10 pt-8">
-                <div className="font-serif text-4xl text-gold leading-none">{n}</div>
+            {av.etapes.items.map((e) => (
+              <div key={e.num} className="grid grid-cols-[auto_1fr] gap-6 md:gap-10 border-t border-ivory/10 pt-8">
+                <div className="font-serif text-4xl text-gold leading-none">{e.num}</div>
                 <div>
-                  <div className="font-serif text-xl">{t}</div>
-                  <div className="text-ivory/70 mt-2 leading-relaxed text-sm">{d}</div>
+                  <div className="font-serif text-xl">{e.titre}</div>
+                  <div className="text-ivory/70 mt-2 leading-relaxed text-sm">{e.desc}</div>
                 </div>
               </div>
             ))}
@@ -74,17 +64,14 @@ export default function Page() {
         </div>
       </section>
 
-      <RomainCard
-        titre="Un avis de valeur honnête, basé sur de vrais comparables."
-        message="Je ne survalorise pas pour signer un mandat. Je vous donne le prix juste, argumenté avec les ventes récentes de votre quartier. Si on doit revoir à la baisse, je vous le dis."
-      />
+      <RomainCard titre={av.romain_card.titre} message={av.romain_card.message} />
 
       <section className="bg-ivory-deep py-20 text-center">
         <div className="max-w-3xl mx-auto px-6">
-          <h2 className="font-serif text-5xl md:text-6xl text-navy">Démarrer mon avis de valeur</h2>
-          <p className="text-muted mt-4">Six questions rapides — réponse sous 24-48 h, sans engagement.</p>
+          <h2 className="font-serif text-5xl md:text-6xl text-navy">{av.cta_final.titre}</h2>
+          <p className="text-muted mt-4">{av.cta_final.intro}</p>
           <button onClick={() => setShowForm(true)} className="inline-block mt-8 px-8 py-4 bg-navy text-ivory hover:bg-gold hover:text-navy transition">
-            Démarrer le questionnaire
+            {av.cta_final.cta_label}
           </button>
         </div>
       </section>
@@ -160,12 +147,10 @@ function Wizard() {
   if (step === 6) {
     return (
       <div className="max-w-3xl mx-auto px-6 py-32 text-center">
-        <div className="text-xs uppercase tracking-[0.3em] text-gold">Demande reçue</div>
-        <h1 className="font-serif text-5xl mt-4">Merci {data.nom || ""} 🌿</h1>
-        <p className="text-muted mt-6 leading-relaxed">
-          Je reviens vers vous sous 24-48 h avec un avis de valeur argumenté. Si vous le souhaitez, nous pourrons convenir d'une visite pour affiner la valeur de votre bien.
-        </p>
-        <Link href="/" className="inline-block mt-10 px-7 py-4 bg-navy text-ivory">Retour à l'accueil</Link>
+        <div className="text-xs uppercase tracking-[0.3em] text-gold">{av.wizard_merci.surtitre}</div>
+        <h1 className="font-serif text-5xl mt-4">{av.wizard_merci.titre_prefix} {data.nom || ""} 🌿</h1>
+        <p className="text-muted mt-6 leading-relaxed">{av.wizard_merci.intro}</p>
+        <Link href={av.wizard_merci.cta_href} className="inline-block mt-10 px-7 py-4 bg-navy text-ivory">{av.wizard_merci.cta_label}</Link>
       </div>
     );
   }
