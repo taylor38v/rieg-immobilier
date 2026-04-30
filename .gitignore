@@ -36,6 +36,15 @@ yarn-error.log*
 # vercel
 .vercel
 
+# netlify
+.netlify/
+
+# wetransfer raw assets (7.5 Go)
+_wetransfer_source/
+
+# pdf generated
+dossier-validation-iad.pdf
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

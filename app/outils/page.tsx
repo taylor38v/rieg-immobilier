@@ -1,0 +1,88 @@
+import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Outils",
+  description: "Calculateurs, simulateurs et carte interactive pour préparer votre projet immobilier sur le Mont d'Or et l'Ouest lyonnais.",
+};
+
+type Outil = { href: string; chiffre: string; sub: string; titre: string; desc: string };
+
+const groupes: { titre: string; outils: Outil[] }[] = [
+  {
+    titre: "Visualiser le marché",
+    outils: [
+      { href: "/outils/carte-prix", chiffre: "01", sub: "Carte interactive", titre: "Combien vaut le m² près de chez moi ?", desc: "Carte des 7 communes avec prix moyens maison & appartement, et évolution sur 5 ans." },
+    ],
+  },
+  {
+    titre: "Pour décider d'acheter",
+    outils: [
+      { href: "/outils/capacite-achat", chiffre: "02", sub: "Capacité d'achat", titre: "Combien puis-je acheter au Mont d'Or ?", desc: "À partir de votre revenu et de votre apport, votre budget réel et la surface accessible commune par commune." },
+      { href: "/outils/acheter-vs-louer", chiffre: "03", sub: "Achat vs location", titre: "Acheter ou louer sur 10 ans ?", desc: "Comparaison financière complète intégrant frais de notaire, intérêts, valorisation et placement alternatif de l'apport." },
+      { href: "/outils/frais-notaire", chiffre: "04", sub: "Frais de notaire détaillés", titre: "Combien me coûteront les frais de notaire ?", desc: "Calcul précis pour le Rhône (69) et la Loire (42), neuf vs ancien, avec déduction du mobilier." },
+    ],
+  },
+  {
+    titre: "Pour préparer une vente",
+    outils: [
+      { href: "/outils/vendabilite", chiffre: "05", sub: "Score de vendabilité", titre: "Mon bien va-t-il se vendre vite et bien ?", desc: "Score sur 100 + diagnostic en 3 points sur prix, DPE et tension de marché. Outil indicatif — un avis de valeur officiel reste indispensable." },
+      { href: "/outils/projection", chiffre: "06", sub: "Projection plus-value", titre: "Combien vaudra mon bien dans 5 ans ?", desc: "Sur la base de l'historique DVF de votre quartier. Outil indicatif — projections non garanties." },
+      { href: "/outils/dpe-express", chiffre: "07", sub: "Diagnostic énergétique", titre: "Quel est le DPE probable de mon bien ?", desc: "Estimation rapide + plan de travaux pour passer en classe C ou B avant la vente." },
+    ],
+  },
+  {
+    titre: "Pour investir",
+    outils: [
+      { href: "/outils/rentabilite-locative", chiffre: "08", sub: "Rentabilité locative", titre: "Quel rendement vais-je obtenir ?", desc: "Brut, net, cash-flow mensuel et patrimoine constitué sur 20 ans, fiscalité incluse." },
+    ],
+  },
+];
+
+export default function Page() {
+  return (
+    <div className="max-w-7xl mx-auto px-6 py-16 md:py-24">
+      <div className="max-w-3xl">
+        <div className="text-xs uppercase tracking-[0.3em] text-gold">Boîte à outils</div>
+        <h1 className="font-serif text-5xl md:text-6xl mt-3">Huit outils, zéro promesse vide.</h1>
+        <p className="text-muted mt-6 leading-relaxed">
+          Le marché du Mont d'Or se décide sur des chiffres précis. J'ai construit ces outils pour vous donner les mêmes données que celles que j'utilise au quotidien — gratuitement, sans inscription.
+        </p>
+        <p className="text-xs text-muted mt-4 italic">
+          Les outils sont fournis à titre indicatif et ne se substituent pas à une analyse personnalisée. Pour toute décision engageante (vente, achat, fiscalité), un échange avec Romain est recommandé.
+        </p>
+      </div>
+
+      {groupes.map((g) => (
+        <section key={g.titre} className="mt-20">
+          <div className="flex items-baseline gap-4 mb-6">
+            <div className="font-serif text-3xl text-navy">{g.titre}</div>
+            <div className="flex-1 border-t border-ink/10" />
+            <div className="text-xs uppercase tracking-widest text-muted">{g.outils.length} outil{g.outils.length > 1 ? "s" : ""}</div>
+          </div>
+          <div className="grid md:grid-cols-2 gap-4">
+            {g.outils.map((o) => (
+              <Link key={o.href} href={o.href} className="group block p-7 border border-ink/10 hover:border-navy bg-white transition">
+                <div className="flex items-start gap-5">
+                  <div className="font-serif text-4xl text-gold leading-none">{o.chiffre}</div>
+                  <div className="flex-1">
+                    <div className="text-[10px] uppercase tracking-[0.3em] text-muted">{o.sub}</div>
+                    <h2 className="font-serif text-xl text-navy mt-1 group-hover:text-gold transition leading-tight">{o.titre}</h2>
+                    <p className="text-sm text-muted mt-3 leading-relaxed">{o.desc}</p>
+                    <span className="inline-block text-xs text-navy mt-4 link-underline">Ouvrir l'outil →</span>
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+      ))}
+
+      <div className="bg-navy text-ivory p-10 mt-20 text-center">
+        <h3 className="font-serif text-3xl">Vous préférez parler à un humain ?</h3>
+        <p className="text-ivory/70 mt-3">Tous ces outils sont là pour préparer votre rendez-vous avec Romain — pas pour le remplacer.</p>
+        <Link href="/contact" className="inline-block mt-6 px-7 py-4 bg-gold text-navy hover:bg-gold-soft">Contactez-moi</Link>
+      </div>
+    </div>
+  );
+}
