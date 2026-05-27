@@ -18,41 +18,45 @@
       "precision": "Maternelle + élémentaire publique"
     },
     {
-      "nom": "Sainte-Marie Lyon — campus Saint-Cyr",
-      "type": "Privé",
-      "precision": "Établissement réputé de l'Ouest lyonnais — primaire & secondaire"
-    },
-    {
       "nom": "Collège Jean-Philippe Rameau",
       "type": "Collège",
       "precision": "Public, à Champagne-au-Mont-d'Or — collège de secteur (~6 min)"
     },
     {
-      "nom": "Collège & lycée Sainte-Marie Lyon",
+      "nom": "Sainte-Marie Lyon (Lyon 5)",
       "type": "Privé",
-      "precision": "Section collège-lycée du campus Sainte-Marie sur Saint-Cyr"
+      "precision": "Établissement de référence de l'Ouest lyonnais — primaire au lycée, ~10 min"
+    },
+    {
+      "nom": "Lycées La Martinière Duchère / Cevert",
+      "type": "Lycée",
+      "precision": "Lycées publics les plus proches selon orientation (10-15 min)"
     }
   ],
   "restaurants": [
     {
       "nom": "L'Ermitage Cuisine à Manger",
       "cuisine": "Bistronomie avec vue Lyon · 4,5★ (640 avis)",
-      "gamme": "Gastro"
+      "gamme": "Gastro",
+      "note": 4.5
     },
     {
       "nom": "Le Comptoir de St Cyr",
       "cuisine": "Brasserie · 4,3★ (1 188 avis), 17 rte de Lyon",
-      "gamme": "Brasserie"
+      "gamme": "Brasserie",
+      "note": 4.3
     },
     {
       "nom": "Là-Haut sur la Colline",
       "cuisine": "Cuisine française · 4,3★ (1 183 avis), rte du Mont-Cindre",
-      "gamme": "Bistrot"
+      "gamme": "Bistrot",
+      "note": 4.3
     },
     {
       "nom": "Brasserie des Monts d'Or",
       "cuisine": "Française · 3,9★ (905 avis), pl. de la République",
-      "gamme": "Brasserie"
+      "gamme": "Brasserie",
+      "note": 3.9
     }
   ],
   "associations": [
@@ -73,43 +77,43 @@
     {
       "nom": "Le Bourg",
       "description": "Cœur historique avec la mairie, l'église et les commerces. Bastides du XVIIIᵉ.",
-      "prix_indicatif": "7 200 — 8 800 €/m²"
+      "prix_indicatif": "6 000 — 7 500 €/m²"
     },
     {
       "nom": "Les Verrières",
       "description": "Quartier d'exception sur les hauteurs, propriétés avec parcs.",
-      "prix_indicatif": "8 500 — 11 000 €/m²"
+      "prix_indicatif": "7 500 — 10 000 €/m²"
     },
     {
       "nom": "Combe Blanche",
       "description": "Versant sud, vues magnifiques, propriétés isolées dans la végétation.",
-      "prix_indicatif": "7 800 — 9 500 €/m²"
+      "prix_indicatif": "6 800 — 8 500 €/m²"
     }
   ],
   "evolution_prix": [
     {
       "annee": 2020,
-      "prixM2": 6100
+      "prixM2": 5400
     },
     {
       "annee": 2021,
-      "prixM2": 6700
+      "prixM2": 5900
     },
     {
       "annee": 2022,
-      "prixM2": 7000
+      "prixM2": 6350
     },
     {
       "annee": 2023,
-      "prixM2": 7100
+      "prixM2": 6450
     },
     {
       "annee": 2024,
-      "prixM2": 7150
+      "prixM2": 6320
     },
     {
       "annee": 2025,
-      "prixM2": 7200
+      "prixM2": 6230
     }
   ],
   "video_insta": {

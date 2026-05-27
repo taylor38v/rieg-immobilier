@@ -1,0 +1,153 @@
+{
+  "nom": "Andrézieux-Bouthéon",
+  "population": 10425,
+  "superficie": 16,
+  "cp": "42160",
+  "intercommunalite": "Saint-Étienne Métropole",
+  "altitude": "353 — 435 m",
+  "ce_qui_differencie": [
+    "Aéroport Saint-Étienne–Loire (Bouthéon) : seul aéroport commercial du département, ligne régulière saisonnière vers Béjaïa et vols affrétés vers l'Italie, l'Espagne, la Grèce, l'Albanie, Malte et la Tunisie en 2026",
+    "Pôle économique majeur de la Loire : +750 entreprises implantées dans les zones d'activité Inovy, Essarts et Loire Sud, plus de 180 commerces de proximité",
+    "Château de Bouthéon et son parc animalier et botanique de 12 ha : musée d'histoire, aquarium de la Loire (36 espèces, 60 000 L), espaces séminaires",
+    "Carrefour autoroutier et ferroviaire : A72 + RD1082, gare SNCF sur la ligne Saint-Étienne–Roanne, à 14 km de Saint-Étienne"
+  ],
+  "ecoles": [
+    {
+      "nom": "École maternelle Paul Eluard",
+      "type": "Maternelle",
+      "precision": "Publique"
+    },
+    {
+      "nom": "École maternelle Victor Hugo",
+      "type": "Maternelle",
+      "precision": "Publique"
+    },
+    {
+      "nom": "École primaire Louis Pasteur",
+      "type": "Primaire",
+      "precision": "Publique"
+    },
+    {
+      "nom": "École primaire Arthur Rimbaud",
+      "type": "Primaire",
+      "precision": "Publique"
+    },
+    {
+      "nom": "École Jeanne d'Arc",
+      "type": "Privé",
+      "precision": "Maternelle + primaire"
+    },
+    {
+      "nom": "Collège Jacques Prévert",
+      "type": "Collège",
+      "precision": "Public — ~234 candidats au brevet, ~90% de réussite"
+    },
+    {
+      "nom": "Lycée professionnel Pierre Desgranges",
+      "type": "Lycée",
+      "precision": "Public — formations industrie & tertiaire, 3 rue Fleming"
+    }
+  ],
+  "restaurants": [
+    {
+      "nom": "La Petite Assiette du Château",
+      "cuisine": "Cuisine bistronomique du Chef Guillaume, produits frais et locaux, face au Château de Bouthéon",
+      "gamme": "Gastro"
+    },
+    {
+      "nom": "Nota Bene",
+      "cuisine": "Restaurant français contemporain (TheFork 8,9/10)",
+      "gamme": "Gastro"
+    },
+    {
+      "nom": "Restaurant Georgette",
+      "cuisine": "Cuisine de marché, produits frais et locaux, ambiance chaleureuse, midi et soir",
+      "gamme": "Bistrot"
+    },
+    {
+      "nom": "Mas de la Gare",
+      "cuisine": "Cuisine traditionnelle généreuse, portions copieuses, près de la gare",
+      "gamme": "Brasserie"
+    },
+    {
+      "nom": "Bol'Appétit",
+      "cuisine": "Cuisine simple et fraîche, format bowls et plats du jour (TheFork 9,5/10)",
+      "gamme": "Café"
+    },
+    {
+      "nom": "Pizzeria 500",
+      "cuisine": "Pizzeria italienne au four à bois, recettes traditionnelles (TheFork 9,4/10)",
+      "gamme": "Pizza"
+    },
+    {
+      "nom": "IT — Italian Trattoria",
+      "cuisine": "Trattoria italienne, pâtes fraîches et pizzas",
+      "gamme": "Pizza"
+    },
+    {
+      "nom": "Mazarin",
+      "cuisine": "Pizzeria-restaurant chaleureux, pizzas et desserts maison",
+      "gamme": "Pizza"
+    }
+  ],
+  "associations": [
+    {
+      "nom": "Andrézieux-Bouthéon Football Club (ABFC)",
+      "activite": "Football — National 2 (saison 2025-2026), célèbre pour avoir éliminé l'OM en Coupe de France 2019"
+    },
+    {
+      "nom": "AL Andrézieux Basket",
+      "activite": "Basket-ball — équipes seniors et formation jeunes"
+    },
+    {
+      "nom": "AF Boxing Club",
+      "activite": "Boxe anglaise, française, loisirs et compétition"
+    },
+    {
+      "nom": "Club de plongée d'Andrézieux-Bouthéon",
+      "activite": "Plongée sous-marine en piscine et sorties"
+    },
+    {
+      "nom": "Pétanque Andrézieux-Bouthéon",
+      "activite": "Pétanque loisir et compétition"
+    }
+  ],
+  "quartiers": [
+    {
+      "nom": "Bourg d'Andrézieux",
+      "description": "Centre historique côté Andrézieux, commerces de proximité, mairie, équipements municipaux. Tissu pavillonnaire et petits collectifs.",
+      "prix_indicatif": "2 200 — 2 400 €/m²"
+    },
+    {
+      "nom": "Bouthéon / Château",
+      "description": "Quartier historique perché autour du Château de Bouthéon, ambiance village, vues sur la Loire, secteur résidentiel recherché.",
+      "prix_indicatif": "2 400 — 2 700 €/m²"
+    },
+    {
+      "nom": "La Chapelle",
+      "description": "Quartier résidentiel créé après la fusion des deux communes, fait le lien entre Andrézieux et Bouthéon. Bon compromis familial.",
+      "prix_indicatif": "2 300 — 2 500 €/m²"
+    },
+    {
+      "nom": "Agglomération Sud",
+      "description": "Secteur sud près de l'aéroport et des parcs industriels (Loire Sud, Essarts). Mix logements anciens et programmes neufs proches des emplois.",
+      "prix_indicatif": "1 900 — 2 200 €/m²"
+    }
+  ],
+  "evolution_prix": [
+    { "annee": 2020, "prixM2": 1850 },
+    { "annee": 2021, "prixM2": 2050 },
+    { "annee": 2022, "prixM2": 2350 },
+    { "annee": 2023, "prixM2": 2504 },
+    { "annee": 2024, "prixM2": 2380 },
+    { "annee": 2025, "prixM2": 2301 }
+  ],
+  "video_insta": {
+    "titre": "Andrézieux-Bouthéon : 3 raisons d'y investir en 2026",
+    "duree": "0:45"
+  },
+  "galerie": [
+    "/photos/IMG_7295.jpeg",
+    "/photos/IMG_7282.jpeg"
+  ]
+}

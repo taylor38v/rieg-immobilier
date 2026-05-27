@@ -42,42 +42,50 @@
     {
       "nom": "Le Minimaliste",
       "cuisine": "Restaurant tendance, planches & cocktails · 4,9★ (203 avis), av. du Stade",
-      "gamme": "Bistrot"
+      "gamme": "Bistrot",
+      "note": 4.9
     },
     {
       "nom": "Les Serres Babylone",
       "cuisine": "Fleuriste-restaurant-bar · 4,6★ (337 avis), av. des Barques",
-      "gamme": "Bistrot"
+      "gamme": "Bistrot",
+      "note": 4.6
     },
     {
       "nom": "Ô Benestar",
       "cuisine": "Cuisine sud-ouest · 4,5★ (317 avis), pl. du Pont",
-      "gamme": "Bistrot"
+      "gamme": "Bistrot",
+      "note": 4.5
     },
     {
       "nom": "Les Remparts de Saint-Rambert",
       "cuisine": "Française dans bâti historique · 4,2★ (121 avis), rue de la Loire",
-      "gamme": "Brasserie"
+      "gamme": "Brasserie",
+      "note": 4.2
     },
     {
       "nom": "Brasserie de l'Industrie",
       "cuisine": "Française · 4,1★ (963 avis), bd de l'Industrie",
-      "gamme": "Brasserie"
+      "gamme": "Brasserie",
+      "note": 4.1
     },
     {
       "nom": "Aux 2 Ancres",
       "cuisine": "Bistrot / burgers / tapas · 4,5★ (352 avis), pl. Madeleine Rousseau",
-      "gamme": "Bistrot"
+      "gamme": "Bistrot",
+      "note": 4.5
     },
     {
       "nom": "Le Rambertois Grill",
       "cuisine": "Turc / grillades · 4,5★ (629 avis), bd de la Libération",
-      "gamme": "Brasserie"
+      "gamme": "Brasserie",
+      "note": 4.5
     },
     {
       "nom": "Lulu à Table",
       "cuisine": "Cuisine de saison · 4,5★ (267 avis), rte de Cordeyron",
-      "gamme": "Bistrot"
+      "gamme": "Bistrot",
+      "note": 4.5
     }
   ],
   "associations": [
@@ -94,8 +102,8 @@
       "activite": "Tennis avec courts couverts"
     },
     {
-      "nom": "Aviron Forez",
-      "activite": "Aviron sur le plan d'eau de Saint-Pierre"
+      "nom": "Base de Loisirs de Loire Forez",
+      "activite": "Plan d'eau de 40 000 m² sur la Loire — aviron, canoë-kayak, paddle, kayak-polo"
     },
     {
       "nom": "Office de tourisme Loire Forez",
@@ -106,43 +114,43 @@
     {
       "nom": "Centre Saint-Just",
       "description": "Centre commerçant, école, services, ambiance plus urbaine.",
-      "prix_indicatif": "2 500 — 3 200 €/m²"
+      "prix_indicatif": "2 300 — 2 900 €/m²"
     },
     {
       "nom": "Saint-Rambert",
       "description": "Vieille ville médiévale, prieuré du XIᵉ, ruelles charmantes.",
-      "prix_indicatif": "2 600 — 3 500 €/m²"
+      "prix_indicatif": "2 500 — 3 200 €/m²"
     },
     {
       "nom": "Les Bords de Loire",
       "description": "Maisons avec vue rivière, quartier prisé, balade fluviale aux pieds.",
-      "prix_indicatif": "2 800 — 3 800 €/m²"
+      "prix_indicatif": "2 700 — 3 400 €/m²"
     }
   ],
   "evolution_prix": [
     {
       "annee": 2020,
-      "prixM2": 2400
+      "prixM2": 2200
     },
     {
       "annee": 2021,
-      "prixM2": 2600
+      "prixM2": 2400
     },
     {
       "annee": 2022,
-      "prixM2": 2750
+      "prixM2": 2620
     },
     {
       "annee": 2023,
-      "prixM2": 2780
+      "prixM2": 2650
     },
     {
       "annee": 2024,
-      "prixM2": 2790
+      "prixM2": 2600
     },
     {
       "annee": 2025,
-      "prixM2": 2800
+      "prixM2": 2560
     }
   ],
   "video_insta": {

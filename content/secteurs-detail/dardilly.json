@@ -57,48 +57,56 @@
     {
       "nom": "Restaurant Bol d'Air",
       "cuisine": "Gastro / bistrot · 4,7★ (2 425 avis), 77 av. de Verdun",
-      "gamme": "Gastro"
+      "gamme": "Gastro",
+      "note": 4.7
     },
     {
       "nom": "Odyssée Restaurant",
       "cuisine": "Bistrot soigné · 4,9★ (153 avis), chem. de la Bruyère",
-      "gamme": "Bistrot"
+      "gamme": "Bistrot",
+      "note": 4.9
     },
     {
       "nom": "L'Auberge du Village",
       "cuisine": "Française traditionnelle · 4,5★ (684 avis), pl. de l'Église",
-      "gamme": "Brasserie"
+      "gamme": "Brasserie",
+      "note": 4.5
     },
     {
       "nom": "Restaurant Comme Avant",
       "cuisine": "Bistronomie · 4,8★ (87 avis), pl. de l'Église",
-      "gamme": "Bistrot"
+      "gamme": "Bistrot",
+      "note": 4.8
     },
     {
       "nom": "La Table du Bas",
       "cuisine": "Cuisine française · 4,9★ (115 avis), av. de Verdun",
-      "gamme": "Bistrot"
+      "gamme": "Bistrot",
+      "note": 4.9
     },
     {
       "nom": "Le Patio Dardilly",
       "cuisine": "Européen / français · 4,2★ (434 avis)",
-      "gamme": "Brasserie"
+      "gamme": "Brasserie",
+      "note": 4.2
     },
     {
       "nom": "Café Marcel",
       "cuisine": "Café / végétarien · 5★ (86 avis), av. de Verdun",
-      "gamme": "Café"
+      "gamme": "Café",
+      "note": 5
     },
     {
       "nom": "Double 7 Dardilly",
       "cuisine": "Cuisine moderne · 4,5★ (353 avis), chem. des Peupliers",
-      "gamme": "Bistrot"
+      "gamme": "Bistrot",
+      "note": 4.5
     }
   ],
   "associations": [
     {
       "nom": "FCLDSD — Football Club Limonest-Dardilly-Saint-Didier",
-      "activite": "Club mutualisé évoluant en National 3"
+      "activite": "Club mutualisé évoluant en National 2 (champion N3 2024-2025)"
     },
     {
       "nom": "Tennis Club de Dardilly",
@@ -113,48 +121,48 @@
     {
       "nom": "Le Paillet",
       "description": "Quartier résidentiel calme, proche centre, écoles à pied.",
-      "prix_indicatif": "4 800 — 5 500 €/m²"
+      "prix_indicatif": "4 400 — 5 100 €/m²"
     },
     {
       "nom": "La Beffe",
       "description": "Hauteurs, grandes maisons, vues dégagées sur la Saône.",
-      "prix_indicatif": "5 500 — 6 500 €/m²"
+      "prix_indicatif": "5 000 — 6 000 €/m²"
     },
     {
       "nom": "Porte de Lyon",
       "description": "Proximité commerciale (centre Carrefour), petites maisons et collectifs.",
-      "prix_indicatif": "4 500 — 5 200 €/m²"
+      "prix_indicatif": "4 100 — 4 800 €/m²"
     },
     {
       "nom": "Les Noyeraies",
       "description": "Quartier pavillonnaire, calme, proche parcours de golf.",
-      "prix_indicatif": "5 200 — 6 000 €/m²"
+      "prix_indicatif": "4 700 — 5 500 €/m²"
     }
   ],
   "evolution_prix": [
     {
       "annee": 2020,
-      "prixM2": 4500
+      "prixM2": 4200
     },
     {
       "annee": 2021,
-      "prixM2": 4900
+      "prixM2": 4550
     },
     {
       "annee": 2022,
-      "prixM2": 5100
+      "prixM2": 4900
     },
     {
       "annee": 2023,
-      "prixM2": 5150
+      "prixM2": 4950
     },
     {
       "annee": 2024,
-      "prixM2": 5180
+      "prixM2": 4850
     },
     {
       "annee": 2025,
-      "prixM2": 5200
+      "prixM2": 4760
     }
   ],
   "video_insta": {

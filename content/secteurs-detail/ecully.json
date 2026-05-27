@@ -6,7 +6,7 @@
   "intercommunalite": "Métropole de Lyon",
   "altitude": "190 — 320 m",
   "ce_qui_differencie": [
-    "Pôle universitaire d'excellence : EM Lyon Business School, Centrale Lyon, Institut Paul Bocuse, ECAM",
+    "Pôle universitaire d'excellence : École Centrale de Lyon et Institut Paul Bocuse",
     "Connexions Lyon centre : ligne 3 du métro à venir, autoroute A6 à 5 min",
     "Parc du Vallon (40 ha) — poumon vert de la commune",
     "Mix résidentiel : grandes propriétés historiques + résidences neuves de standing"
@@ -28,19 +28,9 @@
       "precision": "Maternelle + primaire"
     },
     {
-      "nom": "EM Lyon Business School",
-      "type": "Supérieur",
-      "precision": ""
-    },
-    {
       "nom": "École Centrale de Lyon",
       "type": "Supérieur",
-      "precision": ""
-    },
-    {
-      "nom": "ECAM Lyon",
-      "type": "Supérieur",
-      "precision": ""
+      "precision": "Grande école d'ingénieurs, campus historique d'Écully"
     },
     {
       "nom": "Institut Paul Bocuse",
@@ -52,37 +42,44 @@
     {
       "nom": "Saisons (Institut Paul Bocuse)",
       "cuisine": "Gastronomie d'application étoilée Michelin · 4,8★ (514 avis)",
-      "gamme": "Étoilé"
+      "gamme": "Étoilé",
+      "note": 4.8
     },
     {
       "nom": "Au Bel Avenir",
       "cuisine": "Brasserie ouest lyonnais · 4,7★ (207 avis), 12 all. des Tullistes",
-      "gamme": "Brasserie"
+      "gamme": "Brasserie",
+      "note": 4.7
     },
     {
       "nom": "Au Comptoir d'Écully",
       "cuisine": "Bistrot · 4,9★ (87 avis)",
-      "gamme": "Bistrot"
+      "gamme": "Bistrot",
+      "note": 4.9
     },
     {
       "nom": "Volfoni Écully",
       "cuisine": "Italien · 4,6★ (279 avis), chem. Jean-Marie Vianney",
-      "gamme": "Bistrot"
+      "gamme": "Bistrot",
+      "note": 4.6
     },
     {
       "nom": "Restaurant Le Village",
       "cuisine": "Bistrot / burger · 4,5★ (332 avis), av. du Dr Terver",
-      "gamme": "Bistrot"
+      "gamme": "Bistrot",
+      "note": 4.5
     },
     {
       "nom": "L'Entre-Nous",
       "cuisine": "Italien · 4,5★ (617 avis), all. Moulin Berger",
-      "gamme": "Bistrot"
+      "gamme": "Bistrot",
+      "note": 4.5
     },
     {
       "nom": "Kif Angkor",
       "cuisine": "Cambodgien · 5★ (44 avis), rue Marietton",
-      "gamme": "Bistrot"
+      "gamme": "Bistrot",
+      "note": 5
     },
     {
       "nom": "Pâtisserie Sève (Richard Sève)",
@@ -112,48 +109,48 @@
     {
       "nom": "Le Centre",
       "description": "Centre-ville commerçant, mairie, marché du dimanche, résidences anciennes rénovées.",
-      "prix_indicatif": "5 500 — 6 500 €/m²"
+      "prix_indicatif": "4 900 — 5 800 €/m²"
     },
     {
       "nom": "Pérollier",
       "description": "Quartier familial avec écoles, parc, résidences récentes.",
-      "prix_indicatif": "5 200 — 6 000 €/m²"
+      "prix_indicatif": "4 700 — 5 500 €/m²"
     },
     {
       "nom": "Valvert",
       "description": "Hauteurs résidentielles, grandes maisons, calme.",
-      "prix_indicatif": "6 200 — 7 500 €/m²"
+      "prix_indicatif": "5 800 — 7 200 €/m²"
     },
     {
       "nom": "Le Coulouvrier",
-      "description": "Mix maisons individuelles + petits collectifs, proche EM Lyon.",
-      "prix_indicatif": "5 500 — 6 200 €/m²"
+      "description": "Mix maisons individuelles + petits collectifs, proche du campus de Centrale Lyon.",
+      "prix_indicatif": "4 900 — 5 700 €/m²"
     }
   ],
   "evolution_prix": [
     {
       "annee": 2020,
-      "prixM2": 5100
+      "prixM2": 4700
     },
     {
       "annee": 2021,
-      "prixM2": 5500
+      "prixM2": 5050
     },
     {
       "annee": 2022,
-      "prixM2": 5800
+      "prixM2": 5400
     },
     {
       "annee": 2023,
-      "prixM2": 5850
+      "prixM2": 5450
     },
     {
       "annee": 2024,
-      "prixM2": 5870
+      "prixM2": 5350
     },
     {
       "annee": 2025,
-      "prixM2": 5900
+      "prixM2": 5280
     }
   ],
   "video_insta": {

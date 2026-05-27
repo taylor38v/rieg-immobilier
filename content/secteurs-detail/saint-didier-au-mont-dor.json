@@ -42,38 +42,44 @@
     {
       "nom": "L'Éclat de Pierre",
       "cuisine": "Bistronomie avec terrasse · 4,6★ (388 avis)",
-      "gamme": "Gastro"
+      "gamme": "Gastro",
+      "note": 4.6
     },
     {
       "nom": "Aux Montagnards",
       "cuisine": "Cuisine française traditionnelle / fondue · 4,2★ (1 533 avis)",
-      "gamme": "Brasserie"
+      "gamme": "Brasserie",
+      "note": 4.2
     },
     {
       "nom": "La Cantine du Village",
       "cuisine": "Bistrot lyonnais · 4,4★ (283 avis)",
-      "gamme": "Bistrot"
+      "gamme": "Bistrot",
+      "note": 4.4
     },
     {
       "nom": "La Boîte Noire",
       "cuisine": "Pizzeria de référence · 4,7★",
-      "gamme": "Pizza"
+      "gamme": "Pizza",
+      "note": 4.7
     },
     {
       "nom": "Comptoir Fortunella",
       "cuisine": "Table sarde familiale · 4,9★",
-      "gamme": "Bistrot"
+      "gamme": "Bistrot",
+      "note": 4.9
     },
     {
       "nom": "Les Jardins de Saint-Didier",
       "cuisine": "Pizza & cuisine, terrasse pétanque · 4,5★",
-      "gamme": "Pizza"
+      "gamme": "Pizza",
+      "note": 4.5
     }
   ],
   "associations": [
     {
       "nom": "FCLDSD — Football Club Limonest-Dardilly-Saint-Didier",
-      "activite": "Club mutualisé évoluant en National 3"
+      "activite": "Club mutualisé évoluant en National 2 (champion N3 2024-2025)"
     },
     {
       "nom": "HBCCD — Handball Club Saint-Cyr / Saint-Didier",
@@ -104,48 +110,48 @@
     {
       "nom": "Centre village",
       "description": "Le cœur historique : place de la mairie, commerces de bouche, ruelles en pierres dorées. Très recherché pour son cachet.",
-      "prix_indicatif": "7 000 — 8 500 €/m²"
+      "prix_indicatif": "6 200 — 7 800 €/m²"
     },
     {
       "nom": "Saint-Fortunat",
       "description": "Hameau préservé, ambiance plus rurale, vues dégagées sur les coteaux.",
-      "prix_indicatif": "6 800 — 8 000 €/m²"
+      "prix_indicatif": "6 000 — 7 400 €/m²"
     },
     {
       "nom": "Plat de l'Air",
       "description": "Vastes propriétés sur les hauteurs, sous-bois, calme absolu — l'adresse historique des familles établies.",
-      "prix_indicatif": "7 500 — 9 000 €/m²"
+      "prix_indicatif": "6 800 — 8 500 €/m²"
     },
     {
       "nom": "Les Carrières / Le Tourillon",
       "description": "Mix maisons familiales rénovées et constructions contemporaines, proche du collège.",
-      "prix_indicatif": "6 200 — 7 800 €/m²"
+      "prix_indicatif": "5 600 — 6 800 €/m²"
     }
   ],
   "evolution_prix": [
     {
       "annee": 2020,
-      "prixM2": 5800
+      "prixM2": 5300
     },
     {
       "annee": 2021,
-      "prixM2": 6300
+      "prixM2": 5850
     },
     {
       "annee": 2022,
-      "prixM2": 6600
+      "prixM2": 6350
     },
     {
       "annee": 2023,
-      "prixM2": 6700
+      "prixM2": 6500
     },
     {
       "annee": 2024,
-      "prixM2": 6750
+      "prixM2": 6350
     },
     {
       "annee": 2025,
-      "prixM2": 6800
+      "prixM2": 6250
     }
   ],
   "video_insta": {

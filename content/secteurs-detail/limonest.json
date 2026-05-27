@@ -37,42 +37,50 @@
     {
       "nom": "La Pièce du Boucher",
       "cuisine": "Viandes premium · 4,6★ (1 356 avis), av. Général de Gaulle",
-      "gamme": "Gastro"
+      "gamme": "Gastro",
+      "note": 4.6
     },
     {
       "nom": "Jols Lyon Limonest",
       "cuisine": "Poissons & fruits de mer · 4,3★ (1 748 avis)",
-      "gamme": "Brasserie"
+      "gamme": "Brasserie",
+      "note": 4.3
     },
     {
       "nom": "La Casa Nostra",
       "cuisine": "Italien / pizza · 4,3★ (801 avis), pl. Decurel",
-      "gamme": "Pizza"
+      "gamme": "Pizza",
+      "note": 4.3
     },
     {
       "nom": "Restaurant Côté Balcon",
       "cuisine": "Bistrot avec vue · 4,6★ (240 avis), pl. du Griffon",
-      "gamme": "Bistrot"
+      "gamme": "Bistrot",
+      "note": 4.6
     },
     {
       "nom": "Maison Savoure",
       "cuisine": "Française · 4,6★ (354 avis), Parc Swen",
-      "gamme": "Gastro"
+      "gamme": "Gastro",
+      "note": 4.6
     },
     {
       "nom": "ILO",
       "cuisine": "Restaurant / cantine / bar · 4,9★, all. des Frênes",
-      "gamme": "Bistrot"
+      "gamme": "Bistrot",
+      "note": 4.9
     },
     {
       "nom": "Les Halles de Limonest",
       "cuisine": "Concept halles · 4,3★ (198 avis)",
-      "gamme": "Brasserie"
+      "gamme": "Brasserie",
+      "note": 4.3
     },
     {
       "nom": "MIDI SEIZE",
       "cuisine": "Cuisine soignée · 5★ (98 avis), chem. de Champivost",
-      "gamme": "Bistrot"
+      "gamme": "Bistrot",
+      "note": 5
     }
   ],
   "associations": [
@@ -86,50 +94,50 @@
     },
     {
       "nom": "FCLDSD — Football Club Limonest-Dardilly-Saint-Didier",
-      "activite": "Club mutualisé évoluant en National 3"
+      "activite": "Club mutualisé évoluant en National 2 (champion N3 2024-2025)"
     }
   ],
   "quartiers": [
     {
       "nom": "Le Bourg",
       "description": "Centre village avec église, mairie, commerces de proximité.",
-      "prix_indicatif": "5 200 — 6 200 €/m²"
+      "prix_indicatif": "4 800 — 5 800 €/m²"
     },
     {
       "nom": "Les Grillons",
       "description": "Lotissement résidentiel des années 80, maisons familiales.",
-      "prix_indicatif": "5 000 — 5 800 €/m²"
+      "prix_indicatif": "4 600 — 5 400 €/m²"
     },
     {
       "nom": "Sans Souci",
       "description": "Hauteurs, grandes propriétés en pierres dorées, calme absolu.",
-      "prix_indicatif": "6 500 — 8 500 €/m²"
+      "prix_indicatif": "6 000 — 8 000 €/m²"
     }
   ],
   "evolution_prix": [
     {
       "annee": 2020,
-      "prixM2": 4800
+      "prixM2": 4500
     },
     {
       "annee": 2021,
-      "prixM2": 5200
+      "prixM2": 4900
     },
     {
       "annee": 2022,
-      "prixM2": 5450
+      "prixM2": 5250
     },
     {
       "annee": 2023,
-      "prixM2": 5530
+      "prixM2": 5350
     },
     {
       "annee": 2024,
-      "prixM2": 5570
+      "prixM2": 5250
     },
     {
       "annee": 2025,
-      "prixM2": 5600
+      "prixM2": 5180
     }
   ],
   "video_insta": {

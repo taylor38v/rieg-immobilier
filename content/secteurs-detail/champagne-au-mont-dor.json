@@ -8,7 +8,7 @@
   "ce_qui_differencie": [
     "Petite commune à taille humaine — la plus dense du Mont d'Or",
     "Centre village animé avec marché hebdomadaire et commerces de proximité",
-    "Très bonne connexion bus vers Lyon via TCL (lignes 4 et 19)",
+    "Bonne connexion bus vers Lyon via TCL (C14, 21, 61, 66) — proche A6 et Lyon Vaise",
     "Une des seules communes du Mont d'Or avec un collège public sur son territoire"
   ],
   "ecoles": [
@@ -37,37 +37,44 @@
     {
       "nom": "O Platanes",
       "cuisine": "Française · 4,6★ (603 avis), av. de Lanessan",
-      "gamme": "Bistrot"
+      "gamme": "Bistrot",
+      "note": 4.6
     },
     {
       "nom": "N'Autre MOnde",
       "cuisine": "Asiatique · 4,7★ (254 avis), av. de Montlouis",
-      "gamme": "Bistrot"
+      "gamme": "Bistrot",
+      "note": 4.7
     },
     {
       "nom": "Le Rouge-Gorge",
       "cuisine": "Française · 4,3★ (343 avis), pl. Ludovic Monnier",
-      "gamme": "Bistrot"
+      "gamme": "Bistrot",
+      "note": 4.3
     },
     {
       "nom": "Le Rictoria",
       "cuisine": "Française / américaine · 4,6★ (243 avis), chem. du Tronchon",
-      "gamme": "Brasserie"
+      "gamme": "Brasserie",
+      "note": 4.6
     },
     {
       "nom": "Da Cocó by La Boîte Noire",
       "cuisine": "Italien / pizza · 4,7★ (197 avis), av. de Lanessan",
-      "gamme": "Pizza"
+      "gamme": "Pizza",
+      "note": 4.7
     },
     {
       "nom": "Ninkasi Champagne",
       "cuisine": "Burgers / brewpub · 4,4★ (668 avis)",
-      "gamme": "Brasserie"
+      "gamme": "Brasserie",
+      "note": 4.4
     },
     {
       "nom": "La Ferme des Monts d'Or",
       "cuisine": "Française · 4,5★ (358 avis), av. de Lanessan",
-      "gamme": "Bistrot"
+      "gamme": "Bistrot",
+      "note": 4.5
     }
   ],
   "associations": [
@@ -88,43 +95,43 @@
     {
       "nom": "Centre",
       "description": "Cœur de village, commerces, mairie, église, marché.",
-      "prix_indicatif": "5 400 — 6 200 €/m²"
+      "prix_indicatif": "4 700 — 5 500 €/m²"
     },
     {
       "nom": "Les Bruyères",
       "description": "Quartier pavillonnaire des années 70-80, calme, accès rapide aux écoles.",
-      "prix_indicatif": "5 200 — 5 800 €/m²"
+      "prix_indicatif": "4 500 — 5 100 €/m²"
     },
     {
       "nom": "Le Rocher",
       "description": "Hauteurs, vues, résidences plus récentes.",
-      "prix_indicatif": "5 800 — 6 500 €/m²"
+      "prix_indicatif": "5 100 — 5 900 €/m²"
     }
   ],
   "evolution_prix": [
     {
       "annee": 2020,
-      "prixM2": 4800
+      "prixM2": 4300
     },
     {
       "annee": 2021,
-      "prixM2": 5200
+      "prixM2": 4650
     },
     {
       "annee": 2022,
-      "prixM2": 5500
+      "prixM2": 5000
     },
     {
       "annee": 2023,
-      "prixM2": 5650
+      "prixM2": 5050
     },
     {
       "annee": 2024,
-      "prixM2": 5740
+      "prixM2": 4960
     },
     {
       "annee": 2025,
-      "prixM2": 5800
+      "prixM2": 4890
     }
   ],
   "video_insta": {
