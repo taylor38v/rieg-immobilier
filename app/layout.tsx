@@ -14,7 +14,7 @@ const serif = Cormorant_Garamond({ variable: "--font-serif", subsets: ["latin"],
 export const metadata: Metadata = {
   metadataBase: new URL("https://rieg-immobilier-preview.netlify.app"),
   title: {
-    default: "Romain Rieg — Conseiller immobilier Lyon Ouest & Mont d'Or",
+    default: "Romain Rieg - Conseiller immobilier Lyon Ouest & Mont d'Or",
     template: "%s | Romain Rieg Immobilier",
   },
   description: "Estimation, vente, acquisition et gestion locative sur le Mont d'Or, l'Ouest lyonnais et la Plaine du Forez. Accompagnement sur-mesure par Romain Rieg, conseiller iad.",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     locale: "fr_FR",
     url: "https://rieg-immobilier-preview.netlify.app",
     siteName: "Romain Rieg Immobilier",
-    title: "Romain Rieg — Conseiller immobilier Lyon Ouest & Mont d'Or",
+    title: "Romain Rieg - Conseiller immobilier Lyon Ouest & Mont d'Or",
     description: "Estimation, vente, acquisition et gestion locative sur le Mont d'Or et l'Ouest lyonnais.",
     images: [{ url: "/photos/Ville-de-saint-didier-au-mont-d-or_1920.jpg", width: 1920, height: 1280 }],
   },

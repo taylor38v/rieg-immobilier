@@ -39,6 +39,52 @@ body { font-family: var(--font-sans), system-ui, sans-serif; }
 
 .chip { display:inline-flex; align-items:center; gap:.4rem; padding:.3rem .7rem; border-radius:999px; font-size:.72rem; letter-spacing:.08em; text-transform:uppercase; }
 
+/* ─── Texte justifié sur tout le site (paragraphes longs uniquement) ─── */
+main p:not(.text-center):not(.text-right):not(.no-justify):not(.text-xs):not(.text-\[10px\]):not(.text-\[11px\]) {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* ─── Boutons et CTAs : bords arrondis par défaut (sauf opt-out) ─── */
+button:not(.no-round):not([class*="rounded-"]) { border-radius: 9999px; }
+a[class*="bg-gold"]:not(.no-round):not([class*="rounded-"]),
+a[class*="bg-navy"]:not(.no-round):not([class*="rounded-"]):not([class*="bg-navy-soft"]),
+a[class*="bg-[#25D366]"]:not(.no-round):not([class*="rounded-"]) { border-radius: 9999px; }
+
+/* ─── Images : bords arrondis par défaut (sauf logo / opt-out) ─── */
+img:not(.no-round):not([alt*="iad Prestige"]):not([alt*="iad France"]) { border-radius: 12px; }
+
+/* ─── Effet brillance/surbrillance au survol (réutilisable) ─── */
+.shine-hover {
+  position: relative;
+  overflow: hidden;
+  transition: border-color .3s, transform .3s, box-shadow .3s;
+}
+.shine-hover::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 3px; height: 0;
+  background: var(--gold);
+  transition: height .5s ease;
+  z-index: 1;
+}
+.shine-hover::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(105deg, transparent 30%, rgba(201,162,95,.12) 50%, transparent 70%);
+  transform: translateX(-110%);
+  transition: transform .8s ease;
+  pointer-events: none;
+}
+.shine-hover:hover { border-color: var(--gold); }
+.shine-hover:hover::before { height: 100%; }
+.shine-hover:hover::after { transform: translateX(110%); }
+
+/* ─── Mots-clés en or (réutilisable) ─── */
+.gold-accent { color: var(--gold); font-weight: 600; }
+
 /* Markdown rendu (articles + pages libres) */
 .prose-article > * + * { margin-top: 1.5rem; }
 .prose-article p { font-size: 1.125rem; line-height: 1.75; color: rgba(26,26,26,.85); }

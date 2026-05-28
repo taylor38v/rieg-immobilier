@@ -1,7 +1,7 @@
 ---
 nom: "M. et Mme L."
 ville: "Écully"
-contexte: "Acquéreurs — Appartement standing"
+contexte: "Acquéreurs - Appartement standing"
 note: 5
 date: 2026-02-04
 publie: true

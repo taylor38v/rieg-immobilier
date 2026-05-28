@@ -1,4 +1,4 @@
-// Preview WYSIWYG pour Decap CMS — reproduit le rendu exact du site dans l'éditeur.
+// Preview WYSIWYG pour Decap CMS - reproduit le rendu exact du site dans l'éditeur.
 // Chargé après decap-cms.js. Utilise React.createElement (pas de JSX dans le browser).
 
 (function () {
@@ -10,7 +10,7 @@
   // Substitue les chemins d'image : si l'image vient d'un upload, getAsset la résout.
   const img = (src, getAsset) => {
     if (!src) return "";
-    // Toujours essayer getAsset d'abord — Decap résout les chemins relatifs ET absolus
+    // Toujours essayer getAsset d'abord - Decap résout les chemins relatifs ET absolus
     if (typeof getAsset === "function") {
       try {
         const asset = getAsset(src);

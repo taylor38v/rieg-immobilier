@@ -1,7 +1,7 @@
 ---
 nom: "Sophie R."
 ville: "Saint-Cyr-au-Mont-d'Or"
-contexte: "Vendeuse — Bastide en pierres dorées"
+contexte: "Vendeuse - Bastide en pierres dorées"
 note: 5
 date: 2025-12-18
 publie: true

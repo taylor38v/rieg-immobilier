@@ -4,9 +4,9 @@
   "superficie": 7.7,
   "cp": "69370",
   "intercommunalite": "Métropole de Lyon",
-  "altitude": "260 — 547 m",
+  "altitude": "260 - 547 m",
   "ce_qui_differencie": [
-    "Une des communes les plus convoitées de la Métropole — demande structurellement supérieure à l'offre",
+    "Une des communes les plus convoitées de la Métropole - demande structurellement supérieure à l'offre",
     "Tissu associatif et scolaire de référence régionale",
     "Cadre village conservé à 15 minutes du centre de Lyon",
     "Forte présence de cadres dirigeants et de professions libérales"
@@ -25,12 +25,12 @@
     {
       "nom": "Ensemble scolaire Fromente-Saint-François",
       "type": "Privé",
-      "precision": "Maternelle au collège, sous contrat — la seule école privée sur la commune"
+      "precision": "Maternelle au collège, sous contrat - la seule école privée sur la commune"
     },
     {
       "nom": "Collège Jean-Philippe Rameau",
       "type": "Collège",
-      "precision": "Public, à Champagne-au-Mont-d'Or — collège de secteur (~6 min)"
+      "precision": "Public, à Champagne-au-Mont-d'Or - collège de secteur (~6 min)"
     },
     {
       "nom": "Lycées lyonnais & Écully",
@@ -78,11 +78,11 @@
   ],
   "associations": [
     {
-      "nom": "FCLDSD — Football Club Limonest-Dardilly-Saint-Didier",
+      "nom": "FCLDSD - Football Club Limonest-Dardilly-Saint-Didier",
       "activite": "Club mutualisé évoluant en National 2 (champion N3 2024-2025)"
     },
     {
-      "nom": "HBCCD — Handball Club Saint-Cyr / Saint-Didier",
+      "nom": "HBCCD - Handball Club Saint-Cyr / Saint-Didier",
       "activite": "Handball, gymnase de Saint-Didier"
     },
     {
@@ -90,7 +90,7 @@
       "activite": "Sport boules lyonnaises"
     },
     {
-      "nom": "AGYD — Activités Gymniques de Saint-Didier",
+      "nom": "AGYD - Activités Gymniques de Saint-Didier",
       "activite": "Gymnastique et yoga toutes générations"
     },
     {
@@ -110,22 +110,22 @@
     {
       "nom": "Centre village",
       "description": "Le cœur historique : place de la mairie, commerces de bouche, ruelles en pierres dorées. Très recherché pour son cachet.",
-      "prix_indicatif": "6 200 — 7 800 €/m²"
+      "prix_indicatif": "6 200 - 7 800 €/m²"
     },
     {
       "nom": "Saint-Fortunat",
       "description": "Hameau préservé, ambiance plus rurale, vues dégagées sur les coteaux.",
-      "prix_indicatif": "6 000 — 7 400 €/m²"
+      "prix_indicatif": "6 000 - 7 400 €/m²"
     },
     {
       "nom": "Plat de l'Air",
-      "description": "Vastes propriétés sur les hauteurs, sous-bois, calme absolu — l'adresse historique des familles établies.",
-      "prix_indicatif": "6 800 — 8 500 €/m²"
+      "description": "Vastes propriétés sur les hauteurs, sous-bois, calme absolu - l'adresse historique des familles établies.",
+      "prix_indicatif": "6 800 - 8 500 €/m²"
     },
     {
       "nom": "Les Carrières / Le Tourillon",
       "description": "Mix maisons familiales rénovées et constructions contemporaines, proche du collège.",
-      "prix_indicatif": "5 600 — 6 800 €/m²"
+      "prix_indicatif": "5 600 - 6 800 €/m²"
     }
   ],
   "evolution_prix": [
@@ -155,7 +155,7 @@
     }
   ],
   "video_insta": {
-    "titre": "Saint-Didier vu d'en haut — visite du Mont Cindre",
+    "titre": "Saint-Didier vu d'en haut - visite du Mont Cindre",
     "duree": "2:10"
   },
   "galerie": [

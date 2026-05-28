@@ -47,8 +47,8 @@ export default async function Page(props: PageProps<"/secteurs/[slug]">) {
         <HeroBackground video={VIDEO_BG[slug]} images={d?.galerie || (s.image ? [s.image] : [])} overlay={0.6} />
         <div className="relative max-w-7xl mx-auto px-6">
           <Link href="/" className="text-ivory/60 text-sm">← Accueil</Link>
-          <div className="text-xs uppercase tracking-[0.3em] text-gold mt-6">{d?.cp ?? "Mon territoire"}{d?.intercommunalite ? ` · ${d.intercommunalite}` : ""}</div>
-          <h1 className="font-serif text-5xl md:text-7xl mt-3 leading-[1.05] max-w-4xl">{s.nom}</h1>
+          <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium mt-6">{d?.cp ?? "Mon territoire"}{d?.intercommunalite ? ` · ${d.intercommunalite}` : ""}</div>
+          <h1 className="font-serif text-4xl md:text-6xl mt-3 leading-[1.05] max-w-4xl">{s.nom}</h1>
           <p className="text-ivory/80 text-lg mt-8 max-w-3xl leading-relaxed">{s.intro}</p>
 
           {d && (
@@ -64,11 +64,11 @@ export default async function Page(props: PageProps<"/secteurs/[slug]">) {
 
       {d?.ce_qui_differencie && (
         <section className="max-w-7xl mx-auto px-6 py-20">
-          <div className="text-xs uppercase tracking-[0.3em] text-gold">Ce qui différencie {s.nom}</div>
-          <h2 className="font-serif text-5xl md:text-6xl mt-3">Pourquoi cette commune attire.</h2>
+          <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">Ce qui différencie {s.nom}</div>
+          <h2 className="font-serif text-3xl md:text-4xl mt-3">Pourquoi cette commune attire.</h2>
           <div className="grid md:grid-cols-2 gap-4 mt-10">
             {d.ce_qui_differencie.map((c, i) => (
-              <div key={i} className="flex gap-4 p-5 bg-ivory-deep">
+              <div key={i} className="shine-hover flex gap-4 p-5 bg-ivory-deep border border-ink/5">
                 <span className="font-serif text-3xl text-gold leading-none">{String(i + 1).padStart(2, "0")}</span>
                 <p className="text-ink/85 leading-relaxed">{c}</p>
               </div>
@@ -80,9 +80,9 @@ export default async function Page(props: PageProps<"/secteurs/[slug]">) {
       {d?.evolution_prix && d.evolution_prix.length > 0 && (
         <section className="bg-navy text-ivory py-20">
           <div className="max-w-7xl mx-auto px-6">
-            <div className="text-xs uppercase tracking-[0.3em] text-gold">Évolution du marché</div>
-            <h2 className="font-serif text-5xl md:text-6xl mt-3">Prix moyen au m² depuis 2020.</h2>
-            <div className="bg-navy-soft p-8 mt-10">
+            <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">Évolution du marché</div>
+            <h2 className="font-serif text-3xl md:text-4xl mt-3">Prix moyen au m² depuis 2020.</h2>
+            <div className="rounded-xl bg-navy-soft p-8 mt-10">
               <svg viewBox="0 0 800 280" className="w-full h-auto">
                 {[0, 0.25, 0.5, 0.75, 1].map((p) => <line key={p} x1="60" y1={20 + p * 200} x2="780" y2={20 + p * 200} stroke="#ffffff" strokeOpacity="0.08" />)}
                 {[0.25, 0.5, 0.75, 1].map((p) => (
@@ -108,13 +108,35 @@ export default async function Page(props: PageProps<"/secteurs/[slug]">) {
         </section>
       )}
 
+      {VIDEO_BG[slug] && (
+        <section className="bg-ivory-deep py-20">
+          <div className="max-w-5xl mx-auto px-6">
+            <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">Visite vidéo</div>
+            <h2 className="font-serif text-3xl md:text-4xl mt-3">{s.nom} en images.</h2>
+            <p className="text-muted mt-3 max-w-2xl">Un aperçu de la commune en vidéo - paysages, ambiance, points de vue.</p>
+            <div className="mt-10 rounded-2xl overflow-hidden shadow-xl bg-navy">
+              <video
+                src={VIDEO_BG[slug]}
+                controls
+                playsInline
+                preload="metadata"
+                className="no-round w-full aspect-video object-cover"
+              />
+            </div>
+            <div className="mt-6">
+              <a href="https://www.instagram.com/romainrieg.immo/" target="_blank" rel="noopener" className="inline-block px-6 py-3 bg-navy text-ivory hover:bg-gold hover:text-navy text-sm transition rounded-full">Voir plus de contenus sur Instagram →</a>
+            </div>
+          </div>
+        </section>
+      )}
+
       {d?.quartiers && (
         <section className="max-w-7xl mx-auto px-6 py-20">
-          <div className="text-xs uppercase tracking-[0.3em] text-gold">Les quartiers</div>
-          <h2 className="font-serif text-5xl md:text-6xl mt-3">Une lecture quartier par quartier.</h2>
+          <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">Les quartiers</div>
+          <h2 className="font-serif text-3xl md:text-4xl mt-3">Une lecture quartier par quartier.</h2>
           <div className="grid md:grid-cols-2 gap-6 mt-10">
             {d.quartiers.map((q) => (
-              <div key={q.nom} className="p-7 bg-white border border-ink/10">
+              <div key={q.nom} className="shine-hover p-7 bg-white border border-ink/10">
                 <div className="font-serif text-2xl text-navy">{q.nom}</div>
                 {q.prix_indicatif && <div className="text-xs text-gold mt-2 uppercase tracking-widest">{q.prix_indicatif}</div>}
                 <p className="text-muted mt-4 leading-relaxed">{q.description}</p>
@@ -127,8 +149,8 @@ export default async function Page(props: PageProps<"/secteurs/[slug]">) {
       {d?.ecoles && (
         <section className="bg-ivory-deep py-20">
           <div className="max-w-7xl mx-auto px-6">
-            <div className="text-xs uppercase tracking-[0.3em] text-gold">Écoles & enseignement</div>
-            <h2 className="font-serif text-5xl md:text-6xl mt-3">Le réseau scolaire local.</h2>
+            <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">Écoles & enseignement</div>
+            <h2 className="font-serif text-3xl md:text-4xl mt-3">Le réseau scolaire local.</h2>
             <p className="text-muted mt-3 max-w-2xl text-sm">Cliquez sur une école pour voir sa localisation Google Maps.</p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3 mt-10">
               {d.ecoles.map((e) => (
@@ -150,37 +172,33 @@ export default async function Page(props: PageProps<"/secteurs/[slug]">) {
         </section>
       )}
 
-      <section className="bg-navy text-ivory py-20">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-xs uppercase tracking-[0.3em] text-gold">Localisation</div>
-          <h2 className="font-serif text-5xl md:text-6xl mt-3">{s.nom} sur la carte.</h2>
-          <p className="text-ivory/70 mt-4 max-w-2xl">Ma zone d'intervention, en un coup d'œil. Cliquez sur une commune voisine pour explorer son marché.</p>
-          <div className="mt-10">
-            <CityMap height={520} includeLimitrophes={true} />
-          </div>
-        </div>
-      </section>
-
       {d?.restaurants && (
         <section className="max-w-7xl mx-auto px-6 py-20">
-          <div className="text-xs uppercase tracking-[0.3em] text-gold">Tables & adresses</div>
-          <h2 className="font-serif text-5xl md:text-6xl mt-3">Où l'on mange bien à {s.nom}.</h2>
-          <p className="text-muted mt-3 max-w-2xl text-sm">Cliquez sur une adresse pour l'ouvrir dans Google Maps.</p>
+          <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">Tables & adresses</div>
+          <h2 className="font-serif text-3xl md:text-4xl mt-3">Où l'on mange bien à {s.nom}.</h2>
+          <p className="text-muted mt-3 max-w-2xl text-sm">Classé par note Google. Cliquez sur une adresse pour l'ouvrir dans Google Maps.</p>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-3 mt-10">
-            {d.restaurants.map((r) => (
-              <a
-                key={r.nom}
-                href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(r.nom + " " + s.nom)}`}
-                target="_blank"
-                rel="noopener"
-                className="group p-5 bg-white border border-ink/10 hover:border-gold transition block"
-              >
-                <div className="text-[10px] uppercase tracking-widest text-gold">{r.gamme}</div>
-                <div className="font-serif text-lg text-navy mt-1 font-semibold group-hover:text-gold transition">{r.nom}</div>
-                <p className="text-xs text-muted mt-2">{r.cuisine}</p>
-                <div className="text-[10px] text-gold mt-3 opacity-0 group-hover:opacity-100 transition">📍 Ouvrir sur Google Maps →</div>
-              </a>
-            ))}
+            {[...d.restaurants]
+              .sort((a, b) => (b.note ?? 0) - (a.note ?? 0))
+              .map((r) => (
+                <a
+                  key={r.nom}
+                  href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(r.nom + " " + s.nom)}`}
+                  target="_blank"
+                  rel="noopener"
+                  className="shine-hover group p-5 bg-white border border-ink/10 transition block"
+                >
+                  <div className="flex items-center justify-between gap-2">
+                    <div className="text-[10px] uppercase tracking-widest text-gold">{r.gamme}</div>
+                    {r.note && (
+                      <div className="text-xs font-semibold text-gold">★ {r.note.toFixed(1)}</div>
+                    )}
+                  </div>
+                  <div className="font-serif text-lg text-navy mt-1 font-semibold group-hover:text-gold transition">{r.nom}</div>
+                  <p className="text-xs text-muted mt-2">{r.cuisine}</p>
+                  <div className="text-[10px] text-gold mt-3 opacity-0 group-hover:opacity-100 transition">📍 Ouvrir sur Google Maps →</div>
+                </a>
+              ))}
           </div>
         </section>
       )}
@@ -188,11 +206,11 @@ export default async function Page(props: PageProps<"/secteurs/[slug]">) {
       {d?.associations && (
         <section className="bg-ivory-deep py-20">
           <div className="max-w-7xl mx-auto px-6">
-            <div className="text-xs uppercase tracking-[0.3em] text-gold">Vie associative</div>
-            <h2 className="font-serif text-5xl md:text-6xl mt-3">Le tissu local qui fait vivre la commune.</h2>
+            <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">Vie associative</div>
+            <h2 className="font-serif text-3xl md:text-4xl mt-3">Le tissu local qui fait vivre la commune.</h2>
             <div className="grid md:grid-cols-2 gap-3 mt-10">
               {d.associations.map((a) => (
-                <div key={a.nom} className="flex gap-4 p-4 bg-white">
+                <div key={a.nom} className="shine-hover flex gap-4 p-4 bg-white border border-ink/5">
                   <span className="font-serif text-2xl text-gold leading-none">·</span>
                   <div>
                     <div className="font-medium text-navy">{a.nom}</div>
@@ -207,8 +225,8 @@ export default async function Page(props: PageProps<"/secteurs/[slug]">) {
 
       {d?.galerie && d.galerie.length > 0 && (
         <section className="max-w-7xl mx-auto px-6 py-20">
-          <div className="text-xs uppercase tracking-[0.3em] text-gold">En images</div>
-          <h2 className="font-serif text-5xl md:text-6xl mt-3">{s.nom} comme je la vois.</h2>
+          <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">En images</div>
+          <h2 className="font-serif text-3xl md:text-4xl mt-3">{s.nom} comme je la vois.</h2>
           <p className="text-muted mt-3 max-w-2xl">Photos prises sur le terrain au gré de mes visites et de mes rencontres dans la commune.</p>
           <div className="grid md:grid-cols-3 gap-3 mt-10">
             {d.galerie.map((src, i) => (
@@ -225,43 +243,23 @@ export default async function Page(props: PageProps<"/secteurs/[slug]">) {
         </section>
       )}
 
-      <section className="bg-ivory-deep py-20">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-xs uppercase tracking-[0.3em] text-gold">Sur Instagram</div>
-          <h2 className="font-serif text-5xl md:text-6xl mt-3">Mes vidéos sur {s.nom}.</h2>
-          <p className="text-muted mt-3 max-w-2xl">Je tourne régulièrement sur place — visites, conseils, anecdotes du métier. Suivez tout sur mon compte Instagram.</p>
-          <div className="grid md:grid-cols-3 gap-4 mt-10">
-            {[
-              { titre: d?.video_insta?.titre ?? `Visite à ${s.nom}`, duree: d?.video_insta?.duree ?? "1:30", thumb: s.image ?? "/photos/IMG_7295.jpeg" },
-              { titre: `${s.nom} : focus marché immobilier`, duree: "0:50", thumb: "/photos/IMG_7282.jpeg" },
-              { titre: `Mes coups de cœur à ${s.nom}`, duree: "1:15", thumb: "/photos/IMG_7134.jpeg" },
-            ].map((v, i) => (
-              <a key={i} href="https://instagram.com/romain.rieg.immobilier" target="_blank" rel="noopener" className="group relative aspect-[9/16] overflow-hidden bg-navy">
-                <img src={v.thumb} alt={v.titre} className="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-60 transition" />
-                <div className="absolute inset-0 grid place-items-center">
-                  <div className="w-16 h-16 grid place-items-center bg-gold text-navy rounded-full text-2xl group-hover:scale-110 transition">▶</div>
-                </div>
-                <div className="absolute bottom-0 left-0 right-0 p-5 text-ivory bg-gradient-to-t from-navy/90 to-transparent">
-                  <div className="text-[10px] uppercase tracking-widest text-gold">Reel · {v.duree}</div>
-                  <div className="font-serif text-lg mt-1 leading-tight">{v.titre}</div>
-                </div>
-              </a>
-            ))}
-          </div>
-          <div className="text-center mt-10">
-            <a href="https://instagram.com/romain.rieg.immobilier" target="_blank" rel="noopener" className="inline-block px-6 py-3 bg-navy text-ivory hover:bg-gold hover:text-navy text-sm transition">Voir tous mes contenus Instagram →</a>
-          </div>
+      <section className="max-w-7xl mx-auto px-6 py-20">
+        <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">Zoom sur la commune</div>
+        <h2 className="font-serif text-3xl md:text-4xl mt-3">{s.nom} en détail.</h2>
+        <p className="text-muted mt-3 max-w-2xl">Vue rapprochée de {s.nom} pour visualiser ses contours et ses limites.</p>
+        <div className="mt-10">
+          <CityMap slugs={[slug]} height={520} showLegend={false} includeLimitrophes={false} />
         </div>
       </section>
 
       <section className="bg-navy text-ivory py-20">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="font-serif text-5xl md:text-6xl">Un projet immobilier à {s.nom} ?</h2>
-          <p className="text-ivory/70 mt-4">Avis de valeur gratuit sous 24-48 h, confidentiel, sans engagement.</p>
+          <h2 className="font-serif text-3xl md:text-4xl">Un projet immobilier à {s.nom} ?</h2>
+          <p className="text-ivory/70 mt-4">Avis de valeur gratuit sous 24 - 48h, confidentiel, sans engagement.</p>
           <div className="flex flex-wrap justify-center gap-4 mt-8">
-            <Link href="/avis-de-valeur" className="px-7 py-4 bg-gold text-navy hover:bg-gold-soft">Demander un avis de valeur</Link>
-            <Link href="/contact" className="px-7 py-4 border border-ivory/30 hover:bg-ivory/10">Me contacter</Link>
-            <a href="https://wa.me/33679571473" target="_blank" rel="noopener" className="px-7 py-4 bg-[#25D366] hover:bg-[#20bd5a] text-white">💬 WhatsApp</a>
+            <Link href="/avis-de-valeur" className="px-7 py-4 bg-gold text-navy hover:bg-gold-soft rounded-full">Demander un avis de valeur</Link>
+            <Link href="/contact" className="px-7 py-4 border border-ivory/30 hover:bg-ivory/10 rounded-full">Me contacter</Link>
+            <a href="sms:+33679571473" target="_blank" rel="noopener" className="px-7 py-4 bg-[#25D366] hover:bg-[#20bd5a] text-white rounded-full">💬 SMS</a>
           </div>
         </div>
       </section>

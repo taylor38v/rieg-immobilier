@@ -4,10 +4,10 @@
   "superficie": 7.6,
   "cp": "69760",
   "intercommunalite": "Métropole de Lyon",
-  "altitude": "270 — 625 m",
+  "altitude": "270 - 625 m",
   "ce_qui_differencie": [
     "Patrimoine en pierres dorées exceptionnel (50+ bastides classées ou inventoriées)",
-    "Mont Verdun (le point culminant du Mont d'Or) — vues à 360°",
+    "Mont Verdun (le point culminant du Mont d'Or) - vues à 360°",
     "Une des communes les plus boisées de la Métropole",
     "Pôle économique tertiaire (Techlid) côtoyant un cadre village préservé"
   ],
@@ -18,9 +18,9 @@
       "precision": "Maternelle + élémentaire publique"
     },
     {
-      "nom": "Collège Aux Lazaristes La Salle — site Limonest",
+      "nom": "Collège Aux Lazaristes La Salle - site Limonest",
       "type": "Privé",
-      "precision": "392 chem. de la Sablière — collège privé sous contrat, très demandé"
+      "precision": "392 chem. de la Sablière - collège privé sous contrat, très demandé"
     },
     {
       "nom": "Lycée Saint-Just (Lyon 5)",
@@ -93,7 +93,7 @@
       "activite": "Préservation du patrimoine bâti"
     },
     {
-      "nom": "FCLDSD — Football Club Limonest-Dardilly-Saint-Didier",
+      "nom": "FCLDSD - Football Club Limonest-Dardilly-Saint-Didier",
       "activite": "Club mutualisé évoluant en National 2 (champion N3 2024-2025)"
     }
   ],
@@ -101,17 +101,17 @@
     {
       "nom": "Le Bourg",
       "description": "Centre village avec église, mairie, commerces de proximité.",
-      "prix_indicatif": "4 800 — 5 800 €/m²"
+      "prix_indicatif": "4 800 - 5 800 €/m²"
     },
     {
       "nom": "Les Grillons",
       "description": "Lotissement résidentiel des années 80, maisons familiales.",
-      "prix_indicatif": "4 600 — 5 400 €/m²"
+      "prix_indicatif": "4 600 - 5 400 €/m²"
     },
     {
       "nom": "Sans Souci",
       "description": "Hauteurs, grandes propriétés en pierres dorées, calme absolu.",
-      "prix_indicatif": "6 000 — 8 000 €/m²"
+      "prix_indicatif": "6 000 - 8 000 €/m²"
     }
   ],
   "evolution_prix": [
@@ -141,7 +141,7 @@
     }
   ],
   "video_insta": {
-    "titre": "Sur les pas du Mont Verdun — patrimoine de Limonest",
+    "titre": "Sur les pas du Mont Verdun - patrimoine de Limonest",
     "duree": "2:00"
   },
   "galerie": [

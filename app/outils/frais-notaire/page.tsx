@@ -2,6 +2,8 @@
 import { useState, useMemo } from "react";
 import Link from "next/link";
 import { formatPrix } from "../../lib/data";
+import SliderInput from "../../components/SliderInput";
+import ContactCTA from "../../components/ContactCTA";
 
 export default function Page() {
   const [prix, setPrix] = useState(750000);
@@ -11,7 +13,8 @@ export default function Page() {
 
   const r = useMemo(() => {
     const base = prix - meublesPrix;
-    const droitsDept = neuf ? 0.00715 : (dept === "69" ? 0.04500 : 0.04500);
+    // Rhône 69 : 5,00 % depuis avril 2025 (loi de finances 2025). Loire 42 : 4,50 % maintenu.
+    const droitsDept = neuf ? 0.00715 : (dept === "69" ? 0.05000 : 0.04500);
     const droitsCommune = neuf ? 0 : 0.012;
     const fraisAssiette = neuf ? 0 : 0.00107;
     const droits = base * (droitsDept + droitsCommune + fraisAssiette);
@@ -58,16 +61,22 @@ export default function Page() {
   return (
     <div className="max-w-7xl mx-auto px-6 py-16 md:py-20">
       <Link href="/outils" className="text-sm text-muted hover:text-navy">← Tous les outils</Link>
-      <div className="text-xs uppercase tracking-[0.3em] text-gold mt-8">Outil 06</div>
-      <h1 className="font-serif text-5xl md:text-6xl mt-3">Frais de notaire</h1>
-      <p className="text-muted mt-4 max-w-2xl">Calcul détaillé pour le Rhône (69) et la Loire (42), neuf ou ancien, avec déduction du mobilier. Méthodologie 2026 conforme aux barèmes officiels.</p>
+      <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium mt-8">Outil 04</div>
+      <h1 className="font-serif text-3xl md:text-4xl mt-3">Frais de notaire</h1>
+      <p className="text-muted mt-4 max-w-2xl">Calcul détaillé pour le Rhône (69 · taux relevé à 5 % en 2025) et la Loire (42 · 4,5 % maintenu), neuf ou ancien, avec déduction du mobilier. Barème 2026.</p>
 
       <div className="grid lg:grid-cols-[1fr_1.4fr] gap-12 mt-12">
         <div className="space-y-6">
-          <div>
-            <div className="flex justify-between mb-2"><span className="text-xs uppercase tracking-widest text-muted">Prix d'achat</span><span className="font-serif text-2xl text-navy">{formatPrix(prix)}</span></div>
-            <input type="range" min={50000} max={3000000} step={5000} value={prix} onChange={(e) => setPrix(Number(e.target.value))} className="w-full accent-gold" />
-          </div>
+          <SliderInput
+            label="Prix d'achat"
+            value={prix}
+            onChange={setPrix}
+            min={50000}
+            max={3000000}
+            step={5000}
+            suffix="€"
+            display={formatPrix(prix)}
+          />
 
           <div>
             <div className="text-xs uppercase tracking-widest text-muted mb-2">Type de bien</div>
@@ -85,16 +94,22 @@ export default function Page() {
             </div>
           </div>
 
-          <div>
-            <div className="flex justify-between mb-2"><span className="text-xs uppercase tracking-widest text-muted">Valeur mobilier (déductible)</span><span className="font-serif text-lg text-navy">{formatPrix(meublesPrix)}</span></div>
-            <input type="range" min={0} max={Math.min(prix * 0.05, 50000)} step={500} value={meublesPrix} onChange={(e) => setMeublesPrix(Number(e.target.value))} className="w-full accent-gold" />
-            <div className="text-[11px] text-muted mt-1">Cuisine équipée, électroménager, mobilier intégré : déductibles si listés à l'acte (max ~5% du prix).</div>
-          </div>
+          <SliderInput
+            label="Valeur mobilier (déductible)"
+            value={meublesPrix}
+            onChange={setMeublesPrix}
+            min={0}
+            max={Math.min(prix * 0.05, 50000)}
+            step={500}
+            suffix="€"
+            display={formatPrix(meublesPrix)}
+            hint="Cuisine équipée, électroménager, mobilier intégré : déductibles si listés à l'acte (max ~5% du prix)."
+          />
         </div>
 
         <div className="space-y-4">
-          <div className="bg-navy text-ivory p-8">
-            <div className="text-xs uppercase tracking-[0.3em] text-gold">Total frais de notaire</div>
+          <div className="rounded-xl bg-navy text-ivory p-8">
+            <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">Total frais de notaire</div>
             <div className="font-serif text-6xl text-gold mt-2">{formatPrix(r.total)}</div>
             <div className="text-ivory/60 mt-2">soit <span className="text-ivory">{r.pourcentage.toFixed(2)}%</span> du prix d'achat</div>
             {r.totalNeuf && (
@@ -105,8 +120,8 @@ export default function Page() {
             )}
           </div>
 
-          <div className="bg-white border border-ink/10 p-6">
-            <div className="text-xs uppercase tracking-[0.3em] text-gold">Répartition</div>
+          <div className="rounded-xl bg-white border border-ink/10 p-6">
+            <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">Répartition</div>
             <div className="grid md:grid-cols-[180px_1fr] gap-6 mt-6 items-center">
               <svg viewBox="0 0 100 100" className="w-40 h-40 mx-auto">
                 {r.parts.map((p, i) => {
@@ -137,10 +152,10 @@ export default function Page() {
             </div>
           </div>
 
-          <details className="bg-ivory-deep p-5 text-sm">
+          <details className="rounded-xl bg-ivory-deep p-5 text-sm">
             <summary className="cursor-pointer font-medium text-navy">Méthodologie de calcul</summary>
             <div className="mt-4 space-y-2 text-muted leading-relaxed">
-              <p><strong>Droits d'enregistrement :</strong> {neuf ? "0,715% (TPF réduite, neuf)" : `5,80% en moyenne (${dept === "69" ? "Rhône" : "Loire"} : 4,5% département + 1,2% commune + 1,07% frais d'assiette)`}</p>
+              <p><strong>Droits d'enregistrement :</strong> {neuf ? "0,715 % (TPF réduite, neuf)" : `${dept === "69" ? "Rhône : 5,00 %" : "Loire : 4,50 %"} département + 1,20 % commune + 0,107 % frais d'assiette. Les primo-accédants peuvent demander le maintien à 4,50 % dans le 69.`}</p>
               <p><strong>Émoluments du notaire :</strong> barème dégressif officiel (3,945% / 1,627% / 1,085% / 0,799% par tranches de 6 500 / 17 000 / 60 000 € puis au-delà), TVA 20% incluse.</p>
               <p><strong>Débours :</strong> ~1 400 € (extrait cadastral, état hypothécaire, copies authentiques).</p>
               <p><strong>Contribution de sécurité immobilière :</strong> 0,08% du prix.</p>
@@ -149,6 +164,11 @@ export default function Page() {
           </details>
         </div>
       </div>
+
+      <ContactCTA
+        titre="Optimiser vos frais de notaire ?"
+        intro="Inclure le mobilier à l'acte, choisir le bon montage, négocier les émoluments : Romain vous oriente vers les bons leviers."
+      />
     </div>
   );
 }

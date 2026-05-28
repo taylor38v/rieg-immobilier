@@ -4,11 +4,11 @@
   "superficie": 7.29,
   "cp": "69450",
   "intercommunalite": "Métropole de Lyon",
-  "altitude": "180 — 450 m",
+  "altitude": "180 - 450 m",
   "ce_qui_differencie": [
     "Adresse parmi les plus prestigieuses de la Métropole, vues panoramiques sur la Saône",
     "Concentration exceptionnelle de bastides classées et de propriétés d'exception",
-    "Marché off-market dominant — beaucoup de transactions sans publication publique",
+    "Marché off-market dominant - beaucoup de transactions sans publication publique",
     "Patrimoine bâti en pierres dorées remarquable"
   ],
   "ecoles": [
@@ -20,12 +20,12 @@
     {
       "nom": "Collège Jean-Philippe Rameau",
       "type": "Collège",
-      "precision": "Public, à Champagne-au-Mont-d'Or — collège de secteur (~6 min)"
+      "precision": "Public, à Champagne-au-Mont-d'Or - collège de secteur (~6 min)"
     },
     {
       "nom": "Sainte-Marie Lyon (Lyon 5)",
       "type": "Privé",
-      "precision": "Établissement de référence de l'Ouest lyonnais — primaire au lycée, ~10 min"
+      "precision": "Établissement de référence de l'Ouest lyonnais - primaire au lycée, ~10 min"
     },
     {
       "nom": "Lycées La Martinière Duchère / Cevert",
@@ -69,7 +69,7 @@
       "activite": "Préservation des bastides et du bâti ancien"
     },
     {
-      "nom": "HBCCD — Handball Saint-Cyr / Saint-Didier",
+      "nom": "HBCCD - Handball Saint-Cyr / Saint-Didier",
       "activite": "Handball intercommunal, gymnase de Saint-Didier"
     }
   ],
@@ -77,17 +77,17 @@
     {
       "nom": "Le Bourg",
       "description": "Cœur historique avec la mairie, l'église et les commerces. Bastides du XVIIIᵉ.",
-      "prix_indicatif": "6 000 — 7 500 €/m²"
+      "prix_indicatif": "6 000 - 7 500 €/m²"
     },
     {
       "nom": "Les Verrières",
       "description": "Quartier d'exception sur les hauteurs, propriétés avec parcs.",
-      "prix_indicatif": "7 500 — 10 000 €/m²"
+      "prix_indicatif": "7 500 - 10 000 €/m²"
     },
     {
       "nom": "Combe Blanche",
       "description": "Versant sud, vues magnifiques, propriétés isolées dans la végétation.",
-      "prix_indicatif": "6 800 — 8 500 €/m²"
+      "prix_indicatif": "6 800 - 8 500 €/m²"
     }
   ],
   "evolution_prix": [
@@ -117,7 +117,7 @@
     }
   ],
   "video_insta": {
-    "titre": "Bastide en pierres dorées — visite exclusive",
+    "titre": "Bastide en pierres dorées - visite exclusive",
     "duree": "1:45"
   },
   "galerie": [

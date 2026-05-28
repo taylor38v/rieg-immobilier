@@ -1,4 +1,4 @@
-/* CSS de la preview Decap — reproduit le rendu du site dans l'éditeur */
+/* CSS de la preview Decap - reproduit le rendu du site dans l'éditeur */
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 :root {
@@ -161,7 +161,7 @@ img { max-width: 100%; height: auto; display: block; }
   .lg\:grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 }
 
-/* Preview-specific scaling — la preview Decap est en sidebar étroite, on scale down */
+/* Preview-specific scaling - la preview Decap est en sidebar étroite, on scale down */
 .preview-root {
   font-family: 'Montserrat', sans-serif;
   background: var(--ivory);

@@ -23,9 +23,9 @@ Une bastide de 1742 à Saint-Cyr-au-Mont-d'Or, achetée en ruine en 2019. Trois 
 
 ## Ses conseils aux propriétaires de bâti ancien
 
-- Avant tout achat, un diagnostic structure (mur porteur, charpente, humidité) — comptez 1 500 €.
+- Avant tout achat, un diagnostic structure (mur porteur, charpente, humidité) - comptez 1 500 €.
 - Ne jamais isoler une maison en pierre par l'intérieur sans étude hygrothermique préalable.
-- Privilégier les artisans locaux du réseau Compagnons — leur travail se voit et se garantit.
+- Privilégier les artisans locaux du réseau Compagnons - leur travail se voit et se garantit.
 - Prévoir 25 à 35 % de surcoût vs un budget initial sur les chantiers de plus de 200 m².
 
 Pour Julien Bonnet, le Mont d'Or recèle encore une cinquantaine de biens d'exception en sommeil, à découvrir au gré des successions. Le réseau d'agents locaux compte plus que jamais.

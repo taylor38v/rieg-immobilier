@@ -9,8 +9,8 @@
     "intro2": "Originaire de la Loire et résident des Monts d'Or, je combine connaissance du territoire et outils marketing premium pour sélectionner des locataires solvables, rédiger vos baux et gérer toute la partie administrative, et optimiser la rentabilité de votre bien.",
     "cta_primary_label": "Étude personnalisée gratuite",
     "cta_primary_href": "/contact",
-    "cta_secondary_label": "💬 WhatsApp",
-    "cta_secondary_url": "https://wa.me/33679571473?text=Bonjour%20Romain%2C%20je%20souhaite%20mettre%20mon%20bien%20en%20location.",
+    "cta_secondary_label": "💬 SMS",
+    "cta_secondary_url": "sms:+33679571473?body=Bonjour%20Romain%2C%20je%20souhaite%20mettre%20mon%20bien%20en%20location.",
     "mention": "Confidentiel · sans engagement"
   },
   "pourquoi": {
@@ -38,7 +38,7 @@
   "secteurs_section": {
     "surtitre": "Mes secteurs",
     "titre": "Les communes où je gère vos locations.",
-    "intro": "Cliquez sur une commune pour découvrir le marché local — démographie, écoles, prix au m², quartiers détaillés."
+    "intro": "Cliquez sur une commune pour découvrir le marché local - démographie, écoles, prix au m², quartiers détaillés."
   },
   "romain_card": {
     "titre": "Vos revenus locatifs, sécurisés.",
@@ -47,11 +47,11 @@
   "cta_final": {
     "locataires_surtitre": "Pour les locataires aussi",
     "locataires_titre": "Vous cherchez à louer ?",
-    "locataires_desc": "Inscrivez-vous à mes alertes biens à louer — vous serez notifié dès qu'un bien correspondant à vos critères est disponible.",
+    "locataires_desc": "Inscrivez-vous à mes alertes biens à louer - vous serez notifié dès qu'un bien correspondant à vos critères est disponible.",
     "locataires_cta_label": "Recevoir les alertes",
     "locataires_cta_href": "/contact",
     "question_surtitre": "Une question rapide ?",
     "question_titre": "Je réponds directement.",
-    "question_desc": "Sans intermédiaire, sans standard. Téléphone ou WhatsApp, vous choisissez."
+    "question_desc": "Sans intermédiaire, sans standard. Téléphone ou SMS direct, vous choisissez."
   }
 }

@@ -29,8 +29,8 @@ const groupes: { titre: string; outils: Outil[] }[] = [
   {
     titre: "Pour préparer une vente",
     outils: [
-      { href: "/outils/vendabilite", chiffre: "05", sub: "Score de vendabilité", titre: "Mon bien va-t-il se vendre vite et bien ?", desc: "Score sur 100 + diagnostic en 3 points sur prix, DPE et tension de marché. Outil indicatif — un avis de valeur officiel reste indispensable." },
-      { href: "/outils/projection", chiffre: "06", sub: "Projection plus-value", titre: "Combien vaudra mon bien dans 5 ans ?", desc: "Sur la base de l'historique DVF de votre quartier. Outil indicatif — projections non garanties." },
+      { href: "/outils/vendabilite", chiffre: "05", sub: "Score de vendabilité", titre: "Mon bien va-t-il se vendre vite et bien ?", desc: "Score sur 100 + diagnostic en 3 points sur prix, DPE et tension de marché. Outil indicatif - un avis de valeur officiel reste indispensable." },
+      { href: "/outils/projection", chiffre: "06", sub: "Projection plus-value", titre: "Combien vaudra mon bien dans 5 ans ?", desc: "Sur la base de l'historique DVF de votre quartier. Outil indicatif - projections non garanties." },
       { href: "/outils/dpe-express", chiffre: "07", sub: "Diagnostic énergétique", titre: "Quel est le DPE probable de mon bien ?", desc: "Estimation rapide + plan de travaux pour passer en classe C ou B avant la vente." },
     ],
   },
@@ -46,8 +46,8 @@ export default function Page() {
   return (
     <div className="max-w-7xl mx-auto px-6 py-16 md:py-24">
       <div className="max-w-3xl">
-        <div className="text-xs uppercase tracking-[0.3em] text-gold">{ol.surtitre}</div>
-        <h1 className="font-serif text-5xl md:text-6xl mt-3">{ol.titre}</h1>
+        <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{ol.surtitre}</div>
+        <h1 className="font-serif text-3xl md:text-4xl mt-3">{ol.titre}</h1>
         <p className="text-muted mt-6 leading-relaxed">{ol.intro}</p>
         <p className="text-xs text-muted mt-4 italic">{ol.disclaimer}</p>
       </div>
@@ -77,10 +77,10 @@ export default function Page() {
         </section>
       ))}
 
-      <div className="bg-navy text-ivory p-10 mt-20 text-center">
+      <div className="rounded-xl bg-navy text-ivory p-10 mt-20 text-center">
         <h3 className="font-serif text-3xl">{ol.cta_titre}</h3>
         <p className="text-ivory/70 mt-3">{ol.cta_intro}</p>
-        <Link href={ol.cta_href} className="inline-block mt-6 px-7 py-4 bg-gold text-navy hover:bg-gold-soft">{ol.cta_label}</Link>
+        <Link href={ol.cta_href} className="inline-block mt-6 px-7 py-4 bg-gold text-navy hover:bg-gold-soft rounded-full">{ol.cta_label}</Link>
       </div>
     </div>
   );

@@ -1,134 +1,216 @@
 "use client";
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import Link from "next/link";
 import { secteurs, formatPrix } from "../../lib/data";
 import { secteursDetails } from "../../lib/secteursDetails";
+import { zones } from "../../lib/territoire";
 
-const positions: Record<string, { x: number; y: number }> = {
-  "saint-cyr-au-mont-dor":    { x: 240, y: 180 },
-  "saint-didier-au-mont-dor": { x: 310, y: 230 },
-  "champagne-au-mont-dor":    { x: 380, y: 290 },
-  "limonest":                 { x: 200, y: 110 },
-  "dardilly":                 { x: 130, y: 200 },
-  "ecully":                   { x: 320, y: 350 },
-  "saint-just-saint-rambert": { x: 480, y: 410 },
-};
+// Slugs des communes ayant déjà une fiche dédiée → exclues de la section limitrophes
+const FICHES_EXISTANTES = new Set([
+  "Saint-Didier-au-Mont-d'Or",
+  "Saint-Cyr-au-Mont-d'Or",
+  "Écully",
+  "Dardilly",
+  "Limonest",
+  "Champagne-au-Mont-d'Or",
+  "Saint-Just-Saint-Rambert",
+  "Andrézieux-Bouthéon",
+]);
+
+const ZONES: { titre: string; slugs: string[] }[] = [
+  {
+    titre: "Ouest Lyonnais",
+    slugs: [
+      "saint-cyr-au-mont-dor",
+      "saint-didier-au-mont-dor",
+      "ecully",
+      "limonest",
+      "champagne-au-mont-dor",
+      "dardilly",
+    ],
+  },
+  {
+    titre: "Plaine du Forez",
+    slugs: ["saint-just-saint-rambert", "andrezieux-boutheon"],
+  },
+];
 
 export default function Page() {
   const [type, setType] = useState<"maison" | "appartement">("maison");
   const [annee, setAnnee] = useState(2025);
-  const [hover, setHover] = useState<string | null>(null);
 
-  const data = secteurs.map((s) => {
-    const det = secteursDetails[s.slug];
-    const evol = det?.evolution_prix.find((e) => e.annee === annee);
-    const ratio = type === "maison" ? 1 : (s.prixM2Appart / s.prixM2Maison);
-    const prix = evol ? Math.round(evol.prixM2 * ratio) : (type === "maison" ? s.prixM2Maison : s.prixM2Appart);
-    return { ...s, prix, pos: positions[s.slug] };
-  });
-  const max = Math.max(...data.map((d) => d.prix));
-  const min = Math.min(...data.map((d) => d.prix));
-  const colorFor = (p: number) => {
-    const t = (p - min) / (max - min || 1);
-    const r = Math.round(201 + (10 - 201) * t * 0.3);
-    const g = Math.round(162 + (30 - 162) * t * 0.3);
-    const b = Math.round(95 + (60 - 95) * t * 0.3);
-    return `rgb(${201}, ${162}, ${95})`;
-  };
-  const sizeFor = (p: number) => 14 + ((p - min) / (max - min || 1)) * 22;
+  const data = useMemo(() => {
+    return secteurs.map((s) => {
+      const det = secteursDetails[s.slug];
+      const evol = det?.evolution_prix.find((e) => e.annee === annee);
+      const evolPrev = det?.evolution_prix.find((e) => e.annee === annee - 1);
+      const ratio = type === "maison" ? 1 : (s.prixM2Appart / s.prixM2Maison);
+      const prix = evol ? Math.round(evol.prixM2 * ratio) : (type === "maison" ? s.prixM2Maison : s.prixM2Appart);
+      const prixPrev = evolPrev ? Math.round(evolPrev.prixM2 * ratio) : prix;
+      const deltaYoY = prixPrev > 0 ? ((prix - prixPrev) / prixPrev) * 100 : 0;
+      return { ...s, prix, prixPrev, deltaYoY };
+    });
+  }, [type, annee]);
+
+  const classement = [...data].sort((a, b) => b.prix - a.prix);
+  const maxPrix = Math.max(...data.map((d) => d.prix));
 
   return (
     <div className="max-w-7xl mx-auto px-6 py-16 md:py-20">
       <Link href="/outils" className="text-sm text-muted hover:text-navy">← Tous les outils</Link>
-      <div className="text-xs uppercase tracking-[0.3em] text-gold mt-8">Outil</div>
-      <h1 className="font-serif text-5xl md:text-6xl mt-3">Carte des prix immobiliers</h1>
-      <p className="text-muted mt-4 max-w-2xl">Visualisation interactive du prix moyen au m² par commune, sur le Mont d'Or, l'Ouest lyonnais et la Plaine du Forez. Données issues des transactions DVF et de l'analyse de marché.</p>
+      <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium mt-8">Outil 01</div>
+      <h1 className="font-serif text-3xl md:text-4xl mt-3">Carte des prix immobiliers</h1>
+      <p className="text-muted mt-4 max-w-2xl">Prix moyens au m² par commune sur le Mont d'Or, l'Ouest lyonnais et la Plaine du Forez. Données Meilleurs Agents 2026 et DVF.</p>
 
-      <div className="grid lg:grid-cols-[1.5fr_1fr] gap-10 mt-12">
-        <div className="bg-navy text-ivory p-6">
-          <div className="flex flex-wrap gap-3 mb-4 justify-between items-center">
-            <div className="grid grid-cols-2 gap-1 bg-navy-soft p-1">
-              {(["maison", "appartement"] as const).map((t) => (
-                <button key={t} onClick={() => setType(t)} className={`px-4 py-2 text-sm capitalize transition ${type === t ? "bg-gold text-navy" : "text-ivory/70 hover:text-ivory"}`}>{t}</button>
-              ))}
-            </div>
-            <div className="flex items-center gap-3">
-              <span className="text-xs uppercase tracking-widest text-ivory/60">Année</span>
-              <select value={annee} onChange={(e) => setAnnee(Number(e.target.value))} className="bg-navy-soft border border-ivory/20 text-ivory px-3 py-2 text-sm outline-none">
-                {[2020, 2021, 2022, 2023, 2024, 2025].map((y) => <option key={y} value={y}>{y}</option>)}
-              </select>
-            </div>
-          </div>
-
-          <svg viewBox="0 0 600 460" className="w-full h-auto">
-            <defs>
-              <linearGradient id="ridgeP" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0%" stopColor="#c9a25f" stopOpacity="0.18" />
-                <stop offset="100%" stopColor="#c9a25f" stopOpacity="0.02" />
-              </linearGradient>
-              <radialGradient id="dotGlowP">
-                <stop offset="0%" stopColor="#c9a25f" stopOpacity="0.7" />
-                <stop offset="100%" stopColor="#c9a25f" stopOpacity="0" />
-              </radialGradient>
-            </defs>
-
-            <path d="M 540 60 C 510 140, 530 220, 500 290 C 480 350, 510 410, 490 460" fill="none" stroke="#c9a25f" strokeWidth="2" strokeOpacity="0.35" strokeDasharray="4 6" />
-            <text x="500" y="50" fill="#c9a25f" fontSize="11" opacity="0.6" fontStyle="italic">Saône →</text>
-
-            <path d="M 60 250 Q 130 130, 200 90 T 360 130 T 460 200 T 540 270" fill="url(#ridgeP)" stroke="#c9a25f" strokeWidth="1.2" strokeOpacity="0.5" />
-            <path d="M 80 320 Q 160 230, 230 200 T 380 230 T 470 310" fill="url(#ridgeP)" stroke="#c9a25f" strokeWidth="1" strokeOpacity="0.4" />
-
-            <circle cx="500" cy="380" r="3" fill="#c9a25f" opacity="0.5" />
-            <text x="510" y="384" fill="#c9a25f" fontSize="11" opacity="0.6" fontStyle="italic">Lyon</text>
-
-            {data.map((p) => {
-              if (!p.pos) return null;
-              const isH = hover === p.slug;
-              const r = sizeFor(p.prix);
-              return (
-                <g key={p.slug} onMouseEnter={() => setHover(p.slug)} onMouseLeave={() => setHover(null)} style={{ cursor: "pointer" }}>
-                  <circle cx={p.pos.x} cy={p.pos.y} r={r * 1.5} fill="url(#dotGlowP)" opacity={isH ? 1 : 0.35} />
-                  <circle cx={p.pos.x} cy={p.pos.y} r={r} fill={colorFor(p.prix)} stroke="#061b2c" strokeWidth="2" opacity={isH ? 1 : 0.85} />
-                  <text x={p.pos.x} y={p.pos.y + 4} textAnchor="middle" fill="#061b2c" fontSize="11" fontWeight="700">{(p.prix / 1000).toFixed(1)}k</text>
-                  <text x={p.pos.x} y={p.pos.y - r - 8} textAnchor="middle" fill="#faf6ef" fontSize="11" fontWeight="500" style={{ letterSpacing: "0.05em" }}>{p.nom.split("-")[0].toUpperCase()}</text>
-                </g>
-              );
-            })}
-
-            <text x="60" y="430" fill="#c9a25f" fontSize="10" style={{ letterSpacing: "0.3em" }} opacity="0.7">PRIX MOYEN AU M² · {type.toUpperCase()} · {annee}</text>
-            <text x="60" y="448" fill="#faf6ef" fontSize="9" opacity="0.4" fontStyle="italic">Cercle plus grand = prix plus élevé · Cliquez sur la liste pour ouvrir la fiche commune</text>
-          </svg>
-        </div>
-
-        <div className="space-y-3">
-          <div className="text-xs uppercase tracking-[0.3em] text-gold">Classement {annee}</div>
-          {data.sort((a, b) => b.prix - a.prix).map((p, i) => (
-            <Link
-              key={p.slug}
-              href={`/secteurs/${p.slug}`}
-              onMouseEnter={() => setHover(p.slug)}
-              onMouseLeave={() => setHover(null)}
-              className={`block p-4 border transition ${hover === p.slug ? "border-gold bg-gold/5" : "border-ink/10 bg-white hover:border-navy"}`}
-            >
-              <div className="flex items-baseline justify-between gap-3">
-                <div className="flex items-baseline gap-3">
-                  <span className="font-serif text-2xl text-gold">{i + 1}.</span>
-                  <span className="font-serif text-lg text-navy">{p.nom}</span>
-                </div>
-                <span className="font-serif text-xl text-navy">{formatPrix(p.prix)}</span>
-              </div>
-            </Link>
+      {/* Contrôles */}
+      <div className="rounded-xl flex flex-wrap gap-4 mt-10 items-center bg-navy text-ivory p-4">
+        <div className="rounded-xl grid grid-cols-2 gap-1 bg-navy-soft p-1">
+          {(["maison", "appartement"] as const).map((t) => (
+            <button key={t} onClick={() => setType(t)} className={`px-5 py-2 text-sm capitalize transition ${type === t ? "bg-gold text-navy" : "text-ivory/70 hover:text-ivory"}`}>{t}</button>
           ))}
-          <p className="text-[11px] text-muted leading-relaxed mt-4">
-            <strong>Méthodologie :</strong> moyennes calculées sur la base des transactions DVF (Demandes de Valeurs Foncières) et de l'analyse comparative locale réalisée par Romain. Données indicatives — chaque bien doit être évalué individuellement.
-          </p>
         </div>
+        <div className="flex items-center gap-3">
+          <span className="text-xs uppercase tracking-widest text-ivory/60">Année</span>
+          <select value={annee} onChange={(e) => setAnnee(Number(e.target.value))} className="bg-navy-soft border border-ivory/20 text-ivory px-3 py-2 text-sm outline-none">
+            {[2020, 2021, 2022, 2023, 2024, 2025].map((y) => <option key={y} value={y}>{y}</option>)}
+          </select>
+        </div>
+        <div className="ml-auto text-xs uppercase tracking-[0.25em] text-gold">Prix moyen au m² · {type} · {annee}</div>
       </div>
 
-      <div className="bg-ivory-deep p-8 mt-12 text-center">
-        <h3 className="font-serif text-3xl text-navy">Et votre bien, à quel prix ?</h3>
-        <p className="text-muted mt-3">Une moyenne de marché ne suffit pas. Demandez un avis de valeur argumenté pour votre bien spécifique.</p>
-        <Link href="/avis-de-valeur" className="inline-block mt-6 px-7 py-4 bg-navy text-ivory hover:bg-gold hover:text-navy transition">Demander mon avis de valeur</Link>
+      {/* Grille bento par zone */}
+      {ZONES.map((zone) => {
+        const villes = zone.slugs.map((slug) => data.find((d) => d.slug === slug)).filter(Boolean) as typeof data;
+        return (
+          <section key={zone.titre} className="mt-10">
+            <div className="flex items-baseline gap-4 mb-5">
+              <h2 className="font-serif text-2xl text-navy">{zone.titre}</h2>
+              <div className="flex-1 border-t border-ink/10" />
+              <div className="text-xs uppercase tracking-widest text-muted">{villes.length} commune{villes.length > 1 ? "s" : ""}</div>
+            </div>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {villes.map((v) => {
+                const intensity = v.prix / maxPrix;
+                return (
+                  <Link
+                    key={v.slug}
+                    href={`/secteurs/${v.slug}`}
+                    className="group relative block overflow-hidden border border-ink/10 hover:border-gold transition aspect-[4/3]"
+                  >
+                    {/* Background image */}
+                    {v.image && (
+                      <div
+                        className="absolute inset-0 bg-cover bg-center"
+                        style={{ backgroundImage: `url(${v.image})` }}
+                      />
+                    )}
+                    {/* Overlay gradient */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/60 to-navy/20" />
+                    {/* Gold intensity dot top right */}
+                    <div className="absolute top-4 right-4 flex items-center gap-2">
+                      <span className="text-[10px] uppercase tracking-widest text-ivory/70">Indice</span>
+                      <div className="flex gap-0.5">
+                        {Array.from({ length: 5 }).map((_, i) => (
+                          <span
+                            key={i}
+                            className={`w-1.5 h-1.5 rounded-full ${i < Math.ceil(intensity * 5) ? "bg-gold" : "bg-ivory/20"}`}
+                          />
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* Contenu */}
+                    <div className="absolute inset-x-0 bottom-0 p-5 text-ivory">
+                      <div className="font-serif text-2xl">{v.nom}</div>
+                      <div className="flex items-baseline gap-2 mt-2">
+                        <div className="font-serif text-3xl text-gold leading-none">{formatPrix(v.prix)}</div>
+                        <div className="text-xs text-ivory/70">/m²</div>
+                      </div>
+                      <div className="flex items-center gap-2 mt-2 text-xs">
+                        <span className={`px-2 py-0.5 rounded-full ${v.deltaYoY >= 0 ? "bg-gold/20 text-gold" : "bg-rose-500/20 text-rose-200"}`}>
+                          {v.deltaYoY >= 0 ? "↑" : "↓"} {Math.abs(v.deltaYoY).toFixed(1)} % vs {annee - 1}
+                        </span>
+                        <span className="text-ivory/60 ml-auto group-hover:text-gold transition">Fiche commune →</span>
+                      </div>
+                    </div>
+                  </Link>
+                );
+              })}
+            </div>
+          </section>
+        );
+      })}
+
+      {/* Communes limitrophes - couverture étendue */}
+      <section className="mt-16">
+        <div className="flex items-baseline gap-4 mb-2">
+          <h2 className="font-serif text-2xl text-navy">Communes limitrophes</h2>
+          <div className="flex-1 border-t border-ink/10" />
+        </div>
+        <p className="text-sm text-muted max-w-3xl mb-6">
+          Romain intervient également sur l'ensemble des communes limitrophes de ses zones de cœur. Prix indicatifs sur demande - fiches détaillées en cours d'enrichissement.
+        </p>
+        <div className="grid md:grid-cols-2 gap-6">
+          {zones
+            .filter((z) => z.slug !== "saint-didier")
+            .map((zone) => {
+              const limitrophes = zone.limitrophes.filter((c) => !FICHES_EXISTANTES.has(c));
+              if (limitrophes.length === 0) return null;
+              return (
+                <div key={zone.slug} className="rounded-xl bg-white border border-ink/10 p-6">
+                  <div className="text-xs uppercase tracking-[0.25em] text-gold font-medium mb-3">
+                    Autour de {zone.nom}
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    {limitrophes.map((c) => (
+                      <Link
+                        key={c}
+                        href={`/contact?commune=${encodeURIComponent(c)}`}
+                        className="px-3 py-1.5 text-xs bg-ivory-deep text-navy hover:bg-gold hover:text-navy border border-ink/10 hover:border-gold rounded-full transition"
+                      >
+                        {c}
+                      </Link>
+                    ))}
+                  </div>
+                  <div className="mt-4 pt-4 border-t border-ink/5 text-xs text-muted">
+                    {limitrophes.length} commune{limitrophes.length > 1 ? "s" : ""} · cliquez pour demander une estimation
+                  </div>
+                </div>
+              );
+            })}
+        </div>
+        <div className="rounded-xl mt-6 bg-gold/10 border-l-2 border-gold p-4 text-sm text-ink/85">
+          Votre commune n'est pas listée ? Romain couvre toute la couronne Ouest de la Métropole de Lyon et le bassin stéphanois.{" "}
+          <Link href="/contact" className="text-navy font-medium hover:text-gold underline">Demander une estimation</Link>
+        </div>
+      </section>
+
+      {/* Classement compact */}
+      <div className="rounded-xl mt-16 bg-ivory-deep p-8">
+        <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">Classement {annee} · {type}</div>
+        <div className="grid md:grid-cols-2 gap-x-8 gap-y-2 mt-6">
+          {classement.map((c, i) => (
+            <Link
+              key={c.slug}
+              href={`/secteurs/${c.slug}`}
+              className="flex items-baseline gap-3 py-2 border-b border-ink/10 hover:border-gold transition group"
+            >
+              <span className="font-serif text-xl text-gold w-6 text-right">{i + 1}</span>
+              <span className="font-serif text-base text-navy group-hover:text-gold transition flex-1">{c.nom}</span>
+              <span className="font-serif text-lg text-navy">{formatPrix(c.prix)}</span>
+              <span className="text-[10px] text-muted">/m²</span>
+            </Link>
+          ))}
+        </div>
+        <p className="text-[11px] text-muted leading-relaxed mt-6">
+          <strong>Méthodologie :</strong> moyennes basées sur les données Meilleurs Agents 2026 (prix maisons pour les communes Mont d'Or, all-type pour la Plaine du Forez) et les transactions DVF. Données indicatives - chaque bien doit être évalué individuellement.
+        </p>
+      </div>
+
+      <div className="rounded-xl bg-navy text-ivory p-10 mt-10 text-center">
+        <h3 className="font-serif text-3xl">Et votre bien, à quel prix ?</h3>
+        <p className="text-ivory/70 mt-3">Une moyenne de marché ne suffit pas. Avis de valeur argumenté gratuit sous 24 - 48 h.</p>
+        <Link href="/avis-de-valeur" className="inline-block mt-6 px-7 py-4 bg-gold text-navy hover:bg-gold-soft rounded-full transition">Demander mon avis de valeur</Link>
       </div>
     </div>
   );

@@ -13,12 +13,12 @@ Email : romain.rieg@iadfrance.fr
 
 ## SAS I@D France
 
-SAS au capital de 2 640 523 € — siège social : 2 ter boulevard de la Libération, 93200 Saint-Denis — RCS Bobigny 503 740 428.
+SAS au capital de 2 640 523 € - siège social : 2 ter boulevard de la Libération, 93200 Saint-Denis - RCS Bobigny 503 740 428.
 Carte professionnelle CPI 9301 2016 000 014 488 délivrée par la CCI Seine-Saint-Denis.
 
 ## Hébergement du site
 
-Netlify, Inc. — 44 Montgomery Street, Suite 300, San Francisco, CA 94104, USA. [www.netlify.com](https://www.netlify.com)
+Netlify, Inc. - 44 Montgomery Street, Suite 300, San Francisco, CA 94104, USA. [www.netlify.com](https://www.netlify.com)
 
 ## Sources & informations chiffrées
 
@@ -29,7 +29,7 @@ Les prix au m², délais de vente et données de marché présentés sur ce site
 ## Liens utiles
 
 - [Mon mini-site iad officiel](https://www.iadfrance.fr/conseiller-immobilier/romain.rieg) (annonces, présentation, outil d'estimation iad)
-- [join-iad.fr](https://www.join-iad.fr) — informations officielles sur le métier de conseiller iad
+- [join-iad.fr](https://www.join-iad.fr) - informations officielles sur le métier de conseiller iad
 
 ## Propriété intellectuelle
 

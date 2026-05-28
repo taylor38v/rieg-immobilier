@@ -14,41 +14,11 @@ export default function Page() {
     <>
       <section className="hero-grad text-ivory py-20">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="text-xs uppercase tracking-[0.3em] text-gold">{c.hero.surtitre}</div>
-          <h1 className="font-serif text-5xl md:text-7xl mt-3 leading-[1.05] max-w-4xl">{c.hero.titre}</h1>
+          <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{c.hero.surtitre}</div>
+          <h1 className="font-serif text-4xl md:text-6xl mt-3 leading-[1.05] max-w-4xl">{c.hero.titre}</h1>
           <p className="text-ivory/80 text-lg mt-6 max-w-2xl leading-relaxed">{c.hero.intro}</p>
           <div className="flex flex-wrap gap-6 mt-8 text-sm text-ivory/70">
             {c.hero.garanties.map((g) => <span key={g}>✓ {g}</span>)}
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-ivory-deep py-16">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-[1fr_1.4fr] gap-10 items-start">
-            <div>
-              <div className="text-xs uppercase tracking-[0.3em] text-gold">{c.calendrier.surtitre}</div>
-              <h2 className="font-serif text-4xl md:text-5xl text-navy mt-3 leading-tight">{c.calendrier.titre}</h2>
-              <p className="text-muted mt-4 leading-relaxed">{c.calendrier.intro}</p>
-              <ul className="mt-6 space-y-2 text-sm text-ink/85">
-                {c.calendrier.puces.map((p) => (
-                  <li key={p} className="flex gap-2"><span className="text-gold">✓</span>{p}</li>
-                ))}
-              </ul>
-              <a href={c.calendrier.cal_url} target="_blank" rel="noopener" className="inline-block mt-6 px-6 py-3 bg-navy text-ivory hover:bg-gold hover:text-navy text-sm transition rounded-full">
-                {c.calendrier.cta_label}
-              </a>
-            </div>
-            <div className="bg-white border border-ink/10 overflow-hidden" style={{ minHeight: 660 }}>
-              <iframe
-                src={`${c.calendrier.cal_url}?embed=true&theme=light&hideEventTypeDetails=false`}
-                title="Réserver un rendez-vous avec Romain Rieg"
-                width="100%"
-                height="660"
-                frameBorder={0}
-                style={{ display: "block" }}
-              />
-            </div>
           </div>
         </div>
       </section>
@@ -58,13 +28,13 @@ export default function Page() {
           <SmartContactForm />
 
           <aside className="space-y-6">
-            <div className="bg-white border border-ink/10 p-6">
-              <div className="text-xs uppercase tracking-[0.3em] text-gold">{c.sidebar.surtitre}</div>
+            <div className="rounded-xl bg-white border border-ink/10 p-6">
+              <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{c.sidebar.surtitre}</div>
               <h2 className="font-serif text-2xl mt-2">{c.sidebar.titre}</h2>
 
               <div className="mt-6 space-y-5">
                 <a href={`tel:${c.sidebar.telephone_lien}`} className="flex items-center gap-4 p-3 hover:bg-ivory-deep transition group">
-                  <div className="w-12 h-12 grid place-items-center bg-gold text-navy font-serif text-xl">☎</div>
+                  <div className="w-12 h-12 grid place-items-center bg-gold text-navy font-serif text-xl rounded-full">☎</div>
                   <div className="flex-1">
                     <div className="text-xs uppercase tracking-widest text-muted">Téléphone</div>
                     <div className="font-serif text-xl text-navy group-hover:text-gold transition">{c.sidebar.telephone}</div>
@@ -72,7 +42,7 @@ export default function Page() {
                 </a>
 
                 <a href={c.sidebar.whatsapp_url} target="_blank" rel="noopener" className="flex items-center gap-4 p-3 hover:bg-ivory-deep transition group">
-                  <div className="w-12 h-12 grid place-items-center bg-[#25D366] text-white font-serif text-xl">💬</div>
+                  <div className="w-12 h-12 grid place-items-center bg-[#25D366] text-white font-serif text-xl rounded-full">💬</div>
                   <div className="flex-1">
                     <div className="text-xs uppercase tracking-widest text-muted">WhatsApp</div>
                     <div className="font-serif text-xl text-navy group-hover:text-gold transition">{c.sidebar.whatsapp_label}</div>
@@ -80,7 +50,7 @@ export default function Page() {
                 </a>
 
                 <a href={c.calendrier.cal_url} target="_blank" rel="noopener" className="flex items-center gap-4 p-3 hover:bg-ivory-deep transition group">
-                  <div className="w-12 h-12 grid place-items-center bg-navy text-ivory font-serif text-xl">📅</div>
+                  <div className="w-12 h-12 grid place-items-center bg-navy text-ivory font-serif text-xl rounded-full">📅</div>
                   <div className="flex-1">
                     <div className="text-xs uppercase tracking-widest text-muted">Calendrier Cal.com</div>
                     <div className="font-serif text-xl text-navy group-hover:text-gold transition">{c.sidebar.calcom_label}</div>
@@ -102,8 +72,8 @@ export default function Page() {
               </div>
             </div>
 
-            <div className="bg-navy text-ivory p-6">
-              <div className="text-xs uppercase tracking-[0.3em] text-gold">{c.engagement.surtitre}</div>
+            <div className="rounded-xl bg-navy text-ivory p-6">
+              <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{c.engagement.surtitre}</div>
               <div className="mt-4 space-y-3 text-sm">
                 {c.engagement.items.map((it) => (
                   <div key={it} className="flex gap-3"><span className="text-gold">✓</span><span>{it}</span></div>
@@ -111,13 +81,43 @@ export default function Page() {
               </div>
             </div>
 
-            <div className="bg-ivory-deep p-6 text-sm text-muted leading-relaxed">
+            <div className="rounded-xl bg-ivory-deep p-6 text-sm text-muted leading-relaxed">
               <strong className="text-navy">Pourquoi ce formulaire détaillé ?</strong><br />
               {c.footer_form_note}
             </div>
           </aside>
         </div>
       </div>
+
+      <section className="bg-ivory-deep py-16">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid lg:grid-cols-[1fr_1.4fr] gap-10 items-start">
+            <div>
+              <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{c.calendrier.surtitre}</div>
+              <h2 className="font-serif text-4xl md:text-5xl text-navy mt-3 leading-tight">{c.calendrier.titre}</h2>
+              <p className="text-muted mt-4 leading-relaxed">{c.calendrier.intro}</p>
+              <ul className="mt-6 space-y-2 text-sm text-ink/85">
+                {c.calendrier.puces.map((p) => (
+                  <li key={p} className="flex gap-2"><span className="text-gold">✓</span>{p}</li>
+                ))}
+              </ul>
+              <a href={c.calendrier.cal_url} target="_blank" rel="noopener" className="inline-block mt-6 px-6 py-3 bg-navy text-ivory hover:bg-gold hover:text-navy text-sm transition rounded-full">
+                {c.calendrier.cta_label}
+              </a>
+            </div>
+            <div className="rounded-xl bg-white border border-ink/10 overflow-hidden" style={{ minHeight: 660 }}>
+              <iframe
+                src={`${c.calendrier.cal_url}?embed=true&theme=light&hideEventTypeDetails=false`}
+                title="Réserver un rendez-vous avec Romain Rieg"
+                width="100%"
+                height="660"
+                frameBorder={0}
+                style={{ display: "block" }}
+              />
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }

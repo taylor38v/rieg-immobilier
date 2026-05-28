@@ -1,6 +1,6 @@
 ---
 titre: "Exemple de page libre"
-description: "Démonstration d'une page créée depuis le CMS — modifie ce contenu ou crée tes propres pages."
+description: "Démonstration d'une page créée depuis le CMS - modifie ce contenu ou crée tes propres pages."
 hero_image: ""
 publie: true
 ---
@@ -15,7 +15,7 @@ Cette page a été créée pour montrer comment ajouter une nouvelle page depuis
 2. Clique sur **Pages libres**
 3. Clique sur **Nouvelle page**
 4. Remplis le titre, le slug (l'URL), et le contenu
-5. Publie — la page sera live dans 2-3 minutes
+5. Publie - la page sera live dans 2-3 minutes
 
 ## Tu peux écrire en markdown
 

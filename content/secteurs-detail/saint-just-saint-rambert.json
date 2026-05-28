@@ -4,12 +4,12 @@
   "superficie": 40,
   "cp": "42170",
   "intercommunalite": "Loire Forez Agglomération",
-  "altitude": "385 — 510 m",
+  "altitude": "385 - 510 m",
   "ce_qui_differencie": [
     "Ville à taille humaine entre Lyon (50 min) et Saint-Étienne (15 min)",
-    "Bords de Loire aménagés sur 6 km — attraction touristique majeure",
+    "Bords de Loire aménagés sur 6 km - attraction touristique majeure",
     "Marché immobilier 2x à 3x moins cher que la Métropole de Lyon",
-    "Excellent rendement locatif (5 — 6%) — paradis des investisseurs"
+    "Excellent rendement locatif (5 - 6%) - paradis des investisseurs"
   ],
   "ecoles": [
     {
@@ -25,7 +25,7 @@
     {
       "nom": "Collège public Anne Frank",
       "type": "Collège",
-      "precision": "897 élèves, section sport — récemment rénové (14 M€), un des plus gros de la Loire"
+      "precision": "897 élèves, section sport - récemment rénové (14 M€), un des plus gros de la Loire"
     },
     {
       "nom": "Collège privé Saint-Joseph",
@@ -103,7 +103,7 @@
     },
     {
       "nom": "Base de Loisirs de Loire Forez",
-      "activite": "Plan d'eau de 40 000 m² sur la Loire — aviron, canoë-kayak, paddle, kayak-polo"
+      "activite": "Plan d'eau de 40 000 m² sur la Loire - aviron, canoë-kayak, paddle, kayak-polo"
     },
     {
       "nom": "Office de tourisme Loire Forez",
@@ -114,17 +114,17 @@
     {
       "nom": "Centre Saint-Just",
       "description": "Centre commerçant, école, services, ambiance plus urbaine.",
-      "prix_indicatif": "2 300 — 2 900 €/m²"
+      "prix_indicatif": "2 300 - 2 900 €/m²"
     },
     {
       "nom": "Saint-Rambert",
       "description": "Vieille ville médiévale, prieuré du XIᵉ, ruelles charmantes.",
-      "prix_indicatif": "2 500 — 3 200 €/m²"
+      "prix_indicatif": "2 500 - 3 200 €/m²"
     },
     {
       "nom": "Les Bords de Loire",
       "description": "Maisons avec vue rivière, quartier prisé, balade fluviale aux pieds.",
-      "prix_indicatif": "2 700 — 3 400 €/m²"
+      "prix_indicatif": "2 700 - 3 400 €/m²"
     }
   ],
   "evolution_prix": [

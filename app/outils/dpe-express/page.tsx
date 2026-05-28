@@ -2,10 +2,13 @@
 import { useState, useMemo } from "react";
 import Link from "next/link";
 import { formatPrix } from "../../lib/data";
+import SliderInput from "../../components/SliderInput";
+import ContactCTA from "../../components/ContactCTA";
 
 const dpeColors: Record<string, string> = { A: "#2a8a3e", B: "#52a539", C: "#a4c733", D: "#f7e93a", E: "#f3a82e", F: "#ea612a", G: "#d33c1d" };
 
 export default function Page() {
+  const [typeBien, setTypeBien] = useState<"maison" | "appartement">("maison");
   const [annee, setAnnee] = useState(1985);
   const [surface, setSurface] = useState(120);
   const [chauffage, setChauffage] = useState<"gaz" | "electrique" | "fioul" | "pac" | "bois">("gaz");
@@ -21,6 +24,8 @@ export default function Page() {
     else if (annee < 2012) conso = 130;
     else if (annee < 2022) conso = 75;
     else conso = 50;
+
+    if (typeBien === "appartement") conso *= 0.75;
 
     if (chauffage === "fioul") conso *= 1.15;
     if (chauffage === "electrique" && annee < 2005) conso *= 1.1;
@@ -42,8 +47,13 @@ export default function Page() {
     const factureMin = (conso * surface) * (chauffage === "gaz" ? 0.08 : chauffage === "fioul" ? 0.13 : chauffage === "electrique" ? 0.21 : chauffage === "pac" ? 0.13 : 0.07);
 
     const travaux: { item: string; cout: number; gainKwh: number }[] = [];
-    if (isolation === "aucune") travaux.push({ item: "Isolation des combles", cout: surface * 45, gainKwh: 30 });
-    if (isolation !== "complete") travaux.push({ item: "Isolation extérieure (ITE)", cout: surface * 180, gainKwh: 60 });
+    if (typeBien === "maison" && isolation === "aucune") travaux.push({ item: "Isolation des combles", cout: surface * 45, gainKwh: 30 });
+    if (isolation !== "complete") {
+      const labelIso = typeBien === "maison" ? "Isolation extérieure (ITE)" : "Isolation thermique par l'intérieur (ITI)";
+      const coutM2 = typeBien === "maison" ? 180 : 80;
+      const gain = typeBien === "maison" ? 60 : 35;
+      travaux.push({ item: labelIso, cout: surface * coutM2, gainKwh: gain });
+    }
     if (vitrage === "simple") travaux.push({ item: "Remplacement double vitrage", cout: surface * 80, gainKwh: 25 });
     if (chauffage === "fioul" || (chauffage === "electrique" && annee < 2005)) travaux.push({ item: "Pompe à chaleur air-eau", cout: 16000, gainKwh: 80 });
     if (chauffage === "gaz" && annee < 2005) travaux.push({ item: "Chaudière gaz à condensation", cout: 6500, gainKwh: 30 });
@@ -60,25 +70,38 @@ export default function Page() {
     const interdictionLoc = dpe === "G" ? "interdit depuis 2025" : dpe === "F" ? "interdit en 2028" : dpe === "E" ? "interdit en 2034" : null;
 
     return { conso: Math.round(conso), dpe, dpeApres, factureMin, travaux, coutTotal, aidesEstimees, coutNet, impactVente, interdictionLoc };
-  }, [annee, surface, chauffage, isolation, vitrage]);
+  }, [typeBien, annee, surface, chauffage, isolation, vitrage]);
 
   return (
     <div className="max-w-7xl mx-auto px-6 py-16 md:py-20">
       <Link href="/outils" className="text-sm text-muted hover:text-navy">← Tous les outils</Link>
-      <div className="text-xs uppercase tracking-[0.3em] text-gold mt-8">Outil 09</div>
-      <h1 className="font-serif text-5xl md:text-6xl mt-3">DPE express</h1>
+      <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium mt-8">Outil 07</div>
+      <h1 className="font-serif text-3xl md:text-4xl mt-3">DPE express</h1>
       <p className="text-muted mt-4 max-w-2xl">Estimation rapide de la classe DPE de votre bien et plan de travaux pour passer en classe C ou B. Basé sur les coefficients officiels de la méthode 3CL 2021.</p>
 
       <div className="grid lg:grid-cols-[1fr_1.4fr] gap-12 mt-12">
-        <div className="space-y-5">
-          <div>
-            <div className="flex justify-between mb-2"><span className="text-xs uppercase tracking-widest text-muted">Année de construction</span><span className="font-serif text-xl text-navy">{annee}</span></div>
-            <input type="range" min={1900} max={2025} value={annee} onChange={(e) => setAnnee(Number(e.target.value))} className="w-full accent-gold" />
-          </div>
-          <div>
-            <div className="flex justify-between mb-2"><span className="text-xs uppercase tracking-widest text-muted">Surface habitable</span><span className="font-serif text-xl text-navy">{surface} m²</span></div>
-            <input type="range" min={20} max={400} step={5} value={surface} onChange={(e) => setSurface(Number(e.target.value))} className="w-full accent-gold" />
-          </div>
+        <div className="space-y-6">
+          <Choice label="Type de bien" value={typeBien} onChange={setTypeBien} options={[
+            { v: "maison", l: "Maison" }, { v: "appartement", l: "Appartement" },
+          ]} />
+          <SliderInput
+            label="Année de construction"
+            value={annee}
+            onChange={setAnnee}
+            min={1900}
+            max={2026}
+            step={1}
+            suffix=""
+          />
+          <SliderInput
+            label="Surface habitable"
+            value={surface}
+            onChange={setSurface}
+            min={15}
+            max={350}
+            step={5}
+            suffix="m²"
+          />
           <Choice label="Mode de chauffage" value={chauffage} onChange={setChauffage} options={[
             { v: "gaz", l: "Gaz" }, { v: "electrique", l: "Électrique" }, { v: "fioul", l: "Fioul" }, { v: "pac", l: "Pompe à chaleur" }, { v: "bois", l: "Bois / granulés" },
           ]} />
@@ -91,8 +114,8 @@ export default function Page() {
         </div>
 
         <div className="space-y-4">
-          <div className="bg-navy text-ivory p-8">
-            <div className="text-xs uppercase tracking-[0.3em] text-gold">Classe DPE estimée</div>
+          <div className="rounded-xl bg-navy text-ivory p-8">
+            <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">Classe DPE estimée</div>
             <div className="flex items-center gap-6 mt-4">
               <div className="font-serif text-8xl leading-none px-8 py-4" style={{ background: dpeColors[r.dpe], color: r.dpe === "D" ? "#0c1e2e" : "#fff" }}>{r.dpe}</div>
               <div>
@@ -106,13 +129,13 @@ export default function Page() {
               </div>
             )}
             {r.impactVente > 0 && (
-              <div className="mt-3 text-sm text-ivory/70">Impact sur la vente : <span className="text-gold font-medium">décote de ~{r.impactVente}%</span> à attendre vs un bien équivalent en C.</div>
+              <div className="mt-3 text-sm text-ivory/70">Impact sur la vente : <span className="text-gold font-medium">décote de ~{r.impactVente} %</span> à attendre vs un bien équivalent en C.</div>
             )}
           </div>
 
           {r.travaux.length > 0 ? (
-            <div className="bg-white border border-ink/10 p-6">
-              <div className="text-xs uppercase tracking-[0.3em] text-gold">Plan de travaux pour passer en classe {r.dpeApres}</div>
+            <div className="rounded-xl bg-white border border-ink/10 p-6">
+              <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">Plan de travaux pour passer en classe {r.dpeApres}</div>
               <div className="mt-5 space-y-3">
                 {r.travaux.map((t) => (
                   <div key={t.item} className="flex justify-between items-baseline border-b border-ink/5 pb-2">
@@ -127,21 +150,26 @@ export default function Page() {
                 <div><div className="text-xs text-muted uppercase tracking-widest">Reste à charge</div><div className="font-serif text-xl text-navy mt-1">{formatPrix(r.coutNet)}</div></div>
               </div>
               <div className="mt-4 p-4 bg-gold/10">
-                <div className="text-sm">Après travaux : nouveau DPE estimé <strong className="font-serif text-2xl text-gold ml-1">{r.dpeApres}</strong> · plus-value à la revente potentielle de <strong>+{Math.round(r.impactVente * 0.7)}%</strong>.</div>
+                <div className="text-sm">Après travaux : nouveau DPE estimé <strong className="font-serif text-2xl text-gold ml-1">{r.dpeApres}</strong> · plus-value à la revente potentielle de <strong>+{Math.round(r.impactVente * 0.7)} %</strong>.</div>
               </div>
             </div>
           ) : (
-            <div className="bg-gold/10 border border-gold p-6">
+            <div className="rounded-xl bg-gold/10 border border-gold p-6">
               <div className="font-serif text-xl text-navy">Bien déjà performant ✓</div>
               <p className="text-sm text-muted mt-2">Aucun travaux énergétiques majeurs nécessaires. Atout fort à valoriser dans l'annonce.</p>
             </div>
           )}
 
-          <div className="bg-ivory-deep p-5 text-sm leading-relaxed">
-            <strong className="text-navy">Important :</strong> cette estimation indicative ne remplace pas un DPE officiel réalisé par un diagnostiqueur certifié (obligatoire à la vente, ~150 €). Romain peut vous mettre en relation avec un diagnostiqueur partenaire et un courtier MaPrimeRénov' pour optimiser votre dossier d'aides.
+          <div className="rounded-xl bg-ivory-deep p-5 text-sm leading-relaxed">
+            <strong className="text-navy">Important :</strong> cette estimation indicative ne remplace pas un DPE officiel réalisé par un diagnostiqueur certifié (obligatoire à la vente, ~150 €). Romain met en relation avec un diagnostiqueur partenaire et un courtier MaPrimeRénov' pour optimiser le dossier d'aides.
           </div>
         </div>
       </div>
+
+      <ContactCTA
+        titre="Plan de rénovation énergétique ?"
+        intro="Romain accompagne tout le parcours : diagnostiqueur, devis travaux, dossier MaPrimeRénov', puis valorisation à la revente."
+      />
     </div>
   );
 }

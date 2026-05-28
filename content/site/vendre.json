@@ -1,15 +1,15 @@
 {
   "meta_title": "Vendre votre bien",
-  "meta_description": "Vendez votre bien au meilleur prix sur le Mont d'Or, l'Ouest lyonnais et la Plaine du Forez. Avis de valeur fiable sous 24-48 h, accompagnement complet jusqu'à la signature notaire.",
+  "meta_description": "Vendez votre bien au meilleur prix sur le Mont d'Or, l'Ouest lyonnais et la Plaine du Forez. Avis de valeur fiable sous 24 - 48h, accompagnement complet jusqu'à la signature notaire.",
   "hero": {
     "video": "/videos/secteurs/saint-didier.mp4",
     "surtitre": "Vendre",
     "titre": "Vendez votre bien au meilleur prix.",
     "intro": "Vendre votre maison ou appartement peut sembler compliqué… mais avec un accompagnement clair et personnalisé, tout devient simple. Je vous accompagne à chaque étape pour vendre rapidement et au meilleur prix.",
-    "cta_primary_label": "Avis de valeur · 24-48 h",
+    "cta_primary_label": "Avis de valeur · 24 - 48h",
     "cta_primary_href": "/avis-de-valeur",
-    "cta_secondary_label": "💬 WhatsApp",
-    "cta_secondary_url": "https://wa.me/33679571473?text=Bonjour%20Romain%2C%20je%20souhaite%20vendre%20mon%20bien.",
+    "cta_secondary_label": "💬 SMS",
+    "cta_secondary_url": "sms:+33679571473?body=Bonjour%20Romain%2C%20je%20souhaite%20vendre%20mon%20bien.",
     "mention": "Zéro engagement · 100% confidentiel"
   },
   "pourquoi_moi": {
@@ -20,7 +20,7 @@
       { "titre": "Accompagnement personnalisé", "desc": "Succession, divorce, projet de vie… Chaque situation est unique. Je vous guide pas à pas et prends en charge toutes les démarches administratives pour que vous puissiez vendre en toute sérénité." },
       { "titre": "Stratégie de diffusion optimale", "desc": "Mise en valeur premium : reportage photo UltraHD, drone si nécessaire, pour déclencher le coup de cœur dès la première annonce. Votre bien est publié sur les principaux portails immobiliers et bénéficie d'une visibilité maximale grâce au réseau iad (+15 000 conseillers)." },
       { "titre": "Filtrage des acquéreurs", "desc": "Je filtre les dossiers et vérifie la solvabilité des acheteurs avant chaque visite pour vous faire gagner du temps." },
-      { "titre": "Réactivité et transparence", "desc": "Avis de valeur complet sous 24-48 h et suivi régulier pour vendre rapidement et efficacement." }
+      { "titre": "Réactivité et transparence", "desc": "Avis de valeur complet sous 24 - 48h et suivi régulier pour vendre rapidement et efficacement." }
     ]
   },
   "comparatif": {
@@ -48,7 +48,7 @@
   },
   "romain_card": {
     "titre": "Vendre votre bien, c'est une décision importante.",
-    "message": "Je m'engage personnellement sur chaque mandat — étude de marché chiffrée, mise en valeur premium, suivi régulier jusqu'à la signature notariale. Le tout avec discrétion et sans pression."
+    "message": "Je m'engage personnellement sur chaque mandat - étude de marché chiffrée, mise en valeur premium, suivi régulier jusqu'à la signature notariale. Le tout avec discrétion et sans pression."
   },
   "secteurs_section": {
     "surtitre": "Mes secteurs d'intervention",
@@ -56,20 +56,19 @@
     "intro": "Survolez une commune pour voir les infos clés · cliquez pour ouvrir la fiche."
   },
   "zones_section": {
-    "surtitre": "Mes 3 zones",
-    "titre": "Trois zones, une seule exigence.",
+    "surtitre": "Mes 2 zones",
+    "titre": "Deux zones, une seule exigence.",
     "zones": [
-      { "slug": "saint-didier", "titre": "Saint-Didier-au-Mont-d'Or", "desc": "Ma commune de résidence. Marché tendu, expertise pointue.", "image": "/photos/Ville-de-saint-didier-au-mont-d-or_1920.jpg" },
-      { "slug": "ouest-lyonnais", "titre": "Ouest lyonnais", "desc": "Dardilly · Écully · Limonest · Champagne · Saint-Cyr et limitrophes.", "image": "/photos/IMG_7282.jpeg" },
-      { "slug": "plaine-du-forez", "titre": "Plaine du Forez", "desc": "Saint-Just-Saint-Rambert · Andrézieux-Bouthéon — j'y ai vécu 20 ans.", "image": "/photos/IMG_7295.jpeg" }
+      { "slug": "ouest-lyonnais", "titre": "Ouest lyonnais", "desc": "Saint-Didier · Saint-Cyr · Limonest · Écully · Dardilly · Champagne et limitrophes.", "image": "/photos/IMG_7282.jpeg" },
+      { "slug": "plaine-du-forez", "titre": "Plaine du Forez", "desc": "Saint-Just-Saint-Rambert · Andrézieux-Bouthéon - j'y ai vécu 20 ans.", "image": "/photos/IMG_7295.jpeg" }
     ]
   },
   "cta_final": {
     "titre": "Prêt(e) à connaître la valeur de votre bien ?",
-    "intro": "Avis de valeur gratuit sous 24-48 h, sans engagement.",
+    "intro": "Avis de valeur gratuit sous 24 - 48h, sans engagement.",
     "cta_primary_label": "Demander mon avis de valeur",
     "cta_primary_href": "/avis-de-valeur",
-    "cta_whatsapp_label": "💬 WhatsApp",
-    "cta_whatsapp_url": "https://wa.me/33679571473"
+    "cta_whatsapp_label": "💬 SMS",
+    "cta_whatsapp_url": "sms:+33679571473"
   }
 }

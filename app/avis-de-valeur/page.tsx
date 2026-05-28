@@ -1,8 +1,7 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import HeroBackground from "../components/HeroBackground";
-import RomainCard from "../components/RomainCard";
 import { site } from "../lib/_generated/site";
 
 const av = site["avis-de-valeur"];
@@ -14,31 +13,36 @@ const delais = ["Dès que possible", "Dans 3 mois", "Dans 6 mois", "Dans un an",
 export default function Page() {
   const [showForm, setShowForm] = useState(false);
 
-  if (showForm) return <Wizard />;
+  const startForm = () => {
+    setShowForm(true);
+    if (typeof window !== "undefined") window.scrollTo({ top: 0, behavior: "instant" as ScrollBehavior });
+  };
+
+  if (showForm) return <Wizard onCancel={() => setShowForm(false)} />;
 
   return (
     <>
       <section className="relative text-ivory py-32 overflow-hidden bg-navy">
         <HeroBackground video={av.hero.video} overlay={0.65} />
         <div className="relative max-w-7xl mx-auto px-6">
-          <div className="text-xs uppercase tracking-[0.3em] text-gold">{av.hero.surtitre}</div>
-          <h1 className="font-serif text-5xl md:text-7xl mt-3 leading-[1.05] max-w-4xl">{av.hero.titre}</h1>
+          <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{av.hero.surtitre}</div>
+          <h1 className="font-serif text-4xl md:text-6xl mt-3 leading-[1.05] max-w-4xl">{av.hero.titre}</h1>
           <p className="text-ivory/80 text-lg md:text-xl mt-8 max-w-3xl leading-relaxed">{av.hero.intro1}</p>
           <p className="text-ivory/80 text-base mt-4 max-w-3xl leading-relaxed">{av.hero.intro2}</p>
           <div className="flex flex-wrap gap-4 mt-10">
-            <button onClick={() => setShowForm(true)} className="px-7 py-4 bg-gold text-navy font-medium hover:bg-gold-soft">{av.hero.cta_primary_label}</button>
-            <a href={av.hero.cta_secondary_url} target="_blank" rel="noopener" className="px-7 py-4 border border-ivory/30 hover:bg-ivory/10">{av.hero.cta_secondary_label}</a>
+            <button onClick={startForm} className="px-7 py-4 bg-gold text-navy font-medium hover:bg-gold-soft rounded-full">{av.hero.cta_primary_label}</button>
+            <a href={av.hero.cta_secondary_url} target="_blank" rel="noopener" className="px-7 py-4 border border-ivory/30 hover:bg-ivory/10 rounded-full">{av.hero.cta_secondary_label}</a>
           </div>
           <div className="mt-4 text-xs text-ivory/60">{av.hero.mention}</div>
         </div>
       </section>
 
       <section className="max-w-7xl mx-auto px-6 py-24">
-        <div className="text-xs uppercase tracking-[0.3em] text-gold">{av.forces.surtitre}</div>
-        <h2 className="font-serif text-5xl md:text-6xl mt-3">{av.forces.titre}</h2>
+        <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{av.forces.surtitre}</div>
+        <h2 className="font-serif text-3xl md:text-4xl mt-3">{av.forces.titre}</h2>
         <div className="grid md:grid-cols-3 gap-6 mt-12">
           {av.forces.items.map((it) => (
-            <div key={it.titre} className="p-7 bg-white border border-ink/10">
+            <div key={it.titre} className="shine-hover p-7 bg-white border border-ink/10">
               <div className="font-serif text-2xl text-navy">{it.titre}</div>
               <p className="text-sm text-muted mt-3 leading-relaxed">{it.desc}</p>
             </div>
@@ -48,11 +52,11 @@ export default function Page() {
 
       <section className="bg-navy text-ivory py-24">
         <div className="max-w-5xl mx-auto px-6">
-          <div className="text-xs uppercase tracking-[0.3em] text-gold">{av.etapes.surtitre}</div>
-          <h2 className="font-serif text-5xl md:text-6xl mt-3">{av.etapes.titre}</h2>
-          <div className="mt-12 space-y-8">
+          <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{av.etapes.surtitre}</div>
+          <h2 className="font-serif text-3xl md:text-4xl mt-3">{av.etapes.titre}</h2>
+          <div className="mt-12 grid md:grid-cols-2 gap-6">
             {av.etapes.items.map((e) => (
-              <div key={e.num} className="grid grid-cols-[auto_1fr] gap-6 md:gap-10 border-t border-ivory/10 pt-8">
+              <div key={e.num} className="rounded-xl shine-hover bg-navy-soft border border-ivory/10 p-6 grid grid-cols-[auto_1fr] gap-5">
                 <div className="font-serif text-4xl text-gold leading-none">{e.num}</div>
                 <div>
                   <div className="font-serif text-xl">{e.titre}</div>
@@ -64,13 +68,11 @@ export default function Page() {
         </div>
       </section>
 
-      <RomainCard titre={av.romain_card.titre} message={av.romain_card.message} />
-
       <section className="bg-ivory-deep py-20 text-center">
         <div className="max-w-3xl mx-auto px-6">
-          <h2 className="font-serif text-5xl md:text-6xl text-navy">{av.cta_final.titre}</h2>
+          <h2 className="font-serif text-3xl md:text-4xl text-navy">{av.cta_final.titre}</h2>
           <p className="text-muted mt-4">{av.cta_final.intro}</p>
-          <button onClick={() => setShowForm(true)} className="inline-block mt-8 px-8 py-4 bg-navy text-ivory hover:bg-gold hover:text-navy transition">
+          <button onClick={startForm} className="inline-block mt-8 px-8 py-4 bg-navy text-ivory rounded-full hover:bg-gold hover:text-navy transition rounded-full">
             {av.cta_final.cta_label}
           </button>
         </div>
@@ -79,10 +81,14 @@ export default function Page() {
   );
 }
 
-function Wizard() {
+function Wizard({ onCancel }: { onCancel: () => void }) {
   const [step, setStep] = useState(0);
   const [data, setData] = useState({ type: "", ville: "", adresse: "", surface: "", pieces: "", etat: "", delai: "", nom: "", email: "", tel: "" });
   const set = (k: string, v: string) => setData({ ...data, [k]: v });
+
+  useEffect(() => {
+    if (typeof window !== "undefined") window.scrollTo({ top: 0, behavior: "instant" as ScrollBehavior });
+  }, []);
 
   const submit = async () => {
     try {
@@ -147,10 +153,10 @@ function Wizard() {
   if (step === 6) {
     return (
       <div className="max-w-3xl mx-auto px-6 py-32 text-center">
-        <div className="text-xs uppercase tracking-[0.3em] text-gold">{av.wizard_merci.surtitre}</div>
+        <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{av.wizard_merci.surtitre}</div>
         <h1 className="font-serif text-5xl mt-4">{av.wizard_merci.titre_prefix} {data.nom || ""} 🌿</h1>
         <p className="text-muted mt-6 leading-relaxed">{av.wizard_merci.intro}</p>
-        <Link href={av.wizard_merci.cta_href} className="inline-block mt-10 px-7 py-4 bg-navy text-ivory">{av.wizard_merci.cta_label}</Link>
+        <Link href={av.wizard_merci.cta_href} className="inline-block mt-10 px-7 py-4 bg-navy text-ivory rounded-full">{av.wizard_merci.cta_label}</Link>
       </div>
     );
   }
@@ -165,13 +171,14 @@ function Wizard() {
     (step === 5 && data.nom && data.email && data.tel);
 
   return (
-    <div className="max-w-3xl mx-auto px-6 py-16 md:py-24">
+    <div className="max-w-3xl mx-auto px-6 py-12 md:py-20">
+      <button onClick={onCancel} className="text-sm text-muted hover:text-navy mb-6 inline-flex items-center gap-1">← Retour à la page Avis de valeur</button>
       <div className="flex gap-1 mt-4 mb-12">
         {steps.map((_, i) => (
           <div key={i} className={`h-1 flex-1 ${i<=step?"bg-gold":"bg-ink/10"}`} />
         ))}
       </div>
-      <div className="text-xs uppercase tracking-[0.3em] text-gold">{current.sub}</div>
+      <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{current.sub}</div>
       <h2 className="font-serif text-4xl md:text-5xl mt-3">{current.title}</h2>
       <div className="mt-10">{current.body}</div>
       <div className="flex justify-between mt-10">
@@ -190,7 +197,7 @@ function Field({ label, value, onChange, placeholder, type = "text" }: { label: 
   return (
     <label className="block">
       <span className="text-xs uppercase tracking-widest text-muted">{label}</span>
-      <input type={type} value={value} onChange={(e) => onChange(e.target.value)} placeholder={placeholder} className="mt-2 w-full px-4 py-3 bg-white border border-ink/15 focus:border-navy outline-none" />
+      <input type={type} value={value} onChange={(e) => onChange(e.target.value)} placeholder={placeholder} className="rounded-xl mt-2 w-full px-4 py-3 bg-white border border-ink/15 focus:border-navy outline-none" />
     </label>
   );
 }

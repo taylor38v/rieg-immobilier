@@ -10,7 +10,7 @@ export type SecteurDetail = {
   altitude?: string;
   ce_qui_differencie: string[];
   ecoles: { nom: string; type: string; precision?: string }[];
-  restaurants: { nom: string; cuisine: string; gamme: string }[];
+  restaurants: { nom: string; cuisine: string; gamme: string; note?: number }[];
   associations: { nom: string; activite: string }[];
   quartiers: { nom: string; description: string; prix_indicatif?: string }[];
   evolution_prix: { annee: number; prixM2: number }[];

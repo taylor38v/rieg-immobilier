@@ -4,7 +4,7 @@
   "superficie": 16,
   "cp": "42160",
   "intercommunalite": "Saint-Étienne Métropole",
-  "altitude": "353 — 435 m",
+  "altitude": "353 - 435 m",
   "ce_qui_differencie": [
     "Aéroport Saint-Étienne–Loire (Bouthéon) : seul aéroport commercial du département, ligne régulière saisonnière vers Béjaïa et vols affrétés vers l'Italie, l'Espagne, la Grèce, l'Albanie, Malte et la Tunisie en 2026",
     "Pôle économique majeur de la Loire : +750 entreprises implantées dans les zones d'activité Inovy, Essarts et Loire Sud, plus de 180 commerces de proximité",
@@ -40,12 +40,12 @@
     {
       "nom": "Collège Jacques Prévert",
       "type": "Collège",
-      "precision": "Public — ~234 candidats au brevet, ~90% de réussite"
+      "precision": "Public - ~234 candidats au brevet, ~90% de réussite"
     },
     {
       "nom": "Lycée professionnel Pierre Desgranges",
       "type": "Lycée",
-      "precision": "Public — formations industrie & tertiaire, 3 rue Fleming"
+      "precision": "Public - formations industrie & tertiaire, 3 rue Fleming"
     }
   ],
   "restaurants": [
@@ -80,7 +80,7 @@
       "gamme": "Pizza"
     },
     {
-      "nom": "IT — Italian Trattoria",
+      "nom": "IT - Italian Trattoria",
       "cuisine": "Trattoria italienne, pâtes fraîches et pizzas",
       "gamme": "Pizza"
     },
@@ -93,11 +93,11 @@
   "associations": [
     {
       "nom": "Andrézieux-Bouthéon Football Club (ABFC)",
-      "activite": "Football — National 2 (saison 2025-2026), célèbre pour avoir éliminé l'OM en Coupe de France 2019"
+      "activite": "Football - National 2 (saison 2025-2026), célèbre pour avoir éliminé l'OM en Coupe de France 2019"
     },
     {
       "nom": "AL Andrézieux Basket",
-      "activite": "Basket-ball — équipes seniors et formation jeunes"
+      "activite": "Basket-ball - équipes seniors et formation jeunes"
     },
     {
       "nom": "AF Boxing Club",
@@ -116,22 +116,22 @@
     {
       "nom": "Bourg d'Andrézieux",
       "description": "Centre historique côté Andrézieux, commerces de proximité, mairie, équipements municipaux. Tissu pavillonnaire et petits collectifs.",
-      "prix_indicatif": "2 200 — 2 400 €/m²"
+      "prix_indicatif": "2 200 - 2 400 €/m²"
     },
     {
       "nom": "Bouthéon / Château",
       "description": "Quartier historique perché autour du Château de Bouthéon, ambiance village, vues sur la Loire, secteur résidentiel recherché.",
-      "prix_indicatif": "2 400 — 2 700 €/m²"
+      "prix_indicatif": "2 400 - 2 700 €/m²"
     },
     {
       "nom": "La Chapelle",
       "description": "Quartier résidentiel créé après la fusion des deux communes, fait le lien entre Andrézieux et Bouthéon. Bon compromis familial.",
-      "prix_indicatif": "2 300 — 2 500 €/m²"
+      "prix_indicatif": "2 300 - 2 500 €/m²"
     },
     {
       "nom": "Agglomération Sud",
       "description": "Secteur sud près de l'aéroport et des parcs industriels (Loire Sud, Essarts). Mix logements anciens et programmes neufs proches des emplois.",
-      "prix_indicatif": "1 900 — 2 200 €/m²"
+      "prix_indicatif": "1 900 - 2 200 €/m²"
     }
   ],
   "evolution_prix": [

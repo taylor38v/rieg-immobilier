@@ -89,7 +89,7 @@ export default function MontDorMap() {
         </g>
 
         {/* Title */}
-        <text x="60" y="430" fill="#c9a25f" fontSize="10" style={{ letterSpacing: "0.3em" }} opacity="0.7">CARTE — MONT D'OR & OUEST LYONNAIS</text>
+        <text x="60" y="430" fill="#c9a25f" fontSize="10" style={{ letterSpacing: "0.3em" }} opacity="0.7">CARTE - MONT D'OR & OUEST LYONNAIS</text>
         <text x="60" y="448" fill="#faf6ef" fontSize="9" opacity="0.4" fontStyle="italic">Survolez les points pour découvrir le marché local</text>
       </svg>
     </div>

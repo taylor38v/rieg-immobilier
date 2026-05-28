@@ -25,7 +25,7 @@ locale: fr
 collections:
 
   - name: "articles"
-    label: "Articles"
+    label: "📰 Articles"
     label_singular: "Article"
     folder: "content/articles"
     create: true
@@ -46,7 +46,7 @@ collections:
       - { name: "body", label: "Contenu de l'article", widget: "markdown" }
 
   - name: "temoignages"
-    label: "Témoignages clients"
+    label: "⭐ Témoignages clients"
     label_singular: "Témoignage"
     folder: "content/temoignages"
     create: true
@@ -65,7 +65,7 @@ collections:
       - { name: "body", label: "Témoignage", widget: "text" }
 
   - name: "pages"
-    label: "Pages libres"
+    label: "📄 Pages libres"
     label_singular: "Page"
     folder: "content/pages"
     create: true
@@ -81,7 +81,7 @@ collections:
       - { name: "body", label: "Contenu", widget: "markdown" }
 
   - name: "site"
-    label: "Pages du site"
+    label: "🌐 Pages du site"
     label_singular: "Page du site"
     description: "Modifie les textes de chaque page existante du site (home, à propos, vendre, acheter…)."
     files:
@@ -93,15 +93,16 @@ collections:
           - name: "hero"
             label: "1. Hero (haut de page)"
             widget: "object"
+            collapsed: true
             fields:
               - { name: "video", label: "Vidéo de fond (drone, .mp4)", widget: "file", media_library: { config: { multiple: false } }, hint: "Vidéos existantes dans /videos/secteurs/ : saint-cyr, ecully, limonest, saint-didier, saint-just. Tu peux aussi uploader la tienne." }
               - { name: "chip", label: "Pastille (Saint-Didier · Ouest lyonnais...)", widget: "string" }
               - { name: "titre", label: "Titre principal H1", widget: "string" }
               - { name: "intro", label: "Paragraphe d'intro", widget: "text" }
-              - { name: "cta_primary_label", label: "Bouton principal — texte", widget: "string" }
-              - { name: "cta_primary_href", label: "Bouton principal — lien", widget: "string" }
-              - { name: "cta_secondary_label", label: "Bouton secondaire — texte", widget: "string" }
-              - { name: "cta_secondary_href", label: "Bouton secondaire — lien", widget: "string" }
+              - { name: "cta_primary_label", label: "Bouton principal - texte", widget: "string" }
+              - { name: "cta_primary_href", label: "Bouton principal - lien", widget: "string", hint: "Page interne (ex: /contact) ou URL externe (https://...)." }
+              - { name: "cta_secondary_label", label: "Bouton secondaire - texte", widget: "string" }
+              - { name: "cta_secondary_href", label: "Bouton secondaire - lien", widget: "string", hint: "Page interne (ex: /rejoindre) ou URL externe." }
               - { name: "mention", label: "Mention rassurance (Zéro engagement...)", widget: "string" }
               - name: "stats"
                 label: "Chiffres clés (4)"
@@ -112,32 +113,35 @@ collections:
           - name: "biens_iad"
             label: "2. Bandeau biens iad"
             widget: "object"
+            collapsed: true
             fields:
-              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "surtitre", label: "Surtitre", widget: "string", hint: "Petit texte en or affiché au-dessus du titre H2." }
               - { name: "titre", label: "Titre", widget: "string" }
               - { name: "desc", label: "Description", widget: "text" }
-              - { name: "cta_label", label: "Bouton — texte", widget: "string" }
-              - { name: "cta_url", label: "Bouton — lien (URL externe)", widget: "string" }
+              - { name: "cta_label", label: "Bouton - texte", widget: "string" }
+              - { name: "cta_url", label: "Bouton - lien (URL externe)", widget: "string" }
           - name: "qui_suis_je"
             label: "3. Qui suis-je"
             widget: "object"
+            collapsed: true
             fields:
-              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "surtitre", label: "Surtitre", widget: "string", hint: "Petit texte en or affiché au-dessus du titre H2." }
               - { name: "titre", label: "Titre H2", widget: "string" }
               - { name: "paragraphes", label: "Paragraphes (markdown : **gras**, _italique_)", widget: "list", field: { name: "p", label: "Paragraphe", widget: "text" } }
               - { name: "photo", label: "Photo (chemin /photos/...)", widget: "image" }
-              - { name: "photo_alt", label: "Photo — texte alternatif", widget: "string" }
+              - { name: "photo_alt", label: "Photo - texte alternatif", widget: "string" }
               - { name: "citation", label: "Citation (carte dorée)", widget: "string" }
-              - { name: "citation_auteur", label: "Citation — auteur", widget: "string" }
-              - { name: "cta_primary_label", label: "Bouton principal — texte", widget: "string" }
-              - { name: "cta_primary_href", label: "Bouton principal — lien", widget: "string" }
-              - { name: "cta_secondary_label", label: "Bouton secondaire — texte", widget: "string" }
-              - { name: "cta_secondary_href", label: "Bouton secondaire — lien", widget: "string" }
+              - { name: "citation_auteur", label: "Citation - auteur", widget: "string" }
+              - { name: "cta_primary_label", label: "Bouton principal - texte", widget: "string" }
+              - { name: "cta_primary_href", label: "Bouton principal - lien", widget: "string", hint: "Page interne (ex: /contact) ou URL externe (https://...)." }
+              - { name: "cta_secondary_label", label: "Bouton secondaire - texte", widget: "string" }
+              - { name: "cta_secondary_href", label: "Bouton secondaire - lien", widget: "string", hint: "Page interne (ex: /rejoindre) ou URL externe." }
           - name: "services"
             label: "4. Mes services (4 cartes)"
             widget: "object"
+            collapsed: true
             fields:
-              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "surtitre", label: "Surtitre", widget: "string", hint: "Petit texte en or affiché au-dessus du titre H2." }
               - { name: "titre", label: "Titre H2", widget: "string" }
               - name: "items"
                 label: "Services (4 max)"
@@ -150,8 +154,9 @@ collections:
           - name: "secteurs"
             label: "5. Mes secteurs d'intervention (3 zones)"
             widget: "object"
+            collapsed: true
             fields:
-              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "surtitre", label: "Surtitre", widget: "string", hint: "Petit texte en or affiché au-dessus du titre H2." }
               - { name: "titre", label: "Titre H2", widget: "string" }
               - { name: "intro", label: "Paragraphe d'intro", widget: "text" }
               - name: "zones"
@@ -166,8 +171,9 @@ collections:
           - name: "instagram"
             label: "6. Coulisses Instagram (3 reels)"
             widget: "object"
+            collapsed: true
             fields:
-              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "surtitre", label: "Surtitre", widget: "string", hint: "Petit texte en or affiché au-dessus du titre H2." }
               - { name: "titre", label: "Titre H2", widget: "string" }
               - { name: "intro", label: "Paragraphe d'intro", widget: "text" }
               - { name: "lien", label: "Lien Instagram global (profil)", widget: "string" }
@@ -179,13 +185,14 @@ collections:
                   - { name: "duree", label: "Durée (1:20)", widget: "string" }
                   - { name: "thumb", label: "Vignette", widget: "image" }
                   - { name: "url", label: "Lien direct du reel (https://instagram.com/reel/...)", widget: "string", required: false }
-              - { name: "cta_label", label: "Bouton bas — texte", widget: "string" }
+              - { name: "cta_label", label: "Bouton bas - texte", widget: "string" }
           - name: "avis"
             label: "7. Avis Google (3 témoignages)"
             widget: "object"
+            collapsed: true
             fields:
               - { name: "note_chiffre", label: "Note (4,9/5)", widget: "string" }
-              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "surtitre", label: "Surtitre", widget: "string", hint: "Petit texte en or affiché au-dessus du titre H2." }
               - { name: "titre", label: "Titre H2", widget: "string" }
               - name: "items"
                 label: "Avis (3)"
@@ -194,36 +201,38 @@ collections:
                   - { name: "nom", label: "Nom client", widget: "string" }
                   - { name: "contexte", label: "Contexte (Vendeur · Maison...)", widget: "string" }
                   - { name: "texte", label: "Texte de l'avis", widget: "text" }
-              - { name: "cta_label", label: "Bouton — texte", widget: "string" }
-              - { name: "cta_url", label: "Bouton — lien Google", widget: "string" }
+              - { name: "cta_label", label: "Bouton - texte", widget: "string" }
+              - { name: "cta_url", label: "Bouton - lien Google", widget: "string" }
           - name: "cta_final"
             label: "8. CTA bas de page"
             widget: "object"
+            collapsed: true
             fields:
               - { name: "titre", label: "Titre", widget: "string" }
               - { name: "intro", label: "Paragraphe", widget: "text" }
-              - { name: "cta_primary_label", label: "Bouton 1 — texte", widget: "string" }
-              - { name: "cta_primary_href", label: "Bouton 1 — lien", widget: "string" }
-              - { name: "cta_secondary_label", label: "Bouton 2 — texte", widget: "string" }
-              - { name: "cta_secondary_href", label: "Bouton 2 — lien (tel:..., mailto:...)", widget: "string" }
+              - { name: "cta_primary_label", label: "Bouton 1 - texte", widget: "string" }
+              - { name: "cta_primary_href", label: "Bouton 1 - lien", widget: "string" }
+              - { name: "cta_secondary_label", label: "Bouton 2 - texte", widget: "string" }
+              - { name: "cta_secondary_href", label: "Bouton 2 - lien (tel:..., mailto:...)", widget: "string" }
 
       - file: "content/site/a-propos.json"
         label: "👤 À propos"
         name: "a-propos"
         format: "json"
         fields:
-          - { name: "meta_title", label: "Titre SEO", widget: "string" }
-          - { name: "meta_description", label: "Description SEO", widget: "text" }
+          - { name: "meta_title", label: "Titre SEO", widget: "string", hint: "Titre affiché dans l'onglet du navigateur et dans les résultats Google. 50-60 caractères max." }
+          - { name: "meta_description", label: "Description SEO", widget: "text", hint: "Texte sous le titre dans les résultats Google. 150-160 caractères." }
           - name: "hero"
             label: "Hero"
             widget: "object"
+            collapsed: true
             fields:
-              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "surtitre", label: "Surtitre", widget: "string", hint: "Petit texte en or affiché au-dessus du titre H2." }
               - { name: "titre_l1", label: "Titre H1 (ligne 1)", widget: "string" }
               - { name: "titre_l2", label: "Titre H1 (ligne 2)", widget: "string" }
               - { name: "paragraphes", label: "Paragraphes", widget: "list", field: { name: "p", label: "Paragraphe", widget: "text" } }
               - { name: "photo", label: "Photo", widget: "image" }
-              - { name: "photo_alt", label: "Photo — alt", widget: "string" }
+              - { name: "photo_alt", label: "Photo - alt", widget: "string" }
               - name: "stats"
                 label: "Stats (3)"
                 widget: "list"
@@ -233,8 +242,9 @@ collections:
           - name: "engagements"
             label: "Engagements"
             widget: "object"
+            collapsed: true
             fields:
-              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "surtitre", label: "Surtitre", widget: "string", hint: "Petit texte en or affiché au-dessus du titre H2." }
               - { name: "titre", label: "Titre H2", widget: "string" }
               - name: "items"
                 label: "Engagements (6)"
@@ -245,47 +255,51 @@ collections:
           - name: "cta_final"
             label: "CTA bas de page"
             widget: "object"
+            collapsed: true
             fields:
               - { name: "titre", label: "Titre", widget: "string" }
-              - { name: "cta_label", label: "Bouton — texte", widget: "string" }
-              - { name: "cta_href", label: "Bouton — lien", widget: "string" }
+              - { name: "cta_label", label: "Bouton - texte", widget: "string" }
+              - { name: "cta_href", label: "Bouton - lien", widget: "string" }
 
       - file: "content/site/contact.json"
         label: "📞 Contact"
         name: "contact"
         format: "json"
         fields:
-          - { name: "meta_title", label: "Titre SEO", widget: "string" }
-          - { name: "meta_description", label: "Description SEO", widget: "text" }
+          - { name: "meta_title", label: "Titre SEO", widget: "string", hint: "Titre affiché dans l'onglet du navigateur et dans les résultats Google. 50-60 caractères max." }
+          - { name: "meta_description", label: "Description SEO", widget: "text", hint: "Texte sous le titre dans les résultats Google. 150-160 caractères." }
           - name: "hero"
             label: "Hero"
             widget: "object"
+            collapsed: true
             fields:
-              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "surtitre", label: "Surtitre", widget: "string", hint: "Petit texte en or affiché au-dessus du titre H2." }
               - { name: "titre", label: "Titre H1", widget: "string" }
-              - { name: "intro", label: "Intro", widget: "text" }
+              - { name: "intro", label: "Intro", widget: "text", hint: "Court paragraphe d'introduction sous le titre." }
               - { name: "garanties", label: "Garanties (3)", widget: "list" }
           - name: "calendrier"
             label: "Calendrier Cal.com"
             widget: "object"
+            collapsed: true
             fields:
-              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "surtitre", label: "Surtitre", widget: "string", hint: "Petit texte en or affiché au-dessus du titre H2." }
               - { name: "titre", label: "Titre", widget: "string" }
-              - { name: "intro", label: "Intro", widget: "text" }
+              - { name: "intro", label: "Intro", widget: "text", hint: "Court paragraphe d'introduction sous le titre." }
               - { name: "puces", label: "Puces (3)", widget: "list" }
               - { name: "cal_url", label: "URL Cal.com", widget: "string" }
-              - { name: "cta_label", label: "Bouton — texte", widget: "string" }
+              - { name: "cta_label", label: "Bouton - texte", widget: "string" }
           - name: "sidebar"
             label: "Sidebar contact"
             widget: "object"
+            collapsed: true
             fields:
-              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "surtitre", label: "Surtitre", widget: "string", hint: "Petit texte en or affiché au-dessus du titre H2." }
               - { name: "titre", label: "Titre", widget: "string" }
               - { name: "telephone", label: "Téléphone affiché", widget: "string" }
               - { name: "telephone_lien", label: "Téléphone format international", widget: "string" }
-              - { name: "whatsapp_label", label: "WhatsApp — label", widget: "string" }
-              - { name: "whatsapp_url", label: "WhatsApp — URL", widget: "string" }
-              - { name: "calcom_label", label: "Cal.com — label", widget: "string" }
+              - { name: "whatsapp_label", label: "WhatsApp - label", widget: "string" }
+              - { name: "whatsapp_url", label: "WhatsApp - URL", widget: "string" }
+              - { name: "calcom_label", label: "Cal.com - label", widget: "string" }
               - { name: "email", label: "Email", widget: "string" }
               - { name: "horaires_titre", label: "Horaires titre", widget: "string" }
               - { name: "horaires_detail", label: "Horaires détail", widget: "string" }
@@ -293,8 +307,9 @@ collections:
           - name: "engagement"
             label: "Encart engagement (bleu)"
             widget: "object"
+            collapsed: true
             fields:
-              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "surtitre", label: "Surtitre", widget: "string", hint: "Petit texte en or affiché au-dessus du titre H2." }
               - { name: "items", label: "Items (4)", widget: "list" }
           - { name: "footer_form_note", label: "Note bas formulaire", widget: "text" }
 
@@ -303,10 +318,10 @@ collections:
         name: "honoraires"
         format: "json"
         fields:
-          - { name: "meta_title", label: "Titre SEO", widget: "string" }
-          - { name: "surtitre", label: "Surtitre", widget: "string" }
+          - { name: "meta_title", label: "Titre SEO", widget: "string", hint: "Titre affiché dans l'onglet du navigateur et dans les résultats Google. 50-60 caractères max." }
+          - { name: "surtitre", label: "Surtitre", widget: "string", hint: "Petit texte en or affiché au-dessus du titre H2." }
           - { name: "titre", label: "Titre H1", widget: "string" }
-          - { name: "intro", label: "Intro", widget: "text" }
+          - { name: "intro", label: "Intro", widget: "text", hint: "Court paragraphe d'introduction sous le titre." }
           - name: "tranches"
             label: "Tranches d'honoraires"
             widget: "list"
@@ -321,26 +336,28 @@ collections:
         name: "vendre"
         format: "json"
         fields:
-          - { name: "meta_title", label: "Titre SEO", widget: "string" }
-          - { name: "meta_description", label: "Description SEO", widget: "text" }
+          - { name: "meta_title", label: "Titre SEO", widget: "string", hint: "Titre affiché dans l'onglet du navigateur et dans les résultats Google. 50-60 caractères max." }
+          - { name: "meta_description", label: "Description SEO", widget: "text", hint: "Texte sous le titre dans les résultats Google. 150-160 caractères." }
           - name: "hero"
             label: "Hero"
             widget: "object"
+            collapsed: true
             fields:
               - { name: "video", label: "Vidéo de fond", widget: "file" }
-              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "surtitre", label: "Surtitre", widget: "string", hint: "Petit texte en or affiché au-dessus du titre H2." }
               - { name: "titre", label: "Titre H1", widget: "string" }
               - { name: "intro", label: "Paragraphe intro", widget: "text" }
-              - { name: "cta_primary_label", label: "Bouton 1 — texte", widget: "string" }
-              - { name: "cta_primary_href", label: "Bouton 1 — lien", widget: "string" }
-              - { name: "cta_secondary_label", label: "Bouton 2 — texte", widget: "string" }
-              - { name: "cta_secondary_url", label: "Bouton 2 — URL (WhatsApp)", widget: "string" }
+              - { name: "cta_primary_label", label: "Bouton 1 - texte", widget: "string" }
+              - { name: "cta_primary_href", label: "Bouton 1 - lien", widget: "string" }
+              - { name: "cta_secondary_label", label: "Bouton 2 - texte", widget: "string" }
+              - { name: "cta_secondary_url", label: "Bouton 2 - URL (WhatsApp)", widget: "string" }
               - { name: "mention", label: "Mention rassurance", widget: "string" }
           - name: "pourquoi_moi"
             label: "Pourquoi vendre avec moi"
             widget: "object"
+            collapsed: true
             fields:
-              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "surtitre", label: "Surtitre", widget: "string", hint: "Petit texte en or affiché au-dessus du titre H2." }
               - { name: "titre", label: "Titre H2", widget: "string" }
               - name: "items"
                 label: "Raisons (5)"
@@ -351,8 +368,9 @@ collections:
           - name: "comparatif"
             label: "Comparatif vendre seul / avec moi"
             widget: "object"
+            collapsed: true
             fields:
-              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "surtitre", label: "Surtitre", widget: "string", hint: "Petit texte en or affiché au-dessus du titre H2." }
               - { name: "titre", label: "Titre H2", widget: "string" }
               - { name: "label_avec", label: "Label colonne 'avec'", widget: "string" }
               - { name: "label_sans", label: "Label colonne 'sans'", widget: "string" }
@@ -365,8 +383,9 @@ collections:
           - name: "etapes"
             label: "Étapes du processus"
             widget: "object"
+            collapsed: true
             fields:
-              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "surtitre", label: "Surtitre", widget: "string", hint: "Petit texte en or affiché au-dessus du titre H2." }
               - { name: "titre", label: "Titre H2", widget: "string" }
               - name: "items"
                 label: "Étapes (4)"
@@ -378,21 +397,24 @@ collections:
           - name: "romain_card"
             label: "Carte Romain"
             widget: "object"
+            collapsed: true
             fields:
               - { name: "titre", label: "Titre", widget: "string" }
               - { name: "message", label: "Message", widget: "text" }
           - name: "secteurs_section"
             label: "Section secteurs (avec carte)"
             widget: "object"
+            collapsed: true
             fields:
-              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "surtitre", label: "Surtitre", widget: "string", hint: "Petit texte en or affiché au-dessus du titre H2." }
               - { name: "titre", label: "Titre", widget: "string" }
-              - { name: "intro", label: "Intro", widget: "text" }
+              - { name: "intro", label: "Intro", widget: "text", hint: "Court paragraphe d'introduction sous le titre." }
           - name: "zones_section"
             label: "Section 3 zones"
             widget: "object"
+            collapsed: true
             fields:
-              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "surtitre", label: "Surtitre", widget: "string", hint: "Petit texte en or affiché au-dessus du titre H2." }
               - { name: "titre", label: "Titre", widget: "string" }
               - name: "zones"
                 label: "Zones (3)"
@@ -405,11 +427,12 @@ collections:
           - name: "cta_final"
             label: "CTA bas de page"
             widget: "object"
+            collapsed: true
             fields:
               - { name: "titre", label: "Titre", widget: "string" }
-              - { name: "intro", label: "Intro", widget: "text" }
-              - { name: "cta_primary_label", label: "Bouton 1 — texte", widget: "string" }
-              - { name: "cta_primary_href", label: "Bouton 1 — lien", widget: "string" }
+              - { name: "intro", label: "Intro", widget: "text", hint: "Court paragraphe d'introduction sous le titre." }
+              - { name: "cta_primary_label", label: "Bouton 1 - texte", widget: "string" }
+              - { name: "cta_primary_href", label: "Bouton 1 - lien", widget: "string" }
               - { name: "cta_whatsapp_label", label: "Bouton WhatsApp", widget: "string" }
               - { name: "cta_whatsapp_url", label: "Bouton WhatsApp URL", widget: "string" }
 
@@ -418,27 +441,29 @@ collections:
         name: "acheter"
         format: "json"
         fields:
-          - { name: "meta_title", label: "Titre SEO", widget: "string" }
-          - { name: "meta_description", label: "Description SEO", widget: "text" }
+          - { name: "meta_title", label: "Titre SEO", widget: "string", hint: "Titre affiché dans l'onglet du navigateur et dans les résultats Google. 50-60 caractères max." }
+          - { name: "meta_description", label: "Description SEO", widget: "text", hint: "Texte sous le titre dans les résultats Google. 150-160 caractères." }
           - name: "hero"
             label: "Hero"
             widget: "object"
+            collapsed: true
             fields:
               - { name: "video", label: "Vidéo de fond", widget: "file" }
-              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "surtitre", label: "Surtitre", widget: "string", hint: "Petit texte en or affiché au-dessus du titre H2." }
               - { name: "titre", label: "Titre H1", widget: "string" }
-              - { name: "intro", label: "Intro", widget: "text" }
+              - { name: "intro", label: "Intro", widget: "text", hint: "Court paragraphe d'introduction sous le titre." }
               - { name: "argument_gold", label: "Argument doré (markdown : **gras**)", widget: "text" }
               - { name: "presentation", label: "Paragraphe présentation (markdown)", widget: "text" }
-              - { name: "cta_primary_label", label: "Bouton 1 — texte", widget: "string" }
-              - { name: "cta_primary_href", label: "Bouton 1 — lien", widget: "string" }
-              - { name: "cta_secondary_label", label: "Bouton 2 — texte", widget: "string" }
-              - { name: "cta_secondary_url", label: "Bouton 2 — URL", widget: "string" }
+              - { name: "cta_primary_label", label: "Bouton 1 - texte", widget: "string" }
+              - { name: "cta_primary_href", label: "Bouton 1 - lien", widget: "string" }
+              - { name: "cta_secondary_label", label: "Bouton 2 - texte", widget: "string" }
+              - { name: "cta_secondary_url", label: "Bouton 2 - URL", widget: "string" }
           - name: "piliers"
             label: "Piliers"
             widget: "object"
+            collapsed: true
             fields:
-              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "surtitre", label: "Surtitre", widget: "string", hint: "Petit texte en or affiché au-dessus du titre H2." }
               - { name: "titre", label: "Titre", widget: "string" }
               - name: "items"
                 label: "Piliers (4)"
@@ -449,8 +474,9 @@ collections:
           - name: "services"
             label: "Services"
             widget: "object"
+            collapsed: true
             fields:
-              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "surtitre", label: "Surtitre", widget: "string", hint: "Petit texte en or affiché au-dessus du titre H2." }
               - { name: "titre", label: "Titre", widget: "string" }
               - name: "items"
                 label: "Services (4)"
@@ -461,24 +487,27 @@ collections:
           - name: "secteurs_section"
             label: "Section secteurs"
             widget: "object"
+            collapsed: true
             fields:
-              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "surtitre", label: "Surtitre", widget: "string", hint: "Petit texte en or affiché au-dessus du titre H2." }
               - { name: "titre", label: "Titre", widget: "string" }
-              - { name: "intro", label: "Intro", widget: "text" }
+              - { name: "intro", label: "Intro", widget: "text", hint: "Court paragraphe d'introduction sous le titre." }
           - name: "romain_card"
             label: "Carte Romain"
             widget: "object"
+            collapsed: true
             fields:
               - { name: "titre", label: "Titre", widget: "string" }
               - { name: "message", label: "Message", widget: "text" }
           - name: "cta_final"
             label: "CTA bas de page"
             widget: "object"
+            collapsed: true
             fields:
               - { name: "titre", label: "Titre", widget: "string" }
-              - { name: "intro", label: "Intro", widget: "text" }
+              - { name: "intro", label: "Intro", widget: "text", hint: "Court paragraphe d'introduction sous le titre." }
               - { name: "cta_primary_label", label: "Bouton 1", widget: "string" }
-              - { name: "cta_primary_href", label: "Bouton 1 — lien", widget: "string" }
+              - { name: "cta_primary_href", label: "Bouton 1 - lien", widget: "string" }
               - { name: "cta_whatsapp_label", label: "Bouton WhatsApp", widget: "string" }
               - { name: "cta_whatsapp_url", label: "Bouton WhatsApp URL", widget: "string" }
 
@@ -487,27 +516,29 @@ collections:
         name: "location"
         format: "json"
         fields:
-          - { name: "meta_title", label: "Titre SEO", widget: "string" }
-          - { name: "meta_description", label: "Description SEO", widget: "text" }
+          - { name: "meta_title", label: "Titre SEO", widget: "string", hint: "Titre affiché dans l'onglet du navigateur et dans les résultats Google. 50-60 caractères max." }
+          - { name: "meta_description", label: "Description SEO", widget: "text", hint: "Texte sous le titre dans les résultats Google. 150-160 caractères." }
           - name: "hero"
             label: "Hero"
             widget: "object"
+            collapsed: true
             fields:
               - { name: "video", label: "Vidéo de fond", widget: "file" }
-              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "surtitre", label: "Surtitre", widget: "string", hint: "Petit texte en or affiché au-dessus du titre H2." }
               - { name: "titre", label: "Titre H1", widget: "string" }
               - { name: "intro1", label: "Paragraphe 1", widget: "text" }
               - { name: "intro2", label: "Paragraphe 2", widget: "text" }
               - { name: "cta_primary_label", label: "Bouton 1", widget: "string" }
-              - { name: "cta_primary_href", label: "Bouton 1 — lien", widget: "string" }
+              - { name: "cta_primary_href", label: "Bouton 1 - lien", widget: "string" }
               - { name: "cta_secondary_label", label: "Bouton 2", widget: "string" }
               - { name: "cta_secondary_url", label: "Bouton 2 URL", widget: "string" }
               - { name: "mention", label: "Mention", widget: "string" }
           - name: "pourquoi"
             label: "Pourquoi me confier votre bien"
             widget: "object"
+            collapsed: true
             fields:
-              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "surtitre", label: "Surtitre", widget: "string", hint: "Petit texte en or affiché au-dessus du titre H2." }
               - { name: "titre", label: "Titre", widget: "string" }
               - name: "items"
                 label: "Piliers (6)"
@@ -518,8 +549,9 @@ collections:
           - name: "services"
             label: "Services"
             widget: "object"
+            collapsed: true
             fields:
-              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "surtitre", label: "Surtitre", widget: "string", hint: "Petit texte en or affiché au-dessus du titre H2." }
               - { name: "titre", label: "Titre", widget: "string" }
               - name: "items"
                 label: "Services (4)"
@@ -530,54 +562,59 @@ collections:
           - name: "secteurs_section"
             label: "Section secteurs"
             widget: "object"
+            collapsed: true
             fields:
-              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "surtitre", label: "Surtitre", widget: "string", hint: "Petit texte en or affiché au-dessus du titre H2." }
               - { name: "titre", label: "Titre", widget: "string" }
-              - { name: "intro", label: "Intro", widget: "text" }
+              - { name: "intro", label: "Intro", widget: "text", hint: "Court paragraphe d'introduction sous le titre." }
           - name: "romain_card"
             label: "Carte Romain"
             widget: "object"
+            collapsed: true
             fields:
               - { name: "titre", label: "Titre", widget: "string" }
               - { name: "message", label: "Message", widget: "text" }
           - name: "cta_final"
             label: "CTA bas de page (2 colonnes)"
             widget: "object"
+            collapsed: true
             fields:
-              - { name: "locataires_surtitre", label: "Locataires — surtitre", widget: "string" }
-              - { name: "locataires_titre", label: "Locataires — titre", widget: "string" }
-              - { name: "locataires_desc", label: "Locataires — desc", widget: "text" }
-              - { name: "locataires_cta_label", label: "Locataires — CTA", widget: "string" }
-              - { name: "locataires_cta_href", label: "Locataires — CTA lien", widget: "string" }
-              - { name: "question_surtitre", label: "Question — surtitre", widget: "string" }
-              - { name: "question_titre", label: "Question — titre", widget: "string" }
-              - { name: "question_desc", label: "Question — desc", widget: "text" }
+              - { name: "locataires_surtitre", label: "Locataires - surtitre", widget: "string" }
+              - { name: "locataires_titre", label: "Locataires - titre", widget: "string" }
+              - { name: "locataires_desc", label: "Locataires - desc", widget: "text" }
+              - { name: "locataires_cta_label", label: "Locataires - CTA", widget: "string" }
+              - { name: "locataires_cta_href", label: "Locataires - CTA lien", widget: "string" }
+              - { name: "question_surtitre", label: "Question - surtitre", widget: "string" }
+              - { name: "question_titre", label: "Question - titre", widget: "string" }
+              - { name: "question_desc", label: "Question - desc", widget: "text" }
 
       - file: "content/site/avis-de-valeur.json"
         label: "📊 Avis de valeur"
         name: "avis-de-valeur"
         format: "json"
         fields:
-          - { name: "meta_title", label: "Titre SEO", widget: "string" }
-          - { name: "meta_description", label: "Description SEO", widget: "text" }
+          - { name: "meta_title", label: "Titre SEO", widget: "string", hint: "Titre affiché dans l'onglet du navigateur et dans les résultats Google. 50-60 caractères max." }
+          - { name: "meta_description", label: "Description SEO", widget: "text", hint: "Texte sous le titre dans les résultats Google. 150-160 caractères." }
           - name: "hero"
             label: "Hero"
             widget: "object"
+            collapsed: true
             fields:
               - { name: "video", label: "Vidéo de fond", widget: "file" }
-              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "surtitre", label: "Surtitre", widget: "string", hint: "Petit texte en or affiché au-dessus du titre H2." }
               - { name: "titre", label: "Titre H1", widget: "string" }
               - { name: "intro1", label: "Paragraphe 1", widget: "text" }
               - { name: "intro2", label: "Paragraphe 2", widget: "text" }
-              - { name: "cta_primary_label", label: "Bouton 1 — texte", widget: "string" }
+              - { name: "cta_primary_label", label: "Bouton 1 - texte", widget: "string" }
               - { name: "cta_secondary_label", label: "Bouton WhatsApp", widget: "string" }
               - { name: "cta_secondary_url", label: "Bouton WhatsApp URL", widget: "string" }
               - { name: "mention", label: "Mention", widget: "string" }
           - name: "forces"
             label: "Forces (3)"
             widget: "object"
+            collapsed: true
             fields:
-              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "surtitre", label: "Surtitre", widget: "string", hint: "Petit texte en or affiché au-dessus du titre H2." }
               - { name: "titre", label: "Titre", widget: "string" }
               - name: "items"
                 label: "Forces (3)"
@@ -588,8 +625,9 @@ collections:
           - name: "etapes"
             label: "Étapes (4)"
             widget: "object"
+            collapsed: true
             fields:
-              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "surtitre", label: "Surtitre", widget: "string", hint: "Petit texte en or affiché au-dessus du titre H2." }
               - { name: "titre", label: "Titre", widget: "string" }
               - name: "items"
                 label: "Étapes (4)"
@@ -601,23 +639,26 @@ collections:
           - name: "romain_card"
             label: "Carte Romain"
             widget: "object"
+            collapsed: true
             fields:
               - { name: "titre", label: "Titre", widget: "string" }
               - { name: "message", label: "Message", widget: "text" }
           - name: "cta_final"
             label: "CTA"
             widget: "object"
+            collapsed: true
             fields:
               - { name: "titre", label: "Titre", widget: "string" }
-              - { name: "intro", label: "Intro", widget: "text" }
+              - { name: "intro", label: "Intro", widget: "text", hint: "Court paragraphe d'introduction sous le titre." }
               - { name: "cta_label", label: "Bouton", widget: "string" }
           - name: "wizard_merci"
             label: "Page de remerciement après wizard"
             widget: "object"
+            collapsed: true
             fields:
-              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "surtitre", label: "Surtitre", widget: "string", hint: "Petit texte en or affiché au-dessus du titre H2." }
               - { name: "titre_prefix", label: "Préfixe titre (Merci)", widget: "string" }
-              - { name: "intro", label: "Intro", widget: "text" }
+              - { name: "intro", label: "Intro", widget: "text", hint: "Court paragraphe d'introduction sous le titre." }
               - { name: "cta_label", label: "Bouton", widget: "string" }
               - { name: "cta_href", label: "Bouton lien", widget: "string" }
 
@@ -626,16 +667,17 @@ collections:
         name: "rejoindre"
         format: "json"
         fields:
-          - { name: "meta_title", label: "Titre SEO", widget: "string" }
-          - { name: "meta_description", label: "Description SEO", widget: "text" }
+          - { name: "meta_title", label: "Titre SEO", widget: "string", hint: "Titre affiché dans l'onglet du navigateur et dans les résultats Google. 50-60 caractères max." }
+          - { name: "meta_description", label: "Description SEO", widget: "text", hint: "Texte sous le titre dans les résultats Google. 150-160 caractères." }
           - name: "hero"
             label: "Hero"
             widget: "object"
+            collapsed: true
             fields:
               - { name: "video", label: "Vidéo de fond", widget: "file" }
               - { name: "logo_iad", label: "Logo iad", widget: "image" }
               - { name: "logo_alt", label: "Logo alt", widget: "string" }
-              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "surtitre", label: "Surtitre", widget: "string", hint: "Petit texte en or affiché au-dessus du titre H2." }
               - { name: "titre", label: "Titre H1", widget: "string" }
               - { name: "intro", label: "Intro (markdown)", widget: "text" }
               - { name: "cta_primary_label", label: "Bouton 1", widget: "string" }
@@ -651,8 +693,9 @@ collections:
           - name: "piliers"
             label: "Piliers (6)"
             widget: "object"
+            collapsed: true
             fields:
-              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "surtitre", label: "Surtitre", widget: "string", hint: "Petit texte en or affiché au-dessus du titre H2." }
               - { name: "titre", label: "Titre", widget: "string" }
               - name: "items"
                 label: "Piliers (6)"
@@ -664,8 +707,9 @@ collections:
           - name: "profils"
             label: "Profils (4)"
             widget: "object"
+            collapsed: true
             fields:
-              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "surtitre", label: "Surtitre", widget: "string", hint: "Petit texte en or affiché au-dessus du titre H2." }
               - { name: "titre", label: "Titre", widget: "string" }
               - name: "items"
                 label: "Profils (4)"
@@ -676,8 +720,9 @@ collections:
           - name: "qui_suis_je"
             label: "Qui suis-je"
             widget: "object"
+            collapsed: true
             fields:
-              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "surtitre", label: "Surtitre", widget: "string", hint: "Petit texte en or affiché au-dessus du titre H2." }
               - { name: "titre", label: "Titre", widget: "string" }
               - { name: "paragraphes", label: "Paragraphes (markdown)", widget: "list", field: { name: "p", label: "Paragraphe", widget: "text" } }
               - { name: "photo", label: "Photo", widget: "image" }
@@ -687,8 +732,9 @@ collections:
           - name: "parcours"
             label: "Parcours (5 étapes)"
             widget: "object"
+            collapsed: true
             fields:
-              - { name: "surtitre", label: "Surtitre", widget: "string" }
+              - { name: "surtitre", label: "Surtitre", widget: "string", hint: "Petit texte en or affiché au-dessus du titre H2." }
               - { name: "titre", label: "Titre", widget: "string" }
               - name: "etapes"
                 label: "Étapes (5)"
@@ -697,21 +743,13 @@ collections:
                   - { name: "num", label: "Numéro", widget: "string" }
                   - { name: "titre", label: "Titre", widget: "string" }
                   - { name: "desc", label: "Description", widget: "text" }
-          - name: "offre"
-            label: "Offre Starter +"
-            widget: "object"
-            fields:
-              - { name: "surtitre", label: "Surtitre", widget: "string" }
-              - { name: "titre", label: "Titre offre", widget: "string" }
-              - { name: "prix", label: "Prix", widget: "string" }
-              - { name: "desc", label: "Description", widget: "text" }
-              - { name: "mention", label: "Mention légale", widget: "text" }
           - name: "cta_final"
             label: "CTA bas de page"
             widget: "object"
+            collapsed: true
             fields:
               - { name: "titre", label: "Titre", widget: "string" }
-              - { name: "intro", label: "Intro", widget: "text" }
+              - { name: "intro", label: "Intro", widget: "text", hint: "Court paragraphe d'introduction sous le titre." }
               - { name: "cta_primary_label", label: "Bouton 1", widget: "string" }
               - { name: "cta_primary_href", label: "Bouton 1 lien", widget: "string" }
               - { name: "cta_secondary_label", label: "Bouton 2 (téléphone)", widget: "string" }
@@ -722,37 +760,37 @@ collections:
         name: "outils-landing"
         format: "json"
         fields:
-          - { name: "meta_title", label: "Titre SEO", widget: "string" }
-          - { name: "meta_description", label: "Description SEO", widget: "text" }
-          - { name: "surtitre", label: "Surtitre", widget: "string" }
+          - { name: "meta_title", label: "Titre SEO", widget: "string", hint: "Titre affiché dans l'onglet du navigateur et dans les résultats Google. 50-60 caractères max." }
+          - { name: "meta_description", label: "Description SEO", widget: "text", hint: "Texte sous le titre dans les résultats Google. 150-160 caractères." }
+          - { name: "surtitre", label: "Surtitre", widget: "string", hint: "Petit texte en or affiché au-dessus du titre H2." }
           - { name: "titre", label: "Titre H1", widget: "string" }
-          - { name: "intro", label: "Intro", widget: "text" }
+          - { name: "intro", label: "Intro", widget: "text", hint: "Court paragraphe d'introduction sous le titre." }
           - { name: "disclaimer", label: "Disclaimer (italique)", widget: "text" }
-          - { name: "cta_titre", label: "CTA — titre", widget: "string" }
-          - { name: "cta_intro", label: "CTA — intro", widget: "text" }
-          - { name: "cta_label", label: "CTA — bouton", widget: "string" }
-          - { name: "cta_href", label: "CTA — lien", widget: "string" }
+          - { name: "cta_titre", label: "CTA - titre", widget: "string" }
+          - { name: "cta_intro", label: "CTA - intro", widget: "text" }
+          - { name: "cta_label", label: "CTA - bouton", widget: "string" }
+          - { name: "cta_href", label: "CTA - lien", widget: "string" }
 
       - file: "content/site/secteurs-landing.json"
         label: "🗺️ Page Secteurs (intro)"
         name: "secteurs-landing"
         format: "json"
         fields:
-          - { name: "meta_title", label: "Titre SEO", widget: "string" }
-          - { name: "meta_description", label: "Description SEO", widget: "text" }
-          - { name: "surtitre", label: "Surtitre", widget: "string" }
+          - { name: "meta_title", label: "Titre SEO", widget: "string", hint: "Titre affiché dans l'onglet du navigateur et dans les résultats Google. 50-60 caractères max." }
+          - { name: "meta_description", label: "Description SEO", widget: "text", hint: "Texte sous le titre dans les résultats Google. 150-160 caractères." }
+          - { name: "surtitre", label: "Surtitre", widget: "string", hint: "Petit texte en or affiché au-dessus du titre H2." }
           - { name: "titre", label: "Titre H1", widget: "string" }
-          - { name: "intro", label: "Intro", widget: "text" }
+          - { name: "intro", label: "Intro", widget: "text", hint: "Court paragraphe d'introduction sous le titre." }
 
       - file: "content/site/merci.json"
         label: "🙏 Page Merci"
         name: "merci"
         format: "json"
         fields:
-          - { name: "meta_title", label: "Titre SEO", widget: "string" }
-          - { name: "surtitre", label: "Surtitre", widget: "string" }
+          - { name: "meta_title", label: "Titre SEO", widget: "string", hint: "Titre affiché dans l'onglet du navigateur et dans les résultats Google. 50-60 caractères max." }
+          - { name: "surtitre", label: "Surtitre", widget: "string", hint: "Petit texte en or affiché au-dessus du titre H2." }
           - { name: "titre", label: "Titre", widget: "string" }
-          - { name: "intro", label: "Intro", widget: "text" }
+          - { name: "intro", label: "Intro", widget: "text", hint: "Court paragraphe d'introduction sous le titre." }
           - { name: "cta_label", label: "Bouton", widget: "string" }
           - { name: "cta_href", label: "Bouton lien", widget: "string" }
 
@@ -761,10 +799,10 @@ collections:
         name: "not-found"
         format: "json"
         fields:
-          - { name: "surtitre", label: "Surtitre", widget: "string" }
+          - { name: "surtitre", label: "Surtitre", widget: "string", hint: "Petit texte en or affiché au-dessus du titre H2." }
           - { name: "code", label: "Code 404", widget: "string" }
           - { name: "titre", label: "Titre", widget: "string" }
-          - { name: "intro", label: "Intro", widget: "text" }
+          - { name: "intro", label: "Intro", widget: "text", hint: "Court paragraphe d'introduction sous le titre." }
           - { name: "cta_primary_label", label: "Bouton 1", widget: "string" }
           - { name: "cta_primary_href", label: "Bouton 1 lien", widget: "string" }
           - { name: "cta_secondary_label", label: "Bouton 2", widget: "string" }
@@ -775,17 +813,17 @@ collections:
         name: "actualites-landing"
         format: "json"
         fields:
-          - { name: "meta_title", label: "Titre SEO", widget: "string" }
-          - { name: "meta_description", label: "Description SEO", widget: "text" }
-          - { name: "surtitre", label: "Surtitre", widget: "string" }
+          - { name: "meta_title", label: "Titre SEO", widget: "string", hint: "Titre affiché dans l'onglet du navigateur et dans les résultats Google. 50-60 caractères max." }
+          - { name: "meta_description", label: "Description SEO", widget: "text", hint: "Texte sous le titre dans les résultats Google. 150-160 caractères." }
+          - { name: "surtitre", label: "Surtitre", widget: "string", hint: "Petit texte en or affiché au-dessus du titre H2." }
           - { name: "titre", label: "Titre H1", widget: "string" }
-          - { name: "intro", label: "Intro", widget: "text" }
+          - { name: "intro", label: "Intro", widget: "text", hint: "Court paragraphe d'introduction sous le titre." }
 
       - file: "content/site/mentions-legales.md"
         label: "⚖️ Mentions légales"
         name: "mentions-legales"
         fields:
-          - { name: "meta_title", label: "Titre SEO", widget: "string" }
+          - { name: "meta_title", label: "Titre SEO", widget: "string", hint: "Titre affiché dans l'onglet du navigateur et dans les résultats Google. 50-60 caractères max." }
           - { name: "titre", label: "Titre H1", widget: "string" }
           - { name: "body", label: "Contenu (markdown libre)", widget: "markdown" }
 
@@ -793,13 +831,13 @@ collections:
         label: "🔒 Politique de confidentialité"
         name: "confidentialite"
         fields:
-          - { name: "meta_title", label: "Titre SEO", widget: "string" }
+          - { name: "meta_title", label: "Titre SEO", widget: "string", hint: "Titre affiché dans l'onglet du navigateur et dans les résultats Google. 50-60 caractères max." }
           - { name: "titre", label: "Titre H1", widget: "string" }
           - { name: "date_maj", label: "Date de mise à jour", widget: "string" }
           - { name: "body", label: "Contenu (markdown libre)", widget: "markdown" }
 
   - name: "zones"
-    label: "Zones de vente (pages /vendre/...)"
+    label: "🗺️ Zones de vente (/vendre/...)"
     label_singular: "Zone"
     folder: "content/zones"
     create: false
@@ -822,7 +860,7 @@ collections:
           - { name: "desc", label: "Description", widget: "text" }
 
   - name: "secteurs-detail"
-    label: "Secteurs (pages /secteurs/...)"
+    label: "🏘️ Fiches communes (/secteurs/...)"
     label_singular: "Secteur"
     folder: "content/secteurs-detail"
     create: false
@@ -874,6 +912,7 @@ collections:
       - name: "video_insta"
         label: "Vidéo Instagram (placeholder)"
         widget: "object"
+        collapsed: true
         required: false
         fields:
           - { name: "titre", label: "Titre du reel", widget: "string" }
@@ -882,7 +921,7 @@ collections:
       - { name: "galerie", label: "Galerie photos", widget: "list", field: { name: "src", label: "Photo", widget: "image" } }
 
   - name: "config"
-    label: "Réglages globaux"
+    label: "⚙️ Réglages globaux"
     files:
       - file: "content/settings.json"
         label: "Coordonnées & infos site"

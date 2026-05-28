@@ -7,17 +7,17 @@ import { secteurs, formatPrix } from "../lib/data";
 type Tier = "primaire" | "secondaire" | "limitrophe";
 
 const ZONES: Record<string, { tier: Tier; zone: "mont-dor" | "forez" }> = {
-  // Mont d'Or / Ouest lyonnais — zone primaire (doré)
+  // Mont d'Or / Ouest lyonnais - zone primaire (doré)
   "ecully":                   { tier: "primaire", zone: "mont-dor" },
   "dardilly":                 { tier: "primaire", zone: "mont-dor" },
   "limonest":                 { tier: "primaire", zone: "mont-dor" },
   "champagne-au-mont-dor":    { tier: "primaire", zone: "mont-dor" },
   "saint-cyr-au-mont-dor":    { tier: "primaire", zone: "mont-dor" },
   "saint-didier-au-mont-dor": { tier: "primaire", zone: "mont-dor" },
-  // Forez — zone secondaire (cuivre)
+  // Forez - zone secondaire (cuivre)
   "saint-just-saint-rambert": { tier: "primaire", zone: "forez" },
   "andrezieux-boutheon":      { tier: "primaire", zone: "forez" },
-  // Limitrophes Mont d'Or
+  // Limitrophes Mont d'Or / Ouest lyonnais
   "tassin-la-demi-lune":      { tier: "limitrophe", zone: "mont-dor" },
   "charbonnieres-les-bains":  { tier: "limitrophe", zone: "mont-dor" },
   "la-tour-de-salvagny":      { tier: "limitrophe", zone: "mont-dor" },
@@ -29,12 +29,37 @@ const ZONES: Record<string, { tier: Tier; zone: "mont-dor" | "forez" }> = {
   "curis-au-mont-dor":        { tier: "limitrophe", zone: "mont-dor" },
   "poleymieux-au-mont-dor":   { tier: "limitrophe", zone: "mont-dor" },
   "caluire-et-cuire":         { tier: "limitrophe", zone: "mont-dor" },
-  // Limitrophes Forez
+  "collonges-au-mont-dor":    { tier: "limitrophe", zone: "mont-dor" },
+  "chasselay":                { tier: "limitrophe", zone: "mont-dor" },
+  "marcilly-d-azergues":      { tier: "limitrophe", zone: "mont-dor" },
+  "chazay-d-azergues":        { tier: "limitrophe", zone: "mont-dor" },
+  "craponne":                 { tier: "limitrophe", zone: "mont-dor" },
+  "francheville":             { tier: "limitrophe", zone: "mont-dor" },
+  "civrieux-d-azergues":      { tier: "limitrophe", zone: "mont-dor" },
+  "lozanne":                  { tier: "limitrophe", zone: "mont-dor" },
+  "dommartin":                { tier: "limitrophe", zone: "mont-dor" },
+  // Limitrophes Plaine du Forez
   "bonson":                   { tier: "limitrophe", zone: "forez" },
   "sury-le-comtal":           { tier: "limitrophe", zone: "forez" },
   "saint-marcellin-en-forez": { tier: "limitrophe", zone: "forez" },
   "veauche":                  { tier: "limitrophe", zone: "forez" },
   "saint-cyprien":            { tier: "limitrophe", zone: "forez" },
+  "chambles":                 { tier: "limitrophe", zone: "forez" },
+  "veauchette":               { tier: "limitrophe", zone: "forez" },
+  "unieux":                   { tier: "limitrophe", zone: "forez" },
+  "la-fouillouse":            { tier: "limitrophe", zone: "forez" },
+  "saint-romain-le-puy":      { tier: "limitrophe", zone: "forez" },
+  "roche-la-moliere":         { tier: "limitrophe", zone: "forez" },
+  "firminy":                  { tier: "limitrophe", zone: "forez" },
+  "villars":                  { tier: "limitrophe", zone: "forez" },
+  "saint-priest-en-jarez":    { tier: "limitrophe", zone: "forez" },
+  "l-etrat":                  { tier: "limitrophe", zone: "forez" },
+  "la-tour-en-jarez":         { tier: "limitrophe", zone: "forez" },
+  "saint-heand":              { tier: "limitrophe", zone: "forez" },
+  "saint-bonnet-les-oules":   { tier: "limitrophe", zone: "forez" },
+  "saint-galmier":            { tier: "limitrophe", zone: "forez" },
+  "montrond-les-bains":       { tier: "limitrophe", zone: "forez" },
+  "feurs":                    { tier: "limitrophe", zone: "forez" },
 };
 
 const STYLE = {
@@ -147,10 +172,10 @@ export default function CityMap({
 
   return (
     <div className="relative">
-      <div ref={ref} style={{ height: `${height}px`, background: "#0f2c44" }} className="border border-gold/30" />
+      <div ref={ref} style={{ height: `${height}px`, background: "#0f2c44" }} className="border border-gold/30 rounded-xl overflow-hidden" />
 
       {showLegend && (
-        <div className="absolute top-4 left-4 z-[1000] bg-navy/95 text-ivory px-4 py-3 max-w-[300px]">
+        <div className="absolute top-4 left-4 z-[1000] bg-navy/95 text-ivory px-4 py-3 max-w-[300px] rounded-xl">
           <div className="text-[10px] uppercase tracking-[0.25em] text-gold mb-2">Mes secteurs d'intervention</div>
           <div className="space-y-1.5 text-xs">
             <div className="flex items-center gap-2">
@@ -172,7 +197,7 @@ export default function CityMap({
 
       {hovered && hoveredZone && (
         <div
-          className="absolute bottom-4 right-4 z-[1000] px-4 py-2 pointer-events-none"
+          className="absolute bottom-4 right-4 z-[1000] px-4 py-2 pointer-events-none rounded-xl"
           style={{ background: hoveredZone.zone === "mont-dor" ? "#c9a25f" : "#5b8aa0", color: "#061b2c" }}
         >
           <div className="text-[10px] uppercase tracking-widest opacity-80">{hoveredZone.zone === "mont-dor" ? "Mont d'Or" : "Forez"}{hoveredZone.tier === "limitrophe" ? " · limitrophe" : ""}</div>

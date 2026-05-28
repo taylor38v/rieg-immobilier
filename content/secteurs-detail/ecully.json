@@ -4,11 +4,11 @@
   "superficie": 8,
   "cp": "69130",
   "intercommunalite": "Métropole de Lyon",
-  "altitude": "190 — 320 m",
+  "altitude": "190 - 320 m",
   "ce_qui_differencie": [
     "Pôle universitaire d'excellence : École Centrale de Lyon et Institut Paul Bocuse",
     "Connexions Lyon centre : ligne 3 du métro à venir, autoroute A6 à 5 min",
-    "Parc du Vallon (40 ha) — poumon vert de la commune",
+    "Parc du Vallon (40 ha) - poumon vert de la commune",
     "Mix résidentiel : grandes propriétés historiques + résidences neuves de standing"
   ],
   "ecoles": [
@@ -18,9 +18,9 @@
       "precision": "Public, 3 bis rue Jean Rigaud"
     },
     {
-      "nom": "Collège Sacré-Cœur — Don Bosco Écully",
+      "nom": "Collège Sacré-Cœur - Don Bosco Écully",
       "type": "Privé",
-      "precision": "47 av. du Dr Terver — établissement notable de la commune"
+      "precision": "47 av. du Dr Terver - établissement notable de la commune"
     },
     {
       "nom": "École Saint-Joseph",
@@ -101,7 +101,7 @@
       "activite": "Activités culturelles, théâtre, musique"
     },
     {
-      "nom": "Comité de jumelage Écully — Lourinhã (Portugal)",
+      "nom": "Comité de jumelage Écully - Lourinhã (Portugal)",
       "activite": "Échanges internationaux"
     }
   ],
@@ -109,22 +109,22 @@
     {
       "nom": "Le Centre",
       "description": "Centre-ville commerçant, mairie, marché du dimanche, résidences anciennes rénovées.",
-      "prix_indicatif": "4 900 — 5 800 €/m²"
+      "prix_indicatif": "4 900 - 5 800 €/m²"
     },
     {
       "nom": "Pérollier",
       "description": "Quartier familial avec écoles, parc, résidences récentes.",
-      "prix_indicatif": "4 700 — 5 500 €/m²"
+      "prix_indicatif": "4 700 - 5 500 €/m²"
     },
     {
       "nom": "Valvert",
       "description": "Hauteurs résidentielles, grandes maisons, calme.",
-      "prix_indicatif": "5 800 — 7 200 €/m²"
+      "prix_indicatif": "5 800 - 7 200 €/m²"
     },
     {
       "nom": "Le Coulouvrier",
       "description": "Mix maisons individuelles + petits collectifs, proche du campus de Centrale Lyon.",
-      "prix_indicatif": "4 900 — 5 700 €/m²"
+      "prix_indicatif": "4 900 - 5 700 €/m²"
     }
   ],
   "evolution_prix": [

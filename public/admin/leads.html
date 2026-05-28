@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="noindex" />
-  <title>Leads — Romain Rieg Immobilier</title>
+  <title>Leads - Romain Rieg Immobilier</title>
   <link rel="icon" href="/favicon.ico" />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
@@ -23,6 +23,8 @@
     header .links { display: flex; gap: 1.5rem; align-items: center; font-size: .85rem; }
     header a { color: var(--ivory); text-decoration: none; opacity: .8; }
     header a:hover { color: var(--gold); opacity: 1; }
+    header button { background: transparent; border: 1px solid rgba(255,255,255,.2); color: var(--ivory); padding: .4rem .9rem; cursor: pointer; font-size: .8rem; font-family: inherit; }
+    header button:hover { border-color: var(--gold); color: var(--gold); }
     main { max-width: 1400px; margin: 0 auto; padding: 2rem; }
     .toolbar { display: flex; gap: 1rem; align-items: center; padding: 1rem 0 2rem; border-bottom: 1px solid rgba(0,0,0,.08); margin-bottom: 2rem; flex-wrap: wrap; }
     .toolbar select, .toolbar input, .toolbar button { padding: .6rem 1rem; border: 1px solid rgba(0,0,0,.15); background: white; font-family: inherit; font-size: .9rem; }
@@ -47,9 +49,12 @@
     .empty { padding: 4rem 2rem; text-align: center; color: var(--muted); background: white; border: 1px dashed rgba(0,0,0,.15); }
     #loginGate { max-width: 480px; margin: 4rem auto; padding: 3rem; background: white; text-align: center; border-top: 4px solid var(--gold); }
     #loginGate h2 { font-family: 'Cormorant Garamond', serif; font-size: 2rem; color: var(--navy); margin: 0 0 1rem; }
-    #loginGate p { color: var(--muted); margin: 0 0 2rem; line-height: 1.6; }
+    #loginGate p { color: var(--muted); margin: 0 0 1rem; line-height: 1.6; }
+    #loginGate input { width: 100%; padding: .8rem 1rem; border: 1px solid rgba(0,0,0,.15); font-family: inherit; font-size: 1rem; margin-bottom: 1rem; }
+    #loginGate input:focus { outline: none; border-color: var(--navy); }
     #loginGate button { padding: 1rem 2.5rem; background: var(--navy); color: var(--ivory); border: none; cursor: pointer; font-family: inherit; font-size: .9rem; letter-spacing: .1em; text-transform: uppercase; }
     #loginGate button:hover { background: var(--gold); color: var(--navy); }
+    #loginGate .err { color: #c83a3a; font-size: .85rem; margin-top: .5rem; min-height: 1.2em; }
     .error { padding: 1rem; background: #fff5f5; border-left: 3px solid #c83a3a; color: #c83a3a; margin: 1rem 0; }
     @media (max-width: 700px) {
       .lead { grid-template-columns: 1fr; }
@@ -60,19 +65,24 @@
 </head>
 <body>
 
-<div id="loginGate" style="display:none">
+<div id="loginGate">
   <h2>Espace privé</h2>
-  <p>Connectez-vous pour accéder aux leads et au CMS.</p>
-  <button onclick="netlifyIdentity.open()">Se connecter</button>
+  <p>Entre le mot de passe d'administration pour accéder aux leads.</p>
+  <form id="pwForm" onsubmit="event.preventDefault(); handleLogin();">
+    <input type="password" id="pwInput" placeholder="Mot de passe" autofocus autocomplete="current-password" />
+    <button type="submit">Se connecter</button>
+    <div class="err" id="pwError"></div>
+  </form>
+  <p style="margin-top:2rem;font-size:0.8rem"><a href="/admin/" style="color:var(--gold)">← Retour au CMS</a></p>
 </div>
 
 <div id="dashboard" style="display:none">
   <header>
-    <h1>📨 Leads — Romain Rieg Immobilier</h1>
+    <h1>📨 Leads - Romain Rieg Immobilier</h1>
     <div class="links">
       <a href="/admin/">CMS</a>
       <a href="/" target="_blank">Voir le site</a>
-      <a href="#" onclick="netlifyIdentity.logout(); return false">Déconnexion</a>
+      <button onclick="logout()">Déconnexion</button>
     </div>
   </header>
 
@@ -82,8 +92,8 @@
         <option value="">Tous les formulaires</option>
         <option value="contact">Contact</option>
         <option value="estimation">Avis de valeur</option>
-        <option value="recrutement">Recrutement</option>
-        <option value="bien">Demande sur un bien</option>
+        <option value="vendabilite">Vendabilité</option>
+        <option value="newsletter">Newsletter</option>
       </select>
       <select id="stateFilter">
         <option value="">Tous les statuts</option>
@@ -101,38 +111,86 @@
   </main>
 </div>
 
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <script>
+  const PW_KEY = "rieg_admin_pw";
   let allSubmissions = [];
 
-  netlifyIdentity.on("init", (user) => {
-    document.getElementById("loginGate").style.display = user ? "none" : "block";
-    document.getElementById("dashboard").style.display = user ? "block" : "none";
-    if (user) loadLeads();
-  });
-  netlifyIdentity.on("login", () => location.reload());
-  netlifyIdentity.on("logout", () => location.reload());
+  function getPassword() { return localStorage.getItem(PW_KEY) || ""; }
+  function setPassword(p) { localStorage.setItem(PW_KEY, p); }
+  function clearPassword() { localStorage.removeItem(PW_KEY); }
+
+  function logout() {
+    clearPassword();
+    location.reload();
+  }
+
+  function showDashboard() {
+    document.getElementById("loginGate").style.display = "none";
+    document.getElementById("dashboard").style.display = "block";
+    loadLeads();
+  }
+
+  function showLogin(msg) {
+    document.getElementById("loginGate").style.display = "block";
+    document.getElementById("dashboard").style.display = "none";
+    if (msg) document.getElementById("pwError").textContent = msg;
+  }
+
+  async function handleLogin() {
+    const pw = document.getElementById("pwInput").value;
+    if (!pw) return;
+    document.getElementById("pwError").textContent = "Vérification…";
+
+    // Test la validité du mot de passe en faisant un fetch
+    try {
+      const res = await fetch("/api/leads?per_page=1", {
+        headers: { "X-Admin-Password": pw },
+      });
+      if (res.status === 401) {
+        document.getElementById("pwError").textContent = "Mot de passe incorrect.";
+        return;
+      }
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({}));
+        document.getElementById("pwError").textContent = `Erreur ${res.status} - ${data.error || ""}`;
+        return;
+      }
+      setPassword(pw);
+      showDashboard();
+    } catch (e) {
+      document.getElementById("pwError").textContent = "Erreur réseau - " + e.message;
+    }
+  }
 
   async function loadLeads() {
-    const user = netlifyIdentity.currentUser();
-    if (!user) return;
+    const pw = getPassword();
+    if (!pw) return showLogin();
 
     document.getElementById("errorBox").innerHTML = "";
     document.getElementById("leads").innerHTML = "<div class='empty'>Chargement…</div>";
 
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 15000);
+
     try {
-      const token = (await user.jwt()) || "";
       const params = new URLSearchParams();
       const state = document.getElementById("stateFilter").value;
       if (state) params.set("state", state);
 
       const res = await fetch(`/api/leads?${params}`, {
-        headers: { Authorization: `Bearer ${token}` },
+        headers: { "X-Admin-Password": pw },
+        signal: controller.signal,
       });
+      clearTimeout(timeoutId);
       const data = await res.json();
 
+      if (res.status === 401) {
+        clearPassword();
+        showLogin("Session expirée, reconnecte-toi.");
+        return;
+      }
       if (!res.ok) {
-        document.getElementById("errorBox").innerHTML = `<div class="error"><strong>Erreur ${res.status}</strong> — ${data.error || "Inconnue"}<br><small>${data.detail || ""}</small></div>`;
+        document.getElementById("errorBox").innerHTML = `<div class="error"><strong>Erreur ${res.status}</strong> - ${data.error || "Inconnue"}<br><small>${data.detail || ""}</small></div>`;
         document.getElementById("leads").innerHTML = "";
         return;
       }
@@ -140,7 +198,9 @@
       allSubmissions = data.submissions || [];
       render();
     } catch (e) {
-      document.getElementById("errorBox").innerHTML = `<div class="error">Erreur réseau — ${e.message}</div>`;
+      clearTimeout(timeoutId);
+      const msg = e.name === 'AbortError' ? 'Timeout (15s).' : e.message;
+      document.getElementById("errorBox").innerHTML = `<div class="error"><strong>Erreur réseau</strong> - ${msg}</div>`;
       document.getElementById("leads").innerHTML = "";
     }
   }
@@ -158,7 +218,6 @@
       });
     }
 
-    // Stats
     const total = allSubmissions.length;
     const last7 = allSubmissions.filter((s) => new Date(s.created_at) > new Date(Date.now() - 7 * 86400000)).length;
     const last30 = allSubmissions.filter((s) => new Date(s.created_at) > new Date(Date.now() - 30 * 86400000)).length;
@@ -169,7 +228,6 @@
       <div class="stat"><div class="v">${filtered.length}</div><div class="l">Affichés</div></div>
     `;
 
-    // Leads
     if (!filtered.length) {
       document.getElementById("leads").innerHTML = `<div class="empty">Aucun lead à afficher.</div>`;
       return;
@@ -181,7 +239,7 @@
         const isNew = new Date(s.created_at) > new Date(Date.now() - 2 * 86400000);
         const date = new Date(s.created_at).toLocaleString("fr-FR", { day: "2-digit", month: "short", year: "numeric", hour: "2-digit", minute: "2-digit" });
         const fields = Object.entries(d)
-          .filter(([k]) => !["honey", "form-name", "honeypot"].includes(k))
+          .filter(([k]) => !["honey", "form-name", "honeypot", "ip", "user_agent", "referrer"].includes(k))
           .map(([k, v]) => `<div class="field"><strong>${escapeHtml(k)}</strong><span>${escapeHtml(String(v ?? ""))}</span></div>`)
           .join("");
         const email = d.email || s.email || "";
@@ -193,7 +251,7 @@
               <h3>${escapeHtml(nom)} ${isNew ? '<span class="badge">Nouveau</span>' : ""}</h3>
               <div class="meta">
                 <span>📅 ${escapeHtml(date)}</span>
-                <span>📋 ${escapeHtml(s.form_name || "—")}</span>
+                <span>📋 ${escapeHtml(s.form_name || "-")}</span>
                 ${s.state && s.state !== "ham" ? `<span>⚠️ ${escapeHtml(s.state)}</span>` : ""}
               </div>
               <div class="body">${fields || '<em>Aucune donnée</em>'}</div>
@@ -201,7 +259,7 @@
             <div class="actions">
               ${email ? `<a href="mailto:${escapeHtml(email)}">📧 Email</a>` : ""}
               ${tel ? `<a href="tel:${escapeHtml(tel)}">📞 Appeler</a>` : ""}
-              ${tel ? `<a href="https://wa.me/${escapeHtml(String(tel).replace(/\\D/g, ""))}" target="_blank">💬 WhatsApp</a>` : ""}
+              ${tel ? `<a href="https://wa.me/${escapeHtml(String(tel).replace(/\D/g, ""))}" target="_blank">💬 WhatsApp</a>` : ""}
             </div>
           </div>
         `;
@@ -230,6 +288,11 @@
     a.href = url;
     a.download = `leads-${new Date().toISOString().slice(0, 10)}.csv`;
     a.click();
+  }
+
+  // Auto-login si mot de passe en localStorage
+  if (getPassword()) {
+    showDashboard();
   }
 
   document.getElementById("formFilter").addEventListener("change", render);

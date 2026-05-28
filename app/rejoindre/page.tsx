@@ -18,13 +18,12 @@ export default function Page() {
       <section className="relative text-ivory py-32 overflow-hidden bg-navy">
         <HeroBackground video={r.hero.video} overlay={0.65} />
         <div className="relative max-w-7xl mx-auto px-6">
-          <img src={r.hero.logo_iad} alt={r.hero.logo_alt} className="h-14 w-auto mb-6 brightness-0 invert" />
-          <div className="text-xs uppercase tracking-[0.3em] text-gold">{r.hero.surtitre}</div>
-          <h1 className="font-serif text-5xl md:text-7xl mt-3 leading-[1.05] max-w-4xl">{r.hero.titre}</h1>
+          <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{r.hero.surtitre}</div>
+          <h1 className="font-serif text-5xl md:text-7xl mt-3 leading-[1.0] max-w-5xl">{r.hero.titre}</h1>
           <p className="text-ivory/80 text-lg md:text-xl mt-8 max-w-3xl leading-relaxed" dangerouslySetInnerHTML={{ __html: inline(r.hero.intro) }} />
           <div className="flex flex-wrap gap-4 mt-10">
-            <Link href={r.hero.cta_primary_href} className="px-7 py-4 bg-gold text-navy font-medium hover:bg-gold-soft">{r.hero.cta_primary_label}</Link>
-            <a href={r.hero.cta_whatsapp_url} target="_blank" rel="noopener" className="px-7 py-4 border border-ivory/30 hover:bg-ivory/10">{r.hero.cta_whatsapp_label}</a>
+            <Link href={r.hero.cta_primary_href} className="px-7 py-4 bg-gold text-navy font-medium hover:bg-gold-soft rounded-full">{r.hero.cta_primary_label}</Link>
+            <a href={r.hero.cta_whatsapp_url} target="_blank" rel="noopener" className="px-7 py-4 border border-ivory/30 hover:bg-ivory/10 rounded-full">{r.hero.cta_whatsapp_label}</a>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10 mt-16 max-w-4xl">
             {r.hero.stats.map((s) => (
@@ -38,8 +37,8 @@ export default function Page() {
       </section>
 
       <section className="max-w-7xl mx-auto px-6 py-24">
-        <div className="text-xs uppercase tracking-[0.3em] text-gold">{r.piliers.surtitre}</div>
-        <h2 className="font-serif text-5xl md:text-6xl mt-3">{r.piliers.titre}</h2>
+        <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{r.piliers.surtitre}</div>
+        <h2 className="font-serif text-3xl md:text-4xl mt-3">{r.piliers.titre}</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
           {r.piliers.items.map((p, i) => (
             <div key={p.titre} className="group relative p-8 bg-white border-2 border-ink/5 hover:border-gold transition overflow-hidden">
@@ -55,11 +54,11 @@ export default function Page() {
 
       <section className="bg-ivory-deep py-24">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="text-xs uppercase tracking-[0.3em] text-gold">{r.profils.surtitre}</div>
-          <h2 className="font-serif text-5xl md:text-6xl mt-3">{r.profils.titre}</h2>
+          <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{r.profils.surtitre}</div>
+          <h2 className="font-serif text-3xl md:text-4xl mt-3">{r.profils.titre}</h2>
           <div className="grid md:grid-cols-2 gap-6 mt-12">
             {r.profils.items.map((p) => (
-              <div key={p.titre} className="p-6 bg-white border border-ink/5 flex gap-5">
+              <div key={p.titre} className="shine-hover p-6 bg-white border border-ink/5 flex gap-5">
                 <span className="font-serif text-3xl text-gold leading-none">→</span>
                 <div>
                   <div className="font-serif text-xl text-navy">{p.titre}</div>
@@ -73,8 +72,8 @@ export default function Page() {
 
       <section className="max-w-7xl mx-auto px-6 py-24 grid lg:grid-cols-2 gap-16 items-start relative">
         <div className="relative z-10">
-          <div className="text-xs uppercase tracking-[0.3em] text-gold">{r.qui_suis_je.surtitre}</div>
-          <h2 className="font-serif text-5xl md:text-6xl mt-3">{r.qui_suis_je.titre}</h2>
+          <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{r.qui_suis_je.surtitre}</div>
+          <h2 className="font-serif text-3xl md:text-4xl mt-3">{r.qui_suis_je.titre}</h2>
           <div className="mt-8 space-y-4 text-ink/85 leading-relaxed">
             {r.qui_suis_je.paragraphes.map((p, i) => (
               <p key={i} dangerouslySetInnerHTML={{ __html: inline(p) }} />
@@ -92,12 +91,12 @@ export default function Page() {
 
       <section className="bg-navy text-ivory py-24">
         <div className="max-w-5xl mx-auto px-6">
-          <div className="text-xs uppercase tracking-[0.3em] text-gold">{r.parcours.surtitre}</div>
-          <h2 className="font-serif text-5xl md:text-6xl mt-3">{r.parcours.titre}</h2>
-          <div className="mt-16 space-y-10">
+          <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{r.parcours.surtitre}</div>
+          <h2 className="font-serif text-3xl md:text-4xl mt-3">{r.parcours.titre}</h2>
+          <div className="mt-16 grid md:grid-cols-2 gap-6">
             {r.parcours.etapes.map((e) => (
-              <div key={e.num} className="grid grid-cols-[auto_1fr] gap-8 md:gap-12 border-t border-ivory/10 pt-10">
-                <div className="font-serif text-5xl text-gold">{e.num}</div>
+              <div key={e.num} className="rounded-xl shine-hover bg-navy-soft border border-ivory/10 p-6 grid grid-cols-[auto_1fr] gap-5">
+                <div className="font-serif text-5xl text-gold leading-none">{e.num}</div>
                 <div>
                   <div className="font-serif text-2xl">{e.titre}</div>
                   <div className="text-ivory/70 mt-3 leading-relaxed">{e.desc}</div>
@@ -108,23 +107,13 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="max-w-5xl mx-auto px-6 py-24">
-        <div className="text-xs uppercase tracking-[0.3em] text-gold text-center">{r.offre.surtitre}</div>
-        <h2 className="font-serif text-5xl md:text-6xl mt-3 text-center">{r.offre.titre}</h2>
-        <div className="mt-12 p-10 bg-gold/5 border border-gold">
-          <div className="font-serif text-3xl text-navy">{r.offre.prix}</div>
-          <p className="text-muted mt-3">{r.offre.desc}</p>
-          <p className="text-xs text-muted mt-6">{r.offre.mention}</p>
-        </div>
-      </section>
-
       <section className="bg-navy text-ivory py-20 text-center">
         <div className="max-w-3xl mx-auto px-6">
-          <h2 className="font-serif text-5xl md:text-6xl">{r.cta_final.titre}</h2>
+          <h2 className="font-serif text-3xl md:text-4xl">{r.cta_final.titre}</h2>
           <p className="text-ivory/70 mt-4">{r.cta_final.intro}</p>
           <div className="flex flex-wrap justify-center gap-4 mt-8">
-            <Link href={r.cta_final.cta_primary_href} className="px-7 py-4 bg-gold text-navy hover:bg-gold-soft">{r.cta_final.cta_primary_label}</Link>
-            <a href={r.cta_final.cta_secondary_href} className="px-7 py-4 border border-ivory/30 hover:bg-ivory/10">{r.cta_final.cta_secondary_label}</a>
+            <Link href={r.cta_final.cta_primary_href} className="px-7 py-4 bg-gold text-navy hover:bg-gold-soft rounded-full">{r.cta_final.cta_primary_label}</Link>
+            <a href={r.cta_final.cta_secondary_href} className="px-7 py-4 border border-ivory/30 hover:bg-ivory/10 rounded-full">{r.cta_final.cta_secondary_label}</a>
           </div>
         </div>
       </section>

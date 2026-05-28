@@ -1,7 +1,7 @@
 ---
 nom: "Famille D."
 ville: "Saint-Didier-au-Mont-d'Or"
-contexte: "Vendeur — Maison de 240 m²"
+contexte: "Vendeur - Maison de 240 m²"
 note: 5
 date: 2026-03-12
 publie: true

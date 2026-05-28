@@ -4,9 +4,9 @@
   "superficie": 13.99,
   "cp": "69570",
   "intercommunalite": "Métropole de Lyon",
-  "altitude": "200 — 420 m",
+  "altitude": "200 - 420 m",
   "ce_qui_differencie": [
-    "Très grandes parcelles disponibles — moyenne de 1 200 m² de terrain par maison",
+    "Très grandes parcelles disponibles - moyenne de 1 200 m² de terrain par maison",
     "Accès direct A6 vers Paris, sortie immédiate Limonest / Dardilly",
     "Deux lycées de référence sur la commune : Lycée Hôtelier François Rabelais et Lycée Horticole Lyon-Dardilly",
     "Parcours de golf Bluegreen Porte de Lyon, espaces naturels protégés"
@@ -33,14 +33,14 @@
       "precision": "Secteur public : Collège Jean-Philippe Rameau (Champagne, ~5 min) ou Victor Schœlcher (Lyon 9)"
     },
     {
-      "nom": "Collège Aux Lazaristes La Salle — site Limonest",
+      "nom": "Collège Aux Lazaristes La Salle - site Limonest",
       "type": "Privé",
       "precision": "Limitrophe Dardilly à 5 min · 392 chem. de la Sablière"
     },
     {
       "nom": "Lycée François Rabelais & GRETA-CFA Hôtelier",
       "type": "Lycée",
-      "precision": "Lycée hôtelier réputé avec restaurant d'application Saint-Jean — 4 chem. du Dodin"
+      "precision": "Lycée hôtelier réputé avec restaurant d'application Saint-Jean - 4 chem. du Dodin"
     },
     {
       "nom": "Lycée Horticole, Paysage et Environnement Lyon-Dardilly",
@@ -105,7 +105,7 @@
   ],
   "associations": [
     {
-      "nom": "FCLDSD — Football Club Limonest-Dardilly-Saint-Didier",
+      "nom": "FCLDSD - Football Club Limonest-Dardilly-Saint-Didier",
       "activite": "Club mutualisé évoluant en National 2 (champion N3 2024-2025)"
     },
     {
@@ -121,22 +121,22 @@
     {
       "nom": "Le Paillet",
       "description": "Quartier résidentiel calme, proche centre, écoles à pied.",
-      "prix_indicatif": "4 400 — 5 100 €/m²"
+      "prix_indicatif": "4 400 - 5 100 €/m²"
     },
     {
       "nom": "La Beffe",
       "description": "Hauteurs, grandes maisons, vues dégagées sur la Saône.",
-      "prix_indicatif": "5 000 — 6 000 €/m²"
+      "prix_indicatif": "5 000 - 6 000 €/m²"
     },
     {
       "nom": "Porte de Lyon",
       "description": "Proximité commerciale (centre Carrefour), petites maisons et collectifs.",
-      "prix_indicatif": "4 100 — 4 800 €/m²"
+      "prix_indicatif": "4 100 - 4 800 €/m²"
     },
     {
       "nom": "Les Noyeraies",
       "description": "Quartier pavillonnaire, calme, proche parcours de golf.",
-      "prix_indicatif": "4 700 — 5 500 €/m²"
+      "prix_indicatif": "4 700 - 5 500 €/m²"
     }
   ],
   "evolution_prix": [

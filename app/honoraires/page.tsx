@@ -7,7 +7,7 @@ export const metadata = { title: h.meta_title };
 export default function Page() {
   return (
     <div className="max-w-4xl mx-auto px-6 py-24">
-      <div className="text-xs uppercase tracking-[0.3em] text-gold">{h.surtitre}</div>
+      <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{h.surtitre}</div>
       <h1 className="font-serif text-5xl mt-3">{h.titre}</h1>
       <p className="text-muted mt-6 leading-relaxed">{h.intro}</p>
       <div className="mt-12 border border-ink/10">

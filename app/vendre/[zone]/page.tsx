@@ -46,23 +46,23 @@ export default async function Page(props: PageProps<"/vendre/[zone]">) {
         <HeroBackground video={z.video} overlay={0.65} />
         <div className="relative max-w-7xl mx-auto px-6">
           <Link href="/vendre" className="text-ivory/60 text-sm">← Vendre</Link>
-          <div className="text-xs uppercase tracking-[0.3em] text-gold mt-6">Mon secteur d'intervention</div>
+          <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium mt-6">Mon secteur d'intervention</div>
           <h1 className="font-serif text-4xl md:text-6xl mt-3 leading-[1.1] max-w-4xl">{z.h1}</h1>
           <div className="text-ivory/80 text-lg mt-8 max-w-3xl space-y-3 leading-relaxed">
             {z.intro.map((p: string, i: number) => <p key={i}>{p}</p>)}
           </div>
           <div className="text-xs uppercase tracking-widest text-gold mt-8">{z.communes_label}</div>
           <div className="flex flex-wrap gap-4 mt-8">
-            <Link href="/avis-de-valeur" className="px-7 py-4 bg-gold text-navy hover:bg-gold-soft">Avis de valeur · 24-48 h</Link>
-            <Link href="/contact" className="px-7 py-4 border border-ivory/30 hover:bg-ivory/10">Me contacter</Link>
+            <Link href="/avis-de-valeur" className="px-7 py-4 bg-gold text-navy hover:bg-gold-soft rounded-full">Avis de valeur · 24 - 48h</Link>
+            <Link href="/contact" className="px-7 py-4 border border-ivory/30 hover:bg-ivory/10 rounded-full">Me contacter</Link>
           </div>
           <div className="mt-4 text-xs text-ivory/60">Zéro engagement · 100% confidentiel</div>
         </div>
       </section>
 
       <section className="max-w-6xl mx-auto px-6 py-24">
-        <div className="text-xs uppercase tracking-[0.3em] text-gold">Pourquoi me confier votre bien</div>
-        <h2 className="font-serif text-5xl md:text-6xl mt-3">Trois atouts qui font la différence.</h2>
+        <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">Pourquoi me confier votre bien</div>
+        <h2 className="font-serif text-3xl md:text-4xl mt-3">Trois atouts qui font la différence.</h2>
         <div className="grid md:grid-cols-3 gap-6 mt-12">
           {z.atouts.map((a: { titre: string; desc: string }, i: number) => (
             <div key={i} className="p-7 bg-white border border-ink/10">
@@ -76,8 +76,8 @@ export default async function Page(props: PageProps<"/vendre/[zone]">) {
 
       <section className="bg-navy text-ivory py-24">
         <div className="max-w-5xl mx-auto px-6">
-          <div className="text-xs uppercase tracking-[0.3em] text-gold">Le processus</div>
-          <h2 className="font-serif text-5xl md:text-6xl mt-3">Quatre étapes claires.</h2>
+          <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">Le processus</div>
+          <h2 className="font-serif text-3xl md:text-4xl mt-3">Quatre étapes claires.</h2>
           <div className="mt-12 space-y-8">
             {etapes.map(([n, t, d]) => (
               <div key={n} className="grid grid-cols-[auto_1fr] gap-6 md:gap-10 border-t border-ivory/10 pt-8">
@@ -96,26 +96,26 @@ export default async function Page(props: PageProps<"/vendre/[zone]">) {
         <section className="max-w-7xl mx-auto px-6 py-20">
           <div className="grid lg:grid-cols-[1.2fr_2fr] gap-12">
             <div>
-              <div className="text-xs uppercase tracking-[0.3em] text-gold">Mon positionnement</div>
+              <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">Mon positionnement</div>
               <h2 className="font-serif text-4xl md:text-5xl mt-3 leading-tight">{territoire.intro}</h2>
               <p className="text-muted mt-5 leading-relaxed">{territoire.positionnement}</p>
             </div>
             <div>
-              <div className="text-xs uppercase tracking-[0.3em] text-gold mb-4">Communes principales</div>
+              <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium mb-4">Communes principales</div>
               <div className="flex flex-wrap gap-2">
                 {territoire.principales.map((c) => (
-                  <span key={c} className="px-4 py-2 bg-navy text-ivory text-sm font-medium">{c}</span>
+                  <span key={c} className="px-4 py-2 bg-navy text-ivory text-sm rounded-full font-medium">{c}</span>
                 ))}
               </div>
               {territoire.limitrophes.length > 0 && (
                 <>
-                  <div className="text-xs uppercase tracking-[0.3em] text-gold mb-4 mt-8">+ communes limitrophes que je couvre également</div>
+                  <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium mb-4 mt-8">+ communes limitrophes que je couvre également</div>
                   <div className="flex flex-wrap gap-2">
                     {territoire.limitrophes.map((c) => (
                       <span key={c} className="px-3 py-1.5 bg-ivory-deep text-ink/80 text-sm border border-ink/10">{c}</span>
                     ))}
                   </div>
-                  <p className="text-xs text-muted mt-5 italic">Je ne me limite jamais strictement aux communes principales — chaque projet sur les limitrophes est étudié avec la même attention.</p>
+                  <p className="text-xs text-muted mt-5 italic">Je ne me limite jamais strictement aux communes principales - chaque projet sur les limitrophes est étudié avec la même attention.</p>
                 </>
               )}
             </div>
@@ -125,9 +125,9 @@ export default async function Page(props: PageProps<"/vendre/[zone]">) {
 
       <section className="bg-ivory-deep py-20">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="text-xs uppercase tracking-[0.3em] text-gold">Les communes</div>
+          <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">Les communes</div>
           <h2 className="font-serif text-4xl md:text-5xl mt-3">Survolez la carte pour explorer.</h2>
-          <p className="text-muted mt-3 max-w-2xl">Cliquez sur une commune pour ouvrir sa fiche détaillée — démographie, écoles, restaurants, quartiers, prix au m².</p>
+          <p className="text-muted mt-3 max-w-2xl">Cliquez sur une commune pour ouvrir sa fiche détaillée - démographie, écoles, restaurants, quartiers, prix au m².</p>
           <div className="mt-10">
             <CityMap height={520} slugs={meta.mapSlugs} />
           </div>
@@ -158,11 +158,11 @@ export default async function Page(props: PageProps<"/vendre/[zone]">) {
 
       <section className="bg-navy text-ivory py-20 text-center">
         <div className="max-w-4xl mx-auto px-6">
-          <h2 className="font-serif text-5xl md:text-6xl">Et si on commençait par un avis de valeur ?</h2>
-          <p className="text-ivory/70 mt-4">Gratuit, argumenté, sous 24-48 h — sans engagement de mandat.</p>
+          <h2 className="font-serif text-3xl md:text-4xl">Et si on commençait par un avis de valeur ?</h2>
+          <p className="text-ivory/70 mt-4">Gratuit, argumenté, sous 24 - 48h - sans engagement de mandat.</p>
           <div className="flex flex-wrap justify-center gap-4 mt-8">
-            <Link href="/avis-de-valeur" className="px-7 py-4 bg-gold text-navy hover:bg-gold-soft">Demander mon avis de valeur</Link>
-            <a href="https://wa.me/33679571473" target="_blank" rel="noopener" className="px-7 py-4 bg-[#25D366] hover:bg-[#20bd5a] text-white">💬 WhatsApp</a>
+            <Link href="/avis-de-valeur" className="px-7 py-4 bg-gold text-navy hover:bg-gold-soft rounded-full">Demander mon avis de valeur</Link>
+            <a href="sms:+33679571473" target="_blank" rel="noopener" className="px-7 py-4 bg-[#25D366] hover:bg-[#20bd5a] text-white rounded-full">💬 SMS</a>
           </div>
         </div>
       </section>

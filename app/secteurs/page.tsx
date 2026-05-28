@@ -14,8 +14,8 @@ export default function Page() {
   return (
     <div className="max-w-7xl mx-auto px-6 py-16 md:py-24">
       <div className="max-w-3xl">
-        <div className="text-xs uppercase tracking-[0.3em] text-gold">{sl.surtitre}</div>
-        <h1 className="font-serif text-5xl md:text-6xl mt-3">{sl.titre}</h1>
+        <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{sl.surtitre}</div>
+        <h1 className="font-serif text-3xl md:text-4xl mt-3">{sl.titre}</h1>
         <p className="text-muted mt-6 leading-relaxed">{sl.intro}</p>
       </div>
 

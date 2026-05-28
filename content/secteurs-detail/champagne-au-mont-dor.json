@@ -4,11 +4,11 @@
   "superficie": 2.6,
   "cp": "69410",
   "intercommunalite": "Métropole de Lyon",
-  "altitude": "190 — 280 m",
+  "altitude": "190 - 280 m",
   "ce_qui_differencie": [
-    "Petite commune à taille humaine — la plus dense du Mont d'Or",
+    "Petite commune à taille humaine - la plus dense du Mont d'Or",
     "Centre village animé avec marché hebdomadaire et commerces de proximité",
-    "Bonne connexion bus vers Lyon via TCL (C14, 21, 61, 66) — proche A6 et Lyon Vaise",
+    "Bonne connexion bus vers Lyon via TCL (C14, 21, 61, 66) - proche A6 et Lyon Vaise",
     "Une des seules communes du Mont d'Or avec un collège public sur son territoire"
   ],
   "ecoles": [
@@ -25,7 +25,7 @@
     {
       "nom": "Collège Jean-Philippe Rameau",
       "type": "Collège",
-      "precision": "Public, 646 élèves — collège de secteur du Mont d'Or"
+      "precision": "Public, 646 élèves - collège de secteur du Mont d'Or"
     },
     {
       "nom": "Lycée Jean Perrin (Lyon 9) ou La Martinière Duchère",
@@ -95,17 +95,17 @@
     {
       "nom": "Centre",
       "description": "Cœur de village, commerces, mairie, église, marché.",
-      "prix_indicatif": "4 700 — 5 500 €/m²"
+      "prix_indicatif": "4 700 - 5 500 €/m²"
     },
     {
       "nom": "Les Bruyères",
       "description": "Quartier pavillonnaire des années 70-80, calme, accès rapide aux écoles.",
-      "prix_indicatif": "4 500 — 5 100 €/m²"
+      "prix_indicatif": "4 500 - 5 100 €/m²"
     },
     {
       "nom": "Le Rocher",
       "description": "Hauteurs, vues, résidences plus récentes.",
-      "prix_indicatif": "5 100 — 5 900 €/m²"
+      "prix_indicatif": "5 100 - 5 900 €/m²"
     }
   ],
   "evolution_prix": [
@@ -135,7 +135,7 @@
     }
   ],
   "video_insta": {
-    "titre": "Champagne — la commune la plus dynamique du Mont d'Or",
+    "titre": "Champagne - la commune la plus dynamique du Mont d'Or",
     "duree": "1:25"
   },
   "galerie": [

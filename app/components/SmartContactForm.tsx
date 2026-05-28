@@ -28,7 +28,7 @@ type State = {
 
 const intents: { v: Intent; emoji: string; titre: string; sub: string }[] = [
   { v: "vendre",     emoji: "🏷️", titre: "Vendre un bien",      sub: "Maison, appartement, terrain, immeuble" },
-  { v: "estimation", emoji: "📐", titre: "Estimer mon bien",    sub: "Avis de valeur argumenté sous 24-48 h" },
+  { v: "estimation", emoji: "📐", titre: "Estimer mon bien",    sub: "Avis de valeur argumenté sous 24 - 48h" },
   { v: "acheter",    emoji: "🔎", titre: "Acheter un bien",     sub: "Résidence principale ou secondaire" },
   { v: "investir",   emoji: "📈", titre: "Investir dans le locatif", sub: "Recherche de rentabilité" },
   { v: "louer",      emoji: "🔑", titre: "Louer / faire louer", sub: "Mise en location et gestion" },
@@ -53,7 +53,7 @@ export default function SmartContactForm() {
         choiceStep("typeBien", "Quel type de bien ?", ["Maison", "Appartement", "Villa / propriété", "Terrain", "Immeuble", "Local commercial"], data, set, () => setStep((s) => s + 1)),
         textStep("ville", "Dans quelle commune ?", "Saint-Didier, Écully, Limonest…", data, set),
         textStep("surface", "Surface habitable approximative ?", "Ex : 150 m²", data, set, "number", "m²"),
-        choiceStep("delai", "À quelle échéance souhaitez-vous vendre ?", ["Maintenant — j'ai pris ma décision", "Dans 3 mois", "Dans 6 mois", "Dans un an", "Je me renseigne, sans urgence"], data, set, () => setStep((s) => s + 1)),
+        choiceStep("delai", "À quelle échéance souhaitez-vous vendre ?", ["Maintenant - j'ai pris ma décision", "Dans 3 mois", "Dans 6 mois", "Dans un an", "Je me renseigne, sans urgence"], data, set, () => setStep((s) => s + 1)),
       );
       if (data.intent === "vendre") {
         base.push(choiceStep("exclusif", "Êtes-vous déjà en mandat avec une agence ?", ["Non, libre", "Oui, mandat simple", "Oui, mandat exclusif", "Je préfère en parler"], data, set, () => setStep((s) => s + 1)));
@@ -65,7 +65,7 @@ export default function SmartContactForm() {
       base.push(
         choiceStep("typeBien", data.intent === "investir" ? "Quel type d'investissement ?" : "Que recherchez-vous ?", data.intent === "investir" ? ["Studio / T1", "T2 / T3", "T4 et +", "Immeuble de rapport", "Local commercial", "Pas encore décidé"] : ["Maison", "Appartement", "Villa / propriété", "Terrain à bâtir", "Pas encore décidé"], data, set, () => setStep((s) => s + 1)),
         textStep("ville", data.intent === "investir" ? "Quelle zone de prospection ?" : "Quelle commune visez-vous ?", "Saint-Didier, Écully, Lyon Ouest…", data, set),
-        choiceStep("budget", "Votre budget global ?", ["< 300 000 €", "300 000 — 600 000 €", "600 000 — 1 M€", "1 — 1,5 M€", "1,5 — 2,5 M€", "> 2,5 M€", "Je me renseigne"], data, set, () => setStep((s) => s + 1)),
+        choiceStep("budget", "Votre budget global ?", ["< 300 000 €", "300 000 - 600 000 €", "600 000 - 1 M€", "1 - 1,5 M€", "1,5 - 2,5 M€", "> 2,5 M€", "Je me renseigne"], data, set, () => setStep((s) => s + 1)),
         choiceStep("financement", "Où en êtes-vous du financement ?", ["Cash / sans prêt", "Accord de principe banque ✓", "Étude en cours avec courtier", "Pas encore commencé", "Besoin d'aide pour le financement"], data, set, () => setStep((s) => s + 1)),
         choiceStep("delai", "À quel horizon souhaitez-vous concrétiser ?", ["J'achète si je trouve LE bien maintenant", "Dans 3 mois", "Dans 6 mois", "Dans un an", "Je commence à regarder"], data, set, () => setStep((s) => s + 1)),
       );
@@ -93,7 +93,7 @@ export default function SmartContactForm() {
       key: "coords",
       render: () => (
         <div>
-          <Question num={base.length} sub="Vos coordonnées · réponse en 24 h max">Comment puis-je vous joindre ?</Question>
+          <Question num={base.length} sub="Vos coordonnées · réponse en 24 h max">Comment vous joindre ?</Question>
           <div className="mt-8 grid sm:grid-cols-2 gap-4">
             <Input label="Prénom" value={data.prenom} onChange={(v) => set({ prenom: v })} required />
             <Input label="Nom" value={data.nom} onChange={(v) => set({ nom: v })} />
@@ -145,10 +145,10 @@ export default function SmartContactForm() {
   if (!data.intent) {
     return (
       <Wrapper progress={0}>
-        <Question num={0} sub="Première question · 30 secondes au total">Avant tout — quel est votre besoin ?</Question>
+        <Question num={0} sub="Première question · 30 secondes au total">Avant tout - quel est votre besoin ?</Question>
         <div className="mt-8 grid md:grid-cols-2 gap-3">
           {intents.map((i) => (
-            <button key={i.v} onClick={() => { set({ intent: i.v }); setStep(0); }} className="group flex items-start gap-4 p-5 bg-white border border-ink/15 hover:border-navy hover:bg-ivory-deep text-left transition">
+            <button key={i.v} onClick={() => { set({ intent: i.v }); setStep(0); }} className="rounded-xl group flex items-start gap-4 p-5 bg-white border border-ink/15 hover:border-navy hover:bg-ivory-deep text-left transition">
               <span className="text-3xl mt-0.5">{i.emoji}</span>
               <span>
                 <span className="block font-serif text-xl text-navy group-hover:text-gold transition">{i.titre}</span>
@@ -202,7 +202,7 @@ function Wrapper({ children, progress }: { children: React.ReactNode; progress: 
 function Question({ num, sub, children }: { num: number; sub: string; children: React.ReactNode }) {
   return (
     <div>
-      <div className="flex items-center gap-3 text-xs uppercase tracking-[0.3em] text-gold">
+      <div className="flex items-center gap-3 text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">
         <span className="font-serif text-lg leading-none">{String(num + 1).padStart(2, "0")}</span>
         <span>·</span>
         <span className="text-muted">{sub}</span>
@@ -240,7 +240,7 @@ function textStep(key: keyof State, q: string, ph: string, data: State, set: (p:
             value={(data as Record<string, string>)[key as string] || ""}
             onChange={(e) => set({ [key]: e.target.value } as Partial<State>)}
             placeholder={ph}
-            className="flex-1 p-4 bg-white border border-ink/15 focus:border-navy outline-none font-serif text-2xl text-navy"
+            className="rounded-xl flex-1 p-4 bg-white border border-ink/15 focus:border-navy outline-none font-serif text-2xl text-navy"
             autoFocus
           />
           {suffix && <span className="text-muted text-lg">{suffix}</span>}
@@ -255,13 +255,13 @@ function textareaStep(key: keyof State, q: string, ph: string, data: State, set:
     key,
     render: () => (
       <div>
-        <Question num={1} sub={optional ? "Facultatif — ça aide toujours" : "Texte libre"}>{q}</Question>
+        <Question num={1} sub={optional ? "Facultatif - ça aide toujours" : "Texte libre"}>{q}</Question>
         <textarea
           rows={5}
           value={(data as Record<string, string>)[key as string] || ""}
           onChange={(e) => set({ [key]: e.target.value } as Partial<State>)}
           placeholder={ph}
-          className="mt-8 w-full p-4 bg-white border border-ink/15 focus:border-navy outline-none resize-none"
+          className="rounded-xl mt-8 w-full p-4 bg-white border border-ink/15 focus:border-navy outline-none resize-none"
         />
       </div>
     ),
@@ -272,7 +272,7 @@ function Input({ label, value, onChange, type = "text", required, placeholder }:
   return (
     <label className="block">
       <span className="text-xs uppercase tracking-widest text-muted">{label}{required && " *"}</span>
-      <input type={type} value={value || ""} onChange={(e) => onChange(e.target.value)} placeholder={placeholder} className="mt-2 w-full px-4 py-3 bg-white border border-ink/15 focus:border-navy outline-none" />
+      <input type={type} value={value || ""} onChange={(e) => onChange(e.target.value)} placeholder={placeholder} className="rounded-xl mt-2 w-full px-4 py-3 bg-white border border-ink/15 focus:border-navy outline-none" />
     </label>
   );
 }
@@ -299,20 +299,20 @@ function SentScreen({ data }: { data: State }) {
   const intentLabel = intents.find((i) => i.v === data.intent)?.titre.toLowerCase() ?? "votre projet";
 
   const promesse = (() => {
-    if (data.intent === "vendre") return ["Étude de votre marché local et comparables récents", "Premier avis de valeur indicatif sous 24-48 h", "Proposition d'une visite qualitative gratuite si vous le souhaitez"];
-    if (data.intent === "estimation") return ["Analyse comparative avec 5 transactions récentes proches", "Avis de valeur argumenté écrit sous 24-48 h", "Visite sur place si vous voulez affiner"];
+    if (data.intent === "vendre") return ["Étude de votre marché local et comparables récents", "Premier avis de valeur indicatif sous 24 - 48h", "Proposition d'une visite qualitative gratuite si vous le souhaitez"];
+    if (data.intent === "estimation") return ["Analyse comparative avec 5 transactions récentes proches", "Avis de valeur argumenté écrit sous 24 - 48h", "Visite sur place si vous voulez affiner"];
     if (data.intent === "acheter" || data.intent === "investir") return ["Sélection des biens disponibles correspondant à vos critères", "Accès aux biens off-market iad (avant publication)", "Mise en relation courtier si besoin de financement"];
     if (data.intent === "louer") return ["Avis de valeur locative avec loyers comparables", "Présentation des options de gestion (full / mise en location seule)", "Devis transparent par retour"];
-    if (data.intent === "rejoindre") return ["Présentation détaillée de l'offre iad et de la rémunération", "Échange honnête sur ce qui marche et ce qui est dur", "Mise en relation avec mon manager pour aller plus loin"];
+    if (data.intent === "rejoindre") return ["Présentation détaillée de l'offre iad et de la rémunération", "Échange honnête sur ce qui marche et ce qui est dur", "Mise en relation avec le manager local pour aller plus loin"];
     return ["Réponse personnelle de Romain", "Proposition d'un échange si pertinent", "Mise à disposition de la documentation utile"];
   })();
 
   return (
-    <div className="bg-navy text-ivory p-8 md:p-12">
-      <div className="text-xs uppercase tracking-[0.3em] text-gold">Demande reçue ✓</div>
-      <h2 className="font-serif text-5xl md:text-6xl mt-4">Merci {data.prenom}.</h2>
+    <div className="rounded-xl bg-navy text-ivory p-8 md:p-12">
+      <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">Demande reçue ✓</div>
+      <h2 className="font-serif text-3xl md:text-4xl mt-4">Merci {data.prenom}.</h2>
       <p className="text-ivory/80 mt-4 leading-relaxed">
-        J'ai bien reçu votre demande concernant <strong className="text-gold">{intentLabel}</strong>{data.ville ? <> à <strong className="text-gold">{data.ville}</strong></> : null}. Voici concrètement ce que je vous prépare :
+        Votre demande concernant <strong className="text-gold">{intentLabel}</strong>{data.ville ? <> à <strong className="text-gold">{data.ville}</strong></> : null} est bien arrivée. Voici concrètement ce qui se prépare :
       </p>
 
       <div className="mt-6 space-y-3">
@@ -325,18 +325,18 @@ function SentScreen({ data }: { data: State }) {
       </div>
 
       <div className="mt-8 p-5 border-l-2 border-gold bg-gold/5">
-        <div className="text-xs uppercase tracking-[0.3em] text-gold">Engagement de réponse</div>
+        <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">Engagement de réponse</div>
         <div className="font-serif text-2xl mt-2">
-          {isUrgent ? "Je vous rappelle dans les 4 prochaines heures." : "Vous recevez ma réponse personnelle sous 24 h."}
+          {isUrgent ? "Vous êtes recontacté dans les 4 prochaines heures." : "Vous recevez une réponse personnelle sous 24 h."}
         </div>
       </div>
 
       <div className="mt-8 pt-8 border-t border-ivory/10">
         <div className="text-xs uppercase tracking-widest text-gold mb-4">Vous voulez accélérer ?</div>
         <div className="grid sm:grid-cols-3 gap-3">
-          <a href="tel:+33679571473" className="p-4 bg-gold text-navy hover:bg-gold-soft text-center text-sm">📞 06 79 57 14 73</a>
-          <a href={`https://wa.me/33679571473?text=${encodeURIComponent(`Bonjour Romain, je viens de remplir le formulaire pour ${intentLabel}.`)}`} target="_blank" rel="noopener" className="p-4 bg-[#25D366] text-white hover:bg-[#20bd5a] text-center text-sm">💬 WhatsApp</a>
-          <a href="https://cal.com/romain-rieg-ckdm4p/30min" target="_blank" rel="noopener" className="p-4 border border-ivory/30 hover:bg-ivory/10 text-center text-sm">📅 Réserver un créneau</a>
+          <a href="tel:+33679571473" className="p-4 bg-gold text-navy hover:bg-gold-soft text-center text-sm rounded-full">📞 06 79 57 14 73</a>
+          <a href={`sms:+33679571473?body=${encodeURIComponent(`Bonjour Romain, je viens de remplir le formulaire pour ${intentLabel}.`)}`} target="_blank" rel="noopener" className="p-4 bg-[#25D366] text-white hover:bg-[#20bd5a] text-center text-sm rounded-full">💬 SMS</a>
+          <a href="https://cal.com/romain-rieg-ckdm4p/30min" target="_blank" rel="noopener" className="p-4 border border-ivory/30 hover:bg-ivory/10 text-center text-sm rounded-full">📅 Réserver un créneau</a>
         </div>
       </div>
     </div>

@@ -1,15 +1,23 @@
 // Netlify Function — proxy vers l'API Netlify Forms.
-// Sert le dashboard admin (/admin/leads/) avec authentification Netlify Identity.
+// Sert le dashboard admin (/admin/leads.html) avec authentification par mot de passe partagé.
 //
-// Variables d'env requises (à configurer dans Netlify dashboard) :
+// Variables d'env requises (configurer dans Netlify dashboard) :
 //   - NETLIFY_API_TOKEN : Personal Access Token (User settings > Applications > Personal access tokens)
-//   - NETLIFY_SITE_ID  : injecté automatiquement par Netlify (= b7191fea-d6ba-4c21-bc3a-428e62ba26d2)
+//   - ADMIN_PASSWORD    : mot de passe partagé pour le dashboard
+//   - NETLIFY_SITE_ID   : injecté automatiquement par Netlify
 
 export default async (request, context) => {
-  // 1. Vérifier que l'utilisateur est authentifié via Netlify Identity
-  const user = context.clientContext?.user;
-  if (!user) {
-    return new Response(JSON.stringify({ error: "Unauthorized — connectez-vous via /admin/" }), {
+  // 1. Auth simple par mot de passe partagé (header X-Admin-Password)
+  const provided = request.headers.get("x-admin-password") || "";
+  const expected = process.env.ADMIN_PASSWORD || "";
+  if (!expected) {
+    return new Response(JSON.stringify({ error: "ADMIN_PASSWORD non configuré côté serveur" }), {
+      status: 500,
+      headers: { "Content-Type": "application/json" },
+    });
+  }
+  if (provided !== expected) {
+    return new Response(JSON.stringify({ error: "Mot de passe incorrect" }), {
       status: 401,
       headers: { "Content-Type": "application/json" },
     });
@@ -26,7 +34,7 @@ export default async (request, context) => {
     });
   }
 
-  // 3. Parser les paramètres de query (formId, page, per_page, state)
+  // 3. Parser les paramètres de query
   const url = new URL(request.url);
   const formId = url.searchParams.get("form_id");
   const state = url.searchParams.get("state") || "";
@@ -54,7 +62,7 @@ export default async (request, context) => {
     }
 
     const submissions = await res.json();
-    return new Response(JSON.stringify({ user: user.email, count: submissions.length, submissions }), {
+    return new Response(JSON.stringify({ count: submissions.length, submissions }), {
       status: 200,
       headers: { "Content-Type": "application/json", "Cache-Control": "no-store" },
     });

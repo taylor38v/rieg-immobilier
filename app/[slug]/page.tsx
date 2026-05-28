@@ -53,7 +53,7 @@ export default async function Page(props: PageProps<"/[slug]">) {
         </div>
       ) : (
         <div className="max-w-4xl mx-auto px-6 pt-20 pb-8">
-          <h1 className="font-serif text-5xl md:text-7xl text-navy leading-[1.05]">{p.titre}</h1>
+          <h1 className="font-serif text-4xl md:text-6xl text-navy leading-[1.05]">{p.titre}</h1>
           {p.description ? <p className="text-muted text-lg md:text-xl mt-6 max-w-3xl leading-relaxed">{p.description}</p> : null}
         </div>
       )}

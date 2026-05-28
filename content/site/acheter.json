@@ -6,12 +6,12 @@
     "surtitre": "Acheter · Investir",
     "titre": "Trouvez votre futur chez-vous.",
     "intro": "Vous rêvez de trouver votre maison ou appartement idéal, mais vous en avez assez de voir les biens qui vous plaisent passer sous le nez ? Marre de courir après des annonces déjà vendues ?",
-    "argument_gold": "**Avec moi, accédez aux opportunités avant tout le monde** — y compris celles qui ne sont jamais publiées sur les portails classiques.",
+    "argument_gold": "**Avec moi, accédez aux opportunités avant tout le monde** - y compris celles qui ne sont jamais publiées sur les portails classiques.",
     "presentation": "Je suis Romain Rieg, conseiller immobilier du réseau iad France et résident de Saint-Didier-au-Mont-d'Or. Je connais chaque quartier et l'évolution réelle des prix au m². Mon objectif : vous faire gagner du temps, sécuriser votre achat et vous permettre de trouver votre futur chez-vous **sans stress ni mauvaise surprise**.",
     "cta_primary_label": "Démarrer ma recherche",
     "cta_primary_href": "/contact",
-    "cta_secondary_label": "💬 WhatsApp",
-    "cta_secondary_url": "https://wa.me/33679571473?text=Bonjour%20Romain%2C%20je%20cherche%20un%20bien."
+    "cta_secondary_label": "💬 SMS",
+    "cta_secondary_url": "sms:+33679571473?body=Bonjour%20Romain%2C%20je%20cherche%20un%20bien."
   },
   "piliers": {
     "surtitre": "Pourquoi acheter ou investir avec moi",
@@ -30,24 +30,24 @@
       { "titre": "Chasse immobilière personnalisée", "desc": "Gagnez du temps : visitez uniquement les biens vraiment pertinents pour votre projet. Vous accédez aussi bien aux biens publics qu'au portefeuille exclusif iad." },
       { "titre": "Achat dans l'ancien ou le neuf", "desc": "Analyse et comparaison des biens, conseils sur la valorisation et l'optimisation. Je vous oriente vers ce qui vous convient vraiment." },
       { "titre": "Accompagnement jusqu'à la signature", "desc": "Visites guidées et conseils personnalisés. Négociation pour obtenir le meilleur prix. Suivi administratif complet jusqu'au notaire." },
-      { "titre": "Accès à 100% des biens disponibles", "desc": "Partage complet au sein du réseau iad. Ouverture au partage de commission entre conseillers — vous accédez à plus de biens, pas moins." }
+      { "titre": "Accès à 100% des biens disponibles", "desc": "Partage complet au sein du réseau iad. Ouverture au partage de commission entre conseillers - vous accédez à plus de biens, pas moins." }
     ]
   },
   "secteurs_section": {
     "surtitre": "Mes secteurs",
-    "titre": "Trois zones que je connais par cœur.",
+    "titre": "Deux zones que je connais par cœur.",
     "intro": "Survolez une commune sur la carte pour voir les infos clés, cliquez pour ouvrir sa fiche détaillée."
   },
   "romain_card": {
     "titre": "Trouver le bon bien, c'est mon métier.",
-    "message": "Avant chaque visite, je qualifie financièrement les biens et je vous évite les déplacements inutiles. Je travaille pour vous — pas pour le vendeur. Mes honoraires sont à la charge du vendeur, jamais de l'acquéreur."
+    "message": "Avant chaque visite, je qualifie financièrement les biens et je vous évite les déplacements inutiles. Je travaille pour vous - pas pour le vendeur. Mes honoraires sont à la charge du vendeur, jamais de l'acquéreur."
   },
   "cta_final": {
     "titre": "Dites-moi ce que vous cherchez.",
     "intro": "Un café, 30 minutes, et on dresse ensemble votre cahier des charges.",
     "cta_primary_label": "Démarrer ma recherche",
     "cta_primary_href": "/contact",
-    "cta_whatsapp_label": "💬 WhatsApp",
-    "cta_whatsapp_url": "https://wa.me/33679571473"
+    "cta_whatsapp_label": "💬 SMS",
+    "cta_whatsapp_url": "sms:+33679571473"
   }
 }

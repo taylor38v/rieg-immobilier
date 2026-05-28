@@ -14,8 +14,8 @@ export default function Page() {
     <>
       <section className="max-w-7xl mx-auto px-6 py-16 md:py-24 grid lg:grid-cols-2 gap-16 items-center">
         <div>
-          <div className="text-xs uppercase tracking-[0.3em] text-gold">{p.hero.surtitre}</div>
-          <h1 className="font-serif text-5xl md:text-6xl mt-3 leading-[1.05]">{p.hero.titre_l1}<br />{p.hero.titre_l2}</h1>
+          <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{p.hero.surtitre}</div>
+          <h1 className="font-serif text-3xl md:text-4xl mt-3 leading-[1.05]">{p.hero.titre_l1}<br />{p.hero.titre_l2}</h1>
           {p.hero.paragraphes.map((para, i) => (
             <p key={i} className="text-muted mt-8 leading-relaxed">{para}</p>
           ))}
@@ -35,8 +35,8 @@ export default function Page() {
 
       <section className="bg-ivory-deep py-24">
         <div className="max-w-5xl mx-auto px-6">
-          <div className="text-xs uppercase tracking-[0.3em] text-gold">{p.engagements.surtitre}</div>
-          <h2 className="font-serif text-5xl md:text-6xl mt-3">{p.engagements.titre}</h2>
+          <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{p.engagements.surtitre}</div>
+          <h2 className="font-serif text-3xl md:text-4xl mt-3">{p.engagements.titre}</h2>
           <div className="grid md:grid-cols-2 gap-8 mt-12">
             {p.engagements.items.map((it) => (
               <div key={it.titre} className="p-6 bg-white border border-ink/5">
@@ -50,8 +50,8 @@ export default function Page() {
 
       <section className="bg-navy text-ivory py-20">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="font-serif text-5xl md:text-6xl">{p.cta_final.titre}</h2>
-          <Link href={p.cta_final.cta_href} className="inline-block mt-8 px-7 py-4 bg-gold text-navy hover:bg-gold-soft">{p.cta_final.cta_label}</Link>
+          <h2 className="font-serif text-3xl md:text-4xl">{p.cta_final.titre}</h2>
+          <Link href={p.cta_final.cta_href} className="inline-block mt-8 px-7 py-4 bg-gold text-navy hover:bg-gold-soft rounded-full">{p.cta_final.cta_label}</Link>
         </div>
       </section>
     </>
