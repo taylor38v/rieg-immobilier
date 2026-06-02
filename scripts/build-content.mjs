@@ -41,7 +41,7 @@ const articles = readMdFolder("articles")
 
 writeTs(
   "articles.ts",
-  `// AUTO-GENERATED — ne pas éditer à la main.
+  `// AUTO-GENERATED - ne pas éditer à la main.
 // Source : content/articles/*.md  ·  Régénéré par scripts/build-content.mjs
 
 export type Article = {
@@ -68,7 +68,7 @@ const temoignages = readMdFolder("temoignages")
 
 writeTs(
   "temoignages.ts",
-  `// AUTO-GENERATED — ne pas éditer à la main.
+  `// AUTO-GENERATED - ne pas éditer à la main.
 // Source : content/temoignages/*.md  ·  Régénéré par scripts/build-content.mjs
 
 export type Temoignage = {
@@ -91,7 +91,7 @@ const pages = readMdFolder("pages").filter((p) => p.publie !== false);
 
 writeTs(
   "pages.ts",
-  `// AUTO-GENERATED — ne pas éditer à la main.
+  `// AUTO-GENERATED - ne pas éditer à la main.
 // Source : content/pages/*.md  ·  Régénéré par scripts/build-content.mjs
 
 export type PageLibre = {
@@ -122,13 +122,13 @@ function readJsonMap(folder) {
 
 // --- Zones (3 zones de vente) ---
 const zones = readJsonMap("zones");
-writeTs("zones.ts", `// AUTO-GENERATED — content/zones/*.json
+writeTs("zones.ts", `// AUTO-GENERATED - content/zones/*.json
 export const zonesContent = ${JSON.stringify(zones, null, 2)} as const;
 `);
 
 // --- Secteurs détaillés (7 communes) ---
 const secteursDetailContent = readJsonMap("secteurs-detail");
-writeTs("secteurs-detail.ts", `// AUTO-GENERATED — content/secteurs-detail/*.json
+writeTs("secteurs-detail.ts", `// AUTO-GENERATED - content/secteurs-detail/*.json
 export const secteursDetailContent: Record<string, any> = ${JSON.stringify(secteursDetailContent, null, 2)};
 `);
 
@@ -152,7 +152,7 @@ const sitePages = fs.existsSync(SITE_DIR)
 
 writeTs(
   "site.ts",
-  `// AUTO-GENERATED — ne pas éditer à la main.
+  `// AUTO-GENERATED - ne pas éditer à la main.
 // Source : content/site/*.json  ·  Régénéré par scripts/build-content.mjs
 
 export const site = ${JSON.stringify(sitePages, null, 2)} as const;
@@ -169,7 +169,7 @@ const settings = fs.existsSync(settingsPath)
 
 writeTs(
   "settings.ts",
-  `// AUTO-GENERATED — ne pas éditer à la main.
+  `// AUTO-GENERATED - ne pas éditer à la main.
 // Source : content/settings.json  ·  Régénéré par scripts/build-content.mjs
 
 export type Settings = {
@@ -186,6 +186,7 @@ export type Settings = {
   instagram?: string;
   linkedin?: string;
   facebook?: string;
+  tiktok?: string;
   calcom?: string;
   horaires: string;
   delai_avis: string;

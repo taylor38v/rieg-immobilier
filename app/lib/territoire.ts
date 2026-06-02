@@ -49,6 +49,10 @@ export const zones: Zone[] = [
       "Civrieux-d'Azergues",
       "Lozanne",
       "Dommartin",
+      "Fontaines-sur-Saône",
+      "Sainte-Foy-lès-Lyon",
+      "Villeurbanne",
+      "Saint-Genis-les-Ollières",
     ],
   },
   {
@@ -80,6 +84,7 @@ export const zones: Zone[] = [
       "Saint-Héand",
       "Saint-Bonnet-les-Oules",
       "Saint-Galmier",
+      "Chambœuf",
       "Montrond-les-Bains",
       "Feurs",
     ],

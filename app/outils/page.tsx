@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import ContactCTA from "../components/ContactCTA";
 import { site } from "../lib/_generated/site";
 
 const ol = site["outils-landing"];
@@ -44,6 +45,7 @@ const groupes: { titre: string; outils: Outil[] }[] = [
 
 export default function Page() {
   return (
+    <>
     <div className="max-w-7xl mx-auto px-6 py-16 md:py-24">
       <div className="max-w-3xl">
         <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{ol.surtitre}</div>
@@ -77,11 +79,15 @@ export default function Page() {
         </section>
       ))}
 
-      <div className="rounded-xl bg-navy text-ivory p-10 mt-20 text-center">
-        <h3 className="font-serif text-3xl">{ol.cta_titre}</h3>
-        <p className="text-ivory/70 mt-3">{ol.cta_intro}</p>
-        <Link href={ol.cta_href} className="inline-block mt-6 px-7 py-4 bg-gold text-navy hover:bg-gold-soft rounded-full">{ol.cta_label}</Link>
-      </div>
     </div>
+
+    <ContactCTA
+      variant="navy"
+      titre={ol.cta_titre}
+      intro={ol.cta_intro}
+      smsBody="Bonjour Romain, j'aimerais en discuter directement. "
+      mailSubject="Question depuis vos outils"
+    />
+    </>
   );
 }

@@ -139,7 +139,7 @@ export default function Page() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-4">
-            <div className={`p-6 ${winner === "achat" ? "bg-gold/10 border border-gold" : "bg-white border border-ink/10"}`}>
+            <div className={`rounded-xl p-6 ${winner === "achat" ? "bg-gold/10 border border-gold" : "bg-white border border-ink/10"}`}>
               <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">Scénario achat</div>
               <div className="mt-4 space-y-3 text-sm">
                 <Row l="Patrimoine net (valeur − dette)" v={formatPrix(r.patrimoineAchat)} highlight />
@@ -149,7 +149,7 @@ export default function Page() {
                 <Row l="Solde net (patrimoine − décaissé)" v={formatPrix(r.netAchat)} red={r.netAchat < 0} />
               </div>
             </div>
-            <div className={`p-6 ${winner === "location" ? "bg-gold/10 border border-gold" : "bg-white border border-ink/10"}`}>
+            <div className={`rounded-xl p-6 ${winner === "location" ? "bg-gold/10 border border-gold" : "bg-white border border-ink/10"}`}>
               <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">Scénario location + placement</div>
               <div className="mt-4 space-y-3 text-sm">
                 <Row l="Capital placé constitué" v={formatPrix(r.patrimoineLocataire)} highlight />

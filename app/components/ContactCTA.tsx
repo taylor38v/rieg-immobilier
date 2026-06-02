@@ -1,28 +1,42 @@
-import Link from "next/link";
+import ContactButtons from "./ContactButtons";
 
 type Props = {
   titre?: string;
   intro?: string;
-  label?: string;
-  href?: string;
+  /** Sujet pré-rempli pour le bouton Mail */
+  mailSubject?: string;
+  /** Body pré-rempli pour le bouton SMS */
+  smsBody?: string;
+  /** Variant de fond : "ivory" (clair) ou "navy" (sombre) */
+  variant?: "ivory" | "navy";
 };
 
 export default function ContactCTA({
   titre = "Une question, un projet ?",
   intro = "Romain répond personnellement sous 24 h. Aucune sollicitation commerciale, aucune liste de prospection.",
-  label = "Contactez-moi",
-  href = "/contact",
+  mailSubject,
+  smsBody,
+  variant = "ivory",
 }: Props) {
+  const bg = variant === "navy" ? "bg-navy text-ivory" : "bg-ivory-deep text-ink";
+  const titreColor = variant === "navy" ? "text-ivory" : "text-navy";
+  const introColor = variant === "navy" ? "text-ivory/70" : "text-muted";
+
   return (
-    <div className="rounded-xl bg-ivory-deep p-10 mt-16 text-center">
-      <h3 className="font-serif text-3xl text-navy">{titre}</h3>
-      <p className="text-muted mt-3 max-w-2xl mx-auto">{intro}</p>
-      <Link
-        href={href}
-        className="inline-block mt-6 px-7 py-4 bg-navy text-ivory hover:bg-gold hover:text-navy rounded-full transition"
-      >
-        {label}
-      </Link>
-    </div>
+    <section className={`${bg} py-16`}>
+      <div className="max-w-4xl mx-auto px-6 text-center">
+        <h3 className={`font-serif text-3xl ${titreColor}`}>{titre}</h3>
+        <p className={`${introColor} mt-3 max-w-2xl mx-auto`}>{intro}</p>
+        <div className="mt-6 flex justify-center">
+          <ContactButtons
+            withContact
+            align="center"
+            variant={variant === "navy" ? "primary" : "light"}
+            mailSubject={mailSubject}
+            smsBody={smsBody}
+          />
+        </div>
+      </div>
+    </section>
   );
 }

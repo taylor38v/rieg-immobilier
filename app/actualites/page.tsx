@@ -23,7 +23,7 @@ export default function Page() {
       </div>
 
       <Link href={`/actualites/${first.slug}`} className="group block mt-16 grid lg:grid-cols-2 gap-10">
-        <div className="aspect-[4/3] overflow-hidden bg-ivory-deep">
+        <div className="aspect-[4/3] overflow-hidden bg-ivory-deep rounded-xl">
           <img src={first.image} alt={first.titre} className="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
         </div>
         <div className="flex flex-col justify-center">
@@ -41,7 +41,7 @@ export default function Page() {
       <div className="grid md:grid-cols-3 gap-10 mt-20 pt-16 border-t border-ink/10">
         {rest.map((a) => (
           <Link key={a.slug} href={`/actualites/${a.slug}`} className="group">
-            <div className="aspect-[4/3] overflow-hidden bg-ivory-deep">
+            <div className="aspect-[4/3] overflow-hidden bg-ivory-deep rounded-xl">
               <img src={a.image} alt={a.titre} className="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
             </div>
             <div className="pt-5">

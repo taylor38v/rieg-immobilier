@@ -65,7 +65,7 @@ export default async function Page(props: PageProps<"/actualites/[slug]">) {
           <div className="grid md:grid-cols-3 gap-8">
             {others.map((o) => (
               <Link key={o.slug} href={`/actualites/${o.slug}`} className="group">
-                <div className="aspect-[4/3] overflow-hidden bg-white">
+                <div className="aspect-[4/3] overflow-hidden bg-white rounded-xl">
                   <img src={o.image} alt={o.titre} className="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
                 </div>
                 <div className="pt-4">

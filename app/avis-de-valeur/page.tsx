@@ -2,6 +2,9 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import HeroBackground from "../components/HeroBackground";
+import ContactButtons from "../components/ContactButtons";
+import ContactCTA from "../components/ContactCTA";
+import CityMap from "../components/CityMap";
 import { site } from "../lib/_generated/site";
 
 const av = site["avis-de-valeur"];
@@ -31,7 +34,7 @@ export default function Page() {
           <p className="text-ivory/80 text-base mt-4 max-w-3xl leading-relaxed">{av.hero.intro2}</p>
           <div className="flex flex-wrap gap-4 mt-10">
             <button onClick={startForm} className="px-7 py-4 bg-gold text-navy font-medium hover:bg-gold-soft rounded-full">{av.hero.cta_primary_label}</button>
-            <a href={av.hero.cta_secondary_url} target="_blank" rel="noopener" className="px-7 py-4 border border-ivory/30 hover:bg-ivory/10 rounded-full">{av.hero.cta_secondary_label}</a>
+            <ContactButtons smsBody="Bonjour Romain, je souhaite un avis de valeur de mon bien. " mailSubject="Demande d'avis de valeur" />
           </div>
           <div className="mt-4 text-xs text-ivory/60">{av.hero.mention}</div>
         </div>
@@ -42,7 +45,7 @@ export default function Page() {
         <h2 className="font-serif text-3xl md:text-4xl mt-3">{av.forces.titre}</h2>
         <div className="grid md:grid-cols-3 gap-6 mt-12">
           {av.forces.items.map((it) => (
-            <div key={it.titre} className="shine-hover p-7 bg-white border border-ink/10">
+            <div key={it.titre} className="shine-hover rounded-xl p-7 bg-white border border-ink/10">
               <div className="font-serif text-2xl text-navy">{it.titre}</div>
               <p className="text-sm text-muted mt-3 leading-relaxed">{it.desc}</p>
             </div>
@@ -68,6 +71,17 @@ export default function Page() {
         </div>
       </section>
 
+      <section className="bg-navy text-ivory py-24">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">Mes secteurs d'intervention</div>
+          <h2 className="font-serif text-3xl md:text-4xl mt-3">J'estime sur tout le Mont d'Or, l'Ouest lyonnais et la Plaine du Forez.</h2>
+          <p className="text-ivory/70 mt-4 max-w-2xl">Cliquez sur une commune pour ouvrir sa fiche détaillée.</p>
+          <div className="mt-10">
+            <CityMap height={520} includeLimitrophes={true} />
+          </div>
+        </div>
+      </section>
+
       <section className="bg-ivory-deep py-20 text-center">
         <div className="max-w-3xl mx-auto px-6">
           <h2 className="font-serif text-3xl md:text-4xl text-navy">{av.cta_final.titre}</h2>
@@ -77,6 +91,14 @@ export default function Page() {
           </button>
         </div>
       </section>
+
+      <ContactCTA
+        variant="navy"
+        titre="Une question avant de démarrer ?"
+        intro="Romain répond personnellement sous 24 h. Aucune liste de prospection."
+        smsBody="Bonjour Romain, j'ai une question sur l'avis de valeur. "
+        mailSubject="Question avis de valeur"
+      />
     </>
   );
 }

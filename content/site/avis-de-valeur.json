@@ -13,7 +13,7 @@
     "mention": "Zéro engagement · 100% confidentiel"
   },
   "forces": {
-    "surtitre": "Pourquoi faire estimer avec moi",
+    "surtitre": "Pourquoi faire estimer avec moi ?",
     "titre": "Trois forces concrètes.",
     "items": [
       { "titre": "Expertise locale & comparatif précis", "desc": "Je connais parfaitement les marchés de Saint-Didier-au-Mont-d'Or, des Monts d'Or et de la Plaine du Forez. Chaque estimation s'appuie sur les ventes récentes dans votre quartier, les tendances actuelles du marché local ainsi que les caractéristiques uniques de votre logement." },
@@ -22,7 +22,7 @@
     ]
   },
   "etapes": {
-    "surtitre": "Comment ça se déroule",
+    "surtitre": "Comment ça se déroule ?",
     "titre": "Quatre étapes en 24 - 48h.",
     "items": [
       { "num": "01", "titre": "Contact & collecte d'informations", "desc": "Via le formulaire ou un contact direct par téléphone/email. Collecte des informations nécessaires pour une estimation précise (projet de vie, famille, etc.)." },

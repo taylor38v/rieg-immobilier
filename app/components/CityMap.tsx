@@ -38,6 +38,11 @@ const ZONES: Record<string, { tier: Tier; zone: "mont-dor" | "forez" }> = {
   "civrieux-d-azergues":      { tier: "limitrophe", zone: "mont-dor" },
   "lozanne":                  { tier: "limitrophe", zone: "mont-dor" },
   "dommartin":                { tier: "limitrophe", zone: "mont-dor" },
+  "lyon":                     { tier: "limitrophe", zone: "mont-dor" },
+  "fontaines-sur-saone":      { tier: "limitrophe", zone: "mont-dor" },
+  "sainte-foy-les-lyon":      { tier: "limitrophe", zone: "mont-dor" },
+  "villeurbanne":             { tier: "limitrophe", zone: "mont-dor" },
+  "saint-genis-les-ollieres": { tier: "limitrophe", zone: "mont-dor" },
   // Limitrophes Plaine du Forez
   "bonson":                   { tier: "limitrophe", zone: "forez" },
   "sury-le-comtal":           { tier: "limitrophe", zone: "forez" },
@@ -60,6 +65,8 @@ const ZONES: Record<string, { tier: Tier; zone: "mont-dor" | "forez" }> = {
   "saint-galmier":            { tier: "limitrophe", zone: "forez" },
   "montrond-les-bains":       { tier: "limitrophe", zone: "forez" },
   "feurs":                    { tier: "limitrophe", zone: "forez" },
+  "saint-etienne":            { tier: "limitrophe", zone: "forez" },
+  "chamboeuf":                { tier: "limitrophe", zone: "forez" },
 };
 
 const STYLE = {

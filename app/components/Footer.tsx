@@ -16,6 +16,13 @@ const COMMUNE_SLUGS: Record<string, string> = {
   "Champagne-au-Mont-d'Or": "champagne-au-mont-dor",
   "Saint-Just-Saint-Rambert": "saint-just-saint-rambert",
   "Andrézieux-Bouthéon": "andrezieux-boutheon",
+  "Saint-Étienne": "saint-etienne",
+  "Lyon": "lyon",
+  "Villeurbanne": "villeurbanne",
+  "Sainte-Foy-lès-Lyon": "sainte-foy-les-lyon",
+  "Fontaines-sur-Saône": "fontaines-sur-saone",
+  "Saint-Genis-les-Ollières": "saint-genis-les-ollieres",
+  "Chambœuf": "chamboeuf",
 };
 
 function CommuneLink({ nom, className }: { nom: string; className?: string }) {

@@ -4,13 +4,93 @@ import type { Metadata } from "next";
 import { secteurs, formatPrix } from "../../lib/data";
 import CityMap from "../../components/CityMap";
 import HeroBackground from "../../components/HeroBackground";
+import ContactButtons from "../../components/ContactButtons";
+import ContactCTA from "../../components/ContactCTA";
 import { findZone } from "../../lib/territoire";
 import { zonesContent } from "../../lib/_generated/zones";
 
+// Slugs des communes ayant une fiche dédiée /secteurs/{slug}
+const COMMUNE_TO_SLUG: Record<string, string> = {
+  "Saint-Didier-au-Mont-d'Or": "saint-didier-au-mont-dor",
+  "Saint-Cyr-au-Mont-d'Or": "saint-cyr-au-mont-dor",
+  "Écully": "ecully",
+  "Dardilly": "dardilly",
+  "Limonest": "limonest",
+  "Champagne-au-Mont-d'Or": "champagne-au-mont-dor",
+  "Saint-Just-Saint-Rambert": "saint-just-saint-rambert",
+  "Andrézieux-Bouthéon": "andrezieux-boutheon",
+  "Lyon": "lyon",
+  "Caluire-et-Cuire": "caluire-et-cuire",
+  "Collonges-au-Mont-d'Or": "collonges-au-mont-dor",
+  "Poleymieux-au-Mont-d'Or": "poleymieux-au-mont-dor",
+  "Curis-au-Mont-d'Or": "curis-au-mont-dor",
+  "Couzon-au-Mont-d'Or": "couzon-au-mont-dor",
+  "Albigny-sur-Saône": "albigny-sur-saone",
+  "Chasselay": "chasselay",
+  "Lissieu": "lissieu",
+  "Marcilly-d'Azergues": "marcilly-d-azergues",
+  "Chazay-d'Azergues": "chazay-d-azergues",
+  "Tassin-la-Demi-Lune": "tassin-la-demi-lune",
+  "Charbonnières-les-Bains": "charbonnieres-les-bains",
+  "Craponne": "craponne",
+  "Francheville": "francheville",
+  "Civrieux-d'Azergues": "civrieux-d-azergues",
+  "Lozanne": "lozanne",
+  "Dommartin": "dommartin",
+  "Fontaines-sur-Saône": "fontaines-sur-saone",
+  "Sainte-Foy-lès-Lyon": "sainte-foy-les-lyon",
+  "Villeurbanne": "villeurbanne",
+  "Saint-Genis-les-Ollières": "saint-genis-les-ollieres",
+  "Saint-Étienne": "saint-etienne",
+  "Bonson": "bonson",
+  "Chambles": "chambles",
+  "Saint-Marcellin-en-Forez": "saint-marcellin-en-forez",
+  "Saint-Cyprien": "saint-cyprien",
+  "Sury-le-Comtal": "sury-le-comtal",
+  "Veauchette": "veauchette",
+  "Veauche": "veauche",
+  "Unieux": "unieux",
+  "La Fouillouse": "la-fouillouse",
+  "Saint-Romain-le-Puy": "saint-romain-le-puy",
+  "Roche-la-Molière": "roche-la-moliere",
+  "Firminy": "firminy",
+  "Villars": "villars",
+  "Saint-Priest-en-Jarez": "saint-priest-en-jarez",
+  "L'Étrat": "l-etrat",
+  "La Tour-en-Jarez": "la-tour-en-jarez",
+  "Saint-Héand": "saint-heand",
+  "Saint-Bonnet-les-Oules": "saint-bonnet-les-oules",
+  "Saint-Galmier": "saint-galmier",
+  "Chambœuf": "chamboeuf",
+  "Montrond-les-Bains": "montrond-les-bains",
+  "Feurs": "feurs",
+  "Saint-Romain-au-Mont-d'Or": "saint-romain-au-mont-dor",
+};
+
+// Communes ayant une fiche complète (avec contenu rédigé)
+const COMMUNES_WITH_FICHE = new Set([
+  "saint-didier-au-mont-dor",
+  "saint-cyr-au-mont-dor",
+  "ecully",
+  "dardilly",
+  "limonest",
+  "champagne-au-mont-dor",
+  "saint-just-saint-rambert",
+  "andrezieux-boutheon",
+]);
+
+function CommuneLink({ nom, className }: { nom: string; className?: string }) {
+  const slug = COMMUNE_TO_SLUG[nom];
+  if (slug && COMMUNES_WITH_FICHE.has(slug)) {
+    return <Link href={`/secteurs/${slug}`} className={`${className || ""} hover:bg-gold hover:text-navy transition`}>{nom}</Link>;
+  }
+  return <span className={className}>{nom}</span>;
+}
+
 const COMMUNES_BY_ZONE: Record<string, { mapSlugs: string[]; communes: string[] }> = {
   "saint-didier": { mapSlugs: ["saint-didier-au-mont-dor"], communes: ["saint-didier-au-mont-dor"] },
-  "ouest-lyonnais": { mapSlugs: ["ecully", "dardilly", "limonest", "champagne-au-mont-dor", "saint-cyr-au-mont-dor"], communes: ["ecully", "dardilly", "limonest", "champagne-au-mont-dor", "saint-cyr-au-mont-dor"] },
-  "plaine-du-forez": { mapSlugs: ["saint-just-saint-rambert", "andrezieux-boutheon"], communes: ["saint-just-saint-rambert"] },
+  "ouest-lyonnais": { mapSlugs: ["saint-didier-au-mont-dor", "saint-cyr-au-mont-dor", "ecully", "dardilly", "limonest", "champagne-au-mont-dor"], communes: ["saint-didier-au-mont-dor", "saint-cyr-au-mont-dor", "ecully", "dardilly", "limonest", "champagne-au-mont-dor"] },
+  "plaine-du-forez": { mapSlugs: ["saint-just-saint-rambert", "andrezieux-boutheon"], communes: ["saint-just-saint-rambert", "andrezieux-boutheon"] },
 };
 
 const etapes = [
@@ -54,18 +134,19 @@ export default async function Page(props: PageProps<"/vendre/[zone]">) {
           <div className="text-xs uppercase tracking-widest text-gold mt-8">{z.communes_label}</div>
           <div className="flex flex-wrap gap-4 mt-8">
             <Link href="/avis-de-valeur" className="px-7 py-4 bg-gold text-navy hover:bg-gold-soft rounded-full">Avis de valeur · 24 - 48h</Link>
-            <Link href="/contact" className="px-7 py-4 border border-ivory/30 hover:bg-ivory/10 rounded-full">Me contacter</Link>
+            <Link href="/contact" className="px-7 py-4 bg-navy-soft border border-ivory/30 text-ivory hover:bg-ivory hover:text-navy rounded-full">Me contacter</Link>
+            <ContactButtons smsBody={`Bonjour Romain, je souhaite un avis sur ${z.h1.toLowerCase()}. `} mailSubject={`Avis ${territoire?.nom || zone}`} />
           </div>
           <div className="mt-4 text-xs text-ivory/60">Zéro engagement · 100% confidentiel</div>
         </div>
       </section>
 
       <section className="max-w-6xl mx-auto px-6 py-24">
-        <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">Pourquoi me confier votre bien</div>
+        <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">Pourquoi me confier votre bien ?</div>
         <h2 className="font-serif text-3xl md:text-4xl mt-3">Trois atouts qui font la différence.</h2>
         <div className="grid md:grid-cols-3 gap-6 mt-12">
           {z.atouts.map((a: { titre: string; desc: string }, i: number) => (
-            <div key={i} className="p-7 bg-white border border-ink/10">
+            <div key={i} className="shine-hover rounded-xl p-7 bg-white border border-ink/10">
               <div className="font-serif text-4xl text-gold">0{i + 1}</div>
               <div className="font-serif text-xl text-navy mt-3">{a.titre}</div>
               <p className="text-sm text-muted mt-3 leading-relaxed">{a.desc}</p>
@@ -104,7 +185,7 @@ export default async function Page(props: PageProps<"/vendre/[zone]">) {
               <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium mb-4">Communes principales</div>
               <div className="flex flex-wrap gap-2">
                 {territoire.principales.map((c) => (
-                  <span key={c} className="px-4 py-2 bg-navy text-ivory text-sm rounded-full font-medium">{c}</span>
+                  <CommuneLink key={c} nom={c} className="px-4 py-2 bg-navy text-ivory text-sm rounded-full font-medium" />
                 ))}
               </div>
               {territoire.limitrophes.length > 0 && (
@@ -112,7 +193,7 @@ export default async function Page(props: PageProps<"/vendre/[zone]">) {
                   <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium mb-4 mt-8">+ communes limitrophes que je couvre également</div>
                   <div className="flex flex-wrap gap-2">
                     {territoire.limitrophes.map((c) => (
-                      <span key={c} className="px-3 py-1.5 bg-ivory-deep text-ink/80 text-sm border border-ink/10">{c}</span>
+                      <CommuneLink key={c} nom={c} className="px-3 py-1.5 bg-ivory-deep text-ink/80 text-sm border border-ink/10 rounded-full" />
                     ))}
                   </div>
                   <p className="text-xs text-muted mt-5 italic">Je ne me limite jamais strictement aux communes principales - chaque projet sur les limitrophes est étudié avec la même attention.</p>
@@ -135,10 +216,10 @@ export default async function Page(props: PageProps<"/vendre/[zone]">) {
           {communesData.length > 0 && (
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
               {communesData.map((s) => s && (
-                <Link key={s.slug} href={`/secteurs/${s.slug}`} className="group bg-white border border-ink/10 hover:border-navy block">
+                <Link key={s.slug} href={`/secteurs/${s.slug}`} className="group bg-white border border-ink/10 hover:border-navy block rounded-xl overflow-hidden">
                   {s.image && (
                     <div className="aspect-[16/9] overflow-hidden">
-                      <img src={s.image} alt={s.nom} className="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+                      <img src={s.image} alt={s.nom} className="no-round w-full h-full object-cover group-hover:scale-105 transition duration-700" />
                     </div>
                   )}
                   <div className="p-5">
@@ -156,16 +237,13 @@ export default async function Page(props: PageProps<"/vendre/[zone]">) {
         </div>
       </section>
 
-      <section className="bg-navy text-ivory py-20 text-center">
-        <div className="max-w-4xl mx-auto px-6">
-          <h2 className="font-serif text-3xl md:text-4xl">Et si on commençait par un avis de valeur ?</h2>
-          <p className="text-ivory/70 mt-4">Gratuit, argumenté, sous 24 - 48h - sans engagement de mandat.</p>
-          <div className="flex flex-wrap justify-center gap-4 mt-8">
-            <Link href="/avis-de-valeur" className="px-7 py-4 bg-gold text-navy hover:bg-gold-soft rounded-full">Demander mon avis de valeur</Link>
-            <a href="sms:+33679571473" target="_blank" rel="noopener" className="px-7 py-4 bg-[#25D366] hover:bg-[#20bd5a] text-white rounded-full">💬 SMS</a>
-          </div>
-        </div>
-      </section>
+      <ContactCTA
+        variant="navy"
+        titre="Et si on commençait par un avis de valeur ?"
+        intro="Gratuit, argumenté, sous 24 - 48h - sans engagement de mandat."
+        smsBody={`Bonjour Romain, je souhaite un avis de valeur dans le secteur ${territoire?.nom || ""}. `}
+        mailSubject={`Avis de valeur - ${territoire?.nom || ""}`}
+      />
     </>
   );
 }

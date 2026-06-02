@@ -2,6 +2,8 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { marked } from "marked";
 import HeroBackground from "../components/HeroBackground";
+import ContactButtons from "../components/ContactButtons";
+import ContactCTA from "../components/ContactCTA";
 import { site } from "../lib/_generated/site";
 
 const r = site.rejoindre;
@@ -23,7 +25,7 @@ export default function Page() {
           <p className="text-ivory/80 text-lg md:text-xl mt-8 max-w-3xl leading-relaxed" dangerouslySetInnerHTML={{ __html: inline(r.hero.intro) }} />
           <div className="flex flex-wrap gap-4 mt-10">
             <Link href={r.hero.cta_primary_href} className="px-7 py-4 bg-gold text-navy font-medium hover:bg-gold-soft rounded-full">{r.hero.cta_primary_label}</Link>
-            <a href={r.hero.cta_whatsapp_url} target="_blank" rel="noopener" className="px-7 py-4 border border-ivory/30 hover:bg-ivory/10 rounded-full">{r.hero.cta_whatsapp_label}</a>
+            <ContactButtons smsBody="Bonjour Romain, je souhaite en savoir plus sur le métier de conseiller iad. " mailSubject="Rejoindre votre équipe iad" />
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10 mt-16 max-w-4xl">
             {r.hero.stats.map((s) => (
@@ -58,7 +60,7 @@ export default function Page() {
           <h2 className="font-serif text-3xl md:text-4xl mt-3">{r.profils.titre}</h2>
           <div className="grid md:grid-cols-2 gap-6 mt-12">
             {r.profils.items.map((p) => (
-              <div key={p.titre} className="shine-hover p-6 bg-white border border-ink/5 flex gap-5">
+              <div key={p.titre} className="shine-hover rounded-xl p-6 bg-white border border-ink/5 flex gap-5">
                 <span className="font-serif text-3xl text-gold leading-none">→</span>
                 <div>
                   <div className="font-serif text-xl text-navy">{p.titre}</div>
@@ -107,16 +109,13 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="bg-navy text-ivory py-20 text-center">
-        <div className="max-w-3xl mx-auto px-6">
-          <h2 className="font-serif text-3xl md:text-4xl">{r.cta_final.titre}</h2>
-          <p className="text-ivory/70 mt-4">{r.cta_final.intro}</p>
-          <div className="flex flex-wrap justify-center gap-4 mt-8">
-            <Link href={r.cta_final.cta_primary_href} className="px-7 py-4 bg-gold text-navy hover:bg-gold-soft rounded-full">{r.cta_final.cta_primary_label}</Link>
-            <a href={r.cta_final.cta_secondary_href} className="px-7 py-4 border border-ivory/30 hover:bg-ivory/10 rounded-full">{r.cta_final.cta_secondary_label}</a>
-          </div>
-        </div>
-      </section>
+      <ContactCTA
+        variant="navy"
+        titre={r.cta_final.titre}
+        intro={r.cta_final.intro}
+        smsBody="Bonjour Romain, je souhaite en savoir plus sur le métier de conseiller iad. "
+        mailSubject="Rejoindre votre équipe iad"
+      />
     </>
   );
 }

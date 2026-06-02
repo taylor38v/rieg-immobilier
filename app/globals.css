@@ -51,8 +51,8 @@ a[class*="bg-gold"]:not(.no-round):not([class*="rounded-"]),
 a[class*="bg-navy"]:not(.no-round):not([class*="rounded-"]):not([class*="bg-navy-soft"]),
 a[class*="bg-[#25D366]"]:not(.no-round):not([class*="rounded-"]) { border-radius: 9999px; }
 
-/* ─── Images : bords arrondis par défaut (sauf logo / opt-out) ─── */
-img:not(.no-round):not([alt*="iad Prestige"]):not([alt*="iad France"]) { border-radius: 12px; }
+/* ─── Images : bords arrondis par défaut sauf logo / opt-out / object-cover (dans un wrapper) ─── */
+img:not(.no-round):not(.object-cover):not([alt*="iad Prestige"]):not([alt*="iad France"]) { border-radius: 12px; }
 
 /* ─── Effet brillance/surbrillance au survol (réutilisable) ─── */
 .shine-hover {

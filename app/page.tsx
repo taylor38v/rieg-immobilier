@@ -154,7 +154,7 @@ export default function Home() {
         </div>
         <div className="grid md:grid-cols-3 gap-8">
           {h.avis.items.map((a) => (
-            <div key={a.nom} className="p-8 bg-white border border-ink/10">
+            <div key={a.nom} className="rounded-xl p-8 bg-white border border-ink/10">
               <div className="text-gold text-xl">★★★★★</div>
               <p className="mt-5 leading-relaxed text-ink/80">"{a.texte}"</p>
               <div className="mt-6 pt-6 border-t border-ink/10">

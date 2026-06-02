@@ -39,7 +39,7 @@ export default function Page() {
           <h2 className="font-serif text-3xl md:text-4xl mt-3">{p.engagements.titre}</h2>
           <div className="grid md:grid-cols-2 gap-8 mt-12">
             {p.engagements.items.map((it) => (
-              <div key={it.titre} className="p-6 bg-white border border-ink/5">
+              <div key={it.titre} className="rounded-xl p-6 bg-white border border-ink/5">
                 <div className="font-serif text-2xl text-navy">{it.titre}</div>
                 <div className="text-muted text-sm mt-3 leading-relaxed">{it.desc}</div>
               </div>

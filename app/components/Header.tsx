@@ -4,7 +4,7 @@ import { useState } from "react";
 import { settings } from "../lib/_generated/settings";
 
 const nav = [
-  { href: "/rejoindre", label: "Rejoindre l'équipe", emphase: true },
+  { href: "/rejoindre", label: "Rejoindre mon équipe", emphase: true },
   { href: "/avis-de-valeur", label: "Avis de valeur" },
   { href: "/vendre", label: "Vendre" },
   { href: "/acheter", label: "Acheter" },

@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import HeroBackground from "../components/HeroBackground";
 import CityMap from "../components/CityMap";
+import ContactButtons from "../components/ContactButtons";
+import ContactCTA from "../components/ContactCTA";
 import { secteurs, formatPrix } from "../lib/data";
 import { site } from "../lib/_generated/site";
 
@@ -23,7 +25,7 @@ export default function Page() {
           <p className="text-ivory/80 text-lg md:text-xl mt-8 max-w-3xl leading-relaxed">{v.hero.intro}</p>
           <div className="flex flex-wrap gap-4 mt-10">
             <Link href={v.hero.cta_primary_href} className="px-7 py-4 bg-gold text-navy hover:bg-gold-soft rounded-full">{v.hero.cta_primary_label}</Link>
-            <a href={v.hero.cta_secondary_url} target="_blank" rel="noopener" className="px-7 py-4 border border-ivory/30 hover:bg-ivory/10 rounded-full">{v.hero.cta_secondary_label}</a>
+            <ContactButtons smsBody="Bonjour Romain, je souhaite vendre mon bien. " mailSubject="Vente d'un bien" />
           </div>
           <div className="mt-4 text-xs text-ivory/60">{v.hero.mention}</div>
         </div>
@@ -34,7 +36,7 @@ export default function Page() {
         <h2 className="font-serif text-3xl md:text-4xl mt-3">{v.pourquoi_moi.titre}</h2>
         <div className="grid md:grid-cols-2 gap-6 mt-12">
           {v.pourquoi_moi.items.map((it) => (
-            <div key={it.titre} className="shine-hover p-7 bg-white border border-ink/10">
+            <div key={it.titre} className="shine-hover rounded-xl p-7 bg-white border border-ink/10">
               <div className="font-serif text-2xl text-navy">{it.titre}</div>
               <p className="text-muted mt-3 leading-relaxed">{it.desc}</p>
             </div>
@@ -43,27 +45,44 @@ export default function Page() {
       </section>
 
       <section className="bg-navy text-ivory py-24">
-        <div className="max-w-5xl mx-auto px-6">
+        <div className="max-w-6xl mx-auto px-6">
           <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{v.comparatif.surtitre}</div>
           <h2 className="font-serif text-3xl md:text-4xl mt-3">{v.comparatif.titre}</h2>
-          <div className="mt-12 border border-ivory/15">
-            <div className="grid grid-cols-2 bg-navy-soft text-sm font-medium uppercase tracking-widest">
-              <div className="p-5 border-r border-ivory/15 text-gold">{v.comparatif.label_avec}</div>
-              <div className="p-5 text-ivory/60">{v.comparatif.label_sans}</div>
-            </div>
-            {v.comparatif.items.map((row, i) => (
-              <div key={i} className="grid grid-cols-2 border-t border-ivory/10">
-                <div className="p-5 border-r border-ivory/15 flex gap-3 items-start">
-                  <span className="text-gold">✓</span>
-                  <span>{row.avec}</span>
-                </div>
-                <div className="p-5 text-ivory/60 flex gap-3 items-start">
-                  <span className="text-rose-300">×</span>
-                  <span>{row.sans}</span>
-                </div>
+
+          <div className="mt-12 grid lg:grid-cols-2 gap-6">
+            {/* Colonne "Avec Romain" - mise en valeur */}
+            <div className="relative rounded-xl bg-gradient-to-br from-gold/20 to-gold/5 border-2 border-gold p-8 shadow-2xl">
+              <div className="absolute -top-3 left-8 px-4 py-1 bg-gold text-navy text-xs uppercase tracking-widest font-bold rounded-full">
+                Mon accompagnement
               </div>
-            ))}
+              <div className="font-serif text-2xl md:text-3xl text-gold mt-4">{v.comparatif.label_avec}</div>
+              <ul className="mt-6 space-y-4">
+                {v.comparatif.items.map((row, i) => (
+                  <li key={i} className="flex gap-3 items-start">
+                    <span className="shrink-0 w-6 h-6 grid place-items-center bg-gold text-navy rounded-full text-sm font-bold">✓</span>
+                    <span className="text-ivory leading-relaxed">{row.avec}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Colonne "Sans accompagnement" - en retrait */}
+            <div className="rounded-xl bg-navy-soft/50 border border-ivory/10 p-8">
+              <div className="font-serif text-2xl md:text-3xl text-ivory/60 mt-4">{v.comparatif.label_sans}</div>
+              <ul className="mt-6 space-y-4">
+                {v.comparatif.items.map((row, i) => (
+                  <li key={i} className="flex gap-3 items-start">
+                    <span className="shrink-0 w-6 h-6 grid place-items-center bg-rose-500/20 text-rose-300 rounded-full text-sm font-bold">×</span>
+                    <span className="text-ivory/60 leading-relaxed">{row.sans}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
+
+          <p className="text-center text-ivory/60 text-sm mt-8 italic">
+            La différence n'est pas dans le prix payé. Elle est dans ce que vous gagnez en sérénité, en temps, et en sécurité juridique.
+          </p>
         </div>
       </section>
 
@@ -94,7 +113,7 @@ export default function Page() {
 
           <div className="mt-10 space-y-6">
             <div>
-              <div className="text-[10px] uppercase tracking-[0.3em] text-gold mb-3">Ouest Lyonnais</div>
+              <div className="text-base font-semibold uppercase tracking-[0.25em] text-gold mb-4">Ouest Lyonnais</div>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
                 {secteurs
                   .filter((s) => !["saint-just-saint-rambert", "andrezieux-boutheon"].includes(s.slug))
@@ -107,7 +126,7 @@ export default function Page() {
               </div>
             </div>
             <div>
-              <div className="text-[10px] uppercase tracking-[0.3em] text-gold mb-3">Plaine du Forez</div>
+              <div className="text-base font-semibold uppercase tracking-[0.25em] text-gold mb-4">Plaine du Forez</div>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
                 {secteurs
                   .filter((s) => ["saint-just-saint-rambert", "andrezieux-boutheon"].includes(s.slug))
@@ -130,8 +149,8 @@ export default function Page() {
           <div className="grid md:grid-cols-2 gap-6 mt-12">
             {v.zones_section.zones.map((z) => (
               <Link key={z.slug} href={`/vendre/${z.slug}`} className="group bg-white border border-ink/10 hover:border-navy rounded-2xl overflow-hidden">
-                <div className="aspect-[16/10] overflow-hidden rounded-t-2xl">
-                  <img src={z.image} alt={z.titre} className="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+                <div className="aspect-[16/10] overflow-hidden">
+                  <img src={z.image} alt={z.titre} className="no-round w-full h-full object-cover group-hover:scale-105 transition duration-700" />
                 </div>
                 <div className="p-6">
                   <div className="font-serif text-xl text-navy group-hover:text-gold transition">{z.titre}</div>
@@ -144,16 +163,13 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="bg-navy text-ivory py-20">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="font-serif text-3xl md:text-4xl">{v.cta_final.titre}</h2>
-          <p className="text-ivory/70 mt-4">{v.cta_final.intro}</p>
-          <div className="flex flex-wrap justify-center gap-4 mt-8">
-            <Link href={v.cta_final.cta_primary_href} className="px-7 py-4 bg-gold text-navy hover:bg-gold-soft rounded-full">{v.cta_final.cta_primary_label}</Link>
-            <a href={v.cta_final.cta_whatsapp_url} target="_blank" rel="noopener" className="px-7 py-4 bg-[#25D366] hover:bg-[#20bd5a] text-white rounded-full">{v.cta_final.cta_whatsapp_label}</a>
-          </div>
-        </div>
-      </section>
+      <ContactCTA
+        variant="navy"
+        titre={v.cta_final.titre}
+        intro={v.cta_final.intro}
+        smsBody="Bonjour Romain, je souhaite vendre mon bien. "
+        mailSubject="Vente d'un bien"
+      />
     </>
   );
 }

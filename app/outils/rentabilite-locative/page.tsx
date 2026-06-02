@@ -155,7 +155,7 @@ function Block({ title, children }: { title: string; children: React.ReactNode }
 }
 function KPI({ label, v, sub, highlight }: { label: string; v: string; sub: string; highlight?: boolean }) {
   return (
-    <div className={`p-5 ${highlight ? "bg-gold/10 border border-gold" : "bg-white border border-ink/10"}`}>
+    <div className={`rounded-xl p-5 ${highlight ? "bg-gold/10 border border-gold" : "bg-white border border-ink/10"}`}>
       <div className="text-xs uppercase tracking-widest text-muted">{label}</div>
       <div className={`font-serif text-3xl mt-1 ${highlight ? "text-gold" : "text-navy"}`}>{v}</div>
       <div className="text-[10px] text-muted mt-1">{sub}</div>
