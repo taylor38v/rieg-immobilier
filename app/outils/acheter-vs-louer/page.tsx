@@ -170,7 +170,6 @@ export default function Page() {
       <ContactCTA
         titre="Me contacter pour en parler"
         intro="Mettre ces chiffres en face d'un vrai bien, d'une vraie ville, d'un vrai projet de vie : c'est ce que fait Romain en visio ou en agence."
-        label="Me contacter"
       />
     </div>
   );
