@@ -57,14 +57,26 @@ export default function Page() {
       </section>
 
       <section className="bg-ivory-deep py-24">
-        <div className="max-w-7xl mx-auto px-6">
+        <div className="max-w-5xl mx-auto px-6">
           <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{l.services.surtitre}</div>
           <h2 className="font-serif text-3xl md:text-4xl mt-3">{l.services.titre}</h2>
-          <div className="grid md:grid-cols-2 gap-6 mt-12">
-            {l.services.items.map((s) => (
-              <div key={s.titre} className="shine-hover rounded-xl p-7 border border-ink/10 bg-white">
-                <div className="font-serif text-2xl text-navy">{s.titre}</div>
-                <p className="text-muted mt-3 leading-relaxed">{s.desc}</p>
+
+          <div className="mt-14 space-y-4">
+            {l.services.items.map((s, i) => (
+              <div
+                key={s.titre}
+                className="group relative rounded-2xl bg-white border border-ink/10 hover:border-gold transition-all duration-300 p-6 md:p-8 hover:shadow-xl hover:shadow-gold/10 flex flex-col md:flex-row gap-6 items-start"
+              >
+                <div className="shrink-0 flex md:flex-col items-center md:items-start gap-3">
+                  <div className="w-16 h-16 md:w-20 md:h-20 rounded-2xl bg-gradient-to-br from-gold to-gold-soft text-navy font-serif text-3xl md:text-4xl font-bold grid place-items-center shadow-lg group-hover:scale-105 transition">
+                    {String(i + 1).padStart(2, "0")}
+                  </div>
+                  <div className="hidden md:block w-px h-12 bg-gold/30 ml-10" />
+                </div>
+                <div className="flex-1">
+                  <div className="font-serif text-2xl md:text-3xl text-navy font-semibold group-hover:text-gold transition">{s.titre}</div>
+                  <p className="text-muted mt-3 leading-relaxed">{s.desc}</p>
+                </div>
               </div>
             ))}
           </div>

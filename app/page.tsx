@@ -26,8 +26,8 @@ export default function Home() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 mt-12">
               {h.hero.stats.map((s) => (
                 <div key={s.label}>
-                  <div className="font-serif text-5xl md:text-6xl font-semibold text-gold">{s.valeur}</div>
-                  <div className="text-xs md:text-sm uppercase tracking-widest text-ivory/70 mt-3 font-medium">{s.label}</div>
+                  <div className="font-serif text-3xl md:text-4xl font-semibold text-gold whitespace-nowrap">{s.valeur}</div>
+                  <div className="text-[10px] md:text-xs uppercase tracking-widest text-ivory/70 mt-2 font-medium">{s.label}</div>
                 </div>
               ))}
             </div>
@@ -60,13 +60,13 @@ export default function Home() {
             <Link href={h.qui_suis_je.cta_primary_href} className="px-8 py-4 bg-gold text-navy font-semibold rounded-full hover:bg-gold-soft text-base transition shadow-md hover:shadow-lg">{h.qui_suis_je.cta_primary_label}</Link>
           </div>
         </div>
-        <div>
-          <div className="rounded-xl bg-gold text-navy p-6 mb-5 shadow-lg">
-            <div className="font-serif text-3xl leading-tight">"{h.qui_suis_je.citation}"</div>
-            <div className="text-xs uppercase tracking-widest mt-3 font-semibold">{h.qui_suis_je.citation_auteur}</div>
-          </div>
+        <div className="relative">
           <div className="rounded-xl overflow-hidden aspect-[4/5]">
             <img src={h.qui_suis_je.photo} alt={h.qui_suis_je.photo_alt} className="no-round w-full h-full object-cover" />
+          </div>
+          <div className="rounded-xl bg-gold text-navy p-6 shadow-2xl absolute -bottom-6 -left-6 lg:-left-10 max-w-[80%] z-10">
+            <div className="font-serif text-2xl md:text-3xl leading-tight">"{h.qui_suis_je.citation}"</div>
+            <div className="text-xs uppercase tracking-widest mt-3 font-semibold">{h.qui_suis_je.citation_auteur}</div>
           </div>
         </div>
       </section>
@@ -80,24 +80,36 @@ export default function Home() {
             </div>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-            {h.services.items.map((s, i) => (
-              <Link
-                key={s.href}
-                href={s.href}
-                className="group relative rounded-xl p-7 border border-ivory/15 bg-navy-soft/40 hover:border-gold hover:bg-gold/10 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-gold/20 overflow-hidden"
-              >
-                <div className="absolute -top-3 -right-3 w-20 h-20 bg-gold/10 rounded-full blur-2xl group-hover:bg-gold/30 transition" />
-                <div className="relative">
-                  <div className="text-4xl font-serif text-gold/70 group-hover:text-gold font-bold">{String(i + 1).padStart(2, "0")}</div>
-                  <div className="font-serif text-xl mt-3 group-hover:text-gold transition">{s.titre}</div>
-                  <p className="text-sm text-ivory/70 mt-3 leading-relaxed">{s.desc}</p>
-                  <span className="inline-flex items-center gap-2 mt-5 text-xs text-gold font-semibold uppercase tracking-widest">
-                    Découvrir
-                    <span className="inline-block transition-transform group-hover:translate-x-1">→</span>
-                  </span>
-                </div>
-              </Link>
-            ))}
+            {h.services.items.map((s, i) => {
+              const icons = [
+                <svg key="s1" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M3 6l9 4 9-4-9-4-9 4z"/><path d="M3 12l9 4 9-4"/><path d="M3 18l9 4 9-4"/></svg>,
+                <svg key="s2" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>,
+                <svg key="s3" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>,
+                <svg key="s4" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>,
+              ];
+              return (
+                <Link
+                  key={s.href}
+                  href={s.href}
+                  className="group relative rounded-2xl p-7 border border-ivory/15 bg-navy-soft/40 hover:border-gold hover:bg-gold/10 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-gold/30 overflow-hidden"
+                >
+                  <div className="absolute inset-0 bg-gradient-to-br from-gold/0 via-gold/0 to-gold/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className="absolute -top-12 -right-12 w-40 h-40 bg-gold/10 rounded-full blur-3xl group-hover:bg-gold/40 transition-all duration-500" />
+                  <div className="relative">
+                    <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-gold/30 to-gold/10 grid place-items-center text-gold group-hover:from-gold group-hover:to-gold-soft group-hover:text-navy transition-all duration-500 group-hover:rotate-6 group-hover:scale-110">
+                      {icons[i]}
+                    </div>
+                    <div className="text-xs text-gold/60 mt-4 font-semibold uppercase tracking-[0.3em]">Service {String(i + 1).padStart(2, "0")}</div>
+                    <div className="font-serif text-xl mt-2 group-hover:text-gold transition leading-tight">{s.titre}</div>
+                    <p className="text-sm text-ivory/70 mt-3 leading-relaxed">{s.desc}</p>
+                    <span className="inline-flex items-center gap-2 mt-5 text-xs text-gold font-semibold uppercase tracking-widest">
+                      Découvrir
+                      <span className="inline-block transition-transform group-hover:translate-x-2 duration-500">→</span>
+                    </span>
+                  </div>
+                </Link>
+              );
+            })}
           </div>
         </div>
       </section>

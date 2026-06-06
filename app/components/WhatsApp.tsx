@@ -19,7 +19,7 @@ export default function WhatsApp() {
         type="button"
         onClick={() => setOpen(true)}
         aria-label="Ouvrir la fiche contact"
-        className="fixed bottom-6 left-6 z-[60] w-20 h-20 transition-all hover:scale-110"
+        className="fixed bottom-6 left-6 z-[60] w-24 h-24 transition-all hover:scale-110"
         style={{ animation: "wapulse 2.4s infinite", borderRadius: "9999px", boxShadow: "0 10px 30px rgba(201,162,95,.4), 0 0 0 0 rgba(201,162,95,.7)" }}
       >
         <span className="block w-full h-full rounded-full overflow-hidden border-2 border-gold bg-navy">
@@ -43,7 +43,7 @@ export default function WhatsApp() {
             onClick={() => setOpen(false)}
             className="fixed inset-0 z-[70] bg-navy/60 backdrop-blur-sm"
           />
-          <div className="fixed bottom-6 left-6 right-6 sm:right-auto sm:bottom-24 z-[71] sm:max-w-[380px] bg-ivory border-2 border-gold shadow-2xl overflow-hidden">
+          <div className="fixed bottom-6 left-6 right-6 sm:right-auto sm:bottom-24 z-[71] sm:max-w-[420px] bg-ivory border-2 border-gold shadow-2xl overflow-hidden rounded-2xl">
             <div className="relative bg-navy text-ivory px-6 pt-6 pb-5">
               <button onClick={() => setOpen(false)} aria-label="Fermer" className="absolute top-3 right-4 text-ivory/70 hover:text-gold text-2xl leading-none">×</button>
               <div className="flex items-center gap-4">
@@ -59,7 +59,7 @@ export default function WhatsApp() {
             </div>
 
             <div className="px-6 py-5">
-              <p className="text-sm text-ink/85 leading-relaxed italic">{settings.bio_courte}</p>
+              <p className="text-sm text-ink/85 leading-relaxed italic text-justify">{settings.bio_courte}</p>
 
               <div className="mt-5 space-y-2">
                 <a

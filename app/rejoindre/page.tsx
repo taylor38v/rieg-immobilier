@@ -27,11 +27,11 @@ export default function Page() {
             <Link href={r.hero.cta_primary_href} className="px-7 py-4 bg-gold text-navy font-medium hover:bg-gold-soft rounded-full">{r.hero.cta_primary_label}</Link>
             <ContactButtons smsBody="Bonjour Romain, je souhaite en savoir plus sur le métier de conseiller iad. " mailSubject="Rejoindre votre équipe iad" />
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10 mt-16 max-w-5xl">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10 mt-16 max-w-4xl">
             {r.hero.stats.map((s) => (
               <div key={s.label}>
-                <div className="font-serif text-5xl md:text-6xl font-semibold text-gold">{s.valeur}</div>
-                <div className="text-xs md:text-sm uppercase tracking-widest text-ivory/70 mt-3 font-medium">{s.label}</div>
+                <div className="font-serif text-3xl md:text-4xl font-semibold text-gold whitespace-nowrap">{s.valeur}</div>
+                <div className="text-[10px] md:text-xs uppercase tracking-widest text-ivory/70 mt-2 font-medium">{s.label}</div>
               </div>
             ))}
           </div>
@@ -109,7 +109,7 @@ export default function Page() {
                   </div>
                   <div>
                     <div className="font-serif text-2xl group-hover:text-gold transition">{e.titre}</div>
-                    <div className="text-ivory/75 mt-3 leading-relaxed">{e.desc}</div>
+                    <div className="text-ivory/75 mt-3 leading-relaxed" dangerouslySetInnerHTML={{ __html: inline(e.desc) }} />
                   </div>
                   {i < r.parcours.etapes.length - 1 && (
                     <div className="absolute right-6 bottom-6 text-gold/30 group-hover:text-gold transition text-2xl">↓</div>

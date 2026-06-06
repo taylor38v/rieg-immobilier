@@ -44,10 +44,19 @@ export default function Page() {
         <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{av.forces.surtitre}</div>
         <h2 className="font-serif text-3xl md:text-4xl mt-3">{av.forces.titre}</h2>
         <div className="grid md:grid-cols-3 gap-6 mt-12">
-          {av.forces.items.map((it) => (
-            <div key={it.titre} className="shine-hover rounded-xl p-7 bg-white border border-ink/10">
-              <div className="font-serif text-2xl text-navy">{it.titre}</div>
-              <p className="text-sm text-muted mt-3 leading-relaxed">{it.desc}</p>
+          {av.forces.items.map((it, i) => (
+            <div
+              key={it.titre}
+              className="group relative shine-hover rounded-xl p-7 bg-white border border-ink/10 hover:border-gold transition-all duration-300 overflow-hidden hover:-translate-y-1 hover:shadow-2xl hover:shadow-gold/20"
+            >
+              <div className="absolute -top-10 -right-10 w-32 h-32 bg-gold/5 rounded-full blur-3xl group-hover:bg-gold/20 transition" />
+              <div className="relative">
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-gold to-gold-soft text-navy font-serif text-xl font-bold shadow-lg">
+                  0{i + 1}
+                </div>
+                <div className="font-serif text-2xl text-navy mt-4 font-semibold group-hover:text-gold transition">{it.titre}</div>
+                <p className="text-sm text-muted mt-3 leading-relaxed">{it.desc}</p>
+              </div>
             </div>
           ))}
         </div>
