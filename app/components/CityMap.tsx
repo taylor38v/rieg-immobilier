@@ -63,8 +63,6 @@ const ZONES: Record<string, { tier: Tier; zone: "mont-dor" | "forez" }> = {
   "saint-heand":              { tier: "limitrophe", zone: "forez" },
   "saint-bonnet-les-oules":   { tier: "limitrophe", zone: "forez" },
   "saint-galmier":            { tier: "limitrophe", zone: "forez" },
-  "montrond-les-bains":       { tier: "limitrophe", zone: "forez" },
-  "feurs":                    { tier: "limitrophe", zone: "forez" },
   "saint-etienne":            { tier: "limitrophe", zone: "forez" },
   "chamboeuf":                { tier: "limitrophe", zone: "forez" },
 };

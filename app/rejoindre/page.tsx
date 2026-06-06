@@ -27,11 +27,11 @@ export default function Page() {
             <Link href={r.hero.cta_primary_href} className="px-7 py-4 bg-gold text-navy font-medium hover:bg-gold-soft rounded-full">{r.hero.cta_primary_label}</Link>
             <ContactButtons smsBody="Bonjour Romain, je souhaite en savoir plus sur le métier de conseiller iad. " mailSubject="Rejoindre votre équipe iad" />
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10 mt-16 max-w-4xl">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10 mt-16 max-w-5xl">
             {r.hero.stats.map((s) => (
               <div key={s.label}>
-                <div className="font-serif text-3xl text-gold">{s.valeur}</div>
-                <div className="text-[10px] uppercase tracking-widest text-ivory/60 mt-2">{s.label}</div>
+                <div className="font-serif text-5xl md:text-6xl font-semibold text-gold">{s.valeur}</div>
+                <div className="text-xs md:text-sm uppercase tracking-widest text-ivory/70 mt-3 font-medium">{s.label}</div>
               </div>
             ))}
           </div>
@@ -43,7 +43,7 @@ export default function Page() {
         <h2 className="font-serif text-3xl md:text-4xl mt-3">{r.piliers.titre}</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
           {r.piliers.items.map((p, i) => (
-            <div key={p.titre} className="group relative p-8 bg-white border-2 border-ink/5 hover:border-gold transition overflow-hidden">
+            <div key={p.titre} className="group relative rounded-xl p-8 bg-white border-2 border-ink/5 hover:border-gold transition overflow-hidden hover:-translate-y-1 hover:shadow-2xl hover:shadow-gold/20">
               <div className="absolute top-0 left-0 w-1 h-0 bg-gold group-hover:h-full transition-all duration-500" />
               <div className="font-serif text-5xl text-gold/30 leading-none">0{i + 1}</div>
               <div className="font-serif text-2xl text-navy mt-4 font-semibold">{p.titre}</div>
@@ -95,16 +95,28 @@ export default function Page() {
         <div className="max-w-5xl mx-auto px-6">
           <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{r.parcours.surtitre}</div>
           <h2 className="font-serif text-3xl md:text-4xl mt-3">{r.parcours.titre}</h2>
-          <div className="mt-16 grid md:grid-cols-2 gap-6">
-            {r.parcours.etapes.map((e) => (
-              <div key={e.num} className="rounded-xl shine-hover bg-navy-soft border border-ivory/10 p-6 grid grid-cols-[auto_1fr] gap-5">
-                <div className="font-serif text-5xl text-gold leading-none">{e.num}</div>
-                <div>
-                  <div className="font-serif text-2xl">{e.titre}</div>
-                  <div className="text-ivory/70 mt-3 leading-relaxed">{e.desc}</div>
+
+          <div className="mt-16 relative">
+            <div className="absolute left-7 top-8 bottom-8 w-px bg-gradient-to-b from-gold via-gold/30 to-gold/0 hidden md:block" />
+            <div className="space-y-6">
+              {r.parcours.etapes.map((e, i) => (
+                <div
+                  key={e.num}
+                  className="group relative rounded-xl shine-hover bg-navy-soft border border-ivory/10 hover:border-gold p-6 pl-7 md:pl-20 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-gold/10"
+                >
+                  <div className="absolute -left-3 md:left-2 top-6 w-12 h-12 rounded-full bg-gold text-navy font-serif text-xl font-bold grid place-items-center shadow-lg group-hover:scale-110 transition">
+                    {e.num}
+                  </div>
+                  <div>
+                    <div className="font-serif text-2xl group-hover:text-gold transition">{e.titre}</div>
+                    <div className="text-ivory/75 mt-3 leading-relaxed">{e.desc}</div>
+                  </div>
+                  {i < r.parcours.etapes.length - 1 && (
+                    <div className="absolute right-6 bottom-6 text-gold/30 group-hover:text-gold transition text-2xl">↓</div>
+                  )}
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>

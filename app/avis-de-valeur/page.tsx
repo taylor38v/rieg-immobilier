@@ -57,16 +57,28 @@ export default function Page() {
         <div className="max-w-5xl mx-auto px-6">
           <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{av.etapes.surtitre}</div>
           <h2 className="font-serif text-3xl md:text-4xl mt-3">{av.etapes.titre}</h2>
-          <div className="mt-12 grid md:grid-cols-2 gap-6">
-            {av.etapes.items.map((e) => (
-              <div key={e.num} className="rounded-xl shine-hover bg-navy-soft border border-ivory/10 p-6 grid grid-cols-[auto_1fr] gap-5">
-                <div className="font-serif text-4xl text-gold leading-none">{e.num}</div>
-                <div>
-                  <div className="font-serif text-xl">{e.titre}</div>
-                  <div className="text-ivory/70 mt-2 leading-relaxed text-sm">{e.desc}</div>
+
+          <div className="mt-16 relative">
+            <div className="absolute left-7 top-8 bottom-8 w-px bg-gradient-to-b from-gold via-gold/30 to-gold/0 hidden md:block" />
+            <div className="space-y-6">
+              {av.etapes.items.map((e, i) => (
+                <div
+                  key={e.num}
+                  className="group relative rounded-xl shine-hover bg-navy-soft border border-ivory/10 hover:border-gold p-6 pl-7 md:pl-20 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-gold/10"
+                >
+                  <div className="absolute -left-3 md:left-2 top-6 w-12 h-12 rounded-full bg-gold text-navy font-serif text-xl font-bold grid place-items-center shadow-lg group-hover:scale-110 transition">
+                    {e.num}
+                  </div>
+                  <div>
+                    <div className="font-serif text-2xl group-hover:text-gold transition">{e.titre}</div>
+                    <div className="text-ivory/75 mt-3 leading-relaxed">{e.desc}</div>
+                  </div>
+                  {i < av.etapes.items.length - 1 && (
+                    <div className="absolute right-6 bottom-6 text-gold/30 group-hover:text-gold transition text-2xl">↓</div>
+                  )}
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -92,13 +104,6 @@ export default function Page() {
         </div>
       </section>
 
-      <ContactCTA
-        variant="navy"
-        titre="Une question avant de démarrer ?"
-        intro="Romain répond personnellement sous 24 h. Aucune liste de prospection."
-        smsBody="Bonjour Romain, j'ai une question sur l'avis de valeur. "
-        mailSubject="Question avis de valeur"
-      />
     </>
   );
 }

@@ -167,7 +167,7 @@ export default function Page() {
 
       <ContactCTA
         titre="Optimiser vos frais de notaire ?"
-        intro="Inclure le mobilier à l'acte, choisir le bon montage, négocier les émoluments : Romain vous oriente vers les bons leviers."
+        intro="Inclure le mobilier à l'acte, choisir le bon montage, négocier les émoluments : un conseil personnalisé pour activer les bons leviers."
       />
     </div>
   );

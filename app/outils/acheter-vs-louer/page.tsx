@@ -162,14 +162,14 @@ export default function Page() {
           </div>
 
           <div className="rounded-xl bg-ivory-deep p-5 text-sm leading-relaxed">
-            <strong className="text-navy">À retenir :</strong> ce comparatif est purement financier. La propriété apporte aussi de la sécurité, la possibilité de transmettre, la liberté de transformer. La location offre flexibilité géographique et zéro travaux. Romain met ces chiffres en perspective avec votre projet de vie.
+            <strong className="text-navy">À retenir :</strong> ce comparatif est purement financier. La propriété apporte aussi de la sécurité, la possibilité de transmettre, la liberté de transformer. La location offre flexibilité géographique et zéro travaux. Un échange permet de mettre ces chiffres en perspective avec votre projet de vie.
           </div>
         </div>
       </div>
 
       <ContactCTA
         titre="Me contacter pour en parler"
-        intro="Mettre ces chiffres en face d'un vrai bien, d'une vraie ville, d'un vrai projet de vie : c'est ce que fait Romain en visio ou en agence."
+        intro="Mettre ces chiffres en face d'un vrai bien, d'une vraie ville, d'un vrai projet de vie : un échange en visio ou en agence pour aller plus loin."
       />
     </div>
   );

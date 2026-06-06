@@ -37,11 +37,23 @@ export default function Page() {
       <section className="max-w-7xl mx-auto px-6 py-24">
         <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{a.piliers.surtitre}</div>
         <h2 className="font-serif text-3xl md:text-4xl mt-3">{a.piliers.titre}</h2>
-        <div className="grid md:grid-cols-2 gap-6 mt-12">
-          {a.piliers.items.map((p) => (
-            <div key={p.titre} className="shine-hover rounded-xl p-7 bg-white border border-ink/10">
-              <div className="font-serif text-2xl text-navy">{p.titre}</div>
-              <p className="text-muted mt-3 leading-relaxed">{p.desc}</p>
+
+        <div className="grid md:grid-cols-2 gap-5 mt-12">
+          {a.piliers.items.map((p, i) => (
+            <div
+              key={p.titre}
+              className="group relative rounded-xl p-7 bg-white border border-ink/10 hover:border-gold transition-all duration-300 overflow-hidden hover:-translate-y-1 hover:shadow-2xl hover:shadow-gold/20"
+            >
+              <div className="absolute -top-10 -right-10 w-40 h-40 bg-gold/5 rounded-full blur-3xl group-hover:bg-gold/20 transition" />
+              <div className="relative flex gap-5">
+                <div className="shrink-0 w-14 h-14 rounded-full bg-gradient-to-br from-gold to-gold-soft text-navy font-serif text-2xl font-bold grid place-items-center shadow-lg group-hover:scale-110 transition">
+                  {String(i + 1).padStart(2, "0")}
+                </div>
+                <div>
+                  <div className="font-serif text-2xl text-navy font-semibold group-hover:text-gold transition">{p.titre}</div>
+                  <p className="text-muted mt-3 leading-relaxed">{p.desc}</p>
+                </div>
+              </div>
             </div>
           ))}
         </div>

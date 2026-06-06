@@ -161,14 +161,14 @@ export default function Page() {
           )}
 
           <div className="rounded-xl bg-ivory-deep p-5 text-sm leading-relaxed">
-            <strong className="text-navy">Important :</strong> cette estimation indicative ne remplace pas un DPE officiel réalisé par un diagnostiqueur certifié (obligatoire à la vente, ~150 €). Romain met en relation avec un diagnostiqueur partenaire et un courtier MaPrimeRénov' pour optimiser le dossier d'aides.
+            <strong className="text-navy">Important :</strong> cette estimation indicative ne remplace pas un DPE officiel réalisé par un diagnostiqueur certifié (obligatoire à la vente, ~150 €). Une mise en relation avec un diagnostiqueur partenaire et un courtier MaPrimeRénov' permet d'optimiser le dossier d'aides.
           </div>
         </div>
       </div>
 
       <ContactCTA
         titre="Plan de rénovation énergétique ?"
-        intro="Romain accompagne tout le parcours : diagnostiqueur, devis travaux, dossier MaPrimeRénov', puis valorisation à la revente."
+        intro="Un accompagnement complet : diagnostiqueur, devis travaux, dossier MaPrimeRénov', puis valorisation à la revente."
       />
     </div>
   );

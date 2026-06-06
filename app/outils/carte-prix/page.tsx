@@ -148,7 +148,7 @@ export default function Page() {
           <div className="flex-1 border-t border-ink/10" />
         </div>
         <p className="text-sm text-muted max-w-3xl mb-6">
-          Romain intervient également sur l'ensemble des communes limitrophes de ses zones de cœur. Prix indicatifs sur demande - fiches détaillées en cours d'enrichissement.
+          Intervention également sur l'ensemble des communes limitrophes des zones de cœur. Prix indicatifs sur demande - fiches détaillées en cours d'enrichissement.
         </p>
         <div className="grid md:grid-cols-2 gap-6">
           {zones
@@ -180,7 +180,7 @@ export default function Page() {
             })}
         </div>
         <div className="rounded-xl mt-6 bg-gold/10 border-l-2 border-gold p-4 text-sm text-ink/85">
-          Votre commune n'est pas listée ? Romain couvre toute la couronne Ouest de la Métropole de Lyon et le bassin stéphanois.{" "}
+          Votre commune n'est pas listée ? La couverture s'étend à toute la couronne Ouest de la Métropole de Lyon et au bassin stéphanois.{" "}
           <Link href="/contact" className="text-navy font-medium hover:text-gold underline">Demander une estimation</Link>
         </div>
       </section>

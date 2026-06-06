@@ -109,19 +109,20 @@ export default function Footer() {
       <div className="bg-navy-soft border-b border-ivory/10">
         <div className="max-w-7xl mx-auto px-6 py-14 grid lg:grid-cols-[auto_1fr] gap-10 items-center">
           <div className="shrink-0">
-            <div className="w-32 h-32 lg:w-40 lg:h-40 overflow-hidden rounded-full border-4 border-gold/40 mx-auto lg:mx-0">
-              <img src="/photos/romain-pro.jpg" alt="Romain Rieg" className="w-full h-full object-cover" />
+            <div className="w-32 h-32 lg:w-44 lg:h-44 overflow-hidden rounded-full border-4 border-gold shadow-xl shadow-gold/20 mx-auto lg:mx-0">
+              <img src="/photos/romain-pro.jpg" alt="Romain Rieg" className="no-round w-full h-full object-cover" style={{ objectPosition: "center 20%" }} />
             </div>
           </div>
           <div className="text-center lg:text-left">
             <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{settings.nom}</div>
-            <p className="font-serif text-2xl md:text-3xl text-ivory mt-3 leading-snug max-w-3xl">
+            <p className="font-serif text-2xl md:text-3xl text-ivory mt-3 leading-snug max-w-3xl text-justify">
               {settings.bio_longue} Que ce soit pour un avis de valeur en <span className="text-gold font-semibold">{settings.delai_avis}</span> ou une stratégie de vente, je mets mon énergie au service de votre projet.
             </p>
-            <div className="flex flex-wrap justify-center lg:justify-start gap-3 mt-6">
-              <a href={`tel:${settings.telephone_lien}`} className="px-5 py-2.5 bg-gold text-navy text-sm hover:bg-gold-soft rounded-full">{settings.telephone}</a>
-              <a href={`sms:${settings.whatsapp}`} target="_blank" rel="noopener" className="px-5 py-2.5 bg-[#25D366] text-white text-sm hover:bg-[#20bd5a] rounded-full">💬 SMS</a>
-              <Link href="/contact" className="px-5 py-2.5 border border-ivory/30 text-ivory text-sm hover:bg-ivory/10 rounded-full">Contactez-moi →</Link>
+            <div className="flex flex-wrap justify-center gap-3 mt-6">
+              <a href={`tel:${settings.telephone_lien}`} className="px-6 py-3 bg-gold text-navy text-sm font-semibold hover:bg-gold-soft rounded-full">{settings.telephone}</a>
+              <a href={`sms:${settings.whatsapp}`} className="px-6 py-3 bg-navy border border-gold text-gold text-sm font-semibold hover:bg-gold hover:text-navy transition rounded-full">SMS direct</a>
+              <a href={`mailto:${settings.email}`} className="px-6 py-3 bg-navy border border-ivory/30 text-ivory text-sm font-semibold hover:bg-ivory hover:text-navy transition rounded-full">Mail</a>
+              <Link href="/contact" className="px-6 py-3 bg-navy border border-ivory/30 text-ivory text-sm font-semibold hover:bg-ivory hover:text-navy transition rounded-full">Contactez-moi →</Link>
             </div>
           </div>
         </div>
@@ -162,16 +163,16 @@ export default function Footer() {
           </form>
         </div>
 
-        <div>
+        <div className="md:text-right">
           <div className="text-xs uppercase tracking-widest text-gold mb-4">Me joindre</div>
           <ul className="space-y-2.5 text-sm text-ivory/85">
             <li><a href={`tel:${settings.telephone_lien}`} className="hover:text-gold">{settings.telephone}</a></li>
-            <li><a href={`sms:${settings.whatsapp}`} className="hover:text-gold">SMS</a></li>
-            <li><a href={`mailto:${settings.email}`} className="hover:text-gold">{settings.email}</a></li>
+            <li><a href={`sms:${settings.whatsapp}`} className="hover:text-gold">SMS direct</a></li>
+            <li><a href={`mailto:${settings.email}`} className="hover:text-gold break-all">{settings.email}</a></li>
             <li><a href={IAD_MINISITE} target="_blank" rel="noopener" className="hover:text-gold">Mes biens iad ↗</a></li>
             <li>Saint-Didier-au-Mont-d'Or (69370)</li>
           </ul>
-          <div className="flex gap-2 mt-5">
+          <div className="flex gap-2 mt-5 md:justify-end">
             {SOCIALS.map((s) => (
               <a
                 key={s.kind}
@@ -225,15 +226,9 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-ivory/10 bg-navy-soft">
-        <div className="max-w-7xl mx-auto px-6 py-6 text-[11px] text-ivory/60 leading-relaxed">
-          EI {settings.nom} - {settings.carte_pro}. RSAC de Lyon : {settings.rcs.replace(/^RCS Lyon n°\s*/i, "")}. Garantie financière : {settings.garantie}.
-        </div>
-      </div>
-
       <div className="border-t border-ivory/10">
-        <div className="max-w-7xl mx-auto px-6 py-5 flex flex-col md:flex-row justify-between text-xs text-ivory/50">
-          <div>© {new Date().getFullYear()} Romain Rieg - Tous droits réservés</div>
+        <div className="max-w-7xl mx-auto px-6 py-5 flex flex-col md:flex-row justify-between gap-2 text-xs text-ivory/50">
+          <div>© {new Date().getFullYear()} Romain Rieg - Tous droits réservés · RSAC de Lyon : {settings.rcs.replace(/^RCS Lyon n°\s*/i, "")}</div>
           <div className="flex gap-5 mt-2 md:mt-0">
             <Link href="/mentions-legales" className="hover:text-gold">Mentions légales</Link>
             <Link href="/confidentialite" className="hover:text-gold">Confidentialité</Link>

@@ -27,7 +27,7 @@ export default function Header() {
               <Link
                 key={n.href}
                 href={n.href}
-                className={`whitespace-nowrap link-underline ${n.emphase ? "text-navy font-semibold" : "text-ink/85 hover:text-gold"}`}
+                className={`whitespace-nowrap link-underline transition ${n.emphase ? "text-navy font-semibold hover:font-bold hover:text-gold" : "text-ink/85 hover:text-gold hover:font-semibold"}`}
               >
                 {n.label}
               </Link>
@@ -35,7 +35,7 @@ export default function Header() {
           </nav>
           <Link
             href="/contact"
-            className="hidden lg:inline-flex items-center px-5 py-2.5 bg-navy text-ivory text-sm font-medium hover:bg-gold hover:text-navy transition shrink-0 rounded-full whitespace-nowrap"
+            className="hidden lg:inline-flex items-center px-7 py-3.5 bg-navy text-ivory text-base font-semibold hover:bg-gold hover:text-navy transition shrink-0 rounded-full whitespace-nowrap shadow-md hover:shadow-lg"
           >
             Contactez-moi
           </Link>

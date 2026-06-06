@@ -70,7 +70,7 @@ export default function Page() {
       <p className="text-muted mt-4 max-w-2xl">En 30 secondes, mesurez les chances réelles de vendre votre bien. Diagnostic personnalisé sur prix, DPE et tension de marché.</p>
       <div className="rounded-xl mt-6 p-4 bg-gold/10 border-l-2 border-gold max-w-3xl">
         <p className="text-sm text-ink/85 leading-relaxed">
-          ⚠️ <strong>Score indicatif basé sur les seules données saisies.</strong> Le résultat dépend directement de la précision des informations entrées. Pour un avis fiable et argumenté, Romain réalise un avis de valeur officiel gratuit sous 24 - 48 h, basé sur une visite qualitative.
+          ⚠️ <strong>Score indicatif basé sur les seules données saisies.</strong> Le résultat dépend directement de la précision des informations entrées. Pour un avis fiable et argumenté, un avis de valeur officiel gratuit est réalisé sous 24 - 48 h, basé sur une visite qualitative.
         </p>
       </div>
 
@@ -155,7 +155,7 @@ export default function Page() {
 
       <ContactCTA
         titre="Avis de valeur officiel ?"
-        intro="Romain visite votre bien et remet un rapport complet (comparables, photos, stratégie) sous 24 - 48 h. Gratuit et sans engagement."
+        intro="Visite de votre bien et rapport complet (comparables, photos, stratégie) sous 24 - 48 h. Gratuit et sans engagement."
       />
     </div>
   );

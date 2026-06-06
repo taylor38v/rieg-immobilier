@@ -202,10 +202,10 @@ export default async function Page(props: PageProps<"/secteurs/[slug]">) {
             <h2 className="font-serif text-3xl md:text-4xl mt-3">Le tissu local qui fait vivre la commune.</h2>
             <div className="grid md:grid-cols-2 gap-3 mt-10">
               {d.associations.map((a) => (
-                <div key={a.nom} className="shine-hover rounded-xl flex gap-4 p-4 bg-white border border-ink/5">
-                  <span className="font-serif text-2xl text-gold leading-none">·</span>
+                <div key={a.nom} className="shine-hover rounded-xl flex gap-4 p-5 bg-white border border-ink/5">
+                  <span className="font-serif text-3xl text-gold leading-none">·</span>
                   <div>
-                    <div className="font-medium text-navy">{a.nom}</div>
+                    <div className="font-serif text-lg text-navy font-semibold">{a.nom}</div>
                     <div className="text-xs text-muted mt-1">{a.activite}</div>
                   </div>
                 </div>

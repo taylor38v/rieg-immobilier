@@ -139,7 +139,7 @@ export default function Page() {
 
       <ContactCTA
         titre="Sélection de biens à fort rendement ?"
-        intro="Sur le Mont d'Or, l'Ouest lyonnais et la Plaine du Forez, Romain identifie les biens off-market et les programmes neufs en mode investisseur."
+        intro="Sur le Mont d'Or, l'Ouest lyonnais et la Plaine du Forez, un sourcing investisseur identifie les biens off-market et les programmes neufs."
       />
     </div>
   );

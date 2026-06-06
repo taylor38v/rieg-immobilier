@@ -16,18 +16,18 @@ export default function Home() {
         <div className="relative max-w-7xl mx-auto px-6 py-20 md:py-28 grid lg:grid-cols-[1.1fr_1fr] gap-12 items-center">
           <div className="fade-up">
             <span className="chip bg-gold/20 text-gold-soft border border-gold/40">{h.hero.chip}</span>
-            <h1 className="font-serif text-4xl md:text-6xl font-medium mt-6 leading-[1.02] whitespace-pre-line">{h.hero.titre}</h1>
+            <h1 className="font-serif text-4xl md:text-5xl font-medium mt-6 leading-[1.05] whitespace-pre-line">{h.hero.titre}</h1>
             <p className="text-ivory/80 text-lg md:text-xl mt-8 max-w-2xl leading-relaxed">{h.hero.intro}</p>
             <div className="flex flex-wrap gap-4 mt-10">
-              <Link href={h.hero.cta_primary_href} className="px-7 py-4 bg-gold text-navy font-medium hover:bg-gold-soft rounded-full transition">{h.hero.cta_primary_label}</Link>
+              <Link href={h.hero.cta_primary_href} className="px-7 py-4 bg-gold text-navy font-semibold hover:bg-gold-soft rounded-full transition">{h.hero.cta_primary_label}</Link>
               <Link href={h.hero.cta_secondary_href} className="px-7 py-4 border border-ivory/30 hover:bg-ivory/10 transition rounded-full">{h.hero.cta_secondary_label}</Link>
             </div>
             <div className="mt-6 text-xs text-ivory/60">{h.hero.mention}</div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 mt-12">
               {h.hero.stats.map((s) => (
                 <div key={s.label}>
-                  <div className="font-serif text-3xl text-gold">{s.valeur}</div>
-                  <div className="text-[10px] uppercase tracking-widest text-ivory/60 mt-2">{s.label}</div>
+                  <div className="font-serif text-5xl md:text-6xl font-semibold text-gold">{s.valeur}</div>
+                  <div className="text-xs md:text-sm uppercase tracking-widest text-ivory/70 mt-3 font-medium">{s.label}</div>
                 </div>
               ))}
             </div>
@@ -57,17 +57,16 @@ export default function Home() {
             <p key={i} className="text-ink/85 mt-4 leading-relaxed" dangerouslySetInnerHTML={{ __html: inline(p) }} />
           ))}
           <div className="flex flex-wrap gap-4 mt-8">
-            <Link href={h.qui_suis_je.cta_primary_href} className="px-6 py-3 bg-navy text-ivory rounded-full hover:bg-gold hover:text-navy text-sm transition rounded-full">{h.qui_suis_je.cta_primary_label}</Link>
-            <a href={h.qui_suis_je.cta_secondary_href} target="_blank" rel="noopener" className="px-6 py-3 border border-navy text-navy hover:bg-navy hover:text-ivory text-sm transition rounded-full">{h.qui_suis_je.cta_secondary_label}</a>
+            <Link href={h.qui_suis_je.cta_primary_href} className="px-8 py-4 bg-gold text-navy font-semibold rounded-full hover:bg-gold-soft text-base transition shadow-md hover:shadow-lg">{h.qui_suis_je.cta_primary_label}</Link>
           </div>
         </div>
         <div>
-          <div className="rounded-xl overflow-hidden aspect-[4/5]">
-            <img src={h.qui_suis_je.photo} alt={h.qui_suis_je.photo_alt} className="w-full h-full object-cover" />
+          <div className="rounded-xl bg-gold text-navy p-6 mb-5 shadow-lg">
+            <div className="font-serif text-3xl leading-tight">"{h.qui_suis_je.citation}"</div>
+            <div className="text-xs uppercase tracking-widest mt-3 font-semibold">{h.qui_suis_je.citation_auteur}</div>
           </div>
-          <div className="mt-5 rounded-xl bg-gold text-navy p-6">
-            <div className="font-serif text-2xl">{h.qui_suis_je.citation}</div>
-            <div className="text-xs uppercase tracking-widest mt-3">{h.qui_suis_je.citation_auteur}</div>
+          <div className="rounded-xl overflow-hidden aspect-[4/5]">
+            <img src={h.qui_suis_je.photo} alt={h.qui_suis_je.photo_alt} className="no-round w-full h-full object-cover" />
           </div>
         </div>
       </section>
@@ -81,11 +80,22 @@ export default function Home() {
             </div>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-            {h.services.items.map((s) => (
-              <Link key={s.href} href={s.href} className="group p-6 border border-ivory/15 hover:border-gold hover:bg-ivory/5 transition">
-                <div className="font-serif text-xl">{s.titre}</div>
-                <p className="text-sm text-ivory/70 mt-3 leading-relaxed">{s.desc}</p>
-                <span className="inline-block mt-4 text-xs text-gold link-underline">Découvrir →</span>
+            {h.services.items.map((s, i) => (
+              <Link
+                key={s.href}
+                href={s.href}
+                className="group relative rounded-xl p-7 border border-ivory/15 bg-navy-soft/40 hover:border-gold hover:bg-gold/10 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-gold/20 overflow-hidden"
+              >
+                <div className="absolute -top-3 -right-3 w-20 h-20 bg-gold/10 rounded-full blur-2xl group-hover:bg-gold/30 transition" />
+                <div className="relative">
+                  <div className="text-4xl font-serif text-gold/70 group-hover:text-gold font-bold">{String(i + 1).padStart(2, "0")}</div>
+                  <div className="font-serif text-xl mt-3 group-hover:text-gold transition">{s.titre}</div>
+                  <p className="text-sm text-ivory/70 mt-3 leading-relaxed">{s.desc}</p>
+                  <span className="inline-flex items-center gap-2 mt-5 text-xs text-gold font-semibold uppercase tracking-widest">
+                    Découvrir
+                    <span className="inline-block transition-transform group-hover:translate-x-1">→</span>
+                  </span>
+                </div>
               </Link>
             ))}
           </div>
@@ -144,17 +154,24 @@ export default function Home() {
 
       <section className="max-w-7xl mx-auto px-6 py-24">
         <div className="text-center mb-14">
-          <div className="flex items-center justify-center gap-3">
-            <svg width="100" height="32" viewBox="0 0 100 32"><text x="0" y="22" fontSize="20" fontWeight="600" fill="#4285F4">G</text><text x="14" y="22" fontSize="20" fontWeight="600" fill="#EA4335">o</text><text x="27" y="22" fontSize="20" fontWeight="600" fill="#FBBC05">o</text><text x="40" y="22" fontSize="20" fontWeight="600" fill="#4285F4">g</text><text x="53" y="22" fontSize="20" fontWeight="600" fill="#34A853">l</text><text x="60" y="22" fontSize="20" fontWeight="600" fill="#EA4335">e</text></svg>
-            <span className="text-2xl text-gold">★★★★★</span>
-            <span className="font-serif text-2xl text-navy">{h.avis.note_chiffre}</span>
+          <div className="inline-flex items-center gap-4 px-8 py-5 rounded-2xl bg-white border-2 border-gold/30 shadow-xl shadow-gold/20">
+            <svg width="150" height="48" viewBox="0 0 100 32" className="no-round">
+              <text x="0" y="22" fontSize="20" fontWeight="600" fill="#4285F4">G</text>
+              <text x="14" y="22" fontSize="20" fontWeight="600" fill="#EA4335">o</text>
+              <text x="27" y="22" fontSize="20" fontWeight="600" fill="#FBBC05">o</text>
+              <text x="40" y="22" fontSize="20" fontWeight="600" fill="#4285F4">g</text>
+              <text x="53" y="22" fontSize="20" fontWeight="600" fill="#34A853">l</text>
+              <text x="60" y="22" fontSize="20" fontWeight="600" fill="#EA4335">e</text>
+            </svg>
+            <span className="text-3xl text-gold">★★★★★</span>
+            <span className="font-serif text-3xl font-bold text-navy">{h.avis.note_chiffre}</span>
           </div>
-          <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium mt-4">{h.avis.surtitre}</div>
+          <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium mt-6">{h.avis.surtitre}</div>
           <h2 className="font-serif text-3xl md:text-4xl mt-3">{h.avis.titre}</h2>
         </div>
         <div className="grid md:grid-cols-3 gap-8">
           {h.avis.items.map((a) => (
-            <div key={a.nom} className="rounded-xl p-8 bg-white border border-ink/10">
+            <div key={a.nom} className="shine-hover rounded-xl p-8 bg-white border border-ink/10 hover:border-gold transition">
               <div className="text-gold text-xl">★★★★★</div>
               <p className="mt-5 leading-relaxed text-ink/80">"{a.texte}"</p>
               <div className="mt-6 pt-6 border-t border-ink/10">

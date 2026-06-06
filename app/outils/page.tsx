@@ -63,14 +63,22 @@ export default function Page() {
           </div>
           <div className="grid md:grid-cols-2 gap-4">
             {g.outils.map((o) => (
-              <Link key={o.href} href={o.href} className="group block p-7 border border-ink/10 hover:border-navy bg-white transition">
-                <div className="flex items-start gap-5">
+              <Link
+                key={o.href}
+                href={o.href}
+                className="group block rounded-xl p-7 border border-ink/10 hover:border-gold bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-gold/20 overflow-hidden relative"
+              >
+                <div className="absolute -top-10 -right-10 w-32 h-32 bg-gold/5 rounded-full blur-3xl group-hover:bg-gold/20 transition" />
+                <div className="relative flex items-start gap-5">
                   <div className="font-serif text-4xl text-gold leading-none">{o.chiffre}</div>
                   <div className="flex-1">
                     <div className="text-[10px] uppercase tracking-[0.3em] text-muted">{o.sub}</div>
                     <h2 className="font-serif text-xl text-navy mt-1 group-hover:text-gold transition leading-tight">{o.titre}</h2>
                     <p className="text-sm text-muted mt-3 leading-relaxed">{o.desc}</p>
-                    <span className="inline-block text-xs text-navy mt-4 link-underline">Ouvrir l'outil →</span>
+                    <span className="inline-flex items-center gap-1 text-xs text-navy group-hover:text-gold mt-4 font-semibold uppercase tracking-widest transition">
+                      Ouvrir l'outil
+                      <span className="inline-block transition-transform group-hover:translate-x-1">→</span>
+                    </span>
                   </div>
                 </div>
               </Link>

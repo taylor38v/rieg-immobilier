@@ -16,6 +16,10 @@ Email : romain.rieg@iadfrance.fr
 SAS au capital de 2 640 523 € - siège social : 2 ter boulevard de la Libération, 93200 Saint-Denis - RCS Bobigny 503 740 428.
 Carte professionnelle CPI 9301 2016 000 014 488 délivrée par la CCI Seine-Saint-Denis.
 
+## Garantie financière
+
+GALIAN - 89 rue La Boétie, 75008 Paris.
+
 ## Hébergement du site
 
 Netlify, Inc. - 44 Montgomery Street, Suite 300, San Francisco, CA 94104, USA. [www.netlify.com](https://www.netlify.com)

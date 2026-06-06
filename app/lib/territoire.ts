@@ -85,8 +85,6 @@ export const zones: Zone[] = [
       "Saint-Bonnet-les-Oules",
       "Saint-Galmier",
       "Chambœuf",
-      "Montrond-les-Bains",
-      "Feurs",
     ],
   },
 ];

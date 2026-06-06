@@ -34,11 +34,21 @@ export default function Page() {
       <section className="max-w-7xl mx-auto px-6 py-24">
         <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{v.pourquoi_moi.surtitre}</div>
         <h2 className="font-serif text-3xl md:text-4xl mt-3">{v.pourquoi_moi.titre}</h2>
-        <div className="grid md:grid-cols-2 gap-6 mt-12">
-          {v.pourquoi_moi.items.map((it) => (
-            <div key={it.titre} className="shine-hover rounded-xl p-7 bg-white border border-ink/10">
-              <div className="font-serif text-2xl text-navy">{it.titre}</div>
-              <p className="text-muted mt-3 leading-relaxed">{it.desc}</p>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-4 mt-12">
+          {v.pourquoi_moi.items.map((it, i) => (
+            <div
+              key={it.titre}
+              className={`group relative rounded-xl p-6 bg-white border border-ink/10 hover:border-gold transition-all duration-300 overflow-hidden hover:-translate-y-1 hover:shadow-2xl hover:shadow-gold/20 ${i === 0 ? "lg:col-span-2" : ""}`}
+            >
+              <div className="absolute -top-8 -right-8 w-32 h-32 bg-gold/5 rounded-full blur-3xl group-hover:bg-gold/20 transition" />
+              <div className="relative">
+                <div className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gold/15 text-gold font-serif text-lg font-bold">
+                  {String(i + 1).padStart(2, "0")}
+                </div>
+                <div className="font-serif text-xl text-navy mt-4 font-semibold group-hover:text-gold transition">{it.titre}</div>
+                <p className="text-sm text-muted mt-3 leading-relaxed">{it.desc}</p>
+              </div>
             </div>
           ))}
         </div>
@@ -50,20 +60,24 @@ export default function Page() {
           <h2 className="font-serif text-3xl md:text-4xl mt-3">{v.comparatif.titre}</h2>
 
           <div className="mt-12 grid lg:grid-cols-2 gap-6">
-            {/* Colonne "Avec Romain" - mise en valeur */}
-            <div className="relative rounded-xl bg-gradient-to-br from-gold/20 to-gold/5 border-2 border-gold p-8 shadow-2xl">
-              <div className="absolute -top-3 left-8 px-4 py-1 bg-gold text-navy text-xs uppercase tracking-widest font-bold rounded-full">
-                Mon accompagnement
+            {/* Colonne "Avec Romain" - mise en valeur forte */}
+            <div className="relative rounded-xl bg-gradient-to-br from-gold/30 via-gold/10 to-gold/5 border-2 border-gold p-8 shadow-2xl shadow-gold/40 ring-4 ring-gold/20 overflow-hidden">
+              <div className="absolute -top-20 -right-20 w-64 h-64 bg-gold/30 rounded-full blur-3xl" />
+              <div className="absolute -bottom-20 -left-20 w-64 h-64 bg-gold/20 rounded-full blur-3xl" />
+              <div className="absolute -top-3 left-8 px-5 py-1.5 bg-gold text-navy text-xs uppercase tracking-widest font-bold rounded-full shadow-lg">
+                ⭐ Mon accompagnement
               </div>
-              <div className="font-serif text-2xl md:text-3xl text-gold mt-4">{v.comparatif.label_avec}</div>
-              <ul className="mt-6 space-y-4">
-                {v.comparatif.items.map((row, i) => (
-                  <li key={i} className="flex gap-3 items-start">
-                    <span className="shrink-0 w-6 h-6 grid place-items-center bg-gold text-navy rounded-full text-sm font-bold">✓</span>
-                    <span className="text-ivory leading-relaxed">{row.avec}</span>
-                  </li>
-                ))}
-              </ul>
+              <div className="relative">
+                <div className="font-serif text-2xl md:text-3xl text-gold mt-4 font-semibold drop-shadow">{v.comparatif.label_avec}</div>
+                <ul className="mt-6 space-y-4">
+                  {v.comparatif.items.map((row, i) => (
+                    <li key={i} className="flex gap-3 items-start">
+                      <span className="shrink-0 w-7 h-7 grid place-items-center bg-gold text-navy rounded-full text-sm font-bold shadow-md">✓</span>
+                      <span className="text-ivory leading-relaxed font-medium">{row.avec}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
 
             {/* Colonne "Sans accompagnement" - en retrait */}

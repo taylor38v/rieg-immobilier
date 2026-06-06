@@ -85,7 +85,7 @@ export default function Page() {
       <h1 className="font-serif text-3xl md:text-4xl mt-3">Combien vaudra mon bien dans {horizon} ans ?</h1>
       <div className="rounded-xl mt-6 p-4 bg-gold/10 border-l-2 border-gold">
         <p className="text-sm text-ink/85 leading-relaxed">
-          ⚠️ <strong>Projection indicative.</strong> Basée sur les tendances 2020-2025 réelles par commune et type de bien. Ne préjuge pas de l'évolution future, qui dépend du contexte économique, réglementaire (loi Climat, fiscalité) et local. Pour une analyse fiable, Romain réalise une étude personnalisée intégrant les spécificités de votre bien.
+          ⚠️ <strong>Projection indicative.</strong> Basée sur les tendances 2020-2025 réelles par commune et type de bien. Ne préjuge pas de l'évolution future, qui dépend du contexte économique, réglementaire (loi Climat, fiscalité) et local. Pour une analyse fiable, une étude personnalisée intégrant les spécificités de votre bien est nécessaire.
         </p>
       </div>
 
@@ -223,7 +223,7 @@ export default function Page() {
 
       <ContactCTA
         titre="Analyse personnalisée de votre bien ?"
-        intro="Romain croise la projection avec votre quartier précis, le DPE, l'état et les comparables récents pour une vraie estimation."
+        intro="Une analyse approfondie croise la projection avec votre quartier précis, le DPE, l'état et les comparables récents pour une vraie estimation."
       />
     </div>
   );

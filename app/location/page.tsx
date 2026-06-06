@@ -35,11 +35,22 @@ export default function Page() {
       <section className="max-w-7xl mx-auto px-6 py-24">
         <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{l.pourquoi.surtitre}</div>
         <h2 className="font-serif text-3xl md:text-4xl mt-3">{l.pourquoi.titre}</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
-          {l.pourquoi.items.map((it) => (
-            <div key={it.titre} className="shine-hover rounded-xl p-6 bg-white border border-ink/10">
-              <div className="font-serif text-xl text-navy">{it.titre}</div>
-              <p className="text-sm text-muted mt-3 leading-relaxed">{it.desc}</p>
+
+        <div className="grid md:grid-cols-3 gap-5 mt-12">
+          {l.pourquoi.items.map((it, i) => (
+            <div
+              key={it.titre}
+              className="group relative rounded-xl p-7 bg-white border border-ink/10 hover:border-gold transition-all duration-300 overflow-hidden hover:-translate-y-1 hover:shadow-2xl hover:shadow-gold/20"
+            >
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gold scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500" />
+              <div className="absolute -bottom-10 -right-10 w-32 h-32 bg-gold/5 rounded-full blur-3xl group-hover:bg-gold/15 transition" />
+              <div className="relative">
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-gold/15 text-gold font-serif text-xl font-bold mb-4">
+                  {String(i + 1).padStart(2, "0")}
+                </div>
+                <div className="font-serif text-xl text-navy font-semibold group-hover:text-gold transition">{it.titre}</div>
+                <p className="text-sm text-muted mt-3 leading-relaxed">{it.desc}</p>
+              </div>
             </div>
           ))}
         </div>
@@ -51,7 +62,7 @@ export default function Page() {
           <h2 className="font-serif text-3xl md:text-4xl mt-3">{l.services.titre}</h2>
           <div className="grid md:grid-cols-2 gap-6 mt-12">
             {l.services.items.map((s) => (
-              <div key={s.titre} className="shine-hover p-7 border border-ink/10 bg-white">
+              <div key={s.titre} className="shine-hover rounded-xl p-7 border border-ink/10 bg-white">
                 <div className="font-serif text-2xl text-navy">{s.titre}</div>
                 <p className="text-muted mt-3 leading-relaxed">{s.desc}</p>
               </div>
@@ -100,29 +111,10 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="bg-navy text-ivory py-20">
-        <div className="max-w-4xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
-          <div>
-            <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{l.cta_final.locataires_surtitre}</div>
-            <h2 className="font-serif text-3xl mt-3">{l.cta_final.locataires_titre}</h2>
-            <p className="text-ivory/70 mt-4">{l.cta_final.locataires_desc}</p>
-            <Link href={l.cta_final.locataires_cta_href} className="inline-block mt-6 px-6 py-3 bg-gold text-navy hover:bg-gold-soft rounded-full text-sm">{l.cta_final.locataires_cta_label}</Link>
-          </div>
-          <div>
-            <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{l.cta_final.question_surtitre}</div>
-            <h2 className="font-serif text-3xl mt-3">{l.cta_final.question_titre}</h2>
-            <p className="text-ivory/70 mt-4">{l.cta_final.question_desc}</p>
-            <div className="mt-6">
-              <ContactButtons withTel smsBody="Bonjour Romain, " mailSubject="Demande Location" />
-            </div>
-          </div>
-        </div>
-      </section>
-
       <ContactCTA
-        variant="ivory"
-        titre="Une question sur votre projet locatif ?"
-        intro="Romain répond personnellement sous 24 h - gestion, mise en location, recherche de locataire."
+        variant="navy"
+        titre="Je réponds directement."
+        intro="SMS, mail ou téléphone - une réponse personnelle sous 24 h."
         smsBody="Bonjour Romain, j'ai une question sur la location. "
         mailSubject="Question location"
       />

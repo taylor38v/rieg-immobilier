@@ -133,8 +133,7 @@ export default async function Page(props: PageProps<"/vendre/[zone]">) {
           </div>
           <div className="text-xs uppercase tracking-widest text-gold mt-8">{z.communes_label}</div>
           <div className="flex flex-wrap gap-4 mt-8">
-            <Link href="/avis-de-valeur" className="px-7 py-4 bg-gold text-navy hover:bg-gold-soft rounded-full">Avis de valeur · 24 - 48h</Link>
-            <Link href="/contact" className="px-7 py-4 bg-navy-soft border border-ivory/30 text-ivory hover:bg-ivory hover:text-navy rounded-full">Me contacter</Link>
+            <Link href="/contact" className="px-7 py-4 bg-gold text-navy font-semibold hover:bg-gold-soft rounded-full transition shadow-md">Me contacter</Link>
             <ContactButtons smsBody={`Bonjour Romain, je souhaite un avis sur ${z.h1.toLowerCase()}. `} mailSubject={`Avis ${territoire?.nom || zone}`} />
           </div>
           <div className="mt-4 text-xs text-ivory/60">Zéro engagement · 100% confidentiel</div>
@@ -146,10 +145,16 @@ export default async function Page(props: PageProps<"/vendre/[zone]">) {
         <h2 className="font-serif text-3xl md:text-4xl mt-3">Trois atouts qui font la différence.</h2>
         <div className="grid md:grid-cols-3 gap-6 mt-12">
           {z.atouts.map((a: { titre: string; desc: string }, i: number) => (
-            <div key={i} className="shine-hover rounded-xl p-7 bg-white border border-ink/10">
-              <div className="font-serif text-4xl text-gold">0{i + 1}</div>
-              <div className="font-serif text-xl text-navy mt-3">{a.titre}</div>
-              <p className="text-sm text-muted mt-3 leading-relaxed">{a.desc}</p>
+            <div
+              key={i}
+              className="group relative shine-hover rounded-xl p-7 bg-white border border-ink/10 hover:border-gold transition-all duration-300 overflow-hidden hover:-translate-y-1 hover:shadow-2xl hover:shadow-gold/20"
+            >
+              <div className="absolute -top-10 -right-10 w-32 h-32 bg-gold/5 rounded-full blur-3xl group-hover:bg-gold/20 transition" />
+              <div className="relative">
+                <div className="inline-flex w-12 h-12 rounded-full bg-gradient-to-br from-gold to-gold-soft text-navy items-center justify-center font-serif text-xl font-bold shadow-lg">0{i + 1}</div>
+                <div className="font-serif text-xl text-navy mt-4 font-semibold group-hover:text-gold transition">{a.titre}</div>
+                <p className="text-sm text-muted mt-3 leading-relaxed">{a.desc}</p>
+              </div>
             </div>
           ))}
         </div>
@@ -159,16 +164,28 @@ export default async function Page(props: PageProps<"/vendre/[zone]">) {
         <div className="max-w-5xl mx-auto px-6">
           <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">Le processus</div>
           <h2 className="font-serif text-3xl md:text-4xl mt-3">Quatre étapes claires.</h2>
-          <div className="mt-12 space-y-8">
-            {etapes.map(([n, t, d]) => (
-              <div key={n} className="grid grid-cols-[auto_1fr] gap-6 md:gap-10 border-t border-ivory/10 pt-8">
-                <div className="font-serif text-4xl text-gold leading-none">{n}</div>
-                <div>
-                  <div className="font-serif text-xl">{t}</div>
-                  <div className="text-ivory/70 mt-2 leading-relaxed text-sm">{d}</div>
+
+          <div className="mt-16 relative">
+            <div className="absolute left-7 top-8 bottom-8 w-px bg-gradient-to-b from-gold via-gold/30 to-gold/0 hidden md:block" />
+            <div className="space-y-6">
+              {etapes.map(([n, t, d], i) => (
+                <div
+                  key={n}
+                  className="group relative rounded-xl shine-hover bg-navy-soft border border-ivory/10 hover:border-gold p-6 pl-7 md:pl-20 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-gold/10"
+                >
+                  <div className="absolute -left-3 md:left-2 top-6 w-12 h-12 rounded-full bg-gold text-navy font-serif text-xl font-bold grid place-items-center shadow-lg group-hover:scale-110 transition">
+                    {n}
+                  </div>
+                  <div>
+                    <div className="font-serif text-2xl group-hover:text-gold transition">{t}</div>
+                    <div className="text-ivory/75 mt-3 leading-relaxed">{d}</div>
+                  </div>
+                  {i < etapes.length - 1 && (
+                    <div className="absolute right-6 bottom-6 text-gold/30 group-hover:text-gold transition text-2xl">↓</div>
+                  )}
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -182,18 +199,18 @@ export default async function Page(props: PageProps<"/vendre/[zone]">) {
               <p className="text-muted mt-5 leading-relaxed">{territoire.positionnement}</p>
             </div>
             <div>
-              <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium mb-4">Communes principales</div>
+              <div className="text-sm md:text-base uppercase tracking-[0.25em] text-gold font-semibold mb-4">Communes principales</div>
               <div className="flex flex-wrap gap-2">
                 {territoire.principales.map((c) => (
-                  <CommuneLink key={c} nom={c} className="px-4 py-2 bg-navy text-ivory text-sm rounded-full font-medium" />
+                  <CommuneLink key={c} nom={c} className="px-4 py-2 bg-navy text-ivory text-sm rounded-full font-medium shadow-md hover:shadow-lg transition" />
                 ))}
               </div>
               {territoire.limitrophes.length > 0 && (
                 <>
-                  <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium mb-4 mt-8">+ communes limitrophes que je couvre également</div>
+                  <div className="text-sm md:text-base uppercase tracking-[0.25em] text-gold font-semibold mb-4 mt-8">+ communes limitrophes que je couvre également</div>
                   <div className="flex flex-wrap gap-2">
                     {territoire.limitrophes.map((c) => (
-                      <CommuneLink key={c} nom={c} className="px-3 py-1.5 bg-ivory-deep text-ink/80 text-sm border border-ink/10 rounded-full" />
+                      <CommuneLink key={c} nom={c} className="px-3 py-1.5 bg-gold/10 text-navy text-sm border border-gold/40 rounded-full hover:bg-gold hover:border-gold transition" />
                     ))}
                   </div>
                   <p className="text-xs text-muted mt-5 italic">Je ne me limite jamais strictement aux communes principales - chaque projet sur les limitrophes est étudié avec la même attention.</p>
