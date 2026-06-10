@@ -63,6 +63,7 @@ export default function Page() {
   }, [type, secteur, surface, etat, dpe, prix]);
 
   return (
+    <>
     <div className="max-w-7xl mx-auto px-6 py-16 md:py-20">
       <Link href="/outils" className="text-sm text-muted hover:text-navy">← Tous les outils</Link>
       <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium mt-8">Outil 05</div>
@@ -153,11 +154,13 @@ export default function Page() {
         </div>
       </div>
 
-      <ContactCTA
+    </div>
+
+    <ContactCTA
         titre="Avis de valeur officiel ?"
         intro="Visite de votre bien et rapport complet (comparables, photos, stratégie) sous 24 - 48 h. Gratuit et sans engagement."
-      />
-    </div>
+    />
+    </>
   );
 }
 

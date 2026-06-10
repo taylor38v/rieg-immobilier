@@ -115,7 +115,7 @@ export default function Page() {
       </section>
 
       <ContactCTA
-        variant="navy"
+        variant="ivory"
         titre={a.cta_final.titre}
         intro={a.cta_final.intro}
         smsBody="Bonjour Romain, je cherche un bien. "

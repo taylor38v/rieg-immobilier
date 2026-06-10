@@ -129,7 +129,7 @@ export default async function Page(props: PageProps<"/secteurs/[slug]">) {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
             {d.quartiers.map((q) => (
               <div key={q.nom} className="shine-hover rounded-xl p-7 bg-white border border-ink/10">
-                <div className="font-serif text-2xl text-navy">{q.nom}</div>
+                <div className="font-serif text-xl text-navy font-semibold">{q.nom}</div>
                 {q.prix_indicatif && <div className="text-xs text-gold mt-2 uppercase tracking-widest">{q.prix_indicatif}</div>}
                 <p className="text-muted mt-4 leading-relaxed">{q.description}</p>
               </div>
@@ -154,7 +154,7 @@ export default async function Page(props: PageProps<"/secteurs/[slug]">) {
                   className="group rounded-xl p-5 bg-white border border-ink/10 hover:border-gold transition block"
                 >
                   <div className="text-[10px] uppercase tracking-widest text-gold">{e.type}</div>
-                  <div className="font-serif text-lg text-navy mt-1 font-semibold group-hover:text-gold transition">{e.nom}</div>
+                  <div className="font-serif text-xl text-navy mt-1 font-semibold group-hover:text-gold transition">{e.nom}</div>
                   {e.precision && <p className="text-xs text-muted mt-2">{e.precision}</p>}
                   <div className="text-[10px] text-gold mt-2 opacity-0 group-hover:opacity-100 transition">📍 Google Maps →</div>
                 </a>
@@ -186,7 +186,7 @@ export default async function Page(props: PageProps<"/secteurs/[slug]">) {
                       <div className="text-xs font-semibold text-gold">★ {r.note.toFixed(1)}</div>
                     )}
                   </div>
-                  <div className="font-serif text-lg text-navy mt-1 font-semibold group-hover:text-gold transition">{r.nom}</div>
+                  <div className="font-serif text-xl text-navy mt-1 font-semibold group-hover:text-gold transition">{r.nom}</div>
                   <p className="text-xs text-muted mt-2">{r.cuisine}</p>
                   <div className="text-[10px] text-gold mt-3 opacity-0 group-hover:opacity-100 transition">📍 Ouvrir sur Google Maps →</div>
                 </a>
@@ -205,7 +205,7 @@ export default async function Page(props: PageProps<"/secteurs/[slug]">) {
                 <div key={a.nom} className="shine-hover rounded-xl flex gap-4 p-5 bg-white border border-ink/5">
                   <span className="font-serif text-3xl text-gold leading-none">·</span>
                   <div>
-                    <div className="font-serif text-lg text-navy font-semibold">{a.nom}</div>
+                    <div className="font-serif text-xl text-navy font-semibold">{a.nom}</div>
                     <div className="text-xs text-muted mt-1">{a.activite}</div>
                   </div>
                 </div>
@@ -245,7 +245,7 @@ export default async function Page(props: PageProps<"/secteurs/[slug]">) {
       </section>
 
       <ContactCTA
-        variant="navy"
+        variant="ivory"
         titre={`Un projet immobilier à ${s.nom} ?`}
         intro="Avis de valeur gratuit sous 24 - 48h, confidentiel, sans engagement."
         smsBody={`Bonjour Romain, j'ai un projet immobilier à ${s.nom}. `}

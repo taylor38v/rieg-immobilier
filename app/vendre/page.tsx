@@ -182,7 +182,7 @@ export default function Page() {
       </section>
 
       <ContactCTA
-        variant="navy"
+        variant="ivory"
         titre={v.cta_final.titre}
         intro={v.cta_final.intro}
         smsBody="Bonjour Romain, je souhaite vendre mon bien. "

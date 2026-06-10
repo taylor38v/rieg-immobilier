@@ -120,9 +120,9 @@ export default function Footer() {
             </p>
             <div className="flex flex-wrap justify-center gap-3 mt-6">
               <a href={`tel:${settings.telephone_lien}`} className="px-6 py-3 bg-gold text-navy text-sm font-semibold hover:bg-gold-soft rounded-full">{settings.telephone}</a>
-              <a href={`sms:${settings.whatsapp}`} className="px-6 py-3 bg-navy border border-gold text-gold text-sm font-semibold hover:bg-gold hover:text-navy transition rounded-full">SMS direct</a>
-              <a href={`mailto:${settings.email}`} className="px-6 py-3 bg-navy border border-ivory/30 text-ivory text-sm font-semibold hover:bg-ivory hover:text-navy transition rounded-full">Mail</a>
-              <Link href="/contact" className="px-6 py-3 bg-navy border border-ivory/30 text-ivory text-sm font-semibold hover:bg-ivory hover:text-navy transition rounded-full">Contactez-moi →</Link>
+              <a href={`sms:${settings.whatsapp}`} className="px-6 py-3 border-2 border-gold text-gold text-sm font-medium hover:bg-gold hover:text-navy transition rounded-full">SMS direct</a>
+              <a href={`mailto:${settings.email}`} className="px-6 py-3 border-2 border-gold text-gold text-sm font-medium hover:bg-gold hover:text-navy transition rounded-full">Mail</a>
+              <Link href="/contact" className="px-6 py-3 bg-gold text-navy text-sm font-semibold hover:bg-gold-soft transition rounded-full">Contactez-moi →</Link>
             </div>
           </div>
         </div>

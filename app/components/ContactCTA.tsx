@@ -18,7 +18,8 @@ export default function ContactCTA({
   smsBody,
   variant = "ivory",
 }: Props) {
-  const bg = variant === "navy" ? "bg-navy text-ivory" : "bg-ivory-deep text-ink";
+  // "ivory" = sand : un beige distinct de ivory-deep pour bien marquer le changement de section
+  const bg = variant === "navy" ? "bg-navy text-ivory" : "bg-sand text-ink";
   const titreColor = variant === "navy" ? "text-ivory" : "text-navy";
   const introColor = variant === "navy" ? "text-ivory/70" : "text-muted";
 

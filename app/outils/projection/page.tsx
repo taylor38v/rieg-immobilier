@@ -79,6 +79,7 @@ export default function Page() {
   const passeYears = data.annees.filter((y) => y < 0).length;
 
   return (
+    <>
     <div className="max-w-7xl mx-auto px-6 py-16 md:py-20">
       <Link href="/outils" className="text-sm text-muted hover:text-navy">← Tous les outils</Link>
       <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium mt-8">Outil 06</div>
@@ -221,11 +222,13 @@ export default function Page() {
         </div>
       </div>
 
-      <ContactCTA
+    </div>
+
+    <ContactCTA
         titre="Analyse personnalisée de votre bien ?"
         intro="Une analyse approfondie croise la projection avec votre quartier précis, le DPE, l'état et les comparables récents pour une vraie estimation."
-      />
-    </div>
+    />
+    </>
   );
 }
 

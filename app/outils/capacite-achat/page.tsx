@@ -50,6 +50,7 @@ export default function Page() {
   }, [revenu, apport, duree, taux, type]);
 
   return (
+    <>
     <div className="max-w-7xl mx-auto px-6 py-16 md:py-20">
       <Link href="/outils" className="text-sm text-muted hover:text-navy">← Tous les outils</Link>
       <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium mt-8">Outil 02</div>
@@ -146,10 +147,12 @@ export default function Page() {
         </div>
       </div>
 
-      <ContactCTA
-        titre="Affinons votre projet ensemble"
-        intro="Mise en relation avec un courtier partenaire pour optimiser votre plan de financement, puis sélection de biens correspondant à votre capacité."
-      />
     </div>
+
+    <ContactCTA
+      titre="Affinons votre projet ensemble"
+      intro="Mise en relation avec un courtier partenaire pour optimiser votre plan de financement, puis sélection de biens correspondant à votre capacité."
+    />
+    </>
   );
 }

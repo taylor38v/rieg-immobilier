@@ -124,7 +124,7 @@ export default function Page() {
       </section>
 
       <ContactCTA
-        variant="navy"
+        variant="ivory"
         titre="Je réponds directement."
         intro="SMS, mail ou téléphone - une réponse personnelle sous 24 h."
         smsBody="Bonjour Romain, j'ai une question sur la location. "

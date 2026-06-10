@@ -59,6 +59,7 @@ export default function Page() {
   let cumul = 0;
 
   return (
+    <>
     <div className="max-w-7xl mx-auto px-6 py-16 md:py-20">
       <Link href="/outils" className="text-sm text-muted hover:text-navy">← Tous les outils</Link>
       <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium mt-8">Outil 04</div>
@@ -165,10 +166,12 @@ export default function Page() {
         </div>
       </div>
 
-      <ContactCTA
+    </div>
+
+    <ContactCTA
         titre="Optimiser vos frais de notaire ?"
         intro="Inclure le mobilier à l'acte, choisir le bon montage, négocier les émoluments : un conseil personnalisé pour activer les bons leviers."
-      />
-    </div>
+    />
+    </>
   );
 }

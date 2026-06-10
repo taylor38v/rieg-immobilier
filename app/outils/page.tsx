@@ -90,7 +90,7 @@ export default function Page() {
     </div>
 
     <ContactCTA
-      variant="navy"
+      variant="ivory"
       titre={ol.cta_titre}
       intro={ol.cta_intro}
       smsBody="Bonjour Romain, j'aimerais en discuter directement. "

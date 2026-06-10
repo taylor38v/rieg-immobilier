@@ -106,6 +106,7 @@ export default function Page() {
   const winner = r.netAchat > r.netLoc ? "achat" : "location";
 
   return (
+    <>
     <div className="max-w-7xl mx-auto px-6 py-16 md:py-20">
       <Link href="/outils" className="text-sm text-muted hover:text-navy">← Tous les outils</Link>
       <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium mt-8">Outil 03</div>
@@ -167,11 +168,13 @@ export default function Page() {
         </div>
       </div>
 
-      <ContactCTA
+    </div>
+
+    <ContactCTA
         titre="Me contacter pour en parler"
         intro="Mettre ces chiffres en face d'un vrai bien, d'une vraie ville, d'un vrai projet de vie : un échange en visio ou en agence pour aller plus loin."
-      />
-    </div>
+    />
+    </>
   );
 }
 

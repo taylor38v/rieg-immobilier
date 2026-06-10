@@ -87,10 +87,10 @@ function CommuneLink({ nom, className }: { nom: string; className?: string }) {
   return <span className={className}>{nom}</span>;
 }
 
-const COMMUNES_BY_ZONE: Record<string, { mapSlugs: string[]; communes: string[] }> = {
+const COMMUNES_BY_ZONE: Record<string, { mapSlugs: string[]; communes: string[]; zoneFilter?: "mont-dor" | "forez" }> = {
   "saint-didier": { mapSlugs: ["saint-didier-au-mont-dor"], communes: ["saint-didier-au-mont-dor"] },
-  "ouest-lyonnais": { mapSlugs: ["saint-didier-au-mont-dor", "saint-cyr-au-mont-dor", "ecully", "dardilly", "limonest", "champagne-au-mont-dor"], communes: ["saint-didier-au-mont-dor", "saint-cyr-au-mont-dor", "ecully", "dardilly", "limonest", "champagne-au-mont-dor"] },
-  "plaine-du-forez": { mapSlugs: ["saint-just-saint-rambert", "andrezieux-boutheon"], communes: ["saint-just-saint-rambert", "andrezieux-boutheon"] },
+  "ouest-lyonnais": { mapSlugs: [], zoneFilter: "mont-dor", communes: ["saint-didier-au-mont-dor", "saint-cyr-au-mont-dor", "ecully", "dardilly", "limonest", "champagne-au-mont-dor"] },
+  "plaine-du-forez": { mapSlugs: [], zoneFilter: "forez", communes: ["saint-just-saint-rambert", "andrezieux-boutheon"] },
 };
 
 const etapes = [
@@ -227,7 +227,11 @@ export default async function Page(props: PageProps<"/vendre/[zone]">) {
           <h2 className="font-serif text-4xl md:text-5xl mt-3">Survolez la carte pour explorer.</h2>
           <p className="text-muted mt-3 max-w-2xl">Cliquez sur une commune pour ouvrir sa fiche détaillée - démographie, écoles, restaurants, quartiers, prix au m².</p>
           <div className="mt-10">
-            <CityMap height={520} slugs={meta.mapSlugs} />
+            {meta.zoneFilter ? (
+              <CityMap height={520} zoneFilter={meta.zoneFilter} includeLimitrophes showLegend />
+            ) : (
+              <CityMap height={520} slugs={meta.mapSlugs} />
+            )}
           </div>
 
           {communesData.length > 0 && (
@@ -255,7 +259,7 @@ export default async function Page(props: PageProps<"/vendre/[zone]">) {
       </section>
 
       <ContactCTA
-        variant="navy"
+        variant="ivory"
         titre="Et si on commençait par un avis de valeur ?"
         intro="Gratuit, argumenté, sous 24 - 48h - sans engagement de mandat."
         smsBody={`Bonjour Romain, je souhaite un avis de valeur dans le secteur ${territoire?.nom || ""}. `}

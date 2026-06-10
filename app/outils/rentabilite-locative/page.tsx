@@ -48,6 +48,7 @@ export default function Page() {
   }, [prix, loyer, chargesAn, tf, vacance, tmi, apport, taux, duree]);
 
   return (
+    <>
     <div className="max-w-7xl mx-auto px-6 py-16 md:py-20">
       <Link href="/outils" className="text-sm text-muted hover:text-navy">← Tous les outils</Link>
       <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium mt-8">Outil 08</div>
@@ -137,11 +138,13 @@ export default function Page() {
         </div>
       </div>
 
-      <ContactCTA
+    </div>
+
+    <ContactCTA
         titre="Sélection de biens à fort rendement ?"
         intro="Sur le Mont d'Or, l'Ouest lyonnais et la Plaine du Forez, un sourcing investisseur identifie les biens off-market et les programmes neufs."
-      />
-    </div>
+    />
+    </>
   );
 }
 

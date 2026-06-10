@@ -73,6 +73,7 @@ export default function Page() {
   }, [typeBien, annee, surface, chauffage, isolation, vitrage]);
 
   return (
+    <>
     <div className="max-w-7xl mx-auto px-6 py-16 md:py-20">
       <Link href="/outils" className="text-sm text-muted hover:text-navy">← Tous les outils</Link>
       <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium mt-8">Outil 07</div>
@@ -166,11 +167,13 @@ export default function Page() {
         </div>
       </div>
 
-      <ContactCTA
+    </div>
+
+    <ContactCTA
         titre="Plan de rénovation énergétique ?"
         intro="Un accompagnement complet : diagnostiqueur, devis travaux, dossier MaPrimeRénov', puis valorisation à la revente."
-      />
-    </div>
+    />
+    </>
   );
 }
 

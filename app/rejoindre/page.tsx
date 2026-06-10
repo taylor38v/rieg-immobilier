@@ -45,7 +45,7 @@ export default function Page() {
           {r.piliers.items.map((p, i) => (
             <div key={p.titre} className="group relative rounded-xl p-8 bg-white border-2 border-ink/5 hover:border-gold transition overflow-hidden hover:-translate-y-1 hover:shadow-2xl hover:shadow-gold/20">
               <div className="absolute top-0 left-0 w-1 h-0 bg-gold group-hover:h-full transition-all duration-500" />
-              <div className="font-serif text-5xl text-gold/30 leading-none">0{i + 1}</div>
+              <div className="font-serif text-5xl text-gold/50 font-bold leading-none">0{i + 1}</div>
               <div className="font-serif text-2xl text-navy mt-4 font-semibold">{p.titre}</div>
               <p className="text-sm text-muted mt-3 leading-relaxed">{p.desc}</p>
             </div>
@@ -63,7 +63,7 @@ export default function Page() {
               <div key={p.titre} className="shine-hover rounded-xl p-6 bg-white border border-ink/5 flex gap-5">
                 <span className="font-serif text-3xl text-gold leading-none">→</span>
                 <div>
-                  <div className="font-serif text-xl text-navy">{p.titre}</div>
+                  <div className="font-serif text-xl text-navy font-bold">{p.titre}</div>
                   <p className="text-sm text-muted mt-2 leading-relaxed">{p.desc}</p>
                 </div>
               </div>
@@ -84,7 +84,7 @@ export default function Page() {
         </div>
         <div className="relative">
           <img src={r.qui_suis_je.photo} alt={r.qui_suis_je.photo_alt} className="w-full aspect-[4/5] object-cover rounded-lg" />
-          <div className="bg-gold text-navy p-6 mt-6 lg:mt-0 lg:absolute lg:-bottom-8 lg:left-8 lg:right-8 lg:max-w-[420px] shadow-xl">
+          <div className="rounded-xl bg-gold text-navy p-6 mt-6 lg:mt-0 lg:absolute lg:-bottom-8 lg:left-8 lg:right-8 lg:max-w-[420px] shadow-xl">
             <div className="font-serif text-xl lg:text-2xl leading-snug">"{r.qui_suis_je.citation}"</div>
             <div className="text-xs uppercase tracking-widest mt-3 font-semibold">{r.qui_suis_je.citation_auteur}</div>
           </div>
@@ -122,7 +122,7 @@ export default function Page() {
       </section>
 
       <ContactCTA
-        variant="navy"
+        variant="ivory"
         titre={r.cta_final.titre}
         intro={r.cta_final.intro}
         smsBody="Bonjour Romain, je souhaite en savoir plus sur le métier de conseiller iad. "
