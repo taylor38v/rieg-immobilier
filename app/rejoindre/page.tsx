@@ -72,25 +72,6 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="max-w-7xl mx-auto px-6 py-24 grid lg:grid-cols-2 gap-16 items-start relative">
-        <div className="relative z-10">
-          <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{r.qui_suis_je.surtitre}</div>
-          <h2 className="font-serif text-3xl md:text-4xl mt-3">{r.qui_suis_je.titre}</h2>
-          <div className="mt-8 space-y-4 text-ink/85 leading-relaxed">
-            {r.qui_suis_je.paragraphes.map((p, i) => (
-              <p key={i} dangerouslySetInnerHTML={{ __html: inline(p) }} />
-            ))}
-          </div>
-        </div>
-        <div className="relative">
-          <img src={r.qui_suis_je.photo} alt={r.qui_suis_je.photo_alt} className="no-round w-full aspect-[4/5] object-cover rounded-xl" />
-          <div className="rounded-xl bg-gold text-navy p-5 lg:p-6 mt-5 lg:mt-0 lg:absolute lg:-bottom-8 lg:left-8 lg:right-8 lg:max-w-[420px] shadow-xl">
-            <div className="font-serif text-lg lg:text-2xl leading-snug">"{r.qui_suis_je.citation}"</div>
-            <div className="text-xs uppercase tracking-widest mt-3 font-semibold">{r.qui_suis_je.citation_auteur}</div>
-          </div>
-        </div>
-      </section>
-
       <section className="bg-navy text-ivory py-24">
         <div className="max-w-5xl mx-auto px-6">
           <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{r.parcours.surtitre}</div>
@@ -119,6 +100,25 @@ export default function Page() {
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="max-w-7xl mx-auto px-6 py-24 grid lg:grid-cols-2 gap-16 items-start relative">
+        <div className="relative z-10">
+          <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{r.qui_suis_je.surtitre}</div>
+          <h2 className="font-serif text-3xl md:text-4xl mt-3">{r.qui_suis_je.titre}</h2>
+          <div className="mt-8 space-y-4 text-ink/85 leading-relaxed">
+            {r.qui_suis_je.paragraphes.map((p, i) => (
+              <p key={i} dangerouslySetInnerHTML={{ __html: inline(p) }} />
+            ))}
+          </div>
+        </div>
+        <div className="relative">
+          <img src={r.qui_suis_je.photo} alt={r.qui_suis_je.photo_alt} className="no-round w-full aspect-[4/5] object-cover rounded-xl" />
+          <div className="rounded-xl bg-gold text-navy p-5 lg:p-6 mt-5 lg:mt-0 lg:absolute lg:-bottom-8 lg:left-8 lg:right-8 lg:max-w-[420px] shadow-xl">
+            <div className="font-serif text-lg lg:text-2xl leading-snug">"{r.qui_suis_je.citation}"</div>
+            <div className="text-xs uppercase tracking-widest mt-3 font-semibold">{r.qui_suis_je.citation_auteur}</div>
           </div>
         </div>
       </section>

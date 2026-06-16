@@ -123,6 +123,27 @@ export default function Page() {
         </div>
       </section>
 
+      <section className="bg-ivory-deep py-20">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{site.vendre.zones_section.surtitre}</div>
+          <h2 className="font-serif text-3xl md:text-4xl mt-3">{site.vendre.zones_section.titre}</h2>
+          <div className="grid md:grid-cols-2 gap-6 mt-12">
+            {site.vendre.zones_section.zones.map((z) => (
+              <Link key={z.slug} href={`/vendre/${z.slug}`} className="group bg-white border border-ink/10 hover:border-navy rounded-2xl overflow-hidden">
+                <div className="aspect-[16/10] overflow-hidden">
+                  <img src={z.image} alt={z.titre} className="no-round w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+                </div>
+                <div className="p-6">
+                  <div className="font-serif text-xl text-navy group-hover:text-gold transition">{z.titre}</div>
+                  <p className="text-sm text-muted mt-2">{z.desc}</p>
+                  <span className="inline-block mt-4 text-xs text-navy link-underline">Découvrir la zone →</span>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <ContactCTA
         variant="ivory"
         titre="Je réponds directement."

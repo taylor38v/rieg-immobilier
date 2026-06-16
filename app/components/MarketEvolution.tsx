@@ -42,39 +42,41 @@ export default function MarketEvolution({ evolutionPrix, prixM2Maison, prixM2App
         </div>
       </div>
 
-      {/* viewBox resserré (560×320) pour que les labels restent lisibles sur mobile */}
-      <svg viewBox="0 0 560 320" className="w-full h-auto">
+      {/* viewBox 560×320, largeur cappée sur desktop (max-w-2xl) pour éviter
+          que les labels grossissent trop ; plot décalé pour que le label du
+          haut tienne dans le cadre */}
+      <svg viewBox="0 0 560 320" className="w-full h-auto max-w-2xl mx-auto block">
         {[0, 0.25, 0.5, 0.75, 1].map((p) => (
-          <line key={p} x1="50" y1={24 + p * 220} x2="548" y2={24 + p * 220} stroke="#ffffff" strokeOpacity="0.08" />
+          <line key={p} x1="50" y1={44 + p * 210} x2="548" y2={44 + p * 210} stroke="#ffffff" strokeOpacity="0.08" />
         ))}
         {[0.25, 0.5, 0.75, 1].map((p) => (
-          <text key={p} x="44" y={28 + p * 220} fontSize="15" fill="#c9a25f" textAnchor="end" opacity="0.7">
+          <text key={p} x="44" y={48 + p * 210} fontSize="12" fill="#c9a25f" textAnchor="end" opacity="0.7">
             {formatPrix(evolMax - p * evolRange).replace(" €", "")}
           </text>
         ))}
         <polyline
           fill="none"
           stroke="#c9a25f"
-          strokeWidth="3"
-          points={series.map((e, i) => `${56 + (i / (series.length - 1)) * 492},${24 + ((evolMax - e.prixM2) / evolRange) * 220}`).join(" ")}
+          strokeWidth="2.5"
+          points={series.map((e, i) => `${56 + (i / (series.length - 1)) * 492},${44 + ((evolMax - e.prixM2) / evolRange) * 210}`).join(" ")}
         />
         {series.map((e, i) => (
           <g key={i}>
             <circle
               cx={56 + (i / (series.length - 1)) * 492}
-              cy={24 + ((evolMax - e.prixM2) / evolRange) * 220}
-              r="6"
+              cy={44 + ((evolMax - e.prixM2) / evolRange) * 210}
+              r="5"
               fill="#c9a25f"
               stroke="#061b2c"
               strokeWidth="2"
             />
-            <text x={56 + (i / (series.length - 1)) * 492} y="312" fontSize="17" fill="#faf6ef" textAnchor="middle" opacity="0.7">
+            <text x={56 + (i / (series.length - 1)) * 492} y="296" fontSize="13" fill="#faf6ef" textAnchor="middle" opacity="0.7">
               {e.annee}
             </text>
             <text
               x={56 + (i / (series.length - 1)) * 492}
-              y={10 + ((evolMax - e.prixM2) / evolRange) * 220}
-              fontSize="19"
+              y={44 + ((evolMax - e.prixM2) / evolRange) * 210 - 13}
+              fontSize="15"
               fill="#c9a25f"
               textAnchor="middle"
               fontWeight="700"
