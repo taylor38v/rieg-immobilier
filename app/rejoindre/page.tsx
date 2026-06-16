@@ -102,14 +102,16 @@ export default function Page() {
               {r.parcours.etapes.map((e, i) => (
                 <div
                   key={e.num}
-                  className="group relative rounded-xl shine-hover bg-navy-soft border border-ivory/10 hover:border-gold p-6 pl-7 md:pl-20 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-gold/10"
+                  className="group relative rounded-xl shine-hover bg-navy-soft border border-ivory/10 hover:border-gold p-6 md:pl-20 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-gold/10"
                 >
-                  <div className="absolute -left-3 md:left-2 top-6 w-12 h-12 rounded-full bg-gold text-navy font-serif text-xl font-bold grid place-items-center shadow-lg group-hover:scale-110 transition">
-                    {e.num}
-                  </div>
-                  <div>
-                    <div className="font-serif text-2xl group-hover:text-gold transition">{e.titre}</div>
-                    <div className="text-ivory/75 mt-3 leading-relaxed" dangerouslySetInnerHTML={{ __html: inline(e.desc) }} />
+                  <div className="flex items-start gap-4 md:block">
+                    <div className="shrink-0 md:absolute md:left-2 md:top-6 w-12 h-12 rounded-full bg-gold text-navy font-serif text-xl font-bold grid place-items-center shadow-lg group-hover:scale-110 transition">
+                      {e.num}
+                    </div>
+                    <div>
+                      <div className="font-serif text-2xl group-hover:text-gold transition">{e.titre}</div>
+                      <div className="text-ivory/75 mt-3 leading-relaxed" dangerouslySetInnerHTML={{ __html: inline(e.desc) }} />
+                    </div>
                   </div>
                   {i < r.parcours.etapes.length - 1 && (
                     <div className="absolute right-6 bottom-6 text-gold/30 group-hover:text-gold transition text-2xl">↓</div>
