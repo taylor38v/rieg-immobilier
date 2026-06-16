@@ -68,10 +68,10 @@ export default function Page() {
                 className="group relative rounded-2xl bg-white border border-ink/10 hover:border-gold transition-all duration-300 p-6 md:p-8 hover:shadow-xl hover:shadow-gold/10 flex flex-col md:flex-row gap-6 items-start"
               >
                 <div className="shrink-0 flex md:flex-col items-center md:items-start gap-3">
-                  <div className="w-16 h-16 md:w-20 md:h-20 rounded-2xl bg-gradient-to-br from-gold to-gold-soft text-navy font-serif text-3xl md:text-4xl font-bold grid place-items-center shadow-lg group-hover:scale-105 transition">
+                  <div className="w-12 h-12 md:w-14 md:h-14 rounded-xl bg-gradient-to-br from-gold to-gold-soft text-navy font-serif text-xl md:text-2xl font-bold grid place-items-center shadow-lg group-hover:scale-105 transition">
                     {String(i + 1).padStart(2, "0")}
                   </div>
-                  <div className="hidden md:block w-px h-12 bg-gold/30 ml-10" />
+                  <div className="hidden md:block w-px h-10 bg-gold/30 ml-7" />
                 </div>
                 <div className="flex-1">
                   <div className="font-serif text-2xl md:text-3xl text-navy font-semibold group-hover:text-gold transition">{s.titre}</div>

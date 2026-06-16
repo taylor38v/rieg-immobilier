@@ -24,7 +24,7 @@ export default function MarketEvolution({ evolutionPrix, prixM2Maison, prixM2App
   const evolPct = evolMin > 0 ? ((evolMax - evolMin) / evolMin) * 100 : 0;
 
   return (
-    <div className="rounded-xl bg-navy-soft p-8 mt-10">
+    <div className="rounded-xl bg-navy-soft p-4 sm:p-8 mt-10">
       <div className="flex items-center justify-between flex-wrap gap-4 mb-6">
         <div className="text-xs uppercase tracking-widest text-gold">Prix au m² · {type}</div>
         <div className="inline-flex bg-navy p-1 rounded-full border border-ivory/15">
@@ -42,41 +42,42 @@ export default function MarketEvolution({ evolutionPrix, prixM2Maison, prixM2App
         </div>
       </div>
 
-      <svg viewBox="0 0 800 280" className="w-full h-auto">
+      {/* viewBox resserré (560×320) pour que les labels restent lisibles sur mobile */}
+      <svg viewBox="0 0 560 320" className="w-full h-auto">
         {[0, 0.25, 0.5, 0.75, 1].map((p) => (
-          <line key={p} x1="60" y1={20 + p * 200} x2="780" y2={20 + p * 200} stroke="#ffffff" strokeOpacity="0.08" />
+          <line key={p} x1="50" y1={24 + p * 220} x2="548" y2={24 + p * 220} stroke="#ffffff" strokeOpacity="0.08" />
         ))}
         {[0.25, 0.5, 0.75, 1].map((p) => (
-          <text key={p} x="55" y={24 + p * 200} fontSize="10" fill="#c9a25f" textAnchor="end" opacity="0.7">
+          <text key={p} x="44" y={28 + p * 220} fontSize="15" fill="#c9a25f" textAnchor="end" opacity="0.7">
             {formatPrix(evolMax - p * evolRange).replace(" €", "")}
           </text>
         ))}
         <polyline
           fill="none"
           stroke="#c9a25f"
-          strokeWidth="2.5"
-          points={series.map((e, i) => `${60 + (i / (series.length - 1)) * 720},${20 + ((evolMax - e.prixM2) / evolRange) * 200}`).join(" ")}
+          strokeWidth="3"
+          points={series.map((e, i) => `${56 + (i / (series.length - 1)) * 492},${24 + ((evolMax - e.prixM2) / evolRange) * 220}`).join(" ")}
         />
         {series.map((e, i) => (
           <g key={i}>
             <circle
-              cx={60 + (i / (series.length - 1)) * 720}
-              cy={20 + ((evolMax - e.prixM2) / evolRange) * 200}
-              r="5"
+              cx={56 + (i / (series.length - 1)) * 492}
+              cy={24 + ((evolMax - e.prixM2) / evolRange) * 220}
+              r="6"
               fill="#c9a25f"
               stroke="#061b2c"
               strokeWidth="2"
             />
-            <text x={60 + (i / (series.length - 1)) * 720} y="270" fontSize="11" fill="#faf6ef" textAnchor="middle" opacity="0.6">
+            <text x={56 + (i / (series.length - 1)) * 492} y="312" fontSize="17" fill="#faf6ef" textAnchor="middle" opacity="0.7">
               {e.annee}
             </text>
             <text
-              x={60 + (i / (series.length - 1)) * 720}
-              y={10 + ((evolMax - e.prixM2) / evolRange) * 200}
-              fontSize="11"
+              x={56 + (i / (series.length - 1)) * 492}
+              y={10 + ((evolMax - e.prixM2) / evolRange) * 220}
+              fontSize="19"
               fill="#c9a25f"
               textAnchor="middle"
-              fontWeight="600"
+              fontWeight="700"
             >
               {(e.prixM2 / 1000).toFixed(1)}k
             </text>

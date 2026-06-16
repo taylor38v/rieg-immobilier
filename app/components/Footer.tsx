@@ -119,7 +119,7 @@ export default function Footer() {
               {settings.bio_longue} Que ce soit pour un avis de valeur en <span className="text-gold font-semibold">{settings.delai_avis}</span> ou une stratégie de vente, je mets mon énergie au service de votre projet.
             </p>
             <div className="flex flex-wrap justify-center gap-3 mt-6">
-              <a href={`tel:${settings.telephone_lien}`} className="px-6 py-3 bg-gold text-navy text-sm font-semibold hover:bg-gold-soft rounded-full">{settings.telephone}</a>
+              <a href={`tel:${settings.telephone_lien}`} className="px-6 py-3 border-2 border-gold text-gold text-sm font-medium hover:bg-gold hover:text-navy transition rounded-full">{settings.telephone}</a>
               <a href={`sms:${settings.whatsapp}`} className="px-6 py-3 border-2 border-gold text-gold text-sm font-medium hover:bg-gold hover:text-navy transition rounded-full">SMS direct</a>
               <a href={`mailto:${settings.email}`} className="px-6 py-3 border-2 border-gold text-gold text-sm font-medium hover:bg-gold hover:text-navy transition rounded-full">Mail</a>
               <Link href="/contact" className="px-6 py-3 bg-gold text-navy text-sm font-semibold hover:bg-gold-soft transition rounded-full">Contactez-moi →</Link>

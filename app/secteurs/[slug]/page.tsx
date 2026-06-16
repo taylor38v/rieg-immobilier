@@ -130,8 +130,8 @@ export default async function Page(props: PageProps<"/secteurs/[slug]">) {
             {d.quartiers.map((q) => (
               <div key={q.nom} className="shine-hover rounded-xl p-7 bg-white border border-ink/10">
                 <div className="font-serif text-xl text-navy font-semibold">{q.nom}</div>
-                {q.prix_indicatif && <div className="text-xs text-gold mt-2 uppercase tracking-widest">{q.prix_indicatif}</div>}
-                <p className="text-muted mt-4 leading-relaxed">{q.description}</p>
+                {q.prix_indicatif && <div className="text-[10px] text-gold mt-2 uppercase tracking-widest">{q.prix_indicatif}</div>}
+                <p className="text-sm text-muted mt-3 leading-relaxed">{q.description}</p>
               </div>
             ))}
           </div>
@@ -155,7 +155,7 @@ export default async function Page(props: PageProps<"/secteurs/[slug]">) {
                 >
                   <div className="text-[10px] uppercase tracking-widest text-gold">{e.type}</div>
                   <div className="font-serif text-xl text-navy mt-1 font-semibold group-hover:text-gold transition">{e.nom}</div>
-                  {e.precision && <p className="text-xs text-muted mt-2">{e.precision}</p>}
+                  {e.precision && <p className="text-sm text-muted mt-2 leading-relaxed">{e.precision}</p>}
                   <div className="text-[10px] text-gold mt-2 opacity-0 group-hover:opacity-100 transition">📍 Google Maps →</div>
                 </a>
               ))}
@@ -187,7 +187,7 @@ export default async function Page(props: PageProps<"/secteurs/[slug]">) {
                     )}
                   </div>
                   <div className="font-serif text-xl text-navy mt-1 font-semibold group-hover:text-gold transition">{r.nom}</div>
-                  <p className="text-xs text-muted mt-2">{r.cuisine}</p>
+                  <p className="text-sm text-muted mt-2 leading-relaxed">{r.cuisine}</p>
                   <div className="text-[10px] text-gold mt-3 opacity-0 group-hover:opacity-100 transition">📍 Ouvrir sur Google Maps →</div>
                 </a>
               ))}
@@ -206,7 +206,7 @@ export default async function Page(props: PageProps<"/secteurs/[slug]">) {
                   <span className="font-serif text-3xl text-gold leading-none">·</span>
                   <div>
                     <div className="font-serif text-xl text-navy font-semibold">{a.nom}</div>
-                    <div className="text-xs text-muted mt-1">{a.activite}</div>
+                    <div className="text-sm text-muted mt-1 leading-relaxed">{a.activite}</div>
                   </div>
                 </div>
               ))}

@@ -21,7 +21,7 @@ export default function Page() {
         <HeroBackground video={r.hero.video} overlay={0.65} />
         <div className="relative max-w-7xl mx-auto px-6">
           <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{r.hero.surtitre}</div>
-          <h1 className="font-serif text-5xl md:text-7xl mt-3 leading-[1.0] max-w-5xl">{r.hero.titre}</h1>
+          <h1 className="font-serif text-4xl md:text-6xl mt-3 leading-[1.05] max-w-4xl">{r.hero.titre}</h1>
           <p className="text-ivory/80 text-lg md:text-xl mt-8 max-w-3xl leading-relaxed" dangerouslySetInnerHTML={{ __html: inline(r.hero.intro) }} />
           <div className="flex flex-wrap gap-4 mt-10">
             <Link href={r.hero.cta_primary_href} className="px-7 py-4 bg-gold text-navy font-medium hover:bg-gold-soft rounded-full">{r.hero.cta_primary_label}</Link>
@@ -46,7 +46,7 @@ export default function Page() {
             <div key={p.titre} className="group relative rounded-xl p-8 bg-white border-2 border-ink/5 hover:border-gold transition overflow-hidden hover:-translate-y-1 hover:shadow-2xl hover:shadow-gold/20">
               <div className="absolute top-0 left-0 w-1 h-0 bg-gold group-hover:h-full transition-all duration-500" />
               <div className="font-serif text-5xl text-gold/50 font-bold leading-none">0{i + 1}</div>
-              <div className="font-serif text-2xl text-navy mt-4 font-semibold">{p.titre}</div>
+              <div className="font-serif text-xl text-navy mt-4 font-bold">{p.titre}</div>
               <p className="text-sm text-muted mt-3 leading-relaxed">{p.desc}</p>
             </div>
           ))}
@@ -83,9 +83,9 @@ export default function Page() {
           </div>
         </div>
         <div className="relative">
-          <img src={r.qui_suis_je.photo} alt={r.qui_suis_je.photo_alt} className="w-full aspect-[4/5] object-cover rounded-lg" />
-          <div className="rounded-xl bg-gold text-navy p-6 mt-6 lg:mt-0 lg:absolute lg:-bottom-8 lg:left-8 lg:right-8 lg:max-w-[420px] shadow-xl">
-            <div className="font-serif text-xl lg:text-2xl leading-snug">"{r.qui_suis_je.citation}"</div>
+          <img src={r.qui_suis_je.photo} alt={r.qui_suis_je.photo_alt} className="no-round w-full aspect-[4/5] object-cover rounded-xl" />
+          <div className="rounded-xl bg-gold text-navy p-5 lg:p-6 mt-5 lg:mt-0 lg:absolute lg:-bottom-8 lg:left-8 lg:right-8 lg:max-w-[420px] shadow-xl">
+            <div className="font-serif text-lg lg:text-2xl leading-snug">"{r.qui_suis_je.citation}"</div>
             <div className="text-xs uppercase tracking-widest mt-3 font-semibold">{r.qui_suis_je.citation_auteur}</div>
           </div>
         </div>
