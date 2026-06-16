@@ -7,32 +7,31 @@ type Props = {
   mailSubject?: string;
   /** Body pré-rempli pour le bouton SMS */
   smsBody?: string;
-  /** Variant de fond : "ivory" (clair) ou "navy" (sombre) */
+  /** Conservé pour compat — le fond est désormais unique (bleu secteurs d'intervention) */
   variant?: "ivory" | "navy";
 };
 
+/**
+ * Fond unique : le bleu "navy-soft" de la section "Mes secteurs d'intervention"
+ * du footer — neutre, cohérent partout, et nettement distinct des sections claires
+ * au-dessus. Un filet doré en haut marque la séparation même quand la section
+ * précédente est elle aussi sombre.
+ */
 export default function ContactCTA({
   titre = "Une question, un projet ?",
   intro = "Romain répond personnellement sous 24 h. Aucune sollicitation commerciale, aucune liste de prospection.",
   mailSubject,
   smsBody,
-  variant = "ivory",
 }: Props) {
-  // "ivory" = sand : un beige distinct de ivory-deep pour bien marquer le changement de section
-  const bg = variant === "navy" ? "bg-navy text-ivory" : "bg-sand text-ink";
-  const titreColor = variant === "navy" ? "text-ivory" : "text-navy";
-  const introColor = variant === "navy" ? "text-ivory/70" : "text-muted";
-
   return (
-    <section className={`${bg} py-16`}>
+    <section className="bg-navy-soft text-ivory py-16 border-t border-gold/25">
       <div className="max-w-4xl mx-auto px-6 text-center">
-        <h3 className={`font-serif text-3xl ${titreColor}`}>{titre}</h3>
-        <p className={`${introColor} mt-3 max-w-2xl mx-auto`}>{intro}</p>
+        <h3 className="font-serif text-3xl text-ivory">{titre}</h3>
+        <p className="text-ivory/70 mt-3 max-w-2xl mx-auto">{intro}</p>
         <div className="mt-6 flex justify-center">
           <ContactButtons
             withContact
             align="center"
-            variant={variant === "navy" ? "primary" : "light"}
             mailSubject={mailSubject}
             smsBody={smsBody}
           />
