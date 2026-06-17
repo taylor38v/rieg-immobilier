@@ -11,5 +11,3 @@
   for = "/admin/*"
   [headers.values]
     X-Robots-Tag = "noindex, nofollow"
-
-# CD test 20260617T0816
