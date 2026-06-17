@@ -15,7 +15,7 @@ Le premier trimestre 2026 confirme une tendance amorcée fin 2025 : le marché d
 
 ## Les chiffres clés du trimestre
 
-**+2,3 %** - Saint-Didier-au-Mont-d'Or
+**+2,4 %** - Saint-Didier-au-Mont-d'Or
 
 **+4,1 %** - Champagne-au-Mont-d'Or (effet métro)
 
