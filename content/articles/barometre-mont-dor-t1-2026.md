@@ -1,5 +1,5 @@
 ---
-titre: Baromètre du Mont d'Or - T1 2027
+titre: Baromètre du Mont d'Or - T1 2028
 chapo: Hausse modérée des prix sur le secteur Saint-Didier / Saint-Cyr,
   accélération inattendue à Champagne-au-Mont-d'Or portée par l'effet métro.
   Décryptage trimestre par trimestre.
