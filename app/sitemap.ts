@@ -3,7 +3,7 @@ import { secteurs } from "./lib/data";
 import { articles } from "./lib/articles";
 
 export const dynamic = "force-static";
-const BASE = "https://rieg-immobilier-preview.netlify.app";
+const BASE = "https://romainrieg-immobilier.fr";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();

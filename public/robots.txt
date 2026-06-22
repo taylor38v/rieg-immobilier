@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://rieg-immobilier-preview.netlify.app/sitemap.xml
+Sitemap: https://romainrieg-immobilier.fr/sitemap.xml

@@ -12,7 +12,7 @@ const sans = Montserrat({ variable: "--font-sans", subsets: ["latin"], weight: [
 const serif = Cormorant_Garamond({ variable: "--font-serif", subsets: ["latin"], weight: ["400", "500", "600", "700"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://rieg-immobilier-preview.netlify.app"),
+  metadataBase: new URL("https://romainrieg-immobilier.fr"),
   title: {
     default: "Romain Rieg - Conseiller immobilier Lyon Ouest & Mont d'Or",
     template: "%s | Romain Rieg Immobilier",
@@ -21,14 +21,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "fr_FR",
-    url: "https://rieg-immobilier-preview.netlify.app",
+    url: "https://romainrieg-immobilier.fr",
     siteName: "Romain Rieg Immobilier",
     title: "Romain Rieg - Conseiller immobilier Lyon Ouest & Mont d'Or",
     description: "Estimation, vente, acquisition et gestion locative sur le Mont d'Or et l'Ouest lyonnais.",
     images: [{ url: "/photos/Ville-de-saint-didier-au-mont-d-or_1920.jpg", width: 1920, height: 1280 }],
   },
   twitter: { card: "summary_large_image" },
-  alternates: { canonical: "https://rieg-immobilier-preview.netlify.app" },
+  alternates: { canonical: "https://romainrieg-immobilier.fr" },
   robots: { index: true, follow: true },
 };
 
@@ -42,7 +42,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <WhatsApp />
         <HiddenForms />
         <RevealOnScroll />
-        <Script defer data-domain="rieg-immobilier-preview.netlify.app" src="https://plausible.io/js/script.js" strategy="afterInteractive" />
+        <Script defer data-domain="romainrieg-immobilier.fr" src="https://plausible.io/js/script.js" strategy="afterInteractive" />
       </body>
     </html>
   );

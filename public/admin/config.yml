@@ -16,9 +16,9 @@ publish_mode: simple
 media_folder: "public/uploads"
 public_folder: "/uploads"
 
-site_url: https://rieg-immobilier-preview.netlify.app
-display_url: https://rieg-immobilier-preview.netlify.app
-logo_url: https://rieg-immobilier-preview.netlify.app/photos/IAD_LOGO_FINAL-removebg-preview.png
+site_url: https://romainrieg-immobilier.fr
+display_url: https://romainrieg-immobilier.fr
+logo_url: https://romainrieg-immobilier.fr/photos/IAD_LOGO_FINAL-removebg-preview.png
 
 locale: fr
 
