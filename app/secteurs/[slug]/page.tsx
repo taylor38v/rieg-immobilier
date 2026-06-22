@@ -16,6 +16,7 @@ const VIDEO_BG: Record<string, string> = {
   "limonest": "/videos/secteurs/limonest.mp4",
   "champagne-au-mont-dor": "/videos/secteurs/champagne.mp4",
   "saint-just-saint-rambert": "/videos/secteurs/saint-just.mp4",
+  "andrezieux-boutheon": "/videos/secteurs/andrezieux.mp4",
 };
 
 export function generateStaticParams() {

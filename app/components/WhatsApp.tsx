@@ -19,7 +19,7 @@ export default function WhatsApp() {
         type="button"
         onClick={() => setOpen(true)}
         aria-label="Ouvrir la fiche contact"
-        className="fixed bottom-6 left-6 z-[60] w-24 h-24 transition-all hover:scale-110"
+        className="fixed bottom-4 left-4 sm:bottom-6 sm:left-6 z-[60] w-14 h-14 sm:w-24 sm:h-24 transition-all hover:scale-110"
         style={{ animation: "wapulse 2.4s infinite", borderRadius: "9999px", boxShadow: "0 10px 30px rgba(201,162,95,.4), 0 0 0 0 rgba(201,162,95,.7)" }}
       >
         <span className="block w-full h-full rounded-full overflow-hidden border-2 border-gold bg-navy">
@@ -30,8 +30,8 @@ export default function WhatsApp() {
             style={{ objectPosition: "center 25%" }}
           />
         </span>
-        <span className="absolute -bottom-1 -right-1 w-10 h-10 grid place-items-center bg-gold rounded-full border-[3px] border-ivory shadow-lg">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#061b2c" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+        <span className="absolute -bottom-1 -right-1 w-6 h-6 sm:w-10 sm:h-10 grid place-items-center bg-gold rounded-full border-2 sm:border-[3px] border-ivory shadow-lg">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#061b2c" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden className="w-3.5 h-3.5 sm:w-[22px] sm:h-[22px]">
             <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
           </svg>
         </span>

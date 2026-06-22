@@ -164,39 +164,26 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="max-w-7xl mx-auto px-6 py-24">
-        <div className="text-center mb-14">
-          <div className="inline-flex flex-wrap justify-center items-center gap-3 sm:gap-4 px-5 sm:px-8 py-4 sm:py-5 rounded-2xl bg-white border-2 border-gold/30 shadow-xl shadow-gold/20 max-w-full">
-            <svg width="110" height="35" viewBox="0 0 100 32" className="no-round w-[110px] sm:w-[140px] h-auto shrink-0">
-              <text x="0" y="22" fontSize="20" fontWeight="600" fill="#4285F4">G</text>
-              <text x="14" y="22" fontSize="20" fontWeight="600" fill="#EA4335">o</text>
-              <text x="27" y="22" fontSize="20" fontWeight="600" fill="#FBBC05">o</text>
-              <text x="40" y="22" fontSize="20" fontWeight="600" fill="#4285F4">g</text>
-              <text x="53" y="22" fontSize="20" fontWeight="600" fill="#34A853">l</text>
-              <text x="60" y="22" fontSize="20" fontWeight="600" fill="#EA4335">e</text>
-            </svg>
-            <span className="text-2xl sm:text-3xl text-gold whitespace-nowrap">★★★★★</span>
-            <span className="font-serif text-2xl sm:text-3xl font-bold text-navy whitespace-nowrap">{h.avis.note_chiffre}</span>
-          </div>
-          <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium mt-6">{h.avis.surtitre}</div>
-          <h2 className="font-serif text-3xl md:text-4xl mt-3">{h.avis.titre}</h2>
+      <section className="max-w-3xl mx-auto px-6 py-24 text-center">
+        <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-white border-2 border-gold/30 shadow-lg shadow-gold/10">
+          <svg width="100" height="32" viewBox="0 0 100 32" className="no-round w-[100px] h-auto shrink-0">
+            <text x="0" y="22" fontSize="20" fontWeight="600" fill="#4285F4">G</text>
+            <text x="14" y="22" fontSize="20" fontWeight="600" fill="#EA4335">o</text>
+            <text x="27" y="22" fontSize="20" fontWeight="600" fill="#FBBC05">o</text>
+            <text x="40" y="22" fontSize="20" fontWeight="600" fill="#4285F4">g</text>
+            <text x="53" y="22" fontSize="20" fontWeight="600" fill="#34A853">l</text>
+            <text x="60" y="22" fontSize="20" fontWeight="600" fill="#EA4335">e</text>
+          </svg>
+          <span className="text-sm uppercase tracking-widest text-muted">Avis clients</span>
         </div>
-        <div className="grid md:grid-cols-3 gap-8">
-          {h.avis.items.map((a) => (
-            <div key={a.nom} className="shine-hover rounded-xl p-8 bg-white border border-ink/10 hover:border-gold transition">
-              <div className="text-gold text-xl">★★★★★</div>
-              <p className="mt-5 leading-relaxed text-ink/80">"{a.texte}"</p>
-              <div className="mt-6 pt-6 border-t border-ink/10">
-                <div className="font-medium">{a.nom}</div>
-                <div className="text-xs text-muted">{a.contexte}</div>
-              </div>
-            </div>
-          ))}
-        </div>
-        <div className="text-center mt-10">
-          <a href={h.avis.cta_url} target="_blank" rel="noopener" className="inline-flex items-center gap-2 px-6 py-3 border-2 border-gold text-gold text-sm font-medium hover:bg-gold hover:text-navy transition rounded-full">
+        <h2 className="font-serif text-3xl md:text-4xl mt-6">La confiance se construit sur le terrain.</h2>
+        <p className="text-muted mt-4 max-w-2xl mx-auto leading-relaxed">
+          Je préfère laisser mes clients raconter leur expérience directement sur Google. Consultez les avis sur ma fiche — et si nous avons travaillé ensemble, le vôtre sera le bienvenu.
+        </p>
+        <div className="mt-8">
+          <a href={h.avis.cta_url} target="_blank" rel="noopener" className="inline-flex items-center gap-2 px-7 py-3.5 bg-gold text-navy font-semibold hover:bg-gold-soft transition rounded-full">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z"/><path d="M5.84 14.1a6.6 6.6 0 0 1 0-4.2V7.06H2.18a11 11 0 0 0 0 9.88l3.66-2.84z"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15A10.98 10.98 0 0 0 12 1 11 11 0 0 0 2.18 7.06l3.66 2.84C6.71 7.3 9.14 5.38 12 5.38z"/></svg>
-            {h.avis.cta_label}
+            Voir mes avis Google
           </a>
         </div>
       </section>
