@@ -1,12 +1,12 @@
 {
-  "meta_title": "Outils",
   "meta_description": "Calculateurs, simulateurs et carte interactive pour préparer votre projet immobilier sur le Mont d'Or et l'Ouest lyonnais.",
   "surtitre": "Boîte à outils",
-  "titre": "Huit outils, zéro promesse vide.",
-  "intro": "Le marché du Mont d'Or se décide sur des chiffres précis. J'ai construit ces outils pour vous donner les mêmes données que celles que j'utilise au quotidien - gratuitement, sans inscription.",
-  "disclaimer": "Les outils sont fournis à titre indicatif et ne se substituent pas à une analyse personnalisée. Pour toute décision engageante (vente, achat, fiscalité), un échange avec Romain est recommandé.",
   "cta_titre": "Vous préférez me parler directement ?",
-  "cta_intro": "Tous ces outils sont là pour préparer votre rendez-vous avec moi, pas pour me remplacer.",
   "cta_label": "Contactez-moi",
-  "cta_href": "/contact"
+  "intro": "Le marché immobilier des Monts d’Or, de l’Ouest lyonnais et de la Plaine du Forez ne se résume pas à une moyenne au m². Prix, délais de vente, rentabilité, capacité d’achat, frais annexes : chaque décision mérite des données claires.\n\nJ’ai conçu ces outils pour vous donner un premier niveau d’analyse, avec les mêmes indicateurs que ceux que j’utilise au quotidien dans mon accompagnement : gratuitement, sans inscription et sans engagement.",
+  "titre": "Huit outils, zéro promesse vide.",
+  "cta_href": "/contact",
+  "disclaimer": "Ces outils sont fournis à titre indicatif. Ils ne remplacent pas une analyse personnalisée de votre bien, de votre projet ou de votre situation. Pour toute décision engageante - vente, achat, investissement ou fiscalité - un échange avec Moi-même est recommandé.",
+  "cta_intro": "Tous ces outils sont là pour préparer votre rendez-vous avec moi, pas pour me remplacer.",
+  "meta_title": "Outils"
 }
