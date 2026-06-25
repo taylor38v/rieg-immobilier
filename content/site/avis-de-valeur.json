@@ -1,56 +1,81 @@
 {
-  "meta_title": "Avis de valeur · 24 - 48h",
   "meta_description": "Avis de valeur immobilier rapide, précis et gratuit en 24 - 48h. Mont d'Or, Ouest lyonnais et Plaine du Forez.",
-  "hero": {
-    "video": "/videos/secteurs/dardilly.mp4",
-    "surtitre": "Avis de valeur · 24 - 48h",
-    "titre": "Connaissez la valeur réelle de votre bien.",
-    "intro1": "Vous souhaitez connaître la valeur réelle de votre maison ou appartement à Saint-Didier-au-Mont-d'Or, dans l'Ouest lyonnais ou dans la Loire ?",
-    "intro2": "Je suis Romain Rieg, conseiller immobilier du réseau iad France. Avec mon expérience locale et mes outils performants, je vous propose un avis de valeur rapide, précis et gratuit en 24 - 48h. Originaire de la Loire (j'y ai vécu 20 ans) et basé à Saint-Didier-au-Mont-d'Or, je combine expertise terrain et force du réseau iad (+15 000 conseillers).",
-    "cta_primary_label": "Demander mon avis de valeur",
-    "cta_secondary_label": "💬 SMS",
-    "cta_secondary_url": "sms:+33679571473?body=Bonjour%20Romain%2C%20je%20souhaite%20un%20avis%20de%20valeur%20de%20mon%20bien.",
-    "mention": "Zéro engagement · 100% confidentiel"
+  "cta_final": {
+    "titre": "Démarrer mon avis de valeur",
+    "intro": "Six questions rapides - réponse sous 24 - 48h, sans engagement.",
+    "cta_label": "Démarrer le questionnaire"
   },
   "forces": {
     "surtitre": "Pourquoi faire estimer avec moi ?",
     "titre": "Trois forces concrètes.",
     "items": [
-      { "titre": "Expertise locale & comparatif précis", "desc": "Je connais parfaitement les marchés de Saint-Didier-au-Mont-d'Or, des Monts d'Or et de la Plaine du Forez. Chaque estimation s'appuie sur les ventes récentes dans votre quartier, les tendances actuelles du marché local ainsi que les caractéristiques uniques de votre logement." },
-      { "titre": "Outils premium & mise en valeur", "desc": "Mise en valeur premium avec photos UltraHD et prises de vue par drone si nécessaire. Analyse comparative détaillée présentée dans un dossier élégant, en version PDF ou papier, personnalisé avec mon logo - bien plus qu'un simple chiffre." },
-      { "titre": "Accompagnement complet & réactivité", "desc": "Filtrage des acquéreurs pour éviter les visites inutiles et conseils sur le prix optimal pour vendre rapidement et au meilleur prix. Votre bien bénéficie d'une visibilité étendue auprès de milliers de professionnels et acheteurs qualifiés (+15 000 conseillers iad)." }
+      {
+        "titre": "Expertise locale & comparatif précis",
+        "desc": "Je connais parfaitement les marchés des Monts d'Or, de l'Ouest lyonnais et de la Plaine du Forez. Chaque estimation s'appuie sur les ventes récentes dans votre secteur, les tendances actuelles du marché local et les caractéristiques propres à votre bien."
+      },
+      {
+        "titre": "Outils premium & mise en valeur",
+        "desc": "Photos UltraHD et prises de vue par drone si nécessaire, pour mettre votre bien en valeur dès le premier regard. L'estimation est restituée dans un dossier complet et soigné : comparatif de marché, fourchette de prix, conseils personnalisés. Bien plus qu'un simple chiffre."
+      },
+      {
+        "titre": "Accompagnement complet & réactivité",
+        "desc": "Sélection rigoureuse des acquéreurs pour éviter les visites inutiles, conseils sur le prix optimal et stratégie de diffusion adaptée. Votre bien bénéficie d'une visibilité maximale auprès de plus de 16 000 conseillers et acheteurs qualifiés du réseau iad."
+      }
     ]
-  },
-  "etapes": {
-    "surtitre": "Comment ça se déroule ?",
-    "titre": "Quatre étapes en 24 - 48h.",
-    "items": [
-      { "num": "01", "titre": "Contact & collecte d'informations", "desc": "Via le formulaire ou un contact direct par téléphone/email. Collecte des informations nécessaires pour une estimation précise (projet de vie, famille, etc.)." },
-      { "num": "02", "titre": "Visite sur place", "desc": "Avis de valeur réalisé directement chez vous pour évaluer le bien et ses atouts. Mise en valeur premium : photos UltraHD, drone si nécessaire, description détaillée." },
-      { "num": "03", "titre": "Rapport de valeur détaillé", "desc": "Rapport complet incluant prix estimé, fourchette de marché et conseils personnalisés. Visuel du dossier élégant pour montrer le sérieux et le professionnalisme du service format iad. Disponible sous 24 - 48h." },
-      { "num": "04", "titre": "Accompagnement pour la suite", "desc": "Conseils pour préparer la mise en vente, si vous souhaitez vendre. Stratégie personnalisée selon votre projet." }
-    ]
-  },
-  "romain_card": {
-    "titre": "Un avis de valeur honnête, basé sur de vrais comparables.",
-    "message": "Je ne survalorise pas pour signer un mandat. Je vous donne le prix juste, argumenté avec les ventes récentes de votre quartier. Si on doit revoir à la baisse, je vous le dis."
   },
   "carte_section": {
     "surtitre": "Mes secteurs d'intervention",
     "titre": "J'estime sur tout le Mont d'Or, l'Ouest lyonnais et la Plaine du Forez.",
     "intro": "Cliquez sur une commune pour ouvrir sa fiche détaillée."
   },
-  "confidentialite": "Vos données restent strictement confidentielles. Je suis le seul destinataire de votre demande.",
-  "cta_final": {
-    "titre": "Démarrer mon avis de valeur",
-    "intro": "Six questions rapides - réponse sous 24 - 48h, sans engagement.",
-    "cta_label": "Démarrer le questionnaire"
+  "etapes": {
+    "surtitre": "Comment ça se déroule ?",
+    "titre": "Quatre étapes en 24 - 48h.",
+    "items": [
+      {
+        "num": "01",
+        "titre": "Contact & collecte d'informations",
+        "desc": "Formulaire en ligne ou contact direct par téléphone ou email. Je recueille les informations clés pour une estimation précise : type de bien, superficie, situation personnelle, délais souhaités."
+      },
+      {
+        "num": "02",
+        "titre": "Visite sur place",
+        "desc": "Je me déplace directement chez vous pour évaluer votre bien dans le détail : surface, état général, atouts, points de vigilance et environnement immédiat. Tout ce qui fait la vraie valeur d'un bien ne se voit pas sur un plan."
+      },
+      {
+        "num": "03",
+        "titre": "Rapport de valeur détaillé",
+        "desc": "Vous recevez un dossier complet : prix estimé, fourchette de marché et conseils personnalisés. Remis en main propre, sous 24 à 48 h."
+      },
+      {
+        "num": "04",
+        "titre": "Accompagnement pour la suite",
+        "desc": "Que vous souhaitiez vendre maintenant ou plus tard, je vous conseille sur la meilleure stratégie à adopter selon votre projet et votre calendrier."
+      }
+    ]
   },
   "wizard_merci": {
     "surtitre": "Demande reçue",
     "titre_prefix": "Merci",
-    "intro": "Je reviens vers vous sous 24 - 48h avec un avis de valeur argumenté. Si vous le souhaitez, nous pourrons convenir d'une visite pour affiner la valeur de votre bien.",
+    "intro": "Je vous recontacte sous 24h pour un premier échange. Nous convenons ensemble d'une visite sur place pour affiner l'estimation et vous remettre un avis de valeur complet et argumenté.",
     "cta_label": "Retour à l'accueil",
     "cta_href": "/"
-  }
+  },
+  "confidentialite": "Vos données restent strictement confidentielles. Je suis le seul destinataire de votre demande.",
+  "romain_card": {
+    "titre": "Un avis de valeur honnête, basé sur de vrais comparables.",
+    "message": "Je ne survalorise pas pour signer un mandat. Je vous donne le prix juste, argumenté avec les ventes récentes de votre quartier. Si on doit revoir à la baisse, je vous le dis."
+  },
+  "hero": {
+    "surtitre": "Avis de valeur · 24 - 48h",
+    "intro1": "Vous souhaitez connaître la valeur réelle de votre maison ou appartement à Saint-Didier-au-Mont-d'Or, dans l'Ouest lyonnais ou dans la Loire ?",
+    "intro2": "Je suis Romain Rieg, conseiller immobilier iad basé à Saint-Didier-au-Mont-d'Or. Spécialiste de l'Ouest lyonnais, originaire de la Plaine du Forez où j'ai grandi, je connais ces marchés de l'intérieur. Je vous remets un avis de valeur personnalisé et sans engagement : sous 24 à 48h.",
+    "cta_primary_label": "Demander mon avis de valeur",
+    "mention": "Zéro engagement · 100% confidentiel",
+    "titre": "Connaissez la valeur réelle de votre bien.",
+    "cta_secondary_url": "sms:+33679571473?body=Bonjour%20Romain%2C%20je%20souhaite%20un%20avis%20de%20valeur%20de%20mon%20bien.",
+    "cta_secondary_label": "💬 SMS",
+    "video": "/videos/secteurs/dardilly.mp4"
+  },
+  "meta_title": "Avis de valeur · 24 - 48h"
 }
