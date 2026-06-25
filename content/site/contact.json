@@ -30,6 +30,7 @@
     "telephone_lien": "+33679571473",
     "whatsapp_label": "Envoyer un SMS",
     "whatsapp_url": "sms:+33679571473",
+    "formulaire_label": "Remplir un formulaire",
     "calcom_label": "Réserver 30 minutes",
     "email": "romain.rieg@iadfrance.fr",
     "horaires_titre": "Du lundi au samedi",
@@ -45,5 +46,6 @@
       "Données strictement confidentielles, jamais revendues"
     ]
   },
+  "footer_form_titre": "Pourquoi ce formulaire détaillé ?",
   "footer_form_note": "Pour gagner votre temps. En 30 secondes, votre besoin est qualifié et la réponse arrive vraiment ciblée. Plus efficace qu'un formulaire générique « nom / email / message »."
 }

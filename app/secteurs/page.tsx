@@ -33,15 +33,15 @@ export default function Page() {
                 <div className="text-sm text-muted mt-2">{s.quartiers.slice(0, 3).join(" · ")}</div>
               </div>
               <div>
-                <div className="text-xs uppercase tracking-widest text-muted">Prix/m² maison</div>
+                <div className="text-xs uppercase tracking-widest text-muted">{sl.prix_maison_label}</div>
                 <div className="font-serif text-xl mt-1">{formatPrix(s.prixM2Maison)}</div>
               </div>
               <div>
-                <div className="text-xs uppercase tracking-widest text-muted">Prix/m² appart.</div>
+                <div className="text-xs uppercase tracking-widest text-muted">{sl.prix_appart_label}</div>
                 <div className="font-serif text-xl mt-1">{formatPrix(s.prixM2Appart)}</div>
               </div>
               <div>
-                <div className="text-xs uppercase tracking-widest text-muted">Délai moyen</div>
+                <div className="text-xs uppercase tracking-widest text-muted">{sl.delai_label}</div>
                 <div className="font-serif text-xl mt-1">{s.delaiVente} j</div>
               </div>
             </div>

@@ -36,7 +36,10 @@
   "secteurs_section": {
     "surtitre": "Mes secteurs",
     "titre": "Deux zones que je connais par cœur.",
-    "intro": "Survolez une commune sur la carte pour voir les infos clés, cliquez pour ouvrir sa fiche détaillée."
+    "intro": "Survolez une commune sur la carte pour voir les infos clés, cliquez pour ouvrir sa fiche détaillée.",
+    "groupe_mont_dor_label": "Ouest Lyonnais",
+    "groupe_forez_label": "Plaine du Forez",
+    "zones_lien_label": "Découvrir la zone →"
   },
   "romain_card": {
     "titre": "Trouver le bon bien, c'est mon métier.",

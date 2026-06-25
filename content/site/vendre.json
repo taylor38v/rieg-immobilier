@@ -26,8 +26,10 @@
   "comparatif": {
     "surtitre": "Vendre seul vs vendre avec moi",
     "titre": "Le comparatif honnête.",
+    "badge": "⭐ Mon accompagnement",
     "label_avec": "Avec moi",
     "label_sans": "Tout seul",
+    "note": "La différence n'est pas dans le prix payé. Elle est dans ce que vous gagnez en sérénité, en temps, et en sécurité juridique.",
     "items": [
       { "avec": "Prix de vente optimisé", "sans": "Avis de valeur approximatif non professionnel" },
       { "avec": "Dossier administratif clé en main", "sans": "Gestion des diagnostics compliquée" },
@@ -53,11 +55,14 @@
   "secteurs_section": {
     "surtitre": "Mes secteurs d'intervention",
     "titre": "Là où je vends pour vous.",
-    "intro": "Survolez une commune pour voir les infos clés · cliquez pour ouvrir la fiche."
+    "intro": "Survolez une commune pour voir les infos clés · cliquez pour ouvrir la fiche.",
+    "groupe_mont_dor_label": "Ouest Lyonnais",
+    "groupe_forez_label": "Plaine du Forez"
   },
   "zones_section": {
     "surtitre": "Mes 2 zones",
     "titre": "Deux zones, une seule exigence.",
+    "lien_label": "Vendre dans cette zone →",
     "zones": [
       { "slug": "ouest-lyonnais", "titre": "Ouest lyonnais", "desc": "Saint-Didier · Saint-Cyr · Limonest · Écully · Dardilly · Champagne et limitrophes.", "image": "/photos/IMG_7282.jpeg" },
       { "slug": "plaine-du-forez", "titre": "Plaine du Forez", "desc": "Saint-Just-Saint-Rambert · Andrézieux-Bouthéon - j'y ai vécu 20 ans.", "image": "/photos/IMG_7295.jpeg" }

@@ -38,7 +38,11 @@
   "secteurs_section": {
     "surtitre": "Mes secteurs",
     "titre": "Les communes où je gère vos locations.",
-    "intro": "Cliquez sur une commune pour découvrir le marché local - démographie, écoles, prix au m², quartiers détaillés."
+    "intro": "Cliquez sur une commune pour découvrir le marché local - démographie, écoles, prix au m², quartiers détaillés.",
+    "groupe_mont_dor_label": "Ouest Lyonnais",
+    "groupe_forez_label": "Plaine du Forez",
+    "zones_lien_label": "Découvrir la zone →",
+    "loyer_label": "Loyer indicatif"
   },
   "romain_card": {
     "titre": "Vos revenus locatifs, sécurisés.",
@@ -53,5 +57,9 @@
     "question_surtitre": "Une question rapide ?",
     "question_titre": "Je réponds directement.",
     "question_desc": "Sans intermédiaire, sans standard. Téléphone ou SMS direct, vous choisissez."
+  },
+  "cta_contact": {
+    "titre": "Je réponds directement.",
+    "intro": "SMS, mail ou téléphone - une réponse personnelle sous 24 h."
   }
 }

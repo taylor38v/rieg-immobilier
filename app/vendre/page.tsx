@@ -65,7 +65,7 @@ export default function Page() {
             {/* Colonne "Avec Romain" - mise en valeur forte */}
             <div className="relative pt-3">
               <div className="absolute top-0 left-8 z-20 px-5 py-1.5 bg-gold text-navy text-xs uppercase tracking-widest font-bold rounded-full shadow-lg">
-                ⭐ Mon accompagnement
+                {v.comparatif.badge}
               </div>
               <div className="relative rounded-xl bg-gradient-to-br from-gold/30 via-gold/10 to-gold/5 border-2 border-gold p-8 pt-10 shadow-2xl shadow-gold/40 ring-4 ring-gold/20 overflow-hidden">
                 <div className="absolute -top-20 -right-20 w-64 h-64 bg-gold/30 rounded-full blur-3xl pointer-events-none" />
@@ -99,7 +99,7 @@ export default function Page() {
           </div>
 
           <p className="text-center text-ivory/60 text-sm mt-8 italic">
-            La différence n'est pas dans le prix payé. Elle est dans ce que vous gagnez en sérénité, en temps, et en sécurité juridique.
+            {v.comparatif.note}
           </p>
         </div>
       </section>
@@ -131,7 +131,7 @@ export default function Page() {
 
           <div className="mt-10 space-y-6">
             <div>
-              <div className="text-base font-semibold uppercase tracking-[0.25em] text-gold mb-4">Ouest Lyonnais</div>
+              <div className="text-base font-semibold uppercase tracking-[0.25em] text-gold mb-4">{v.secteurs_section.groupe_mont_dor_label}</div>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
                 {secteurs
                   .filter((s) => !["saint-just-saint-rambert", "andrezieux-boutheon"].includes(s.slug))
@@ -144,7 +144,7 @@ export default function Page() {
               </div>
             </div>
             <div>
-              <div className="text-base font-semibold uppercase tracking-[0.25em] text-gold mb-4">Plaine du Forez</div>
+              <div className="text-base font-semibold uppercase tracking-[0.25em] text-gold mb-4">{v.secteurs_section.groupe_forez_label}</div>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
                 {secteurs
                   .filter((s) => ["saint-just-saint-rambert", "andrezieux-boutheon"].includes(s.slug))
@@ -173,7 +173,7 @@ export default function Page() {
                 <div className="p-6">
                   <div className="font-serif text-xl text-navy group-hover:text-gold transition">{z.titre}</div>
                   <p className="text-sm text-muted mt-2">{z.desc}</p>
-                  <span className="inline-block mt-4 text-xs text-navy link-underline">Vendre dans cette zone →</span>
+                  <span className="inline-block mt-4 text-xs text-navy link-underline">{v.zones_section.lien_label}</span>
                 </div>
               </Link>
             ))}

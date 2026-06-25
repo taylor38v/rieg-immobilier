@@ -35,6 +35,12 @@
     "titre": "Un avis de valeur honnête, basé sur de vrais comparables.",
     "message": "Je ne survalorise pas pour signer un mandat. Je vous donne le prix juste, argumenté avec les ventes récentes de votre quartier. Si on doit revoir à la baisse, je vous le dis."
   },
+  "carte_section": {
+    "surtitre": "Mes secteurs d'intervention",
+    "titre": "J'estime sur tout le Mont d'Or, l'Ouest lyonnais et la Plaine du Forez.",
+    "intro": "Cliquez sur une commune pour ouvrir sa fiche détaillée."
+  },
+  "confidentialite": "Vos données restent strictement confidentielles. Je suis le seul destinataire de votre demande.",
   "cta_final": {
     "titre": "Démarrer mon avis de valeur",
     "intro": "Six questions rapides - réponse sous 24 - 48h, sans engagement.",

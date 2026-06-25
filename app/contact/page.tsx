@@ -45,7 +45,7 @@ export default function Page() {
                   <div className="w-12 h-12 grid place-items-center bg-navy text-gold font-serif text-xl rounded-full shrink-0">💬</div>
                   <div className="flex-1 min-w-0">
                     <div className="text-xs uppercase tracking-widest text-muted">SMS direct</div>
-                    <div className="font-serif text-lg text-navy group-hover:text-gold transition">Envoyer un SMS</div>
+                    <div className="font-serif text-lg text-navy group-hover:text-gold transition">{c.sidebar.whatsapp_label}</div>
                   </div>
                 </a>
 
@@ -68,7 +68,7 @@ export default function Page() {
                   </div>
                   <div className="flex-1 min-w-0">
                     <div className="text-xs uppercase tracking-widest text-muted">Formulaire</div>
-                    <div className="font-serif text-lg text-navy group-hover:text-gold transition">Remplir un formulaire</div>
+                    <div className="font-serif text-lg text-navy group-hover:text-gold transition">{c.sidebar.formulaire_label}</div>
                   </div>
                 </a>
               </div>
@@ -89,7 +89,7 @@ export default function Page() {
             </div>
 
             <div className="rounded-xl bg-ivory-deep p-6 text-sm text-muted leading-relaxed">
-              <strong className="text-navy">Pourquoi ce formulaire détaillé ?</strong><br />
+              <strong className="text-navy">{c.footer_form_titre}</strong><br />
               {c.footer_form_note}
             </div>
           </aside>

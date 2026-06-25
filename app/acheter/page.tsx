@@ -85,7 +85,7 @@ export default function Page() {
 
           <div className="mt-10 space-y-6">
             <div>
-              <div className="text-base font-semibold uppercase tracking-[0.25em] text-gold mb-4">Ouest Lyonnais</div>
+              <div className="text-base font-semibold uppercase tracking-[0.25em] text-gold mb-4">{a.secteurs_section.groupe_mont_dor_label}</div>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
                 {secteurs
                   .filter((s) => !["saint-just-saint-rambert", "andrezieux-boutheon"].includes(s.slug))
@@ -98,7 +98,7 @@ export default function Page() {
               </div>
             </div>
             <div>
-              <div className="text-base font-semibold uppercase tracking-[0.25em] text-gold mb-4">Plaine du Forez</div>
+              <div className="text-base font-semibold uppercase tracking-[0.25em] text-gold mb-4">{a.secteurs_section.groupe_forez_label}</div>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
                 {secteurs
                   .filter((s) => ["saint-just-saint-rambert", "andrezieux-boutheon"].includes(s.slug))
@@ -127,7 +127,7 @@ export default function Page() {
                 <div className="p-6">
                   <div className="font-serif text-xl text-navy group-hover:text-gold transition">{z.titre}</div>
                   <p className="text-sm text-muted mt-2">{z.desc}</p>
-                  <span className="inline-block mt-4 text-xs text-navy link-underline">Découvrir la zone →</span>
+                  <span className="inline-block mt-4 text-xs text-navy link-underline">{a.secteurs_section.zones_lien_label}</span>
                 </div>
               </Link>
             ))}

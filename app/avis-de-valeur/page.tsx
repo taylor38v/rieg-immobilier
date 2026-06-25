@@ -96,9 +96,9 @@ export default function Page() {
 
       <section className="bg-navy text-ivory py-24">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">Mes secteurs d'intervention</div>
-          <h2 className="font-serif text-3xl md:text-4xl mt-3">J'estime sur tout le Mont d'Or, l'Ouest lyonnais et la Plaine du Forez.</h2>
-          <p className="text-ivory/70 mt-4 max-w-2xl">Cliquez sur une commune pour ouvrir sa fiche détaillée.</p>
+          <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{av.carte_section.surtitre}</div>
+          <h2 className="font-serif text-3xl md:text-4xl mt-3">{av.carte_section.titre}</h2>
+          <p className="text-ivory/70 mt-4 max-w-2xl">{av.carte_section.intro}</p>
           <div className="mt-10">
             <CityMap height={520} includeLimitrophes={true} />
           </div>
@@ -183,7 +183,7 @@ function Wizard({ onCancel }: { onCancel: () => void }) {
           <Field label="Nom & prénom" value={data.nom} onChange={(v) => set("nom", v)} />
           <Field label="Email" type="email" value={data.email} onChange={(v) => set("email", v)} />
           <Field label="Téléphone" type="tel" value={data.tel} onChange={(v) => set("tel", v)} />
-          <p className="text-xs text-muted">Vos données restent strictement confidentielles. Je suis le seul destinataire de votre demande.</p>
+          <p className="text-xs text-muted">{av.confidentialite}</p>
         </div>
       )},
   ];

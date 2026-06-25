@@ -94,27 +94,27 @@ export default function Page() {
 
           <div className="mt-10 space-y-6">
             <div>
-              <div className="text-base font-semibold uppercase tracking-[0.25em] text-gold mb-4">Ouest Lyonnais</div>
+              <div className="text-base font-semibold uppercase tracking-[0.25em] text-gold mb-4">{l.secteurs_section.groupe_mont_dor_label}</div>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
                 {secteurs
                   .filter((s) => !["saint-just-saint-rambert", "andrezieux-boutheon"].includes(s.slug))
                   .map((s) => (
                     <Link key={s.slug} href={`/secteurs/${s.slug}`} className="group p-4 bg-navy-soft hover:bg-gold hover:text-navy transition border border-ivory/10 hover:border-gold rounded-xl">
                       <div className="font-serif text-lg">{s.nom}</div>
-                      <div className="text-xs text-ivory/60 group-hover:text-navy/70 mt-1">Loyer indicatif {Math.round(s.prixM2Appart * 0.0042)} €/m²</div>
+                      <div className="text-xs text-ivory/60 group-hover:text-navy/70 mt-1">{l.secteurs_section.loyer_label} {Math.round(s.prixM2Appart * 0.0042)} €/m²</div>
                     </Link>
                   ))}
               </div>
             </div>
             <div>
-              <div className="text-base font-semibold uppercase tracking-[0.25em] text-gold mb-4">Plaine du Forez</div>
+              <div className="text-base font-semibold uppercase tracking-[0.25em] text-gold mb-4">{l.secteurs_section.groupe_forez_label}</div>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
                 {secteurs
                   .filter((s) => ["saint-just-saint-rambert", "andrezieux-boutheon"].includes(s.slug))
                   .map((s) => (
                     <Link key={s.slug} href={`/secteurs/${s.slug}`} className="group p-4 bg-navy-soft hover:bg-gold hover:text-navy transition border border-ivory/10 hover:border-gold rounded-xl">
                       <div className="font-serif text-lg">{s.nom}</div>
-                      <div className="text-xs text-ivory/60 group-hover:text-navy/70 mt-1">Loyer indicatif {Math.round(s.prixM2Appart * 0.0042)} €/m²</div>
+                      <div className="text-xs text-ivory/60 group-hover:text-navy/70 mt-1">{l.secteurs_section.loyer_label} {Math.round(s.prixM2Appart * 0.0042)} €/m²</div>
                     </Link>
                   ))}
               </div>
@@ -136,7 +136,7 @@ export default function Page() {
                 <div className="p-6">
                   <div className="font-serif text-xl text-navy group-hover:text-gold transition">{z.titre}</div>
                   <p className="text-sm text-muted mt-2">{z.desc}</p>
-                  <span className="inline-block mt-4 text-xs text-navy link-underline">Découvrir la zone →</span>
+                  <span className="inline-block mt-4 text-xs text-navy link-underline">{l.secteurs_section.zones_lien_label}</span>
                 </div>
               </Link>
             ))}
@@ -146,8 +146,8 @@ export default function Page() {
 
       <ContactCTA
         variant="ivory"
-        titre="Je réponds directement."
-        intro="SMS, mail ou téléphone - une réponse personnelle sous 24 h."
+        titre={l.cta_contact.titre}
+        intro={l.cta_contact.intro}
         smsBody="Bonjour Romain, j'ai une question sur la location. "
         mailSubject="Question location"
       />
