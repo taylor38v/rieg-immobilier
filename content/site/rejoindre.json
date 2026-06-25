@@ -104,17 +104,17 @@
       {
         "num": "01",
         "titre": "Échange découverte",
-        "desc": "30 minutes en visio ou autour d'un café. Je vous présente concrètement le quotidien, la rémunération réelle, ce qui marche et ce qui est dur."
+        "desc": "30 minutes en visio ou autour d'un café. Je vous présente concrètement **le quotidien, la rémunération réelle, ce qui marche et ce qui est dur.**"
       },
       {
         "num": "02",
         "titre": "Validation des prérequis",
-        "desc": "Vérification du statut, des éventuels droits Pôle Emploi, mise en relation avec mon gestionnaire administratif iad."
+        "desc": "Vérification du statut, des éventuels droits France Travail, validation de votre projet et mise en relation avec mon gestionnaire administratif iad."
       },
       {
         "num": "03",
         "titre": "Formation en ligne & coaching",
-        "desc": "Formation iad en ligne (parcours certifiant conforme loi ALUR), accessible à votre rythme, complétée par du coaching individuel et des ateliers en présentiel - prise en charge à 100%."
+        "desc": "Formation iad en ligne (parcours certifiant conforme loi ALUR), accessible à votre rythme, complétée par du coaching individuel et des ateliers en présentiel."
       },
       {
         "num": "04",
@@ -124,7 +124,7 @@
       {
         "num": "05",
         "titre": "Autonomie & développement",
-        "desc": "Vous devenez maître de votre activité. Si l'envie vous vient, vous pourrez à votre tour recruter et créer votre équipe."
+        "desc": "**Premiers mandats, premières ventes, premières fiertés.** Vous êtes désormais maître de votre activité et de votre agenda. Et si l'aventure vous donne envie d'aller plus loin, vous pourrez à votre tour recruter, accompagner et bâtir votre propre équipe."
       }
     ]
   },
