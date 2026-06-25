@@ -846,18 +846,54 @@ collections:
     format: "json"
     summary: "{{titre_seo}}"
     fields:
-      - { name: "video", label: "Vidéo de fond hero", widget: "file" }
-      - { name: "titre_seo", label: "Titre SEO", widget: "string" }
-      - { name: "h1", label: "Titre H1", widget: "string" }
-      - { name: "intro", label: "Paragraphes intro", widget: "list", field: { name: "p", label: "Paragraphe", widget: "text" } }
-      - { name: "image", label: "Image principale", widget: "image" }
-      - { name: "communes_label", label: "Liste des communes (texte)", widget: "string" }
+      # --- Hero / bannière ---
+      - { name: "video", label: "🎬 Vidéo de fond hero (bannière)", widget: "file", required: false, hint: "Uploade un .mp4 ou choisis une vidéo existante (/videos/secteurs/). Laisse vide pour un fond sans vidéo." }
+      - { name: "titre_seo", label: "Titre SEO (onglet navigateur)", widget: "string" }
+      - { name: "hero_surtitre", label: "Hero · surtitre (au-dessus du H1)", widget: "string", required: false }
+      - { name: "h1", label: "Hero · titre H1", widget: "string" }
+      - { name: "intro", label: "Hero · paragraphes intro", widget: "list", field: { name: "p", label: "Paragraphe", widget: "text" } }
+      - { name: "communes_label", label: "Hero · ligne communes (petit texte or)", widget: "string", required: false }
+      - { name: "hero_cta_label", label: "Hero · libellé du bouton principal", widget: "string", required: false }
+      - { name: "hero_reassurance", label: "Hero · texte de réassurance sous les boutons", widget: "string", required: false }
+      - { name: "retour_label", label: "Hero · lien retour (← Vendre)", widget: "string", required: false }
+      - { name: "image", label: "🖼️ Image de fond hero (alternative à la vidéo)", widget: "image", required: false, hint: "Si la vidéo ci-dessus est vide, c'est cette image qui sert de fond au hero. Permet d'avoir une image au lieu d'une vidéo." }
+      # --- Section Atouts ---
+      - { name: "atouts_surtitre", label: "Atouts · surtitre", widget: "string", required: false }
+      - { name: "atouts_titre", label: "Atouts · titre", widget: "string", required: false }
       - name: "atouts"
-        label: "Atouts (3)"
+        label: "Atouts (cartes)"
         widget: "list"
         fields:
           - { name: "titre", label: "Titre", widget: "string" }
           - { name: "desc", label: "Description", widget: "text" }
+      # --- Section Processus ---
+      - { name: "process_surtitre", label: "Processus · surtitre", widget: "string", required: false }
+      - { name: "process_titre", label: "Processus · titre", widget: "string", required: false }
+      - name: "etapes"
+        label: "Processus · étapes"
+        widget: "list"
+        required: false
+        collapsed: true
+        fields:
+          - { name: "num", label: "Numéro (01, 02…)", widget: "string" }
+          - { name: "titre", label: "Titre de l'étape", widget: "string" }
+          - { name: "desc", label: "Description", widget: "text" }
+      # --- Section Positionnement (communes) ---
+      - { name: "positionnement_surtitre", label: "Positionnement · surtitre", widget: "string", required: false }
+      - { name: "positionnement_titre", label: "Positionnement · titre", widget: "text", required: false }
+      - { name: "positionnement_texte", label: "Positionnement · paragraphe", widget: "text", required: false }
+      - { name: "communes_principales_label", label: "Libellé « Communes principales »", widget: "string", required: false }
+      - { name: "communes_principales", label: "Communes principales (puces cliquables)", widget: "list", required: false, field: { name: "commune", label: "Commune", widget: "string" } }
+      - { name: "limitrophes_label", label: "Libellé communes limitrophes", widget: "string", required: false }
+      - { name: "communes_limitrophes", label: "Communes limitrophes (puces)", widget: "list", required: false, field: { name: "commune", label: "Commune", widget: "string" } }
+      - { name: "limitrophes_note", label: "Note sous les limitrophes", widget: "text", required: false }
+      # --- Section Carte ---
+      - { name: "carte_surtitre", label: "Carte · surtitre", widget: "string", required: false }
+      - { name: "carte_titre", label: "Carte · titre", widget: "string", required: false }
+      - { name: "carte_texte", label: "Carte · texte d'intro", widget: "text", required: false }
+      # --- CTA final ---
+      - { name: "cta_titre", label: "CTA final · titre", widget: "string", required: false }
+      - { name: "cta_intro", label: "CTA final · sous-titre", widget: "text", required: false }
 
   - name: "secteurs-detail"
     label: "🏘️ Fiches communes (/secteurs/...)"
@@ -944,5 +980,18 @@ collections:
           - { name: "calcom", label: "Lien Cal.com", widget: "string", required: false }
           - { name: "horaires", label: "Horaires affichés", widget: "string" }
           - { name: "delai_avis", label: "Délai promis pour l'avis de valeur", widget: "string", default: "24-48 h" }
+          - { name: "tiktok", label: "TikTok URL", widget: "string", required: false }
           - { name: "bio_courte", label: "Bio courte (footer / cards)", widget: "text" }
           - { name: "bio_longue", label: "Bio longue (page À propos)", widget: "text" }
+          - name: "carte"
+            label: "🗺️ Carte interactive · libellés"
+            widget: "object"
+            collapsed: true
+            required: false
+            hint: "Textes affichés sur la carte des secteurs (légende et aide)."
+            fields:
+              - { name: "legende_titre", label: "Titre de la légende", widget: "string", required: false }
+              - { name: "label_mont_dor", label: "Libellé zone Mont d'Or / Ouest lyonnais", widget: "string", required: false }
+              - { name: "label_forez", label: "Libellé zone Plaine du Forez", widget: "string", required: false }
+              - { name: "label_limitrophes", label: "Libellé communes limitrophes", widget: "string", required: false }
+              - { name: "aide", label: "Texte d'aide (Clic = fiche…)", widget: "string", required: false }

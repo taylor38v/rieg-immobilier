@@ -3,6 +3,16 @@ import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import communesGeo from "../lib/communes-geo.json";
 import { secteurs, formatPrix } from "../lib/data";
+import { settings } from "../lib/_generated/settings";
+
+// Libellés de la carte, éditables via le CMS (Réglages globaux → Carte)
+const CARTE = {
+  legendeTitre: settings.carte?.legende_titre ?? "Mes secteurs d'intervention",
+  labelMontDor: settings.carte?.label_mont_dor ?? "Mont d'Or / Ouest lyonnais",
+  labelForez: settings.carte?.label_forez ?? "Plaine du Forez",
+  labelLimitrophes: settings.carte?.label_limitrophes ?? "Communes limitrophes (mobilité)",
+  aide: settings.carte?.aide ?? "Clic = fiche commune · Molette = zoom",
+};
 
 type Tier = "primaire" | "secondaire" | "limitrophe";
 
@@ -141,7 +151,7 @@ export default function CityMap({
 
         const layer = L.geoJSON(f.geometry as GeoJSON.GeoJsonObject, { style: baseStyle as L.PathOptions }).addTo(layerGroup);
 
-        const zoneLabel = z.zone === "mont-dor" ? "Mont d'Or / Ouest lyonnais" : "Plaine du Forez";
+        const zoneLabel = z.zone === "mont-dor" ? CARTE.labelMontDor : CARTE.labelForez;
         const tierLabel = z.tier === "primaire" ? "" : "Commune limitrophe";
         const tooltip = `<div style="font-family:Montserrat,sans-serif;padding:4px 6px;line-height:1.3;min-width:180px">
           <div style="color:${z.zone === "mont-dor" ? "#c9a25f" : "#5b8aa0"};font-size:9px;letter-spacing:0.15em;text-transform:uppercase;font-weight:600">${zoneLabel}</div>
@@ -181,22 +191,22 @@ export default function CityMap({
 
       {showLegend && (
         <div className="absolute top-4 left-4 z-[1000] bg-navy/95 text-ivory px-4 py-3 max-w-[300px] rounded-xl">
-          <div className="text-[10px] uppercase tracking-[0.25em] text-gold mb-2">Mes secteurs d'intervention</div>
+          <div className="text-[10px] uppercase tracking-[0.25em] text-gold mb-2">{CARTE.legendeTitre}</div>
           <div className="space-y-1.5 text-xs">
             <div className="flex items-center gap-2">
               <span className="w-4 h-3 inline-block" style={{ background: "rgba(201,162,95,0.55)", border: "2px solid #c9a25f" }} />
-              <span className="text-ivory">Mont d'Or / Ouest lyonnais</span>
+              <span className="text-ivory">{CARTE.labelMontDor}</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="w-4 h-3 inline-block" style={{ background: "rgba(91,138,160,0.55)", border: "2px solid #5b8aa0" }} />
-              <span className="text-ivory">Plaine du Forez</span>
+              <span className="text-ivory">{CARTE.labelForez}</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="w-4 h-3 inline-block" style={{ background: "rgba(201,162,95,0.15)", border: "1px dashed #c9a25f" }} />
-              <span className="text-ivory/75 italic">Communes limitrophes (mobilité)</span>
+              <span className="text-ivory/75 italic">{CARTE.labelLimitrophes}</span>
             </div>
           </div>
-          <div className="text-[10px] text-ivory/60 mt-2 pt-2 border-t border-ivory/15">Clic = fiche commune · Molette = zoom</div>
+          <div className="text-[10px] text-ivory/60 mt-2 pt-2 border-t border-ivory/15">{CARTE.aide}</div>
         </div>
       )}
 

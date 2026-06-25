@@ -120,29 +120,66 @@ export default async function Page(props: PageProps<"/vendre/[zone]">) {
   const communesData = meta.communes.map((slug) => secteurs.find((s) => s.slug === slug)).filter(Boolean);
   const territoire = findZone(zone);
 
+  // Tous les libellés/textes de la page sont éditables via le CMS (content/zones/*.json),
+  // avec une valeur par défaut si le champ n'est pas renseigné.
+  const ui = {
+    heroSurtitre: z.hero_surtitre ?? "Mon secteur d'intervention",
+    retourLabel: z.retour_label ?? "← Vendre",
+    heroCtaLabel: z.hero_cta_label ?? "Me contacter",
+    heroReassurance: z.hero_reassurance ?? "Zéro engagement · 100% confidentiel",
+    atoutsSurtitre: z.atouts_surtitre ?? "Pourquoi me confier votre bien ?",
+    atoutsTitre: z.atouts_titre ?? "Trois atouts qui font la différence.",
+    processSurtitre: z.process_surtitre ?? "Le processus",
+    processTitre: z.process_titre ?? "Quatre étapes claires.",
+    carteSurtitre: z.carte_surtitre ?? "Les communes",
+    carteTitre: z.carte_titre ?? "Survolez la carte pour explorer.",
+    carteTexte: z.carte_texte ?? "Cliquez sur une commune pour ouvrir sa fiche détaillée - démographie, écoles, restaurants, quartiers, prix au m².",
+    ctaTitre: z.cta_titre ?? "Et si on commençait par un avis de valeur ?",
+    ctaIntro: z.cta_intro ?? "Gratuit, argumenté, sous 24 - 48h - sans engagement de mandat.",
+  };
+
+  const etapesData: { num: string; titre: string; desc: string }[] =
+    Array.isArray(z.etapes) && z.etapes.length
+      ? z.etapes
+      : etapes.map(([num, titre, desc]) => ({ num, titre, desc }));
+
+  const pos = {
+    surtitre: z.positionnement_surtitre ?? "Mon positionnement",
+    titre: z.positionnement_titre ?? territoire?.intro ?? "",
+    texte: z.positionnement_texte ?? territoire?.positionnement ?? "",
+    principalesLabel: z.communes_principales_label ?? "Communes principales",
+    principales: (z.communes_principales as string[] | undefined) ?? territoire?.principales ?? [],
+    limitrophesLabel: z.limitrophes_label ?? "+ communes limitrophes que je couvre également",
+    limitrophes: (z.communes_limitrophes as string[] | undefined) ?? territoire?.limitrophes ?? [],
+    limitrophesNote:
+      z.limitrophes_note ??
+      "Je ne me limite jamais strictement aux communes principales - chaque projet sur les limitrophes est étudié avec la même attention.",
+  };
+  const showPos = !!(pos.titre || pos.principales.length);
+
   return (
     <>
       <section className="relative text-ivory py-32 overflow-hidden bg-navy">
-        <HeroBackground video={z.video} overlay={0.65} />
+        <HeroBackground video={z.video || undefined} images={z.image ? [z.image] : undefined} overlay={0.65} />
         <div className="relative max-w-7xl mx-auto px-6">
-          <Link href="/vendre" className="text-ivory/60 text-sm">← Vendre</Link>
-          <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium mt-6">Mon secteur d'intervention</div>
+          <Link href="/vendre" className="text-ivory/60 text-sm">{ui.retourLabel}</Link>
+          <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium mt-6">{ui.heroSurtitre}</div>
           <h1 className="font-serif text-4xl md:text-6xl mt-3 leading-[1.1] max-w-4xl">{z.h1}</h1>
           <div className="text-ivory/80 text-lg mt-8 max-w-3xl space-y-3 leading-relaxed">
             {z.intro.map((p: string, i: number) => <p key={i}>{p}</p>)}
           </div>
           <div className="text-xs uppercase tracking-widest text-gold mt-8">{z.communes_label}</div>
           <div className="flex flex-wrap gap-4 mt-8">
-            <Link href="/contact" className="px-7 py-4 bg-gold text-navy font-semibold hover:bg-gold-soft rounded-full transition shadow-md">Me contacter</Link>
+            <Link href="/contact" className="px-7 py-4 bg-gold text-navy font-semibold hover:bg-gold-soft rounded-full transition shadow-md">{ui.heroCtaLabel}</Link>
             <ContactButtons smsBody={`Bonjour Romain, je souhaite un avis sur ${z.h1.toLowerCase()}. `} mailSubject={`Avis ${territoire?.nom || zone}`} />
           </div>
-          <div className="mt-4 text-xs text-ivory/60">Zéro engagement · 100% confidentiel</div>
+          <div className="mt-4 text-xs text-ivory/60">{ui.heroReassurance}</div>
         </div>
       </section>
 
       <section className="max-w-6xl mx-auto px-6 py-24">
-        <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">Pourquoi me confier votre bien ?</div>
-        <h2 className="font-serif text-3xl md:text-4xl mt-3">Trois atouts qui font la différence.</h2>
+        <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{ui.atoutsSurtitre}</div>
+        <h2 className="font-serif text-3xl md:text-4xl mt-3">{ui.atoutsTitre}</h2>
         <div className="grid md:grid-cols-3 gap-6 mt-12">
           {z.atouts.map((a: { titre: string; desc: string }, i: number) => (
             <div
@@ -162,27 +199,27 @@ export default async function Page(props: PageProps<"/vendre/[zone]">) {
 
       <section className="bg-navy text-ivory py-24">
         <div className="max-w-5xl mx-auto px-6">
-          <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">Le processus</div>
-          <h2 className="font-serif text-3xl md:text-4xl mt-3">Quatre étapes claires.</h2>
+          <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{ui.processSurtitre}</div>
+          <h2 className="font-serif text-3xl md:text-4xl mt-3">{ui.processTitre}</h2>
 
           <div className="mt-16 relative">
             <div className="absolute left-7 top-8 bottom-8 w-px bg-gradient-to-b from-gold via-gold/30 to-gold/0 hidden md:block" />
             <div className="space-y-6">
-              {etapes.map(([n, t, d], i) => (
+              {etapesData.map((e, i) => (
                 <div
-                  key={n}
+                  key={e.num || i}
                   className="group relative rounded-xl shine-hover bg-navy-soft border border-ivory/10 hover:border-gold p-6 md:pl-20 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-gold/10"
                 >
                   <div className="flex items-start gap-4 md:block">
                     <div className="shrink-0 md:absolute md:left-2 md:top-6 w-12 h-12 rounded-full bg-gold text-navy font-serif text-xl font-bold grid place-items-center shadow-lg group-hover:scale-110 transition">
-                      {n}
+                      {e.num}
                     </div>
                     <div>
-                      <div className="font-serif text-2xl group-hover:text-gold transition">{t}</div>
-                      <div className="text-ivory/75 mt-3 leading-relaxed">{d}</div>
+                      <div className="font-serif text-2xl group-hover:text-gold transition">{e.titre}</div>
+                      <div className="text-ivory/75 mt-3 leading-relaxed">{e.desc}</div>
                     </div>
                   </div>
-                  {i < etapes.length - 1 && (
+                  {i < etapesData.length - 1 && (
                     <div className="absolute right-6 bottom-6 text-gold/30 group-hover:text-gold transition text-2xl">↓</div>
                   )}
                 </div>
@@ -192,30 +229,30 @@ export default async function Page(props: PageProps<"/vendre/[zone]">) {
         </div>
       </section>
 
-      {territoire && (
+      {showPos && (
         <section className="max-w-7xl mx-auto px-6 py-20">
           <div className="grid lg:grid-cols-[1.2fr_2fr] gap-12">
             <div>
-              <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">Mon positionnement</div>
-              <h2 className="font-serif text-4xl md:text-5xl mt-3 leading-tight">{territoire.intro}</h2>
-              <p className="text-muted mt-5 leading-relaxed">{territoire.positionnement}</p>
+              <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{pos.surtitre}</div>
+              <h2 className="font-serif text-4xl md:text-5xl mt-3 leading-tight">{pos.titre}</h2>
+              <p className="text-muted mt-5 leading-relaxed">{pos.texte}</p>
             </div>
             <div>
-              <div className="text-sm md:text-base uppercase tracking-[0.25em] text-gold font-semibold mb-4">Communes principales</div>
+              <div className="text-sm md:text-base uppercase tracking-[0.25em] text-gold font-semibold mb-4">{pos.principalesLabel}</div>
               <div className="flex flex-wrap gap-2">
-                {territoire.principales.map((c) => (
+                {pos.principales.map((c) => (
                   <CommuneLink key={c} nom={c} className="px-4 py-2 bg-navy text-ivory text-sm rounded-full font-medium shadow-md hover:shadow-lg transition" />
                 ))}
               </div>
-              {territoire.limitrophes.length > 0 && (
+              {pos.limitrophes.length > 0 && (
                 <>
-                  <div className="text-sm md:text-base uppercase tracking-[0.25em] text-gold font-semibold mb-4 mt-8">+ communes limitrophes que je couvre également</div>
+                  <div className="text-sm md:text-base uppercase tracking-[0.25em] text-gold font-semibold mb-4 mt-8">{pos.limitrophesLabel}</div>
                   <div className="flex flex-wrap gap-2">
-                    {territoire.limitrophes.map((c) => (
+                    {pos.limitrophes.map((c) => (
                       <CommuneLink key={c} nom={c} className="px-3 py-1.5 bg-gold/10 text-navy text-sm border border-gold/40 rounded-full hover:bg-gold hover:border-gold transition" />
                     ))}
                   </div>
-                  <p className="text-xs text-muted mt-5 italic">Je ne me limite jamais strictement aux communes principales - chaque projet sur les limitrophes est étudié avec la même attention.</p>
+                  <p className="text-xs text-muted mt-5 italic">{pos.limitrophesNote}</p>
                 </>
               )}
             </div>
@@ -225,9 +262,9 @@ export default async function Page(props: PageProps<"/vendre/[zone]">) {
 
       <section className="bg-ivory-deep py-20">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">Les communes</div>
-          <h2 className="font-serif text-4xl md:text-5xl mt-3">Survolez la carte pour explorer.</h2>
-          <p className="text-muted mt-3 max-w-2xl">Cliquez sur une commune pour ouvrir sa fiche détaillée - démographie, écoles, restaurants, quartiers, prix au m².</p>
+          <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{ui.carteSurtitre}</div>
+          <h2 className="font-serif text-4xl md:text-5xl mt-3">{ui.carteTitre}</h2>
+          <p className="text-muted mt-3 max-w-2xl">{ui.carteTexte}</p>
           <div className="mt-10">
             {meta.zoneFilter ? (
               <CityMap height={520} zoneFilter={meta.zoneFilter} includeLimitrophes showLegend />
@@ -262,8 +299,8 @@ export default async function Page(props: PageProps<"/vendre/[zone]">) {
 
       <ContactCTA
         variant="ivory"
-        titre="Et si on commençait par un avis de valeur ?"
-        intro="Gratuit, argumenté, sous 24 - 48h - sans engagement de mandat."
+        titre={ui.ctaTitre}
+        intro={ui.ctaIntro}
         smsBody={`Bonjour Romain, je souhaite un avis de valeur dans le secteur ${territoire?.nom || ""}. `}
         mailSubject={`Avis de valeur - ${territoire?.nom || ""}`}
       />

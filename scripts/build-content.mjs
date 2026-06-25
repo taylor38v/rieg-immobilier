@@ -192,6 +192,13 @@ export type Settings = {
   delai_avis: string;
   bio_courte: string;
   bio_longue: string;
+  carte?: {
+    legende_titre?: string;
+    label_mont_dor?: string;
+    label_forez?: string;
+    label_limitrophes?: string;
+    aide?: string;
+  };
 };
 
 export const settings: Settings = ${JSON.stringify(settings, null, 2)};

@@ -17,5 +17,12 @@
   "horaires": "Lundi au samedi · 9h - 19h",
   "delai_avis": "24 - 48h",
   "bio_courte": "Conseiller immobilier indépendant au sein du réseau iad France, spécialiste du Mont d'Or et de l'Ouest lyonnais. Accompagnement personnalisé, transparence et engagement.",
-  "bio_longue": "Je m'appelle Romain Rieg, j'ai 28 ans et je suis passionné par l'immobilier. Après une reconversion professionnelle, j'ai choisi de devenir conseiller immobilier indépendant pour accompagner mes clients avec transparence, engagement et conseils personnalisés."
+  "bio_longue": "Je m'appelle Romain Rieg, j'ai 28 ans et je suis passionné par l'immobilier. Après une reconversion professionnelle, j'ai choisi de devenir conseiller immobilier indépendant pour accompagner mes clients avec transparence, engagement et conseils personnalisés.",
+  "carte": {
+    "legende_titre": "Mes secteurs d'intervention",
+    "label_mont_dor": "Mont d'Or / Ouest lyonnais",
+    "label_forez": "Plaine du Forez",
+    "label_limitrophes": "Communes limitrophes (mobilité)",
+    "aide": "Clic = fiche commune · Molette = zoom"
+  }
 }
