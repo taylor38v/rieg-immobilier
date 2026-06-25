@@ -656,23 +656,39 @@
 
   const ZonePreview = ({ entry, getAsset }) => {
     const d = entry && entry.get ? entry.get("data").toJS() : {};
+    const etapes = safeArr(d.etapes);
+    const principales = safeArr(d.communes_principales);
+    const limitrophes = safeArr(d.communes_limitrophes);
+    const chip = (txt, prim) => h("span", {
+      style: prim
+        ? { display: "inline-block", padding: ".5rem 1rem", margin: ".2rem", background: "var(--navy)", color: "var(--ivory)", borderRadius: "999px", fontSize: ".8rem" }
+        : { display: "inline-block", padding: ".35rem .8rem", margin: ".2rem", background: "rgba(201,162,95,0.12)", color: "var(--navy)", border: "1px solid rgba(201,162,95,0.4)", borderRadius: "999px", fontSize: ".8rem" }
+    }, safe(txt));
     return h("div", { className: "preview-root" },
+      // ---- HERO ----
       h("section", { style: { position: "relative", color: "var(--ivory)", overflow: "hidden", background: "var(--navy)", padding: "8rem 0" } },
-        d.video ? h("video", { src: img(d.video, getAsset), autoPlay: true, muted: true, loop: true, playsInline: true, style: { position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", zIndex: 0 } }) : null,
+        d.video
+          ? h("video", { src: img(d.video, getAsset), autoPlay: true, muted: true, loop: true, playsInline: true, style: { position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", zIndex: 0 } })
+          : (d.image ? h("div", { style: { position: "absolute", inset: 0, backgroundImage: "url(" + img(d.image, getAsset) + ")", backgroundSize: "cover", backgroundPosition: "center", zIndex: 0 } }) : null),
         h("div", { style: { position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(6,27,44,0.6), rgba(6,27,44,0.85))", zIndex: 1 } }),
         h("div", { className: "max-w-7xl px-6", style: { position: "relative", zIndex: 2 } },
-          h("a", { className: "text-ivory/60 text-sm" }, "← Vendre"),
-          h("div", { className: "text-xs uppercase tracking-[0.3em] text-gold mt-6" }, "Mon secteur d'intervention"),
+          h("a", { className: "text-ivory/60 text-sm" }, safe(d.retour_label, "← Vendre")),
+          h("div", { className: "text-xs uppercase tracking-[0.3em] text-gold mt-6" }, safe(d.hero_surtitre, "Mon secteur d'intervention")),
           h("h1", { className: "font-serif text-4xl md:text-6xl mt-3 leading-[1.1]", style: { maxWidth: "60rem" } }, safe(d.h1)),
           h("div", { className: "text-ivory/80 text-lg mt-8 max-w-3xl leading-relaxed", style: { display: "flex", flexDirection: "column", gap: ".75rem" } },
             ...safeArr(d.intro).map((p, i) => h("p", { key: i }, safe(p)))
           ),
           h("div", { className: "text-xs uppercase tracking-widest text-gold mt-8" }, safe(d.communes_label)),
+          h("div", { style: { marginTop: "2rem" } },
+            h("span", { style: { display: "inline-block", padding: ".9rem 1.75rem", background: "var(--gold)", color: "var(--navy)", borderRadius: "999px", fontWeight: 600 } }, safe(d.hero_cta_label, "Me contacter"))
+          ),
+          h("div", { className: "text-xs text-ivory/60", style: { marginTop: "1rem" } }, safe(d.hero_reassurance, "Zéro engagement · 100% confidentiel")),
         )
       ),
+      // ---- ATOUTS ----
       h("section", { className: "max-w-6xl px-6 py-24" },
-        h("div", { className: "text-xs uppercase tracking-[0.3em] text-gold" }, "Pourquoi me confier votre bien"),
-        h("h2", { className: "font-serif text-5xl md:text-6xl mt-3" }, "Trois atouts qui font la différence."),
+        h("div", { className: "text-xs uppercase tracking-[0.3em] text-gold" }, safe(d.atouts_surtitre, "Pourquoi me confier votre bien ?")),
+        h("h2", { className: "font-serif text-5xl md:text-6xl mt-3" }, safe(d.atouts_titre, "Trois atouts qui font la différence.")),
         h("div", { className: "grid md:grid-cols-3 gap-6 mt-12" },
           ...safeArr(d.atouts).map((a, i) =>
             h("div", { key: i, style: { padding: "1.75rem", background: "white", border: "1px solid rgba(0,0,0,0.1)" } },
@@ -681,6 +697,59 @@
               h("p", { className: "text-sm text-muted mt-3 leading-relaxed" }, safe(a.desc)),
             )
           )
+        )
+      ),
+      // ---- PROCESSUS ----
+      etapes.length ? h("section", { style: { background: "var(--navy)", color: "var(--ivory)", padding: "6rem 0" } },
+        h("div", { className: "max-w-5xl px-6" },
+          h("div", { className: "text-xs uppercase tracking-[0.3em] text-gold" }, safe(d.process_surtitre, "Le processus")),
+          h("h2", { className: "font-serif text-5xl md:text-6xl mt-3" }, safe(d.process_titre, "Quatre étapes claires.")),
+          h("div", { style: { marginTop: "3rem", display: "flex", flexDirection: "column", gap: "1rem" } },
+            ...etapes.map((e, i) =>
+              h("div", { key: i, style: { display: "flex", gap: "1.25rem", padding: "1.5rem", background: "#0f2c44", border: "1px solid rgba(255,255,255,0.1)", borderRadius: "12px" } },
+                h("span", { style: { flex: "0 0 auto", width: "3rem", height: "3rem", borderRadius: "999px", background: "var(--gold)", color: "var(--navy)", display: "grid", placeItems: "center", fontFamily: "'Cormorant Garamond',serif", fontSize: "1.25rem", fontWeight: 700 } }, safe(e.num, String(i + 1).padStart(2, "0"))),
+                h("div", null,
+                  h("div", { className: "font-serif", style: { fontSize: "1.5rem" } }, safe(e.titre)),
+                  h("div", { style: { color: "rgba(255,255,255,0.75)", marginTop: ".5rem", lineHeight: 1.6 } }, safe(e.desc)),
+                )
+              )
+            )
+          )
+        )
+      ) : null,
+      // ---- POSITIONNEMENT ----
+      (d.positionnement_titre || principales.length) ? h("section", { className: "max-w-7xl px-6 py-20" },
+        h("div", { className: "grid lg:grid-cols-2 gap-12" },
+          h("div", null,
+            h("div", { className: "text-xs uppercase tracking-[0.3em] text-gold" }, safe(d.positionnement_surtitre, "Mon positionnement")),
+            h("h2", { className: "font-serif text-4xl md:text-5xl mt-3", style: { lineHeight: 1.15 } }, safe(d.positionnement_titre)),
+            h("p", { className: "text-muted mt-5 leading-relaxed" }, safe(d.positionnement_texte)),
+          ),
+          h("div", null,
+            h("div", { className: "text-xs uppercase tracking-[0.25em] text-gold", style: { fontWeight: 600, marginBottom: ".75rem" } }, safe(d.communes_principales_label, "Communes principales")),
+            h("div", null, ...principales.map((c) => chip(c, true))),
+            limitrophes.length ? h("div", { style: { marginTop: "1.5rem" } },
+              h("div", { className: "text-xs uppercase tracking-[0.25em] text-gold", style: { fontWeight: 600, marginBottom: ".75rem" } }, safe(d.limitrophes_label, "+ communes limitrophes que je couvre également")),
+              h("div", null, ...limitrophes.map((c) => chip(c, false))),
+              d.limitrophes_note ? h("p", { className: "text-xs text-muted", style: { marginTop: "1.25rem", fontStyle: "italic" } }, safe(d.limitrophes_note)) : null,
+            ) : null,
+          )
+        )
+      ) : null,
+      // ---- CARTE ----
+      h("section", { style: { background: "var(--ivory-deep)", padding: "5rem 0" } },
+        h("div", { className: "max-w-7xl px-6" },
+          h("div", { className: "text-xs uppercase tracking-[0.3em] text-gold" }, safe(d.carte_surtitre, "Les communes")),
+          h("h2", { className: "font-serif text-4xl md:text-5xl mt-3" }, safe(d.carte_titre, "Survolez la carte pour explorer.")),
+          h("p", { className: "text-muted mt-3", style: { maxWidth: "42rem" } }, safe(d.carte_texte)),
+          h("div", { style: { marginTop: "2rem", height: "240px", borderRadius: "12px", border: "1px dashed rgba(201,162,95,0.5)", background: "rgba(15,44,68,0.05)", display: "grid", placeItems: "center", color: "var(--muted)", fontSize: ".85rem", fontStyle: "italic" } }, "🗺️ Carte interactive (visible sur le site en ligne)"),
+        )
+      ),
+      // ---- CTA FINAL ----
+      h("section", { style: { padding: "5rem 0", textAlign: "center" } },
+        h("div", { className: "max-w-3xl px-6", style: { margin: "0 auto" } },
+          h("h2", { className: "font-serif text-4xl md:text-5xl" }, safe(d.cta_titre, "Et si on commençait par un avis de valeur ?")),
+          h("p", { className: "text-muted mt-4 leading-relaxed" }, safe(d.cta_intro)),
         )
       )
     );
