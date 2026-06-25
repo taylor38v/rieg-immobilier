@@ -16,6 +16,8 @@ export type SecteurDetail = {
   evolution_prix: { annee: number; prixM2: number }[];
   video_insta?: { titre: string; duree: string; thumb?: string };
   galerie?: string[];
+  video?: string;
+  instagram_url?: string;
 };
 
 export const secteursDetails: Record<string, SecteurDetail> = secteursDetailContent;

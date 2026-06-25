@@ -39,10 +39,14 @@ export default async function Page(props: PageProps<"/secteurs/[slug]">) {
   const d = secteursDetails[slug];
   if (!s) notFound();
 
+  // Vidéo (hero + visite) et lien Instagram éditables par commune (CMS), avec valeur par défaut.
+  const heroVideo = d?.video || VIDEO_BG[slug];
+  const instaUrl = d?.instagram_url || "https://www.instagram.com/romainrieg.immo/";
+
   return (
     <>
       <section className="relative text-ivory py-32 overflow-hidden bg-navy">
-        <HeroBackground video={VIDEO_BG[slug]} images={d?.galerie || (s.image ? [s.image] : [])} overlay={0.6} />
+        <HeroBackground video={heroVideo} images={d?.galerie || (s.image ? [s.image] : [])} overlay={0.6} />
         <div className="relative max-w-7xl mx-auto px-6">
           <Link href="/" className="text-ivory/60 text-sm">← Accueil</Link>
           <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium mt-6">{d?.cp ?? "Mon territoire"}{d?.intercommunalite ? ` · ${d.intercommunalite}` : ""}</div>
@@ -101,7 +105,7 @@ export default async function Page(props: PageProps<"/secteurs/[slug]">) {
         </section>
       )}
 
-      {VIDEO_BG[slug] && (
+      {heroVideo && (
         <section className="bg-ivory-deep py-20">
           <div className="max-w-5xl mx-auto px-6">
             <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">Visite vidéo</div>
@@ -109,7 +113,7 @@ export default async function Page(props: PageProps<"/secteurs/[slug]">) {
             <p className="text-muted mt-3 max-w-2xl">Un aperçu de la commune en vidéo - paysages, ambiance, points de vue.</p>
             <div className="mt-10 rounded-2xl overflow-hidden shadow-xl bg-navy">
               <video
-                src={VIDEO_BG[slug]}
+                src={heroVideo}
                 controls
                 playsInline
                 preload="metadata"
@@ -117,7 +121,7 @@ export default async function Page(props: PageProps<"/secteurs/[slug]">) {
               />
             </div>
             <div className="mt-6">
-              <a href="https://www.instagram.com/romainrieg.immo/" target="_blank" rel="noopener" className="inline-block px-6 py-3 bg-navy text-ivory hover:bg-gold hover:text-navy text-sm transition rounded-full">Voir plus de contenus sur Instagram →</a>
+              <a href={instaUrl} target="_blank" rel="noopener" className="inline-block px-6 py-3 bg-navy text-ivory hover:bg-gold hover:text-navy text-sm transition rounded-full">Voir plus de contenus sur Instagram →</a>
             </div>
           </div>
         </section>

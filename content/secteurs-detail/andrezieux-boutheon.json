@@ -135,12 +135,30 @@
     }
   ],
   "evolution_prix": [
-    { "annee": 2020, "prixM2": 1850 },
-    { "annee": 2021, "prixM2": 2050 },
-    { "annee": 2022, "prixM2": 2350 },
-    { "annee": 2023, "prixM2": 2504 },
-    { "annee": 2024, "prixM2": 2380 },
-    { "annee": 2025, "prixM2": 2301 }
+    {
+      "annee": 2020,
+      "prixM2": 1850
+    },
+    {
+      "annee": 2021,
+      "prixM2": 2050
+    },
+    {
+      "annee": 2022,
+      "prixM2": 2350
+    },
+    {
+      "annee": 2023,
+      "prixM2": 2504
+    },
+    {
+      "annee": 2024,
+      "prixM2": 2380
+    },
+    {
+      "annee": 2025,
+      "prixM2": 2301
+    }
   ],
   "video_insta": {
     "titre": "Andrézieux-Bouthéon : 3 raisons d'y investir en 2026",
@@ -149,5 +167,7 @@
   "galerie": [
     "/photos/IMG_7295.jpeg",
     "/photos/IMG_7282.jpeg"
-  ]
+  ],
+  "video": "/videos/secteurs/andrezieux.mp4",
+  "instagram_url": "https://www.instagram.com/romainrieg.immo/"
 }

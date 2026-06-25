@@ -908,6 +908,8 @@ collections:
       - { name: "cp", label: "Code postal", widget: "string" }
       - { name: "intercommunalite", label: "Intercommunalité", widget: "string" }
       - { name: "altitude", label: "Altitude (texte)", widget: "string", required: false }
+      - { name: "video", label: "🎬 Vidéo (fond hero + lecteur « Visite vidéo »)", widget: "file", required: false, hint: "Uploade un .mp4 ou choisis une vidéo existante (/videos/secteurs/). Sert de fond au hero ET de lecteur dans la section Visite vidéo." }
+      - { name: "instagram_url", label: "Lien Instagram de la commune (bouton « Voir plus de contenus »)", widget: "string", required: false }
       - { name: "ce_qui_differencie", label: "Ce qui différencie (4 points)", widget: "list" }
       - name: "ecoles"
         label: "Écoles"
