@@ -6,46 +6,49 @@
     "titre": "Votre projet, en 30 secondes.",
     "intro": "Quelques clics suffisent pour qualifier votre besoin. La réponse arrive sous 24 h, personnelle et ciblée - jamais générique.",
     "garanties": [
-      "Réponse personnelle sous 24 h",
+      "Réponse personnelle sous 24h",
       "Aucune sollicitation commerciale",
       "Données 100% confidentielles"
     ]
   },
   "calendrier": {
-    "surtitre": "Le plus rapide",
+    "surtitre": "La solution la plus rapide",
     "titre": "Réservez un créneau en ligne.",
-    "intro": "30 minutes en visio ou par téléphone pour qualifier votre projet, répondre à vos questions et explorer une collaboration.",
+    "intro": "30 minutes en visio ou par téléphone pour qualifier votre projet, répondre à vos questions et envisager une collaboration.",
     "puces": [
-      "Pas d'inscription, pas de spam",
-      "Annulation / report en un clic",
+      "Pas d'inscription",
+      "pas de spam",
+      "Annulation ou report en un clic",
       "Rappel automatique avant le rendez-vous"
     ],
     "cal_url": "https://cal.com/romain-rieg-ckdm4p/30min",
     "cta_label": "Ouvrir le calendrier ↗"
   },
   "sidebar": {
-    "surtitre": "Vous préférez direct ?",
-    "titre": "Trois canaux, vous choisissez.",
-    "telephone": "06 79 57 14 73",
-    "telephone_lien": "+33679571473",
-    "whatsapp_label": "Envoyer un SMS",
-    "whatsapp_url": "sms:+33679571473",
-    "formulaire_label": "Remplir un formulaire",
-    "calcom_label": "Réserver 30 minutes",
-    "email": "romain.rieg@iadfrance.fr",
     "horaires_titre": "Du lundi au samedi",
+    "telephone_lien": "+33679571473",
+    "whatsapp_url": "sms:+33679571473",
+    "surtitre": "Vous préférez le contact direct ?",
     "horaires_detail": "8h30 - 20h",
-    "horaires_note": "Rendez-vous en soirée possibles sur demande."
+    "telephone": "06 79 57 14 73",
+    "horaires_note": "Rendez-vous en soirée possibles sur demande.",
+    "whatsapp_label": "Envoyer un SMS",
+    "calcom_label": "Réserver 30 minutes",
+    "formulaire_label": "Remplir un formulaire",
+    "titre": "Trois canaux, vous choisissez.",
+    "email": "romain.rieg@iadfrance.fr"
   },
   "engagement": {
     "surtitre": "L'engagement",
     "items": [
-      "Réponse personnelle de Romain (jamais d'assistant)",
-      "Sous 24 h en semaine, 4 h si urgent",
+      "Je vous réponds personnellement (pas d'assistant ni d'IA)",
+      "Sous 24h en semaine",
+      "sous 4h si urgent",
       "Aucun ajout à une liste de prospection automatique",
-      "Données strictement confidentielles, jamais revendues"
+      "Données strictement confidentielles",
+      "jamais revendues"
     ]
   },
   "footer_form_titre": "Pourquoi ce formulaire détaillé ?",
-  "footer_form_note": "Pour gagner votre temps. En 30 secondes, votre besoin est qualifié et la réponse arrive vraiment ciblée. Plus efficace qu'un formulaire générique « nom / email / message »."
+  "footer_form_note": "Pour vous faire gagner du temps. En 30 secondes, votre besoin est qualifié et vous recevez une réponse vraiment ciblée - bien plus efficace qu'un formulaire générique « nom / email / message ».\n"
 }
