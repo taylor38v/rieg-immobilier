@@ -143,6 +143,8 @@ collections:
             fields:
               - { name: "surtitre", label: "Surtitre", widget: "string", hint: "Petit texte en or affiché au-dessus du titre H2." }
               - { name: "titre", label: "Titre H2", widget: "string" }
+              - { name: "item_prefix", label: "Préfixe carte (Service 01…)", widget: "string", required: false }
+              - { name: "item_cta_label", label: "Lien carte (Découvrir)", widget: "string", required: false }
               - name: "items"
                 label: "Services (4 max)"
                 widget: "list"
@@ -159,6 +161,7 @@ collections:
               - { name: "surtitre", label: "Surtitre", widget: "string", hint: "Petit texte en or affiché au-dessus du titre H2." }
               - { name: "titre", label: "Titre H2", widget: "string" }
               - { name: "intro", label: "Paragraphe d'intro", widget: "text" }
+              - { name: "lien_label", label: "Lien carte zone (Découvrir la zone →)", widget: "string", required: false }
               - name: "zones"
                 label: "Zones (3)"
                 widget: "list"
@@ -177,6 +180,7 @@ collections:
               - { name: "titre", label: "Titre H2", widget: "string" }
               - { name: "intro", label: "Paragraphe d'intro", widget: "text" }
               - { name: "lien", label: "Lien Instagram global (profil)", widget: "string" }
+              - { name: "reel_label", label: "Étiquette des vignettes (Reel)", widget: "string", required: false }
               - name: "videos"
                 label: "Vignettes reels (3)"
                 widget: "list"
@@ -187,20 +191,13 @@ collections:
                   - { name: "url", label: "Lien direct du reel (https://instagram.com/reel/...)", widget: "string", required: false }
               - { name: "cta_label", label: "Bouton bas - texte", widget: "string" }
           - name: "avis"
-            label: "7. Avis Google (3 témoignages)"
+            label: "7. Avis Google"
             widget: "object"
             collapsed: true
             fields:
-              - { name: "note_chiffre", label: "Note (4,9/5)", widget: "string" }
-              - { name: "surtitre", label: "Surtitre", widget: "string", hint: "Petit texte en or affiché au-dessus du titre H2." }
+              - { name: "badge_label", label: "Étiquette badge (à côté de « Google »)", widget: "string", required: false }
               - { name: "titre", label: "Titre H2", widget: "string" }
-              - name: "items"
-                label: "Avis (3)"
-                widget: "list"
-                fields:
-                  - { name: "nom", label: "Nom client", widget: "string" }
-                  - { name: "contexte", label: "Contexte (Vendeur · Maison...)", widget: "string" }
-                  - { name: "texte", label: "Texte de l'avis", widget: "text" }
+              - { name: "texte", label: "Paragraphe", widget: "text" }
               - { name: "cta_label", label: "Bouton - texte", widget: "string" }
               - { name: "cta_url", label: "Bouton - lien Google", widget: "string" }
           - name: "cta_final"

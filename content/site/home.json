@@ -10,22 +10,10 @@
     "cta_secondary_label": "Rejoindre mon équipe",
     "video": "/videos/secteurs/saint-cyr.mp4",
     "stats": [
-      {
-        "valeur": "+16 000",
-        "label": "Conseillers iad"
-      },
-      {
-        "valeur": "63 000",
-        "label": "Ventes iad 2025"
-      },
-      {
-        "valeur": "24 - 48h",
-        "label": "Délai d'avis de valeur"
-      },
-      {
-        "valeur": "2",
-        "label": "Zones principales"
-      }
+      { "valeur": "+16 000", "label": "Conseillers iad" },
+      { "valeur": "63 000", "label": "Ventes iad 2025" },
+      { "valeur": "24 - 48h", "label": "Délai d'avis de valeur" },
+      { "valeur": "2", "label": "Zones principales" }
     ]
   },
   "biens_iad": {
@@ -55,6 +43,8 @@
   "services": {
     "surtitre": "Mes services sur-mesure",
     "titre": "Quatre métiers, une exigence.",
+    "item_prefix": "Service",
+    "item_cta_label": "Découvrir",
     "items": [
       {
         "titre": "Avis de valeur · 24 - 48h",
@@ -82,6 +72,7 @@
     "surtitre": "Mes secteurs d'intervention",
     "titre": "Une présence locale, un suivi personnalisé.",
     "intro": "Chaque commune bénéficie d'un suivi personnalisé, avec une stratégie adaptée à son marché et un avis de valeur fiable sous 24 - 48h.",
+    "lien_label": "Découvrir la zone →",
     "zones": [
       {
         "slug": "ouest-lyonnais",
@@ -111,6 +102,7 @@
     "titre": "Mon quotidien sur Instagram.",
     "intro": "Visites, conseils, anecdotes du métier — suivez mon quotidien de conseiller immobilier dans les Monts d'Or.",
     "lien": "https://www.instagram.com/romainrieg.immo/",
+    "reel_label": "Reel",
     "videos": [
       {
         "titre": "Série - 10 semaines pour découvrir et apprendre sur l'immobilier",
@@ -134,27 +126,10 @@
     "cta_label": "Voir tous mes contenus Instagram →"
   },
   "avis": {
-    "note_chiffre": "5/5",
-    "surtitre": "Avis Google · clients accompagnés",
-    "titre": "Des transactions racontées par celles et ceux qui les ont vécues.",
-    "items": [
-      {
-        "nom": "Christian L. - Champagne-Au-Mont-d'Or",
-        "contexte": "Vendeur · Appartement 76m2",
-        "texte": "Avec Romain on a une écoute attentive sur nos besoins et de très bons échanges. Il a su nous conseiller sur la bonne marche a suivre."
-      },
-      {
-        "nom": "Antoine A. - Écully",
-        "contexte": "Acquéreur · Appartement ",
-        "texte": "Très disponible et professionnel, Romain sait vous accompagner dans vos projets immobiliers avec rapidité et efficacité. Il met beaucoup d'investissement et d'énergie dans le suivi de ses clients. Je recommande !"
-      },
-      {
-        "nom": "Elem B. - Lyon 9ème",
-        "contexte": "Vendeur - Avis de valeur - Local commercial",
-        "texte": "Romain Rieg a été en mesure de répondre très rapidement concernant mon projet, avec toutes les explications et infos dont j'avais besoin. Réactivité et professionalisme exemplaires, je ferai à nouveau appel à lui sans hésiter."
-      }
-    ],
-    "cta_label": "Lire tous les avis Google →",
+    "badge_label": "Avis clients",
+    "titre": "La confiance se construit sur le terrain.",
+    "texte": "Je préfère laisser mes clients raconter leur expérience directement sur Google. Consultez les avis sur ma fiche — et si nous avons travaillé ensemble, le vôtre sera le bienvenu.",
+    "cta_label": "Voir mes avis Google",
     "cta_url": "https://www.google.com/search?sa=X&sca_esv=f27198b4d2287e35&hl=fr-FR&q=Romain+RIEG+Immobilier+iad+France+Avis&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxI2NDY3M7M0MjI0NbA0MrA0Mzcy3sDI-IpRLSg_NzEzTyHI09VdwTM3Nz8pMycztUghMzFFwa0oMS85VcGxLLN4ESuRCgG1w3wYbAAAAA&rldimm=1376692215092096723&tbm=lcl#lkt=LocalPoiReviews"
   },
   "cta_final": {

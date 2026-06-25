@@ -181,30 +181,15 @@
   }
 
   function AvisSection(d) {
-    return h("section", { className: "max-w-7xl px-6 py-24" },
-      h("div", { className: "text-center", style: { marginBottom: "3.5rem" } },
-        h("div", { className: "flex items-center justify-center gap-3" },
-          h("span", { style: { fontSize: "1.5rem", color: "#4285F4", fontWeight: 600 } }, "Google"),
-          h("span", { style: { fontSize: "1.5rem", color: "var(--gold)" } }, "★★★★★"),
-          h("span", { className: "font-serif text-2xl text-navy" }, safe(d.note_chiffre)),
-        ),
-        h("div", { className: "text-xs uppercase tracking-[0.3em] text-gold mt-4" }, safe(d.surtitre)),
-        h("h2", { className: "font-serif text-5xl md:text-6xl mt-3" }, safe(d.titre)),
+    return h("section", { className: "max-w-3xl px-6 py-24 text-center", style: { margin: "0 auto" } },
+      h("div", { className: "flex items-center justify-center gap-3", style: { display: "inline-flex", alignItems: "center", gap: ".75rem", padding: ".75rem 1.5rem", borderRadius: "999px", background: "white", border: "2px solid rgba(201,162,95,0.3)" } },
+        h("span", { style: { fontSize: "1.25rem", color: "#4285F4", fontWeight: 600 } }, "Google"),
+        h("span", { className: "text-sm uppercase tracking-widest text-muted" }, safe(d.badge_label, "Avis clients")),
       ),
-      h("div", { className: "grid md:grid-cols-3 gap-8" },
-        ...safeArr(d.items).map((a, i) =>
-          h("div", { key: i, style: { padding: "2rem", background: "white", border: "1px solid rgba(0,0,0,0.1)" } },
-            h("div", { className: "text-gold text-xl" }, "★★★★★"),
-            h("p", { className: "mt-5 leading-relaxed text-ink/80" }, '"' + safe(a.texte) + '"'),
-            h("div", { className: "mt-6 pt-6 border-t" },
-              h("div", { className: "font-medium" }, safe(a.nom)),
-              h("div", { className: "text-xs text-muted" }, safe(a.contexte)),
-            )
-          )
-        )
-      ),
-      h("div", { className: "text-center mt-10" },
-        h("a", { className: "text-sm text-navy", style: { textDecoration: "underline" } }, safe(d.cta_label))
+      h("h2", { className: "font-serif text-3xl md:text-4xl mt-6" }, safe(d.titre, "La confiance se construit sur le terrain.")),
+      h("p", { className: "text-muted mt-4 leading-relaxed", style: { maxWidth: "42rem", margin: "1rem auto 0" } }, safe(d.texte)),
+      h("div", { style: { marginTop: "2rem" } },
+        h("span", { style: { display: "inline-block", padding: ".9rem 1.75rem", background: "var(--gold)", color: "var(--navy)", borderRadius: "999px", fontWeight: 600 } }, safe(d.cta_label, "Voir mes avis Google"))
       )
     );
   }

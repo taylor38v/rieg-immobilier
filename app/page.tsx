@@ -99,11 +99,11 @@ export default function Home() {
                     <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-gold/30 to-gold/10 grid place-items-center text-gold group-hover:from-gold group-hover:to-gold-soft group-hover:text-navy transition-all duration-500 group-hover:rotate-6 group-hover:scale-110">
                       {icons[i]}
                     </div>
-                    <div className="text-xs text-gold/60 mt-4 font-semibold uppercase tracking-[0.3em]">Service {String(i + 1).padStart(2, "0")}</div>
+                    <div className="text-xs text-gold/60 mt-4 font-semibold uppercase tracking-[0.3em]">{h.services.item_prefix} {String(i + 1).padStart(2, "0")}</div>
                     <div className="font-serif text-xl mt-2 group-hover:text-gold transition leading-tight">{s.titre}</div>
                     <p className="text-sm text-ivory/70 mt-3 leading-relaxed">{s.desc}</p>
                     <span className="inline-flex items-center gap-2 mt-5 text-xs text-gold font-semibold uppercase tracking-widest">
-                      Découvrir
+                      {h.services.item_cta_label}
                       <span className="inline-block transition-transform group-hover:translate-x-2 duration-500">→</span>
                     </span>
                   </div>
@@ -132,7 +132,7 @@ export default function Home() {
               <div className="p-6">
                 <div className="font-serif text-2xl text-navy group-hover:text-gold transition">{z.titre}</div>
                 <p className="text-sm text-muted mt-2">{z.desc}</p>
-                <span className="inline-block mt-4 text-xs text-navy link-underline">Découvrir la zone →</span>
+                <span className="inline-block mt-4 text-xs text-navy link-underline">{h.secteurs.lien_label}</span>
               </div>
             </Link>
           ))}
@@ -152,7 +152,7 @@ export default function Home() {
                   <div className="w-16 h-16 grid place-items-center bg-gold text-navy rounded-full text-2xl group-hover:scale-110 transition">▶</div>
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 p-5 text-ivory bg-gradient-to-t from-navy/90 to-transparent">
-                  <div className="text-[10px] uppercase tracking-widest text-gold">Reel · {v.duree}</div>
+                  <div className="text-[10px] uppercase tracking-widest text-gold">{h.instagram.reel_label} · {v.duree}</div>
                   <div className="font-serif text-xl mt-1">{v.titre}</div>
                 </div>
               </a>
@@ -174,16 +174,14 @@ export default function Home() {
             <text x="53" y="22" fontSize="20" fontWeight="600" fill="#34A853">l</text>
             <text x="60" y="22" fontSize="20" fontWeight="600" fill="#EA4335">e</text>
           </svg>
-          <span className="text-sm uppercase tracking-widest text-muted">Avis clients</span>
+          <span className="text-sm uppercase tracking-widest text-muted">{h.avis.badge_label}</span>
         </div>
-        <h2 className="font-serif text-3xl md:text-4xl mt-6">La confiance se construit sur le terrain.</h2>
-        <p className="text-muted mt-4 max-w-2xl mx-auto leading-relaxed">
-          Je préfère laisser mes clients raconter leur expérience directement sur Google. Consultez les avis sur ma fiche — et si nous avons travaillé ensemble, le vôtre sera le bienvenu.
-        </p>
+        <h2 className="font-serif text-3xl md:text-4xl mt-6">{h.avis.titre}</h2>
+        <p className="text-muted mt-4 max-w-2xl mx-auto leading-relaxed">{h.avis.texte}</p>
         <div className="mt-8">
           <a href={h.avis.cta_url} target="_blank" rel="noopener" className="inline-flex items-center gap-2 px-7 py-3.5 bg-gold text-navy font-semibold hover:bg-gold-soft transition rounded-full">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z"/><path d="M5.84 14.1a6.6 6.6 0 0 1 0-4.2V7.06H2.18a11 11 0 0 0 0 9.88l3.66-2.84z"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15A10.98 10.98 0 0 0 12 1 11 11 0 0 0 2.18 7.06l3.66 2.84C6.71 7.3 9.14 5.38 12 5.38z"/></svg>
-            Voir mes avis Google
+            {h.avis.cta_label}
           </a>
         </div>
       </section>
