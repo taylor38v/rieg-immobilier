@@ -13,27 +13,27 @@
     {
       "num": "01",
       "titre": "Premier contact & collecte d'infos",
-      "desc": "Formulaire ou contact direct par téléphone/email. Collecte des informations sur votre bien et votre projet."
+      "desc": "Formulaire en ligne, téléphone ou email : nous échangeons sur votre bien, votre situation et vos objectifs. Je recueille les informations essentielles pour comprendre votre projet et préparer une première analyse."
     },
     {
       "num": "02",
       "titre": "Visite & avis de valeur précis",
-      "desc": "Avis de valeur fiable basé sur les ventes récentes, les caractéristiques du bien et les tendances locales."
+      "desc": "Je me déplace sur place pour évaluer votre bien dans le détail : emplacement, état général, prestations, atouts, points de vigilance et potentiel de valorisation. Vous recevez ensuite un avis de valeur fiable, argumenté et adapté au marché local."
     },
     {
       "num": "03",
       "titre": "Mise en vente optimale",
-      "desc": "Publication sur les portails principaux. Diffusion auprès du réseau iad (+15 000 conseillers). Photos UltraHD, drone si nécessaire."
+      "desc": "Votre bien est mis en valeur avec des photos UltraHD, une annonce soignée et, si nécessaire, des prises de vue par drone. Il est diffusé sur les principaux portails immobiliers et bénéficie de la puissance du réseau iad pour toucher les bons acquéreurs."
     },
     {
       "num": "04",
       "titre": "Suivi jusqu'à la signature",
-      "desc": "Visites, filtrage des acquéreurs, négociation, suivi administratif jusqu'au notaire."
+      "desc": "J’organise les visites, sélectionne les acquéreurs sérieux, vous accompagne dans la négociation et assure le suivi administratif jusqu’à la signature chez le notaire. Vous avancez avec un interlocuteur unique, réactif et impliqué."
     }
   ],
   "intro": [
-    "Vous souhaitez réussir votre projet immobilier dans l'Ouest lyonnais ?",
-    "Je suis Romain Rieg, conseiller immobilier indépendant du réseau iad France, et je mets mon expertise locale et mon accompagnement personnalisé à votre service pour vendre rapidement au meilleur prix, acheter ou investir en toute sécurité, ou gérer la location de vos biens."
+    "L’Ouest lyonnais est un secteur immobilier recherché, avec des marchés très différents d’une commune à l’autre. Entre les Monts d’Or, les communes résidentielles proches de Lyon et les villages familiaux, chaque projet demande une vraie connaissance du terrain. Vous souhaitez vendre, acheter, investir ou mettre votre bien en location dans l’Ouest lyonnais ou ses environs ?",
+    "Je suis Romain Rieg, conseiller immobilier indépendant au sein du réseau iad France. Je mets mon expertise locale, ma réactivité et mon accompagnement personnalisé à votre service pour vous aider à prendre les bonnes décisions à chaque étape de votre projet.\n\nMon objectif : vous accompagner avec transparence, méthode et engagement, que ce soit pour vendre dans les meilleures conditions, acheter en toute sécurité, investir intelligemment ou trouver un locataire sérieux pour votre bien."
   ],
   "communes_principales": [
     "Saint-Didier-au-Mont-d'Or",
@@ -73,25 +73,25 @@
   "limitrophes_label": "+ communes limitrophes que je couvre également",
   "limitrophes_note": "Je ne me limite jamais strictement aux communes principales - chaque projet sur les limitrophes est étudié avec la même attention.",
   "hero_reassurance": "Zéro engagement · 100% confidentiel",
-  "positionnement_texte": "Mon expertise principale : 5 communes de référence + l'ensemble de leurs communes limitrophes. Mon réseau iad couvre toute la couronne Ouest de la Métropole de Lyon.",
+  "positionnement_texte": "Mon expertise principale s’appuie sur 6 communes de référence, ainsi que l’ensemble de leurs communes limitrophes. Cette connaissance terrain me permet d’analyser chaque secteur avec précision : niveau de demande, typologie des biens, prix pratiqués, délais de vente et attentes des acquéreurs.\n\nGrâce au réseau iad, j’accompagne également les projets sur toute la couronne ouest de la Métropole de Lyon, avec une approche locale, réactive et personnalisée.",
   "atouts": [
     {
       "titre": "Expertise locale approfondie",
-      "desc": "Chaque commune est analysée pour tirer le meilleur prix de votre bien."
+      "desc": "Chaque commune, chaque quartier et chaque typologie de bien ont leurs spécificités. J’analyse votre secteur avec précision pour positionner votre bien au juste prix et le présenter dans les meilleures conditions."
     },
     {
       "titre": "Visibilité maximale",
-      "desc": "Visibilité maximale auprès des acheteurs et investisseurs qualifiés (+15 000 conseillers iad). Outils performants du réseau iad France."
+      "desc": "Votre bien bénéficie d’une diffusion large auprès d’acquéreurs qualifiés, d’investisseurs ciblés et du réseau iad. Je m’appuie également sur les outils performants du réseau iad France pour maximiser les opportunités de contact."
     },
     {
       "titre": "Discrétion & filtrage",
-      "desc": "Pour vos biens de prestige dans les Monts d'Or, je garantis confidentialité absolue et contrôle rigoureux des acquéreurs."
+      "desc": "Pour les biens de prestige dans les Monts d’Or, la discrétion est essentielle. Je veille à préserver la confidentialité de votre projet et à qualifier chaque acquéreur avant toute mise en relation ou visite."
     }
   ],
   "carte_titre": "Survolez la carte pour explorer.",
   "video": "/videos/secteurs/limonest.mp4",
   "image": "/photos/IMG_7282.jpeg",
   "carte_surtitre": "Les communes",
-  "cta_intro": "Gratuit, argumenté, sous 24 - 48h - sans engagement de mandat.",
+  "cta_intro": "Offert, argumenté, sous 24 - 48h - sans engagement de mandat.",
   "carte_texte": "Cliquez sur une commune pour ouvrir sa fiche détaillée - démographie, écoles, restaurants, quartiers, prix au m²."
 }
