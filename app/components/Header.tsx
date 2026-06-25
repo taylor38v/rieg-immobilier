@@ -4,17 +4,18 @@ import { useState } from "react";
 import { settings } from "../lib/_generated/settings";
 
 const nav = [
-  { href: "/rejoindre", label: "Rejoindre mon équipe", emphase: true },
-  { href: "/avis-de-valeur", label: "Avis de valeur" },
-  { href: "/vendre", label: "Vendre" },
-  { href: "/acheter", label: "Acheter" },
-  { href: "/location", label: "Location" },
-  { href: "/outils", label: "Outils" },
-  { href: "/actualites", label: "Actualités" },
+  { href: "/rejoindre", label: settings.nav?.rejoindre ?? "Rejoindre mon équipe", emphase: true },
+  { href: "/avis-de-valeur", label: settings.nav?.avis_de_valeur ?? "Avis de valeur" },
+  { href: "/vendre", label: settings.nav?.vendre ?? "Vendre" },
+  { href: "/acheter", label: settings.nav?.acheter ?? "Acheter" },
+  { href: "/location", label: settings.nav?.location ?? "Location" },
+  { href: "/outils", label: settings.nav?.outils ?? "Outils" },
+  { href: "/actualites", label: settings.nav?.actualites ?? "Actualités" },
 ];
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+  const contactLabel = settings.nav?.contact_cta ?? "Contactez-moi";
   return (
     <header>
       <div className="sticky top-0 z-40 bg-ivory/95 backdrop-blur border-b border-ink/10">
@@ -37,7 +38,7 @@ export default function Header() {
             href="/contact"
             className="hidden lg:inline-flex items-center px-7 py-3.5 bg-navy text-ivory text-base font-semibold hover:bg-gold hover:text-navy transition shrink-0 rounded-full whitespace-nowrap shadow-md hover:shadow-lg"
           >
-            Contactez-moi
+            {contactLabel}
           </Link>
           <button onClick={() => setOpen(!open)} className="lg:hidden text-navy" aria-label="Menu">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
@@ -50,7 +51,7 @@ export default function Header() {
                 <Link key={n.href} href={n.href} onClick={() => setOpen(false)} className={`py-1 text-base ${n.emphase ? "text-navy font-semibold" : "text-ink/80"}`}>{n.label}</Link>
               ))}
               <a href={`tel:${settings.telephone_lien}`} className="py-1 text-navy text-base">{settings.telephone}</a>
-              <Link href="/contact" onClick={() => setOpen(false)} className="mt-2 px-5 py-3 bg-navy text-ivory text-center text-sm rounded-full">Contactez-moi</Link>
+              <Link href="/contact" onClick={() => setOpen(false)} className="mt-2 px-5 py-3 bg-navy text-ivory text-center text-sm rounded-full">{contactLabel}</Link>
             </div>
           </div>
         )}

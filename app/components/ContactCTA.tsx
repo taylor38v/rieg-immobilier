@@ -1,4 +1,5 @@
 import ContactButtons from "./ContactButtons";
+import { settings } from "../lib/_generated/settings";
 
 type Props = {
   titre?: string;
@@ -18,16 +19,22 @@ type Props = {
  * précédente est elle aussi sombre.
  */
 export default function ContactCTA({
-  titre = "Une question, un projet ?",
-  intro = "Romain répond personnellement sous 24 h. Aucune sollicitation commerciale, aucune liste de prospection.",
+  titre,
+  intro,
   mailSubject,
   smsBody,
 }: Props) {
+  // Les props passées par les pages restent prioritaires ; sinon valeurs par défaut éditables au CMS.
+  const titreFinal = titre ?? settings.cta?.titre ?? "Une question, un projet ?";
+  const introFinal =
+    intro ??
+    settings.cta?.intro ??
+    "Romain répond personnellement sous 24 h. Aucune sollicitation commerciale, aucune liste de prospection.";
   return (
     <section className="bg-navy-soft text-ivory py-16 border-t border-gold/25">
       <div className="max-w-4xl mx-auto px-6 text-center">
-        <h3 className="font-serif text-3xl text-ivory">{titre}</h3>
-        <p className="text-ivory/70 mt-3 max-w-2xl mx-auto">{intro}</p>
+        <h3 className="font-serif text-3xl text-ivory">{titreFinal}</h3>
+        <p className="text-ivory/70 mt-3 max-w-2xl mx-auto">{introFinal}</p>
         <div className="mt-6 flex justify-center">
           <ContactButtons
             withContact

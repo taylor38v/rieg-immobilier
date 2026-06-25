@@ -50,7 +50,7 @@ export default function WhatsApp() {
                 <img src="/photos/romain-pro.jpg" alt={settings.nom} className="w-20 h-20 rounded-full object-cover border-2 border-gold shrink-0" />
                 <div>
                   <div className="text-[10px] uppercase tracking-[0.3em] text-gold flex items-center gap-2">
-                    <span className="w-2 h-2 bg-[#25D366] rounded-full animate-pulse" /> En ligne
+                    <span className="w-2 h-2 bg-[#25D366] rounded-full animate-pulse" /> {settings.whatsapp_widget?.statut_en_ligne ?? "En ligne"}
                   </div>
                   <div className="font-serif text-2xl text-ivory mt-1">{settings.nom}</div>
                   <div className="text-xs text-ivory/70">{settings.titre}</div>
@@ -70,7 +70,7 @@ export default function WhatsApp() {
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
                     </svg>
-                    <span className="font-medium text-sm">Envoyer un SMS direct</span>
+                    <span className="font-medium text-sm">{settings.whatsapp_widget?.cta_sms_label ?? "Envoyer un SMS direct"}</span>
                   </span>
                   <span className="text-navy/70">→</span>
                 </a>
@@ -92,14 +92,14 @@ export default function WhatsApp() {
                 >
                   <span className="flex items-center gap-3">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
-                    <span className="font-medium text-sm">Contactez-moi (formulaire)</span>
+                    <span className="font-medium text-sm">{settings.whatsapp_widget?.cta_contact_label ?? "Contactez-moi (formulaire)"}</span>
                   </span>
                   <span className="opacity-70">→</span>
                 </a>
               </div>
 
               <div className="mt-5 pt-5 border-t border-ink/10 text-[11px] text-muted text-center">
-                Réponse moyenne : <span className="text-navy font-medium">8 minutes</span> · Disponible 7j/7
+                {settings.whatsapp_widget?.reponse_label ?? "Réponse moyenne :"} <span className="text-navy font-medium">{settings.whatsapp_widget?.reponse_valeur ?? "8 minutes"}</span> · {settings.whatsapp_widget?.reponse_disponibilite ?? "Disponible 7j/7"}
               </div>
             </div>
           </div>

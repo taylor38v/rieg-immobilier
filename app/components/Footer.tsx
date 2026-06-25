@@ -103,6 +103,32 @@ export default function Footer() {
   const pathname = usePathname();
   const isHome = pathname === "/";
 
+  // Texte newsletter : le segment "zone" est mis en valeur (or) au milieu de la phrase.
+  const newsletterFull =
+    settings.footer?.newsletter_texte ??
+    "Pas de spam - uniquement les nouvelles actualités du marché de l'Ouest lyonnais et Plaine du Forez et mes derniers contenus.";
+  const newsletterZone = settings.footer?.newsletter_zone_gold ?? "Ouest lyonnais et Plaine du Forez";
+  const newsletterIdx = newsletterZone ? newsletterFull.indexOf(newsletterZone) : -1;
+  const newsletterTexte =
+    newsletterIdx >= 0 ? (
+      <>
+        {newsletterFull.slice(0, newsletterIdx)}
+        <span className="text-gold">{newsletterZone}</span>
+        {newsletterFull.slice(newsletterIdx + newsletterZone.length)}
+      </>
+    ) : (
+      newsletterFull
+    );
+
+  // Copyright : {year} = année courante, {rsac} = numéro RSAC issu de settings.rcs.
+  const rsacNumero = settings.rcs.replace(/^RCS Lyon n°\s*/i, "");
+  const copyrightText = (
+    settings.footer?.copyright ??
+    "© {year} Romain Rieg - Tous droits réservés · RSAC de Lyon : {rsac}"
+  )
+    .replace("{year}", String(new Date().getFullYear()))
+    .replace("{rsac}", rsacNumero);
+
   return (
     <footer className="bg-navy text-ivory">
       {isHome && (
@@ -119,10 +145,10 @@ export default function Footer() {
               {settings.bio_longue} Que ce soit pour un avis de valeur en <span className="text-gold font-semibold">{settings.delai_avis}</span> ou une stratégie de vente, je mets mon énergie au service de votre projet.
             </p>
             <div className="flex flex-wrap justify-center gap-3 mt-6">
-              <a href={`tel:${settings.telephone_lien}`} className="px-6 py-3 border-2 border-gold text-gold text-sm font-medium hover:bg-gold hover:text-navy transition rounded-full">{settings.telephone}</a>
-              <a href={`sms:${settings.whatsapp}`} className="px-6 py-3 border-2 border-gold text-gold text-sm font-medium hover:bg-gold hover:text-navy transition rounded-full">SMS direct</a>
-              <a href={`mailto:${settings.email}`} className="px-6 py-3 border-2 border-gold text-gold text-sm font-medium hover:bg-gold hover:text-navy transition rounded-full">Mail</a>
-              <Link href="/contact" className="px-6 py-3 bg-gold text-navy text-sm font-semibold hover:bg-gold-soft transition rounded-full">Contactez-moi →</Link>
+              <a href={`tel:${settings.telephone_lien}`} className="px-6 py-3 border-2 border-gold text-gold text-sm font-medium hover:bg-gold hover:text-navy transition rounded-full">{settings.footer?.cta_telephone_label ?? settings.telephone}</a>
+              <a href={`sms:${settings.whatsapp}`} className="px-6 py-3 border-2 border-gold text-gold text-sm font-medium hover:bg-gold hover:text-navy transition rounded-full">{settings.footer?.cta_sms_label ?? "SMS direct"}</a>
+              <a href={`mailto:${settings.email}`} className="px-6 py-3 border-2 border-gold text-gold text-sm font-medium hover:bg-gold hover:text-navy transition rounded-full">{settings.footer?.cta_mail_label ?? "Mail"}</a>
+              <Link href="/contact" className="px-6 py-3 bg-gold text-navy text-sm font-semibold hover:bg-gold-soft transition rounded-full">{settings.footer?.cta_contact_label ?? "Contactez-moi →"}</Link>
             </div>
           </div>
         </div>
@@ -131,22 +157,22 @@ export default function Footer() {
 
       <div className="max-w-7xl mx-auto px-6 py-14 grid md:grid-cols-3 gap-10">
         <div>
-          <div className="text-xs uppercase tracking-widest text-gold mb-4">Le site</div>
+          <div className="text-xs uppercase tracking-widest text-gold mb-4">{settings.footer?.col_site_titre ?? "Le site"}</div>
           <ul className="space-y-2.5 text-sm text-ivory/85">
-            <li><Link href="/rejoindre" className="hover:text-gold">Rejoindre mon équipe</Link></li>
-            <li><Link href="/avis-de-valeur" className="hover:text-gold">Avis de valeur</Link></li>
-            <li><Link href="/vendre" className="hover:text-gold">Vendre</Link></li>
-            <li><Link href="/acheter" className="hover:text-gold">Acheter / Investir</Link></li>
-            <li><Link href="/location" className="hover:text-gold">Location</Link></li>
-            <li><Link href="/outils" className="hover:text-gold">Outils</Link></li>
-            <li><Link href="/actualites" className="hover:text-gold">Actualités</Link></li>
+            <li><Link href="/rejoindre" className="hover:text-gold">{settings.footer?.lien_rejoindre ?? "Rejoindre mon équipe"}</Link></li>
+            <li><Link href="/avis-de-valeur" className="hover:text-gold">{settings.footer?.lien_avis_de_valeur ?? "Avis de valeur"}</Link></li>
+            <li><Link href="/vendre" className="hover:text-gold">{settings.footer?.lien_vendre ?? "Vendre"}</Link></li>
+            <li><Link href="/acheter" className="hover:text-gold">{settings.footer?.lien_acheter ?? "Acheter / Investir"}</Link></li>
+            <li><Link href="/location" className="hover:text-gold">{settings.footer?.lien_location ?? "Location"}</Link></li>
+            <li><Link href="/outils" className="hover:text-gold">{settings.footer?.lien_outils ?? "Outils"}</Link></li>
+            <li><Link href="/actualites" className="hover:text-gold">{settings.footer?.lien_actualites ?? "Actualités"}</Link></li>
           </ul>
         </div>
 
         <div>
-          <div className="text-xs uppercase tracking-widest text-gold mb-4">Newsletter</div>
+          <div className="text-xs uppercase tracking-widest text-gold mb-4">{settings.footer?.col_newsletter_titre ?? "Newsletter"}</div>
           <p className="text-sm text-ivory/70 leading-relaxed mb-4">
-            Pas de spam - uniquement les nouvelles actualités du marché de l'<span className="text-gold">Ouest lyonnais et Plaine du Forez</span> et mes derniers contenus.
+            {newsletterTexte}
           </p>
           <form name="newsletter-footer" method="POST" data-netlify="true" action="/merci/" className="flex flex-col gap-2">
             <input type="hidden" name="form-name" value="newsletter-footer" />
@@ -154,23 +180,23 @@ export default function Footer() {
               type="email"
               name="email"
               required
-              placeholder="Votre email"
+              placeholder={settings.footer?.newsletter_placeholder ?? "Votre email"}
               className="w-full px-4 py-3 bg-navy-soft border border-ivory/20 text-ivory text-sm outline-none focus:border-gold rounded-full"
             />
             <button type="submit" className="px-6 py-3 bg-gold text-navy text-sm font-medium hover:bg-gold-soft rounded-full">
-              S'abonner
+              {settings.footer?.newsletter_bouton ?? "S'abonner"}
             </button>
           </form>
         </div>
 
         <div className="md:text-right">
-          <div className="text-xs uppercase tracking-widest text-gold mb-4">Me joindre</div>
+          <div className="text-xs uppercase tracking-widest text-gold mb-4">{settings.footer?.col_joindre_titre ?? "Me joindre"}</div>
           <ul className="space-y-2.5 text-sm text-ivory/85">
             <li><a href={`tel:${settings.telephone_lien}`} className="hover:text-gold">{settings.telephone}</a></li>
-            <li><a href={`sms:${settings.whatsapp}`} className="hover:text-gold">SMS direct</a></li>
+            <li><a href={`sms:${settings.whatsapp}`} className="hover:text-gold">{settings.footer?.lien_sms_label ?? "SMS direct"}</a></li>
             <li><a href={`mailto:${settings.email}`} className="hover:text-gold break-all">{settings.email}</a></li>
-            <li><a href={IAD_MINISITE} target="_blank" rel="noopener" className="hover:text-gold">Mes biens iad ↗</a></li>
-            <li>Saint-Didier-au-Mont-d'Or (69370)</li>
+            <li><a href={IAD_MINISITE} target="_blank" rel="noopener" className="hover:text-gold">{settings.footer?.lien_iad_label ?? "Mes biens iad ↗"}</a></li>
+            <li>{settings.footer?.adresse ?? "Saint-Didier-au-Mont-d'Or (69370)"}</li>
           </ul>
           <div className="flex gap-2 mt-5 md:justify-end">
             {SOCIALS.map((s) => (
@@ -191,9 +217,9 @@ export default function Footer() {
 
       <div className="border-t border-ivory/10 bg-navy-soft">
         <div className="max-w-7xl mx-auto px-6 py-10">
-          <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium mb-2">Mes secteurs d'intervention</div>
-          <h3 className="font-serif text-2xl text-ivory">Là où j'interviens.</h3>
-          <p className="text-ivory/60 text-sm mt-2 max-w-3xl">Je couvre les zones ci-dessous ainsi que leurs communes limitrophes - sans m'y limiter strictement.</p>
+          <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium mb-2">{settings.footer?.secteurs_surtitre ?? "Mes secteurs d'intervention"}</div>
+          <h3 className="font-serif text-2xl text-ivory">{settings.footer?.secteurs_titre ?? "Là où j'interviens."}</h3>
+          <p className="text-ivory/60 text-sm mt-2 max-w-3xl">{settings.footer?.secteurs_intro ?? "Je couvre les zones ci-dessous ainsi que leurs communes limitrophes - sans m'y limiter strictement."}</p>
 
           <div className="grid md:grid-cols-2 gap-8 mt-6">
             {zonesPourFooter.map((z) => (
@@ -211,7 +237,7 @@ export default function Footer() {
                 </div>
                 {z.limitrophes.length > 0 && (
                   <div className="text-ivory/55 text-xs leading-relaxed">
-                    <span className="text-gold/70">Limitrophes : </span>
+                    <span className="text-gold/70">{settings.footer?.limitrophes_label ?? "Limitrophes : "}</span>
                     {z.limitrophes.map((c, i) => (
                       <span key={c}>
                         {i > 0 && " · "}
@@ -228,11 +254,11 @@ export default function Footer() {
 
       <div className="border-t border-ivory/10">
         <div className="max-w-7xl mx-auto px-6 py-5 flex flex-col md:flex-row justify-between gap-2 text-xs text-ivory/50">
-          <div>© {new Date().getFullYear()} Romain Rieg - Tous droits réservés · RSAC de Lyon : {settings.rcs.replace(/^RCS Lyon n°\s*/i, "")}</div>
+          <div>{copyrightText}</div>
           <div className="flex gap-5 mt-2 md:mt-0">
-            <Link href="/mentions-legales" className="hover:text-gold">Mentions légales</Link>
-            <Link href="/confidentialite" className="hover:text-gold">Confidentialité</Link>
-            <Link href="/contact" className="hover:text-gold">Contact</Link>
+            <Link href="/mentions-legales" className="hover:text-gold">{settings.footer?.lien_mentions_legales ?? "Mentions légales"}</Link>
+            <Link href="/confidentialite" className="hover:text-gold">{settings.footer?.lien_confidentialite ?? "Confidentialité"}</Link>
+            <Link href="/contact" className="hover:text-gold">{settings.footer?.lien_contact ?? "Contact"}</Link>
           </div>
         </div>
       </div>

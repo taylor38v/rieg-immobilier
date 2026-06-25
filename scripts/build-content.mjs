@@ -199,6 +199,59 @@ export type Settings = {
     label_limitrophes?: string;
     aide?: string;
   };
+  nav?: {
+    rejoindre?: string;
+    avis_de_valeur?: string;
+    vendre?: string;
+    acheter?: string;
+    location?: string;
+    outils?: string;
+    actualites?: string;
+    contact_cta?: string;
+  };
+  footer?: {
+    cta_telephone_label?: string;
+    cta_sms_label?: string;
+    cta_mail_label?: string;
+    cta_contact_label?: string;
+    col_site_titre?: string;
+    lien_rejoindre?: string;
+    lien_avis_de_valeur?: string;
+    lien_vendre?: string;
+    lien_acheter?: string;
+    lien_location?: string;
+    lien_outils?: string;
+    lien_actualites?: string;
+    col_newsletter_titre?: string;
+    newsletter_texte?: string;
+    newsletter_zone_gold?: string;
+    newsletter_placeholder?: string;
+    newsletter_bouton?: string;
+    col_joindre_titre?: string;
+    lien_sms_label?: string;
+    lien_iad_label?: string;
+    adresse?: string;
+    secteurs_surtitre?: string;
+    secteurs_titre?: string;
+    secteurs_intro?: string;
+    limitrophes_label?: string;
+    copyright?: string;
+    lien_mentions_legales?: string;
+    lien_confidentialite?: string;
+    lien_contact?: string;
+  };
+  whatsapp_widget?: {
+    statut_en_ligne?: string;
+    cta_sms_label?: string;
+    cta_contact_label?: string;
+    reponse_label?: string;
+    reponse_valeur?: string;
+    reponse_disponibilite?: string;
+  };
+  cta?: {
+    titre?: string;
+    intro?: string;
+  };
 };
 
 export const settings: Settings = ${JSON.stringify(settings, null, 2)};

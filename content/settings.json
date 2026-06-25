@@ -24,5 +24,58 @@
   "calcom": "https://cal.com/romain-rieg-ckdm4p/30min",
   "tiktok": "https://www.tiktok.com/@romainrieg.immo",
   "email": "romain.rieg@iadfrance.fr",
-  "linkedin": "https://www.linkedin.com/in/romain-rieg-17107/"
+  "linkedin": "https://www.linkedin.com/in/romain-rieg-17107/",
+  "nav": {
+    "rejoindre": "Rejoindre mon équipe",
+    "avis_de_valeur": "Avis de valeur",
+    "vendre": "Vendre",
+    "acheter": "Acheter",
+    "location": "Location",
+    "outils": "Outils",
+    "actualites": "Actualités",
+    "contact_cta": "Contactez-moi"
+  },
+  "footer": {
+    "cta_telephone_label": "06 79 57 14 73",
+    "cta_sms_label": "SMS direct",
+    "cta_mail_label": "Mail",
+    "cta_contact_label": "Contactez-moi →",
+    "col_site_titre": "Le site",
+    "lien_rejoindre": "Rejoindre mon équipe",
+    "lien_avis_de_valeur": "Avis de valeur",
+    "lien_vendre": "Vendre",
+    "lien_acheter": "Acheter / Investir",
+    "lien_location": "Location",
+    "lien_outils": "Outils",
+    "lien_actualites": "Actualités",
+    "col_newsletter_titre": "Newsletter",
+    "newsletter_texte": "Pas de spam - uniquement les nouvelles actualités du marché de l'Ouest lyonnais et Plaine du Forez et mes derniers contenus.",
+    "newsletter_zone_gold": "Ouest lyonnais et Plaine du Forez",
+    "newsletter_placeholder": "Votre email",
+    "newsletter_bouton": "S'abonner",
+    "col_joindre_titre": "Me joindre",
+    "lien_sms_label": "SMS direct",
+    "lien_iad_label": "Mes biens iad ↗",
+    "adresse": "Saint-Didier-au-Mont-d'Or (69370)",
+    "secteurs_surtitre": "Mes secteurs d'intervention",
+    "secteurs_titre": "Là où j'interviens.",
+    "secteurs_intro": "Je couvre les zones ci-dessous ainsi que leurs communes limitrophes - sans m'y limiter strictement.",
+    "limitrophes_label": "Limitrophes : ",
+    "copyright": "© {year} Romain Rieg - Tous droits réservés · RSAC de Lyon : {rsac}",
+    "lien_mentions_legales": "Mentions légales",
+    "lien_confidentialite": "Confidentialité",
+    "lien_contact": "Contact"
+  },
+  "whatsapp_widget": {
+    "statut_en_ligne": "En ligne",
+    "cta_sms_label": "Envoyer un SMS direct",
+    "cta_contact_label": "Contactez-moi (formulaire)",
+    "reponse_label": "Réponse moyenne :",
+    "reponse_valeur": "8 minutes",
+    "reponse_disponibilite": "Disponible 7j/7"
+  },
+  "cta": {
+    "titre": "Une question, un projet ?",
+    "intro": "Romain répond personnellement sous 24 h. Aucune sollicitation commerciale, aucune liste de prospection."
+  }
 }

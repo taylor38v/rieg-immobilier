@@ -1027,3 +1027,76 @@ collections:
               - { name: "label_forez", label: "Libellé zone Plaine du Forez", widget: "string", required: false }
               - { name: "label_limitrophes", label: "Libellé communes limitrophes", widget: "string", required: false }
               - { name: "aide", label: "Texte d'aide (Clic = fiche…)", widget: "string", required: false }
+          - name: "nav"
+            label: "🧭 Navigation (menu du haut)"
+            widget: "object"
+            collapsed: true
+            required: false
+            hint: "Libellés des liens du menu présent sur toutes les pages."
+            fields:
+              - { name: "rejoindre", label: "Lien · Rejoindre mon équipe", widget: "string", required: false }
+              - { name: "avis_de_valeur", label: "Lien · Avis de valeur", widget: "string", required: false }
+              - { name: "vendre", label: "Lien · Vendre", widget: "string", required: false }
+              - { name: "acheter", label: "Lien · Acheter", widget: "string", required: false }
+              - { name: "location", label: "Lien · Location", widget: "string", required: false }
+              - { name: "outils", label: "Lien · Outils", widget: "string", required: false }
+              - { name: "actualites", label: "Lien · Actualités", widget: "string", required: false }
+              - { name: "contact_cta", label: "Bouton contact (Contactez-moi)", widget: "string", required: false }
+          - name: "footer"
+            label: "📍 Pied de page (footer)"
+            widget: "object"
+            collapsed: true
+            required: false
+            hint: "Tous les textes du pied de page, présent sur toutes les pages."
+            fields:
+              - { name: "cta_telephone_label", label: "Bloc accueil · bouton téléphone", widget: "string", required: false, hint: "Bloc d'appel à l'action affiché uniquement sur la page d'accueil." }
+              - { name: "cta_sms_label", label: "Bloc accueil · bouton SMS", widget: "string", required: false }
+              - { name: "cta_mail_label", label: "Bloc accueil · bouton Mail", widget: "string", required: false }
+              - { name: "cta_contact_label", label: "Bloc accueil · bouton Contact", widget: "string", required: false }
+              - { name: "col_site_titre", label: "Colonne 1 · titre (Le site)", widget: "string", required: false }
+              - { name: "lien_rejoindre", label: "Colonne 1 · lien Rejoindre", widget: "string", required: false }
+              - { name: "lien_avis_de_valeur", label: "Colonne 1 · lien Avis de valeur", widget: "string", required: false }
+              - { name: "lien_vendre", label: "Colonne 1 · lien Vendre", widget: "string", required: false }
+              - { name: "lien_acheter", label: "Colonne 1 · lien Acheter / Investir", widget: "string", required: false }
+              - { name: "lien_location", label: "Colonne 1 · lien Location", widget: "string", required: false }
+              - { name: "lien_outils", label: "Colonne 1 · lien Outils", widget: "string", required: false }
+              - { name: "lien_actualites", label: "Colonne 1 · lien Actualités", widget: "string", required: false }
+              - { name: "col_newsletter_titre", label: "Colonne 2 · titre (Newsletter)", widget: "string", required: false }
+              - { name: "newsletter_texte", label: "Colonne 2 · texte d'accroche", widget: "text", required: false, hint: "Le segment ci-dessous (zone mise en or) doit apparaître à l'identique dans ce texte pour être surligné." }
+              - { name: "newsletter_zone_gold", label: "Colonne 2 · segment mis en valeur (or)", widget: "string", required: false }
+              - { name: "newsletter_placeholder", label: "Colonne 2 · placeholder du champ email", widget: "string", required: false }
+              - { name: "newsletter_bouton", label: "Colonne 2 · bouton (S'abonner)", widget: "string", required: false }
+              - { name: "col_joindre_titre", label: "Colonne 3 · titre (Me joindre)", widget: "string", required: false }
+              - { name: "lien_sms_label", label: "Colonne 3 · lien SMS direct", widget: "string", required: false }
+              - { name: "lien_iad_label", label: "Colonne 3 · lien Mes biens iad", widget: "string", required: false }
+              - { name: "adresse", label: "Colonne 3 · adresse affichée", widget: "string", required: false }
+              - { name: "secteurs_surtitre", label: "Secteurs · surtitre", widget: "string", required: false }
+              - { name: "secteurs_titre", label: "Secteurs · titre", widget: "string", required: false }
+              - { name: "secteurs_intro", label: "Secteurs · paragraphe d'intro", widget: "text", required: false }
+              - { name: "limitrophes_label", label: "Secteurs · libellé « Limitrophes : »", widget: "string", required: false }
+              - { name: "copyright", label: "Mention copyright (bas de page)", widget: "string", required: false, hint: "Utilise {year} pour l'année et {rsac} pour le numéro RSAC." }
+              - { name: "lien_mentions_legales", label: "Bas de page · lien Mentions légales", widget: "string", required: false }
+              - { name: "lien_confidentialite", label: "Bas de page · lien Confidentialité", widget: "string", required: false }
+              - { name: "lien_contact", label: "Bas de page · lien Contact", widget: "string", required: false }
+          - name: "whatsapp_widget"
+            label: "💬 Bulle WhatsApp (flottante)"
+            widget: "object"
+            collapsed: true
+            required: false
+            hint: "Textes de la fiche contact flottante (bouton rond en bas à gauche)."
+            fields:
+              - { name: "statut_en_ligne", label: "Statut (En ligne)", widget: "string", required: false }
+              - { name: "cta_sms_label", label: "Bouton SMS (Envoyer un SMS direct)", widget: "string", required: false }
+              - { name: "cta_contact_label", label: "Bouton formulaire (Contactez-moi…)", widget: "string", required: false }
+              - { name: "reponse_label", label: "Bas de fiche · libellé (Réponse moyenne :)", widget: "string", required: false }
+              - { name: "reponse_valeur", label: "Bas de fiche · valeur (8 minutes)", widget: "string", required: false }
+              - { name: "reponse_disponibilite", label: "Bas de fiche · disponibilité (Disponible 7j/7)", widget: "string", required: false }
+          - name: "cta"
+            label: "📨 Bloc contact (bas de page interne)"
+            widget: "object"
+            collapsed: true
+            required: false
+            hint: "Titre et texte par défaut du bloc « Une question, un projet ? » réutilisé en bas de plusieurs pages. Certaines pages peuvent fournir leur propre texte."
+            fields:
+              - { name: "titre", label: "Titre par défaut", widget: "string", required: false }
+              - { name: "intro", label: "Texte par défaut", widget: "text", required: false }
