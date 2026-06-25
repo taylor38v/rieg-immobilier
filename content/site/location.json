@@ -1,53 +1,5 @@
 {
-  "meta_title": "Location & gestion locative",
   "meta_description": "Mise en location et gestion locative sécurisées sur le Mont d'Or, l'Ouest lyonnais et la Plaine du Forez. Locataires sélectionnés, revenus sécurisés, zéro vacance grâce au réseau iad.",
-  "hero": {
-    "video": "/videos/secteurs/champagne.mp4",
-    "surtitre": "Location · Gestion locative",
-    "titre": "Louez votre bien en toute sérénité.",
-    "intro1": "Vous souhaitez mettre en location votre maison ou appartement rapidement et sans stress ? Je suis Romain Rieg, mandataire immobilier du réseau iad France, et je mets mon expertise locale au service des propriétaires pour sécuriser vos revenus et trouver le locataire idéal.",
-    "intro2": "Originaire de la Loire et résident des Monts d'Or, je combine connaissance du territoire et outils marketing premium pour sélectionner des locataires solvables, rédiger vos baux et gérer toute la partie administrative, et optimiser la rentabilité de votre bien.",
-    "cta_primary_label": "Étude personnalisée gratuite",
-    "cta_primary_href": "/contact",
-    "cta_secondary_label": "💬 SMS",
-    "cta_secondary_url": "sms:+33679571473?body=Bonjour%20Romain%2C%20je%20souhaite%20mettre%20mon%20bien%20en%20location.",
-    "mention": "Confidentiel · sans engagement"
-  },
-  "pourquoi": {
-    "surtitre": "Pourquoi me confier votre bien ?",
-    "titre": "Six piliers qui sécurisent vos revenus.",
-    "items": [
-      { "titre": "Expertise locale", "desc": "Je connais le marché locatif de chaque commune pour proposer un loyer au juste prix et attirer des locataires sérieux." },
-      { "titre": "Sécurité & sélection rigoureuse", "desc": "Vérification de la solvabilité et du profil de chaque locataire avant signature." },
-      { "titre": "Zéro vacance locative", "desc": "Grâce à la force de frappe d'iad, je trouve votre futur locataire avant même le départ du précédent." },
-      { "titre": "Gain de temps", "desc": "Je prends en charge toutes les démarches administratives, de la rédaction du bail à l'état des lieux." },
-      { "titre": "Visibilité maximale", "desc": "Diffusion sur tous les portails principaux et auprès du réseau iad (+15 000 conseillers)." },
-      { "titre": "Outils premium", "desc": "Mise en valeur professionnelle avec photos UltraHD pour que votre annonce sorte du lot." }
-    ]
-  },
-  "services": {
-    "surtitre": "Mes services pour la location",
-    "titre": "Quatre piliers, zéro corvée.",
-    "items": [
-      { "titre": "Recherche de locataires qualifiés", "desc": "Annonce optimisée pour attirer des profils sérieux. Accès aux candidats du réseau iad." },
-      { "titre": "Rédaction & suivi administratif", "desc": "Baux conformes à la législation. Gestion des documents, dépôt de garantie, états des lieux." },
-      { "titre": "Gestion complète ou partielle", "desc": "Possibilité de gérer de A à Z ou partiellement. Option loyers impayés disponible." },
-      { "titre": "Mise en valeur & visibilité", "desc": "Photos professionnelles. Publication sur +100 portails et réseau iad." }
-    ]
-  },
-  "secteurs_section": {
-    "surtitre": "Mes secteurs",
-    "titre": "Les communes où je gère vos locations.",
-    "intro": "Cliquez sur une commune pour découvrir le marché local - démographie, écoles, prix au m², quartiers détaillés.",
-    "groupe_mont_dor_label": "Ouest Lyonnais",
-    "groupe_forez_label": "Plaine du Forez",
-    "zones_lien_label": "Découvrir la zone →",
-    "loyer_label": "Loyer indicatif"
-  },
-  "romain_card": {
-    "titre": "Vos revenus locatifs, sécurisés.",
-    "message": "Je sélectionne rigoureusement chaque locataire (solvabilité, profil), je rédige les baux conformes, et je m'occupe de tout l'administratif. Vous touchez votre loyer, je gère le reste."
-  },
   "cta_final": {
     "locataires_surtitre": "Pour les locataires aussi",
     "locataires_titre": "Vous cherchez à louer ?",
@@ -61,5 +13,83 @@
   "cta_contact": {
     "titre": "Je réponds directement.",
     "intro": "SMS, mail ou téléphone - une réponse personnelle sous 24 h."
-  }
+  },
+  "romain_card": {
+    "titre": "Vos revenus locatifs, sécurisés.",
+    "message": "Je sélectionne rigoureusement chaque locataire (solvabilité, profil), je rédige les baux conformes, et je m'occupe de tout l'administratif. Vous touchez votre loyer, je gère le reste."
+  },
+  "secteurs_section": {
+    "surtitre": "Mes secteurs",
+    "titre": "Les communes où je gère vos locations.",
+    "intro": "Cliquez sur une commune pour découvrir le marché local - démographie, écoles, prix au m², quartiers détaillés.",
+    "groupe_mont_dor_label": "Ouest Lyonnais",
+    "groupe_forez_label": "Plaine du Forez",
+    "zones_lien_label": "Découvrir la zone →",
+    "loyer_label": "Loyer indicatif"
+  },
+  "pourquoi": {
+    "surtitre": "Pourquoi me confier votre bien ?",
+    "titre": "Six piliers pour une mise en location sécurisée.",
+    "items": [
+      {
+        "titre": "Expertise locale",
+        "desc": "Je connais les marchés locatifs des Monts d’Or, de l’Ouest lyonnais et de la Plaine du Forez pour vous aider à fixer un loyer cohérent, attractif et adapté à votre bien."
+      },
+      {
+        "titre": "Sélection rigoureuse des locataires",
+        "desc": "Chaque dossier est étudié avec attention : situation professionnelle, solvabilité, garanties et cohérence du projet locatif avant toute validation."
+      },
+      {
+        "titre": "Réduction de la vacance locative",
+        "desc": "Grâce à une diffusion efficace et à la réactivité du réseau iad, votre bien gagne en visibilité pour trouver un locataire sérieux dans les meilleurs délais."
+      },
+      {
+        "titre": "Gain de temps",
+        "desc": "Je vous accompagne dans les démarches essentielles : estimation du loyer, diffusion de l’annonce, gestion des contacts, organisation des visites, étude des dossiers et préparation du bail."
+      },
+      {
+        "titre": "Visibilité renforcée",
+        "desc": "Votre annonce est diffusée sur les principaux portails immobiliers et bénéficie de la force du réseau iad pour toucher davantage de candidats qualifiés."
+      },
+      {
+        "titre": "Mise en valeur professionnelle",
+        "desc": "Photos de qualité, annonce soignée et présentation claire du logement : tout est pensé pour attirer les bons profils dès la première lecture."
+      }
+    ]
+  },
+  "hero": {
+    "surtitre": "Location · Gestion locative",
+    "intro1": "Vous souhaitez mettre en location votre maison ou appartement rapidement, efficacement et sans stress ? Je suis Romain Rieg, conseiller immobilier iad basé à Saint-Didier-au-Mont-d’Or, et j’accompagne les propriétaires dans la mise en location de leur bien.\n\nDe l’estimation du loyer à la sélection du locataire, je vous aide à sécuriser votre projet avec une approche claire, rigoureuse et personnalisée.\n\n",
+    "intro2": "Originaire de la Plaine du Forez et ancré dans les Monts d’Or, je combine connaissance du terrain, diffusion efficace et accompagnement administratif pour vous aider à trouver un locataire sérieux, solvable et adapté à votre bien.",
+    "cta_primary_label": "Étude personnalisée gratuite",
+    "mention": "Confidentiel · sans engagement",
+    "titre": "Louez votre bien en toute sérénité.",
+    "cta_secondary_url": "sms:+33679571473?body=Bonjour%20Romain%2C%20je%20souhaite%20mettre%20mon%20bien%20en%20location.",
+    "cta_primary_href": "/contact",
+    "cta_secondary_label": "💬 SMS",
+    "video": "/videos/secteurs/champagne.mp4"
+  },
+  "services": {
+    "surtitre": "Mes services pour la location",
+    "titre": "Quatre piliers, zéro corvée.",
+    "items": [
+      {
+        "titre": "Recherche de locataires qualifiés",
+        "desc": "Annonce optimisée, diffusion ciblée et sélection rigoureuse des candidats pour attirer des profils sérieux, solvables et adaptés à votre bien."
+      },
+      {
+        "titre": "Dossier locatif & suivi administratif",
+        "desc": "Je vous accompagne dans la constitution du dossier : pièces justificatives, analyse des candidatures, préparation du bail, dépôt de garantie et état des lieux."
+      },
+      {
+        "titre": "Accompagnement complet jusqu’à l’entrée dans les lieux",
+        "desc": "De la première estimation du loyer à la remise des clés, je vous guide à chaque étape pour sécuriser la mise en location et vous faire gagner du temps."
+      },
+      {
+        "titre": "Mise en valeur & visibilité",
+        "desc": "Photos professionnelles, annonce soignée, publication sur les principaux portails immobiliers et relais via le réseau iad pour maximiser la visibilité de votre bien."
+      }
+    ]
+  },
+  "meta_title": "Location & gestion locative"
 }
