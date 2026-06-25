@@ -2,33 +2,63 @@
   "meta_title": "Rejoindre mon équipe iad",
   "meta_description": "Devenez conseiller immobilier iad au sein de l'équipe de Romain Rieg. Formation, accompagnement, rémunération jusqu'à 87,8% - sans apport.",
   "hero": {
-    "video": "/videos/secteurs/ecully.mp4",
-    "logo_iad": "/photos/IAD_LOGO_FINAL-removebg-preview.png",
-    "logo_alt": "iad Prestige",
     "surtitre": "Rejoindre mon équipe",
-    "titre": "Rejoignez le n°1 de la transaction immobilière.",
-    "intro": "iad, c'est **63 000 ventes en 2025** et **+15 600 conseillers** en France et à l'international, avec **+18 ans d'expérience**. Au sein de mon équipe, je forme et accompagne celles et ceux qui veulent en faire leur métier.",
     "cta_primary_label": "Échanger 30 minutes",
-    "cta_primary_href": "/contact",
-    "cta_whatsapp_label": "💬 SMS",
+    "intro": "iad, c'est **63 000 ventes en 2025** et **+16 000 conseillers** en France et à l'international, et **18 ans d'expérience au service des conseillers**. \nAu sein de mon équipe, je forme et accompagne celles et ceux qui veulent en faire leur métier.",
     "cta_whatsapp_url": "sms:+33679571473?body=Bonjour%20Romain%2C%20je%20souhaite%20en%20savoir%20plus%20sur%20le%20m%C3%A9tier%20de%20conseiller%20iad.",
+    "titre": "Rejoignez le n°1 de la transaction immobilière.",
+    "logo_alt": "iad Prestige",
+    "cta_whatsapp_label": "💬 SMS",
+    "cta_primary_href": "/contact",
+    "logo_iad": "/photos/IAD_LOGO_FINAL-removebg-preview.png",
+    "video": "/videos/secteurs/ecully.mp4",
     "stats": [
-      { "valeur": "+18 ans", "label": "D'expérience" },
-      { "valeur": "+15 600", "label": "Conseillers iad" },
-      { "valeur": "94%", "label": "Conseillers satisfaits" },
-      { "valeur": "0€", "label": "D'apport requis" }
+      {
+        "valeur": "+18 ans",
+        "label": "D'expérience"
+      },
+      {
+        "valeur": "+16 000",
+        "label": "Conseillers iad"
+      },
+      {
+        "valeur": "94%",
+        "label": "Conseillers satisfaits"
+      },
+      {
+        "valeur": "0€",
+        "label": "D'apport requis"
+      }
     ]
   },
   "piliers": {
     "surtitre": "Pourquoi iad ?",
     "titre": "Six piliers, une promesse simple : votre réussite.",
     "items": [
-      { "titre": "Une rémunération sans limites", "desc": "Jusqu'à 85% de commission sur votre production personnelle. Diversifiez vos revenus avec la gestion locative, la prescription ou en créant votre équipe." },
-      { "titre": "Formation gratuite en continu", "desc": "23 ateliers en présentiel animés par plus de 600 formateurs et 40 h de formation vidéo (conforme loi ALUR). Pour apprendre ou vous perfectionner." },
-      { "titre": "Un accompagnement à chaque étape", "desc": "Votre parrain, votre gestionnaire administratif dédié et les équipes du siège iad sont à vos côtés pour vous accompagner vers la réussite." },
-      { "titre": "Des outils métier puissants", "desc": "Prospection, estimation, photos, visite virtuelle, prise de mandats, signature électronique. Gagnez en expertise et en temps avec les outils exclusifs iad." },
-      { "titre": "Entreprenez sans apport", "desc": "Contrairement aux franchises classiques, bâtissez votre fonds de commerce, cessible et valorisable, sans aucun apport ni financement." },
-      { "titre": "Fixez vos propres objectifs", "desc": "Vous concentrer sur la vente, vous spécialiser, devenir formateur, manager ou développer votre organisation à l'international… c'est vous le patron." }
+      {
+        "titre": "Une rémunération sans limites",
+        "desc": "Jusqu'à 85% de commission sur votre production personnelle. Diversifiez vos revenus avec la gestion locative, la prescription ou en créant votre équipe."
+      },
+      {
+        "titre": "Formation gratuite en continu",
+        "desc": "23 ateliers en présentiel animés par plus de 600 formateurs et 40 h de formation vidéo (conforme loi ALUR). Pour apprendre ou vous perfectionner."
+      },
+      {
+        "titre": "Un accompagnement à chaque étape",
+        "desc": "Votre parrain, votre gestionnaire administratif dédié et les équipes du siège iad sont à vos côtés pour vous accompagner toute votre aventure."
+      },
+      {
+        "titre": "Des outils métier puissants",
+        "desc": "Prospection, estimation, photos, visite virtuelle, prise de mandats, signature électronique. Gagnez en expertise et en temps avec les outils exclusifs iad."
+      },
+      {
+        "titre": "Entreprenez sans apport",
+        "desc": "Contrairement aux franchises classiques, bâtissez votre fonds de commerce, cessible et valorisable, sans aucun apport ni financement."
+      },
+      {
+        "titre": "Fixez vos propres objectifs",
+        "desc": "Vous concentrer sur la vente, vous spécialiser, devenir formateur, manager ou développer votre organisation à l'international… c'est vous le patron."
+      }
     ],
     "source": "Source : iad France 2025. N°1 de la transaction immobilière avec 63 000 ventes réalisées par iad France, en comparaison des chiffres déclarés par les principaux réseaux immobiliers nationaux en 2025."
   },
@@ -36,10 +66,22 @@
     "surtitre": "Pour qui ?",
     "titre": "Vous vous reconnaissez ?",
     "items": [
-      { "titre": "Vous avez une expérience commerciale", "desc": "Bancaire, automobile, B2B, retail, conseil… Votre culture du résultat sera votre meilleur atout sur le terrain." },
-      { "titre": "Vous êtes en reconversion", "desc": "Quitter un statut salarié pour entreprendre, c'est exactement ce que j'ai fait. Je vous explique comment sécuriser la transition." },
-      { "titre": "Vous êtes déjà conseiller immobilier", "desc": "Mauvaise rémunération, manque de liberté, outils dépassés ? Comparons concrètement votre situation actuelle avec ce que je vous propose." },
-      { "titre": "Vous démarrez votre vie pro", "desc": "Apprendre un métier en autonomie sous mentorat - un cadre exigeant mais formateur, idéal pour qui veut entreprendre tôt." }
+      {
+        "titre": "Vous avez une expérience commerciale",
+        "desc": "Bancaire, automobile, B2B, retail, conseil… Votre culture du résultat sera votre meilleur atout sur le terrain."
+      },
+      {
+        "titre": "Vous êtes en reconversion",
+        "desc": "Quitter un statut salarié pour entreprendre, c'est exactement ce que j'ai fait. Je vous explique comment sécuriser la transition."
+      },
+      {
+        "titre": "Vous êtes déjà conseiller immobilier",
+        "desc": "Mauvaise rémunération, manque de liberté, outils dépassés ? Comparons concrètement votre situation actuelle avec ce que je vous propose."
+      },
+      {
+        "titre": "Vous démarrez votre vie pro",
+        "desc": "Apprendre un métier en autonomie sous mentorat - un cadre exigeant mais formateur, idéal pour qui veut entreprendre tôt."
+      }
     ]
   },
   "qui_suis_je": {
@@ -47,23 +89,43 @@
     "titre": "Vous ne rejoignez pas un réseau. Vous rejoignez une équipe.",
     "paragraphes": [
       "Je m'appelle Romain Rieg, j'ai 28 ans et je suis passionné par l'immobilier. Après une reconversion professionnelle, j'ai choisi de devenir conseiller immobilier indépendant pour accompagner mes clients avec **transparence, engagement et conseils personnalisés**.",
-      "Membre du réseau iad France, j'utilise les outils technologiques les plus performants couplés à une stratégie digitale moderne pour assurer la meilleure diffusion des biens.",
-      "Depuis le début de ma carrière professionnelle, j'accompagne des femmes et des hommes à **performer et à monter en compétences** sur différentes thématiques. Mon objectif : apporter une vision claire, une structure solide et un accompagnement le plus humain possible via le réseau iad - en transmettant la passion et les clés du métier de l'immobilier."
+      "Membre du réseau iad France, je m'appuie sur des outils technologiques performants et une stratégie digitale moderne pour offrir à chaque bien la meilleure visibilité possible.",
+      "Depuis le début de ma carrière professionnelle, j'accompagne des femmes et des hommes à **performer et à monter en compétences** sur différentes thématiques. **Mon objectif : apporter une vision claire, une structure solide et un accompagnement le plus humain possible via le réseau iad** : en transmettant la passion et les clés du métier de l'immobilier."
     ],
     "photo": "/photos/IMG_6487_SnapseedCopy-1536x2048.jpg",
     "photo_alt": "Romain Rieg",
     "citation": "Le métier ne s'apprend pas dans les livres. Il s'apprend en visite, dossier après dossier.",
-    "citation_auteur": "Romain Rieg · Mentor iad"
+    "citation_auteur": "Romain Rieg · Coach immobilier iad"
   },
   "parcours": {
     "surtitre": "Le parcours",
     "titre": "De l'envie au premier mandat - cinq étapes claires.",
     "etapes": [
-      { "num": "01", "titre": "Échange découverte", "desc": "30 minutes en visio ou autour d'un café. Je vous présente concrètement le quotidien, la rémunération réelle, ce qui marche et ce qui est dur." },
-      { "num": "02", "titre": "Validation des prérequis", "desc": "Vérification du statut, des éventuels droits Pôle Emploi, mise en relation avec mon gestionnaire administratif iad." },
-      { "num": "03", "titre": "Formation en ligne & coaching", "desc": "Formation iad en ligne (parcours certifiant conforme loi ALUR), accessible à votre rythme, complétée par du coaching individuel et des ateliers en présentiel - prise en charge à 100%." },
-      { "num": "04", "titre": "Lancement accompagné", "desc": "Premiers mandats, premières prospections, premiers compromis - avec mon **soutien quotidien sur les 3 premiers mois, et bien plus**." },
-      { "num": "05", "titre": "Autonomie & développement", "desc": "Vous devenez maître de votre activité. Si l'envie vous vient, vous pourrez à votre tour recruter et créer votre équipe." }
+      {
+        "num": "01",
+        "titre": "Échange découverte",
+        "desc": "30 minutes en visio ou autour d'un café. Je vous présente concrètement le quotidien, la rémunération réelle, ce qui marche et ce qui est dur."
+      },
+      {
+        "num": "02",
+        "titre": "Validation des prérequis",
+        "desc": "Vérification du statut, des éventuels droits Pôle Emploi, mise en relation avec mon gestionnaire administratif iad."
+      },
+      {
+        "num": "03",
+        "titre": "Formation en ligne & coaching",
+        "desc": "Formation iad en ligne (parcours certifiant conforme loi ALUR), accessible à votre rythme, complétée par du coaching individuel et des ateliers en présentiel - prise en charge à 100%."
+      },
+      {
+        "num": "04",
+        "titre": "Lancement accompagné",
+        "desc": "Premiers mandats, premières prospections, premiers compromis - avec mon **soutien quotidien sur les 3 premiers mois, et bien plus**."
+      },
+      {
+        "num": "05",
+        "titre": "Autonomie & développement",
+        "desc": "Vous devenez maître de votre activité. Si l'envie vous vient, vous pourrez à votre tour recruter et créer votre équipe."
+      }
     ]
   },
   "cta_final": {
