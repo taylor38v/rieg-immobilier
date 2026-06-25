@@ -2,35 +2,59 @@
   "meta_title": "Acheter / Investir",
   "meta_description": "Trouvez votre futur chez-vous sur le Mont d'Or, l'Ouest lyonnais ou la Plaine du Forez. Accès off-market au réseau iad, accompagnement complet de la recherche à la signature.",
   "hero": {
-    "video": "/videos/secteurs/limonest.mp4",
+    "argument_gold": "**Mon rôle : vous faire gagner du temps**, vous donner accès aux bonnes opportunités - y compris celles qui ne sont pas toujours visibles sur les portails - et sécuriser chaque étape de votre achat.",
     "surtitre": "Acheter · Investir",
-    "titre": "Trouvez votre futur chez-vous.",
-    "intro": "Vous rêvez de trouver votre maison ou appartement idéal, mais vous en avez assez de voir les biens qui vous plaisent passer sous le nez ? Marre de courir après des annonces déjà vendues ?",
-    "argument_gold": "**Avec moi, accédez aux opportunités avant tout le monde** - y compris celles qui ne sont jamais publiées sur les portails classiques.",
-    "presentation": "Je suis Romain Rieg, conseiller immobilier du réseau iad France et résident de Saint-Didier-au-Mont-d'Or. Je connais chaque quartier et l'évolution réelle des prix au m². Mon objectif : vous faire gagner du temps, sécuriser votre achat et vous permettre de trouver votre futur chez-vous **sans stress ni mauvaise surprise**.",
     "cta_primary_label": "Démarrer ma recherche",
+    "intro": "Vous rêvez de trouver votre maison ou appartement idéal, mais vous en avez assez de voir les biens qui vous plaisent passer sous le nez ? Marre de courir après des annonces déjà vendues ?",
+    "titre": "Trouvez votre futur chez-vous.",
+    "cta_secondary_url": "sms:+33679571473?body=Bonjour%20Romain%2C%20je%20cherche%20un%20bien.",
     "cta_primary_href": "/contact",
     "cta_secondary_label": "💬 SMS",
-    "cta_secondary_url": "sms:+33679571473?body=Bonjour%20Romain%2C%20je%20cherche%20un%20bien."
+    "presentation": "Je suis Romain Rieg, conseiller immobilier iad basé à Saint-Didier-au-Mont-d’Or. Grâce à ma connaissance terrain des Monts d’Or, de l’Ouest lyonnais et de la Plaine du Forez, je vous accompagne dans votre recherche avec une approche claire, réactive et personnalisée.\n\n",
+    "video": "/videos/secteurs/limonest.mp4"
   },
   "piliers": {
     "surtitre": "Pourquoi acheter ou investir avec moi ?",
-    "titre": "Quatre piliers concrets.",
+    "titre": "Quatre piliers concrets pour sécuriser votre projet.",
     "items": [
-      { "titre": "Expertise locale", "desc": "Je connais parfaitement le marché immobilier de Saint-Didier-au-Mont-d'Or, l'Ouest lyonnais et la Plaine du Forez. Notamment chaque quartier, le prix au m² et les opportunités cachées." },
-      { "titre": "Accès off-market & réseau iad", "desc": "Un accès en avant-première à tous les biens diffusés dans le réseau iad, premier réseau en France." },
-      { "titre": "Accompagnement sur-mesure", "desc": "Je vous guide de la recherche à la signature, avec un suivi administratif complet." },
-      { "titre": "Investissement sécurisé", "desc": "Conseils sur le neuf, l'ancien et la rentabilité locative pour que votre projet soit pérenne." }
+      {
+        "titre": "Expertise locale",
+        "desc": "Je connais les marchés des Monts d’Or, de l’Ouest lyonnais et de la Plaine du Forez dans le détail : secteurs recherchés, prix au m², évolution du marché et opportunités à saisir."
+      },
+      {
+        "titre": "Accès off-market & réseau iad",
+        "desc": "Grâce au réseau iad et à mon réseau local, vous pouvez accéder à des biens en avant-première, parfois avant leur diffusion sur les portails immobiliers classiques."
+      },
+      {
+        "titre": "Accompagnement sur-mesure",
+        "desc": "Je vous guide à chaque étape : définition de votre recherche, sélection des biens, analyse du prix, organisation des visites, négociation et suivi jusqu’à la signature."
+      },
+      {
+        "titre": "Investissement sécurisé",
+        "desc": "Que votre projet concerne le neuf, l’ancien ou un investissement locatif, je vous aide à évaluer le potentiel du bien, sa cohérence avec votre objectif et sa pérennité dans le temps."
+      }
     ]
   },
   "services": {
     "surtitre": "Mes services pour l'achat & l'investissement",
     "titre": "De la recherche à la remise des clés.",
     "items": [
-      { "titre": "Chasse immobilière personnalisée", "desc": "Gagnez du temps : visitez uniquement les biens vraiment pertinents pour votre projet. Vous accédez aussi bien aux biens publics qu'au portefeuille exclusif iad." },
-      { "titre": "Achat dans l'ancien ou le neuf", "desc": "Analyse et comparaison des biens, conseils sur la valorisation et l'optimisation. Je vous oriente vers ce qui vous convient vraiment." },
-      { "titre": "Accompagnement jusqu'à la signature", "desc": "Visites guidées et conseils personnalisés. Négociation pour obtenir le meilleur prix. Suivi administratif complet jusqu'au notaire." },
-      { "titre": "Accès à 100% des biens disponibles", "desc": "Partage complet au sein du réseau iad. Ouverture au partage de commission entre conseillers - vous accédez à plus de biens, pas moins." }
+      {
+        "titre": "Chasse immobilière personnalisée",
+        "desc": "Gagnez du temps avec une sélection de biens réellement adaptés à votre projet : secteur, budget, critères de vie, potentiel de valorisation. Vous visitez uniquement les opportunités pertinentes."
+      },
+      {
+        "titre": "Achat dans l'ancien ou le neuf",
+        "desc": "Je vous accompagne dans l’analyse et la comparaison des biens : emplacement, prix, état général, potentiel d’évolution, cohérence avec votre projet. L’objectif : vous orienter vers le bien qui vous correspond vraiment."
+      },
+      {
+        "titre": "Accompagnement jusqu'à la signature",
+        "desc": "Visites, conseils personnalisés, aide à la négociation et suivi administratif complet jusqu’au notaire. Je vous accompagne à chaque étape pour sécuriser votre achat."
+      },
+      {
+        "titre": "Accès élargi aux opportunités",
+        "desc": "Grâce au partage entre conseillers iad et à mon réseau local, vous bénéficiez d’un accès plus large aux biens disponibles, qu’ils soient diffusés publiquement ou proposés en avant-première."
+      }
     ]
   },
   "secteurs_section": {
