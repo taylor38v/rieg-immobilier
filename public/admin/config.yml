@@ -866,6 +866,143 @@ collections:
           - { name: "date_maj", label: "Date de mise à jour", widget: "string" }
           - { name: "body", label: "Contenu (markdown libre)", widget: "markdown" }
 
+      - file: "content/site/outils-pages.json"
+        label: "🧮 Textes des 8 outils"
+        name: "outils-pages"
+        format: "json"
+        description: "Textes éditoriaux des 8 pages de calculateurs (titres, intros, notes, avertissements). Les libellés des champs de calcul, formules et résultats chiffrés ne sont pas modifiables ici."
+        fields:
+          - name: "carte-prix"
+            label: "📍 Outil 01 · Carte des prix"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { name: "surtitre", label: "Surtitre (Outil 01)", widget: "string", required: false }
+              - { name: "titre", label: "Titre H1", widget: "string", required: false }
+              - { name: "intro", label: "Paragraphe d'intro", widget: "text", required: false }
+              - { name: "limitrophes_titre", label: "Section limitrophes · titre", widget: "string", required: false }
+              - { name: "limitrophes_intro", label: "Section limitrophes · intro", widget: "text", required: false }
+              - { name: "limitrophes_note", label: "Encart bas limitrophes · texte", widget: "text", required: false }
+              - { name: "limitrophes_note_lien", label: "Encart bas limitrophes · libellé du lien", widget: "string", required: false }
+              - { name: "classement_titre", label: "Classement · titre (avant l'année)", widget: "string", required: false }
+              - { name: "methodologie_label", label: "Méthodologie · label en gras", widget: "string", required: false }
+              - { name: "methodologie", label: "Méthodologie · texte", widget: "text", required: false }
+              - { name: "cta_titre", label: "CTA bas de page · titre", widget: "string", required: false }
+              - { name: "cta_intro", label: "CTA bas de page · texte", widget: "text", required: false }
+              - { name: "cta_label", label: "CTA bas de page · bouton", widget: "string", required: false }
+          - name: "capacite-achat"
+            label: "🏦 Outil 02 · Capacité d'achat"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { name: "surtitre", label: "Surtitre (Outil 02)", widget: "string", required: false }
+              - { name: "titre", label: "Titre H1", widget: "string", required: false }
+              - { name: "resultat_titre", label: "Résultat · titre (Votre budget total)", widget: "string", required: false }
+              - { name: "representation_surtitre", label: "Section représentation · surtitre", widget: "string", required: false }
+              - { name: "representation_titre", label: "Section représentation · titre", widget: "string", required: false }
+              - { name: "note", label: "Note indicative (bas de section)", widget: "text", required: false }
+              - { name: "cta_titre", label: "CTA bas de page · titre", widget: "string", required: false }
+              - { name: "cta_intro", label: "CTA bas de page · texte", widget: "text", required: false }
+          - name: "acheter-vs-louer"
+            label: "⚖️ Outil 03 · Acheter ou louer"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { name: "surtitre", label: "Surtitre (Outil 03)", widget: "string", required: false }
+              - { name: "titre", label: "Titre H1", widget: "string", required: false }
+              - { name: "intro", label: "Paragraphe d'intro", widget: "text", required: false }
+              - { name: "verdict_prefix", label: "Verdict · texte avant le nombre d'années", widget: "string", required: false }
+              - { name: "verdict_suffix", label: "Verdict · texte après le nombre d'années", widget: "string", required: false }
+              - { name: "verdict_achat", label: "Verdict · phrase si l'achat gagne", widget: "string", required: false }
+              - { name: "verdict_location", label: "Verdict · phrase si la location gagne", widget: "string", required: false }
+              - { name: "bascule_prefix", label: "Point de bascule · texte avant le nombre", widget: "text", required: false }
+              - { name: "bascule_unite", label: "Point de bascule · unité (ans)", widget: "string", required: false }
+              - { name: "bascule_suffix", label: "Point de bascule · texte après le nombre", widget: "string", required: false }
+              - { name: "bascule_aucun", label: "Point de bascule · phrase si aucun (location toujours préférable)", widget: "text", required: false }
+              - { name: "scenario_achat_titre", label: "Carte scénario achat · titre", widget: "string", required: false }
+              - { name: "scenario_location_titre", label: "Carte scénario location · titre", widget: "string", required: false }
+              - { name: "a_retenir_label", label: "À retenir · label en gras", widget: "string", required: false }
+              - { name: "a_retenir", label: "À retenir · texte", widget: "text", required: false }
+              - { name: "cta_titre", label: "CTA bas de page · titre", widget: "string", required: false }
+              - { name: "cta_intro", label: "CTA bas de page · texte", widget: "text", required: false }
+          - name: "frais-notaire"
+            label: "📜 Outil 04 · Frais de notaire"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { name: "surtitre", label: "Surtitre (Outil 04)", widget: "string", required: false }
+              - { name: "titre", label: "Titre H1", widget: "string", required: false }
+              - { name: "intro", label: "Paragraphe d'intro", widget: "text", required: false }
+              - { name: "resultat_titre", label: "Résultat · titre (Total frais de notaire)", widget: "string", required: false }
+              - { name: "repartition_titre", label: "Répartition · titre", widget: "string", required: false }
+              - { name: "methodologie_titre", label: "Méthodologie · titre du dépliant", widget: "string", required: false }
+              - { name: "cta_titre", label: "CTA bas de page · titre", widget: "string", required: false }
+              - { name: "cta_intro", label: "CTA bas de page · texte", widget: "text", required: false }
+          - name: "vendabilite"
+            label: "🎯 Outil 05 · Vendabilité"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { name: "surtitre", label: "Surtitre (Outil 05)", widget: "string", required: false }
+              - { name: "titre", label: "Titre H1", widget: "string", required: false }
+              - { name: "intro", label: "Paragraphe d'intro", widget: "text", required: false }
+              - { name: "avertissement_titre", label: "Avertissement · phrase en gras", widget: "string", required: false }
+              - { name: "avertissement", label: "Avertissement · texte", widget: "text", required: false }
+              - { name: "score_titre", label: "Bloc score · titre", widget: "string", required: false }
+              - { name: "decomposition_titre", label: "Décomposition du score · titre", widget: "string", required: false }
+              - { name: "diagnostic_titre", label: "Diagnostic en 3 points · titre", widget: "string", required: false }
+              - { name: "sources_titre", label: "Sources · label en gras", widget: "string", required: false }
+              - { name: "sources_intro", label: "Sources · texte (avant les liens)", widget: "text", required: false }
+              - { name: "cta_titre", label: "CTA bas de page · titre", widget: "string", required: false }
+              - { name: "cta_intro", label: "CTA bas de page · texte", widget: "text", required: false }
+          - name: "projection"
+            label: "📈 Outil 06 · Projection de valeur"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { name: "surtitre", label: "Surtitre (Outil 06)", widget: "string", required: false }
+              - { name: "titre_prefix", label: "Titre H1 · texte avant le nombre d'années", widget: "string", required: false }
+              - { name: "titre_suffix", label: "Titre H1 · texte après le nombre d'années", widget: "string", required: false }
+              - { name: "avertissement", label: "Avertissement (encart doré)", widget: "text", required: false }
+              - { name: "resultat_titre", label: "Résultat · titre (Projection scénario central)", widget: "string", required: false }
+              - { name: "methodologie_label", label: "Méthodologie · label en gras", widget: "string", required: false }
+              - { name: "methodologie", label: "Méthodologie · texte", widget: "text", required: false }
+              - { name: "cta_titre", label: "CTA bas de page · titre", widget: "string", required: false }
+              - { name: "cta_intro", label: "CTA bas de page · texte", widget: "text", required: false }
+          - name: "dpe-express"
+            label: "🌡️ Outil 07 · DPE express"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { name: "surtitre", label: "Surtitre (Outil 07)", widget: "string", required: false }
+              - { name: "titre", label: "Titre H1", widget: "string", required: false }
+              - { name: "intro", label: "Paragraphe d'intro", widget: "text", required: false }
+              - { name: "classe_titre", label: "Bloc résultat · titre (Classe DPE estimée)", widget: "string", required: false }
+              - { name: "bien_performant_titre", label: "Bien déjà performant · titre", widget: "string", required: false }
+              - { name: "bien_performant_texte", label: "Bien déjà performant · texte", widget: "text", required: false }
+              - { name: "disclaimer_label", label: "Disclaimer · label en gras", widget: "string", required: false }
+              - { name: "disclaimer_texte", label: "Disclaimer · texte", widget: "text", required: false }
+              - { name: "cta_titre", label: "CTA bas de page · titre", widget: "string", required: false }
+              - { name: "cta_intro", label: "CTA bas de page · texte", widget: "text", required: false }
+          - name: "rentabilite-locative"
+            label: "💸 Outil 08 · Rentabilité locative"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { name: "surtitre", label: "Surtitre (Outil 08)", widget: "string", required: false }
+              - { name: "titre", label: "Titre H1", widget: "string", required: false }
+              - { name: "intro", label: "Paragraphe d'intro", widget: "text", required: false }
+              - { name: "cashflow_titre", label: "Cash-flow · titre", widget: "string", required: false }
+              - { name: "patrimoine_titre", label: "Patrimoine · titre (avant le nombre d'années)", widget: "string", required: false }
+              - { name: "patrimoine_titre_suffix", label: "Patrimoine · unité (ans)", widget: "string", required: false }
+              - { name: "note_enrichissement", label: "Note enrichissement (astérisque)", widget: "text", required: false }
+              - { name: "verdict_label", label: "Verdict · label en gras", widget: "string", required: false }
+              - { name: "verdict_rentable", label: "Verdict · phrase si rentable", widget: "text", required: false }
+              - { name: "verdict_moyen", label: "Verdict · phrase si moyen", widget: "text", required: false }
+              - { name: "verdict_faible", label: "Verdict · phrase si faible", widget: "text", required: false }
+              - { name: "cta_titre", label: "CTA bas de page · titre", widget: "string", required: false }
+              - { name: "cta_intro", label: "CTA bas de page · texte", widget: "text", required: false }
+
   - name: "zones"
     label: "🗺️ Zones de vente (/vendre/...)"
     label_singular: "Zone"

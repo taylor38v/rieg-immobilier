@@ -5,6 +5,9 @@ import { secteurs, formatPrix } from "../../lib/data";
 import { secteursDetails } from "../../lib/secteursDetails";
 import SliderInput from "../../components/SliderInput";
 import ContactCTA from "../../components/ContactCTA";
+import { site } from "../../lib/_generated/site";
+
+const t = (site as any)["outils-pages"]?.["projection"] ?? {};
 
 // Taux annuels recalibrés mai 2026 - après correction marché 2024 + stabilisation 2025
 // Maison vs Appartement : maisons un peu plus tendues sur Mont d'Or, apparts plus stables
@@ -82,11 +85,11 @@ export default function Page() {
     <>
     <div className="max-w-7xl mx-auto px-6 py-16 md:py-20">
       <Link href="/outils" className="text-sm text-muted hover:text-navy">← Tous les outils</Link>
-      <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium mt-8">Outil 06</div>
-      <h1 className="font-serif text-3xl md:text-4xl mt-3">Combien vaudra mon bien dans {horizon} ans ?</h1>
+      <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium mt-8">{t.surtitre ?? "Outil 06"}</div>
+      <h1 className="font-serif text-3xl md:text-4xl mt-3">{t.titre_prefix ?? "Combien vaudra mon bien dans"} {horizon} {t.titre_suffix ?? "ans ?"}</h1>
       <div className="rounded-xl mt-6 p-4 bg-gold/10 border-l-2 border-gold">
         <p className="text-sm text-ink/85 leading-relaxed">
-          ⚠️ <strong>Projection indicative.</strong> Basée sur les tendances 2020-2025 réelles par commune et type de bien. Ne préjuge pas de l'évolution future, qui dépend du contexte économique, réglementaire (loi Climat, fiscalité) et local. Pour une analyse fiable, une étude personnalisée intégrant les spécificités de votre bien est nécessaire.
+          ⚠️ {t.avertissement ?? "Projection indicative. Basée sur les tendances 2020-2025 réelles par commune et type de bien. Ne préjuge pas de l'évolution future, qui dépend du contexte économique, réglementaire (loi Climat, fiscalité) et local. Pour une analyse fiable, une étude personnalisée intégrant les spécificités de votre bien est nécessaire."}
         </p>
       </div>
 
@@ -144,7 +147,7 @@ export default function Page() {
 
         <div>
           <div className="rounded-xl bg-navy text-ivory p-8">
-            <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">Projection scénario central</div>
+            <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{t.resultat_titre ?? "Projection scénario central"}</div>
             <div className="flex items-baseline gap-4 mt-2">
               <div className="font-serif text-5xl text-gold">{formatPrix(data.central[horizon])}</div>
               <div className="text-ivory/60 text-sm">soit <span className="text-gold">{data.plusValueCentrale >= 0 ? "+" : ""}{formatPrix(data.plusValueCentrale)}</span> de variation</div>
@@ -217,7 +220,7 @@ export default function Page() {
           </div>
 
           <p className="text-xs text-muted mt-4 leading-relaxed">
-            <strong>Méthodologie :</strong> historique 2020-2025 basé sur les chiffres Meilleurs Agents et DVF (Demandes de Valeurs Foncières). Projection forward basée sur les tendances long terme par commune et type de bien, intégrant la correction de 2024 et la stabilisation 2025. Ne constitue pas un engagement de valorisation.
+            <strong>{t.methodologie_label ?? "Méthodologie :"}</strong> {t.methodologie ?? "historique 2020-2025 basé sur les chiffres Meilleurs Agents et DVF (Demandes de Valeurs Foncières). Projection forward basée sur les tendances long terme par commune et type de bien, intégrant la correction de 2024 et la stabilisation 2025. Ne constitue pas un engagement de valorisation."}
           </p>
         </div>
       </div>
@@ -225,8 +228,8 @@ export default function Page() {
     </div>
 
     <ContactCTA
-        titre="Analyse personnalisée de votre bien ?"
-        intro="Une analyse approfondie croise la projection avec votre quartier précis, le DPE, l'état et les comparables récents pour une vraie estimation."
+        titre={t.cta_titre ?? "Analyse personnalisée de votre bien ?"}
+        intro={t.cta_intro ?? "Une analyse approfondie croise la projection avec votre quartier précis, le DPE, l'état et les comparables récents pour une vraie estimation."}
     />
     </>
   );

@@ -5,6 +5,9 @@ import { formatPrix } from "../../lib/data";
 import SliderInput from "../../components/SliderInput";
 import DureeChoice from "../../components/DureeChoice";
 import ContactCTA from "../../components/ContactCTA";
+import { site } from "../../lib/_generated/site";
+
+const t = (site as any)["outils-pages"]?.["acheter-vs-louer"] ?? {};
 
 export default function Page() {
   const [prix, setPrix] = useState(450000);
@@ -109,9 +112,9 @@ export default function Page() {
     <>
     <div className="max-w-7xl mx-auto px-6 py-16 md:py-20">
       <Link href="/outils" className="text-sm text-muted hover:text-navy">← Tous les outils</Link>
-      <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium mt-8">Outil 03</div>
-      <h1 className="font-serif text-3xl md:text-4xl mt-3">Acheter ou louer ?</h1>
-      <p className="text-muted mt-4 max-w-2xl">Comparaison financière complète sur votre durée d'occupation. Intègre frais de notaire, intérêts, taxe foncière, charges, valorisation et placement alternatif de l'apport.</p>
+      <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium mt-8">{t.surtitre ?? "Outil 03"}</div>
+      <h1 className="font-serif text-3xl md:text-4xl mt-3">{t.titre ?? "Acheter ou louer ?"}</h1>
+      <p className="text-muted mt-4 max-w-2xl">{t.intro ?? "Comparaison financière complète sur votre durée d'occupation. Intègre frais de notaire, intérêts, taxe foncière, charges, valorisation et placement alternatif de l'apport."}</p>
 
       <div className="grid lg:grid-cols-[1fr_1.4fr] gap-12 mt-12">
         <div className="space-y-6">
@@ -130,18 +133,18 @@ export default function Page() {
 
         <div className="space-y-4">
           <div className="rounded-xl bg-navy text-ivory p-8">
-            <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">Verdict à {horizon} ans</div>
+            <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{t.verdict_prefix ?? "Verdict à"} {horizon} {t.verdict_suffix ?? "ans"}</div>
             <div className="font-serif text-4xl mt-3">
-              {winner === "achat" ? <span className="text-gold">L'achat est financièrement plus avantageux</span> : <span className="text-gold">La location est financièrement plus avantageuse</span>}
+              {winner === "achat" ? <span className="text-gold">{t.verdict_achat ?? "L'achat est financièrement plus avantageux"}</span> : <span className="text-gold">{t.verdict_location ?? "La location est financièrement plus avantageuse"}</span>}
             </div>
             <div className="text-ivory/70 text-sm mt-3">
-              {r.seuil ? <>Le point de bascule (où l'achat devient gagnant) se situe à <span className="text-gold font-medium">{r.seuil} ans</span> d'occupation.</> : "Sur les 30 prochaines années, la location reste financièrement préférable dans cette configuration."}
+              {r.seuil ? <>{t.bascule_prefix ?? "Le point de bascule (où l'achat devient gagnant) se situe à"} <span className="text-gold font-medium">{r.seuil} {t.bascule_unite ?? "ans"}</span> {t.bascule_suffix ?? "d'occupation."}</> : (t.bascule_aucun ?? "Sur les 30 prochaines années, la location reste financièrement préférable dans cette configuration.")}
             </div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-4">
             <div className={`rounded-xl p-6 ${winner === "achat" ? "bg-gold/10 border border-gold" : "bg-white border border-ink/10"}`}>
-              <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">Scénario achat</div>
+              <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{t.scenario_achat_titre ?? "Scénario achat"}</div>
               <div className="mt-4 space-y-3 text-sm">
                 <Row l="Patrimoine net (valeur − dette)" v={formatPrix(r.patrimoineAchat)} highlight />
                 <Row l="Mensualité de prêt" v={`${formatPrix(r.mensualite)} /mois`} />
@@ -151,7 +154,7 @@ export default function Page() {
               </div>
             </div>
             <div className={`rounded-xl p-6 ${winner === "location" ? "bg-gold/10 border border-gold" : "bg-white border border-ink/10"}`}>
-              <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">Scénario location + placement</div>
+              <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{t.scenario_location_titre ?? "Scénario location + placement"}</div>
               <div className="mt-4 space-y-3 text-sm">
                 <Row l="Capital placé constitué" v={formatPrix(r.patrimoineLocataire)} highlight />
                 <Row l="Loyer initial" v={`${loyer} € /mois`} />
@@ -163,7 +166,7 @@ export default function Page() {
           </div>
 
           <div className="rounded-xl bg-ivory-deep p-5 text-sm leading-relaxed">
-            <strong className="text-navy">À retenir :</strong> ce comparatif est purement financier. La propriété apporte aussi de la sécurité, la possibilité de transmettre, la liberté de transformer. La location offre flexibilité géographique et zéro travaux. Un échange permet de mettre ces chiffres en perspective avec votre projet de vie.
+            <strong className="text-navy">{t.a_retenir_label ?? "À retenir :"}</strong> {t.a_retenir ?? "ce comparatif est purement financier. La propriété apporte aussi de la sécurité, la possibilité de transmettre, la liberté de transformer. La location offre flexibilité géographique et zéro travaux. Un échange permet de mettre ces chiffres en perspective avec votre projet de vie."}
           </div>
         </div>
       </div>
@@ -171,8 +174,8 @@ export default function Page() {
     </div>
 
     <ContactCTA
-        titre="Me contacter pour en parler"
-        intro="Mettre ces chiffres en face d'un vrai bien, d'une vraie ville, d'un vrai projet de vie : un échange en visio ou en agence pour aller plus loin."
+        titre={t.cta_titre ?? "Me contacter pour en parler"}
+        intro={t.cta_intro ?? "Mettre ces chiffres en face d'un vrai bien, d'une vraie ville, d'un vrai projet de vie : un échange en visio ou en agence pour aller plus loin."}
     />
     </>
   );

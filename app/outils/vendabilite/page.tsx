@@ -4,6 +4,9 @@ import Link from "next/link";
 import { secteurs, formatPrix } from "../../lib/data";
 import SliderInput from "../../components/SliderInput";
 import ContactCTA from "../../components/ContactCTA";
+import { site } from "../../lib/_generated/site";
+
+const t = (site as any)["outils-pages"]?.["vendabilite"] ?? {};
 
 const etats = ["Neuf / rénové <5 ans", "Bon état", "À rafraîchir", "Travaux importants"];
 const dpes = ["A", "B", "C", "D", "E", "F", "G"];
@@ -66,12 +69,12 @@ export default function Page() {
     <>
     <div className="max-w-7xl mx-auto px-6 py-16 md:py-20">
       <Link href="/outils" className="text-sm text-muted hover:text-navy">← Tous les outils</Link>
-      <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium mt-8">Outil 05</div>
-      <h1 className="font-serif text-3xl md:text-4xl mt-3">Diagnostic indicatif de vendabilité</h1>
-      <p className="text-muted mt-4 max-w-2xl">En 30 secondes, mesurez les chances réelles de vendre votre bien. Diagnostic personnalisé sur prix, DPE et tension de marché.</p>
+      <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium mt-8">{t.surtitre ?? "Outil 05"}</div>
+      <h1 className="font-serif text-3xl md:text-4xl mt-3">{t.titre ?? "Diagnostic indicatif de vendabilité"}</h1>
+      <p className="text-muted mt-4 max-w-2xl">{t.intro ?? "En 30 secondes, mesurez les chances réelles de vendre votre bien. Diagnostic personnalisé sur prix, DPE et tension de marché."}</p>
       <div className="rounded-xl mt-6 p-4 bg-gold/10 border-l-2 border-gold max-w-3xl">
         <p className="text-sm text-ink/85 leading-relaxed">
-          ⚠️ <strong>Score indicatif basé sur les seules données saisies.</strong> Le résultat dépend directement de la précision des informations entrées. Pour un avis fiable et argumenté, un avis de valeur officiel gratuit est réalisé sous 24 - 48 h, basé sur une visite qualitative.
+          ⚠️ <strong>{t.avertissement_titre ?? "Score indicatif basé sur les seules données saisies."}</strong> {t.avertissement ?? "Le résultat dépend directement de la précision des informations entrées. Pour un avis fiable et argumenté, un avis de valeur officiel gratuit est réalisé sous 24 - 48 h, basé sur une visite qualitative."}
         </p>
       </div>
 
@@ -99,7 +102,7 @@ export default function Page() {
 
         <div className="space-y-4">
           <div className="rounded-xl bg-navy text-ivory p-8">
-            <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">Score</div>
+            <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{t.score_titre ?? "Score"}</div>
             <div className="flex items-end gap-3 mt-2">
               <div className="font-serif text-7xl text-gold leading-none">{r.total}</div>
               <div className="text-ivory/50 text-2xl font-serif mb-2">/100</div>
@@ -114,7 +117,7 @@ export default function Page() {
           </div>
 
           <div className="rounded-xl bg-white border border-ink/10 p-6">
-            <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">Décomposition du score</div>
+            <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{t.decomposition_titre ?? "Décomposition du score"}</div>
             {[
               ["État du bien", r.etatScore, 25],
               ["Performance énergétique", r.dpeScore, 25],
@@ -134,7 +137,7 @@ export default function Page() {
           </div>
 
           <div className="rounded-xl bg-white border border-ink/10 p-6">
-            <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">Diagnostic en 3 points</div>
+            <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{t.diagnostic_titre ?? "Diagnostic en 3 points"}</div>
             <div className="mt-4 space-y-3">
               {r.diags.map((d, i) => (
                 <div key={i} className={`flex gap-3 p-3 ${d.type === "ok" ? "bg-gold/5 border-l-2 border-gold" : "bg-navy/5 border-l-2 border-navy"}`}>
@@ -146,7 +149,7 @@ export default function Page() {
           </div>
 
           <div className="rounded-xl bg-ivory-deep p-5 text-xs text-muted leading-relaxed">
-            <strong className="text-navy">Sources de référence :</strong> ce diagnostic croise les prix médians par secteur (compilation interne) avec les données publiques officielles. Pour aller plus loin :{" "}
+            <strong className="text-navy">{t.sources_titre ?? "Sources de référence :"}</strong> {t.sources_intro ?? "ce diagnostic croise les prix médians par secteur (compilation interne) avec les données publiques officielles. Pour aller plus loin :"}{" "}
             <a href="https://www.meilleursagents.com/prix-immobilier/" target="_blank" rel="noopener" className="text-navy underline hover:text-gold">Meilleurs Agents</a>
             {" · "}
             <a href="https://app.dvf.etalab.gouv.fr/" target="_blank" rel="noopener" className="text-navy underline hover:text-gold">DVF (Demandes de Valeurs Foncières)</a>.
@@ -157,8 +160,8 @@ export default function Page() {
     </div>
 
     <ContactCTA
-        titre="Avis de valeur officiel ?"
-        intro="Visite de votre bien et rapport complet (comparables, photos, stratégie) sous 24 - 48 h. Gratuit et sans engagement."
+        titre={t.cta_titre ?? "Avis de valeur officiel ?"}
+        intro={t.cta_intro ?? "Visite de votre bien et rapport complet (comparables, photos, stratégie) sous 24 - 48 h. Gratuit et sans engagement."}
     />
     </>
   );

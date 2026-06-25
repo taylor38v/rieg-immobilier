@@ -5,6 +5,9 @@ import { formatPrix } from "../../lib/data";
 import SliderInput from "../../components/SliderInput";
 import DureeChoice from "../../components/DureeChoice";
 import ContactCTA from "../../components/ContactCTA";
+import { site } from "../../lib/_generated/site";
+
+const t = (site as any)["outils-pages"]?.["rentabilite-locative"] ?? {};
 
 export default function Page() {
   const [prix, setPrix] = useState(280000);
@@ -51,9 +54,9 @@ export default function Page() {
     <>
     <div className="max-w-7xl mx-auto px-6 py-16 md:py-20">
       <Link href="/outils" className="text-sm text-muted hover:text-navy">← Tous les outils</Link>
-      <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium mt-8">Outil 08</div>
-      <h1 className="font-serif text-3xl md:text-4xl mt-3">Rentabilité locative</h1>
-      <p className="text-muted mt-4 max-w-2xl">Rendement brut, net, cash-flow et enrichissement patrimonial sur 20 ans. Tient compte de la fiscalité, de la vacance locative et de l'évolution du marché.</p>
+      <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium mt-8">{t.surtitre ?? "Outil 08"}</div>
+      <h1 className="font-serif text-3xl md:text-4xl mt-3">{t.titre ?? "Rentabilité locative"}</h1>
+      <p className="text-muted mt-4 max-w-2xl">{t.intro ?? "Rendement brut, net, cash-flow et enrichissement patrimonial sur 20 ans. Tient compte de la fiscalité, de la vacance locative et de l'évolution du marché."}</p>
 
       <div className="grid lg:grid-cols-[1fr_1.4fr] gap-12 mt-12">
         <div className="space-y-5">
@@ -91,7 +94,7 @@ export default function Page() {
           </div>
 
           <div className="rounded-xl bg-navy text-ivory p-6">
-            <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">Cash-flow mensuel après impôts</div>
+            <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{t.cashflow_titre ?? "Cash-flow mensuel après impôts"}</div>
             <div className="flex items-baseline gap-3 mt-2">
               <div className={`font-serif text-5xl ${r.cashflowAnnuel >= 0 ? "text-gold" : "text-rose-300"}`}>
                 {r.cashflowAnnuel >= 0 ? "+" : ""}{Math.round(r.cashflowAnnuel / 12)} €/mois
@@ -105,7 +108,7 @@ export default function Page() {
           </div>
 
           <div className="rounded-xl bg-white border border-ink/10 p-6">
-            <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">Patrimoine constitué dans {duree} ans</div>
+            <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{t.patrimoine_titre ?? "Patrimoine constitué dans"} {duree} {t.patrimoine_titre_suffix ?? "ans"}</div>
             <div className="grid grid-cols-2 gap-4 mt-4">
               <div>
                 <div className="text-xs text-muted uppercase tracking-widest">Valeur du bien</div>
@@ -124,16 +127,16 @@ export default function Page() {
                 <text key={y} x={40 + (y / 20) * 540} y="190" fontSize="9" fill="#6b6355" textAnchor="middle">{y}a</text>
               ))}
             </svg>
-            <div className="text-[11px] text-muted">* valeur du bien + cash-flow cumulé − apport initial. Hors revente et fiscalité de plus-value.</div>
+            <div className="text-[11px] text-muted">{t.note_enrichissement ?? "* valeur du bien + cash-flow cumulé − apport initial. Hors revente et fiscalité de plus-value."}</div>
           </div>
 
           <div className="rounded-xl bg-ivory-deep p-5 text-sm leading-relaxed">
-            <strong className="text-navy">Verdict :</strong>{" "}
+            <strong className="text-navy">{t.verdict_label ?? "Verdict :"}</strong>{" "}
             {r.netNet >= 4
-              ? "Investissement rentable, à étudier."
+              ? (t.verdict_rentable ?? "Investissement rentable, à étudier.")
               : r.netNet >= 2.5
-              ? "Rentabilité moyenne - l'effort d'épargne reste raisonnable, le pari porte sur la valorisation patrimoniale."
-              : "Rentabilité faible : l'opération n'a de sens que si le bien est très bien placé pour la plus-value future."}
+              ? (t.verdict_moyen ?? "Rentabilité moyenne - l'effort d'épargne reste raisonnable, le pari porte sur la valorisation patrimoniale.")
+              : (t.verdict_faible ?? "Rentabilité faible : l'opération n'a de sens que si le bien est très bien placé pour la plus-value future.")}
           </div>
         </div>
       </div>
@@ -141,8 +144,8 @@ export default function Page() {
     </div>
 
     <ContactCTA
-        titre="Sélection de biens à fort rendement ?"
-        intro="Sur le Mont d'Or, l'Ouest lyonnais et la Plaine du Forez, un sourcing investisseur identifie les biens off-market et les programmes neufs."
+        titre={t.cta_titre ?? "Sélection de biens à fort rendement ?"}
+        intro={t.cta_intro ?? "Sur le Mont d'Or, l'Ouest lyonnais et la Plaine du Forez, un sourcing investisseur identifie les biens off-market et les programmes neufs."}
     />
     </>
   );

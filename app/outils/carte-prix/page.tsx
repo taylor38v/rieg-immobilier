@@ -4,6 +4,9 @@ import Link from "next/link";
 import { secteurs, formatPrix } from "../../lib/data";
 import { secteursDetails } from "../../lib/secteursDetails";
 import { zones } from "../../lib/territoire";
+import { site } from "../../lib/_generated/site";
+
+const t = (site as any)["outils-pages"]?.["carte-prix"] ?? {};
 
 // Slugs des communes ayant déjà une fiche dédiée → exclues de la section limitrophes
 const FICHES_EXISTANTES = new Set([
@@ -58,9 +61,9 @@ export default function Page() {
   return (
     <div className="max-w-7xl mx-auto px-6 py-16 md:py-20">
       <Link href="/outils" className="text-sm text-muted hover:text-navy">← Tous les outils</Link>
-      <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium mt-8">Outil 01</div>
-      <h1 className="font-serif text-3xl md:text-4xl mt-3">Carte des prix immobiliers</h1>
-      <p className="text-muted mt-4 max-w-2xl">Prix moyens au m² par commune sur le Mont d'Or, l'Ouest lyonnais et la Plaine du Forez. Données Meilleurs Agents 2026 et DVF.</p>
+      <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium mt-8">{t.surtitre ?? "Outil 01"}</div>
+      <h1 className="font-serif text-3xl md:text-4xl mt-3">{t.titre ?? "Carte des prix immobiliers"}</h1>
+      <p className="text-muted mt-4 max-w-2xl">{t.intro ?? "Prix moyens au m² par commune sur le Mont d'Or, l'Ouest lyonnais et la Plaine du Forez. Données Meilleurs Agents 2026 et DVF."}</p>
 
       {/* Contrôles */}
       <div className="rounded-xl flex flex-wrap gap-4 mt-10 items-center bg-navy text-ivory p-4">
@@ -144,11 +147,11 @@ export default function Page() {
       {/* Communes limitrophes - couverture étendue */}
       <section className="mt-16">
         <div className="flex items-baseline gap-4 mb-2">
-          <h2 className="font-serif text-2xl text-navy">Communes limitrophes</h2>
+          <h2 className="font-serif text-2xl text-navy">{t.limitrophes_titre ?? "Communes limitrophes"}</h2>
           <div className="flex-1 border-t border-ink/10" />
         </div>
         <p className="text-sm text-muted max-w-3xl mb-6">
-          Intervention également sur l'ensemble des communes limitrophes des zones de cœur. Prix indicatifs sur demande - fiches détaillées en cours d'enrichissement.
+          {t.limitrophes_intro ?? "Intervention également sur l'ensemble des communes limitrophes des zones de cœur. Prix indicatifs sur demande - fiches détaillées en cours d'enrichissement."}
         </p>
         <div className="grid md:grid-cols-2 gap-6">
           {zones
@@ -180,14 +183,14 @@ export default function Page() {
             })}
         </div>
         <div className="rounded-xl mt-6 bg-gold/10 border-l-2 border-gold p-4 text-sm text-ink/85">
-          Votre commune n'est pas listée ? La couverture s'étend à toute la couronne Ouest de la Métropole de Lyon et au bassin stéphanois.{" "}
-          <Link href="/contact" className="text-navy font-medium hover:text-gold underline">Demander une estimation</Link>
+          {t.limitrophes_note ?? "Votre commune n'est pas listée ? La couverture s'étend à toute la couronne Ouest de la Métropole de Lyon et au bassin stéphanois."}{" "}
+          <Link href="/contact" className="text-navy font-medium hover:text-gold underline">{t.limitrophes_note_lien ?? "Demander une estimation"}</Link>
         </div>
       </section>
 
       {/* Classement compact */}
       <div className="rounded-xl mt-16 bg-ivory-deep p-8">
-        <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">Classement {annee} · {type}</div>
+        <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{t.classement_titre ?? "Classement"} {annee} · {type}</div>
         <div className="grid md:grid-cols-2 gap-x-8 gap-y-2 mt-6">
           {classement.map((c, i) => (
             <Link
@@ -203,14 +206,14 @@ export default function Page() {
           ))}
         </div>
         <p className="text-[11px] text-muted leading-relaxed mt-6">
-          <strong>Méthodologie :</strong> moyennes basées sur les données Meilleurs Agents 2026 (prix maisons pour les communes Mont d'Or, all-type pour la Plaine du Forez) et les transactions DVF. Données indicatives - chaque bien doit être évalué individuellement.
+          <strong>{t.methodologie_label ?? "Méthodologie :"}</strong> {t.methodologie ?? "moyennes basées sur les données Meilleurs Agents 2026 (prix maisons pour les communes Mont d'Or, all-type pour la Plaine du Forez) et les transactions DVF. Données indicatives - chaque bien doit être évalué individuellement."}
         </p>
       </div>
 
       <div className="rounded-xl bg-navy text-ivory p-10 mt-10 text-center">
-        <h3 className="font-serif text-3xl">Et votre bien, à quel prix ?</h3>
-        <p className="text-ivory/70 mt-3">Une moyenne de marché ne suffit pas. Avis de valeur argumenté gratuit sous 24 - 48 h.</p>
-        <Link href="/avis-de-valeur" className="inline-block mt-6 px-7 py-4 bg-gold text-navy hover:bg-gold-soft rounded-full transition">Demander mon avis de valeur</Link>
+        <h3 className="font-serif text-3xl">{t.cta_titre ?? "Et votre bien, à quel prix ?"}</h3>
+        <p className="text-ivory/70 mt-3">{t.cta_intro ?? "Une moyenne de marché ne suffit pas. Avis de valeur argumenté gratuit sous 24 - 48 h."}</p>
+        <Link href="/avis-de-valeur" className="inline-block mt-6 px-7 py-4 bg-gold text-navy hover:bg-gold-soft rounded-full transition">{t.cta_label ?? "Demander mon avis de valeur"}</Link>
       </div>
     </div>
   );

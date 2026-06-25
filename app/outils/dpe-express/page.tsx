@@ -4,8 +4,11 @@ import Link from "next/link";
 import { formatPrix } from "../../lib/data";
 import SliderInput from "../../components/SliderInput";
 import ContactCTA from "../../components/ContactCTA";
+import { site } from "../../lib/_generated/site";
 
 const dpeColors: Record<string, string> = { A: "#2a8a3e", B: "#52a539", C: "#a4c733", D: "#f7e93a", E: "#f3a82e", F: "#ea612a", G: "#d33c1d" };
+
+const t = (site as any)["outils-pages"]?.["dpe-express"] ?? {};
 
 export default function Page() {
   const [typeBien, setTypeBien] = useState<"maison" | "appartement">("maison");
@@ -76,9 +79,9 @@ export default function Page() {
     <>
     <div className="max-w-7xl mx-auto px-6 py-16 md:py-20">
       <Link href="/outils" className="text-sm text-muted hover:text-navy">← Tous les outils</Link>
-      <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium mt-8">Outil 07</div>
-      <h1 className="font-serif text-3xl md:text-4xl mt-3">DPE express</h1>
-      <p className="text-muted mt-4 max-w-2xl">Estimation rapide de la classe DPE de votre bien et plan de travaux pour passer en classe C ou B. Basé sur les coefficients officiels de la méthode 3CL 2021.</p>
+      <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium mt-8">{t.surtitre ?? "Outil 07"}</div>
+      <h1 className="font-serif text-3xl md:text-4xl mt-3">{t.titre ?? "DPE express"}</h1>
+      <p className="text-muted mt-4 max-w-2xl">{t.intro ?? "Estimation rapide de la classe DPE de votre bien et plan de travaux pour passer en classe C ou B. Basé sur les coefficients officiels de la méthode 3CL 2021."}</p>
 
       <div className="grid lg:grid-cols-[1fr_1.4fr] gap-12 mt-12">
         <div className="space-y-6">
@@ -116,7 +119,7 @@ export default function Page() {
 
         <div className="space-y-4">
           <div className="rounded-xl bg-navy text-ivory p-8">
-            <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">Classe DPE estimée</div>
+            <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{t.classe_titre ?? "Classe DPE estimée"}</div>
             <div className="flex items-center gap-6 mt-4">
               <div className="font-serif text-8xl leading-none px-8 py-4" style={{ background: dpeColors[r.dpe], color: r.dpe === "D" ? "#0c1e2e" : "#fff" }}>{r.dpe}</div>
               <div>
@@ -156,13 +159,13 @@ export default function Page() {
             </div>
           ) : (
             <div className="rounded-xl bg-gold/10 border border-gold p-6">
-              <div className="font-serif text-xl text-navy">Bien déjà performant ✓</div>
-              <p className="text-sm text-muted mt-2">Aucun travaux énergétiques majeurs nécessaires. Atout fort à valoriser dans l'annonce.</p>
+              <div className="font-serif text-xl text-navy">{t.bien_performant_titre ?? "Bien déjà performant ✓"}</div>
+              <p className="text-sm text-muted mt-2">{t.bien_performant_texte ?? "Aucun travaux énergétiques majeurs nécessaires. Atout fort à valoriser dans l'annonce."}</p>
             </div>
           )}
 
           <div className="rounded-xl bg-ivory-deep p-5 text-sm leading-relaxed">
-            <strong className="text-navy">Important :</strong> cette estimation indicative ne remplace pas un DPE officiel réalisé par un diagnostiqueur certifié (obligatoire à la vente, ~150 €). Une mise en relation avec un diagnostiqueur partenaire et un courtier MaPrimeRénov' permet d'optimiser le dossier d'aides.
+            <strong className="text-navy">{t.disclaimer_label ?? "Important :"}</strong> {t.disclaimer_texte ?? "cette estimation indicative ne remplace pas un DPE officiel réalisé par un diagnostiqueur certifié (obligatoire à la vente, ~150 €). Une mise en relation avec un diagnostiqueur partenaire et un courtier MaPrimeRénov' permet d'optimiser le dossier d'aides."}
           </div>
         </div>
       </div>
@@ -170,8 +173,8 @@ export default function Page() {
     </div>
 
     <ContactCTA
-        titre="Plan de rénovation énergétique ?"
-        intro="Un accompagnement complet : diagnostiqueur, devis travaux, dossier MaPrimeRénov', puis valorisation à la revente."
+        titre={t.cta_titre ?? "Plan de rénovation énergétique ?"}
+        intro={t.cta_intro ?? "Un accompagnement complet : diagnostiqueur, devis travaux, dossier MaPrimeRénov', puis valorisation à la revente."}
     />
     </>
   );

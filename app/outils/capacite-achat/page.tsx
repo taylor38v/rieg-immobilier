@@ -5,6 +5,9 @@ import { secteurs, formatPrix } from "../../lib/data";
 import SliderInput from "../../components/SliderInput";
 import DureeChoice from "../../components/DureeChoice";
 import ContactCTA from "../../components/ContactCTA";
+import { site } from "../../lib/_generated/site";
+
+const t = (site as any)["outils-pages"]?.["capacite-achat"] ?? {};
 
 const ZONES: { titre: string; slugs: string[] }[] = [
   {
@@ -53,8 +56,8 @@ export default function Page() {
     <>
     <div className="max-w-7xl mx-auto px-6 py-16 md:py-20">
       <Link href="/outils" className="text-sm text-muted hover:text-navy">← Tous les outils</Link>
-      <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium mt-8">Outil 02</div>
-      <h1 className="font-serif text-3xl md:text-4xl mt-3">Combien puis-je acheter ?</h1>
+      <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium mt-8">{t.surtitre ?? "Outil 02"}</div>
+      <h1 className="font-serif text-3xl md:text-4xl mt-3">{t.titre ?? "Combien puis-je acheter ?"}</h1>
 
       <div className="grid lg:grid-cols-[1fr_1.3fr] gap-12 mt-12">
         <div className="space-y-8">
@@ -98,7 +101,7 @@ export default function Page() {
 
         <div className="space-y-6">
           <div className="rounded-xl bg-navy text-ivory p-8">
-            <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">Votre budget total</div>
+            <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{t.resultat_titre ?? "Votre budget total"}</div>
             <div className="font-serif text-6xl text-gold mt-2">{formatPrix(result.budgetTotal)}</div>
             <div className="grid grid-cols-2 gap-4 mt-8 pt-6 border-t border-ivory/10 text-sm">
               <div><div className="text-ivory/50 text-xs uppercase tracking-widest">Capacité d'emprunt</div><div className="font-serif text-2xl mt-1">{formatPrix(result.capacite)}</div></div>
@@ -109,8 +112,8 @@ export default function Page() {
           </div>
 
           <div className="rounded-xl bg-white border border-ink/10 p-8">
-            <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">Ce que cela représente</div>
-            <h3 className="font-serif text-2xl mt-2">Surface accessible par commune</h3>
+            <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{t.representation_surtitre ?? "Ce que cela représente"}</div>
+            <h3 className="font-serif text-2xl mt-2">{t.representation_titre ?? "Surface accessible par commune"}</h3>
             <div className="mt-6 space-y-6">
               {ZONES.map((zone) => {
                 const villes = zone.slugs
@@ -141,7 +144,7 @@ export default function Page() {
               })}
             </div>
             <p className="text-xs text-muted mt-6 leading-relaxed">
-              Calcul indicatif sur la base d'un taux d'endettement à 35%, frais de notaire 7,5%, prix moyens de marché. Soumis à l'accord d'un établissement bancaire.
+              {t.note ?? "Calcul indicatif sur la base d'un taux d'endettement à 35%, frais de notaire 7,5%, prix moyens de marché. Soumis à l'accord d'un établissement bancaire."}
             </p>
           </div>
         </div>
@@ -150,8 +153,8 @@ export default function Page() {
     </div>
 
     <ContactCTA
-      titre="Affinons votre projet ensemble"
-      intro="Mise en relation avec un courtier partenaire pour optimiser votre plan de financement, puis sélection de biens correspondant à votre capacité."
+      titre={t.cta_titre ?? "Affinons votre projet ensemble"}
+      intro={t.cta_intro ?? "Mise en relation avec un courtier partenaire pour optimiser votre plan de financement, puis sélection de biens correspondant à votre capacité."}
     />
     </>
   );
