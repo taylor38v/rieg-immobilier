@@ -36,7 +36,7 @@
     "cta_url": "https://www.iadfrance.fr/conseiller-immobilier/romain.rieg"
   },
   "qui_suis_je": {
-    "surtitre": "Qui suis-je",
+    "surtitre": "Qui suis-je ?",
     "cta_secondary_href": "sms:+33679571473",
     "citation": "Mon énergie au service de votre projet.",
     "cta_primary_label": "Me rencontrer",
@@ -47,9 +47,9 @@
     "citation_auteur": "Romain Rieg · Conseiller immobilier iad",
     "photo_alt": "Romain Rieg, conseiller iad",
     "paragraphes": [
-      "Je m'appelle Romain Rieg, j'ai 28 ans et je suis passionné par l'immobilier. Après une reconversion professionnelle, j'ai choisi de devenir conseiller immobilier indépendant afin d'accompagner mes clients à ma manière : avec **transparence, engagement et conseils personnalisés**.",
-      "Membre du réseau iad France, j'utilise les outils technologiques les plus performants, couplés à une stratégie digitale moderne (réseaux sociaux, vidéos) pour assurer la meilleure diffusion de votre bien.",
-      "_Originaire de la Loire (j'y ai vécu 20 ans), je suis aujourd'hui ancré au cœur des Monts d'Or. Mon objectif : allier la puissance technologique du réseau iad à un accompagnement humain, transparent et ultra-réactif._"
+      "Je m'appelle Romain Rieg, j'ai 28 ans et l'immobilier est bien plus qu'un métier pour moi. Après une reconversion professionnelle, j'ai choisi de devenir conseiller indépendant pour accompagner mes clients à ma manière : avec **transparence, engagement et conseils personnalisés**.",
+      "Membre du réseau iad France, je m'appuie sur des outils technologiques performants et une stratégie digitale moderne — réseaux sociaux, vidéos — pour offrir à votre bien la meilleure visibilité possible.",
+      "Originaire de la Loire, où j'ai grandi pendant 20 ans, je suis aujourd'hui pleinement ancré dans les Monts d'Or. Mon objectif : allier la puissance du réseau iad à un accompagnement humain, réactif et sans détour."
     ]
   },
   "services": {
@@ -58,22 +58,22 @@
     "items": [
       {
         "titre": "Avis de valeur · 24 - 48h",
-        "desc": "Recevez un avis de valeur fiable et personnalisé, sans engagement.",
+        "desc": "Recevez un avis de valeur fiable et personnalisé de votre bien, sans engagement.",
         "href": "/avis-de-valeur"
       },
       {
         "titre": "Vente immobilière",
-        "desc": "Je vous accompagne de A à Z pour vendre votre maison ou appartement.",
+        "desc": "De la mise en valeur à la signature, je vous accompagne à chaque étape de la vente.",
         "href": "/vendre"
       },
       {
         "titre": "Achat / Investissement",
-        "desc": "Pour votre résidence principale, investissement locatif ou achat dans le neuf.",
+        "desc": "Résidence principale, investissement locatif ou achat dans le neuf : je trouve le bien qui correspond à votre projet.",
         "href": "/acheter"
       },
       {
-        "titre": "Location & gestion locative",
-        "desc": "Simplifiez la mise en location de votre bien, locataires sélectionnés.",
+        "titre": "Mise en location & gestion locative",
+        "desc": "Je sélectionne les locataires sérieux et gère toutes les démarches pour simplifier votre mise en location.",
         "href": "/location"
       }
     ]
@@ -95,14 +95,14 @@
         "titre": "Saint-Didier-au-Mont-d'Or",
         "desc": "Ma commune de résidence - présence quotidienne sur le terrain et expertise fine.",
         "badge": "Mon village",
-        "image": "/photos/Ville-de-saint-didier-au-mont-d-or_1920.jpg"
+        "image": "/uploads/1min-intro.jpg"
       },
       {
         "slug": "plaine-du-forez",
         "titre": "Plaine du Forez",
-        "desc": "Saint-Just-Saint-Rambert prioritaire (j'y ai vécu 20 ans) + Andrézieux-Bouthéon et limitrophes.",
+        "desc": "Saint-Just-Saint-Rambert & Andrézieux-Bouthéon - mon secteur d'enfance, que je connais comme ma poche et toutes les communes limitrophes.",
         "badge": "Mes secteurs d'enfance",
-        "image": "/photos/IMG_7295.jpeg"
+        "image": "/uploads/1min-intro.jpg"
       }
     ]
   },
@@ -113,22 +113,22 @@
     "lien": "https://www.instagram.com/romainrieg.immo/",
     "videos": [
       {
-        "titre": "Visite d'une bastide à Limonest",
-        "duree": "1:20",
-        "thumb": "/photos/IMG_6971.jpeg",
-        "url": ""
+        "titre": "Série - 10 semaines pour découvrir et apprendre sur l'immobilier",
+        "duree": "1:03",
+        "thumb": "/uploads/1min-intro.jpg",
+        "url": "https://www.instagram.com/romainrieg.immo/reel/DWjgSdBxZQe/"
       },
       {
-        "titre": "Le marché du Mont d'Or T1 2026",
-        "duree": "0:45",
-        "thumb": "/photos/IMG_7295.jpeg",
-        "url": ""
+        "titre": "Série - 1 minutes pour comprendre",
+        "duree": "0:46",
+        "thumb": "/uploads/1min-intro.jpg",
+        "url": "https://www.instagram.com/romainrieg.immo/reel/DZX1jO3KNGr/"
       },
       {
-        "titre": "Pourquoi j'ai choisi iad",
-        "duree": "1:55",
-        "thumb": "/photos/romain-pro.jpg",
-        "url": ""
+        "titre": "Un peu de moi",
+        "duree": "0:00",
+        "thumb": "/uploads/1min-intro.jpg",
+        "url": "https://www.instagram.com/romainrieg.immo/p/DVtiQThiMi2/"
       }
     ],
     "cta_label": "Voir tous mes contenus Instagram →"
