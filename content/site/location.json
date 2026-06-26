@@ -67,7 +67,8 @@
     "cta_secondary_url": "sms:+33679571473?body=Bonjour%20Romain%2C%20je%20souhaite%20mettre%20mon%20bien%20en%20location.",
     "cta_primary_href": "/contact",
     "cta_secondary_label": "💬 SMS",
-    "video": "/videos/secteurs/champagne.mp4"
+    "video": "/videos/secteurs/champagne.mp4",
+    "intro_complement": ""
   },
   "services": {
     "surtitre": "Mes services pour la location",

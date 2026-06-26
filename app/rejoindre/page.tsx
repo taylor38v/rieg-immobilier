@@ -8,6 +8,9 @@ import { site } from "../lib/_generated/site";
 
 const r = site.rejoindre;
 const inline = (s: string) => marked.parseInline(s) as string;
+// Affiche "iad" en minuscules même dans un bloc en majuscules (marque iad).
+const lowerIad = (s: string) =>
+  String(s).split(/(iad)/i).map((p, i) => (/^iad$/i.test(p) ? <span key={i} className="lowercase">iad</span> : <span key={i}>{p}</span>));
 
 export const metadata: Metadata = {
   title: r.meta_title,
@@ -118,7 +121,7 @@ export default function Page() {
           <img src={r.qui_suis_je.photo} alt={r.qui_suis_je.photo_alt} className="no-round w-full aspect-[4/5] object-cover rounded-xl" />
           <div className="rounded-xl bg-gold text-navy p-5 lg:p-6 mt-5 lg:mt-0 lg:absolute lg:-bottom-8 lg:left-8 lg:right-8 lg:max-w-[420px] shadow-xl">
             <div className="font-serif text-lg lg:text-2xl leading-snug">"{r.qui_suis_je.citation}"</div>
-            <div className="text-xs uppercase tracking-widest mt-3 font-semibold">{r.qui_suis_je.citation_auteur}</div>
+            <div className="text-xs uppercase tracking-widest mt-3 font-semibold">{lowerIad(r.qui_suis_je.citation_auteur)}</div>
           </div>
         </div>
       </section>

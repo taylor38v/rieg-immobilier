@@ -23,7 +23,8 @@ export default function Page() {
           <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{l.hero.surtitre}</div>
           <h1 className="font-serif text-4xl md:text-6xl mt-3 leading-[1.05] max-w-4xl">{l.hero.titre}</h1>
           <p className="text-ivory/80 text-lg md:text-xl mt-8 max-w-3xl leading-relaxed">{l.hero.intro1}</p>
-          <p className="text-ivory/80 text-base mt-4 max-w-3xl leading-relaxed">{l.hero.intro2}</p>
+          <p className="text-ivory/80 text-lg md:text-xl mt-4 max-w-3xl leading-relaxed">{l.hero.intro2}</p>
+          {l.hero.intro_complement && <p className="text-ivory/80 text-lg md:text-xl mt-4 max-w-3xl leading-relaxed">{l.hero.intro_complement}</p>}
           <div className="flex flex-wrap gap-4 mt-10">
             <Link href={l.hero.cta_primary_href} className="px-7 py-4 bg-gold text-navy font-medium hover:bg-gold-soft rounded-full">{l.hero.cta_primary_label}</Link>
             <ContactButtons smsBody="Bonjour Romain, je souhaite mettre mon bien en location. " mailSubject="Mise en location d'un bien" />

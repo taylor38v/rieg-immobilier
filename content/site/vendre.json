@@ -133,7 +133,8 @@
     "cta_secondary_url": "sms:+33679571473?body=Bonjour%20Romain%2C%20je%20souhaite%20vendre%20mon%20bien.",
     "cta_primary_href": "/avis-de-valeur",
     "cta_secondary_label": "💬 SMS",
-    "video": "/videos/secteurs/saint-didier.mp4"
+    "video": "/videos/secteurs/saint-didier.mp4",
+    "intro_complement": ""
   },
   "meta_title": "Vendre votre bien"
 }

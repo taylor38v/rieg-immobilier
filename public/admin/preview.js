@@ -181,13 +181,27 @@
   }
 
   function AvisSection(d) {
-    return h("section", { className: "max-w-3xl px-6 py-24 text-center", style: { margin: "0 auto" } },
+    return h("section", { className: "max-w-7xl px-6 py-24 text-center", style: { margin: "0 auto" } },
       h("div", { className: "flex items-center justify-center gap-3", style: { display: "inline-flex", alignItems: "center", gap: ".75rem", padding: ".75rem 1.5rem", borderRadius: "999px", background: "white", border: "2px solid rgba(201,162,95,0.3)" } },
         h("span", { style: { fontSize: "1.25rem", color: "#4285F4", fontWeight: 600 } }, "Google"),
         h("span", { className: "text-sm uppercase tracking-widest text-muted" }, safe(d.badge_label, "Avis clients")),
       ),
       h("h2", { className: "font-serif text-3xl md:text-4xl mt-6" }, safe(d.titre, "La confiance se construit sur le terrain.")),
       h("p", { className: "text-muted mt-4 leading-relaxed", style: { maxWidth: "42rem", margin: "1rem auto 0" } }, safe(d.texte)),
+      safeArr(d.items).length
+        ? h("div", { style: { display: "flex", gap: "1.5rem", overflowX: "auto", marginTop: "2.5rem", paddingBottom: ".5rem" } },
+            ...safeArr(d.items).map((r, i) =>
+              h("div", { key: i, style: { flex: "0 0 320px", background: "white", border: "1px solid rgba(0,0,0,0.1)", borderRadius: "16px", padding: "1.75rem", textAlign: "left" } },
+                h("div", { style: { color: "var(--gold)", letterSpacing: ".2em" } }, "★★★★★"),
+                h("p", { style: { marginTop: ".75rem", lineHeight: 1.55, color: "var(--ink)" } }, "“" + safe(r.texte) + "”"),
+                h("div", { style: { marginTop: "1.25rem", paddingTop: ".9rem", borderTop: "1px solid rgba(0,0,0,0.1)" } },
+                  h("div", { className: "font-serif", style: { color: "var(--navy)", fontSize: "1.1rem" } }, safe(r.nom)),
+                  r.contexte ? h("div", { style: { fontSize: ".7rem", color: "var(--muted)", textTransform: "uppercase", letterSpacing: ".12em", marginTop: ".25rem" } }, safe(r.contexte)) : null
+                )
+              )
+            )
+          )
+        : null,
       h("div", { style: { marginTop: "2rem" } },
         h("span", { style: { display: "inline-block", padding: ".9rem 1.75rem", background: "var(--gold)", color: "var(--navy)", borderRadius: "999px", fontWeight: 600 } }, safe(d.cta_label, "Voir mes avis Google"))
       )

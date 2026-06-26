@@ -51,6 +51,7 @@ export default function Page() {
         <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{ol.surtitre}</div>
         <h1 className="font-serif text-3xl md:text-4xl mt-3">{ol.titre}</h1>
         <p className="text-muted mt-6 leading-relaxed">{ol.intro}</p>
+        {ol.intro_complement && <p className="text-muted mt-4 leading-relaxed">{ol.intro_complement}</p>}
         <p className="text-xs text-muted mt-4 italic">{ol.disclaimer}</p>
       </div>
 

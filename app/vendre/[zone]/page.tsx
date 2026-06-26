@@ -167,6 +167,7 @@ export default async function Page(props: PageProps<"/vendre/[zone]">) {
           <h1 className="font-serif text-4xl md:text-6xl mt-3 leading-[1.1] max-w-4xl">{z.h1}</h1>
           <div className="text-ivory/80 text-lg mt-8 max-w-3xl space-y-3 leading-relaxed">
             {z.intro.map((p: string, i: number) => <p key={i}>{p}</p>)}
+            {z.intro_complement && <p>{z.intro_complement}</p>}
           </div>
           <div className="text-xs uppercase tracking-widest text-gold mt-8">{z.communes_label}</div>
           <div className="flex flex-wrap gap-4 mt-8">

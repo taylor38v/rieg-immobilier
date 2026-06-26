@@ -2,9 +2,13 @@ import Link from "next/link";
 import { marked } from "marked";
 import CityMap from "./components/CityMap";
 import HeroBackground from "./components/HeroBackground";
+import ReviewsCarousel from "./components/ReviewsCarousel";
 import { site } from "./lib/_generated/site";
 
 const inline = (s: string) => marked.parseInline(s) as string;
+// Affiche le texte en respectant la casse de la marque "iad" (minuscules) même dans un bloc en majuscules.
+const lowerIad = (s: string) =>
+  String(s).split(/(iad)/i).map((p, i) => (/^iad$/i.test(p) ? <span key={i} className="lowercase">iad</span> : <span key={i}>{p}</span>));
 
 export default function Home() {
   const h = site.home;
@@ -66,7 +70,7 @@ export default function Home() {
           </div>
           <div className="rounded-xl bg-gold text-navy p-6 shadow-2xl absolute -bottom-6 -left-6 lg:-left-10 max-w-[80%] z-10">
             <div className="font-serif text-2xl md:text-3xl leading-tight">"{h.qui_suis_je.citation}"</div>
-            <div className="text-xs uppercase tracking-widest mt-3 font-semibold">{h.qui_suis_je.citation_auteur}</div>
+            <div className="text-xs uppercase tracking-widest mt-3 font-semibold">{lowerIad(h.qui_suis_je.citation_auteur)}</div>
           </div>
         </div>
       </section>
@@ -164,7 +168,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="max-w-3xl mx-auto px-6 py-24 text-center">
+      <section className="max-w-7xl mx-auto px-6 py-24 text-center">
         <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-white border-2 border-gold/30 shadow-lg shadow-gold/10">
           <svg width="100" height="32" viewBox="0 0 100 32" className="no-round w-[100px] h-auto shrink-0">
             <text x="0" y="22" fontSize="20" fontWeight="600" fill="#4285F4">G</text>
@@ -178,6 +182,7 @@ export default function Home() {
         </div>
         <h2 className="font-serif text-3xl md:text-4xl mt-6">{h.avis.titre}</h2>
         <p className="text-muted mt-4 max-w-2xl mx-auto leading-relaxed">{h.avis.texte}</p>
+        <ReviewsCarousel items={h.avis.items} />
         <div className="mt-8">
           <a href={h.avis.cta_url} target="_blank" rel="noopener" className="inline-flex items-center gap-2 px-7 py-3.5 bg-gold text-navy font-semibold hover:bg-gold-soft transition rounded-full">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z"/><path d="M5.84 14.1a6.6 6.6 0 0 1 0-4.2V7.06H2.18a11 11 0 0 0 0 9.88l3.66-2.84z"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15A10.98 10.98 0 0 0 12 1 11 11 0 0 0 2.18 7.06l3.66 2.84C6.71 7.3 9.14 5.38 12 5.38z"/></svg>

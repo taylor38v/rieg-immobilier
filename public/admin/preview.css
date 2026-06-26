@@ -125,12 +125,23 @@ body { font-family: 'Montserrat', sans-serif; background: var(--ivory); color: v
 .grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 
 /* Images */
-img { max-width: 100%; height: auto; display: block; }
+img { max-width: 100%; height: auto; display: block; border-radius: 14px; }
 .object-cover { object-fit: cover; }
 .w-full { width: 100%; }
 .h-full { height: 100%; }
 .h-16 { height: 4rem; }
 .w-16 { width: 4rem; }
+
+/* Arrondis : rapprocher l'aperçu du rendu réel du site (G1) */
+.no-round, .no-round img, img.no-round { border-radius: 0 !important; }
+.rounded { border-radius: 8px; }
+.rounded-lg { border-radius: 12px; }
+.rounded-xl { border-radius: 16px; }
+.rounded-2xl { border-radius: 20px; }
+.rounded-t-2xl { border-radius: 20px 20px 0 0; }
+.overflow-hidden { overflow: hidden; }
+/* Cartes à bordure rendues en styles inline : on arrondit comme sur le site */
+.preview-root div[style*="1px solid"] { border-radius: 16px; }
 
 /* Buttons / chips */
 .chip { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.3rem 0.7rem; border-radius: 999px; font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 500; }
