@@ -1,142 +1,83 @@
 {
-  "nom": "Dardilly",
-  "population": 9221,
   "superficie": 13.99,
-  "cp": "69570",
-  "intercommunalite": "Métropole de Lyon",
   "altitude": "200 - 420 m",
-  "ce_qui_differencie": [
-    "Très grandes parcelles disponibles - moyenne de 1 200 m² de terrain par maison",
-    "Accès direct A6 vers Paris, sortie immédiate Limonest / Dardilly",
-    "Deux lycées de référence sur la commune : Lycée Hôtelier François Rabelais et Lycée Horticole Lyon-Dardilly",
-    "Parcours de golf Bluegreen Porte de Lyon, espaces naturels protégés"
-  ],
+  "instagram_url": "https://www.instagram.com/romainrieg.immo/",
   "ecoles": [
     {
       "nom": "École des Noyeraies",
       "type": "Primaire",
-      "precision": "Publique, 7 chem. des Écoliers"
+      "precision": "École publique située à Dardilly - proche du Bourg et de l’Aqueduc."
     },
     {
-      "nom": "Groupe scolaire Le Grégoire",
+      "nom": "École Grégoire Parsonge",
       "type": "Primaire",
-      "precision": "Maternelle + primaire publique, 42 chem. de Parsonge"
+      "precision": "École publique située à Dardilly - proche du gymnase Moulin Carron et de l’Aqueduc."
     },
     {
       "nom": "École Saint-Joseph",
       "type": "Privé",
-      "precision": "Mixte, 9 rue du Curé d'Ars"
+      "precision": "École privée située à Dardilly - enseignement de la maternelle au primaire."
     },
     {
       "nom": "Pas de collège public à Dardilly",
       "type": "Collège",
-      "precision": "Secteur public : Collège Jean-Philippe Rameau (Champagne, ~5 min) ou Victor Schœlcher (Lyon 9)"
+      "precision": "Les élèves dépendent d’établissements publics de secteur situés dans les communes voisines selon la sectorisation."
     },
     {
-      "nom": "Collège Aux Lazaristes La Salle - site Limonest",
+      "nom": "Aux Lazaristes La Salle - site de Limonest",
       "type": "Privé",
-      "precision": "Limitrophe Dardilly à 5 min · 392 chem. de la Sablière"
+      "precision": "Établissement privé situé à proximité immédiate de Dardilly."
     },
     {
       "nom": "Lycée François Rabelais & GRETA-CFA Hôtelier",
       "type": "Lycée",
-      "precision": "Lycée hôtelier réputé avec restaurant d'application Saint-Jean - 4 chem. du Dodin"
+      "precision": "Lycée reconnu pour les formations aux métiers de l’hôtellerie, de la restauration et des métiers de bouche."
     },
     {
       "nom": "Lycée Horticole, Paysage et Environnement Lyon-Dardilly",
       "type": "Lycée",
-      "precision": "Lycée agricole, 26 chem. de la Bruyère"
+      "precision": "Établissement spécialisé dans les formations liées à l’horticulture, au paysage, à l’environnement et aux sciences du vivant."
     },
     {
-      "nom": "Maison Petite Enfance Dardy'gones",
-      "type": "Maternelle",
-      "precision": "Crèche / petite enfance, 54 all. du Levant"
+      "nom": "Centre de formation Philibert de l’Orme",
+      "type": "Supérieur",
+      "precision": "Centre de formation aux métiers du bâtiment situé à Dardilly."
     }
   ],
-  "restaurants": [
-    {
-      "nom": "Restaurant Bol d'Air",
-      "cuisine": "Gastro / bistrot · 4,7★ (2 425 avis), 77 av. de Verdun",
-      "gamme": "Gastro",
-      "note": 4.7
-    },
-    {
-      "nom": "Odyssée Restaurant",
-      "cuisine": "Bistrot soigné · 4,9★ (153 avis), chem. de la Bruyère",
-      "gamme": "Bistrot",
-      "note": 4.9
-    },
-    {
-      "nom": "L'Auberge du Village",
-      "cuisine": "Française traditionnelle · 4,5★ (684 avis), pl. de l'Église",
-      "gamme": "Brasserie",
-      "note": 4.5
-    },
-    {
-      "nom": "Restaurant Comme Avant",
-      "cuisine": "Bistronomie · 4,8★ (87 avis), pl. de l'Église",
-      "gamme": "Bistrot",
-      "note": 4.8
-    },
-    {
-      "nom": "La Table du Bas",
-      "cuisine": "Cuisine française · 4,9★ (115 avis), av. de Verdun",
-      "gamme": "Bistrot",
-      "note": 4.9
-    },
-    {
-      "nom": "Le Patio Dardilly",
-      "cuisine": "Européen / français · 4,2★ (434 avis)",
-      "gamme": "Brasserie",
-      "note": 4.2
-    },
-    {
-      "nom": "Café Marcel",
-      "cuisine": "Café / végétarien · 5★ (86 avis), av. de Verdun",
-      "gamme": "Café",
-      "note": 5
-    },
-    {
-      "nom": "Double 7 Dardilly",
-      "cuisine": "Cuisine moderne · 4,5★ (353 avis), chem. des Peupliers",
-      "gamme": "Bistrot",
-      "note": 4.5
-    }
+  "nom": "Dardilly",
+  "cp": "69570",
+  "ce_qui_differencie": [
+    "**De grandes parcelles et un cadre résidentiel rare** : Dardilly séduit par ses maisons familiales - ses terrains généreux - ses quartiers pavillonnaires et son atmosphère résidentielle préservée",
+    "**Une commune connectée à Lyon et aux grands axes** : Accès rapide à l’A6 - proximité de Techlid - liaison vers Lyon et l’Ouest lyonnais : un positionnement pratique pour les actifs et les familles",
+    "**Un pôle de formation reconnu** : Lycée François Rabelais / Lycée Horticole de Dardilly / centre de formation Philibert de l’Orme : la commune bénéficie d’un environnement éducatif et technique solide",
+    "**Un cadre de vie vert et familial** : Espaces naturels - équipements sportifs - proximité du golf de La Tour-de-Salvagny et ambiance village : Dardilly conserve une vraie respiration aux portes de la métropole"
   ],
+  "population": 9221,
+  "intercommunalite": "Métropole de Lyon",
   "associations": [
     {
       "nom": "FCLDSD - Football Club Limonest-Dardilly-Saint-Didier",
-      "activite": "Club mutualisé évoluant en National 2 (champion N3 2024-2025)"
+      "activite": "Club intercommunal structurant, de l’école de football aux équipes seniors, avec une vraie présence dans la vie sportive locale."
     },
     {
-      "nom": "Tennis Club de Dardilly",
-      "activite": "Tennis, courts couverts"
+      "nom": "Tennis Club Dardilly Champagne",
+      "activite": "Club reconnu à proximité de Dardilly, avec tennis, padel, courts couverts, terrains extérieurs et pratique pour tous les niveaux."
     },
     {
-      "nom": "Golf Bluegreen Porte de Lyon",
-      "activite": "Parcours 9 et 18 trous, école de golf"
-    }
-  ],
-  "quartiers": [
-    {
-      "nom": "Le Paillet",
-      "description": "Quartier résidentiel calme, proche centre, écoles à pied.",
-      "prix_indicatif": "4 400 - 5 100 €/m²"
+      "nom": "Athletic Club Dardilly",
+      "activite": "Association dédiée à l’athlétisme, au running et à la marche nordique."
     },
     {
-      "nom": "La Beffe",
-      "description": "Hauteurs, grandes maisons, vues dégagées sur la Saône.",
-      "prix_indicatif": "5 000 - 6 000 €/m²"
+      "nom": "Badminton Club Dardillois - BCD69",
+      "activite": "Club de badminton local, ouvert aux jeunes et aux adultes, avec pratique loisir et compétition."
     },
     {
-      "nom": "Porte de Lyon",
-      "description": "Proximité commerciale (centre Carrefour), petites maisons et collectifs.",
-      "prix_indicatif": "4 100 - 4 800 €/m²"
+      "nom": "Centre de danse et de fitness de Dardilly",
+      "activite": "Association proposant danse, gymnastique, yoga, zumba et activités de forme."
     },
     {
-      "nom": "Les Noyeraies",
-      "description": "Quartier pavillonnaire, calme, proche parcours de golf.",
-      "prix_indicatif": "4 700 - 5 500 €/m²"
+      "nom": "Aïkido Dardilly / Arts Martiaux Dardilly",
+      "activite": "Pratique des arts martiaux, du judo, de l’aïkido et d’activités associées dans les équipements sportifs de la commune."
     }
   ],
   "evolution_prix": [
@@ -165,6 +106,56 @@
       "prixM2": 4760
     }
   ],
+  "restaurants": [
+    {
+      "nom": "Restaurant Bol d'Air",
+      "cuisine": "Institution locale avenue de Verdun, avec un esprit café de village, une cuisine bistronomique et une atmosphère conviviale. · 4,7★",
+      "gamme": "Gastro",
+      "note": 4.7
+    },
+    {
+      "nom": "Odyssée Restaurant",
+      "cuisine": "Une adresse chaleureuse au cœur de la zone Techlid, avec une cuisine maison, généreuse et de saison. · 4,9★ ",
+      "gamme": "Bistrot",
+      "note": 4.9
+    },
+    {
+      "nom": "L'Auberge du Village",
+      "cuisine": "Adresse emblématique de Dardilly, appréciée pour sa cuisine française traditionnelle et son atmosphère chaleureuse. · 4,5★ ",
+      "gamme": "Brasserie",
+      "note": 4.5
+    },
+    {
+      "nom": "Restaurant Comme Avant",
+      "cuisine": "Adresse située place de l’Église, avec terrasse ombragée, cuisine française traditionnelle et ambiance de village.· 4,8★ ",
+      "gamme": "Bistrot",
+      "note": 4.8
+    },
+    {
+      "nom": "La Table du Bas",
+      "cuisine": "Restaurant bistronomique situé avenue de Verdun, avec une cuisine généreuse, raffinée, fraîche et de saison. · 4,9★ ",
+      "gamme": "Bistrot",
+      "note": 4.9
+    },
+    {
+      "nom": "Le Patio Dardilly",
+      "cuisine": "Adresse conviviale pour déjeuner ou dîner, dans un esprit brasserie accessible et pratique. · 4,2★ ",
+      "gamme": "Brasserie",
+      "note": 4.2
+    },
+    {
+      "nom": "Café Marcel",
+      "cuisine": "Une adresse récente et conviviale à Dardilly, idéale pour une pause café, un déjeuner simple ou une parenthèse plus légère. · 5★ ",
+      "gamme": "Café",
+      "note": 5
+    },
+    {
+      "nom": "Double 7 Dardilly",
+      "cuisine": "Restaurant situé dans le quartier d’affaires, avec cuisine maison, cadre moderne et ambiance conviviale. · 4,5★ ",
+      "gamme": "Bistrot",
+      "note": 4.5
+    }
+  ],
   "video_insta": {
     "titre": "Pourquoi Dardilly est sous-coté",
     "duree": "1:15"
@@ -178,5 +169,26 @@
     "/photos/secteurs/dardilly-6.jpg"
   ],
   "video": "/videos/secteurs/dardilly.mp4",
-  "instagram_url": "https://www.instagram.com/romainrieg.immo/"
+  "quartiers": [
+    {
+      "nom": "Le Paillet",
+      "description": "Quartier résidentiel calme, proche du centre et des écoles. Un secteur apprécié pour sa vie de quartier, sa praticité et son environnement familial.",
+      "prix_indicatif": "4 400 - 5 100 €/m²"
+    },
+    {
+      "nom": "La Beffe",
+      "description": "Secteur plus confidentiel sur les hauteurs, recherché pour ses grandes maisons, ses vues dégagées et son cadre verdoyant.",
+      "prix_indicatif": "5 000 - 6 000 €/m²"
+    },
+    {
+      "nom": "Porte de Lyon",
+      "description": "Secteur pratique et connecté, proche des commerces, des axes routiers et des zones d’activité. Un secteur mixte entre maisons, petits collectifs et logements plus fonctionnels.",
+      "prix_indicatif": "4 100 - 4 800 €/m²"
+    },
+    {
+      "nom": "Les Noyeraies",
+      "description": "Quartier pavillonnaire calme, apprécié des familles pour son environnement résidentiel, ses équipements et sa proximité avec les écoles.",
+      "prix_indicatif": "4 700 - 5 500 €/m²"
+    }
+  ]
 }
