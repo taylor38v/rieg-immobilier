@@ -2,7 +2,7 @@
   "meta_title": "Acheter / Investir",
   "meta_description": "Trouvez votre futur chez-vous sur le Mont d'Or, l'Ouest lyonnais ou la Plaine du Forez. Accès off-market au réseau iad, accompagnement complet de la recherche à la signature.",
   "hero": {
-    "argument_gold": "**Mon rôle : vous faire gagner du temps**, vous donner accès aux bonnes opportunités - y compris celles qui ne sont pas toujours visibles sur les portails - et sécuriser chaque étape de votre achat.",
+    "argument_gold": "**Mon rôle : vous faire gagner du temps**, vous donner accès aux bonnes opportunités et sécuriser chaque étape de votre achat - de la première visite à la signature chez le notaire.",
     "surtitre": "Acheter · Investir",
     "cta_primary_label": "Démarrer ma recherche",
     "intro": "Vous rêvez de trouver votre maison ou appartement idéal, mais vous en avez assez de voir les biens qui vous plaisent passer sous le nez ? Marre de courir après des annonces déjà vendues ?",
@@ -10,7 +10,7 @@
     "cta_secondary_url": "sms:+33679571473?body=Bonjour%20Romain%2C%20je%20cherche%20un%20bien.",
     "cta_primary_href": "/contact",
     "cta_secondary_label": "💬 SMS",
-    "presentation": "Je suis Romain Rieg, conseiller immobilier iad basé à Saint-Didier-au-Mont-d’Or. Grâce à ma connaissance terrain des Monts d’Or, de l’Ouest lyonnais et de la Plaine du Forez, je vous accompagne dans votre recherche avec une approche claire, réactive et personnalisée.\n\n",
+    "presentation": "Je suis Romain Rieg, conseiller immobilier iad basé à Saint-Didier-au-Mont-d'Or. Grâce à ma connaissance terrain des Monts d'Or, de l'Ouest lyonnais et de la Plaine du Forez, je vous accompagne dans votre recherche avec une approche claire, réactive et personnalisée.\n",
     "video": "/videos/secteurs/limonest.mp4"
   },
   "piliers": {
@@ -44,8 +44,8 @@
         "desc": "Gagnez du temps avec une sélection de biens réellement adaptés à votre projet : secteur, budget, critères de vie, potentiel de valorisation. Vous visitez uniquement les opportunités pertinentes."
       },
       {
-        "titre": "Achat dans l'ancien ou le neuf",
-        "desc": "Je vous accompagne dans l’analyse et la comparaison des biens : emplacement, prix, état général, potentiel d’évolution, cohérence avec votre projet. L’objectif : vous orienter vers le bien qui vous correspond vraiment."
+        "titre": "Analyse & comparaison des biens",
+        "desc": "Emplacement, prix, état général, potentiel d'évolution, cohérence avec votre projet - je vous aide à prendre la bonne décision, sans précipitation."
       },
       {
         "titre": "Accompagnement jusqu'à la signature",
