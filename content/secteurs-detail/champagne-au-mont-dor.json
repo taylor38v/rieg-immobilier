@@ -145,19 +145,24 @@
   "video": "/videos/secteurs/champagne.mp4",
   "quartiers": [
     {
-      "nom": "Centre",
-      "description": "Cœur de village de Champagne-au-Mont-d’Or, avec mairie, commerces, marché et services du quotidien. Un secteur recherché pour sa praticité, son animation et sa proximité avec les transports.",
-      "prix_indicatif": "4 700 - 5 500 €/m²"
+      "nom": "Centre village - Lanessan",
+      "description": "Le cœur pratique de Champagne-au-Mont-d’Or : mairie, commerces, marché, écoles, collège et accès rapide aux lignes TCL. Un secteur recherché pour sa vie de village, sa centralité et sa facilité au quotidien.",
+      "prix_indicatif": "4 000 - 4 900 €/m²"
     },
     {
-      "nom": "Les Bruyères",
-      "description": "Quartier résidentiel et familial, composé principalement de maisons et de secteurs pavillonnaires. Un environnement calme avec un accès pratique aux écoles et aux grands axes.",
-      "prix_indicatif": "4 500 - 5 100 €/m²"
+      "nom": "Les Bruyères - secteur résidentiel familial",
+      "description": "Un environnement résidentiel calme, composé de maisons familiales, petits collectifs et rues plus confidentielles. Un secteur apprécié pour son équilibre entre tranquillité, proximité des écoles et accès rapide aux grands axes.",
+      "prix_indicatif": "3 900 - 4 700 €/m²"
     },
     {
-      "nom": "Le Rocher",
-      "description": "Secteur plus résidentiel sur les hauteurs, apprécié pour ses vues, son calme et ses résidences plus récentes.",
-      "prix_indicatif": "5 100 - 5 900 €/m²"
+      "nom": "Le Rocher - Mont-Louis",
+      "description": "Un secteur plus recherché sur les hauteurs, avec davantage de vues, de calme et de biens résidentiels qualitatifs. Une adresse intéressante pour les acquéreurs qui recherchent une atmosphère plus exclusive tout en restant proches du centre.",
+      "prix_indicatif": "4 500 - 5 600 €/m²"
+    },
+    {
+      "description": "Un secteur plus rare, marqué par le patrimoine ancien, la proximité du vallon de Rochecardon et une ambiance plus végétale. Les biens y sont moins nombreux, mais recherchés pour leur cadre, leur discrétion et leur connexion avec les Monts d’Or.",
+      "prix_indicatif": "4 300 - 5 400 €/m²",
+      "nom": "Voutillière - Rochecardon"
     }
   ]
 }
