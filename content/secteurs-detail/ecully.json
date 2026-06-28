@@ -1,130 +1,70 @@
 {
-  "nom": "Écully",
-  "population": 17944,
   "superficie": 8,
-  "cp": "69130",
-  "intercommunalite": "Métropole de Lyon",
   "altitude": "190 - 320 m",
-  "ce_qui_differencie": [
-    "Pôle universitaire d'excellence : École Centrale de Lyon et Institut Paul Bocuse",
-    "Connexions Lyon centre : ligne 3 du métro à venir, autoroute A6 à 5 min",
-    "Parc du Vallon (40 ha) - poumon vert de la commune",
-    "Mix résidentiel : grandes propriétés historiques + résidences neuves de standing"
-  ],
+  "instagram_url": "https://www.instagram.com/romainrieg.immo/",
   "ecoles": [
     {
+      "nom": "Écoles publiques d’Écully",
+      "type": "Primaire",
+      "precision": "La commune compte plusieurs groupes scolaires publics : Les Cerisiers, Charrière Blanche, Vallon de Grandvaux, Le Pérollier et le Centre."
+    },
+    {
+      "nom": "École Sainte-Blandine",
+      "type": "Privé",
+      "precision": "École privée située place de la Libération à Écully."
+    },
+    {
+      "nom": "École Saint Dominique Savio",
+      "type": "Privé",
+      "precision": "École privée située chemin de la Sauvegarde à Écully."
+    },
+    {
       "nom": "Collège Laurent Mourguet",
-      "type": "Collège",
-      "precision": "Public, 3 bis rue Jean Rigaud"
+      "precision": "Collège public situé à Écully.",
+      "type": "Collège"
     },
     {
-      "nom": "Collège Sacré-Cœur - Don Bosco Écully",
+      "precision": "Collège privé catholique sous contrat situé avenue du Docteur Terver à Écully.",
       "type": "Privé",
-      "precision": "47 av. du Dr Terver - établissement notable de la commune"
-    },
-    {
-      "nom": "École Saint-Joseph",
-      "type": "Privé",
-      "precision": "Maternelle + primaire"
+      "nom": "Collège Sacré-Cœur - Don Bosco"
     },
     {
       "nom": "École Centrale de Lyon",
       "type": "Supérieur",
-      "precision": "Grande école d'ingénieurs, campus historique d'Écully"
+      "precision": "Établissement d’excellence situé à Écully, au cœur du campus Lyon Ouest."
     },
     {
-      "nom": "Institut Paul Bocuse",
+      "nom": "Institut Lyfe - ex Institut Paul Bocuse",
       "type": "Supérieur",
-      "precision": "Hôtellerie-restauration de référence mondiale"
+      "precision": "École internationale de référence dans les domaines de l’hôtellerie-restauration, des arts culinaires, de la pâtisserie et du management."
     }
   ],
-  "restaurants": [
-    {
-      "nom": "Saisons (Institut Paul Bocuse)",
-      "cuisine": "Gastronomie d'application étoilée Michelin · 4,8★ (514 avis)",
-      "gamme": "Étoilé",
-      "note": 4.8
-    },
-    {
-      "nom": "Au Bel Avenir",
-      "cuisine": "Brasserie ouest lyonnais · 4,7★ (207 avis), 12 all. des Tullistes",
-      "gamme": "Brasserie",
-      "note": 4.7
-    },
-    {
-      "nom": "Au Comptoir d'Écully",
-      "cuisine": "Bistrot · 4,9★ (87 avis)",
-      "gamme": "Bistrot",
-      "note": 4.9
-    },
-    {
-      "nom": "Volfoni Écully",
-      "cuisine": "Italien · 4,6★ (279 avis), chem. Jean-Marie Vianney",
-      "gamme": "Bistrot",
-      "note": 4.6
-    },
-    {
-      "nom": "Restaurant Le Village",
-      "cuisine": "Bistrot / burger · 4,5★ (332 avis), av. du Dr Terver",
-      "gamme": "Bistrot",
-      "note": 4.5
-    },
-    {
-      "nom": "L'Entre-Nous",
-      "cuisine": "Italien · 4,5★ (617 avis), all. Moulin Berger",
-      "gamme": "Bistrot",
-      "note": 4.5
-    },
-    {
-      "nom": "Kif Angkor",
-      "cuisine": "Cambodgien · 5★ (44 avis), rue Marietton",
-      "gamme": "Bistrot",
-      "note": 5
-    },
-    {
-      "nom": "Pâtisserie Sève (Richard Sève)",
-      "cuisine": "Pâtisserie haute couture, CC Écully Grand Ouest",
-      "gamme": "Café"
-    }
+  "nom": "Écully",
+  "cp": "69130",
+  "ce_qui_differencie": [
+    "**Un marché résidentiel recherché** : Écully attire une demande familiale solide grâce à sa proximité avec Lyon - ses quartiers résidentiels - ses écoles et son cadre de vie privilégié",
+    "**Un pôle d’enseignement supérieur reconnu** : École Centrale de Lyon / Institut Lyfe - ex Institut Paul Bocuse / campus Lyon Ouest Écully : la commune bénéficie d’un environnement académique fort et attractif",
+    "**Une commune bien connectée à Lyon** : Accès rapide à Lyon par les lignes de bus - la gare Écully-la-Demi-Lune - le tram-train de l’Ouest lyonnais et les grands axes routiers",
+    "**Un cadre naturel très présent** : Parc du Vivier / bois de Serres / espaces boisés / quartiers résidentiels arborés : Écully conserve une vraie respiration verte aux portes de Lyon"
   ],
+  "population": 17944,
+  "intercommunalite": "Métropole de Lyon",
   "associations": [
     {
       "nom": "Écully Sports",
-      "activite": "Multisports : tennis, basket, judo, gymnastique"
+      "activite": "Structure multisports emblématique de la commune, avec plusieurs disciplines et une forte présence dans la vie locale."
     },
     {
       "nom": "Écully Athlétisme",
-      "activite": "Athlétisme amateur et compétition"
+      "activite": "Club dédié à la pratique de l’athlétisme, de la découverte à la compétition."
     },
     {
       "nom": "MJC d'Écully",
-      "activite": "Activités culturelles, théâtre, musique"
+      "activite": "Lieu important de la vie culturelle locale, avec activités, ateliers, théâtre, musique et projets collectifs."
     },
     {
       "nom": "Comité de jumelage Écully - Lourinhã (Portugal)",
-      "activite": "Échanges internationaux"
-    }
-  ],
-  "quartiers": [
-    {
-      "nom": "Le Centre",
-      "description": "Centre-ville commerçant, mairie, marché du dimanche, résidences anciennes rénovées.",
-      "prix_indicatif": "4 900 - 5 800 €/m²"
-    },
-    {
-      "nom": "Pérollier",
-      "description": "Quartier familial avec écoles, parc, résidences récentes.",
-      "prix_indicatif": "4 700 - 5 500 €/m²"
-    },
-    {
-      "nom": "Valvert",
-      "description": "Hauteurs résidentielles, grandes maisons, calme.",
-      "prix_indicatif": "5 800 - 7 200 €/m²"
-    },
-    {
-      "nom": "Le Coulouvrier",
-      "description": "Mix maisons individuelles + petits collectifs, proche du campus de Centrale Lyon.",
-      "prix_indicatif": "4 900 - 5 700 €/m²"
+      "activite": "Association favorisant les échanges culturels et les liens internationaux avec le Portugal."
     }
   ],
   "evolution_prix": [
@@ -153,6 +93,50 @@
       "prixM2": 5280
     }
   ],
+  "restaurants": [
+    {
+      "nom": "Saisons (Institut Paul Bocuse) étoile michelin",
+      "cuisine": "Restaurant gastronomique d’application installé au cœur du parc du Vivier, dans l’environnement de l’Institut Lyfe - ex Institut Paul Bocuse. · 4,8★ ",
+      "gamme": "Étoilé",
+      "note": 4.8
+    },
+    {
+      "nom": "Au Bel Avenir",
+      "cuisine": "Restaurant et bar à Écully, avec une cuisine traditionnelle française, une ambiance conviviale et une belle adresse pour déjeuner, dîner ou partager un moment entre amis. · 4,7★ ",
+      "gamme": "Brasserie",
+      "note": 4.7
+    },
+    {
+      "nom": "Au Comptoir d'Écully",
+      "cuisine": "Adresse récente et chaleureuse, pensée autour de la convivialité, des produits du terroir et d’une cuisine maison.· 4,9★ ",
+      "gamme": "Bistrot",
+      "note": 4.9
+    },
+    {
+      "nom": "Volfoni Écully",
+      "cuisine": "Restaurant italien situé chemin Jean-Marie Vianney, à proximité d’Écully Grand Ouest.· 4,6★ ",
+      "gamme": "Bistrot",
+      "note": 4.6
+    },
+    {
+      "nom": "Restaurant Le Village",
+      "cuisine": "Adresse située avenue du Docteur Terver, avec une cuisine maison, une ambiance chaleureuse et une terrasse agréable en saison. · 4,5★ ",
+      "gamme": "Bistrot",
+      "note": 4.5
+    },
+    {
+      "nom": "L'Entre-Nous",
+      "cuisine": "Restaurant italien situé allée Moulin Berger, avec une offre de restauration, pizzeria et vente à emporter.· 4,5★ ",
+      "gamme": "Bistrot",
+      "note": 4.5
+    },
+    {
+      "nom": "Kif Angkor",
+      "cuisine": "Adresse située rue Marietton, avec une cuisine d’inspiration cambodgienne et indochinoise.· 5★ ",
+      "gamme": "Bistrot",
+      "note": 5
+    }
+  ],
   "video_insta": {
     "titre": "Pourquoi Écully attire les familles cadres",
     "duree": "1:30"
@@ -166,5 +150,26 @@
     "/photos/secteurs/ecully-6.jpg"
   ],
   "video": "/videos/secteurs/ecully.mp4",
-  "instagram_url": "https://www.instagram.com/romainrieg.immo/"
+  "quartiers": [
+    {
+      "nom": "Le Centre",
+      "description": "Centre-ville commerçant d’Écully avec mairie, marché, commerces de proximité et résidences anciennes rénovées. Un secteur recherché pour sa praticité, sa vie locale et son accès rapide aux services.",
+      "prix_indicatif": "4 900 - 5 800 €/m²"
+    },
+    {
+      "nom": "Pérollier",
+      "description": "Quartier familial et résidentiel, apprécié pour ses écoles, ses équipements, ses espaces verts et ses résidences récentes. Un secteur pratique pour les familles recherchant un cadre de vie équilibré.",
+      "prix_indicatif": "4 700 - 5 500 €/m²"
+    },
+    {
+      "nom": "Valvert",
+      "description": "Secteur résidentiel sur les hauteurs d’Écully, marqué par de belles maisons, des propriétés plus confidentielles et un environnement calme et verdoyant.",
+      "prix_indicatif": "5 800 - 7 200 €/m²"
+    },
+    {
+      "nom": "Le Coulouvrier",
+      "description": "Secteur mixte entre maisons individuelles, petits collectifs et proximité du campus Lyon Ouest Écully. Un quartier intéressant pour les familles, les actifs et les projets d’investissement.",
+      "prix_indicatif": "4 900 - 5 700 €/m²"
+    }
+  ]
 }
