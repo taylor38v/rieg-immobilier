@@ -152,24 +152,34 @@
   "video": "/videos/secteurs/ecully.mp4",
   "quartiers": [
     {
-      "nom": "Le Centre",
-      "description": "Centre-ville commerçant d’Écully avec mairie, marché, commerces de proximité et résidences anciennes rénovées. Un secteur recherché pour sa praticité, sa vie locale et son accès rapide aux services.",
-      "prix_indicatif": "4 900 - 5 800 €/m²"
+      "nom": "Centre-ville - Docteur Terver",
+      "description": "Le cœur vivant d’Écully : commerces, marché, mairie, écoles, restaurants et services du quotidien. Un secteur recherché pour sa centralité, son esprit village et sa facilité de vie aux portes de Lyon.",
+      "prix_indicatif": "4 500 - 5 400 €/m²"
     },
     {
-      "nom": "Pérollier",
-      "description": "Quartier familial et résidentiel, apprécié pour ses écoles, ses équipements, ses espaces verts et ses résidences récentes. Un secteur pratique pour les familles recherchant un cadre de vie équilibré.",
-      "prix_indicatif": "4 700 - 5 500 €/m²"
+      "nom": "Valvert - Charlier - Marietton",
+      "description": "Secteur pratique et connecté, proche de Lyon 9e, de Vaise, des transports et des grands axes. Le marché y est varié, entre appartements, maisons de ville et adresses plus résidentielles selon les rues.",
+      "prix_indicatif": "4 100 - 5 100 €/m²"
     },
     {
-      "nom": "Valvert",
-      "description": "Secteur résidentiel sur les hauteurs d’Écully, marqué par de belles maisons, des propriétés plus confidentielles et un environnement calme et verdoyant.",
-      "prix_indicatif": "5 800 - 7 200 €/m²"
+      "nom": "Vivier - Les Serres",
+      "description": "Secteur résidentiel apprécié pour son environnement verdoyant, ses belles propriétés, ses espaces arborés et la proximité du parc du Vivier. Une adresse recherchée pour son calme et son cadre de vie.",
+      "prix_indicatif": "4 500 - 5 600 €/m²"
     },
     {
-      "nom": "Le Coulouvrier",
-      "description": "Secteur mixte entre maisons individuelles, petits collectifs et proximité du campus Lyon Ouest Écully. Un quartier intéressant pour les familles, les actifs et les projets d’investissement.",
-      "prix_indicatif": "4 900 - 5 700 €/m²"
+      "nom": "Charrière Blanche - Grandvaux - Calabert",
+      "description": "Secteur familial et résidentiel, composé de maisons, résidences de standing et rues calmes. Grandvaux et Charrière Blanche affichent souvent des valeurs solides grâce à leur environnement, leurs écoles et leur qualité résidentielle.",
+      "prix_indicatif": "4 600 - 5 700 €/m²"
+    },
+    {
+      "nom": "Sources - Pérollier - Vianney",
+      "description": "Secteur plus mixte, avec une offre importante d’appartements, de résidences et de logements familiaux. Un secteur intéressant pour les acquéreurs recherchant un budget plus accessible à Écully, avec des écarts importants selon l’adresse et l’état du bien.",
+      "prix_indicatif": "3 900 - 5 100 €/m²"
+    },
+    {
+      "nom": "Tronchon - Moulin Carron - École Centrale",
+      "description": "Secteur lié au campus, aux grandes écoles et aux axes de l’Ouest lyonnais. Il attire aussi bien des familles, des actifs que des profils investisseurs, notamment grâce à la proximité de l’École Centrale de Lyon et des pôles d’enseignement supérieur.",
+      "prix_indicatif": "4 100 - 5 200 €/m"
     }
   ]
 }
