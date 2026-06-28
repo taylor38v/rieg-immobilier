@@ -143,24 +143,34 @@
   "video": "/videos/secteurs/saint-didier.mp4",
   "quartiers": [
     {
-      "nom": "Centre village",
-      "description": "Le cœur historique de Saint-Didier-au-Mont-d’Or : place de la mairie, commerces de proximité, ruelles en pierres dorées et ambiance village. Un secteur très recherché pour son cachet, sa vie locale et son emplacement central.",
-      "prix_indicatif": "6 200 - 7 800 €/m²"
+      "nom": "Centre village - Bourg",
+      "description": "Le cœur historique et pratique de Saint-Didier-au-Mont-d’Or : mairie, commerces, écoles, vie locale et accès rapide aux transports. Un secteur recherché pour son esprit village, sa centralité et son équilibre entre praticité et qualité de vie.",
+      "prix_indicatif": "5 600 - 6 700 €/m²"
     },
     {
       "nom": "Saint-Fortunat",
-      "description": "Un hameau préservé, plus confidentiel, avec une atmosphère paisible, des vues dégagées et un rapport fort à la nature. Un secteur apprécié pour son calme et son caractère authentique.",
-      "prix_indicatif": "6 000 - 7 400 €/m²"
+      "description": "Hameau emblématique dans les Monts d’Or, apprécié pour ses maisons en pierres dorées, son atmosphère préservée et son charme patrimonial. Les biens rares avec vue, terrain ou prestations de qualité peuvent dépasser cette fourchette.",
+      "prix_indicatif": "6 000 - 7 200 €/m²"
     },
     {
-      "nom": "Plat de l'Air",
-      "description": "Un secteur résidentiel prisé sur les hauteurs, reconnu pour ses grandes propriétés, son environnement verdoyant, ses vues et son calme. Une adresse historique pour les familles recherchant espace et discrétion.",
-      "prix_indicatif": "6 800 - 8 500 €/m²"
+      "nom": "Plat de l’Air - hauteurs",
+      "description": "Secteur résidentiel recherché sur les hauteurs, avec de belles propriétés, un environnement verdoyant et une ambiance plus confidentielle. Une adresse appréciée des familles recherchant calme, espace et proximité avec Lyon.",
+      "prix_indicatif": "6 200 - 7 500 €/m²"
     },
     {
-      "nom": "Les Carrières / Le Tourillon",
-      "description": "Un secteur familial et résidentiel, mêlant maisons rénovées, constructions contemporaines et proximité des équipements scolaires. Un quartier apprécié pour son équilibre entre praticité, calme et qualité de vie.",
-      "prix_indicatif": "5 600 - 6 800 €/m²"
+      "nom": "Les Carrières - Tourillon",
+      "description": "Secteur familial et résidentiel, mêlant maisons rénovées, biens contemporains et adresses plus discrètes. Un secteur intéressant pour son équilibre entre cadre de vie, accès aux écoles et proximité du centre.",
+      "prix_indicatif": "5 600 - 6 900 €/m²"
+    },
+    {
+      "description": "Secteur pratique et connecté, à proximité du parc d’affaires de Crécy, des axes vers Lyon 9e et des transports. Un secteur intéressant pour les actifs recherchant une adresse dans les Monts d’Or avec un accès rapide à Lyon.",
+      "prix_indicatif": "5 700 - 6 900 €/m²",
+      "nom": "Parc de Crécy - Chemin de Crécy"
+    },
+    {
+      "description": "Secteur pratique et connecté, proche des axes, des commerces et des services du quotidien. Le marché y est plus mixte, entre maisons familiales, appartements et biens à rénover selon les rues.",
+      "prix_indicatif": "5 300 - 6 500 €/m²",
+      "nom": "Rocade - Pasteur - République"
     }
   ]
 }
