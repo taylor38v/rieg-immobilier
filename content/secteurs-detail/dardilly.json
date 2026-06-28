@@ -171,24 +171,34 @@
   "video": "/videos/secteurs/dardilly.mp4",
   "quartiers": [
     {
-      "nom": "Le Paillet",
-      "description": "Quartier résidentiel calme, proche du centre et des écoles. Un secteur apprécié pour sa vie de quartier, sa praticité et son environnement familial.",
-      "prix_indicatif": "4 400 - 5 100 €/m²"
+      "nom": "Le Bourg - Esplanade",
+      "description": "Cœur historique et pratique de Dardilly avec mairie, commerces, écoles, équipements publics et nouvelle dynamique autour de l’Esplanade. Un secteur recherché pour sa vie de village, sa centralité et sa praticité au quotidien.",
+      "prix_indicatif": "4 400 - 5 200 €/m²"
     },
     {
-      "nom": "La Beffe",
-      "description": "Secteur plus confidentiel sur les hauteurs, recherché pour ses grandes maisons, ses vues dégagées et son cadre verdoyant.",
-      "prix_indicatif": "5 000 - 6 000 €/m²"
+      "nom": "Le Barriot - Pierre Blanche",
+      "description": "Secteur historique de Dardilly autour de l’église du Barriot, du marché de producteurs et d’une vraie ambiance de village. Une adresse appréciée pour ses commerces de proximité, son cadre résidentiel et son esprit local.",
+      "prix_indicatif": "4 200 - 5 100 €/m²"
     },
     {
-      "nom": "Porte de Lyon",
-      "description": "Secteur pratique et connecté, proche des commerces, des axes routiers et des zones d’activité. Un secteur mixte entre maisons, petits collectifs et logements plus fonctionnels.",
-      "prix_indicatif": "4 100 - 4 800 €/m²"
+      "nom": "Les Noyeraies - Parsonge",
+      "description": "Secteur résidentiel familial, apprécié pour son calme, ses équipements, ses écoles et son environnement pavillonnaire. Un bon équilibre entre vie de quartier, accès aux services et cadre verdoyant.",
+      "prix_indicatif": "4 400 - 5 300 €/m²"
     },
     {
-      "nom": "Les Noyeraies",
-      "description": "Quartier pavillonnaire calme, apprécié des familles pour son environnement résidentiel, ses équipements et sa proximité avec les écoles.",
-      "prix_indicatif": "4 700 - 5 500 €/m²"
+      "nom": "La Beffe - Mouchettes",
+      "description": "Secteur plus résidentiel et qualitatif, recherché pour ses maisons familiales, ses parcelles plus généreuses et son environnement confidentiel. Les biens les plus soignés peuvent dépasser cette fourchette selon le terrain et les prestations.",
+      "prix_indicatif": "4 600 - 5 600 €/m²"
+    },
+    {
+      "nom": "Gargantua - Brûley - Porte de Lyon",
+      "description": "Secteur pratique et connecté, proche des grands axes, des commerces et de la zone d’activité. Il offre un marché plus mixte entre maisons, petits collectifs et biens fonctionnels.",
+      "prix_indicatif": "3 900 - 4 900 €/m²"
+    },
+    {
+      "description": "Secteur recherché pour son environnement plus vert, son ambiance résidentielle et sa proximité avec les espaces naturels. Les maisons avec terrain, calme et prestations de qualité y sont particulièrement appréciées.",
+      "prix_indicatif": "4 500 - 5 500 €/m²",
+      "nom": "Bois de Serres - Brochetière"
     }
   ]
 }
