@@ -1,111 +1,63 @@
 {
-  "nom": "Champagne-au-Mont-d'Or",
-  "population": 6311,
   "superficie": 2.6,
-  "cp": "69410",
-  "intercommunalite": "Métropole de Lyon",
   "altitude": "190 - 280 m",
-  "ce_qui_differencie": [
-    "Petite commune à taille humaine - la plus dense du Mont d'Or",
-    "Centre village animé avec marché hebdomadaire et commerces de proximité",
-    "Bonne connexion bus vers Lyon via TCL (C14, 21, 61, 66) - proche A6 et Lyon Vaise",
-    "Une des seules communes du Mont d'Or avec un collège public sur son territoire"
-  ],
+  "instagram_url": "https://www.instagram.com/romainrieg.immo/",
   "ecoles": [
     {
-      "nom": "Groupe scolaire public du Centre",
+      "nom": "Groupe scolaire public de Champagne-au-Mont-d’Or",
       "type": "Primaire",
-      "precision": "6 classes maternelle + 12 classes élémentaire"
+      "precision": "École publique de la commune - maternelle et élémentaire."
     },
     {
       "nom": "École Les Chartreux Saint-Joseph",
       "type": "Privé",
-      "precision": "Maternelle + primaire, sous contrat"
+      "precision": "École privée située au cœur du village - de la petite section au CM2."
     },
     {
       "nom": "Collège Jean-Philippe Rameau",
       "type": "Collège",
-      "precision": "Public, 646 élèves - collège de secteur du Mont d'Or"
+      "precision": "Collège public situé à Champagne-au-Mont-d’Or - établissement de secteur pour plusieurs communes des Monts d’Or."
     },
     {
-      "nom": "Lycée Jean Perrin (Lyon 9) ou La Martinière Duchère",
+      "nom": "Lycée Jean Perrin / La Martinière Duchère",
       "type": "Lycée",
-      "precision": "Lycées publics les plus proches"
+      "precision": "Lycées publics situés à proximité, selon la sectorisation et l’orientation choisie."
     }
   ],
-  "restaurants": [
-    {
-      "nom": "O Platanes",
-      "cuisine": "Française · 4,6★ (603 avis), av. de Lanessan",
-      "gamme": "Bistrot",
-      "note": 4.6
-    },
-    {
-      "nom": "N'Autre MOnde",
-      "cuisine": "Asiatique · 4,7★ (254 avis), av. de Montlouis",
-      "gamme": "Bistrot",
-      "note": 4.7
-    },
-    {
-      "nom": "Le Rouge-Gorge",
-      "cuisine": "Française · 4,3★ (343 avis), pl. Ludovic Monnier",
-      "gamme": "Bistrot",
-      "note": 4.3
-    },
-    {
-      "nom": "Le Rictoria",
-      "cuisine": "Française / américaine · 4,6★ (243 avis), chem. du Tronchon",
-      "gamme": "Brasserie",
-      "note": 4.6
-    },
-    {
-      "nom": "Da Cocó by La Boîte Noire",
-      "cuisine": "Italien / pizza · 4,7★ (197 avis), av. de Lanessan",
-      "gamme": "Pizza",
-      "note": 4.7
-    },
-    {
-      "nom": "Ninkasi Champagne",
-      "cuisine": "Burgers / brewpub · 4,4★ (668 avis)",
-      "gamme": "Brasserie",
-      "note": 4.4
-    },
-    {
-      "nom": "La Ferme des Monts d'Or",
-      "cuisine": "Française · 4,5★ (358 avis), av. de Lanessan",
-      "gamme": "Bistrot",
-      "note": 4.5
-    }
+  "nom": "Champagne-au-Mont-d'Or",
+  "cp": "69410",
+  "ce_qui_differencie": [
+    "**Une commune à taille humaine dans les Monts d’Or** : Champagne-au-Mont-d’Or offre un cadre résidentiel recherché avec une vraie vie de village - des commerces de proximité et une ambiance familiale",
+    "**Un centre village vivant et pratique** : Marché - mairie - commerces - services du quotidien : la commune conserve une centralité agréable et facile à vivre",
+    "**Une connexion efficace avec Lyon** : Lignes de bus TCL - proximité de Vaise - accès rapide aux grands axes : Champagne-au-Mont-d’Or reste très pratique pour les actifs et les familles",
+    "**Un atout scolaire rare dans les Monts d’Or** : La commune dispose d’un collège public sur son territoire - un vrai point fort pour les familles du secteur"
   ],
+  "population": 6311,
+  "intercommunalite": "Métropole de Lyon",
   "associations": [
     {
-      "nom": "Champagne Football",
-      "activite": "Foot jeunes et adultes"
+      "nom": "GOAL FC - Grand Ouest Association Lyonnaise Football Club",
+      "activite": "Club de football structurant de l’Ouest lyonnais, présent dans la vie sportive locale."
     },
     {
-      "nom": "Tennis de Champagne",
-      "activite": "Club avec courts"
+      "nom": "Association Champagne Tennis",
+      "activite": "Club de tennis local, ancré dans la pratique sportive de la commune."
     },
     {
-      "nom": "Comité des fêtes",
-      "activite": "Marché de Noël, fête du village"
-    }
-  ],
-  "quartiers": [
-    {
-      "nom": "Centre",
-      "description": "Cœur de village, commerces, mairie, église, marché.",
-      "prix_indicatif": "4 700 - 5 500 €/m²"
+      "nom": "Champa’Bad",
+      "activite": "Association sportive champenoise dédiée à la pratique du badminton."
     },
     {
-      "nom": "Les Bruyères",
-      "description": "Quartier pavillonnaire des années 70-80, calme, accès rapide aux écoles.",
-      "prix_indicatif": "4 500 - 5 100 €/m²"
+      "nom": "Champagne Tennis de Table",
+      "activite": "Club local ouvert à la pratique loisir et sportive."
     },
     {
-      "nom": "Le Rocher",
-      "description": "Hauteurs, vues, résidences plus récentes.",
-      "prix_indicatif": "5 100 - 5 900 €/m²"
+      "nom": "Les Lycoses de Champagne-au-Mont-d’Or",
+      "activite": "Association dédiée à l’escalade, pour jeunes et adultes."
+    },
+    {
+      "nom": "Comité des Fêtes",
+      "activite": "Association impliquée dans les grands temps forts de la commune : forum des associations, Champagne en Fête, fête de la musique et animations locales."
     }
   ],
   "evolution_prix": [
@@ -134,6 +86,50 @@
       "prixM2": 4890
     }
   ],
+  "restaurants": [
+    {
+      "nom": "O Platanes",
+      "cuisine": "Restaurant bistronomique à Champagne-au-Mont-d’Or, avec une cuisine française soignée et une atmosphère chaleureuse. · 4,6★ ",
+      "gamme": "Bistrot",
+      "note": 4.6
+    },
+    {
+      "nom": "N'Autre MOnde",
+      "cuisine": "Adresse moderne et conviviale, avec une cuisine inspirée des cultures asiatiques et une terrasse agréable en saison. · 4,7★ ",
+      "gamme": "Bistrot",
+      "note": 4.7
+    },
+    {
+      "nom": "Le Rouge-Gorge",
+      "cuisine": "Adresse de proximité au cœur de Champagne-au-Mont-d’Or, dans un esprit bistrot simple et local. · 4,3★ ",
+      "gamme": "Bistrot",
+      "note": 4.3
+    },
+    {
+      "nom": "Le Rictoria",
+      "cuisine": "Adresse familiale et accessible, idéale pour déjeuner, dîner ou partager un moment simple dans un cadre agréable. · 4,6★ ",
+      "gamme": "Brasserie",
+      "note": 4.6
+    },
+    {
+      "nom": "Da Cocó by La Boîte Noire",
+      "cuisine": "Adresse italienne et pizzeria de qualité, dans l’esprit convivial des bonnes tables de quartier. · 4,7★ ",
+      "gamme": "Pizza",
+      "note": 4.7
+    },
+    {
+      "nom": "Ninkasi Champagne",
+      "cuisine": "Adresse animée pour burgers, bières craft et moments conviviaux, avec l’esprit Ninkasi bien connu dans la métropole lyonnaise. · 4,4★",
+      "gamme": "Brasserie",
+      "note": 4.4
+    },
+    {
+      "nom": "La Ferme des Monts d'Or",
+      "cuisine": "Restaurant français situé à Champagne-au-Mont-d’Or, avec une ardoise renouvelée et une ambiance conviviale. · 4,5★",
+      "gamme": "Bistrot",
+      "note": 4.5
+    }
+  ],
   "video_insta": {
     "titre": "Champagne - la commune la plus dynamique du Mont d'Or",
     "duree": "1:25"
@@ -147,5 +143,21 @@
     "/photos/secteurs/champagne-6.jpg"
   ],
   "video": "/videos/secteurs/champagne.mp4",
-  "instagram_url": "https://www.instagram.com/romainrieg.immo/"
+  "quartiers": [
+    {
+      "nom": "Centre",
+      "description": "Cœur de village de Champagne-au-Mont-d’Or, avec mairie, commerces, marché et services du quotidien. Un secteur recherché pour sa praticité, son animation et sa proximité avec les transports.",
+      "prix_indicatif": "4 700 - 5 500 €/m²"
+    },
+    {
+      "nom": "Les Bruyères",
+      "description": "Quartier résidentiel et familial, composé principalement de maisons et de secteurs pavillonnaires. Un environnement calme avec un accès pratique aux écoles et aux grands axes.",
+      "prix_indicatif": "4 500 - 5 100 €/m²"
+    },
+    {
+      "nom": "Le Rocher",
+      "description": "Secteur plus résidentiel sur les hauteurs, apprécié pour ses vues, son calme et ses résidences plus récentes.",
+      "prix_indicatif": "5 100 - 5 900 €/m²"
+    }
+  ]
 }
