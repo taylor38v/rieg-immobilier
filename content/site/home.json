@@ -3,9 +3,9 @@
     "cta_secondary_href": "/rejoindre",
     "cta_primary_label": "Avis de valeur offert · 24 - 48h",
     "mention": "Zéro engagement · 100% confidentiel",
-    "chip": "Saint-Didier · Ouest lyonnais · Plaine du Forez",
+    "chip": "Saint-Didier-Au-Mont-d'Or · Ouest lyonnais · Plaine du Forez",
     "intro": "Vous souhaitez vendre, acheter ou mettre votre bien en location à Saint-Didier-au-Mont-d'Or, dans l'Ouest lyonnais ou dans la Plaine du Forez ? Je vous accompagne à chaque étape de votre projet immobilier avec réactivité, expertise locale et un suivi personnalisé.",
-    "titre": "Votre conseiller immobilier de proximité du réseau iad.",
+    "titre": "Votre conseiller immobilier iad de proximité, spécialiste de l'Ouest lyonnais et de la Plaine du Forez.",
     "cta_primary_href": "/avis-de-valeur",
     "cta_secondary_label": "Rejoindre mon équipe",
     "video": "/videos/secteurs/saint-cyr.mp4",
@@ -31,7 +31,7 @@
   "biens_iad": {
     "surtitre": "Mes biens à la vente",
     "titre": "Retrouvez l'ensemble de mes mandats sur mon mini-site iad officiel.",
-    "desc": "Annonces actualisées en temps réel, fiches complètes, prise de RDV en ligne.",
+    "desc": "Annonces actualisées en temps réel, fiches complètes et prise de rendez-vous en ligne.",
     "cta_label": "Voir mes biens iad ↗",
     "cta_url": "https://www.iadfrance.fr/conseiller-immobilier/romain.rieg"
   },
@@ -47,9 +47,9 @@
     "citation_auteur": "Romain Rieg · Conseiller immobilier iad",
     "photo_alt": "Romain Rieg, conseiller iad",
     "paragraphes": [
-      "Je m'appelle Romain Rieg, j'ai 28 ans et l'immobilier est bien plus qu'un métier pour moi. Après une reconversion professionnelle, j'ai choisi de devenir conseiller indépendant pour accompagner mes clients à ma manière : avec **transparence, engagement et conseils personnalisés**.",
-      "Membre du réseau iad France, je m'appuie sur des outils technologiques performants et une stratégie digitale moderne — réseaux sociaux, vidéos — pour offrir à votre bien la meilleure visibilité possible.",
-      "Originaire de la Loire, où j'ai grandi pendant 20 ans, je suis aujourd'hui pleinement ancré dans les Monts d'Or. Mon objectif : allier la puissance du réseau iad à un accompagnement humain, réactif et sans détour."
+      "Je m'appelle Romain Rieg, j'ai 28 ans et l'immobilier est bien plus qu'un métier pour moi. Après une reconversion professionnelle, j'ai choisi de devenir conseiller indépendant pour accompagner mes clients à ma manière : avec **transparence, engagement et un suivi personnalisé**.",
+      "Membre du réseau iad France, je m'appuie sur des outils performants et une stratégie digitale moderne - réseaux sociaux, vidéos - pour offrir à votre bien la meilleure visibilité possible.",
+      "Originaire de la Loire, où j'ai grandi pendant 20 ans, je suis aujourd'hui pleinement ancré dans les Monts d'Or. **Mon objectif : allier la puissance du réseau iad à un accompagnement humain, réactif et sans détour.**"
     ]
   },
   "services": {
@@ -83,20 +83,20 @@
   "secteurs": {
     "surtitre": "Mes secteurs d'intervention",
     "titre": "Une présence locale, un suivi personnalisé.",
-    "intro": "Chaque commune bénéficie d'un suivi personnalisé, avec une stratégie adaptée à son marché et un avis de valeur fiable sous 24 - 48h.",
+    "intro": "Chaque commune bénéficie d'une stratégie adaptée à son marché et d'un avis de valeur fiable sous 24 à 48 h.",
     "lien_label": "Découvrir la zone →",
     "zones": [
       {
         "slug": "ouest-lyonnais",
         "titre": "Ouest lyonnais",
-        "desc": "Mon cœur d'activité. Écully · Dardilly · Limonest · Champagne · Saint-Cyr + toutes les communes limitrophes.",
+        "desc": "Mon secteur principal. Saint-Didier-au-Mont-d'Or, Écully, Dardilly, Limonest, Champagne-au-Mont-d'Or, Saint-Cyr-au-Mont-d'Or et toutes les communes limitrophes.",
         "badge": "Cœur d'activité",
         "image": "/photos/IMG_7282.jpeg"
       },
       {
         "slug": "saint-didier",
         "titre": "Saint-Didier-au-Mont-d'Or",
-        "desc": "Ma commune de résidence - présence quotidienne sur le terrain et expertise fine.",
+        "desc": "Ma commune de résidence : présence quotidienne sur le terrain et connaissance fine du marché.\n",
         "badge": "Mon village",
         "image": "/uploads/1min-intro.jpg"
       },
@@ -112,7 +112,7 @@
   "instagram": {
     "surtitre": "À voir",
     "titre": "Mon quotidien sur Instagram.",
-    "intro": "Visites, conseils, anecdotes du métier — suivez mon quotidien de conseiller immobilier dans les Monts d'Or.",
+    "intro": "Visites, conseils, anecdotes du métier - suivez mon quotidien de conseiller immobilier dans les Monts d'Or.",
     "lien": "https://www.instagram.com/romainrieg.immo/",
     "reel_label": "Reel",
     "videos": [
