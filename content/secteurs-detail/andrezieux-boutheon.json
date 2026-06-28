@@ -4,39 +4,29 @@
   "instagram_url": "https://www.instagram.com/romainrieg.immo/",
   "ecoles": [
     {
-      "nom": "École maternelle Paul Eluard",
-      "type": "Maternelle",
-      "precision": "Publique"
-    },
-    {
-      "nom": "École maternelle Victor Hugo",
-      "type": "Maternelle",
-      "precision": "Publique"
-    },
-    {
-      "nom": "École primaire Louis Pasteur",
+      "nom": "Arthur Rimbaud - Victor Hugo - Louis Pasteur - Paul Éluard",
       "type": "Primaire",
-      "precision": "Publique"
+      "precision": "Réseau d’écoles publiques réparties sur la commune, couvrant les principaux secteurs résidentiels d’Andrézieux-Bouthéon."
     },
     {
-      "nom": "École primaire Arthur Rimbaud",
-      "type": "Primaire",
-      "precision": "Publique"
-    },
-    {
-      "nom": "École Jeanne d'Arc",
+      "nom": "École Jeanne d’Arc",
       "type": "Privé",
-      "precision": "Maternelle + primaire"
+      "precision": "École primaire privée située rue Marcellin Girinon, présente dans le paysage scolaire local."
     },
     {
       "nom": "Collège Jacques Prévert",
       "type": "Collège",
-      "precision": "Public - ~234 candidats au brevet, ~90% de réussite"
+      "precision": "Collège public situé rue Racine, établissement de référence pour les familles de la commune."
     },
     {
-      "nom": "Lycée professionnel Pierre Desgranges",
+      "nom": "Lycée François Mauriac - Forez",
       "type": "Lycée",
-      "precision": "Public - formations industrie & tertiaire, 3 rue Fleming"
+      "precision": "Lycée général et technologique situé rue des Bullieux, au sein de la cité scolaire Mauriac / Desgranges."
+    },
+    {
+      "nom": "Lycée Pierre Desgranges",
+      "type": "Lycée",
+      "precision": "Lycée professionnel situé rue des Bullieux, avec des formations orientées vers les parcours professionnels."
     }
   ],
   "nom": "Andrézieux-Bouthéon",
