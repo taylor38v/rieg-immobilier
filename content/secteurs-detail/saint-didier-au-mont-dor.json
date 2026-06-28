@@ -1,131 +1,67 @@
 {
-  "nom": "Saint-Didier-au-Mont-d'Or",
-  "population": 7435,
   "superficie": 7.7,
-  "cp": "69370",
-  "intercommunalite": "Métropole de Lyon",
   "altitude": "260 - 547 m",
-  "ce_qui_differencie": [
-    "Une des communes les plus convoitées de la Métropole - demande structurellement supérieure à l'offre",
-    "Tissu associatif et scolaire de référence régionale",
-    "Cadre village conservé à 15 minutes du centre de Lyon",
-    "Forte présence de cadres dirigeants et de professions libérales"
-  ],
+  "instagram_url": "https://www.instagram.com/romainrieg.immo/",
   "ecoles": [
     {
-      "nom": "École publique du Bourg",
-      "type": "Primaire",
-      "precision": "Maternelle + élémentaire publique, centre village"
+      "nom": "École publique Ennat et Auguste Leger",
+      "type": "Maternelle",
+      "precision": "École publique de la commune - répartie entre le site du Bourg et le site de Saint-Fortunat."
     },
     {
-      "nom": "École publique de Saint-Fortunat",
-      "type": "Primaire",
-      "precision": "Maternelle + élémentaire publique"
+      "nom": "École primaire privée Fromente - Saint-François",
+      "type": "Maternelle",
+      "precision": "École privée située à Saint-Didier-au-Mont-d’Or - maternelle et élémentaire."
     },
     {
-      "nom": "Ensemble scolaire Fromente-Saint-François",
-      "type": "Privé",
-      "precision": "Maternelle au collège, sous contrat - la seule école privée sur la commune"
-    },
-    {
-      "nom": "Collège Jean-Philippe Rameau",
+      "nom": "Collège Fromente - Saint-François / Lycée Chevreul Saint Didier",
       "type": "Collège",
-      "precision": "Public, à Champagne-au-Mont-d'Or - collège de secteur (~6 min)"
+      "precision": "Établissements privés situés à Saint-Didier-au-Mont-d’Or - dans un cadre reconnu dans les Monts d’Or."
     },
     {
-      "nom": "Lycées lyonnais & Écully",
-      "type": "Lycée",
-      "precision": "Selon orientation : Cevert, La Martinière Duchère, lycées internationaux (10-15 min)"
+      "nom": "Collège Jean Perrin / Lycée Jean Perrin",
+      "type": "Collège",
+      "precision": "Établissements publics du secteur - situés à Lyon 9e selon la sectorisation et l’orientation choisie."
     }
   ],
-  "restaurants": [
-    {
-      "nom": "L'Éclat de Pierre",
-      "cuisine": "Bistronomie avec terrasse · 4,6★ (388 avis)",
-      "gamme": "Gastro",
-      "note": 4.6
-    },
-    {
-      "nom": "Aux Montagnards",
-      "cuisine": "Cuisine française traditionnelle / fondue · 4,2★ (1 533 avis)",
-      "gamme": "Brasserie",
-      "note": 4.2
-    },
-    {
-      "nom": "La Cantine du Village",
-      "cuisine": "Bistrot lyonnais · 4,4★ (283 avis)",
-      "gamme": "Bistrot",
-      "note": 4.4
-    },
-    {
-      "nom": "La Boîte Noire",
-      "cuisine": "Pizzeria de référence · 4,7★",
-      "gamme": "Pizza",
-      "note": 4.7
-    },
-    {
-      "nom": "Comptoir Fortunella",
-      "cuisine": "Table sarde familiale · 4,9★",
-      "gamme": "Bistrot",
-      "note": 4.9
-    },
-    {
-      "nom": "Les Jardins de Saint-Didier",
-      "cuisine": "Pizza & cuisine, terrasse pétanque · 4,5★",
-      "gamme": "Pizza",
-      "note": 4.5
-    }
+  "nom": "Saint-Didier-au-Mont-d'Or",
+  "cp": "69370",
+  "ce_qui_differencie": [
+    "**Un marché immobilier rare et recherché** : Saint-Didier-au-Mont-d’Or fait partie des communes les plus prisées de la métropole lyonnaise. La demande y reste souvent supérieure à l’offre disponible",
+    "**Un cadre de vie familial et privilégié** : Écoles - associations - commerces de proximité - environnement verdoyant : la commune offre un équilibre rare entre esprit village et accès rapide à Lyon",
+    "**Une adresse forte dans les Monts d’Or** : À seulement quelques minutes de Lyon - Saint-Didier-au-Mont-d’Or conserve une identité résidentielle marquée avec des quartiers calmes - recherchés et bien établis",
+    "**Une clientèle exigeante** : Maisons de famille / propriétés avec terrain / biens rénovés / adresses confidentielles : le marché local attire des acquéreurs attentifs à la qualité de vie - à l’emplacement et aux prestations"
   ],
+  "population": 7435,
+  "intercommunalite": "Métropole de Lyon",
   "associations": [
     {
       "nom": "FCLDSD - Football Club Limonest-Dardilly-Saint-Didier",
-      "activite": "Club mutualisé évoluant en National 2 (champion N3 2024-2025)"
+      "activite": "Club de football intercommunal reconnu dans les Monts d’Or - équipes jeunes, seniors et pratique compétitive."
     },
     {
       "nom": "HBCCD - Handball Club Saint-Cyr / Saint-Didier",
-      "activite": "Handball, gymnase de Saint-Didier"
+      "activite": "Club de handball local, avec une pratique au gymnase de Saint-Didier-au-Mont-d’Or."
     },
     {
       "nom": "Boule des Monts d'Or",
-      "activite": "Sport boules lyonnaises"
+      "activite": "Association dédiée à la boule lyonnaise, ancrée dans la tradition sportive locale."
     },
     {
       "nom": "AGYD - Activités Gymniques de Saint-Didier",
-      "activite": "Gymnastique et yoga toutes générations"
+      "activite": "Cours de gymnastique, pilates, yoga et activités bien-être pour différents publics."
     },
     {
       "nom": "Aïkido / Judo Ouest Grand Lyon",
-      "activite": "Arts martiaux"
+      "activite": "Pratique des arts martiaux au Centre Laurent Bonnevay - dojo de Saint-Didier-au-Mont-d’Or."
     },
     {
       "nom": "Badmin d'Or",
-      "activite": "Badminton"
+      "activite": "Club de badminton actif sur Saint-Didier-au-Mont-d’Or et Limonest."
     },
     {
       "nom": "Comité d'animation de Saint-Didier",
-      "activite": "Événements villageois, marché, fête de la Saint-Jean"
-    }
-  ],
-  "quartiers": [
-    {
-      "nom": "Centre village",
-      "description": "Le cœur historique : place de la mairie, commerces de bouche, ruelles en pierres dorées. Très recherché pour son cachet.",
-      "prix_indicatif": "6 200 - 7 800 €/m²"
-    },
-    {
-      "nom": "Saint-Fortunat",
-      "description": "Hameau préservé, ambiance plus rurale, vues dégagées sur les coteaux.",
-      "prix_indicatif": "6 000 - 7 400 €/m²"
-    },
-    {
-      "nom": "Plat de l'Air",
-      "description": "Vastes propriétés sur les hauteurs, sous-bois, calme absolu - l'adresse historique des familles établies.",
-      "prix_indicatif": "6 800 - 8 500 €/m²"
-    },
-    {
-      "nom": "Les Carrières / Le Tourillon",
-      "description": "Mix maisons familiales rénovées et constructions contemporaines, proche du collège.",
-      "prix_indicatif": "5 600 - 6 800 €/m²"
+      "activite": "Événements villageois, temps forts communaux et animations qui participent à la vie locale."
     }
   ],
   "evolution_prix": [
@@ -154,6 +90,44 @@
       "prixM2": 6250
     }
   ],
+  "restaurants": [
+    {
+      "nom": "L'Éclat de Pierre",
+      "cuisine": "Une adresse reconnue au cœur du village, distinguée Bib Gourmand par le Guide Michelin. Cuisine française soignée, produits de saison et terrasse face à l’église. · 4,6★ ",
+      "gamme": "Bistrot",
+      "note": 4.6
+    },
+    {
+      "nom": "Aux Montagnards",
+      "cuisine": "Une institution locale sur les hauteurs de Saint-Didier-au-Mont-d’Or. Fondue, raclette, rôtisserie et cuisine généreuse dans un ancien relais de chasse. · 4,2★ ",
+      "gamme": "Brasserie",
+      "note": 4.2
+    },
+    {
+      "nom": "La Cantine du Village",
+      "cuisine": "Une table conviviale en plein cœur de Saint-Didier-au-Mont-d’Or, avec une cuisine française raffinée et une vraie atmosphère de village. · 4,4★ ",
+      "gamme": "Bistrot",
+      "note": 4.4
+    },
+    {
+      "nom": "La Boîte Noire",
+      "cuisine": "Une pizzeria contemporaine installée dans les Monts d’Or, idéale pour une adresse simple, efficace et conviviale. · 4,7★",
+      "gamme": "Pizza",
+      "note": 4.7
+    },
+    {
+      "nom": "Comptoir Fortunella",
+      "cuisine": "Une adresse italienne familiale à Saint-Fortunat, entre petite restauration, produits de qualité et inspirations sardes et siciliennes. · 4,9★",
+      "gamme": "Bistrot",
+      "note": 4.9
+    },
+    {
+      "nom": "Les Jardins de Saint-Didier",
+      "cuisine": "Une adresse conviviale avec terrasse, cuisine généreuse et esprit village. Un lieu apprécié pour déjeuner, dîner ou partager un moment en extérieur. · 4,5★",
+      "gamme": "Pizza",
+      "note": 4.5
+    }
+  ],
   "video_insta": {
     "titre": "Saint-Didier vu d'en haut - visite du Mont Cindre",
     "duree": "2:10"
@@ -167,5 +141,26 @@
     "/photos/secteurs/saint-didier-6.jpg"
   ],
   "video": "/videos/secteurs/saint-didier.mp4",
-  "instagram_url": "https://www.instagram.com/romainrieg.immo/"
+  "quartiers": [
+    {
+      "nom": "Centre village",
+      "description": "Le cœur historique de Saint-Didier-au-Mont-d’Or : place de la mairie, commerces de proximité, ruelles en pierres dorées et ambiance village. Un secteur très recherché pour son cachet, sa vie locale et son emplacement central.",
+      "prix_indicatif": "6 200 - 7 800 €/m²"
+    },
+    {
+      "nom": "Saint-Fortunat",
+      "description": "Un hameau préservé, plus confidentiel, avec une atmosphère paisible, des vues dégagées et un rapport fort à la nature. Un secteur apprécié pour son calme et son caractère authentique.",
+      "prix_indicatif": "6 000 - 7 400 €/m²"
+    },
+    {
+      "nom": "Plat de l'Air",
+      "description": "Un secteur résidentiel prisé sur les hauteurs, reconnu pour ses grandes propriétés, son environnement verdoyant, ses vues et son calme. Une adresse historique pour les familles recherchant espace et discrétion.",
+      "prix_indicatif": "6 800 - 8 500 €/m²"
+    },
+    {
+      "nom": "Les Carrières / Le Tourillon",
+      "description": "Un secteur familial et résidentiel, mêlant maisons rénovées, constructions contemporaines et proximité des équipements scolaires. Un quartier apprécié pour son équilibre entre praticité, calme et qualité de vie.",
+      "prix_indicatif": "5 600 - 6 800 €/m²"
+    }
+  ]
 }
