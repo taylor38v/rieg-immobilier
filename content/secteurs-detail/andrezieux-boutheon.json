@@ -103,38 +103,43 @@
   "restaurants": [
     {
       "nom": "La Petite Assiette du Château",
-      "cuisine": "Adresse située face au Château de Bouthéon, avec une cuisine soignée, une ambiance contemporaine et une belle cohérence avec le secteur patrimonial.",
+      "cuisine": "Adresse située face au Château de Bouthéon, avec une cuisine soignée, une ambiance contemporaine et une belle cohérence avec le secteur patrimonial. · 4,8★ ",
       "gamme": "Gastro"
     },
     {
-      "nom": "Nota Bene",
-      "cuisine": "Adresse contemporaine et accessible, adaptée aux repas simples, professionnels ou familiaux.",
+      "nom": "La Brasserie des Gourmands",
+      "cuisine": "Adresse située près de l’Envol Stadium, avec un esprit grande brasserie, une terrasse et une cuisine généreuse dans un cadre convivial. · 4,5★",
       "gamme": "Gastro"
     },
     {
       "nom": "Restaurant By Georgette",
-      "cuisine": "Restaurant situé boulevard Pierre Desgranges, avec une cuisine à base de produits frais et locaux dans un cadre chaleureux et décontracté.",
+      "cuisine": "Restaurant situé boulevard Pierre Desgranges, avec une cuisine à base de produits frais et locaux dans un cadre chaleureux et décontracté. · 4,5★",
       "gamme": "Bistrot"
     },
     {
       "nom": "Mas de la Gare",
-      "cuisine": "Adresse située avenue Jean Martouret, proche de la gare, avec une cuisine française, des plats faits maison et une ambiance de restaurant traditionnel.",
+      "cuisine": "Adresse située avenue Jean Martouret, proche de la gare, avec une cuisine française, des plats faits maison et une ambiance de restaurant traditionnel. · 4,4★",
       "gamme": "Brasserie"
     },
     {
-      "nom": "Bol'Appétit",
-      "cuisine": "Adresse pratique pour une restauration fraîche, rapide et quotidienne, autour de bowls, plats du jour et formats accessibles.",
+      "nom": "La Tapa Loca",
+      "cuisine": "Restaurant espagnol situé aux Communaux, avec tapas, spécialités ibériques et ambiance conviviale. · 4,8★",
       "gamme": "Café"
     },
     {
-      "nom": "IT - Italian Trattoria",
-      "cuisine": "Trattoria italienne, pâtes fraîches et pizzas",
+      "nom": "L’Artiste Pizzaïolo",
+      "cuisine": "Pizzeria située à Andrézieux-Bouthéon, avec pizzas artisanales cuites au feu de bois. · 4,6★",
       "gamme": "Pizza"
     },
     {
       "nom": "Mazarin",
-      "cuisine": "Pizzeria - restaurant située boulevard Joseph Cugnot, avec une carte italienne et une ambiance conviviale.",
+      "cuisine": "Pizzeria - restaurant située boulevard Joseph Cugnot, avec une carte italienne et une ambiance conviviale. · 4,3★",
       "gamme": "Pizza"
+    },
+    {
+      "nom": "La Conciergerie Andrézieux",
+      "cuisine": "Adresse située ZAC des Murons, avec restaurant, bar à vin, terrasse et ambiance lounge. · 427★",
+      "gamme": "Bistrot"
     }
   ],
   "video_insta": {
