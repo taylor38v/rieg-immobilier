@@ -59,16 +59,16 @@
   },
   "hero": {
     "surtitre": "Location · Gestion locative",
-    "intro1": "Vous souhaitez mettre en location votre maison ou appartement rapidement, efficacement et sans stress ? Je suis Romain Rieg, conseiller immobilier iad basé à Saint-Didier-au-Mont-d’Or, et j’accompagne les propriétaires dans la mise en location de leur bien.\n\nDe l’estimation du loyer à la sélection du locataire, je vous aide à sécuriser votre projet avec une approche claire, rigoureuse et personnalisée.\n\n",
-    "intro2": "Originaire de la Plaine du Forez et ancré dans les Monts d’Or, je combine connaissance du terrain, diffusion efficace et accompagnement administratif pour vous aider à trouver un locataire sérieux, solvable et adapté à votre bien.",
+    "intro1": "Vous souhaitez mettre en location votre maison ou appartement **rapidement, efficacement et sans stress ?**",
+    "intro2": "Je suis Romain Rieg, conseiller immobilier iad basé à Saint-Didier-au-Mont-d’Or. J’accompagne les propriétaires dans la mise en location de leur bien, de l’estimation du loyer à la sélection du locataire.\nOriginaire de la Plaine du Forez et ancré dans les Monts d’Or, je combine connaissance du terrain, diffusion efficace et accompagnement administratif pour vous aider à trouver un locataire sérieux, solvable et cohérent avec votre bien.",
     "cta_primary_label": "Étude personnalisée gratuite",
     "mention": "Confidentiel · sans engagement",
     "titre": "Louez votre bien en toute sérénité.",
     "cta_secondary_url": "sms:+33679571473?body=Bonjour%20Romain%2C%20je%20souhaite%20mettre%20mon%20bien%20en%20location.",
     "cta_primary_href": "/contact",
+    "intro_complement": "Mon objectif : **vous faire gagner du temps, sécuriser votre mise en location** et vous accompagner avec une approche claire, rigoureuse et personnalisée.",
     "cta_secondary_label": "💬 SMS",
-    "video": "/videos/secteurs/champagne.mp4",
-    "intro_complement": ""
+    "video": "/videos/secteurs/champagne.mp4"
   },
   "services": {
     "surtitre": "Mes services pour la location",
