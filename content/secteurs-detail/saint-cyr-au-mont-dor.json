@@ -129,19 +129,29 @@
   "video": "/videos/secteurs/saint-cyr.mp4",
   "quartiers": [
     {
-      "nom": "Le Bourg",
-      "description": "Cœur historique de Saint-Cyr-au-Mont-d’Or : mairie, église, commerces de proximité et belles bâtisses anciennes. Un secteur recherché pour son cachet, sa centralité et son esprit village.",
-      "prix_indicatif": "6 000 - 7 500 €/m²"
+      "nom": "Le Bourg - République",
+      "description": "Le cœur historique de Saint-Cyr-au-Mont-d’Or : commerces de proximité, mairie, église, marché et belles maisons en pierres des Monts d’Or. Un secteur recherché pour son cachet, sa vie de village et sa proximité avec Lyon.",
+      "prix_indicatif": "5 500 - 6 700 €/m²"
     },
     {
-      "nom": "Les Verrières",
-      "description": "Un secteur d’exception sur les hauteurs, prisé pour ses grandes propriétés, ses parcs arborés, ses vues et son environnement confidentiel.",
-      "prix_indicatif": "7 500 - 10 000 €/m²"
+      "nom": "Mont Cindre - Ermitage",
+      "description": "Secteur emblématique de la commune, apprécié pour ses vues, son environnement boisé et son patrimoine autour de l’Ermitage. Les propriétés les plus rares peuvent dépasser cette fourchette selon le terrain, la vue et le niveau de prestations.",
+      "prix_indicatif": "6 000 - 7 600 €/m²"
     },
     {
-      "nom": "Combe Blanche",
-      "description": "Un secteur résidentiel privilégié, apprécié pour ses vues, son calme et ses propriétés plus discrètes au cœur d’un environnement végétal.",
-      "prix_indicatif": "6 800 - 8 500 €/m²"
+      "nom": "Les Ormes - Greffières - Indiennerie",
+      "description": "Un secteur résidentiel plus varié, entre maisons familiales, propriétés anciennes, environnement végétal et accès pratique vers Lyon. Une zone intéressante pour les acquéreurs qui recherchent le compromis entre cadre de vie et mobilité.",
+      "prix_indicatif": "5 300 - 6 600 €/m²"
+    },
+    {
+      "nom": "Mont Thou - Maison de la Nature",
+      "prix_indicatif": "5 800 - 7 300 €/m²",
+      "description": "Un secteur résidentiel confidentiel, recherché pour son calme, ses grandes parcelles et son rapport direct à la nature. Une adresse très appréciée des acquéreurs en quête d’espace et de discrétion."
+    },
+    {
+      "prix_indicatif": "5 400 - 6 700 €/m²",
+      "nom": "La Chaux - Baticolière - Nervieux",
+      "description": "Un secteur familial et résidentiel, composé de maisons individuelles, de propriétés discrètes et d’adresses calmes. Très apprécié pour son équilibre entre tranquillité, accès aux écoles et proximité des transports."
     }
   ]
 }
