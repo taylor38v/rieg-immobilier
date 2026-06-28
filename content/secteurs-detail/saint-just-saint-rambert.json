@@ -1,16 +1,7 @@
 {
-  "nom": "Saint-Just-Saint-Rambert",
-  "population": 15764,
   "superficie": 40,
-  "cp": "42170",
-  "intercommunalite": "Loire Forez Agglomération",
-  "altitude": "385 - 510 m",
-  "ce_qui_differencie": [
-    "Ville à taille humaine entre Lyon (50 min) et Saint-Étienne (15 min)",
-    "Bords de Loire aménagés sur 6 km - attraction touristique majeure",
-    "Marché immobilier 2x à 3x moins cher que la Métropole de Lyon",
-    "Excellent rendement locatif (5 - 6%) - paradis des investisseurs"
-  ],
+  "altitude": "358 - 673 m",
+  "instagram_url": "https://www.instagram.com/romainrieg.immo/",
   "ecoles": [
     {
       "nom": "Écoles publiques Saint-Just & Saint-Rambert",
@@ -36,6 +27,64 @@
       "nom": "Lycée polyvalent François Mauriac (Andrézieux-Bouthéon)",
       "type": "Lycée",
       "precision": "~8 min"
+    }
+  ],
+  "nom": "Saint-Just-Saint-Rambert",
+  "cp": "42170",
+  "ce_qui_differencie": [
+    "Ville à taille humaine entre Lyon (50 min) et Saint-Étienne (15 min)",
+    "Bords de Loire aménagés sur 6 km - attraction touristique majeure",
+    "Marché immobilier 2x à 3x moins cher que la Métropole de Lyon",
+    "Excellent rendement locatif (5 - 6%) - paradis des investisseurs"
+  ],
+  "population": 15764,
+  "intercommunalite": "Loire Forez Agglomération",
+  "associations": [
+    {
+      "nom": "La Pontoise Basket Club",
+      "activite": "Club emblématique, équipe sénior masculine en Nationale 2"
+    },
+    {
+      "nom": "Saint-Just-Saint-Rambert Football",
+      "activite": "Football amateur"
+    },
+    {
+      "nom": "Tennis Club Saint-Just-Saint-Rambert",
+      "activite": "Tennis avec courts couverts"
+    },
+    {
+      "nom": "Base de Loisirs de Loire Forez",
+      "activite": "Plan d'eau de 40 000 m² sur la Loire - aviron, canoë-kayak, paddle, kayak-polo"
+    },
+    {
+      "nom": "Office de tourisme Loire Forez",
+      "activite": "Activités plein air et culturelles"
+    }
+  ],
+  "evolution_prix": [
+    {
+      "annee": 2020,
+      "prixM2": 2200
+    },
+    {
+      "annee": 2021,
+      "prixM2": 2400
+    },
+    {
+      "annee": 2022,
+      "prixM2": 2620
+    },
+    {
+      "annee": 2023,
+      "prixM2": 2650
+    },
+    {
+      "annee": 2024,
+      "prixM2": 2600
+    },
+    {
+      "annee": 2025,
+      "prixM2": 2560
     }
   ],
   "restaurants": [
@@ -88,28 +137,19 @@
       "note": 4.5
     }
   ],
-  "associations": [
-    {
-      "nom": "La Pontoise Basket Club",
-      "activite": "Club emblématique, équipe sénior masculine en Nationale 2"
-    },
-    {
-      "nom": "Saint-Just-Saint-Rambert Football",
-      "activite": "Football amateur"
-    },
-    {
-      "nom": "Tennis Club Saint-Just-Saint-Rambert",
-      "activite": "Tennis avec courts couverts"
-    },
-    {
-      "nom": "Base de Loisirs de Loire Forez",
-      "activite": "Plan d'eau de 40 000 m² sur la Loire - aviron, canoë-kayak, paddle, kayak-polo"
-    },
-    {
-      "nom": "Office de tourisme Loire Forez",
-      "activite": "Activités plein air et culturelles"
-    }
+  "video_insta": {
+    "titre": "La Plaine du Forez : pourquoi y investir maintenant",
+    "duree": "1:50"
+  },
+  "galerie": [
+    "/photos/secteurs/saint-just-1.jpg",
+    "/photos/secteurs/saint-just-2.jpg",
+    "/photos/secteurs/saint-just-3.jpg",
+    "/photos/secteurs/saint-just-4.jpg",
+    "/photos/secteurs/saint-just-5.jpg",
+    "/photos/secteurs/saint-just-6.jpg"
   ],
+  "video": "/videos/secteurs/saint-just.mp4",
   "quartiers": [
     {
       "nom": "Centre Saint-Just",
@@ -126,45 +166,5 @@
       "description": "Maisons avec vue rivière, quartier prisé, balade fluviale aux pieds.",
       "prix_indicatif": "2 700 - 3 400 €/m²"
     }
-  ],
-  "evolution_prix": [
-    {
-      "annee": 2020,
-      "prixM2": 2200
-    },
-    {
-      "annee": 2021,
-      "prixM2": 2400
-    },
-    {
-      "annee": 2022,
-      "prixM2": 2620
-    },
-    {
-      "annee": 2023,
-      "prixM2": 2650
-    },
-    {
-      "annee": 2024,
-      "prixM2": 2600
-    },
-    {
-      "annee": 2025,
-      "prixM2": 2560
-    }
-  ],
-  "video_insta": {
-    "titre": "La Plaine du Forez : pourquoi y investir maintenant",
-    "duree": "1:50"
-  },
-  "galerie": [
-    "/photos/secteurs/saint-just-1.jpg",
-    "/photos/secteurs/saint-just-2.jpg",
-    "/photos/secteurs/saint-just-3.jpg",
-    "/photos/secteurs/saint-just-4.jpg",
-    "/photos/secteurs/saint-just-5.jpg",
-    "/photos/secteurs/saint-just-6.jpg"
-  ],
-  "video": "/videos/secteurs/saint-just.mp4",
-  "instagram_url": "https://www.instagram.com/romainrieg.immo/"
+  ]
 }
