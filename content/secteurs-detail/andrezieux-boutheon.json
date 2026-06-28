@@ -148,24 +148,34 @@
   "video": "/videos/secteurs/andrezieux.mp4",
   "quartiers": [
     {
-      "nom": "Bourg d'Andrézieux",
-      "description": "Centre historique côté Andrézieux, commerces de proximité, mairie, équipements municipaux. Tissu pavillonnaire et petits collectifs.",
-      "prix_indicatif": "2 200 - 2 400 €/m²"
+      "nom": "Bourg d’Andrézieux - Place du Forez - Gare",
+      "description": "Centre pratique de la commune, avec commerces, services, gare, équipements et accès rapide aux axes. Le marché y est varié, entre maisons de ville, appartements, petits collectifs et biens plus fonctionnels.",
+      "prix_indicatif": "2 100 - 2 800 €/m²"
     },
     {
-      "nom": "Bouthéon / Château",
-      "description": "Quartier historique perché autour du Château de Bouthéon, ambiance village, vues sur la Loire, secteur résidentiel recherché.",
-      "prix_indicatif": "2 400 - 2 700 €/m²"
+      "nom": "Bourg de Bouthéon - Château - Loire",
+      "description": "Secteur patrimonial et résidentiel autour du Château de Bouthéon, avec une ambiance plus village, des vues, un lien avec la Loire et des maisons recherchées selon l’adresse et l’environnement.",
+      "prix_indicatif": "2 300 - 3 100 €/m²"
     },
     {
       "nom": "La Chapelle",
-      "description": "Quartier résidentiel créé après la fusion des deux communes, fait le lien entre Andrézieux et Bouthéon. Bon compromis familial.",
-      "prix_indicatif": "2 300 - 2 500 €/m²"
+      "description": "Secteur central dans l’organisation de la commune, avec écoles, équipements sportifs, services et quartiers résidentiels. Un secteur familial et pratique, intéressant pour les acquéreurs recherchant un bon compromis entre budget, accès et vie locale.",
+      "prix_indicatif": "2 200 - 2 900 €/m²"
     },
     {
-      "nom": "Agglomération Sud",
-      "description": "Secteur sud près de l'aéroport et des parcs industriels (Loire Sud, Essarts). Mix logements anciens et programmes neufs proches des emplois.",
-      "prix_indicatif": "1 900 - 2 200 €/m²"
+      "nom": "Les Maladières - Avenue de Saint-Étienne - La Chaux",
+      "description": "Secteur connecté et résidentiel, avec un marché mixte entre maisons, appartements et biens proches des axes. Les prix varient fortement selon l’exposition, le calme, l’état du bien et la proximité des voies passantes.",
+      "prix_indicatif": "2 100 - 2 800 €/m²"
+    },
+    {
+      "nom": "Essarts - Loire Sud - Gouyonnière",
+      "description": "Secteur plus économique et fonctionnel, proche des zones d’activités, commerces et grands axes. Le marché y est plus hétérogène, avec des opportunités pour les actifs, les investisseurs et les budgets plus maîtrisés.",
+      "prix_indicatif": "1 900 - 2 700 €/m²"
+    },
+    {
+      "nom": "Bords de Loire - Mariniers",
+      "prix_indicatif": "2 200 - 3 000 €/m²",
+      "description": "Secteurs plus diffus, appréciés pour les accès aux espaces extérieurs, la proximité de la Loire et certaines adresses plus calmes. Les maisons avec terrain ou environnement préservé peuvent se valoriser davantage."
     }
   ]
 }
