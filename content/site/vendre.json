@@ -17,7 +17,7 @@
         "desc": "Reportage photo UltraHD, drone si nécessaire, diffusion sur les principaux portails immobiliers et visibilité auprès de plus de 16 000 conseillers du réseau iad - pour déclencher le coup de cœur dès la première annonce."
       },
       {
-        "titre": "Filtrage des acquéreurs",
+        "titre": "Sélection rigoureuse des acquéreurs",
         "desc": "Je vérifie la solvabilité et la cohérence du projet de chaque acheteur avant toute visite - pour vous faire gagner du temps et éviter les déconvenues."
       },
       {
@@ -127,14 +127,14 @@
   "hero": {
     "surtitre": "Vendre",
     "cta_primary_label": "Avis de valeur · 24 - 48h",
-    "mention": "Zéro engagement · 100% confidentiel",
+    "mention": "Sans on est sur la pagengagement · 100% confidentiel",
     "intro": "Vendre votre maison ou appartement est une étape importante. Avec un accompagnement clair, structuré et personnalisé, chaque décision devient plus simple. Je suis à vos côtés de la première estimation à la signature, pour vendre dans les meilleures conditions.",
-    "titre": "Vendez votre bien au meilleur prix.",
+    "titre": "Vendez votre bien dans les meilleures conditions.",
     "cta_secondary_url": "sms:+33679571473?body=Bonjour%20Romain%2C%20je%20souhaite%20vendre%20mon%20bien.",
     "cta_primary_href": "/avis-de-valeur",
+    "intro_complement": "**Vendre au bon prix, dans les bons délais, aux bons acheteurs** : ça ne s'improvise pas. C'est le résultat d'une estimation juste, d'une mise en valeur soignée et d'une stratégie de diffusion adaptée à votre bien et à votre secteur.",
     "cta_secondary_label": "💬 SMS",
-    "video": "/videos/secteurs/saint-didier.mp4",
-    "intro_complement": ""
+    "video": "/videos/secteurs/saint-didier.mp4"
   },
   "meta_title": "Vendre votre bien"
 }
