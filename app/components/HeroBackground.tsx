@@ -35,15 +35,26 @@ export default function HeroBackground({
   if (video) {
     return (
       <>
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover"
-        >
-          <source src={video} type="video/mp4" />
-        </video>
+        {/\.(jpe?g|png|webp|gif|avif|svg)$/i.test(video) ? (
+          <div
+            className="absolute inset-0"
+            style={{
+              backgroundImage: `url(${video})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          />
+        ) : (
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover"
+          >
+            <source src={video} />
+          </video>
+        )}
         <div
           className="absolute inset-0 bg-navy"
           style={{ opacity: overlay }}
