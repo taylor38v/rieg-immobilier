@@ -24,6 +24,7 @@
       "precision": "Lycées publics situés à proximité, selon la sectorisation et l’orientation choisie."
     }
   ],
+  "intro": "Commune à taille humaine aux portes de Lyon, Champagne-au-Mont-d’Or séduit par son centre village vivant, ses commerces de proximité, sa bonne connexion à Vaise et son cadre résidentiel recherché. Une adresse pratique et familiale dans les Monts d’Or, appréciée pour son équilibre entre vie de village, accès rapide à Lyon et marché immobilier dynamique.",
   "nom": "Champagne-au-Mont-d'Or",
   "cp": "69410",
   "ce_qui_differencie": [
@@ -176,6 +177,5 @@
       "prix_indicatif": "4 300 - 5 400 €/m²",
       "nom": "Voutillière - Rochecardon"
     }
-  ],
-  "intro": "Commune à taille humaine, Champagne attire pour son centre village animé et sa proximité immédiate de Lyon (métro à venir)."
+  ]
 }
