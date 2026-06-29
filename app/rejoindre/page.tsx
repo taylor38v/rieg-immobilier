@@ -26,6 +26,7 @@ export default function Page() {
           <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{r.hero.surtitre}</div>
           <h1 className="font-serif text-4xl md:text-6xl mt-3 leading-[1.05] max-w-4xl">{r.hero.titre}</h1>
           <p className="text-ivory/80 text-lg md:text-xl mt-8 max-w-3xl leading-relaxed" dangerouslySetInnerHTML={{ __html: inline(r.hero.intro) }} />
+          {r.hero.intro_complement && <p className="text-ivory/80 text-lg md:text-xl mt-4 max-w-3xl leading-relaxed" dangerouslySetInnerHTML={{ __html: inline(r.hero.intro_complement) }} />}
           <div className="flex flex-wrap gap-4 mt-10">
             <Link href={r.hero.cta_primary_href} className="px-7 py-4 bg-gold text-navy font-medium hover:bg-gold-soft rounded-full">{r.hero.cta_primary_label}</Link>
             <ContactButtons smsBody="Bonjour Romain, je souhaite en savoir plus sur le métier de conseiller iad. " mailSubject="Rejoindre votre équipe iad" />

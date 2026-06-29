@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { marked } from "marked";
 import HeroBackground from "../components/HeroBackground";
 import ContactButtons from "../components/ContactButtons";
 import ContactCTA from "../components/ContactCTA";
@@ -8,6 +9,7 @@ import CityMap from "../components/CityMap";
 import { site } from "../lib/_generated/site";
 
 const av = site["avis-de-valeur"];
+const inline = (s: string) => marked.parseInline(s) as string;
 
 const types = ["Maison", "Appartement", "Villa", "Terrain", "Immeuble", "Local commercial"];
 const etats = ["Neuf", "Rénové récemment", "Bon état", "À rafraîchir", "Travaux importants"];
@@ -30,8 +32,9 @@ export default function Page() {
         <div className="relative max-w-7xl mx-auto px-6">
           <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{av.hero.surtitre}</div>
           <h1 className="font-serif text-4xl md:text-6xl mt-3 leading-[1.05] max-w-4xl">{av.hero.titre}</h1>
-          <p className="text-ivory/80 text-lg md:text-xl mt-8 max-w-3xl leading-relaxed">{av.hero.intro1}</p>
-          <p className="text-ivory/80 text-lg md:text-xl mt-4 max-w-3xl leading-relaxed">{av.hero.intro2}</p>
+          <p className="text-ivory/80 text-lg md:text-xl mt-8 max-w-3xl leading-relaxed" dangerouslySetInnerHTML={{ __html: inline(av.hero.intro1) }} />
+          <p className="text-ivory/80 text-lg md:text-xl mt-4 max-w-3xl leading-relaxed" dangerouslySetInnerHTML={{ __html: inline(av.hero.intro2) }} />
+          {av.hero.intro_complement && <p className="text-ivory/80 text-lg md:text-xl mt-4 max-w-3xl leading-relaxed" dangerouslySetInnerHTML={{ __html: inline(av.hero.intro_complement) }} />}
           <div className="flex flex-wrap gap-4 mt-10">
             <button onClick={startForm} className="px-7 py-4 bg-gold text-navy font-medium hover:bg-gold-soft rounded-full">{av.hero.cta_primary_label}</button>
             <ContactButtons smsBody="Bonjour Romain, je souhaite un avis de valeur de mon bien. " mailSubject="Demande d'avis de valeur" />

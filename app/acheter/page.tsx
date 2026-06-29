@@ -24,9 +24,9 @@ export default function Page() {
         <div className="relative max-w-7xl mx-auto px-6">
           <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{a.hero.surtitre}</div>
           <h1 className="font-serif text-4xl md:text-6xl mt-3 leading-[1.05] max-w-4xl">{a.hero.titre}</h1>
-          <p className="text-ivory/80 text-lg md:text-xl mt-8 max-w-3xl leading-relaxed">{a.hero.intro}</p>
+          <p className="text-ivory/80 text-lg md:text-xl mt-8 max-w-3xl leading-relaxed" dangerouslySetInnerHTML={{ __html: inline(a.hero.intro) }} />
           <p className="text-ivory text-lg md:text-xl mt-4 max-w-3xl leading-relaxed" dangerouslySetInnerHTML={{ __html: inline(a.hero.argument_gold) }} />
-          <p className="text-ivory/80 text-lg mt-6 max-w-3xl leading-relaxed" dangerouslySetInnerHTML={{ __html: inline(a.hero.presentation) }} />
+          <p className="text-ivory/80 text-lg md:text-xl mt-6 max-w-3xl leading-relaxed" dangerouslySetInnerHTML={{ __html: inline(a.hero.presentation) }} />
           <div className="flex flex-wrap gap-4 mt-10">
             <Link href={a.hero.cta_primary_href} className="px-7 py-4 bg-gold text-navy hover:bg-gold-soft rounded-full">{a.hero.cta_primary_label}</Link>
             <ContactButtons smsBody="Bonjour Romain, je cherche un bien. " mailSubject="Recherche d'un bien" />
@@ -66,7 +66,7 @@ export default function Page() {
           <div className="grid md:grid-cols-2 gap-6 mt-12">
             {a.services.items.map((s) => (
               <div key={s.titre} className="shine-hover rounded-xl p-7 bg-white border border-ink/10">
-                <div className="font-serif text-2xl text-navy">{s.titre}</div>
+                <div className="font-serif text-2xl text-navy font-semibold">{s.titre}</div>
                 <p className="text-muted mt-3 leading-relaxed">{s.desc}</p>
               </div>
             ))}

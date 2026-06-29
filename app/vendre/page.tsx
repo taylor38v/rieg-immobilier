@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { marked } from "marked";
 import HeroBackground from "../components/HeroBackground";
 import CityMap from "../components/CityMap";
 import ContactButtons from "../components/ContactButtons";
@@ -8,6 +9,7 @@ import { secteurs, formatPrix } from "../lib/data";
 import { site } from "../lib/_generated/site";
 
 const v = site.vendre;
+const inline = (s: string) => marked.parseInline(s) as string;
 
 export const metadata: Metadata = {
   title: v.meta_title,
@@ -22,8 +24,8 @@ export default function Page() {
         <div className="relative max-w-7xl mx-auto px-6">
           <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{v.hero.surtitre}</div>
           <h1 className="font-serif text-4xl md:text-6xl mt-3 leading-[1.05] max-w-4xl">{v.hero.titre}</h1>
-          <p className="text-ivory/80 text-lg md:text-xl mt-8 max-w-3xl leading-relaxed">{v.hero.intro}</p>
-          {v.hero.intro_complement && <p className="text-ivory/80 text-lg md:text-xl mt-4 max-w-3xl leading-relaxed">{v.hero.intro_complement}</p>}
+          <p className="text-ivory/80 text-lg md:text-xl mt-8 max-w-3xl leading-relaxed" dangerouslySetInnerHTML={{ __html: inline(v.hero.intro) }} />
+          {v.hero.intro_complement && <p className="text-ivory/80 text-lg md:text-xl mt-4 max-w-3xl leading-relaxed" dangerouslySetInnerHTML={{ __html: inline(v.hero.intro_complement) }} />}
           <div className="flex flex-wrap gap-4 mt-10">
             <Link href={v.hero.cta_primary_href} className="px-7 py-4 bg-gold text-navy hover:bg-gold-soft rounded-full">{v.hero.cta_primary_label}</Link>
             <ContactButtons smsBody="Bonjour Romain, je souhaite vendre mon bien. " mailSubject="Vente d'un bien" />

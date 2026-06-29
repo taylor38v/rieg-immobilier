@@ -56,7 +56,7 @@ export default function Home() {
       <section className="max-w-7xl mx-auto px-6 py-24 grid lg:grid-cols-2 gap-16 items-center">
         <div>
           <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{h.qui_suis_je.surtitre}</div>
-          <h2 className="font-serif text-3xl md:text-4xl mt-3 leading-tight whitespace-pre-line">{h.qui_suis_je.titre}</h2>
+          <h2 className="font-serif text-3xl md:text-4xl font-medium mt-3 leading-tight whitespace-pre-line">{h.qui_suis_je.titre}</h2>
           {h.qui_suis_je.paragraphes.map((p, i) => (
             <p key={i} className="text-ink/85 mt-4 leading-relaxed" dangerouslySetInnerHTML={{ __html: inline(p) }} />
           ))}
@@ -104,7 +104,7 @@ export default function Home() {
                       {icons[i]}
                     </div>
                     <div className="text-xs text-gold/60 mt-4 font-semibold uppercase tracking-[0.3em]">{h.services.item_prefix} {String(i + 1).padStart(2, "0")}</div>
-                    <div className="font-serif text-xl mt-2 group-hover:text-gold transition leading-tight">{s.titre}</div>
+                    <div className="font-serif text-xl font-semibold mt-2 group-hover:text-gold transition leading-tight">{s.titre}</div>
                     <p className="text-sm text-ivory/70 mt-3 leading-relaxed">{s.desc}</p>
                     <span className="inline-flex items-center gap-2 mt-5 text-xs text-gold font-semibold uppercase tracking-widest">
                       {h.services.item_cta_label}
@@ -178,6 +178,8 @@ export default function Home() {
             <text x="53" y="22" fontSize="20" fontWeight="600" fill="#34A853">l</text>
             <text x="60" y="22" fontSize="20" fontWeight="600" fill="#EA4335">e</text>
           </svg>
+          <span className="text-gold text-base tracking-[0.15em]">★★★★★</span>
+          {h.avis.note_chiffre && <span className="font-serif text-lg text-navy font-semibold">{h.avis.note_chiffre}</span>}
           <span className="text-sm uppercase tracking-widest text-muted">{h.avis.badge_label}</span>
         </div>
         <h2 className="font-serif text-3xl md:text-4xl mt-6">{h.avis.titre}</h2>

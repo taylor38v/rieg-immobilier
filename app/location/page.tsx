@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { marked } from "marked";
 import CityMap from "../components/CityMap";
 import HeroBackground from "../components/HeroBackground";
 import ContactButtons from "../components/ContactButtons";
@@ -8,6 +9,7 @@ import { secteurs, formatPrix } from "../lib/data";
 import { site } from "../lib/_generated/site";
 
 const l = site.location;
+const inline = (s: string) => marked.parseInline(s) as string;
 
 export const metadata: Metadata = {
   title: l.meta_title,
@@ -22,9 +24,9 @@ export default function Page() {
         <div className="relative max-w-7xl mx-auto px-6">
           <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{l.hero.surtitre}</div>
           <h1 className="font-serif text-4xl md:text-6xl mt-3 leading-[1.05] max-w-4xl">{l.hero.titre}</h1>
-          <p className="text-ivory/80 text-lg md:text-xl mt-8 max-w-3xl leading-relaxed">{l.hero.intro1}</p>
-          <p className="text-ivory/80 text-lg md:text-xl mt-4 max-w-3xl leading-relaxed">{l.hero.intro2}</p>
-          {l.hero.intro_complement && <p className="text-ivory/80 text-lg md:text-xl mt-4 max-w-3xl leading-relaxed">{l.hero.intro_complement}</p>}
+          <p className="text-ivory/80 text-lg md:text-xl mt-8 max-w-3xl leading-relaxed" dangerouslySetInnerHTML={{ __html: inline(l.hero.intro1) }} />
+          <p className="text-ivory/80 text-lg md:text-xl mt-4 max-w-3xl leading-relaxed" dangerouslySetInnerHTML={{ __html: inline(l.hero.intro2) }} />
+          {l.hero.intro_complement && <p className="text-ivory/80 text-lg md:text-xl mt-4 max-w-3xl leading-relaxed" dangerouslySetInnerHTML={{ __html: inline(l.hero.intro_complement) }} />}
           <div className="flex flex-wrap gap-4 mt-10">
             <Link href={l.hero.cta_primary_href} className="px-7 py-4 bg-gold text-navy font-medium hover:bg-gold-soft rounded-full">{l.hero.cta_primary_label}</Link>
             <ContactButtons smsBody="Bonjour Romain, je souhaite mettre mon bien en location. " mailSubject="Mise en location d'un bien" />
@@ -75,7 +77,7 @@ export default function Page() {
                   <div className="hidden md:block w-px h-10 bg-gold/30 ml-7" />
                 </div>
                 <div className="flex-1">
-                  <div className="font-serif text-2xl md:text-3xl text-navy font-semibold group-hover:text-gold transition">{s.titre}</div>
+                  <div className="font-serif text-xl text-navy font-semibold group-hover:text-gold transition">{s.titre}</div>
                   <p className="text-muted mt-3 leading-relaxed">{s.desc}</p>
                 </div>
               </div>

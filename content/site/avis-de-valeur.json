@@ -25,7 +25,7 @@
   },
   "carte_section": {
     "surtitre": "Mes secteurs d'intervention",
-    "titre": "J'estime sur tous les Monts d'Or, l'Ouest lyonnais et la Plaine du Forez.",
+    "titre": "Je réalise vos avis de valeur dans toute la métropole lyonnaise et dans la Plaine du Forez.",
     "intro": "Cliquez sur une commune pour ouvrir sa fiche détaillée."
   },
   "etapes": {
@@ -68,6 +68,7 @@
   },
   "hero": {
     "surtitre": "Avis de valeur · 24 - 48h",
+    "intro_complement": "",
     "intro1": "Vous pensez à vendre, vous souhaitez simplement faire le point ou vous préparez un projet à moyen terme ? Avant toute décision, une question est essentielle : combien vaut réellement votre bien aujourd'hui, dans votre quartier, sur votre marché ?\nLe prix affiché sur les portails ne reflète pas toujours le prix de vente réel. Une estimation juste vous permet d'éviter deux erreurs fréquentes : surestimer votre bien et allonger les délais de vente, ou le sous-estimer et perdre de la valeur.",
     "intro2": "Je suis Romain Rieg, conseiller immobilier iad basé à Saint-Didier-au-Mont-d’Or. Je vous remets un avis de valeur personnalisé, précis et sans engagement, sous 24 à 48 h.",
     "cta_primary_label": "Demander mon avis de valeur",

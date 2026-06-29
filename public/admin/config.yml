@@ -571,6 +571,7 @@ collections:
               - { name: "titre", label: "Titre H1", widget: "string" }
               - { name: "intro1", label: "Paragraphe 1", widget: "text" }
               - { name: "intro2", label: "Paragraphe 2", widget: "text" }
+              - { name: "intro_complement", label: "Paragraphe complémentaire (optionnel)", widget: "text", required: false }
               - { name: "cta_primary_label", label: "Bouton 1 - texte", widget: "string" }
               - { name: "cta_secondary_label", label: "Bouton WhatsApp", widget: "string" }
               - { name: "cta_secondary_url", label: "Bouton WhatsApp URL", widget: "string" }
@@ -648,6 +649,7 @@ collections:
               - { name: "surtitre", label: "Surtitre", widget: "string", hint: "Petit texte en or affiché au-dessus du titre H2." }
               - { name: "titre", label: "Titre H1", widget: "string" }
               - { name: "intro", label: "Intro (markdown)", widget: "text" }
+              - { name: "intro_complement", label: "Paragraphe complémentaire (optionnel)", widget: "text", required: false }
               - { name: "cta_primary_label", label: "Bouton 1", widget: "string" }
               - { name: "cta_primary_href", label: "Bouton 1 lien", widget: "string" }
               - { name: "cta_whatsapp_label", label: "Bouton WhatsApp", widget: "string" }
@@ -1016,6 +1018,7 @@ collections:
     summary: "{{nom}} · {{cp}}"
     fields:
       - { name: "nom", label: "Nom de la commune", widget: "string" }
+      - { name: "intro", label: "Paragraphe d'introduction (hero)", widget: "text", required: false }
       - { name: "population", label: "Population", widget: "number" }
       - { name: "superficie", label: "Superficie (km²)", widget: "number" }
       - { name: "cp", label: "Code postal", widget: "string" }

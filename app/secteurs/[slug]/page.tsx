@@ -1,12 +1,15 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import { marked } from "marked";
 import { secteurs, formatPrix } from "../../lib/data";
 import { secteursDetails } from "../../lib/secteursDetails";
 import HeroBackground from "../../components/HeroBackground";
 import CityMap from "../../components/CityMap";
 import MarketEvolution from "../../components/MarketEvolution";
 import ContactCTA from "../../components/ContactCTA";
+
+const inline = (s: string) => marked.parseInline(s) as string;
 
 const VIDEO_BG: Record<string, string> = {
   "saint-didier-au-mont-dor": "/videos/secteurs/saint-didier.mp4",
@@ -51,7 +54,7 @@ export default async function Page(props: PageProps<"/secteurs/[slug]">) {
           <Link href="/" className="text-ivory/60 text-sm">← Accueil</Link>
           <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium mt-6">{d?.cp ?? "Mon territoire"}{d?.intercommunalite ? ` · ${d.intercommunalite}` : ""}</div>
           <h1 className="font-serif text-4xl md:text-6xl mt-3 leading-[1.05] max-w-4xl">{s.nom}</h1>
-          <p className="text-ivory/80 text-lg mt-8 max-w-3xl leading-relaxed">{s.intro}</p>
+          <p className="text-ivory/80 text-lg mt-8 max-w-3xl leading-relaxed" dangerouslySetInnerHTML={{ __html: inline(d?.intro ?? s.intro) }} />
 
           {d && (
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10 mt-12 max-w-4xl">
@@ -84,7 +87,7 @@ export default async function Page(props: PageProps<"/secteurs/[slug]">) {
             {d.ce_qui_differencie.map((c, i) => (
               <div key={i} className="shine-hover rounded-xl flex gap-4 p-5 bg-ivory-deep border border-ink/5">
                 <span className="font-serif text-3xl text-gold leading-none">{String(i + 1).padStart(2, "0")}</span>
-                <p className="text-ink/85 leading-relaxed">{c}</p>
+                <p className="text-ink/85 leading-relaxed" dangerouslySetInnerHTML={{ __html: inline(c) }} />
               </div>
             ))}
           </div>

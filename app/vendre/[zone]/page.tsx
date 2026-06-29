@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
+import { marked } from "marked";
 import { secteurs, formatPrix } from "../../lib/data";
 import CityMap from "../../components/CityMap";
 import HeroBackground from "../../components/HeroBackground";
@@ -8,6 +9,8 @@ import ContactButtons from "../../components/ContactButtons";
 import ContactCTA from "../../components/ContactCTA";
 import { findZone } from "../../lib/territoire";
 import { zonesContent } from "../../lib/_generated/zones";
+
+const inline = (s: string) => marked.parseInline(s) as string;
 
 // Slugs des communes ayant une fiche dédiée /secteurs/{slug}
 const COMMUNE_TO_SLUG: Record<string, string> = {
@@ -166,8 +169,8 @@ export default async function Page(props: PageProps<"/vendre/[zone]">) {
           <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium mt-6">{ui.heroSurtitre}</div>
           <h1 className="font-serif text-4xl md:text-6xl mt-3 leading-[1.1] max-w-4xl">{z.h1}</h1>
           <div className="text-ivory/80 text-lg mt-8 max-w-3xl space-y-3 leading-relaxed">
-            {z.intro.map((p: string, i: number) => <p key={i}>{p}</p>)}
-            {z.intro_complement && <p>{z.intro_complement}</p>}
+            {z.intro.map((p: string, i: number) => <p key={i} dangerouslySetInnerHTML={{ __html: inline(p) }} />)}
+            {z.intro_complement && <p dangerouslySetInnerHTML={{ __html: inline(z.intro_complement) }} />}
           </div>
           <div className="text-xs uppercase tracking-widest text-gold mt-8">{z.communes_label}</div>
           <div className="flex flex-wrap gap-4 mt-8">
