@@ -39,6 +39,7 @@
       "precision": "École internationale de référence dans les domaines de l’hôtellerie-restauration, des arts culinaires, de la pâtisserie et du management."
     }
   ],
+  "intro": "Aux portes de Lyon, Écully séduit par son équilibre rare entre cadre résidentiel, patrimoine naturel, grandes écoles et accès rapide au centre lyonnais. Entre propriétés familiales, résidences de standing, quartiers commerçants et secteurs plus confidentiels, la commune attire une clientèle variée à la recherche d’espace, de confort et de qualité de vie.",
   "nom": "Écully",
   "cp": "69130",
   "ce_qui_differencie": [
@@ -193,6 +194,5 @@
       "description": "Secteur lié au campus, aux grandes écoles et aux axes de l’Ouest lyonnais. Il attire aussi bien des familles, des actifs que des profils investisseurs, notamment grâce à la proximité de l’École Centrale de Lyon et des pôles d’enseignement supérieur.",
       "prix_indicatif": "4 100 - 5 200 €/m"
     }
-  ],
-  "intro": "Aux portes de Lyon, Écully séduit par ses résidences de standing, ses grandes écoles et son parc de l'Hippodrome. Un marché porté par une demande familiale solide."
+  ]
 }
