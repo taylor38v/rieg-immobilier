@@ -16,6 +16,12 @@ publish_mode: simple
 media_folder: "public/uploads"
 public_folder: "/uploads"
 
+# Nettoie les noms de fichiers uploadés (accents, espaces, apostrophes) -> URL sûre, pas de 404
+slug:
+  encoding: "ascii"
+  clean_accents: true
+  sanitize_replacement: "-"
+
 site_url: https://romainrieg-immobilier.fr
 display_url: https://romainrieg-immobilier.fr
 logo_url: https://romainrieg-immobilier.fr/photos/IAD_LOGO_FINAL-removebg-preview.png
