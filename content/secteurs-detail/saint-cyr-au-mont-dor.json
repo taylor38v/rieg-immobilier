@@ -34,6 +34,7 @@
       "type": "Privé"
     }
   ],
+  "intro": "Surplombant la Saône, Saint-Cyr-au-Mont-d’Or fait partie des adresses les plus confidentielles dans les Monts d’Or. Propriétés d’exception, vues dégagées, belles demeures en pierres dorées et biens rarement disponibles : la commune attire une clientèle exigeante en recherche de calme, de discrétion et de proximité avec Lyon.",
   "nom": "Saint-Cyr-au-Mont-d'Or",
   "cp": "69450",
   "ce_qui_differencie": [
@@ -165,6 +166,5 @@
       "nom": "La Chaux - Baticolière - Nervieux",
       "description": "Un secteur familial et résidentiel, composé de maisons individuelles, de propriétés discrètes et d’adresses calmes. Très apprécié pour son équilibre entre tranquillité, accès aux écoles et proximité des transports."
     }
-  ],
-  "intro": "Surplombant la Saône, Saint-Cyr est l'une des adresses les plus prestigieuses du Mont d'Or. Propriétés d'exception et biens confidentiels y dominent."
+  ]
 }
