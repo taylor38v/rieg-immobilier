@@ -31,6 +31,7 @@
       "precision": "Lycée professionnel situé rue des Bullieux, avec des formations orientées vers les parcours professionnels."
     }
   ],
+  "intro": "À la croisée de Saint-Étienne, de la Plaine du Forez et des grands axes, Andrézieux-Bouthéon se distingue par son dynamisme économique, ses équipements, ses commerces, son aéroport et son cadre de vie entre Loire, château et quartiers résidentiels. Une commune pratique, active et attractive pour les familles, les actifs et les projets immobiliers accessibles.",
   "nom": "Andrézieux-Bouthéon",
   "cp": "42160",
   "ce_qui_differencie": [
@@ -199,6 +200,5 @@
       "prix_indicatif": "2 200 - 3 000 €/m²",
       "description": "Secteurs plus diffus, appréciés pour les accès aux espaces extérieurs, la proximité de la Loire et certaines adresses plus calmes. Les maisons avec terrain ou environnement préservé peuvent se valoriser davantage."
     }
-  ],
-  "intro": "Pôle économique majeur de la Loire à 14 km de Saint-Étienne, Andrézieux-Bouthéon allie zones d'activité dynamiques (750+ entreprises), aéroport international, château historique et accès autoroutier direct. Un marché accessible idéal pour primo-accédants et investisseurs locatifs."
+  ]
 }

@@ -36,6 +36,7 @@
       "type": "Lycée"
     }
   ],
+  "intro": "Au cœur de la Plaine du Forez, Saint-Just-Saint-Rambert offre un cadre de vie recherché entre bords de Loire, patrimoine historique, commerces, équipements scolaires et accès rapide à Saint-Étienne. Une commune dynamique, accessible et familiale, idéale pour habiter, investir ou concrétiser un premier achat immobilier.",
   "nom": "Saint-Just-Saint-Rambert",
   "cp": "42170",
   "ce_qui_differencie": [
@@ -221,6 +222,5 @@
       "description": "Secteur plus résidentiel et diffus, avec maisons familiales, terrains et environnement plus dégagé. Une zone intéressante pour les acquéreurs recherchant de l’espace, du calme et un budget maîtrisé.",
       "prix_indicatif": "2 300 - 3 000 €/m²"
     }
-  ],
-  "intro": "Au cœur de la Plaine du Forez, Saint-Just-Saint-Rambert est un marché dynamique, accessible, idéal pour primo-accédants et investisseurs."
+  ]
 }
