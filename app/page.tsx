@@ -1,9 +1,15 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { marked } from "marked";
 import CityMap from "./components/CityMap";
 import HeroBackground from "./components/HeroBackground";
 import ReviewsCarousel from "./components/ReviewsCarousel";
 import { site } from "./lib/_generated/site";
+
+export const metadata: Metadata = {
+  title: { absolute: site.home.meta_title },
+  description: site.home.meta_description,
+};
 
 const inline = (s: string) => marked.parseInline(s) as string;
 // Affiche le texte en respectant la casse de la marque "iad" (minuscules) même dans un bloc en majuscules.

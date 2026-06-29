@@ -30,9 +30,10 @@ export async function generateMetadata(props: PageProps<"/secteurs/[slug]">): Pr
   const { slug } = await props.params;
   const s = secteurs.find((x) => x.slug === slug);
   if (!s) return {};
+  const d = secteursDetails[slug];
   return {
-    title: `Conseiller iad à ${s.nom}`,
-    description: `Avis de valeur, vente, acquisition et location à ${s.nom}. Connaissance fine du marché, des quartiers et du tissu local par Romain Rieg.`,
+    title: d?.meta_title ?? `Conseiller iad à ${s.nom}`,
+    description: d?.meta_description ?? `Avis de valeur, vente, acquisition et location à ${s.nom}. Connaissance fine du marché, des quartiers et du tissu local par Romain Rieg.`,
   };
 }
 

@@ -3,7 +3,7 @@ import { site } from "../lib/_generated/site";
 
 const m = site.merci;
 
-export const metadata = { title: m.meta_title };
+export const metadata = { title: m.meta_title, description: m.meta_description };
 
 export default function Page() {
   return (

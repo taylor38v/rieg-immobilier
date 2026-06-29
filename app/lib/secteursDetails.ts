@@ -3,6 +3,8 @@ import { secteursDetailContent } from "./_generated/secteurs-detail";
 
 export type SecteurDetail = {
   nom?: string;
+  meta_title?: string;
+  meta_description?: string;
   intro?: string;
   population: number;
   superficie: number;

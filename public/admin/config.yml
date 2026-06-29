@@ -80,6 +80,8 @@ collections:
         name: "home"
         format: "json"
         fields:
+          - { name: "meta_title", label: "Titre SEO", widget: "string", hint: "Titre affiché dans l'onglet du navigateur et dans les résultats Google. 50-60 caractères max." }
+          - { name: "meta_description", label: "Description SEO", widget: "text", hint: "Texte sous le titre dans les résultats Google. 150-160 caractères." }
           - name: "hero"
             label: "1. Hero (haut de page)"
             widget: "object"
@@ -310,6 +312,7 @@ collections:
         format: "json"
         fields:
           - { name: "meta_title", label: "Titre SEO", widget: "string", hint: "Titre affiché dans l'onglet du navigateur et dans les résultats Google. 50-60 caractères max." }
+          - { name: "meta_description", label: "Description SEO", widget: "text", hint: "Texte sous le titre dans les résultats Google. 150-160 caractères." }
           - { name: "surtitre", label: "Surtitre", widget: "string", hint: "Petit texte en or affiché au-dessus du titre H2." }
           - { name: "titre", label: "Titre H1", widget: "string" }
           - { name: "intro", label: "Intro", widget: "text", hint: "Court paragraphe d'introduction sous le titre." }
@@ -782,6 +785,7 @@ collections:
         format: "json"
         fields:
           - { name: "meta_title", label: "Titre SEO", widget: "string", hint: "Titre affiché dans l'onglet du navigateur et dans les résultats Google. 50-60 caractères max." }
+          - { name: "meta_description", label: "Description SEO", widget: "text", hint: "Texte sous le titre dans les résultats Google. 150-160 caractères." }
           - { name: "surtitre", label: "Surtitre", widget: "string", hint: "Petit texte en or affiché au-dessus du titre H2." }
           - { name: "titre", label: "Titre", widget: "string" }
           - { name: "intro", label: "Intro", widget: "text", hint: "Court paragraphe d'introduction sous le titre." }
@@ -846,6 +850,8 @@ collections:
             widget: "object"
             collapsed: true
             fields:
+              - { name: "meta_title", label: "Titre SEO", widget: "string", required: false, hint: "Titre affiché dans l'onglet du navigateur et dans les résultats Google. 50-60 caractères max." }
+              - { name: "meta_description", label: "Description SEO", widget: "text", required: false, hint: "Texte sous le titre dans les résultats Google. 150-160 caractères." }
               - { name: "surtitre", label: "Surtitre (Outil 01)", widget: "string", required: false }
               - { name: "titre", label: "Titre H1", widget: "string", required: false }
               - { name: "intro", label: "Paragraphe d'intro", widget: "text", required: false }
@@ -864,6 +870,8 @@ collections:
             widget: "object"
             collapsed: true
             fields:
+              - { name: "meta_title", label: "Titre SEO", widget: "string", required: false, hint: "Titre affiché dans l'onglet du navigateur et dans les résultats Google. 50-60 caractères max." }
+              - { name: "meta_description", label: "Description SEO", widget: "text", required: false, hint: "Texte sous le titre dans les résultats Google. 150-160 caractères." }
               - { name: "surtitre", label: "Surtitre (Outil 02)", widget: "string", required: false }
               - { name: "titre", label: "Titre H1", widget: "string", required: false }
               - { name: "resultat_titre", label: "Résultat · titre (Votre budget total)", widget: "string", required: false }
@@ -877,6 +885,8 @@ collections:
             widget: "object"
             collapsed: true
             fields:
+              - { name: "meta_title", label: "Titre SEO", widget: "string", required: false, hint: "Titre affiché dans l'onglet du navigateur et dans les résultats Google. 50-60 caractères max." }
+              - { name: "meta_description", label: "Description SEO", widget: "text", required: false, hint: "Texte sous le titre dans les résultats Google. 150-160 caractères." }
               - { name: "surtitre", label: "Surtitre (Outil 03)", widget: "string", required: false }
               - { name: "titre", label: "Titre H1", widget: "string", required: false }
               - { name: "intro", label: "Paragraphe d'intro", widget: "text", required: false }
@@ -899,6 +909,8 @@ collections:
             widget: "object"
             collapsed: true
             fields:
+              - { name: "meta_title", label: "Titre SEO", widget: "string", required: false, hint: "Titre affiché dans l'onglet du navigateur et dans les résultats Google. 50-60 caractères max." }
+              - { name: "meta_description", label: "Description SEO", widget: "text", required: false, hint: "Texte sous le titre dans les résultats Google. 150-160 caractères." }
               - { name: "surtitre", label: "Surtitre (Outil 04)", widget: "string", required: false }
               - { name: "titre", label: "Titre H1", widget: "string", required: false }
               - { name: "intro", label: "Paragraphe d'intro", widget: "text", required: false }
@@ -912,6 +924,8 @@ collections:
             widget: "object"
             collapsed: true
             fields:
+              - { name: "meta_title", label: "Titre SEO", widget: "string", required: false, hint: "Titre affiché dans l'onglet du navigateur et dans les résultats Google. 50-60 caractères max." }
+              - { name: "meta_description", label: "Description SEO", widget: "text", required: false, hint: "Texte sous le titre dans les résultats Google. 150-160 caractères." }
               - { name: "surtitre", label: "Surtitre (Outil 05)", widget: "string", required: false }
               - { name: "titre", label: "Titre H1", widget: "string", required: false }
               - { name: "intro", label: "Paragraphe d'intro", widget: "text", required: false }
@@ -929,6 +943,8 @@ collections:
             widget: "object"
             collapsed: true
             fields:
+              - { name: "meta_title", label: "Titre SEO", widget: "string", required: false, hint: "Titre affiché dans l'onglet du navigateur et dans les résultats Google. 50-60 caractères max." }
+              - { name: "meta_description", label: "Description SEO", widget: "text", required: false, hint: "Texte sous le titre dans les résultats Google. 150-160 caractères." }
               - { name: "surtitre", label: "Surtitre (Outil 06)", widget: "string", required: false }
               - { name: "titre_prefix", label: "Titre H1 · texte avant le nombre d'années", widget: "string", required: false }
               - { name: "titre_suffix", label: "Titre H1 · texte après le nombre d'années", widget: "string", required: false }
@@ -943,6 +959,8 @@ collections:
             widget: "object"
             collapsed: true
             fields:
+              - { name: "meta_title", label: "Titre SEO", widget: "string", required: false, hint: "Titre affiché dans l'onglet du navigateur et dans les résultats Google. 50-60 caractères max." }
+              - { name: "meta_description", label: "Description SEO", widget: "text", required: false, hint: "Texte sous le titre dans les résultats Google. 150-160 caractères." }
               - { name: "surtitre", label: "Surtitre (Outil 07)", widget: "string", required: false }
               - { name: "titre", label: "Titre H1", widget: "string", required: false }
               - { name: "intro", label: "Paragraphe d'intro", widget: "text", required: false }
@@ -958,6 +976,8 @@ collections:
             widget: "object"
             collapsed: true
             fields:
+              - { name: "meta_title", label: "Titre SEO", widget: "string", required: false, hint: "Titre affiché dans l'onglet du navigateur et dans les résultats Google. 50-60 caractères max." }
+              - { name: "meta_description", label: "Description SEO", widget: "text", required: false, hint: "Texte sous le titre dans les résultats Google. 150-160 caractères." }
               - { name: "surtitre", label: "Surtitre (Outil 08)", widget: "string", required: false }
               - { name: "titre", label: "Titre H1", widget: "string", required: false }
               - { name: "intro", label: "Paragraphe d'intro", widget: "text", required: false }
@@ -986,6 +1006,7 @@ collections:
       # --- Hero / bannière ---
       - { name: "video", label: "🎬 Vidéo de fond hero (bannière)", widget: "file", required: false, hint: "Uploade un .mp4 ou choisis une vidéo existante (/videos/secteurs/). Laisse vide pour un fond sans vidéo." }
       - { name: "titre_seo", label: "Titre SEO (onglet navigateur)", widget: "string" }
+      - { name: "meta_description", label: "Description SEO", widget: "text", required: false, hint: "Texte sous le titre dans les résultats Google. 150-160 caractères." }
       - { name: "hero_surtitre", label: "Hero · surtitre (au-dessus du H1)", widget: "string", required: false }
       - { name: "h1", label: "Hero · titre H1", widget: "string" }
       - { name: "intro", label: "Hero · paragraphes intro", widget: "list", field: { name: "p", label: "Paragraphe", widget: "text" } }
@@ -1045,6 +1066,8 @@ collections:
     summary: "{{nom}} · {{cp}}"
     fields:
       - { name: "nom", label: "Nom de la commune", widget: "string" }
+      - { name: "meta_title", label: "Titre SEO", widget: "string", required: false, hint: "Titre affiché dans l'onglet du navigateur et dans les résultats Google. 50-60 caractères max." }
+      - { name: "meta_description", label: "Description SEO", widget: "text", required: false, hint: "Texte sous le titre dans les résultats Google. 150-160 caractères." }
       - { name: "intro", label: "Paragraphe d'introduction (sous le titre de la ville)", widget: "text", required: false, hint: "Astuce gras : entoure un mot de **deux astérisques**, ex. **prestige**." }
       - { name: "population", label: "Population", widget: "number" }
       - { name: "superficie", label: "Superficie (km²)", widget: "number" }

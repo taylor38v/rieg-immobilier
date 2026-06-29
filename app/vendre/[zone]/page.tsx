@@ -111,7 +111,7 @@ export async function generateMetadata(props: PageProps<"/vendre/[zone]">): Prom
   const { zone } = await props.params;
   const z = (zonesContent as Record<string, any>)[zone];
   if (!z) return {};
-  return { title: z.titre_seo, description: z.intro?.[0] };
+  return { title: z.titre_seo, description: z.meta_description ?? z.intro?.[0] };
 }
 
 export default async function Page(props: PageProps<"/vendre/[zone]">) {

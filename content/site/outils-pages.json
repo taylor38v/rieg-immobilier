@@ -1,5 +1,7 @@
 {
   "carte-prix": {
+    "meta_title": "Carte des prix immobiliers au m² · Mont d'Or & Ouest lyonnais",
+    "meta_description": "Prix immobiliers au m² par commune sur le Mont d'Or, l'Ouest lyonnais et la Plaine du Forez. Données Meilleurs Agents 2026 et DVF, mises à jour par votre conseiller iad.",
     "surtitre": "Outil 01",
     "titre": "Carte des prix immobiliers",
     "intro": "Prix moyens au m² par commune sur le Mont d'Or, l'Ouest lyonnais et la Plaine du Forez. Données Meilleurs Agents 2026 et DVF.",
@@ -15,6 +17,8 @@
     "cta_label": "Demander mon avis de valeur"
   },
   "capacite-achat": {
+    "meta_title": "Capacité d'achat immobilier : combien puis-je emprunter ?",
+    "meta_description": "Calculez votre budget immobilier et la surface accessible par commune sur le Mont d'Or et l'Ouest lyonnais. Simulateur gratuit, accompagnement par un conseiller iad.",
     "surtitre": "Outil 02",
     "titre": "Combien puis-je acheter ?",
     "resultat_titre": "Votre budget total",
@@ -25,6 +29,8 @@
     "cta_intro": "Mise en relation avec un courtier partenaire pour optimiser votre plan de financement, puis sélection de biens correspondant à votre capacité."
   },
   "acheter-vs-louer": {
+    "meta_title": "Acheter ou louer ? Comparateur immobilier Ouest lyonnais",
+    "meta_description": "Achat ou location : comparez sur votre durée d'occupation (notaire, intérêts, taxe foncière, valorisation). Conseil d'un conseiller iad sur le Mont d'Or et l'Ouest lyonnais.",
     "surtitre": "Outil 03",
     "titre": "Acheter ou louer ?",
     "intro": "Comparaison financière complète sur votre durée d'occupation. Intègre frais de notaire, intérêts, taxe foncière, charges, valorisation et placement alternatif de l'apport.",
@@ -44,6 +50,8 @@
     "cta_intro": "Mettre ces chiffres en face d'un vrai bien, d'une vraie ville, d'un vrai projet de vie : un échange en visio ou en agence pour aller plus loin."
   },
   "frais-notaire": {
+    "meta_title": "Calcul des frais de notaire 2026 · Rhône (69) & Loire (42)",
+    "meta_description": "Estimez vos frais de notaire dans le Rhône et la Loire, neuf ou ancien, avec déduction du mobilier. Barème 2026, calcul détaillé par votre conseiller immobilier iad.",
     "surtitre": "Outil 04",
     "titre": "Frais de notaire",
     "intro": "Calcul détaillé pour le Rhône (69 · taux relevé à 5 % en 2025) et la Loire (42 · 4,5 % maintenu), neuf ou ancien, avec déduction du mobilier. Barème 2026.",
@@ -54,6 +62,8 @@
     "cta_intro": "Inclure le mobilier à l'acte, choisir le bon montage, négocier les émoluments : un conseil personnalisé pour activer les bons leviers."
   },
   "vendabilite": {
+    "meta_title": "Diagnostic de vendabilité : votre bien va-t-il se vendre ?",
+    "meta_description": "Mesurez en 30 secondes les chances de vendre votre bien : prix, DPE et tension de marché. Diagnostic gratuit par un conseiller iad sur le Mont d'Or et l'Ouest lyonnais.",
     "surtitre": "Outil 05",
     "titre": "Diagnostic indicatif de vendabilité",
     "intro": "En 30 secondes, mesurez les chances réelles de vendre votre bien. Diagnostic personnalisé sur prix, DPE et tension de marché.",
@@ -68,6 +78,8 @@
     "cta_intro": "Visite de votre bien et rapport complet (comparables, photos, stratégie) sous 24 - 48 h. Gratuit et sans engagement."
   },
   "projection": {
+    "meta_title": "Projection de valeur immobilière : combien vaudra mon bien ?",
+    "meta_description": "Projetez la valeur future de votre bien selon les tendances 2020-2025 par commune sur le Mont d'Or, l'Ouest lyonnais et la Plaine du Forez. Analyse par un conseiller iad.",
     "surtitre": "Outil 06",
     "titre_prefix": "Combien vaudra mon bien dans",
     "titre_suffix": "ans ?",
@@ -79,6 +91,8 @@
     "cta_intro": "Une analyse approfondie croise la projection avec votre quartier précis, le DPE, l'état et les comparables récents pour une vraie estimation."
   },
   "dpe-express": {
+    "meta_title": "DPE express : estimez la classe énergétique de votre bien",
+    "meta_description": "Estimez la classe DPE de votre logement et le plan de travaux pour viser le C ou le B. Méthode 3CL 2021, accompagnement rénovation par votre conseiller iad Ouest lyonnais.",
     "surtitre": "Outil 07",
     "titre": "DPE express",
     "intro": "Estimation rapide de la classe DPE de votre bien et plan de travaux pour passer en classe C ou B. Basé sur les coefficients officiels de la méthode 3CL 2021.",
@@ -91,6 +105,8 @@
     "cta_intro": "Un accompagnement complet : diagnostiqueur, devis travaux, dossier MaPrimeRénov', puis valorisation à la revente."
   },
   "rentabilite-locative": {
+    "meta_title": "Calcul de rentabilité locative : rendement et cash-flow",
+    "meta_description": "Calculez rendement brut, net, cash-flow et patrimoine sur 20 ans pour votre investissement. Sourcing de biens à fort rendement par un conseiller iad sur l'Ouest lyonnais.",
     "surtitre": "Outil 08",
     "titre": "Rentabilité locative",
     "intro": "Rendement brut, net, cash-flow et enrichissement patrimonial sur 20 ans. Tient compte de la fiscalité, de la vacance locative et de l'évolution du marché.",

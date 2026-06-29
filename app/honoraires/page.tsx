@@ -2,7 +2,7 @@ import { site } from "../lib/_generated/site";
 
 const h = site.honoraires;
 
-export const metadata = { title: h.meta_title };
+export const metadata = { title: h.meta_title, description: h.meta_description };
 
 export default function Page() {
   return (
