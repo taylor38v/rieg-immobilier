@@ -35,22 +35,22 @@
       {
         "num": "01",
         "titre": "Contact & échange",
-        "desc": "Formulaire en ligne ou contact direct par téléphone ou email. Je recueille les informations clés pour une estimation précise : type de bien, superficie, situation personnelle, délais souhaités."
+        "desc": "Formulaire en ligne ou contact direct par téléphone ou email. Je recueille **les informations clés** pour une estimation précise : type de bien, superficie, situation personnelle, délais souhaités."
       },
       {
         "num": "02",
         "titre": "Visite sur place",
-        "desc": "Je me déplace directement chez vous pour évaluer votre bien dans le détail : surface, état général, atouts, points de vigilance et environnement immédiat. Tout ce qui fait la vraie valeur d'un bien ne se voit pas sur un plan."
+        "desc": "Je me déplace directement chez vous pour évaluer votre bien dans le détail : surface, état général, atouts, points de vigilance et environnement immédiat. **Tout ce qui fait la vraie valeur d'un bien ne se voit pas sur un plan.**"
       },
       {
         "num": "03",
         "titre": "Rapport de valeur détaillé",
-        "desc": "Vous recevez un dossier complet : prix estimé, fourchette de marché et conseils personnalisés. Remis en main propre, sous 24 à 48 h."
+        "desc": "Vous recevez **un dossier complet** : prix estimé, fourchette de marché et conseils personnalisés. Remis en main propre, sous 24 à 48 h."
       },
       {
         "num": "04",
         "titre": "Accompagnement pour la suite",
-        "desc": "Que vous souhaitiez vendre maintenant ou plus tard, je vous conseille sur la meilleure stratégie à adopter selon votre projet et votre calendrier : sans engagement."
+        "desc": "Que vous souhaitiez vendre maintenant ou plus tard, **je vous conseille sur la meilleure stratégie à adopter** selon votre projet et votre calendrier : sans engagement."
       }
     ]
   },
