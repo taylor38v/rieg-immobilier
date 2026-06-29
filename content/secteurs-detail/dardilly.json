@@ -44,6 +44,7 @@
       "precision": "Centre de formation aux métiers du bâtiment situé à Dardilly."
     }
   ],
+  "intro": "Entre nature et métropole, Dardilly offre un équilibre recherché aux portes de Lyon : grands terrains, quartiers résidentiels calmes, environnement verdoyant et accès rapide aux grands axes. Une commune appréciée des familles et des actifs qui recherchent de l’espace, de la praticité et une vraie qualité de vie dans l’Ouest lyonnais.",
   "nom": "Dardilly",
   "cp": "69570",
   "ce_qui_differencie": [
@@ -212,6 +213,5 @@
       "prix_indicatif": "4 500 - 5 500 €/m²",
       "nom": "Bois de Serres - Brochetière"
     }
-  ],
-  "intro": "Entre nature et métropole, Dardilly offre un compromis recherché : grands terrains, quartiers pavillonnaires calmes et accès direct à l'A6."
+  ]
 }
