@@ -23,17 +23,17 @@
     {
       "num": "03",
       "titre": "Mise en vente optimale",
-      "desc": "Votre bien est mis en valeur avec des photos UltraHD, une annonce soignée et, si nécessaire, des prises de vue par drone. Il est diffusé sur les principaux portails immobiliers et bénéficie de la puissance du réseau iad pour toucher les bons acquéreurs."
+      "desc": "Votre bien est mis en valeur avec des photos professionnelles, une annonce soignée et, si nécessaire, des prises de vue par drone. Il est diffusé sur **tout les portails immobiliers et bénéficie de la puissance du réseau iad pour toucher les bons acquéreurs.**"
     },
     {
       "num": "04",
       "titre": "Suivi jusqu'à la signature",
-      "desc": "J’organise les visites, sélectionne les acquéreurs sérieux, vous accompagne dans la négociation et assure le suivi administratif jusqu’à la signature chez le notaire. Vous avancez avec un interlocuteur unique, réactif et impliqué."
+      "desc": "J’organise les visites, sélectionne les acquéreurs sérieux, vous accompagne dans la négociation et assure le suivi administratif jusqu’à la signature chez le notaire. **Vous avancez avec un interlocuteur unique, réactif et impliqué.**"
     }
   ],
   "intro": [
-    "Vous souhaitez vendre, acheter ou louer un bien à Saint-Just-Saint-Rambert, Andrézieux-Bouthéon ou alentours ?",
-    "Je suis Romain Rieg, conseiller immobilier indépendant du réseau iad France. Originaire de la Loire, j'y ai vécu 20 ans : je combine ma connaissance intime du territoire avec des outils marketing de pointe pour vendre rapidement au meilleur prix, acheter ou investir en toute sécurité, ou gérer la location de vos biens."
+    "Vous souhaitez vendre, acheter, louer ou investir à Saint-Just-Saint-Rambert, Andrézieux-Bouthéon ou dans les communes alentours ? Originaire de la Loire, j’ai vécu à Saint-Just-Saint-Rambert et à Andrézieux-Bouthéon pendant près de 20 ans, ce qui me permet de vous accompagner avec **une vraie connaissance du territoire, de ses communes et de son marché immobilier.**\n\n",
+    "Je suis Romain Rieg, conseiller immobilier indépendant au sein du réseau iad France. **Estimation, stratégie de vente, recherche acquéreur, investissement ou mise en location** : je vous accompagne avec méthode, visibilité et sécurité, en m’appuyant sur une approche locale, précise et réaliste ainsi que sur des outils de diffusion performants."
   ],
   "communes_principales": [
     "Saint-Just-Saint-Rambert",
@@ -67,8 +67,8 @@
   ],
   "limitrophes_label": "+ communes limitrophes que je couvre également",
   "limitrophes_note": "Je ne me limite jamais strictement aux communes principales - chaque projet sur les limitrophes est étudié avec la même attention.",
-  "hero_reassurance": "Zéro engagement · 100% confidentiel",
-  "positionnement_texte": "Ces deux communes occupent une place particulière dans mon parcours. J’y ai grandi, j’y ai construit mes repères et j’en connais les dynamiques locales : quartiers, axes de circulation, bassins d’emploi, attractivité résidentielle et attentes des acquéreurs.\n\nCette connaissance personnelle du secteur me permet d’accompagner les projets immobiliers avec une vraie lecture du terrain, au-delà des simples chiffres de marché.",
+  "hero_reassurance": "Sans engagement · 100% confidentiel",
+  "positionnement_texte": "Ces deux communes occupent une place particulière dans mon parcours. **J’y ai grandi, j’y ai construit mes repères et j’en connais les dynamiques locales** : quartiers, axes de circulation, bassins d’emploi, attractivité résidentielle et attentes des acquéreurs.\n\nCette connaissance personnelle du secteur me permet d’accompagner les projets immobiliers avec une vraie lecture du terrain, au-delà des simples chiffres de marché.",
   "atouts": [
     {
       "titre": "L'enfant du pays",
@@ -84,10 +84,10 @@
     }
   ],
   "carte_titre": "Survolez la carte pour explorer.",
+  "intro_complement": "",
   "video": "/videos/secteurs/saint-just.mp4",
   "image": "/photos/IMG_7295.jpeg",
   "carte_surtitre": "Les communes",
   "cta_intro": "Offert, argumenté, sous 24 - 48h - sans engagement de mandat.",
-  "carte_texte": "Cliquez sur une commune pour ouvrir sa fiche détaillée - démographie, écoles, restaurants, quartiers, prix au m².",
-  "intro_complement": ""
+  "carte_texte": "Cliquez sur une commune pour ouvrir sa fiche détaillée - démographie, écoles, restaurants, quartiers, prix au m²."
 }
