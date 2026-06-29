@@ -3,8 +3,8 @@
     "cta_secondary_href": "/rejoindre",
     "cta_primary_label": "Avis de valeur offert · 24 - 48h",
     "mention": "Sans engagement · 100% confidentiel",
-    "chip": "Saint-Didier-Au-Mont-d'Or · Ouest lyonnais · Plaine du Forez",
-    "intro": "Vous souhaitez vendre, acheter ou mettre votre bien en location à Saint-Didier-au-Mont-d'Or, dans l'Ouest lyonnais ou dans la Plaine du Forez ? Je vous accompagne à chaque étape de votre projet immobilier avec réactivité, expertise locale et un suivi personnalisé.",
+    "chip": "Saint-Didier-au-Mont-d'Or · Ouest lyonnais · Plaine du Forez",
+    "intro": "Vous souhaitez vendre, acheter ou mettre votre bien en location à Saint-Didier-au-Mont-d'Or, dans l'Ouest lyonnais ou dans la Plaine du Forez ? Je vous accompagne à chaque étape de votre projet immobilier avec **réactivité, expertise locale et un suivi personnalisé.**",
     "titre": "Votre conseiller immobilier iad de proximité, spécialiste de l'Ouest lyonnais et de la Plaine du Forez.",
     "cta_primary_href": "/avis-de-valeur",
     "cta_secondary_label": "Rejoindre mon équipe",
@@ -152,12 +152,12 @@
       },
       {
         "nom": "Antoine A. - Écully",
-        "contexte": "Acquéreur · Appartement",
+        "contexte": "Acquéreur · Appartement 90 m2",
         "texte": "Très disponible et professionnel, Romain sait vous accompagner dans vos projets immobiliers avec rapidité et efficacité. Il met beaucoup d'investissement et d'énergie dans le suivi de ses clients. Je recommande !"
       },
       {
         "nom": "Elem B. - Lyon 9ème",
-        "contexte": "Vendeur · Avis de valeur · Local commercial",
+        "contexte": "Avis de valeur · Local commercial",
         "texte": "Romain Rieg a été en mesure de répondre très rapidement concernant mon projet, avec toutes les explications et infos dont j'avais besoin. Réactivité et professionnalisme exemplaires, je ferai à nouveau appel à lui sans hésiter."
       }
     ]
