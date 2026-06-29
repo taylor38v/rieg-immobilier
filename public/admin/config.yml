@@ -34,6 +34,7 @@ collections:
     label: "📰 Articles"
     label_singular: "Article"
     folder: "content/articles"
+    preview_path: "actualites/{{slug}}"
     create: true
     slug: "{{slug}}"
     extension: "md"
@@ -55,6 +56,7 @@ collections:
     label: "📄 Pages libres"
     label_singular: "Page"
     folder: "content/pages"
+    preview_path: "{{slug}}"
     create: true
     slug: "{{slug}}"
     extension: "md"
@@ -73,6 +75,7 @@ collections:
     description: "Modifie les textes de chaque page existante du site (home, à propos, vendre, acheter…)."
     files:
       - file: "content/site/home.json"
+        preview_path: ""
         label: "🏠 Accueil"
         name: "home"
         format: "json"
@@ -199,6 +202,7 @@ collections:
               - { name: "cta_url", label: "Bouton - lien Google", widget: "string" }
 
       - file: "content/site/a-propos.json"
+        preview_path: "a-propos"
         label: "👤 À propos"
         name: "a-propos"
         format: "json"
@@ -245,6 +249,7 @@ collections:
               - { name: "cta_href", label: "Bouton - lien", widget: "string" }
 
       - file: "content/site/contact.json"
+        preview_path: "contact"
         label: "📞 Contact"
         name: "contact"
         format: "json"
@@ -299,6 +304,7 @@ collections:
           - { name: "footer_form_note", label: "Note bas formulaire", widget: "text" }
 
       - file: "content/site/honoraires.json"
+        preview_path: "honoraires"
         label: "💰 Honoraires"
         name: "honoraires"
         format: "json"
@@ -317,6 +323,7 @@ collections:
           - { name: "mention_bas_de_page", label: "Mention bas de page", widget: "text" }
 
       - file: "content/site/vendre.json"
+        preview_path: "vendre"
         label: "🏷️ Vendre"
         name: "vendre"
         format: "json"
@@ -421,6 +428,7 @@ collections:
               - { name: "cta_whatsapp_url", label: "Bouton WhatsApp URL", widget: "string" }
 
       - file: "content/site/acheter.json"
+        preview_path: "acheter"
         label: "🔑 Acheter"
         name: "acheter"
         format: "json"
@@ -492,6 +500,7 @@ collections:
               - { name: "cta_whatsapp_url", label: "Bouton WhatsApp URL", widget: "string" }
 
       - file: "content/site/location.json"
+        preview_path: "location"
         label: "🏠 Location"
         name: "location"
         format: "json"
@@ -561,6 +570,7 @@ collections:
               - { name: "intro", label: "Intro", widget: "text", hint: "Court paragraphe d'introduction sous le titre." }
 
       - file: "content/site/avis-de-valeur.json"
+        preview_path: "avis-de-valeur"
         label: "📊 Avis de valeur"
         name: "avis-de-valeur"
         format: "json"
@@ -638,6 +648,7 @@ collections:
               - { name: "cta_href", label: "Bouton lien", widget: "string" }
 
       - file: "content/site/rejoindre.json"
+        preview_path: "rejoindre"
         label: "🤝 Rejoindre"
         name: "rejoindre"
         format: "json"
@@ -732,6 +743,7 @@ collections:
               - { name: "cta_secondary_href", label: "Bouton 2 lien (tel:...)", widget: "string" }
 
       - file: "content/site/outils-landing.json"
+        preview_path: "outils"
         label: "🛠️ Page Outils (intro)"
         name: "outils-landing"
         format: "json"
@@ -749,6 +761,7 @@ collections:
           - { name: "cta_href", label: "CTA - lien", widget: "string" }
 
       - file: "content/site/secteurs-landing.json"
+        preview_path: "secteurs"
         label: "🗺️ Page Secteurs (intro)"
         name: "secteurs-landing"
         format: "json"
@@ -763,6 +776,7 @@ collections:
           - { name: "delai_label", label: "Libellé colonne délai (Délai moyen)", widget: "string", required: false }
 
       - file: "content/site/merci.json"
+        preview_path: "merci"
         label: "🙏 Page Merci"
         name: "merci"
         format: "json"
@@ -775,6 +789,7 @@ collections:
           - { name: "cta_href", label: "Bouton lien", widget: "string" }
 
       - file: "content/site/not-found.json"
+        preview_path: "404"
         label: "❌ Page 404"
         name: "not-found"
         format: "json"
@@ -789,6 +804,7 @@ collections:
           - { name: "cta_secondary_url", label: "Bouton 2 URL", widget: "string" }
 
       - file: "content/site/actualites-landing.json"
+        preview_path: "actualites"
         label: "📰 Page Actualités (intro)"
         name: "actualites-landing"
         format: "json"
@@ -800,6 +816,7 @@ collections:
           - { name: "intro", label: "Intro", widget: "text", hint: "Court paragraphe d'introduction sous le titre." }
 
       - file: "content/site/mentions-legales.md"
+        preview_path: "mentions-legales"
         label: "⚖️ Mentions légales"
         name: "mentions-legales"
         fields:
@@ -808,6 +825,7 @@ collections:
           - { name: "body", label: "Contenu (markdown libre)", widget: "markdown" }
 
       - file: "content/site/confidentialite.md"
+        preview_path: "confidentialite"
         label: "🔒 Politique de confidentialité"
         name: "confidentialite"
         fields:
@@ -817,6 +835,7 @@ collections:
           - { name: "body", label: "Contenu (markdown libre)", widget: "markdown" }
 
       - file: "content/site/outils-pages.json"
+        preview_path: "outils"
         label: "🧮 Textes des 8 outils"
         name: "outils-pages"
         format: "json"
@@ -957,6 +976,7 @@ collections:
     label: "🗺️ Zones de vente (/vendre/...)"
     label_singular: "Zone"
     folder: "content/zones"
+    preview_path: "vendre/{{slug}}"
     create: false
     slug: "{{slug}}"
     extension: "json"
@@ -1017,6 +1037,7 @@ collections:
     label: "🏘️ Fiches communes (/secteurs/...)"
     label_singular: "Secteur"
     folder: "content/secteurs-detail"
+    preview_path: "secteurs/{{slug}}"
     create: false
     slug: "{{slug}}"
     extension: "json"
@@ -1024,7 +1045,7 @@ collections:
     summary: "{{nom}} · {{cp}}"
     fields:
       - { name: "nom", label: "Nom de la commune", widget: "string" }
-      - { name: "intro", label: "Paragraphe d'introduction (hero)", widget: "text", required: false }
+      - { name: "intro", label: "Paragraphe d'introduction (sous le titre de la ville)", widget: "text", required: false, hint: "Astuce gras : entoure un mot de **deux astérisques**, ex. **prestige**." }
       - { name: "population", label: "Population", widget: "number" }
       - { name: "superficie", label: "Superficie (km²)", widget: "number" }
       - { name: "cp", label: "Code postal", widget: "string" }
@@ -1032,7 +1053,15 @@ collections:
       - { name: "altitude", label: "Altitude (texte)", widget: "string", required: false }
       - { name: "video", label: "🎬 Vidéo (fond hero + lecteur « Visite vidéo »)", widget: "file", required: false, hint: "Uploade un .mp4 ou choisis une vidéo existante (/videos/secteurs/). Sert de fond au hero ET de lecteur dans la section Visite vidéo." }
       - { name: "instagram_url", label: "Lien Instagram de la commune (bouton « Voir plus de contenus »)", widget: "string", required: false }
-      - { name: "ce_qui_differencie", label: "Ce qui différencie (4 points)", widget: "list" }
+      - name: "ce_qui_differencie"
+        label: "Ce qui différencie (« Pourquoi cette commune attire »)"
+        label_singular: "Point"
+        widget: "list"
+        summary: "{{fields.titre}}"
+        hint: "Chaque point = un Titre (affiché en gras) + une Description. Plus besoin de taper des étoiles."
+        fields:
+          - { name: "titre", label: "Titre (en gras)", widget: "string" }
+          - { name: "description", label: "Description", widget: "text" }
       - name: "ecoles"
         label: "Écoles"
         widget: "list"

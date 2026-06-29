@@ -9,7 +9,7 @@ export type SecteurDetail = {
   cp: string;
   intercommunalite: string;
   altitude?: string;
-  ce_qui_differencie: string[];
+  ce_qui_differencie: (string | { titre?: string; description?: string })[];
   ecoles: { nom: string; type: string; precision?: string }[];
   restaurants: { nom: string; cuisine: string; gamme: string; note?: number }[];
   associations: { nom: string; activite: string }[];

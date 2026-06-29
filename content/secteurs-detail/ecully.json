@@ -42,10 +42,22 @@
   "nom": "Écully",
   "cp": "69130",
   "ce_qui_differencie": [
-    "**Un marché résidentiel recherché** : Écully attire une demande familiale solide grâce à sa proximité avec Lyon - ses quartiers résidentiels - ses écoles et son cadre de vie privilégié",
-    "**Un pôle d’enseignement supérieur reconnu** : École Centrale de Lyon / Institut Lyfe - ex Institut Paul Bocuse / campus Lyon Ouest Écully : la commune bénéficie d’un environnement académique fort et attractif",
-    "**Une commune bien connectée à Lyon** : Accès rapide à Lyon par les lignes de bus - la gare Écully-la-Demi-Lune - le tram-train de l’Ouest lyonnais et les grands axes routiers",
-    "**Un cadre naturel très présent** : Parc du Vivier / bois de Serres / espaces boisés / quartiers résidentiels arborés : Écully conserve une vraie respiration verte aux portes de Lyon"
+    {
+      "titre": "Un marché résidentiel recherché",
+      "description": "Écully attire une demande familiale solide grâce à sa proximité avec Lyon - ses quartiers résidentiels - ses écoles et son cadre de vie privilégié"
+    },
+    {
+      "titre": "Un pôle d’enseignement supérieur reconnu",
+      "description": "École Centrale de Lyon / Institut Lyfe - ex Institut Paul Bocuse / campus Lyon Ouest Écully : la commune bénéficie d’un environnement académique fort et attractif"
+    },
+    {
+      "titre": "Une commune bien connectée à Lyon",
+      "description": "Accès rapide à Lyon par les lignes de bus - la gare Écully-la-Demi-Lune - le tram-train de l’Ouest lyonnais et les grands axes routiers"
+    },
+    {
+      "titre": "Un cadre naturel très présent",
+      "description": "Parc du Vivier / bois de Serres / espaces boisés / quartiers résidentiels arborés : Écully conserve une vraie respiration verte aux portes de Lyon"
+    }
   ],
   "population": 17944,
   "intercommunalite": "Métropole de Lyon",

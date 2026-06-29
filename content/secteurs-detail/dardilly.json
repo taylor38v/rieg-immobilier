@@ -47,10 +47,22 @@
   "nom": "Dardilly",
   "cp": "69570",
   "ce_qui_differencie": [
-    "**De grandes parcelles et un cadre résidentiel rare** : Dardilly séduit par ses maisons familiales - ses terrains généreux - ses quartiers pavillonnaires et son atmosphère résidentielle préservée",
-    "**Une commune connectée à Lyon et aux grands axes** : Accès rapide à l’A6 - proximité de Techlid - liaison vers Lyon et l’Ouest lyonnais : un positionnement pratique pour les actifs et les familles",
-    "**Un pôle de formation reconnu** : Lycée François Rabelais / Lycée Horticole de Dardilly / centre de formation Philibert de l’Orme : la commune bénéficie d’un environnement éducatif et technique solide",
-    "**Un cadre de vie vert et familial** : Espaces naturels - équipements sportifs - proximité du golf de La Tour-de-Salvagny et ambiance village : Dardilly conserve une vraie respiration aux portes de la métropole"
+    {
+      "titre": "De grandes parcelles et un cadre résidentiel rare",
+      "description": "Dardilly séduit par ses maisons familiales - ses terrains généreux - ses quartiers pavillonnaires et son atmosphère résidentielle préservée"
+    },
+    {
+      "titre": "Une commune connectée à Lyon et aux grands axes",
+      "description": "Accès rapide à l’A6 - proximité de Techlid - liaison vers Lyon et l’Ouest lyonnais : un positionnement pratique pour les actifs et les familles"
+    },
+    {
+      "titre": "Un pôle de formation reconnu",
+      "description": "Lycée François Rabelais / Lycée Horticole de Dardilly / centre de formation Philibert de l’Orme : la commune bénéficie d’un environnement éducatif et technique solide"
+    },
+    {
+      "titre": "Un cadre de vie vert et familial",
+      "description": "Espaces naturels - équipements sportifs - proximité du golf de La Tour-de-Salvagny et ambiance village : Dardilly conserve une vraie respiration aux portes de la métropole"
+    }
   ],
   "population": 9221,
   "intercommunalite": "Métropole de Lyon",

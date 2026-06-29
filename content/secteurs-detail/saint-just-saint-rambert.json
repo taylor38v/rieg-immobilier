@@ -37,11 +37,26 @@
   "nom": "Saint-Just-Saint-Rambert",
   "cp": "42170",
   "ce_qui_differencie": [
-    "**Une ville attractive dans la Plaine du Forez** : Saint-Just-Saint-Rambert combine commerces - écoles - équipements sportifs - vie locale et accès rapide à Saint-Étienne - Andrézieux-Bouthéon et Montbrison",
-    "**Deux identités fortes** : Saint-Just offre une centralité plus commerçante et pratique - tandis que Saint-Rambert conserve un charme patrimonial marqué avec son centre historique - ses ruelles et son lien direct avec la Loire",
-    "**Un cadre naturel recherché** : Bords de Loire - canal du Forez - base de loisirs - chemins de promenade et espaces verts offrent une vraie qualité de vie au quotidien",
-    "**Un marché immobilier accessible** : Avec un prix moyen maison autour de 2 730 €/m² - Saint-Just-Saint-Rambert reste plus accessible que la métropole lyonnaise tout en offrant une belle qualité résidentielle",
-    "**Un secteur intéressant pour les projets locatifs** : La commune attire des familles - des actifs - des primo-accédants et des profils investisseurs grâce à son bassin d’emploi - ses écoles - ses commerces et sa proximité avec Andrézieux-Bouthéon et Saint-Étienne"
+    {
+      "titre": "Une ville attractive dans la Plaine du Forez",
+      "description": "Saint-Just-Saint-Rambert combine commerces - écoles - équipements sportifs - vie locale et accès rapide à Saint-Étienne - Andrézieux-Bouthéon et Montbrison"
+    },
+    {
+      "titre": "Deux identités fortes",
+      "description": "Saint-Just offre une centralité plus commerçante et pratique - tandis que Saint-Rambert conserve un charme patrimonial marqué avec son centre historique - ses ruelles et son lien direct avec la Loire"
+    },
+    {
+      "titre": "Un cadre naturel recherché",
+      "description": "Bords de Loire - canal du Forez - base de loisirs - chemins de promenade et espaces verts offrent une vraie qualité de vie au quotidien"
+    },
+    {
+      "titre": "Un marché immobilier accessible",
+      "description": "Avec un prix moyen maison autour de 2 730 €/m² - Saint-Just-Saint-Rambert reste plus accessible que la métropole lyonnaise tout en offrant une belle qualité résidentielle"
+    },
+    {
+      "titre": "Un secteur intéressant pour les projets locatifs",
+      "description": "La commune attire des familles - des actifs - des primo-accédants et des profils investisseurs grâce à son bassin d’emploi - ses écoles - ses commerces et sa proximité avec Andrézieux-Bouthéon et Saint-Étienne"
+    }
   ],
   "population": 15764,
   "intercommunalite": "Loire Forez Agglomération",

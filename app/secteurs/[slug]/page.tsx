@@ -84,12 +84,20 @@ export default async function Page(props: PageProps<"/secteurs/[slug]">) {
           <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">Ce qui différencie {s.nom}</div>
           <h2 className="font-serif text-3xl md:text-4xl mt-3">Pourquoi cette commune attire.</h2>
           <div className="grid md:grid-cols-2 gap-4 mt-10">
-            {d.ce_qui_differencie.map((c, i) => (
-              <div key={i} className="shine-hover rounded-xl flex gap-4 p-5 bg-ivory-deep border border-ink/5">
-                <span className="font-serif text-3xl text-gold leading-none">{String(i + 1).padStart(2, "0")}</span>
-                <p className="text-ink/85 leading-relaxed" dangerouslySetInnerHTML={{ __html: inline(c) }} />
-              </div>
-            ))}
+            {d.ce_qui_differencie.map((c, i) => {
+              const titre = typeof c === "object" ? (c.titre || "") : "";
+              const desc = typeof c === "object" ? (c.description || "") : String(c);
+              return (
+                <div key={i} className="shine-hover rounded-xl flex gap-4 p-5 bg-ivory-deep border border-ink/5">
+                  <span className="font-serif text-3xl text-gold leading-none">{String(i + 1).padStart(2, "0")}</span>
+                  <p className="text-ink/85 leading-relaxed">
+                    {titre && <strong className="text-navy">{titre}</strong>}
+                    {titre && desc ? " : " : ""}
+                    <span dangerouslySetInnerHTML={{ __html: inline(desc) }} />
+                  </p>
+                </div>
+              );
+            })}
           </div>
         </section>
       )}

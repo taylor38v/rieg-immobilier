@@ -776,7 +776,13 @@
           ...safeArr(d.ce_qui_differencie).map((c, i) =>
             h("div", { key: i, style: { display: "flex", gap: "1rem", padding: "1.25rem", background: "var(--ivory-deep)" } },
               h("span", { className: "font-serif text-3xl text-gold leading-none" }, String(i + 1).padStart(2, "0")),
-              h("p", { className: "text-ink/85 leading-relaxed" }, safe(c)),
+              (c && typeof c === "object")
+                ? h("p", { className: "text-ink/85 leading-relaxed" },
+                    c.titre ? h("strong", { style: { color: "var(--navy)" } }, safe(c.titre)) : null,
+                    (c.titre && c.description) ? " : " : "",
+                    safe(c.description)
+                  )
+                : h("p", { className: "text-ink/85 leading-relaxed" }, safe(c)),
             )
           )
         )

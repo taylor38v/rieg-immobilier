@@ -1,6 +1,5 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-import { useRouter } from "next/navigation";
 import communesGeo from "../lib/communes-geo.json";
 import { secteurs, formatPrix } from "../lib/data";
 import { settings } from "../lib/_generated/settings";
@@ -102,7 +101,6 @@ export default function CityMap({
   const ref = useRef<HTMLDivElement>(null);
   const mapRef = useRef<{ destroy: () => void } | null>(null);
   const [hoveredSlug, setHoveredSlug] = useState<string | null>(null);
-  const router = useRouter();
 
   const visibleSlugs = (() => {
     if (slugs) return slugs;
@@ -170,7 +168,7 @@ export default function CityMap({
           layer.setStyle(baseStyle as L.PathOptions);
           setHoveredSlug(null);
         });
-        if (sec) layer.on("click", () => router.push(`/secteurs/${f.slug}`));
+        if (sec) layer.on("click", () => { window.location.href = `/secteurs/${f.slug}/`; });
       });
 
       const all = L.featureGroup(layerGroup.getLayers() as L.FeatureGroup[]);
@@ -180,7 +178,7 @@ export default function CityMap({
     })();
 
     return () => { destroyed = true; mapRef.current?.destroy(); mapRef.current = null; };
-  }, [visibleSlugs.join(","), router]);
+  }, [visibleSlugs.join(",")]);
 
   const hovered = hoveredSlug ? (communesGeo as Record<string, { nom: string }>)[hoveredSlug] : null;
   const hoveredZone = hoveredSlug ? ZONES[hoveredSlug] : null;

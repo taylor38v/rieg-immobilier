@@ -37,10 +37,22 @@
   "nom": "Saint-Cyr-au-Mont-d'Or",
   "cp": "69450",
   "ce_qui_differencie": [
-    "**Un marché immobilier confidentiel et recherché** : Saint-Cyr-au-Mont-d’Or fait partie des communes les plus prisées de la métropole lyonnaise. L’offre y reste limitée et les biens de qualité sont particulièrement recherchés",
-    "**Une adresse forte dans les Monts d’Or** : À quelques minutes de Lyon - la commune offre un cadre résidentiel rare avec vues sur la Saône - environnement préservé et atmosphère très privilégiée",
-    "**Un patrimoine bâti remarquable** : Bastides anciennes / maisons en pierres dorées / propriétés avec parc / adresses discrètes : Saint-Cyr-au-Mont-d’Or possède une identité patrimoniale forte",
-    "**Une clientèle exigeante** : Le marché local attire des acquéreurs attentifs à la qualité de vie - à la discrétion - aux prestations et à l’emplacement"
+    {
+      "titre": "Un marché immobilier confidentiel et recherché",
+      "description": "Saint-Cyr-au-Mont-d’Or fait partie des communes les plus prisées de la métropole lyonnaise. L’offre y reste limitée et les biens de qualité sont particulièrement recherchés"
+    },
+    {
+      "titre": "Une adresse forte dans les Monts d’Or",
+      "description": "À quelques minutes de Lyon - la commune offre un cadre résidentiel rare avec vues sur la Saône - environnement préservé et atmosphère très privilégiée"
+    },
+    {
+      "titre": "Un patrimoine bâti remarquable",
+      "description": "Bastides anciennes / maisons en pierres dorées / propriétés avec parc / adresses discrètes : Saint-Cyr-au-Mont-d’Or possède une identité patrimoniale forte"
+    },
+    {
+      "titre": "Une clientèle exigeante",
+      "description": "Le marché local attire des acquéreurs attentifs à la qualité de vie - à la discrétion - aux prestations et à l’emplacement"
+    }
   ],
   "population": 6327,
   "intercommunalite": "Métropole de Lyon",

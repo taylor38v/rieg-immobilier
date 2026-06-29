@@ -27,10 +27,22 @@
   "nom": "Saint-Didier-au-Mont-d'Or",
   "cp": "69370",
   "ce_qui_differencie": [
-    "**Un marché immobilier rare et recherché** : Saint-Didier-au-Mont-d’Or fait partie des communes les plus prisées de la métropole lyonnaise. La demande y reste souvent supérieure à l’offre disponible",
-    "**Un cadre de vie familial et privilégié** : Écoles - associations - commerces de proximité - environnement verdoyant : la commune offre un équilibre rare entre esprit village et accès rapide à Lyon",
-    "**Une adresse forte dans les Monts d’Or** : À seulement quelques minutes de Lyon - Saint-Didier-au-Mont-d’Or conserve une identité résidentielle marquée avec des quartiers calmes - recherchés et bien établis",
-    "**Une clientèle exigeante** : Maisons de famille / propriétés avec terrain / biens rénovés / adresses confidentielles : le marché local attire des acquéreurs attentifs à la qualité de vie - à l’emplacement et aux prestations"
+    {
+      "titre": "Un marché immobilier rare et recherché",
+      "description": "Saint-Didier-au-Mont-d’Or fait partie des communes les plus prisées de la métropole lyonnaise. La demande y reste souvent supérieure à l’offre disponible"
+    },
+    {
+      "titre": "Un cadre de vie familial et privilégié",
+      "description": "Écoles - associations - commerces de proximité - environnement verdoyant : la commune offre un équilibre rare entre esprit village et accès rapide à Lyon"
+    },
+    {
+      "titre": "Une adresse forte dans les Monts d’Or",
+      "description": "À seulement quelques minutes de Lyon - Saint-Didier-au-Mont-d’Or conserve une identité résidentielle marquée avec des quartiers calmes - recherchés et bien établis"
+    },
+    {
+      "titre": "Une clientèle exigeante",
+      "description": "Maisons de famille / propriétés avec terrain / biens rénovés / adresses confidentielles : le marché local attire des acquéreurs attentifs à la qualité de vie - à l’emplacement et aux prestations"
+    }
   ],
   "population": 7435,
   "intercommunalite": "Métropole de Lyon",

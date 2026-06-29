@@ -32,10 +32,22 @@
   "nom": "Limonest",
   "cp": "69760",
   "ce_qui_differencie": [
-    "**Un village de caractère dans les Monts d’Or** : Limonest conserve une vraie identité locale avec son centre village - son bâti ancien - ses pierres dorées - ses hameaux historiques et ses paysages vallonnés",
-    "**Un cadre naturel très présent** : Entre Mont Verdun - Bois d’Ars - chemins - vues et espaces paysagers - la commune offre une respiration rare à proximité immédiate de Lyon",
-    "**Un marché résidentiel recherché** : Maisons familiales - propriétés avec terrain - biens rénovés et adresses plus confidentielles attirent une clientèle sensible au calme - à l’espace et à la qualité de vie",
-    "**Un pôle économique stratégique** : Avec Techlid - Puy d’Or et les Bruyères - Limonest bénéficie d’un environnement tertiaire important - très pratique pour les actifs de l’Ouest lyonnais"
+    {
+      "titre": "Un village de caractère dans les Monts d’Or",
+      "description": "Limonest conserve une vraie identité locale avec son centre village - son bâti ancien - ses pierres dorées - ses hameaux historiques et ses paysages vallonnés"
+    },
+    {
+      "titre": "Un cadre naturel très présent",
+      "description": "Entre Mont Verdun - Bois d’Ars - chemins - vues et espaces paysagers - la commune offre une respiration rare à proximité immédiate de Lyon"
+    },
+    {
+      "titre": "Un marché résidentiel recherché",
+      "description": "Maisons familiales - propriétés avec terrain - biens rénovés et adresses plus confidentielles attirent une clientèle sensible au calme - à l’espace et à la qualité de vie"
+    },
+    {
+      "titre": "Un pôle économique stratégique",
+      "description": "Avec Techlid - Puy d’Or et les Bruyères - Limonest bénéficie d’un environnement tertiaire important - très pratique pour les actifs de l’Ouest lyonnais"
+    }
   ],
   "population": 4012,
   "intercommunalite": "Métropole de Lyon",

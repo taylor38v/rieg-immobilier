@@ -32,11 +32,26 @@
   "nom": "Andrézieux-Bouthéon",
   "cp": "42160",
   "ce_qui_differencie": [
-    "**Une ville carrefour entre Saint-Étienne et la Plaine du Forez** : Andrézieux-Bouthéon bénéficie d’un emplacement stratégique avec accès à l’A72 - gare SNCF - aéroport de Saint-Étienne Loire et proximité rapide avec Saint-Étienne",
-    "**Un pôle économique et commercial majeur** : La commune accueille un tissu économique dense avec de nombreuses entreprises - zones d’activités et une offre commerciale importante autour des centres-bourgs et des pôles périphériques",
-    "**Trois centralités historiques** : Andrézieux - Bouthéon et La Chapelle structurent la commune avec des ambiances complémentaires : centre pratique - cœur patrimonial - secteur résidentiel et équipements",
-    "**Un patrimoine fort autour du Château de Bouthéon** : Le château - son parc animalier et botanique - son aquarium sur la Loire et ses espaces culturels constituent un repère majeur de la commune",
-    "**Un marché immobilier accessible et varié** : Entre maisons familiales - appartements - biens récents - secteurs résidentiels et zones plus connectées - Andrézieux-Bouthéon offre une alternative accessible aux communes plus chères de l’Ouest lyonnais et de la métropole stéphanoise"
+    {
+      "titre": "Une ville carrefour entre Saint-Étienne et la Plaine du Forez",
+      "description": "Andrézieux-Bouthéon bénéficie d’un emplacement stratégique avec accès à l’A72 - gare SNCF - aéroport de Saint-Étienne Loire et proximité rapide avec Saint-Étienne"
+    },
+    {
+      "titre": "Un pôle économique et commercial majeur",
+      "description": "La commune accueille un tissu économique dense avec de nombreuses entreprises - zones d’activités et une offre commerciale importante autour des centres-bourgs et des pôles périphériques"
+    },
+    {
+      "titre": "Trois centralités historiques",
+      "description": "Andrézieux - Bouthéon et La Chapelle structurent la commune avec des ambiances complémentaires : centre pratique - cœur patrimonial - secteur résidentiel et équipements"
+    },
+    {
+      "titre": "Un patrimoine fort autour du Château de Bouthéon",
+      "description": "Le château - son parc animalier et botanique - son aquarium sur la Loire et ses espaces culturels constituent un repère majeur de la commune"
+    },
+    {
+      "titre": "Un marché immobilier accessible et varié",
+      "description": "Entre maisons familiales - appartements - biens récents - secteurs résidentiels et zones plus connectées - Andrézieux-Bouthéon offre une alternative accessible aux communes plus chères de l’Ouest lyonnais et de la métropole stéphanoise"
+    }
   ],
   "population": 10425,
   "intercommunalite": "Saint-Étienne Métropole",

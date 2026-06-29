@@ -27,10 +27,22 @@
   "nom": "Champagne-au-Mont-d'Or",
   "cp": "69410",
   "ce_qui_differencie": [
-    "**Une commune à taille humaine dans les Monts d’Or** : Champagne-au-Mont-d’Or offre un cadre résidentiel recherché avec une vraie vie de village - des commerces de proximité et une ambiance familiale",
-    "**Un centre village vivant et pratique** : Marché - mairie - commerces - services du quotidien : la commune conserve une centralité agréable et facile à vivre",
-    "**Une connexion efficace avec Lyon** : Lignes de bus TCL - proximité de Vaise - accès rapide aux grands axes : Champagne-au-Mont-d’Or reste très pratique pour les actifs et les familles",
-    "**Un atout scolaire rare dans les Monts d’Or** : La commune dispose d’un collège public sur son territoire - un vrai point fort pour les familles du secteur"
+    {
+      "titre": "Une commune à taille humaine dans les Monts d’Or",
+      "description": "Champagne-au-Mont-d’Or offre un cadre résidentiel recherché avec une vraie vie de village - des commerces de proximité et une ambiance familiale"
+    },
+    {
+      "titre": "Un centre village vivant et pratique",
+      "description": "Marché - mairie - commerces - services du quotidien : la commune conserve une centralité agréable et facile à vivre"
+    },
+    {
+      "titre": "Une connexion efficace avec Lyon",
+      "description": "Lignes de bus TCL - proximité de Vaise - accès rapide aux grands axes : Champagne-au-Mont-d’Or reste très pratique pour les actifs et les familles"
+    },
+    {
+      "titre": "Un atout scolaire rare dans les Monts d’Or",
+      "description": "La commune dispose d’un collège public sur son territoire - un vrai point fort pour les familles du secteur"
+    }
   ],
   "population": 6311,
   "intercommunalite": "Métropole de Lyon",
