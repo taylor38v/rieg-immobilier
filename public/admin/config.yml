@@ -45,25 +45,6 @@ collections:
       - { name: "publie", label: "Publié sur le site", widget: "boolean", default: true }
       - { name: "body", label: "Contenu de l'article", widget: "markdown" }
 
-  - name: "temoignages"
-    label: "⭐ Témoignages clients"
-    label_singular: "Témoignage"
-    folder: "content/temoignages"
-    create: true
-    slug: "{{slug}}"
-    extension: "md"
-    format: "frontmatter"
-    summary: "{{nom}} · {{ville}} · {{note}}/5"
-    sortable_fields: [date, note]
-    fields:
-      - { name: "nom", label: "Nom du client (initiales possible)", widget: "string" }
-      - { name: "ville", label: "Ville", widget: "string" }
-      - { name: "contexte", label: "Contexte (Vendeur, Acheteur, type de bien…)", widget: "string" }
-      - { name: "note", label: "Note sur 5", widget: "number", min: 1, max: 5, default: 5 }
-      - { name: "date", label: "Date", widget: "datetime", picker_utc: false, format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false }
-      - { name: "publie", label: "Publié sur le site", widget: "boolean", default: true }
-      - { name: "body", label: "Témoignage", widget: "text" }
-
   - name: "pages"
     label: "📄 Pages libres"
     label_singular: "Page"
