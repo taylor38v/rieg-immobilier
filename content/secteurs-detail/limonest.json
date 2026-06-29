@@ -29,6 +29,7 @@
       "precision": "Selon l’adresse, la sectorisation et l’orientation choisie, les élèves peuvent se tourner vers les lycées publics de proximité, notamment sur Lyon 5e, Lyon 9e ou Dardilly."
     }
   ],
+  "intro": "Village de caractère dans les Monts d’Or, Limonest séduit par son patrimoine en pierres dorées, ses vues, son environnement naturel et sa proximité avec les grands pôles économiques de l’Ouest lyonnais. Une commune recherchée par les familles, les actifs et les acquéreurs en quête d’un cadre de vie résidentiel, vert et bien connecté à Lyon.",
   "nom": "Limonest",
   "cp": "69760",
   "ce_qui_differencie": [
@@ -197,6 +198,5 @@
       "description": "Secteur plus connecté et plus fonctionnel, proche des axes, des commerces et des pôles économiques. Le marché y est plus hétérogène, entre appartements, résidences, biens récents et maisons selon les rues.",
       "prix_indicatif": "4 300 - 5 300 €/m²"
     }
-  ],
-  "intro": "Village de caractère niché sur les hauteurs, Limonest conserve un patrimoine bâti en pierres dorées remarquable, recherché par une clientèle familiale et internationale."
+  ]
 }
