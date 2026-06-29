@@ -24,6 +24,7 @@
       "precision": "Établissements publics du secteur - situés à Lyon 9e selon la sectorisation et l’orientation choisie."
     }
   ],
+  "intro": "Commune résidentielle emblématique dans les Monts d’Or, Saint-Didier-au-Mont-d’Or séduit par son cadre de vie, ses écoles reconnues, son esprit village et sa proximité immédiate avec Lyon. Un marché recherché et exigeant, où les maisons familiales, les belles propriétés et les biens bien situés restent particulièrement convoités.",
   "nom": "Saint-Didier-au-Mont-d'Or",
   "cp": "69370",
   "ce_qui_differencie": [
@@ -184,6 +185,5 @@
       "prix_indicatif": "5 300 - 6 500 €/m²",
       "nom": "Rocade - Pasteur - République"
     }
-  ],
-  "intro": "Commune résidentielle par excellence du Mont d'Or, Saint-Didier conjugue qualité de vie, écoles de référence et accès rapide à Lyon. Un marché tendu, où l'offre de maisons familiales reste rare et très recherchée."
+  ]
 }
