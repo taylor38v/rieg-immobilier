@@ -28,11 +28,11 @@
   "secteur_principal": "Les Monts d'Or - Ouest lyonnais - Plaine du Forez",
   "cta": {
     "titre": "Une question, un projet ?",
-    "intro": "Romain répond personnellement sous 24h. Aucune sollicitation commerciale, aucune liste de prospection."
+    "intro": "Je réponds personnellement sous 24h. Aucune sollicitation commerciale, aucune liste de prospection."
   },
   "whatsapp_widget": {
     "statut_en_ligne": "En ligne",
-    "cta_sms_label": "Envoyer un SMS direct",
+    "cta_sms_label": "Envoyer un Sms direct",
     "cta_contact_label": "Contactez-moi (formulaire)",
     "reponse_label": "Réponse moyenne :",
     "reponse_valeur": "5 minutes",
@@ -68,13 +68,13 @@
     "lien_vendre": "Vendre",
     "newsletter_texte": "Pas de spam - uniquement les actualités du marché immobilier de l'Ouest lyonnais et de la Plaine du Forez, et mes derniers contenus.",
     "limitrophes_label": "Limitrophes : ",
-    "lien_sms_label": "SMS direct",
+    "lien_sms_label": "Sms direct",
     "lien_avis_de_valeur": "Avis de valeur",
     "col_site_titre": "Le site",
     "lien_confidentialite": "Confidentialité",
     "lien_outils": "Outils",
-    "cta_mail_label": "Mail",
-    "cta_sms_label": "SMS direct"
+    "cta_mail_label": "Email",
+    "cta_sms_label": "Sms direct"
   },
   "email": "romain.rieg@iadfrance.fr",
   "linkedin": "https://www.linkedin.com/in/romain-rieg-17107/"
