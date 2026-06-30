@@ -1,7 +1,6 @@
 {
-  "meta_title": "Conseiller immobilier iad à Andrézieux-Bouthéon",
-  "meta_description": "Avis de valeur, vente et achat à Andrézieux-Bouthéon avec Romain Rieg, conseiller iad. Pôle économique majeur de la Plaine du Forez, à 14 km de Saint-Étienne.",
   "superficie": 16,
+  "meta_description": "Avis de valeur, vente et achat à Andrézieux-Bouthéon avec Romain Rieg, conseiller iad. Pôle économique majeur de la Plaine du Forez, à 14 km de Saint-Étienne.",
   "altitude": "353 - 435 m",
   "instagram_url": "https://www.instagram.com/romainrieg.immo/",
   "ecoles": [
@@ -156,7 +155,7 @@
     },
     {
       "nom": "La Conciergerie Andrézieux",
-      "cuisine": "Adresse située ZAC des Murons, avec restaurant, bar à vin, terrasse et ambiance lounge. · 427★",
+      "cuisine": "Adresse située ZAC des Murons, avec restaurant, bar à vin, terrasse et ambiance lounge. · 4.2★",
       "gamme": "Bistrot"
     }
   ],
@@ -200,5 +199,6 @@
       "prix_indicatif": "2 200 - 3 000 €/m²",
       "description": "Secteurs plus diffus, appréciés pour les accès aux espaces extérieurs, la proximité de la Loire et certaines adresses plus calmes. Les maisons avec terrain ou environnement préservé peuvent se valoriser davantage."
     }
-  ]
+  ],
+  "meta_title": "Conseiller immobilier iad à Andrézieux-Bouthéon"
 }
