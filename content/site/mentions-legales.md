@@ -25,7 +25,7 @@ Netlify, Inc. - 44 Montgomery Street, Suite 300, San Francisco, CA 94104, USA. [
 
 ## Sources & informations chiffrées
 
-Les chiffres mentionnés concernant iad France (60 000 ventes en 2025, 16 000 conseillers, jusqu'à 85% de rémunération) sont issus des communications officielles iad France 2024-2025. Le classement « n°1 de la transaction en 2024 » est établi par comparaison des chiffres déclarés par les principaux réseaux immobiliers nationaux en 2024.
+Les chiffres mentionnés concernant iad France (63 000 ventes en 2025, 16 000 conseillers, jusqu'à 85% de rémunération) sont issus des communications officielles iad France 2024-2025. Le classement « n°1 de la transaction en 2025 » est établi par comparaison des chiffres déclarés par les principaux réseaux immobiliers nationaux en 2025.
 
 Les prix au m², délais de vente et données de marché présentés sur ce site sont indicatifs, issus de l'analyse des transactions DVF (Demandes de Valeurs Foncières publiées par la DGFiP) et de l'expérience terrain de l'éditeur. Ils ne constituent pas une estimation engageante.
 
