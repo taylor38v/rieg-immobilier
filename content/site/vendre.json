@@ -28,10 +28,10 @@
   },
   "cta_final": {
     "titre": "Prêt(e) à connaître la valeur de votre bien ?",
-    "intro": "Avis de valeur gratuit sous 24 à 48h, sans engagement.",
+    "intro": "Avis de valeur Offert sous 24 à 48h, sans engagement.",
     "cta_primary_label": "Demander mon avis de valeur",
     "cta_primary_href": "/avis-de-valeur",
-    "cta_whatsapp_label": "💬 SMS",
+    "cta_whatsapp_label": "💬 Sms",
     "cta_whatsapp_url": "sms:+33679571473"
   },
   "etapes": {
@@ -133,7 +133,7 @@
     "cta_secondary_url": "sms:+33679571473?body=Bonjour%20Romain%2C%20je%20souhaite%20vendre%20mon%20bien.",
     "cta_primary_href": "/avis-de-valeur",
     "intro_complement": "Je suis Romain Rieg, conseiller immobilier iad. J’accompagne mes clients dans l’Ouest lyonnais et la Plaine du Forez avec **une approche claire, réactive et personnalisée, pour vendre dans les meilleures conditions.**",
-    "cta_secondary_label": "💬 SMS",
+    "cta_secondary_label": "💬 Sms",
     "video": "/videos/secteurs/saint-didier.mp4"
   },
   "meta_title": "Vendre votre bien"
