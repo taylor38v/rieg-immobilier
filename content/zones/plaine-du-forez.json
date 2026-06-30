@@ -1,5 +1,6 @@
 {
   "hero_cta_label": "Me contacter",
+  "meta_description": "Vendez votre bien dans la Plaine du Forez avec Romain Rieg, conseiller immobilier iad. Saint-Just-Saint-Rambert, Andrézieux-Bouthéon : avis de valeur offert sous 24-48h.",
   "process_titre": "Quatre étapes claires.",
   "cta_titre": "Et si on commençait par un avis de valeur ?",
   "positionnement_surtitre": "Mon positionnement",
@@ -32,15 +33,14 @@
     }
   ],
   "intro": [
-    "Vous souhaitez vendre, acheter, louer ou investir à Saint-Just-Saint-Rambert, Andrézieux-Bouthéon ou dans les communes alentours ? Originaire de la Loire, j’ai vécu à Saint-Just-Saint-Rambert et à Andrézieux-Bouthéon pendant près de 20 ans, ce qui me permet de vous accompagner avec **une vraie connaissance du territoire, de ses communes et de son marché immobilier.**\n\n",
-    "Je suis Romain Rieg, conseiller immobilier indépendant au sein du réseau iad France. **Estimation, stratégie de vente, recherche acquéreur, investissement ou mise en location** : je vous accompagne avec méthode, visibilité et sécurité, en m’appuyant sur une approche locale, précise et réaliste ainsi que sur des outils de diffusion performants."
+    "Vous souhaitez vendre, acheter, louer ou investir à Saint-Just-Saint-Rambert, Andrézieux-Bouthéon ou dans les communes alentours ? \n\n",
+    "Originaire de la Loire, j’ai vécu à Saint-Just-Saint-Rambert et à Andrézieux-Bouthéon pendant près de 20 ans, ce qui me permet de vous accompagner avec **une vraie connaissance du territoire, de ses communes et de son marché immobilier.**"
   ],
   "communes_principales": [
     "Saint-Just-Saint-Rambert",
     "Andrézieux-Bouthéon"
   ],
   "titre_seo": "Vendre dans la Plaine du Forez",
-  "meta_description": "Vendez votre bien dans la Plaine du Forez avec Romain Rieg, conseiller immobilier iad. Saint-Just-Saint-Rambert, Andrézieux-Bouthéon : avis de valeur offert sous 24-48h.",
   "positionnement_titre": "Saint-Just-Saint-Rambert & Andrézieux-Bouthéon : mon territoire d'enfance.",
   "process_surtitre": "Le processus",
   "communes_limitrophes": [
@@ -77,7 +77,7 @@
     },
     {
       "titre": "Réactivité & suivi",
-      "desc": "Avis de valeur sous 24 à 48 h, échanges réguliers, disponibilité et suivi personnalisé : vous avancez avec un interlocuteur impliqué à chaque étape de votre projet."
+      "desc": "Avis de valeur sous 24 à 48h, échanges réguliers, disponibilité et suivi personnalisé : vous avancez avec un interlocuteur impliqué à chaque étape de votre projet."
     },
     {
       "titre": "Force du réseau iad",
@@ -85,7 +85,7 @@
     }
   ],
   "carte_titre": "Survolez la carte pour explorer.",
-  "intro_complement": "",
+  "intro_complement": "Je suis Romain Rieg, conseiller immobilier indépendant au sein du réseau iad France. **Estimation, stratégie de vente, recherche acquéreur, investissement ou mise en location** : je vous accompagne avec méthode, visibilité et sécurité, en m’appuyant sur une approche locale, précise et réaliste ainsi que sur des outils de diffusion performants.",
   "video": "/videos/secteurs/saint-just.mp4",
   "image": "/photos/IMG_7295.jpeg",
   "carte_surtitre": "Les communes",
