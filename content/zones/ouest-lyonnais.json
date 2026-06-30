@@ -1,5 +1,6 @@
 {
   "hero_cta_label": "Me contacter",
+  "meta_description": "Vendez votre bien dans l'Ouest lyonnais avec Romain Rieg, conseiller immobilier iad. Avis de valeur offert sous 24-48h, expertise des Mont d'Or, accompagnement complet.",
   "process_titre": "Quatre étapes claires.",
   "cta_titre": "Et si on commençait par un avis de valeur ? ",
   "positionnement_surtitre": "Mon positionnement",
@@ -33,7 +34,7 @@
   ],
   "intro": [
     "L’Ouest lyonnais est un secteur immobilier recherché, avec des marchés très différents d’une commune à l’autre. Entre les Monts d’Or, les communes résidentielles proches de Lyon et les villages familiaux, **chaque projet demande une vraie connaissance du terrain.** Vous souhaitez vendre, acheter, investir ou mettre votre bien en location dans l’Ouest lyonnais ou ses environs ?",
-    "Je mets mon expertise locale, ma réactivité et mon accompagnement personnalisé à votre service pour vous aider à prendre les bonnes décisions à chaque étape de votre projet.\n\n**Mon objectif : vous accompagner avec transparence, méthode et engagement**, que ce soit pour vendre dans les meilleures conditions, acheter en toute sécurité, investir intelligemment ou trouver un locataire sérieux pour votre bien."
+    "Je mets mon expertise locale, ma réactivité et mon accompagnement personnalisé à votre service pour vous aider à prendre les bonnes décisions à chaque étape de votre projet.\n\n"
   ],
   "communes_principales": [
     "Saint-Didier-au-Mont-d'Or",
@@ -44,7 +45,6 @@
     "Champagne-au-Mont-d'Or"
   ],
   "titre_seo": "Vendre dans l'Ouest lyonnais",
-  "meta_description": "Vendez votre bien dans l'Ouest lyonnais avec Romain Rieg, conseiller immobilier iad. Avis de valeur offert sous 24-48h, expertise du Mont d'Or, accompagnement complet.",
   "positionnement_titre": "Mon cœur d'activité - un marché tendu, exigeant, que je couvre au quotidien.",
   "process_surtitre": "Le processus",
   "communes_limitrophes": [
@@ -90,7 +90,7 @@
     }
   ],
   "carte_titre": "Survolez la carte pour explorer.",
-  "intro_complement": "",
+  "intro_complement": "**Mon objectif : vous accompagner avec transparence, méthode et engagement**, que ce soit pour vendre dans les meilleures conditions, acheter en toute sécurité, investir intelligemment ou trouver un locataire sérieux pour votre bien.",
   "video": "/videos/secteurs/limonest.mp4",
   "image": "/photos/IMG_7282.jpeg",
   "carte_surtitre": "Les communes",
