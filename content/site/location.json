@@ -12,7 +12,7 @@
   },
   "cta_contact": {
     "titre": "Je réponds directement.",
-    "intro": "SMS, mail ou téléphone - une réponse personnelle sous 24 h."
+    "intro": "Sms, email ou téléphone - une réponse personnelle sous 24h."
   },
   "romain_card": {
     "titre": "Vos revenus locatifs, sécurisés.",
@@ -67,7 +67,7 @@
     "cta_secondary_url": "sms:+33679571473?body=Bonjour%20Romain%2C%20je%20souhaite%20mettre%20mon%20bien%20en%20location.",
     "cta_primary_href": "/contact",
     "intro_complement": "Mon objectif : **vous faire gagner du temps, sécuriser votre mise en location** et vous accompagner avec une approche claire, rigoureuse et personnalisée.",
-    "cta_secondary_label": "💬 SMS",
+    "cta_secondary_label": "💬 Sms",
     "video": "/videos/secteurs/champagne.mp4"
   },
   "services": {
