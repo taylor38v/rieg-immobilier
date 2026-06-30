@@ -1,5 +1,5 @@
 {
-  "meta_description": "Mise en location et gestion locative sécurisées sur le Mont d'Or, l'Ouest lyonnais et la Plaine du Forez. Locataires sélectionnés, revenus sécurisés, zéro vacance grâce au réseau iad.",
+  "meta_description": "Mise en location et gestion locative sécurisées sur les Mont d'Or, l'Ouest lyonnais et la Plaine du Forez. Locataires sélectionnés, revenus sécurisés, zéro vacance grâce au réseau iad.",
   "cta_final": {
     "locataires_surtitre": "Pour les locataires aussi",
     "locataires_titre": "Vous cherchez à louer ?",
@@ -72,7 +72,7 @@
   },
   "services": {
     "surtitre": "Mes services pour la location",
-    "titre": "Quatre piliers, zéro corvée.",
+    "titre": "Quatre piliers pour une location sereine.",
     "items": [
       {
         "titre": "Recherche de locataires qualifiés",
