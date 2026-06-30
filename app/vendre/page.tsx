@@ -35,8 +35,8 @@ export default function Page() {
       </section>
 
       <section className="max-w-5xl mx-auto px-6 py-24">
-        <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{v.pourquoi_moi.surtitre}</div>
-        <h2 className="font-serif text-3xl md:text-4xl mt-3">{v.pourquoi_moi.titre}</h2>
+        <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium" dangerouslySetInnerHTML={{ __html: inline(v.pourquoi_moi.surtitre) }} />
+        <h2 className="font-serif text-3xl md:text-4xl mt-3" dangerouslySetInnerHTML={{ __html: inline(v.pourquoi_moi.titre) }} />
 
         <div className="mt-14 space-y-4">
           {v.pourquoi_moi.items.map((it, i) => (
@@ -44,15 +44,12 @@ export default function Page() {
               key={it.titre}
               className="group relative rounded-2xl bg-white border border-ink/10 hover:border-gold transition-all duration-300 p-6 md:p-8 hover:shadow-xl hover:shadow-gold/10 flex flex-col md:flex-row gap-6 items-start"
             >
-              <div className="shrink-0 flex md:flex-col items-center md:items-start gap-3">
-                <div className="w-12 h-12 md:w-14 md:h-14 rounded-xl bg-gradient-to-br from-gold to-gold-soft text-navy font-serif text-xl md:text-2xl font-bold grid place-items-center shadow-lg group-hover:scale-105 transition">
-                  {String(i + 1).padStart(2, "0")}
-                </div>
-                <div className="hidden md:block w-px h-10 bg-gold/30 ml-7" />
+              <div className="shrink-0 w-14 h-14 rounded-full bg-gradient-to-br from-gold to-gold-soft text-navy font-serif text-2xl font-bold grid place-items-center shadow-lg group-hover:scale-110 transition">
+                {String(i + 1).padStart(2, "0")}
               </div>
               <div className="flex-1">
-                <div className="font-serif text-2xl md:text-3xl text-navy font-semibold group-hover:text-gold transition">{it.titre}</div>
-                <p className="text-muted mt-3 leading-relaxed">{it.desc}</p>
+                <div className="font-serif text-2xl md:text-3xl text-navy font-semibold group-hover:text-gold transition" dangerouslySetInnerHTML={{ __html: inline(it.titre) }} />
+                <p className="text-muted mt-3 leading-relaxed" dangerouslySetInnerHTML={{ __html: inline(it.desc) }} />
               </div>
             </div>
           ))}
@@ -70,7 +67,7 @@ export default function Page() {
               <div className="absolute top-0 left-8 z-20 px-5 py-1.5 bg-gold text-navy text-xs uppercase tracking-widest font-bold rounded-full shadow-lg">
                 {v.comparatif.badge}
               </div>
-              <div className="relative rounded-xl bg-gradient-to-br from-gold/30 via-gold/10 to-gold/5 border-2 border-gold p-8 pt-10 shadow-2xl shadow-gold/40 ring-4 ring-gold/20 overflow-hidden">
+              <div className="shine-hover relative rounded-xl bg-gradient-to-br from-gold/30 via-gold/10 to-gold/5 border-2 border-gold p-8 pt-10 shadow-2xl shadow-gold/40 ring-4 ring-gold/20 overflow-hidden">
                 <div className="absolute -top-20 -right-20 w-64 h-64 bg-gold/30 rounded-full blur-3xl pointer-events-none" />
                 <div className="absolute -bottom-20 -left-20 w-64 h-64 bg-gold/20 rounded-full blur-3xl pointer-events-none" />
                 <div className="relative">
@@ -88,7 +85,7 @@ export default function Page() {
             </div>
 
             {/* Colonne "Sans accompagnement" - en retrait */}
-            <div className="rounded-xl bg-navy-soft/50 border border-ivory/10 p-8">
+            <div className="shine-hover rounded-xl bg-navy-soft/50 border border-ivory/10 p-8 overflow-hidden">
               <div className="font-serif text-2xl md:text-3xl text-ivory/60 mt-4">{v.comparatif.label_sans}</div>
               <ul className="mt-6 space-y-4">
                 {v.comparatif.items.map((row, i) => (
@@ -101,22 +98,20 @@ export default function Page() {
             </div>
           </div>
 
-          <p className="text-center text-ivory/60 text-sm mt-8 italic">
-            {v.comparatif.note}
-          </p>
+          <p className="text-center text-ivory/70 text-base md:text-lg mt-8 italic max-w-3xl mx-auto leading-relaxed" dangerouslySetInnerHTML={{ __html: inline(v.comparatif.note) }} />
         </div>
       </section>
 
       <section className="max-w-5xl mx-auto px-6 py-24">
-        <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{v.etapes.surtitre}</div>
-        <h2 className="font-serif text-3xl md:text-4xl mt-3">{v.etapes.titre}</h2>
+        <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium" dangerouslySetInnerHTML={{ __html: inline(v.etapes.surtitre) }} />
+        <h2 className="font-serif text-3xl md:text-4xl mt-3" dangerouslySetInnerHTML={{ __html: inline(v.etapes.titre) }} />
         <div className="mt-16 grid md:grid-cols-2 gap-6">
           {v.etapes.items.map((e) => (
             <div key={e.num} className="rounded-xl shine-hover bg-white border border-ink/10 p-7 grid grid-cols-[auto_1fr] gap-6">
               <div className="font-serif text-5xl text-gold leading-none">{e.num}</div>
               <div>
-                <div className="font-serif text-2xl text-navy">{e.titre}</div>
-                <div className="text-muted mt-3 leading-relaxed">{e.desc}</div>
+                <div className="font-serif text-2xl text-navy" dangerouslySetInnerHTML={{ __html: inline(e.titre) }} />
+                <div className="text-muted mt-3 leading-relaxed" dangerouslySetInnerHTML={{ __html: inline(e.desc) }} />
               </div>
             </div>
           ))}

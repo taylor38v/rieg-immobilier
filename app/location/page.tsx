@@ -36,8 +36,8 @@ export default function Page() {
       </section>
 
       <section className="max-w-7xl mx-auto px-6 py-24">
-        <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{l.pourquoi.surtitre}</div>
-        <h2 className="font-serif text-3xl md:text-4xl mt-3">{l.pourquoi.titre}</h2>
+        <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium" dangerouslySetInnerHTML={{ __html: inline(l.pourquoi.surtitre) }} />
+        <h2 className="font-serif text-3xl md:text-4xl mt-3" dangerouslySetInnerHTML={{ __html: inline(l.pourquoi.titre) }} />
 
         <div className="grid md:grid-cols-3 gap-5 mt-12">
           {l.pourquoi.items.map((it, i) => (
@@ -48,11 +48,11 @@ export default function Page() {
               <div className="absolute top-0 left-0 right-0 h-1 bg-gold scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500" />
               <div className="absolute -bottom-10 -right-10 w-32 h-32 bg-gold/5 rounded-full blur-3xl group-hover:bg-gold/15 transition" />
               <div className="relative">
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-gold/15 text-gold font-serif text-xl font-bold mb-4">
+                <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-br from-gold to-gold-soft text-navy font-serif text-2xl font-bold shadow-lg group-hover:scale-110 transition mb-4">
                   {String(i + 1).padStart(2, "0")}
                 </div>
-                <div className="font-serif text-xl text-navy font-semibold group-hover:text-gold transition">{it.titre}</div>
-                <p className="text-sm text-muted mt-3 leading-relaxed">{it.desc}</p>
+                <div className="font-serif text-2xl text-navy font-semibold group-hover:text-gold transition" dangerouslySetInnerHTML={{ __html: inline(it.titre) }} />
+                <p className="text-muted mt-3 leading-relaxed" dangerouslySetInnerHTML={{ __html: inline(it.desc) }} />
               </div>
             </div>
           ))}
@@ -61,8 +61,8 @@ export default function Page() {
 
       <section className="bg-ivory-deep py-24">
         <div className="max-w-5xl mx-auto px-6">
-          <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{l.services.surtitre}</div>
-          <h2 className="font-serif text-3xl md:text-4xl mt-3">{l.services.titre}</h2>
+          <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium" dangerouslySetInnerHTML={{ __html: inline(l.services.surtitre) }} />
+          <h2 className="font-serif text-3xl md:text-4xl mt-3" dangerouslySetInnerHTML={{ __html: inline(l.services.titre) }} />
 
           <div className="mt-14 space-y-4">
             {l.services.items.map((s, i) => (
@@ -70,15 +70,12 @@ export default function Page() {
                 key={s.titre}
                 className="group relative rounded-2xl bg-white border border-ink/10 hover:border-gold transition-all duration-300 p-6 md:p-8 hover:shadow-xl hover:shadow-gold/10 flex flex-col md:flex-row gap-6 items-start"
               >
-                <div className="shrink-0 flex md:flex-col items-center md:items-start gap-3">
-                  <div className="w-12 h-12 md:w-14 md:h-14 rounded-xl bg-gradient-to-br from-gold to-gold-soft text-navy font-serif text-xl md:text-2xl font-bold grid place-items-center shadow-lg group-hover:scale-105 transition">
-                    {String(i + 1).padStart(2, "0")}
-                  </div>
-                  <div className="hidden md:block w-px h-10 bg-gold/30 ml-7" />
+                <div className="shrink-0 w-14 h-14 rounded-full bg-gradient-to-br from-gold to-gold-soft text-navy font-serif text-2xl font-bold grid place-items-center shadow-lg group-hover:scale-110 transition">
+                  {String(i + 1).padStart(2, "0")}
                 </div>
                 <div className="flex-1">
-                  <div className="font-serif text-xl text-navy font-semibold group-hover:text-gold transition">{s.titre}</div>
-                  <p className="text-muted mt-3 leading-relaxed">{s.desc}</p>
+                  <div className="font-serif text-2xl text-navy font-semibold group-hover:text-gold transition" dangerouslySetInnerHTML={{ __html: inline(s.titre) }} />
+                  <p className="text-muted mt-3 leading-relaxed" dangerouslySetInnerHTML={{ __html: inline(s.desc) }} />
                 </div>
               </div>
             ))}

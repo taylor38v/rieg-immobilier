@@ -44,8 +44,8 @@ export default function Page() {
       </section>
 
       <section className="max-w-7xl mx-auto px-6 py-24">
-        <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{av.forces.surtitre}</div>
-        <h2 className="font-serif text-3xl md:text-4xl mt-3">{av.forces.titre}</h2>
+        <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium" dangerouslySetInnerHTML={{ __html: inline(av.forces.surtitre) }} />
+        <h2 className="font-serif text-3xl md:text-4xl mt-3" dangerouslySetInnerHTML={{ __html: inline(av.forces.titre) }} />
         <div className="grid md:grid-cols-3 gap-6 mt-12">
           {av.forces.items.map((it, i) => (
             <div
@@ -54,11 +54,11 @@ export default function Page() {
             >
               <div className="absolute -top-10 -right-10 w-32 h-32 bg-gold/5 rounded-full blur-3xl group-hover:bg-gold/20 transition" />
               <div className="relative">
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-gold to-gold-soft text-navy font-serif text-xl font-bold shadow-lg">
+                <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-br from-gold to-gold-soft text-navy font-serif text-2xl font-bold shadow-lg group-hover:scale-110 transition">
                   0{i + 1}
                 </div>
-                <div className="font-serif text-2xl text-navy mt-4 font-semibold group-hover:text-gold transition">{it.titre}</div>
-                <p className="text-sm text-muted mt-3 leading-relaxed">{it.desc}</p>
+                <div className="font-serif text-2xl text-navy mt-4 font-semibold group-hover:text-gold transition" dangerouslySetInnerHTML={{ __html: inline(it.titre) }} />
+                <p className="text-sm text-muted mt-3 leading-relaxed" dangerouslySetInnerHTML={{ __html: inline(it.desc) }} />
               </div>
             </div>
           ))}
@@ -67,8 +67,8 @@ export default function Page() {
 
       <section className="bg-navy text-ivory py-24">
         <div className="max-w-5xl mx-auto px-6">
-          <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{av.etapes.surtitre}</div>
-          <h2 className="font-serif text-3xl md:text-4xl mt-3">{av.etapes.titre}</h2>
+          <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium" dangerouslySetInnerHTML={{ __html: inline(av.etapes.surtitre) }} />
+          <h2 className="font-serif text-3xl md:text-4xl mt-3" dangerouslySetInnerHTML={{ __html: inline(av.etapes.titre) }} />
 
           <div className="mt-16 relative">
             <div className="absolute left-7 top-8 bottom-8 w-px bg-gradient-to-b from-gold via-gold/30 to-gold/0 hidden md:block" />
@@ -83,8 +83,8 @@ export default function Page() {
                       {e.num}
                     </div>
                     <div>
-                      <div className="font-serif text-2xl group-hover:text-gold transition">{e.titre}</div>
-                      <div className="text-ivory/75 mt-3 leading-relaxed">{e.desc}</div>
+                      <div className="font-serif text-2xl group-hover:text-gold transition" dangerouslySetInnerHTML={{ __html: inline(e.titre) }} />
+                      <div className="text-ivory/75 mt-3 leading-relaxed" dangerouslySetInnerHTML={{ __html: inline(e.desc) }} />
                     </div>
                   </div>
                   {i < av.etapes.items.length - 1 && (

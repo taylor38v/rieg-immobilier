@@ -1,9 +1,11 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { marked } from "marked";
 import ContactCTA from "../components/ContactCTA";
 import { site } from "../lib/_generated/site";
 
 const ol = site["outils-landing"];
+const inline = (s: string) => marked.parseInline(s) as string;
 
 export const metadata: Metadata = {
   title: ol.meta_title,
@@ -50,8 +52,8 @@ export default function Page() {
       <div className="max-w-3xl">
         <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{ol.surtitre}</div>
         <h1 className="font-serif text-3xl md:text-4xl mt-3">{ol.titre}</h1>
-        <p className="text-muted mt-6 leading-relaxed">{ol.intro}</p>
-        {ol.intro_complement && <p className="text-muted mt-4 leading-relaxed">{ol.intro_complement}</p>}
+        <p className="text-muted mt-6 leading-relaxed" dangerouslySetInnerHTML={{ __html: inline(ol.intro) }} />
+        {ol.intro_complement && <p className="text-muted mt-4 leading-relaxed" dangerouslySetInnerHTML={{ __html: inline(ol.intro_complement) }} />}
         <p className="text-xs text-muted mt-4 italic">{ol.disclaimer}</p>
       </div>
 

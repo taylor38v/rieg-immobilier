@@ -193,8 +193,8 @@ export default async function Page(props: PageProps<"/vendre/[zone]">) {
               <div className="absolute -top-10 -right-10 w-32 h-32 bg-gold/5 rounded-full blur-3xl group-hover:bg-gold/20 transition" />
               <div className="relative">
                 <div className="inline-flex w-12 h-12 rounded-full bg-gradient-to-br from-gold to-gold-soft text-navy items-center justify-center font-serif text-xl font-bold shadow-lg">0{i + 1}</div>
-                <div className="font-serif text-xl text-navy mt-4 font-semibold group-hover:text-gold transition">{a.titre}</div>
-                <p className="text-sm text-muted mt-3 leading-relaxed">{a.desc}</p>
+                <div className="font-serif text-xl text-navy mt-4 font-semibold group-hover:text-gold transition" dangerouslySetInnerHTML={{ __html: inline(a.titre) }} />
+                <p className="text-sm text-muted mt-3 leading-relaxed" dangerouslySetInnerHTML={{ __html: inline(a.desc) }} />
               </div>
             </div>
           ))}
@@ -219,8 +219,8 @@ export default async function Page(props: PageProps<"/vendre/[zone]">) {
                       {e.num}
                     </div>
                     <div>
-                      <div className="font-serif text-2xl group-hover:text-gold transition">{e.titre}</div>
-                      <div className="text-ivory/75 mt-3 leading-relaxed">{e.desc}</div>
+                      <div className="font-serif text-2xl group-hover:text-gold transition" dangerouslySetInnerHTML={{ __html: inline(e.titre) }} />
+                      <div className="text-ivory/75 mt-3 leading-relaxed" dangerouslySetInnerHTML={{ __html: inline(e.desc) }} />
                     </div>
                   </div>
                   {i < etapesData.length - 1 && (
@@ -238,8 +238,8 @@ export default async function Page(props: PageProps<"/vendre/[zone]">) {
           <div className="grid lg:grid-cols-[1.2fr_2fr] gap-12">
             <div>
               <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{pos.surtitre}</div>
-              <h2 className="font-serif text-4xl md:text-5xl mt-3 leading-tight">{pos.titre}</h2>
-              <p className="text-muted mt-5 leading-relaxed">{pos.texte}</p>
+              <h2 className="font-serif text-4xl md:text-5xl mt-3 leading-tight" dangerouslySetInnerHTML={{ __html: inline(pos.titre) }} />
+              <p className="text-muted mt-5 leading-relaxed" dangerouslySetInnerHTML={{ __html: inline(pos.texte) }} />
             </div>
             <div>
               <div className="text-sm md:text-base uppercase tracking-[0.25em] text-gold font-semibold mb-4">{pos.principalesLabel}</div>

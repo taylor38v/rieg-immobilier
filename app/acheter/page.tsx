@@ -35,8 +35,8 @@ export default function Page() {
       </section>
 
       <section className="max-w-7xl mx-auto px-6 py-24">
-        <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{a.piliers.surtitre}</div>
-        <h2 className="font-serif text-3xl md:text-4xl mt-3">{a.piliers.titre}</h2>
+        <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium" dangerouslySetInnerHTML={{ __html: inline(a.piliers.surtitre) }} />
+        <h2 className="font-serif text-3xl md:text-4xl mt-3" dangerouslySetInnerHTML={{ __html: inline(a.piliers.titre) }} />
 
         <div className="grid md:grid-cols-2 gap-5 mt-12">
           {a.piliers.items.map((p, i) => (
@@ -50,8 +50,8 @@ export default function Page() {
                   {String(i + 1).padStart(2, "0")}
                 </div>
                 <div>
-                  <div className="font-serif text-2xl text-navy font-semibold group-hover:text-gold transition">{p.titre}</div>
-                  <p className="text-muted mt-3 leading-relaxed">{p.desc}</p>
+                  <div className="font-serif text-2xl text-navy font-semibold group-hover:text-gold transition" dangerouslySetInnerHTML={{ __html: inline(p.titre) }} />
+                  <p className="text-muted mt-3 leading-relaxed" dangerouslySetInnerHTML={{ __html: inline(p.desc) }} />
                 </div>
               </div>
             </div>
@@ -61,13 +61,13 @@ export default function Page() {
 
       <section className="bg-ivory-deep py-24">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">{a.services.surtitre}</div>
-          <h2 className="font-serif text-3xl md:text-4xl mt-3">{a.services.titre}</h2>
+          <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium" dangerouslySetInnerHTML={{ __html: inline(a.services.surtitre) }} />
+          <h2 className="font-serif text-3xl md:text-4xl mt-3" dangerouslySetInnerHTML={{ __html: inline(a.services.titre) }} />
           <div className="grid md:grid-cols-2 gap-6 mt-12">
             {a.services.items.map((s) => (
               <div key={s.titre} className="shine-hover rounded-xl p-7 bg-white border border-ink/10">
-                <div className="font-serif text-2xl text-navy font-semibold">{s.titre}</div>
-                <p className="text-muted mt-3 leading-relaxed">{s.desc}</p>
+                <div className="font-serif text-2xl text-navy font-semibold" dangerouslySetInnerHTML={{ __html: inline(s.titre) }} />
+                <p className="text-muted mt-3 leading-relaxed" dangerouslySetInnerHTML={{ __html: inline(s.desc) }} />
               </div>
             ))}
           </div>

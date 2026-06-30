@@ -26,8 +26,8 @@ export default function Home() {
         <div className="relative max-w-7xl mx-auto px-6 py-20 md:py-28 grid lg:grid-cols-[1.1fr_1fr] gap-12 items-center">
           <div className="fade-up">
             <span className="chip bg-gold/20 text-gold-soft border border-gold/40">{h.hero.chip}</span>
-            <h1 className="font-serif text-4xl md:text-5xl font-medium mt-6 leading-[1.05] whitespace-pre-line">{h.hero.titre}</h1>
-            <p className="text-ivory/80 text-lg md:text-xl mt-8 max-w-2xl leading-relaxed">{h.hero.intro}</p>
+            <h1 className="font-serif text-4xl md:text-5xl font-medium mt-6 leading-[1.05] whitespace-pre-line text-justify">{h.hero.titre}</h1>
+            <p className="text-ivory/80 text-lg md:text-xl mt-8 max-w-2xl leading-relaxed" dangerouslySetInnerHTML={{ __html: inline(h.hero.intro) }} />
             <div className="flex flex-wrap gap-4 mt-10">
               <Link href={h.hero.cta_primary_href} className="px-7 py-4 bg-gold text-navy font-semibold hover:bg-gold-soft rounded-full transition">{h.hero.cta_primary_label}</Link>
               <Link href={h.hero.cta_secondary_href} className="px-7 py-4 border border-ivory/30 hover:bg-ivory/10 transition rounded-full">{h.hero.cta_secondary_label}</Link>
