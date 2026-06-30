@@ -9,7 +9,7 @@
     "titre": "Trouvez votre futur chez-vous.",
     "cta_secondary_url": "sms:+33679571473?body=Bonjour%20Romain%2C%20je%20cherche%20un%20bien.",
     "cta_primary_href": "/contact",
-    "cta_secondary_label": "💬 SMS",
+    "cta_secondary_label": "💬 Sms",
     "presentation": "Je suis Romain Rieg, conseiller immobilier iad basé à Saint-Didier-au-Mont-d'Or. Grâce à ma connaissance terrain des Monts d'Or, de l'Ouest lyonnais et de la Plaine du Forez, je vous accompagne dans votre recherche avec **une approche claire, réactive et personnalisée.**\n",
     "video": "/videos/secteurs/limonest.mp4"
   },
@@ -74,7 +74,7 @@
     "intro": "Un café, 30 minutes, et on dresse ensemble votre cahier des charges.",
     "cta_primary_label": "Démarrer ma recherche",
     "cta_primary_href": "/contact",
-    "cta_whatsapp_label": "💬 SMS",
+    "cta_whatsapp_label": "💬 Sms",
     "cta_whatsapp_url": "sms:+33679571473"
   }
 }
