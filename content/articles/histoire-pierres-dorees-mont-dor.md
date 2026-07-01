@@ -8,7 +8,7 @@ rubrique: Baromètre
 date: 2026-03-10
 duree_lecture: 4
 auteur: Romain Rieg
-image: /photos/IMG_7070.jpeg
+image: /uploads/fevrier-2026.png
 publie: true
 ---
 Après un mois de janvier marqué par le retour de l'offre, février confirme une tendance : le marché se stabilise, sans embellie spectaculaire mais sans accroc majeur non plus.
