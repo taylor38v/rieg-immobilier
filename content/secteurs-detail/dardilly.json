@@ -1,7 +1,6 @@
 {
-  "meta_title": "Conseiller immobilier iad à Dardilly (69570)",
-  "meta_description": "Avis de valeur, vente et achat à Dardilly avec Romain Rieg, conseiller iad. Expertise des quartiers pavillonnaires du Mont d'Or et de l'Ouest lyonnais.",
   "superficie": 13.99,
+  "meta_description": "Avis de valeur, vente et achat à Dardilly avec Romain Rieg, conseiller iad. Expertise des quartiers pavillonnaires du Mont d'Or et de l'Ouest lyonnais.",
   "altitude": "240 - 375 m",
   "instagram_url": "https://www.instagram.com/romainrieg.immo/",
   "ecoles": [
@@ -183,7 +182,7 @@
     "/photos/secteurs/dardilly-5.jpg",
     "/photos/secteurs/dardilly-6.jpg"
   ],
-  "video": "/videos/secteurs/dardilly.mp4",
+  "video": "/uploads/dardilly.mp4",
   "quartiers": [
     {
       "nom": "Le Bourg - Esplanade",
@@ -215,5 +214,6 @@
       "prix_indicatif": "4 500 - 5 500 €/m²",
       "nom": "Bois de Serres - Brochetière"
     }
-  ]
+  ],
+  "meta_title": "Conseiller immobilier iad à Dardilly (69570)"
 }
