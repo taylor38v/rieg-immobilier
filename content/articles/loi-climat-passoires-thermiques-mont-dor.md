@@ -7,7 +7,7 @@ rubrique: Baromètre
 date: 2026-04-03
 duree_lecture: 4
 auteur: Romain Rieg
-image: /photos/IMG_4551.jpeg
+image: /uploads/mars-2026.png
 publie: true
 ---
 Le printemps approche, traditionnellement synonyme de regain d'intérêt pour l'immobilier. Le baromètre Meilleurs Agents de mars invite toutefois à la prudence : ce signal saisonnier habituel ne s'est pas pleinement matérialisé cette année.
