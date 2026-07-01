@@ -1,34 +1,37 @@
 ---
-titre: "Loi Climat : ce qui change pour les propriétaires du Mont d'Or en 2026"
-chapo: "Interdiction de location, décote à la vente, obligation d'audit : le calendrier précis et les solutions concrètes pour anticiper."
-rubrique: "Décryptage"
-date: 2026-02-12
-duree_lecture: 7
-auteur: "Romain Rieg"
-image: "/photos/IMG_4551.jpeg"
+titre: "Baromètre immobilier - Mars 2026 : un marché stable avant le printemps"
+chapo: En mars 2026, le marché immobilier reste prudent malgré l’arrivée du
+  printemps. Analyse des tendances Meilleurs Agents et des bons réflexes à
+  adopter avant de vendre.
+rubrique: Baromètre
+date: 2026-04-03
+duree_lecture: 4
+auteur: Romain Rieg
+image: /photos/IMG_4551.jpeg
 publie: true
 ---
+Le printemps approche, traditionnellement synonyme de regain d'intérêt pour l'immobilier. Le baromètre Meilleurs Agents de mars invite toutefois à la prudence : ce signal saisonnier habituel ne s'est pas pleinement matérialisé cette année.
 
-Depuis le 1er janvier 2025, les logements classés G sont interdits à la location. En 2028, ce sera le tour des F. Et 2034 actera l'interdiction des E. Ces échéances bouleversent en profondeur le marché - y compris sur le Mont d'Or, où l'on sous-estime souvent l'enjeu.
+## Ce que dit Meilleurs Agents
 
-## Combien de biens concernés sur le Mont d'Or ?
+Sur le premier trimestre, le Top 50 des grandes villes accuse un repli de 0,3 %, tandis que Paris reste stable. Entre janvier et mars 2026, la demande recule de 2 %, alors qu'elle progressait en moyenne de 7 % sur la même période les années précédentes.
 
-D'après les données ADEME croisées avec les transactions DVF de notre secteur, environ 18 % du parc immobilier des communes du Mont d'Or et de l'Ouest lyonnais est classé E, F ou G. La proportion grimpe à 27 % pour le bâti antérieur à 1975, particulièrement représenté à Limonest, Saint-Cyr et Dardilly.
+À l'inverse, le marché rural confirme sa solidité avec une hausse de 1,1 % sur le trimestre - porté par des prix plus accessibles et un meilleur pouvoir d'achat immobilier. Certaines métropoles, comme Lyon, affichent par ailleurs des évolutions moins négatives qu'en 2025, signe d'un début de rattrapage plus que d'une réelle reprise.
 
-**18 %** - du parc local en classes E, F ou G
+## Ce que cela signifie dans les Monts d'Or et l'Ouest lyonnais
 
-**−13 %** - décote moyenne d'un bien F vs C équivalent
+Cette tendance nationale doit être lue avec prudence à l'échelle locale. Dans ce baromètre mensuel, Meilleurs Agents ne fournit pas de tendance chiffrée détaillée pour chaque commune des Monts d'Or : elle donne un contexte de marché, mais ne remplace pas une analyse commune par commune.
 
-## Vendeur : trois stratégies possibles
+À Saint-Cyr-au-Mont-d'Or, Collonges-au-Mont-d'Or ou Lyon 9e, il est donc raisonnable de ne pas attendre une accélération automatique de la demande dans les prochaines semaines, et de construire son projet de vente sur des bases solides plutôt que sur l'espoir d'un effet de saison garanti.
 
-- Vendre en l'état avec décote assumée : option pertinente si vous êtes pressé. Comptez −10 à −17 % selon la classe.
-- Réaliser un audit énergétique (obligatoire dès classe E à la vente) et chiffrer les travaux pour rassurer l'acquéreur.
-- Engager les travaux avant mise en marché - passage en C ou B = +10 à +15 % sur le prix de vente, ROI souvent positif sur 24 mois.
+## Mon conseil aux propriétaires vendeurs
 
-## Acquéreur : opportunités à saisir
+Dans un marché qui marque une pause, mieux vaut anticiper que réagir. Faire réaliser ses diagnostics en amont, préparer un dossier complet et clair, et afficher un prix réaliste dès le départ permet d'éviter les semaines perdues.
 
-Les biens F et G sont devenus, paradoxalement, les meilleures opportunités du marché pour qui peut financer les travaux. Avec MaPrimeRénov' (jusqu'à 90 % pour les revenus modestes, 35-50 % en moyenne) et un éco-PTZ jusqu'à 50 000 €, le coût net des travaux peut être maîtrisé. Et la plus-value à la revente, mécaniquement, augmente avec la nouvelle classe.
+Un bien qui reste trop longtemps en ligne sans visite finit par interroger les acheteurs potentiels, même s'il est de qualité - dans les Monts d'Or comme ailleurs, la première impression compte beaucoup.
 
-> Les passoires thermiques d'aujourd'hui sont les actifs valorisés de demain - à condition de bien acheter.
+## Conclusion
 
-Notre outil de DPE express vous donne une estimation immédiate de votre classe et du chiffrage des travaux nécessaires. Pour un audit officiel, je travaille avec deux diagnostiqueurs partenaires sur le Mont d'Or, contactez-moi.
+Le marché n'est pas bloqué, mais il demande davantage de précision. Un bien rare, bien présenté et correctement positionné peut continuer à susciter de l'intérêt.
+
+Avant de vous lancer, un avis de valeur argumenté vous permettra d'aborder le printemps avec une stratégie claire plutôt qu'une simple intuition.
