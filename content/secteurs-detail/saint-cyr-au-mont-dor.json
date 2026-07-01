@@ -1,7 +1,6 @@
 {
-  "meta_title": "Conseiller immobilier iad à Saint-Cyr-au-Mont-d'Or",
-  "meta_description": "Avis de valeur, vente et achat à Saint-Cyr-au-Mont-d'Or avec Romain Rieg, conseiller iad. Expertise des propriétés de prestige du Mont d'Or et de l'Ouest lyonnais.",
   "superficie": 7.29,
+  "meta_description": "Avis de valeur, vente et achat à Saint-Cyr-au-Mont-d'Or avec Romain Rieg, conseiller iad. Expertise des propriétés de prestige du Mont d'Or et de l'Ouest lyonnais.",
   "altitude": "200 - 605 m",
   "instagram_url": "https://www.instagram.com/romainrieg.immo/",
   "ecoles": [
@@ -141,7 +140,7 @@
     "/photos/secteurs/saint-cyr-5.jpg",
     "/photos/secteurs/saint-cyr-6.jpg"
   ],
-  "video": "/videos/secteurs/saint-cyr.mp4",
+  "video": "/uploads/saint-cyr-au-mont-dor.mp4",
   "quartiers": [
     {
       "nom": "Le Bourg - République",
@@ -168,5 +167,6 @@
       "nom": "La Chaux - Baticolière - Nervieux",
       "description": "Un secteur familial et résidentiel, composé de maisons individuelles, de propriétés discrètes et d’adresses calmes. Très apprécié pour son équilibre entre tranquillité, accès aux écoles et proximité des transports."
     }
-  ]
+  ],
+  "meta_title": "Conseiller immobilier iad à Saint-Cyr-au-Mont-d'Or"
 }
