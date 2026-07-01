@@ -1,7 +1,6 @@
 {
-  "meta_title": "Conseiller immobilier iad à Écully (69130)",
-  "meta_description": "Avis de valeur, vente et achat à Écully avec Romain Rieg, conseiller iad. Connaissance fine des résidences de standing du Mont d'Or et de l'Ouest lyonnais.",
   "superficie": 9,
+  "meta_description": "Avis de valeur, vente et achat à Écully avec Romain Rieg, conseiller iad. Connaissance fine des résidences de standing du Mont d'Or et de l'Ouest lyonnais.",
   "altitude": "180 - 305 m",
   "instagram_url": "https://www.instagram.com/romainrieg.immo/",
   "ecoles": [
@@ -164,7 +163,7 @@
     "/photos/secteurs/ecully-5.jpg",
     "/photos/secteurs/ecully-6.jpg"
   ],
-  "video": "/videos/secteurs/ecully.mp4",
+  "video": "/uploads/ecully.mp4",
   "quartiers": [
     {
       "nom": "Centre-ville - Docteur Terver",
@@ -196,5 +195,6 @@
       "description": "Secteur lié au campus, aux grandes écoles et aux axes de l’Ouest lyonnais. Il attire aussi bien des familles, des actifs que des profils investisseurs, notamment grâce à la proximité de l’École Centrale de Lyon et des pôles d’enseignement supérieur.",
       "prix_indicatif": "4 100 - 5 200 €/m"
     }
-  ]
+  ],
+  "meta_title": "Conseiller immobilier iad à Écully (69130)"
 }
