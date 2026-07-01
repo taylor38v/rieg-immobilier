@@ -1,7 +1,6 @@
 {
-  "meta_title": "Conseiller immobilier iad à Saint-Didier-au-Mont-d'Or",
-  "meta_description": "Avis de valeur, vente et achat à Saint-Didier-au-Mont-d'Or avec Romain Rieg, conseiller iad résident. Connaissance fine du marché du Mont d'Or et de l'Ouest lyonnais.",
   "superficie": 8,
+  "meta_description": "Avis de valeur, vente et achat à Saint-Didier-au-Mont-d'Or avec Romain Rieg, conseiller iad résident. Connaissance fine du marché du Mont d'Or et de l'Ouest lyonnais.",
   "altitude": "175 - 587 m",
   "instagram_url": "https://www.instagram.com/romainrieg.immo/",
   "ecoles": [
@@ -155,7 +154,7 @@
     "/photos/secteurs/saint-didier-5.jpg",
     "/photos/secteurs/saint-didier-6.jpg"
   ],
-  "video": "/videos/secteurs/saint-didier.mp4",
+  "video": "/uploads/saint-didier-au-mont-dor.mp4",
   "quartiers": [
     {
       "nom": "Centre village - Bourg",
@@ -187,5 +186,6 @@
       "prix_indicatif": "5 300 - 6 500 €/m²",
       "nom": "Rocade - Pasteur - République"
     }
-  ]
+  ],
+  "meta_title": "Conseiller immobilier iad à Saint-Didier-au-Mont-d'Or"
 }
