@@ -175,12 +175,14 @@
     "duree": "1:15"
   },
   "galerie": [
-    "/photos/secteurs/dardilly-1.jpg",
-    "/photos/secteurs/dardilly-2.jpg",
-    "/photos/secteurs/dardilly-3.jpg",
-    "/photos/secteurs/dardilly-4.jpg",
-    "/photos/secteurs/dardilly-5.jpg",
-    "/photos/secteurs/dardilly-6.jpg"
+    "/uploads/img_6768.jpeg",
+    "/uploads/img_6774.jpeg",
+    "/uploads/img_6782.jpeg",
+    "/uploads/img_6814.jpeg",
+    "/uploads/img_6825.jpeg",
+    "/uploads/img_6844.jpeg",
+    "/uploads/img_6851.jpeg",
+    "/uploads/img_6859.jpeg"
   ],
   "video": "/uploads/dardilly.mp4",
   "quartiers": [
