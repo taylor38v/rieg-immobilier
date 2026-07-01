@@ -147,12 +147,17 @@
     "duree": "2:10"
   },
   "galerie": [
-    "/photos/secteurs/saint-didier-1.jpg",
-    "/photos/secteurs/saint-didier-2.jpg",
-    "/photos/secteurs/saint-didier-3.jpg",
-    "/photos/secteurs/saint-didier-4.jpg",
-    "/photos/secteurs/saint-didier-5.jpg",
-    "/photos/secteurs/saint-didier-6.jpg"
+    "/uploads/img_6587.jpeg",
+    "/uploads/img_6989.jpeg",
+    "/uploads/img_6996.jpeg",
+    "/uploads/img_7016.jpeg",
+    "/uploads/img_7033.jpeg",
+    "/uploads/img_7050.jpeg",
+    "/uploads/img_7061.jpeg",
+    "/uploads/img_7070.jpeg",
+    "/uploads/img_7577.jpeg",
+    "/uploads/img_7600.jpeg",
+    "/uploads/img_7621.jpeg"
   ],
   "video": "/uploads/saint-didier-au-mont-dor.mp4",
   "quartiers": [
