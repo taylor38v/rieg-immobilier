@@ -149,12 +149,14 @@
     "duree": "1:25"
   },
   "galerie": [
-    "/photos/secteurs/champagne-1.jpg",
+    "/uploads/img_7128.jpeg",
     "/photos/secteurs/champagne-2.jpg",
-    "/photos/secteurs/champagne-3.jpg",
-    "/photos/secteurs/champagne-4.jpg",
-    "/photos/secteurs/champagne-5.jpg",
-    "/photos/secteurs/champagne-6.jpg"
+    "/uploads/img_7134.jpeg",
+    "/uploads/img_7143.jpeg",
+    "/uploads/img_7147.jpeg",
+    "/uploads/img_7154.jpeg",
+    "/uploads/img_7174.jpeg",
+    "/uploads/img_7183.jpeg"
   ],
   "video": "/uploads/champagne-au-mont-dor.mp4",
   "quartiers": [
