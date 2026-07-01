@@ -182,12 +182,14 @@
     "duree": "1:50"
   },
   "galerie": [
-    "/photos/secteurs/saint-just-1.jpg",
-    "/photos/secteurs/saint-just-2.jpg",
-    "/photos/secteurs/saint-just-3.jpg",
-    "/photos/secteurs/saint-just-4.jpg",
-    "/photos/secteurs/saint-just-5.jpg",
-    "/photos/secteurs/saint-just-6.jpg"
+    "/uploads/dji_20260417_093002_288.jpg",
+    "/uploads/dji_20260417_093419_368.jpg",
+    "/uploads/img_8161.jpeg",
+    "/uploads/img_8235.jpeg",
+    "/uploads/img_8249.jpeg",
+    "/uploads/img_8297.jpeg",
+    "/uploads/img_8316.jpeg",
+    "/uploads/img_8325.jpeg"
   ],
   "video": "/uploads/saint-just-saint-rambert.mp4",
   "quartiers": [
