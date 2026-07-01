@@ -7,6 +7,7 @@ rubrique: Baromètre
 date: 2026-06-03
 duree_lecture: 4
 auteur: Romain Rieg
+image: /uploads/img_9812.jpeg
 publie: true
 ---
 Le mois de mai confirme ce que les précédents baromètres laissaient présager : la reprise du marché immobilier existe, mais elle ne profite pas à toutes les villes de la même façon.
