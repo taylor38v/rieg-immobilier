@@ -156,12 +156,13 @@
     "duree": "1:30"
   },
   "galerie": [
-    "/photos/secteurs/ecully-1.jpg",
-    "/photos/secteurs/ecully-2.jpg",
-    "/photos/secteurs/ecully-3.jpg",
-    "/photos/secteurs/ecully-4.jpg",
-    "/photos/secteurs/ecully-5.jpg",
-    "/photos/secteurs/ecully-6.jpg"
+    "/uploads/img_7187.jpeg",
+    "/uploads/img_7205.jpeg",
+    "/uploads/img_7214.jpeg",
+    "/uploads/img_7235.jpeg",
+    "/uploads/img_8002.jpeg",
+    "/uploads/img_8005.jpeg",
+    "/uploads/img_7265.jpeg"
   ],
   "video": "/uploads/ecully.mp4",
   "quartiers": [
