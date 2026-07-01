@@ -1,38 +1,36 @@
 ---
-titre: Baromètre du Mont d'Or - T1 2028
-chapo: Hausse modérée des prix sur le secteur Saint-Didier / Saint-Cyr,
-  accélération inattendue à Champagne-au-Mont-d'Or portée par l'effet métro.
-  Décryptage trimestre par trimestre.
+titre: "Baromètre immobilier - Janvier 2026 : un marché encore prudent mais plus
+  lisible"
+chapo: En janvier 2026, le marché immobilier retrouve progressivement de la
+  lisibilité. Décryptage du baromètre Meilleurs Agents et conseils pour les
+  propriétaires vendeurs dans les Monts d’Or et l’Ouest lyonnais.
 rubrique: Baromètre
-date: 2026-04-01
-duree_lecture: 6
+date: 2026-02-07
+duree_lecture: 4
 auteur: Romain Rieg
 image: /photos/Ville-de-saint-didier-au-mont-d-or_1920.jpg
 publie: true
 ---
+Janvier marque traditionnellement une reprise d'activité sur le marché immobilier, après les semaines plus calmes de fin d'année. Ce début 2026 ne fait pas exception, avec un signal plutôt encourageant côté offre - même si la prudence reste de mise pour fixer un prix de vente.
 
-Le premier trimestre 2026 confirme une tendance amorcée fin 2025 : le marché du Mont d'Or se stabilise à un niveau élevé, après deux années de respiration. Les transactions repartent, mais les acquéreurs restent disciplinés sur le prix.
+## Ce que dit Meilleurs Agents
 
-## Les chiffres clés du trimestre
+Selon le baromètre Meilleurs Agents, les prix immobiliers progressent de 1,3 % sur un an à l'échelle nationale, avec un léger recul de 0,1 % sur le seul mois de janvier - un ajustement saisonnier classique en ce début d'année. Signal plus marquant : le stock de biens à vendre augmente de 8 % sur un an, et le flux de nouvelles annonces progresse de 22 %. Les vendeurs reviennent donc plus nombreux sur le marché.
 
-**+2,4 %** - Saint-Didier-au-Mont-d'Or
+## Ce que cela signifie dans les Monts d'Or et l'Ouest lyonnais
 
-**+4,1 %** - Champagne-au-Mont-d'Or (effet métro)
+Dans ce baromètre mensuel, Meilleurs Agents ne fournit pas de tendance chiffrée détaillée pour chaque commune des Monts d'Or. Cette tendance nationale doit donc être lue avec prudence à l'échelle locale : elle donne un contexte de marché, mais ne remplace pas une analyse commune par commune.
 
-**−0,8 %** - Dardilly (correction technique)
+Ce que l'on peut retenir, c'est qu'un contexte de retour des vendeurs - à Saint-Didier-au-Mont-d'Or comme ailleurs - tend à redonner du choix aux acheteurs, et donc à rendre la comparaison entre biens plus active. Dans les Monts d'Or et l'Ouest lyonnais, le bon positionnement prix reste déterminant pour se démarquer dans cet environnement plus concurrentiel.
 
-Le délai moyen de vente reste stable à 58 jours sur l'ensemble du secteur, avec une dispersion forte selon la qualité du bien : les biens qualifiés "sans défaut" partent en moyenne en 38 jours, tandis que les biens à rénover dépassent les 90 jours.
+## Mon conseil aux propriétaires vendeurs
 
-## Ce qui change concrètement
+Dans un marché où l'offre se renouvelle, la différence se joue sur la justesse du prix de départ et la qualité de présentation du bien. Un dossier de vente complet - diagnostics à jour, documents de copropriété disponibles, travaux récents valorisés - rassure l'acheteur et accélère sa décision.
 
-- Les acquéreurs internationaux représentent 12 % des transactions sur Saint-Cyr ce trimestre (vs 7 % un an plus tôt).
-- Les passoires thermiques (DPE F-G) subissent une décote de 13 à 17 % - l'écart se creuse depuis l'entrée en vigueur de la loi Climat.
-- Les biens avec extérieur (terrasse > 15 m² ou jardin) se négocient avec une prime de 8 à 12 % - durable depuis 2021.
+Mieux vaut un prix cohérent dès la mise en vente qu'une révision à la baisse après plusieurs semaines sans visite, qui envoie un signal négatif sur le marché.
 
-> Sur le Mont d'Or, on n'achète plus une maison, on achète une qualité de vie certifiée. C'est ce qui explique la résilience du marché.
+## Conclusion
 
-## Mon analyse pour les mois à venir
+Le marché n'est pas bloqué, mais il demande davantage de précision. Un bien rare, bien présenté et correctement positionné peut continuer à susciter de l'intérêt.
 
-Le second semestre 2026 devrait voir l'arrivée de plusieurs grands projets immobiliers neufs sur Champagne et Écully, ce qui pourrait peser légèrement sur les prix de l'ancien sur ces deux communes. À l'inverse, le segment haut de gamme (>1,5 M€) sur Saint-Cyr et Saint-Didier reste structurellement sous-offert et continuera sa hausse.
-
-Si vous envisagez de vendre dans les 12 prochains mois, le moment est favorable. Si vous achetez, les opportunités restent à saisir en off-market - où la pression à la hausse est moindre.
+Si vous envisagez une vente dans les prochains mois, un avis de valeur précis, local et argumenté reste la meilleure façon de démarrer sur de bonnes bases - n'hésitez pas à me solliciter pour en discuter.
