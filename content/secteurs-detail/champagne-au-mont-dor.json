@@ -1,7 +1,6 @@
 {
-  "meta_title": "Conseiller immobilier iad à Champagne-au-Mont-d'Or",
-  "meta_description": "Avis de valeur, vente et achat à Champagne-au-Mont-d'Or avec Romain Rieg, conseiller iad. Connaissance fine du marché du Mont d'Or et de l'Ouest lyonnais.",
   "superficie": 2.6,
+  "meta_description": "Avis de valeur, vente et achat à Champagne-au-Mont-d'Or avec Romain Rieg, conseiller iad. Connaissance fine du marché du Mont d'Or et de l'Ouest lyonnais.",
   "altitude": "200 - 308 m",
   "instagram_url": "https://www.instagram.com/romainrieg.immo/",
   "ecoles": [
@@ -157,7 +156,7 @@
     "/photos/secteurs/champagne-5.jpg",
     "/photos/secteurs/champagne-6.jpg"
   ],
-  "video": "/videos/secteurs/champagne.mp4",
+  "video": "/uploads/champagne-au-mont-dor.mp4",
   "quartiers": [
     {
       "nom": "Centre village - Lanessan",
@@ -179,5 +178,6 @@
       "prix_indicatif": "4 300 - 5 400 €/m²",
       "nom": "Voutillière - Rochecardon"
     }
-  ]
+  ],
+  "meta_title": "Conseiller immobilier iad à Champagne-au-Mont-d'Or"
 }
