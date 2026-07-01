@@ -1,31 +1,37 @@
 ---
-titre: "Julien Bonnet, l'architecte qui réveille les bastides du Mont d'Or"
-chapo: "Trente projets de restauration en dix ans. Rencontre avec celui qui réconcilie patrimoine en pierres dorées et exigences contemporaines."
-rubrique: "Portrait"
-date: 2026-03-18
-duree_lecture: 8
-auteur: "Romain Rieg"
-image: "/photos/IMG_6971.jpeg"
+titre: "Baromètre immobilier - Avril 2026 : une reprise plus timide que prévu"
+chapo: En avril 2026, la reprise immobilière reste mesurée et inégale selon les
+  secteurs. Le bon positionnement prix demeure essentiel pour vendre dans de
+  bonnes conditions.
+rubrique: Baromètre
+date: 2026-05-05
+duree_lecture: 4
+auteur: Romain Rieg
+image: /photos/IMG_6971.jpeg
 publie: true
 ---
+Avril devait confirmer la reprise printanière amorcée en début d'année. Le baromètre Meilleurs Agents montre une réalité plus nuancée : le mouvement est là, mais il reste contenu et inégal selon les villes.
 
-Quand Julien Bonnet s'installe à Limonest en 2014 après dix ans à Genève, il ne s'imagine pas devenir l'une des références régionales en restauration de bâti ancien. "Je voulais juste rentrer chez moi", confie-t-il, attablé dans son agence aménagée dans une ancienne maison vigneronne du XVIIIᵉ.
+## Ce que dit Meilleurs Agents
 
-## Une signature : faire respirer la pierre
+Depuis le début de l'année 2026, l'indice des prix immobiliers recule de 0,4 % à l'échelle nationale, pour un prix moyen au mètre carré de 3 114 euros.
 
-Sa marque de fabrique : ne jamais surcharger une bastide. Là où certains confrères empilent les couches de modernité, Julien Bonnet retire. "Quand vous récupérez une maison qui a traversé deux siècles, votre premier réflexe doit être de l'écouter, pas de lui imposer votre époque."
+Les zones rurales se distinguent avec une progression de 3,2 % depuis janvier, tandis que Lyon enregistre une hausse de 0,9 % sur la même période. Du côté du financement, les taux de crédit ont progressé de 16 points de base entre mars et avril, pour s'établir à 3,55 % sur 25 ans.
 
-> Une bonne restauration, dans dix ans, on ne sait plus ce qui est neuf et ce qui est ancien.
+## Ce que cela signifie dans les Monts d'Or et l'Ouest lyonnais
 
-## Le projet dont il est le plus fier
+La hausse de 0,9 % observée à Lyon depuis janvier est une donnée Meilleurs Agents confirmée, propre à la ville de Lyon. Elle donne un contexte de marché globalement favorable pour les secteurs résidentiels environnants, mais ne remplace pas une analyse commune par commune : aucune donnée équivalente n'existe pour Saint-Didier-au-Mont-d'Or, Champagne-au-Mont-d'Or ou Dardilly dans ce baromètre.
 
-Une bastide de 1742 à Saint-Cyr-au-Mont-d'Or, achetée en ruine en 2019. Trois ans de travaux, 1,2 M€ de budget, des compagnons formés sur place pour restaurer les enduits à la chaux. Le résultat : un bien valorisé 2,8 M€ aujourd'hui.
+La remontée des taux de crédit, en revanche, concerne l'ensemble des acquéreurs - en particulier les primo-accédants, dont la capacité d'emprunt se réduit légèrement.
 
-## Ses conseils aux propriétaires de bâti ancien
+## Mon conseil aux propriétaires vendeurs
 
-- Avant tout achat, un diagnostic structure (mur porteur, charpente, humidité) - comptez 1 500 €.
-- Ne jamais isoler une maison en pierre par l'intérieur sans étude hygrothermique préalable.
-- Privilégier les artisans locaux du réseau Compagnons - leur travail se voit et se garantit.
-- Prévoir 25 à 35 % de surcoût vs un budget initial sur les chantiers de plus de 200 m².
+Avec des taux qui se tendent, l'effort financier de l'acheteur augmente, même à prix égal. Présenter un bien irréprochable sur le plan des diagnostics et de la performance énergétique devient un argument de poids.
 
-Pour Julien Bonnet, le Mont d'Or recèle encore une cinquantaine de biens d'exception en sommeil, à découvrir au gré des successions. Le réseau d'agents locaux compte plus que jamais.
+Une marge de négociation raisonnable peut aussi être intégrée dès la fixation du prix, plutôt que découverte au fil des visites.
+
+## Conclusion
+
+Une reprise plus timide ne veut pas dire une reprise absente. Les biens correctement valorisés et positionnés au juste prix continuent de se vendre.
+
+Pour savoir où se situe précisément votre bien dans ce contexte, un avis de valeur local et actualisé reste l'outil le plus fiable - je suis à votre disposition pour l'établir avec vous.
