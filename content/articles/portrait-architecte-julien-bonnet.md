@@ -7,7 +7,7 @@ rubrique: Baromètre
 date: 2026-05-05
 duree_lecture: 4
 auteur: Romain Rieg
-image: /photos/IMG_6971.jpeg
+image: /uploads/avril-2026.png
 publie: true
 ---
 Avril devait confirmer la reprise printanière amorcée en début d'année. Le baromètre Meilleurs Agents montre une réalité plus nuancée : le mouvement est là, mais il reste contenu et inégal selon les villes.
