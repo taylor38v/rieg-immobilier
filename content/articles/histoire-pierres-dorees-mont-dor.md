@@ -1,32 +1,40 @@
 ---
-titre: "Pierres dorées du Mont d'Or : histoire d'un calcaire devenu mythe"
-chapo: "De Saint-Cyr à Limonest, les bastides du XVIIIᵉ siècle racontent une géologie unique. Petite plongée dans la matière qui fait la valeur de notre territoire."
-rubrique: "Patrimoine"
-date: 2026-01-22
-duree_lecture: 5
-auteur: "Romain Rieg"
-image: "/photos/IMG_7070.jpeg"
+titre: "Baromètre immobilier - Février 2026 : le retour progressif des vendeurs
+  sur le marché"
+chapo: En février 2026, le marché immobilier confirme une forme de
+  stabilisation. Les données Meilleurs Agents montrent un contexte plus lisible,
+  mais toujours exigeant pour les vendeurs.
+rubrique: Baromètre
+date: 2026-03-10
+duree_lecture: 4
+auteur: Romain Rieg
+image: /photos/IMG_7070.jpeg
 publie: true
 ---
+Après un mois de janvier marqué par le retour de l'offre, février confirme une tendance : le marché se stabilise, sans embellie spectaculaire mais sans accroc majeur non plus.
 
-Roulez vingt minutes à l'ouest de Lyon, et vous changez littéralement de roche. Le calcaire à entroques du Bajocien (jurassique moyen, ~170 millions d'années) prend ici une teinte unique, jaune-ocre tirant sur le rose au coucher du soleil - d'où le nom poétique de "pierres dorées".
+## Ce que dit Meilleurs Agents
 
-## Une origine maritime
+Au 1er mars 2026, le prix moyen au mètre carré en France s'établit à 3 124 euros, en légère baisse de 0,1 % sur un mois mais en hausse de 0,9 % sur un an. Les grandes villes du Top 50 affichent une évolution plus modérée, avec une progression de 0,7 % sur un an, tandis que les zones rurales se distinguent avec une hausse de 2,6 % sur la même période.
 
-Cette pierre s'est formée au fond d'une mer chaude qui recouvrait la région, par accumulation de fragments de crinoïdes (lis de mer fossiles). Sa porosité et sa teinte chaude proviennent de l'oxyde de fer qu'elle contient en faible proportion.
+Le marché du crédit, de son côté, entre dans une phase plus lisible pour les ménages.
 
-## Une exploitation depuis le Moyen-Âge
+## Ce que cela signifie dans les Monts d'Or et l'Ouest lyonnais
 
-Les carrières de Couzon-au-Mont-d'Or et Saint-Romain-au-Mont-d'Or fournissaient déjà la pierre des grands édifices lyonnais au XIIᵉ siècle. La basilique de Fourvière, la cathédrale Saint-Jean, les façades de la rue Mercière : toutes en pierre dorée du Mont d'Or.
+Cette progression à deux vitesses - grandes villes plus calmes, zones rurales et périurbaines plus dynamiques - est une donnée nationale qui invite à la nuance plutôt qu'à la généralisation.
 
-## Les bastides du XVIIIᵉ : quand la pierre devient signature
+Dans ce baromètre mensuel, Meilleurs Agents ne fournit pas de tendance chiffrée détaillée pour chaque commune des Monts d'Or, et il serait hasardeux de transposer telle quelle cette dynamique à Limonest, Dardilly ou Champagne-au-Mont-d'Or.
 
-Au siècle des Lumières, la bourgeoisie lyonnaise enrichie par la soie investit le Mont d'Or pour s'y faire construire des résidences d'été. C'est l'âge d'or des bastides : architecture sobre, pierre apparente, jardins en terrasse. Limonest, Saint-Cyr et Saint-Didier conservent une cinquantaine de ces demeures classées ou inventoriées.
+Elle donne un contexte de marché plus favorable aux secteurs résidentiels recherchés, mais ne remplace pas une estimation fine, bien par bien.
 
-> Acheter une bastide en pierres dorées, ce n'est pas acquérir un bien - c'est entrer dans une chaîne de transmission.
+## Mon conseil aux propriétaires vendeurs
 
-## Aujourd'hui : un patrimoine à protéger et valoriser
+Un marché stabilisé est un marché qui pardonne moins les erreurs d'estimation. C'est le moment de soigner chaque détail : une estimation sérieuse, ancrée sur des comparables récents et non sur des souvenirs de prix d'il y a deux ou trois ans, fait toute la différence.
 
-L'extraction de la pierre est aujourd'hui réglementée. Seules trois carrières sont encore actives, ce qui rend la restauration à l'identique coûteuse mais possible. Les architectes du patrimoine réunis autour de l'association "Pierres Dorées en Mont d'Or" tiennent à jour un répertoire des artisans qualifiés - précieux pour tout propriétaire en projet.
+La valorisation du bien - rangement, luminosité, petites réparations - reste un levier accessible et souvent sous-estimé pour se démarquer dans cet environnement plus exigeant.
 
-Si vous possédez ou envisagez d'acquérir un bien en pierres dorées, je peux vous mettre en relation avec ce réseau. C'est l'un des privilèges discrets du métier d'agent immobilier local.
+## Conclusion
+
+Un marché stable n'est pas un marché figé : c'est une fenêtre pour vendre dans de bonnes conditions, à condition d'être bien positionné dès le départ.
+
+Pour affiner votre projet et obtenir une lecture précise de votre secteur, un avis de valeur local et argumenté reste le meilleur point de départ.
