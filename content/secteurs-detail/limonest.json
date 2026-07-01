@@ -160,12 +160,15 @@
     "duree": "2:00"
   },
   "galerie": [
-    "/photos/secteurs/limonest-1.jpg",
-    "/photos/secteurs/limonest-2.jpg",
-    "/photos/secteurs/limonest-3.jpg",
-    "/photos/secteurs/limonest-4.jpg",
-    "/photos/secteurs/limonest-5.jpg",
-    "/photos/secteurs/limonest-6.jpg"
+    "/uploads/img_6894.jpeg",
+    "/uploads/img_6898.jpeg",
+    "/uploads/img_6908.jpeg",
+    "/uploads/img_6913.jpeg",
+    "/uploads/img_6920.jpeg",
+    "/uploads/img_6950.jpeg",
+    "/uploads/img_6964.jpeg",
+    "/uploads/img_6971.jpeg",
+    "/uploads/img_6985.jpeg"
   ],
   "video": "/uploads/limonest.mp4",
   "quartiers": [
