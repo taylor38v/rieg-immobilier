@@ -8,7 +8,7 @@ rubrique: Baromètre
 date: 2026-02-07
 duree_lecture: 4
 auteur: Romain Rieg
-image: /photos/Ville-de-saint-didier-au-mont-d-or_1920.jpg
+image: /uploads/janvier-2026.png
 publie: true
 ---
 Janvier marque traditionnellement une reprise d'activité sur le marché immobilier, après les semaines plus calmes de fin d'année. Ce début 2026 ne fait pas exception, avec un signal plutôt encourageant côté offre - même si la prudence reste de mise pour fixer un prix de vente.
