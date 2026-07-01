@@ -14,17 +14,17 @@
     {
       "num": "01",
       "titre": "Premier contact & collecte d'infos",
-      "desc": "Formulaire en ligne, téléphone ou email : nous échangeons sur votre bien, votre situation et vos objectifs. Je recueille les premières informations utiles : adresse, surface, terrain, état général, travaux réalisés, diagnostics disponibles, calendrier souhaité et contraintes éventuelles."
+      "desc": "Formulaire en ligne, téléphone ou email : **nous échangeons sur votre bien, votre situation et vos objectifs.** Je recueille les premières informations utiles : adresse, surface, terrain, état général, travaux réalisés, diagnostics disponibles, calendrier souhaité et contraintes éventuelles."
     },
     {
       "num": "02",
       "titre": "Visite & avis de valeur précis",
-      "desc": "Je me déplace sur place pour analyser le bien dans le détail : emplacement, environnement, prestations, volumes, extérieurs, état technique, travaux, points forts et points de vigilance. Vous recevez ensuite un avis de valeur argumenté, adapté au marché de Saint-Didier-au-Mont-d'Or et aux attentes des acquéreurs."
+      "desc": "Je me déplace sur place pour analyser le bien dans le détail : emplacement, environnement, prestations, volumes, extérieurs, état technique, travaux, points forts et points de vigilance. **Vous recevez ensuite un avis de valeur argumenté**, adapté au marché de Saint-Didier-au-Mont-d'Or et aux attentes des acquéreurs."
     },
     {
       "num": "03",
       "titre": "Mise en vente optimale",
-      "desc": "Votre bien est présenté avec soin : photos professionnelles, annonce structurée, mise en avant des atouts, diffusion sur les principaux portails immobiliers et activation du réseau iad. L’objectif est de créer une annonce claire, attractive et crédible pour générer des contacts qualifiés."
+      "desc": "Votre bien est présenté avec soin : photos professionnelles, annonce structurée, mise en avant des atouts, diffusion sur les principaux portails immobiliers et activation du réseau iad. **L’objectif est de créer une annonce claire, attractive et crédible** pour générer des contacts qualifiés."
     },
     {
       "num": "04",
@@ -56,7 +56,7 @@
   "limitrophes_label": "+ communes limitrophes que je couvre également",
   "limitrophes_note": "Je ne me limite jamais strictement aux communes principales - chaque projet sur les limitrophes est étudié avec la même attention.",
   "hero_reassurance": "Sans engagement · 100% confidentiel",
-  "positionnement_texte": "Saint-Didier-au-Mont-d'Or occupe une place centrale dans mon activité : c’est ici que je vis, que j’observe le marché au quotidien et que je mesure les attentes réelles des acquéreurs. La commune bénéficie d’une forte attractivité résidentielle, avec des biens familiaux, des maisons de caractère, des appartements recherchés et des secteurs très différents d’une rue à l’autre.",
+  "positionnement_texte": "Saint-Didier-au-Mont-d'Or occupe une place centrale dans mon activité : **c’est ici que je vis, que j’observe le marché au quotidien et que je mesure les attentes réelles des acquéreurs.** La commune bénéficie d’une forte attractivité résidentielle, avec des biens familiaux, des maisons de caractère, des appartements recherchés et des secteurs très différents d’une rue à l’autre.",
   "atouts": [
     {
       "titre": "Présence locale quotidienne",
