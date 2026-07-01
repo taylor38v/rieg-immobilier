@@ -54,21 +54,21 @@
         "titre": "Ouest lyonnais",
         "desc": "Mon secteur principal. Saint-Didier-au-Mont-d'Or, Écully, Dardilly, Limonest, Champagne-au-Mont-d'Or, Saint-Cyr-au-Mont-d'Or et toutes les communes limitrophes.",
         "badge": "Cœur d'activité",
-        "image": "/photos/IMG_7282.jpeg"
+        "image": "/uploads/ouest-lyonnais-mont-dor.jpeg"
       },
       {
         "slug": "saint-didier",
         "titre": "Saint-Didier-au-Mont-d'Or",
         "desc": "Ma commune de résidence : présence quotidienne sur le terrain et connaissance fine du marché.\n",
         "badge": "Mon village",
-        "image": "/uploads/1min-intro.jpg"
+        "image": "/uploads/saint-didier-au-mont-dor.jpeg"
       },
       {
         "slug": "plaine-du-forez",
         "titre": "Plaine du Forez",
         "desc": "Saint-Just-Saint-Rambert & Andrézieux-Bouthéon - mon secteur d'enfance, que je connais comme ma poche et toutes les communes limitrophes.",
         "badge": "Mon secteur d'enfance",
-        "image": "/uploads/1min-intro.jpg"
+        "image": "/uploads/plaine-du-forez.jpeg"
       }
     ]
   },
