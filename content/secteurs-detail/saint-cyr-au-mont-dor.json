@@ -133,12 +133,14 @@
     "duree": "1:45"
   },
   "galerie": [
-    "/photos/secteurs/saint-cyr-1.jpg",
-    "/photos/secteurs/saint-cyr-2.jpg",
-    "/photos/secteurs/saint-cyr-3.jpg",
-    "/photos/secteurs/saint-cyr-4.jpg",
-    "/photos/secteurs/saint-cyr-5.jpg",
-    "/photos/secteurs/saint-cyr-6.jpg"
+    "/uploads/img_7306.jpeg",
+    "/uploads/img_7348.jpeg",
+    "/uploads/img_7386.jpeg",
+    "/uploads/img_7949.jpeg",
+    "/uploads/img_7389.jpeg",
+    "/uploads/img_7396.jpeg",
+    "/uploads/img_7398.jpeg",
+    "/uploads/img_7425.jpeg"
   ],
   "video": "/uploads/saint-cyr-au-mont-dor.mp4",
   "quartiers": [
