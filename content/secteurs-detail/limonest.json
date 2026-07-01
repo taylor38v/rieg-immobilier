@@ -1,7 +1,6 @@
 {
-  "meta_title": "Conseiller immobilier iad à Limonest (69760)",
-  "meta_description": "Avis de valeur, vente et achat à Limonest avec Romain Rieg, conseiller iad. Expertise du patrimoine en pierres dorées du Mont d'Or et de l'Ouest lyonnais.",
   "superficie": 9,
+  "meta_description": "Avis de valeur, vente et achat à Limonest avec Romain Rieg, conseiller iad. Expertise du patrimoine en pierres dorées du Mont d'Or et de l'Ouest lyonnais.",
   "altitude": "304 - 610m",
   "instagram_url": "https://www.instagram.com/romainrieg.immo/",
   "ecoles": [
@@ -168,7 +167,7 @@
     "/photos/secteurs/limonest-5.jpg",
     "/photos/secteurs/limonest-6.jpg"
   ],
-  "video": "/videos/secteurs/limonest.mp4",
+  "video": "/uploads/limonest.mp4",
   "quartiers": [
     {
       "nom": "Le Bourg - Place du Griffon",
@@ -200,5 +199,6 @@
       "description": "Secteur plus connecté et plus fonctionnel, proche des axes, des commerces et des pôles économiques. Le marché y est plus hétérogène, entre appartements, résidences, biens récents et maisons selon les rues.",
       "prix_indicatif": "4 300 - 5 300 €/m²"
     }
-  ]
+  ],
+  "meta_title": "Conseiller immobilier iad à Limonest (69760)"
 }
