@@ -72,7 +72,7 @@ export default function Home() {
         </div>
         <div className="relative">
           <div className="rounded-xl overflow-hidden aspect-[4/5]">
-            <img src={h.qui_suis_je.photo} alt={h.qui_suis_je.photo_alt} className="no-round w-full h-full object-cover" />
+            <img src={h.qui_suis_je.photo} alt={h.qui_suis_je.photo_alt} className="no-round w-full h-full object-cover" style={{ objectPosition: h.qui_suis_je.photo_position || "center" }} />
           </div>
           <div className="rounded-xl bg-gold text-navy p-6 shadow-2xl absolute -bottom-6 -left-6 lg:-left-10 max-w-[80%] z-10">
             <div className="font-serif text-2xl md:text-3xl leading-tight">"{h.qui_suis_je.citation}"</div>

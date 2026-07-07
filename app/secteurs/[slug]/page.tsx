@@ -52,7 +52,7 @@ export default async function Page(props: PageProps<"/secteurs/[slug]">) {
   return (
     <>
       <section className="relative text-ivory py-32 overflow-hidden bg-navy">
-        <HeroBackground video={heroVideo} images={d?.galerie || (s.image ? [s.image] : [])} overlay={0.6} />
+        <HeroBackground video={heroVideo} images={d?.galerie || (s.image ? [s.image] : [])} overlay={0.6} position={d?.hero_position} />
         <div className="relative max-w-7xl mx-auto px-6">
           <Link href="/" className="text-ivory/60 text-sm">← Accueil</Link>
           <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium mt-6">{d?.cp ?? "Mon territoire"}{d?.intercommunalite ? ` · ${d.intercommunalite}` : ""}</div>
@@ -243,7 +243,7 @@ export default async function Page(props: PageProps<"/secteurs/[slug]">) {
           <p className="text-muted mt-3 max-w-2xl">Photos prises sur le terrain au gré de mes visites et de mes rencontres dans la commune.</p>
           <div className="grid md:grid-cols-3 gap-3 mt-10">
             {d.galerie.map((src, i) => (
-              <div key={i} className={`overflow-hidden bg-ivory-deep group rounded-xl ${i === 0 ? "md:col-span-2 md:row-span-2 aspect-square md:aspect-auto" : "aspect-[4/3]"}`}>
+              <div key={i} className="overflow-hidden bg-ivory-deep group rounded-xl aspect-[4/3]">
                 <img src={src} alt={`${s.nom} ${i + 1}`} className="no-round w-full h-full object-cover group-hover:scale-105 transition duration-700" />
               </div>
             ))}

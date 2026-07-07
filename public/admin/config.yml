@@ -46,6 +46,7 @@ collections:
       - { name: "chapo", label: "Chapô (résumé court)", widget: "text" }
       - { name: "rubrique", label: "Rubrique", widget: "select", options: ["Baromètre", "Portrait", "Décryptage", "Patrimoine", "Conseils", "Actualité"] }
       - { name: "date", label: "Date de publication", widget: "datetime", picker_utc: false, format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false }
+      - { name: "ordre", label: "Ordre d'affichage (optionnel)", widget: "number", required: false, value_type: "int", hint: "Laisse vide pour un classement automatique par date (le plus récent en premier). Sinon : 1 = affiché en premier, 2 = ensuite, etc." }
       - { name: "duree_lecture", label: "Durée de lecture (min)", widget: "number", default: 5, min: 1, max: 30 }
       - { name: "auteur", label: "Auteur", widget: "string", default: "Romain Rieg" }
       - { name: "image", label: "Image principale", widget: "image", required: false }
@@ -121,6 +122,7 @@ collections:
               - { name: "titre", label: "Titre H2", widget: "string" }
               - { name: "paragraphes", label: "Paragraphes (markdown : **gras**, _italique_)", widget: "list", field: { name: "p", label: "Paragraphe", widget: "text" } }
               - { name: "photo", label: "Photo (chemin /photos/...)", widget: "image" }
+              - { name: "photo_position", label: "Cadrage de la photo", widget: "select", required: false, default: "center", options: [{ label: "Centré", value: "center" }, { label: "Haut", value: "top" }, { label: "Bas", value: "bottom" }], hint: "Quelle partie de la photo reste visible si elle est recadrée (utile si le visage est coupé)." }
               - { name: "photo_alt", label: "Photo - texte alternatif", widget: "string" }
               - { name: "citation", label: "Citation (carte dorée)", widget: "string" }
               - { name: "citation_auteur", label: "Citation - auteur", widget: "string" }
@@ -1075,6 +1077,7 @@ collections:
       - { name: "intercommunalite", label: "Intercommunalité", widget: "string" }
       - { name: "altitude", label: "Altitude (texte)", widget: "string", required: false }
       - { name: "video", label: "🖼️ Image (ou vidéo) de fond — haut de page", widget: "file", required: false, hint: "Sert UNIQUEMENT de fond au haut de page. Mets une image (.jpg/.png/.webp) pour une image d'intro, ou un .mp4 pour une vidéo de fond." }
+      - { name: "hero_position", label: "Cadrage de l'image de fond (haut de page)", widget: "select", required: false, default: "center", options: [{ label: "Centré", value: "center" }, { label: "Haut", value: "top" }, { label: "Bas", value: "bottom" }], hint: "Quelle partie de l'image reste visible en haut de page si elle est recadrée." }
       - { name: "video_visite", label: "🎬 Vidéo verticale — rubrique « Visite vidéo »", widget: "file", required: false, hint: "Ta vidéo Instagram VERTICALE (format 9/16) de présentation de la commune, affichée dans la rubrique « Visite vidéo ». Laisse vide pour masquer cette rubrique." }
       - { name: "instagram_url", label: "Lien Instagram de la commune (bouton « Voir plus de contenus »)", widget: "string", required: false }
       - name: "ce_qui_differencie"

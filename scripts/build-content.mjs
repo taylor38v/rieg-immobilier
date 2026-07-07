@@ -37,7 +37,12 @@ function writeTs(name, code) {
 // --- Articles ---
 const articles = readMdFolder("articles")
   .filter((a) => a.publie !== false)
-  .sort((a, b) => String(b.date || "").localeCompare(String(a.date || "")));
+  // Tri : d'abord par "ordre" manuel si renseigné (1 = en premier), sinon par date décroissante.
+  .sort((a, b) => {
+    const oa = a.ordre ?? Infinity, ob = b.ordre ?? Infinity;
+    if (oa !== ob) return oa - ob;
+    return String(b.date || "").localeCompare(String(a.date || ""));
+  });
 
 writeTs(
   "articles.ts",
@@ -54,6 +59,7 @@ export type Article = {
   auteur: string;
   image: string;
   publie: boolean;
+  ordre?: number;
   body: string;
 };
 

@@ -21,6 +21,7 @@ export type SecteurDetail = {
   galerie?: string[];
   video?: string;
   video_visite?: string;
+  hero_position?: string;
   instagram_url?: string;
 };
 

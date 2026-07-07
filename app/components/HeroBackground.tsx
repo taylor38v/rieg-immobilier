@@ -6,6 +6,7 @@ type Props = {
   video?: string;
   intervalMs?: number;
   overlay?: number;
+  position?: string;
 };
 
 const DEFAULTS = [
@@ -21,6 +22,7 @@ export default function HeroBackground({
   video,
   intervalMs = 5500,
   overlay = 0.55,
+  position = "center",
 }: Props) {
   const [active, setActive] = useState(0);
 
@@ -41,7 +43,7 @@ export default function HeroBackground({
             style={{
               backgroundImage: `url(${video})`,
               backgroundSize: "cover",
-              backgroundPosition: "center",
+              backgroundPosition: position,
             }}
           />
         ) : (
@@ -51,6 +53,7 @@ export default function HeroBackground({
             loop
             playsInline
             className="absolute inset-0 w-full h-full object-cover"
+            style={{ objectPosition: position }}
           >
             <source src={video} />
           </video>
@@ -72,7 +75,7 @@ export default function HeroBackground({
           style={{
             backgroundImage: `url(${src})`,
             backgroundSize: "cover",
-            backgroundPosition: "center",
+            backgroundPosition: position,
             opacity: i === active ? 1 : 0,
             animation: i === active ? "kenburns 12s ease-out forwards" : "none",
           }}
