@@ -43,8 +43,10 @@ export default async function Page(props: PageProps<"/secteurs/[slug]">) {
   const d = secteursDetails[slug];
   if (!s) notFound();
 
-  // Vidéo (hero + visite) et lien Instagram éditables par commune (CMS), avec valeur par défaut.
+  // Fond du haut de page (image OU vidéo) : champ "video" de la commune, sinon vidéo par défaut.
   const heroVideo = d?.video || VIDEO_BG[slug];
+  // Vidéo verticale dédiée à la rubrique "Visite vidéo" (champ distinct du hero).
+  const visiteVideo = d?.video_visite;
   const instaUrl = d?.instagram_url || "https://www.instagram.com/romainrieg.immo/";
 
   return (
@@ -117,22 +119,24 @@ export default async function Page(props: PageProps<"/secteurs/[slug]">) {
         </section>
       )}
 
-      {heroVideo && (
+      {visiteVideo && (
         <section className="bg-ivory-deep py-20">
           <div className="max-w-5xl mx-auto px-6">
             <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">Visite vidéo</div>
-            <h2 className="font-serif text-3xl md:text-4xl mt-3">{s.nom} en images.</h2>
-            <p className="text-muted mt-3 max-w-2xl">Un aperçu de la commune en vidéo - paysages, ambiance, points de vue.</p>
-            <div className="mt-10 rounded-2xl overflow-hidden shadow-xl bg-navy">
-              <video
-                src={heroVideo}
-                controls
-                playsInline
-                preload="metadata"
-                className="no-round w-full aspect-video object-cover"
-              />
+            <h2 className="font-serif text-3xl md:text-4xl mt-3">{s.nom} en vidéo.</h2>
+            <p className="text-muted mt-3 max-w-2xl">Un aperçu de la commune - paysages, ambiance, points de vue.</p>
+            <div className="mt-10 flex justify-center">
+              <div className="rounded-2xl overflow-hidden shadow-xl bg-navy w-full max-w-[360px] aspect-[9/16]">
+                <video
+                  src={visiteVideo}
+                  controls
+                  playsInline
+                  preload="metadata"
+                  className="no-round w-full h-full object-cover"
+                />
+              </div>
             </div>
-            <div className="mt-6">
+            <div className="mt-6 text-center">
               <a href={instaUrl} target="_blank" rel="noopener" className="inline-block px-6 py-3 bg-navy text-ivory hover:bg-gold hover:text-navy text-sm transition rounded-full">Voir plus de contenus sur Instagram →</a>
             </div>
           </div>

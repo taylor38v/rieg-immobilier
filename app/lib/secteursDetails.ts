@@ -20,6 +20,7 @@ export type SecteurDetail = {
   video_insta?: { titre: string; duree: string; thumb?: string };
   galerie?: string[];
   video?: string;
+  video_visite?: string;
   instagram_url?: string;
 };
 

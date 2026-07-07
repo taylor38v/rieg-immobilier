@@ -3,6 +3,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { marked } from "marked";
 import { secteurs, formatPrix } from "../../lib/data";
+import { secteursDetails } from "../../lib/secteursDetails";
 import CityMap from "../../components/CityMap";
 import HeroBackground from "../../components/HeroBackground";
 import ContactButtons from "../../components/ContactButtons";
@@ -279,11 +280,15 @@ export default async function Page(props: PageProps<"/vendre/[zone]">) {
 
           {communesData.length > 0 && (
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
-              {communesData.map((s) => s && (
+              {communesData.map((s) => {
+                if (!s) return null;
+                // Vignette éditable via le CMS : 1re photo de la Galerie de la commune, sinon image par défaut.
+                const vignette = secteursDetails[s.slug]?.galerie?.[0] ?? s.image;
+                return (
                 <Link key={s.slug} href={`/secteurs/${s.slug}`} className="group bg-white border border-ink/10 hover:border-navy block rounded-xl overflow-hidden">
-                  {s.image && (
+                  {vignette && (
                     <div className="aspect-[16/9] overflow-hidden">
-                      <img src={s.image} alt={s.nom} className="no-round w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+                      <img src={vignette} alt={s.nom} className="no-round w-full h-full object-cover group-hover:scale-105 transition duration-700" />
                     </div>
                   )}
                   <div className="p-5">
@@ -295,7 +300,8 @@ export default async function Page(props: PageProps<"/vendre/[zone]">) {
                     </div>
                   </div>
                 </Link>
-              ))}
+                );
+              })}
             </div>
           )}
         </div>

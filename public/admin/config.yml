@@ -1074,7 +1074,8 @@ collections:
       - { name: "cp", label: "Code postal", widget: "string" }
       - { name: "intercommunalite", label: "Intercommunalité", widget: "string" }
       - { name: "altitude", label: "Altitude (texte)", widget: "string", required: false }
-      - { name: "video", label: "🎬 Vidéo (fond hero + lecteur « Visite vidéo »)", widget: "file", required: false, hint: "Uploade un .mp4 ou choisis une vidéo existante (/videos/secteurs/). Sert de fond au hero ET de lecteur dans la section Visite vidéo." }
+      - { name: "video", label: "🖼️ Image (ou vidéo) de fond — haut de page", widget: "file", required: false, hint: "Sert UNIQUEMENT de fond au haut de page. Mets une image (.jpg/.png/.webp) pour une image d'intro, ou un .mp4 pour une vidéo de fond." }
+      - { name: "video_visite", label: "🎬 Vidéo verticale — rubrique « Visite vidéo »", widget: "file", required: false, hint: "Ta vidéo Instagram VERTICALE (format 9/16) de présentation de la commune, affichée dans la rubrique « Visite vidéo ». Laisse vide pour masquer cette rubrique." }
       - { name: "instagram_url", label: "Lien Instagram de la commune (bouton « Voir plus de contenus »)", widget: "string", required: false }
       - name: "ce_qui_differencie"
         label: "Ce qui différencie (« Pourquoi cette commune attire »)"
