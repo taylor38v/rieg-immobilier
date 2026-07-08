@@ -3,7 +3,7 @@ import { useState, useMemo } from "react";
 import { formatPrix } from "../lib/data";
 
 type Props = {
-  evolutionPrix: { annee: number; prixM2: number }[];
+  evolutionPrix: { annee: number; prixM2: number; prix_appartement?: number }[];
   prixM2Maison: number;
   prixM2Appart: number;
 };
@@ -11,12 +11,20 @@ type Props = {
 export default function MarketEvolution({ evolutionPrix, prixM2Maison, prixM2Appart }: Props) {
   const [type, setType] = useState<"maison" | "appartement">("maison");
 
-  // Ratio appart vs maison (basé sur les valeurs actuelles)
-  const ratio = type === "maison" ? 1 : prixM2Appart / prixM2Maison;
+  // Repli : si la série "appartement" n'est pas saisie dans le CMS, on l'estime
+  // à partir de la série "maison" (ratio des prix actuels de la commune).
+  const ratio = prixM2Maison > 0 ? prixM2Appart / prixM2Maison : 1;
 
   const series = useMemo(() => {
-    return evolutionPrix.map((e) => ({ annee: e.annee, prixM2: Math.round(e.prixM2 * ratio) }));
-  }, [evolutionPrix, ratio]);
+    return evolutionPrix.map((e) => {
+      if (type === "maison") return { annee: e.annee, prixM2: e.prixM2 };
+      const appart =
+        typeof e.prix_appartement === "number" && Number.isFinite(e.prix_appartement)
+          ? e.prix_appartement
+          : Math.round(e.prixM2 * ratio);
+      return { annee: e.annee, prixM2: appart };
+    });
+  }, [evolutionPrix, type, ratio]);
 
   const evolMin = series.length ? Math.min(...series.map((e) => e.prixM2)) : 0;
   const evolMax = series.length ? Math.max(...series.map((e) => e.prixM2)) : 0;

@@ -1,7 +1,6 @@
 {
   "superficie": 40,
   "meta_description": "Avis de valeur, vente et achat à Saint-Just-Saint-Rambert avec Romain Rieg, conseiller iad. Marché dynamique de la Plaine du Forez, idéal primo-accédants.",
-  "altitude": "358 - 673 m",
   "instagram_url": "https://www.instagram.com/romainrieg.immo/",
   "ecoles": [
     {
@@ -99,27 +98,33 @@
   "evolution_prix": [
     {
       "annee": 2020,
-      "prixM2": 2200
+      "prixM2": 2200,
+      "prix_appartement": 1691
     },
     {
       "annee": 2021,
-      "prixM2": 2400
+      "prixM2": 2400,
+      "prix_appartement": 1844
     },
     {
       "annee": 2022,
-      "prixM2": 2620
+      "prixM2": 2620,
+      "prix_appartement": 2013
     },
     {
       "annee": 2023,
-      "prixM2": 2650
+      "prixM2": 2650,
+      "prix_appartement": 2037
     },
     {
       "annee": 2024,
-      "prixM2": 2600
+      "prixM2": 2600,
+      "prix_appartement": 1998
     },
     {
       "annee": 2025,
-      "prixM2": 2560
+      "prixM2": 2560,
+      "prix_appartement": 1967
     }
   ],
   "restaurants": [
@@ -226,5 +231,8 @@
     }
   ],
   "video_visite": "/uploads/saint-just-saint-rambert.mp4",
-  "meta_title": "Conseiller immobilier iad à Saint-Just-Saint-Rambert"
+  "meta_title": "Conseiller immobilier iad à Saint-Just-Saint-Rambert",
+  "prix_m2_maison": 2933,
+  "prix_m2_appartement": 2254,
+  "delai_vente": 78
 }

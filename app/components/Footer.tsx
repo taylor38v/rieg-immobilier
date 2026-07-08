@@ -6,6 +6,22 @@ import { settings } from "../lib/_generated/settings";
 
 const IAD_MINISITE = "https://www.iadfrance.fr/conseiller-immobilier/romain.rieg";
 
+// Met en or chaque segment listé, où qu'il soit dans la phrase (segments éditables via le CMS).
+function highlight(text: string, segments: string[]) {
+  if (!segments.length) return text;
+  const esc = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  // Le plus long d'abord : évite qu'un segment court "mange" un segment plus long qui le contient.
+  const ordered = [...segments].sort((a, b) => b.length - a.length);
+  const re = new RegExp(`(${ordered.map(esc).join("|")})`, "g");
+  return text.split(re).map((part, i) =>
+    segments.includes(part) ? (
+      <span key={i} className="text-gold">{part}</span>
+    ) : (
+      <span key={i}>{part}</span>
+    )
+  );
+}
+
 // Communes qui ont une fiche dédiée → lien interne
 const COMMUNE_SLUGS: Record<string, string> = {
   "Saint-Didier-au-Mont-d'Or": "saint-didier-au-mont-dor",
@@ -103,22 +119,16 @@ export default function Footer() {
   const pathname = usePathname();
   const isHome = pathname === "/";
 
-  // Texte newsletter : le segment "zone" est mis en valeur (or) au milieu de la phrase.
+  // Texte newsletter : un ou plusieurs segments (zones) sont mis en valeur en or dans la phrase.
   const newsletterFull =
     settings.footer?.newsletter_texte ??
-    "Pas de spam - uniquement les nouvelles actualités du marché de l'Ouest lyonnais et Plaine du Forez et mes derniers contenus.";
-  const newsletterZone = settings.footer?.newsletter_zone_gold ?? "Ouest lyonnais et Plaine du Forez";
-  const newsletterIdx = newsletterZone ? newsletterFull.indexOf(newsletterZone) : -1;
-  const newsletterTexte =
-    newsletterIdx >= 0 ? (
-      <>
-        {newsletterFull.slice(0, newsletterIdx)}
-        <span className="text-gold">{newsletterZone}</span>
-        {newsletterFull.slice(newsletterIdx + newsletterZone.length)}
-      </>
-    ) : (
-      newsletterFull
-    );
+    "Pas de spam - uniquement les nouvelles actualités du marché de l'Ouest lyonnais et de la Plaine du Forez et mes derniers contenus.";
+  const goldSegments = (
+    settings.footer?.newsletter_zones_gold?.length
+      ? settings.footer.newsletter_zones_gold
+      : [settings.footer?.newsletter_zone_gold ?? ""]
+  ).filter(Boolean);
+  const newsletterTexte = highlight(newsletterFull, goldSegments);
 
   // Copyright : {year} = année courante, {rsac} = numéro RSAC issu de settings.rcs.
   const rsacNumero = settings.rcs.replace(/^RCS Lyon n°\s*/i, "");

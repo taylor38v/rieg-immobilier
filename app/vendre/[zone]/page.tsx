@@ -139,7 +139,7 @@ export default async function Page(props: PageProps<"/vendre/[zone]">) {
     carteTitre: z.carte_titre ?? "Survolez la carte pour explorer.",
     carteTexte: z.carte_texte ?? "Cliquez sur une commune pour ouvrir sa fiche détaillée - démographie, écoles, restaurants, quartiers, prix au m².",
     ctaTitre: z.cta_titre ?? "Et si on commençait par un avis de valeur ?",
-    ctaIntro: z.cta_intro ?? "Gratuit, argumenté, sous 24 - 48h - sans engagement de mandat.",
+    ctaIntro: z.cta_intro ?? "Offert, argumenté, sous 24 - 48h - sans engagement de mandat.",
   };
 
   const etapesData: { num: string; titre: string; desc: string }[] =

@@ -191,6 +191,8 @@ export type Settings = {
   titre: string;
   logo?: string;
   logo_alt?: string;
+  btn_sms_label?: string;
+  btn_mail_label?: string;
   telephone: string;
   telephone_lien: string;
   email: string;
@@ -241,6 +243,7 @@ export type Settings = {
     col_newsletter_titre?: string;
     newsletter_texte?: string;
     newsletter_zone_gold?: string;
+    newsletter_zones_gold?: string[];
     newsletter_placeholder?: string;
     newsletter_bouton?: string;
     col_joindre_titre?: string;

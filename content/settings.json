@@ -1,6 +1,8 @@
 {
   "logo": "/photos/IAD_LOGO_FINAL-removebg-preview.png",
   "logo_alt": "iad Prestige Immobilier",
+  "btn_sms_label": "Sms direct",
+  "btn_mail_label": "Email",
   "telephone_lien": "+33679571473",
   "rcs": "RCS Lyon n° 101 157 410",
   "nav": {
@@ -62,6 +64,10 @@
     "lien_mentions_legales": "Mentions légales",
     "col_newsletter_titre": "Newsletter",
     "newsletter_zone_gold": "l'Ouest lyonnais",
+    "newsletter_zones_gold": [
+      "l'Ouest lyonnais",
+      "la Plaine du Forez"
+    ],
     "newsletter_placeholder": "Votre email",
     "secteurs_surtitre": "Mes secteurs d'intervention",
     "lien_location": "Location",

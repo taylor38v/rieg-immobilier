@@ -1,7 +1,6 @@
 {
   "superficie": 2.6,
   "meta_description": "Avis de valeur, vente et achat à Champagne-au-Mont-d'Or avec Romain Rieg, conseiller iad. Connaissance fine du marché du Mont d'Or et de l'Ouest lyonnais.",
-  "altitude": "200 - 308 m",
   "instagram_url": "https://www.instagram.com/romainrieg.immo/",
   "ecoles": [
     {
@@ -77,27 +76,33 @@
   "evolution_prix": [
     {
       "annee": 2020,
-      "prixM2": 4300
+      "prixM2": 4300,
+      "prix_appartement": 3463
     },
     {
       "annee": 2021,
-      "prixM2": 4650
+      "prixM2": 4650,
+      "prix_appartement": 3745
     },
     {
       "annee": 2022,
-      "prixM2": 5000
+      "prixM2": 5000,
+      "prix_appartement": 4026
     },
     {
       "annee": 2023,
-      "prixM2": 5050
+      "prixM2": 5050,
+      "prix_appartement": 4067
     },
     {
       "annee": 2024,
-      "prixM2": 4960
+      "prixM2": 4960,
+      "prix_appartement": 3994
     },
     {
       "annee": 2025,
-      "prixM2": 4890
+      "prixM2": 4890,
+      "prix_appartement": 3938
     }
   ],
   "restaurants": [
@@ -180,5 +185,8 @@
     }
   ],
   "video_visite": "/uploads/champagne-au-mont-dor.mp4",
-  "meta_title": "Conseiller immobilier iad à Champagne-au-Mont-d'Or"
+  "meta_title": "Conseiller immobilier iad à Champagne-au-Mont-d'Or",
+  "prix_m2_maison": 4889,
+  "prix_m2_appartement": 3937,
+  "delai_vente": 54
 }

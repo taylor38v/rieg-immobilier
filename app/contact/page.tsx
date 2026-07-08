@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import SmartContactForm from "../components/SmartContactForm";
 import { site } from "../lib/_generated/site";
+import { settings } from "../lib/_generated/settings";
 
 const c = site.contact;
 
@@ -44,7 +45,7 @@ export default function Page() {
                 <a href={`sms:+33679571473?body=Bonjour%20Romain%2C%20`} className="flex items-center gap-4 p-3 hover:bg-ivory-deep transition group rounded-xl">
                   <div className="w-12 h-12 grid place-items-center bg-navy text-gold font-serif text-xl rounded-full shrink-0">💬</div>
                   <div className="flex-1 min-w-0">
-                    <div className="text-xs uppercase tracking-widest text-muted">SMS direct</div>
+                    <div className="text-xs uppercase tracking-widest text-muted">{settings.btn_sms_label ?? "Sms direct"}</div>
                     <div className="font-serif text-lg text-navy group-hover:text-gold transition">{c.sidebar.whatsapp_label}</div>
                   </div>
                 </a>

@@ -1,3 +1,5 @@
+import { secteursDetailContent } from "./_generated/secteurs-detail";
+
 export type Secteur = {
   slug: string;
   nom: string;
@@ -10,7 +12,7 @@ export type Secteur = {
   image?: string;
 };
 
-export const secteurs: Secteur[] = [
+const SECTEURS_BASE: Secteur[] = [
   {
     slug: "saint-didier-au-mont-dor",
     nom: "Saint-Didier-au-Mont-d'Or",
@@ -100,6 +102,25 @@ export const secteurs: Secteur[] = [
     image: "/photos/secteurs/saint-just-1.jpg",
   },
 ];
+
+/**
+ * Source unique des prix / délais.
+ * Chaque commune peut surcharger prix m² maison, prix m² appartement et délai de vente
+ * depuis le CMS (Fiches communes). Les valeurs ci-dessus servent de secours.
+ * Tout le site lit `secteurs` (carte interactive, pages zones, fiches communes, outils),
+ * donc une modification dans le CMS se répercute partout.
+ */
+export const secteurs: Secteur[] = SECTEURS_BASE.map((s) => {
+  const d = (secteursDetailContent as Record<string, any>)[s.slug];
+  const num = (v: unknown, fallback: number) =>
+    typeof v === "number" && Number.isFinite(v) ? v : fallback;
+  return {
+    ...s,
+    prixM2Maison: num(d?.prix_m2_maison, s.prixM2Maison),
+    prixM2Appart: num(d?.prix_m2_appartement, s.prixM2Appart),
+    delaiVente: num(d?.delai_vente, s.delaiVente),
+  };
+});
 
 export const formatPrix = (n: number) =>
   new Intl.NumberFormat("fr-FR", { style: "currency", currency: "EUR", maximumFractionDigits: 0 }).format(n);

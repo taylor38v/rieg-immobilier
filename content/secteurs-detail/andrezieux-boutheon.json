@@ -1,7 +1,6 @@
 {
   "superficie": 16,
   "meta_description": "Avis de valeur, vente et achat à Andrézieux-Bouthéon avec Romain Rieg, conseiller iad. Pôle économique majeur de la Plaine du Forez, à 14 km de Saint-Étienne.",
-  "altitude": "353 - 435 m",
   "instagram_url": "https://www.instagram.com/romainrieg.immo/",
   "ecoles": [
     {
@@ -94,27 +93,33 @@
   "evolution_prix": [
     {
       "annee": 2020,
-      "prixM2": 1850
+      "prixM2": 1850,
+      "prix_appartement": 1295
     },
     {
       "annee": 2021,
-      "prixM2": 2050
+      "prixM2": 2050,
+      "prix_appartement": 1434
     },
     {
       "annee": 2022,
-      "prixM2": 2350
+      "prixM2": 2350,
+      "prix_appartement": 1644
     },
     {
       "annee": 2023,
-      "prixM2": 2504
+      "prixM2": 2504,
+      "prix_appartement": 1752
     },
     {
       "annee": 2024,
-      "prixM2": 2380
+      "prixM2": 2380,
+      "prix_appartement": 1665
     },
     {
       "annee": 2025,
-      "prixM2": 2301
+      "prixM2": 2301,
+      "prix_appartement": 1610
     }
   ],
   "restaurants": [
@@ -207,5 +212,8 @@
     }
   ],
   "video_visite": "/uploads/andrezieux-boutheon.mp4",
-  "meta_title": "Conseiller immobilier iad à Andrézieux-Bouthéon"
+  "meta_title": "Conseiller immobilier iad à Andrézieux-Bouthéon",
+  "prix_m2_maison": 2741,
+  "prix_m2_appartement": 1918,
+  "delai_vente": 82
 }

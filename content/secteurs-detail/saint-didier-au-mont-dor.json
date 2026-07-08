@@ -1,7 +1,6 @@
 {
   "superficie": 8,
   "meta_description": "Avis de valeur, vente et achat à Saint-Didier-au-Mont-d'Or avec Romain Rieg, conseiller iad résident. Connaissance fine du marché du Mont d'Or et de l'Ouest lyonnais.",
-  "altitude": "175 - 587 m",
   "instagram_url": "https://www.instagram.com/romainrieg.immo/",
   "ecoles": [
     {
@@ -81,27 +80,33 @@
   "evolution_prix": [
     {
       "annee": 2020,
-      "prixM2": 5300
+      "prixM2": 5300,
+      "prix_appartement": 4516
     },
     {
       "annee": 2021,
-      "prixM2": 5850
+      "prixM2": 5850,
+      "prix_appartement": 4984
     },
     {
       "annee": 2022,
-      "prixM2": 6350
+      "prixM2": 6350,
+      "prix_appartement": 5410
     },
     {
       "annee": 2023,
-      "prixM2": 6500
+      "prixM2": 6500,
+      "prix_appartement": 5538
     },
     {
       "annee": 2024,
-      "prixM2": 6350
+      "prixM2": 6350,
+      "prix_appartement": 5410
     },
     {
       "annee": 2025,
-      "prixM2": 6250
+      "prixM2": 6250,
+      "prix_appartement": 5325
     }
   ],
   "restaurants": [
@@ -194,5 +199,8 @@
     }
   ],
   "video_visite": "/uploads/saint-didier-au-mont-dor.mp4",
-  "meta_title": "Conseiller immobilier iad à Saint-Didier-au-Mont-d'Or"
+  "meta_title": "Conseiller immobilier iad à Saint-Didier-au-Mont-d'Or",
+  "prix_m2_maison": 6256,
+  "prix_m2_appartement": 5330,
+  "delai_vente": 58
 }

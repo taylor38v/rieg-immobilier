@@ -1,7 +1,6 @@
 {
   "superficie": 13.99,
   "meta_description": "Avis de valeur, vente et achat à Dardilly avec Romain Rieg, conseiller iad. Expertise des quartiers pavillonnaires du Mont d'Or et de l'Ouest lyonnais.",
-  "altitude": "240 - 375 m",
   "instagram_url": "https://www.instagram.com/romainrieg.immo/",
   "ecoles": [
     {
@@ -97,27 +96,33 @@
   "evolution_prix": [
     {
       "annee": 2020,
-      "prixM2": 4200
+      "prixM2": 4200,
+      "prix_appartement": 3791
     },
     {
       "annee": 2021,
-      "prixM2": 4550
+      "prixM2": 4550,
+      "prix_appartement": 4107
     },
     {
       "annee": 2022,
-      "prixM2": 4900
+      "prixM2": 4900,
+      "prix_appartement": 4423
     },
     {
       "annee": 2023,
-      "prixM2": 4950
+      "prixM2": 4950,
+      "prix_appartement": 4468
     },
     {
       "annee": 2024,
-      "prixM2": 4850
+      "prixM2": 4850,
+      "prix_appartement": 4378
     },
     {
       "annee": 2025,
-      "prixM2": 4760
+      "prixM2": 4760,
+      "prix_appartement": 4297
     }
   ],
   "restaurants": [
@@ -219,5 +224,8 @@
     }
   ],
   "video_visite": "/uploads/dardilly.mp4",
-  "meta_title": "Conseiller immobilier iad à Dardilly (69570)"
+  "meta_title": "Conseiller immobilier iad à Dardilly (69570)",
+  "prix_m2_maison": 4759,
+  "prix_m2_appartement": 4296,
+  "delai_vente": 68
 }

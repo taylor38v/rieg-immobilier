@@ -1,7 +1,6 @@
 {
   "superficie": 9,
   "meta_description": "Avis de valeur, vente et achat à Limonest avec Romain Rieg, conseiller iad. Expertise du patrimoine en pierres dorées du Mont d'Or et de l'Ouest lyonnais.",
-  "altitude": "304 - 610m",
   "instagram_url": "https://www.instagram.com/romainrieg.immo/",
   "ecoles": [
     {
@@ -83,27 +82,33 @@
   "evolution_prix": [
     {
       "annee": 2020,
-      "prixM2": 4500
+      "prixM2": 4500,
+      "prix_appartement": 4102
     },
     {
       "annee": 2021,
-      "prixM2": 4900
+      "prixM2": 4900,
+      "prix_appartement": 4467
     },
     {
       "annee": 2022,
-      "prixM2": 5250
+      "prixM2": 5250,
+      "prix_appartement": 4786
     },
     {
       "annee": 2023,
-      "prixM2": 5350
+      "prixM2": 5350,
+      "prix_appartement": 4877
     },
     {
       "annee": 2024,
-      "prixM2": 5250
+      "prixM2": 5250,
+      "prix_appartement": 4786
     },
     {
       "annee": 2025,
-      "prixM2": 5180
+      "prixM2": 5180,
+      "prix_appartement": 4722
     }
   ],
   "restaurants": [
@@ -205,5 +210,8 @@
     }
   ],
   "video_visite": "/uploads/limonest.mp4",
-  "meta_title": "Conseiller immobilier iad à Limonest (69760)"
+  "meta_title": "Conseiller immobilier iad à Limonest (69760)",
+  "prix_m2_maison": 5184,
+  "prix_m2_appartement": 4726,
+  "delai_vente": 71
 }

@@ -11,6 +11,9 @@ import ContactCTA from "../../components/ContactCTA";
 
 const inline = (s: string) => marked.parseInline(s) as string;
 
+// Élision devant une voyelle : "de Andrézieux-Bouthéon" -> "d'Andrézieux-Bouthéon" (idem Écully).
+const deNom = (nom: string) => (/^[aeiouyàâäéèêëîïôöûü]/i.test(nom) ? `d'${nom}` : `de ${nom}`);
+
 const VIDEO_BG: Record<string, string> = {
   "saint-didier-au-mont-dor": "/videos/secteurs/saint-didier.mp4",
   "saint-cyr-au-mont-dor": "/videos/secteurs/saint-cyr.mp4",
@@ -61,21 +64,22 @@ export default async function Page(props: PageProps<"/secteurs/[slug]">) {
 
           {d && (
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10 mt-12 max-w-4xl">
+              {/* Tailles réduites de 15% par rapport à text-4xl/5xl et text-xs/sm (demande client). */}
               <div>
-                <div className="font-serif text-4xl md:text-5xl text-gold font-semibold">{d.population.toLocaleString("fr-FR")}</div>
-                <div className="text-xs md:text-sm uppercase tracking-widest text-ivory/70 mt-3 font-medium">Habitants</div>
+                <div className="font-serif text-[1.9rem] md:text-[2.55rem] text-gold font-semibold">{d.population.toLocaleString("fr-FR")}</div>
+                <div className="text-[0.64rem] md:text-[0.74rem] uppercase tracking-widest text-ivory/70 mt-3 font-medium">Habitants</div>
               </div>
               <div>
-                <div className="font-serif text-4xl md:text-5xl text-gold font-semibold">{d.superficie} km²</div>
-                <div className="text-xs md:text-sm uppercase tracking-widest text-ivory/70 mt-3 font-medium">Superficie</div>
+                <div className="font-serif text-[1.9rem] md:text-[2.55rem] text-gold font-semibold">{d.superficie} km²</div>
+                <div className="text-[0.64rem] md:text-[0.74rem] uppercase tracking-widest text-ivory/70 mt-3 font-medium">Superficie</div>
               </div>
               <div>
-                <div className="font-serif text-4xl md:text-5xl text-gold font-semibold">{formatPrix(s.prixM2Maison)}</div>
-                <div className="text-xs md:text-sm uppercase tracking-widest text-ivory/70 mt-3 font-medium">Prix m² maison</div>
+                <div className="font-serif text-[1.9rem] md:text-[2.55rem] text-gold font-semibold">{formatPrix(s.prixM2Maison)}</div>
+                <div className="text-[0.64rem] md:text-[0.74rem] uppercase tracking-widest text-ivory/70 mt-3 font-medium">Prix m² maison</div>
               </div>
               <div>
-                <div className="font-serif text-4xl md:text-5xl text-gold font-semibold">{s.delaiVente} j</div>
-                <div className="text-xs md:text-sm uppercase tracking-widest text-ivory/70 mt-3 font-medium">Délai moyen</div>
+                <div className="font-serif text-[1.9rem] md:text-[2.55rem] text-gold font-semibold">{s.delaiVente} j</div>
+                <div className="text-[0.64rem] md:text-[0.74rem] uppercase tracking-widest text-ivory/70 mt-3 font-medium">Délai moyen</div>
               </div>
             </div>
           )}
@@ -259,7 +263,7 @@ export default async function Page(props: PageProps<"/secteurs/[slug]">) {
       <section className="max-w-7xl mx-auto px-6 py-20">
         <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium">Zoom sur la commune</div>
         <h2 className="font-serif text-3xl md:text-4xl mt-3">{s.nom} en détail.</h2>
-        <p className="text-muted mt-3 max-w-2xl">Vue rapprochée de {s.nom} pour visualiser ses contours et ses limites.</p>
+        <p className="text-muted mt-3 max-w-2xl">Vue rapprochée {deNom(s.nom)} pour visualiser ses contours et ses limites.</p>
         <div className="mt-10">
           <CityMap slugs={[slug]} height={520} showLegend={false} includeLimitrophes={false} />
         </div>
@@ -268,7 +272,7 @@ export default async function Page(props: PageProps<"/secteurs/[slug]">) {
       <ContactCTA
         variant="ivory"
         titre={`Un projet immobilier à ${s.nom} ?`}
-        intro="Avis de valeur gratuit sous 24 - 48h, confidentiel, sans engagement."
+        intro="Avis de valeur offert sous 24 - 48h, confidentiel, sans engagement."
         smsBody={`Bonjour Romain, j'ai un projet immobilier à ${s.nom}. `}
         mailSubject={`Projet immobilier à ${s.nom}`}
       />

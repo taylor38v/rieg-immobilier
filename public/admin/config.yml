@@ -1078,7 +1078,10 @@ collections:
       - { name: "superficie", label: "Superficie (km²)", widget: "number" }
       - { name: "cp", label: "Code postal", widget: "string" }
       - { name: "intercommunalite", label: "Intercommunalité", widget: "string" }
-      - { name: "altitude", label: "Altitude (texte)", widget: "string", required: false }
+      # "altitude" retiré : le champ existait dans le CMS mais n'était affiché nulle part sur le site.
+      - { name: "prix_m2_maison", label: "💶 Prix au m² - maison (€)", widget: "number", required: false, value_type: "int", hint: "Utilisé partout : bandeau de la fiche commune, cartes des pages Vendre/Acheter/Location, carte interactive et outil « Carte des prix »." }
+      - { name: "prix_m2_appartement", label: "💶 Prix au m² - appartement (€)", widget: "number", required: false, value_type: "int", hint: "Idem : sert au loyer indicatif de la page Location et à l'outil « Carte des prix »." }
+      - { name: "delai_vente", label: "⏱️ Délai de vente moyen (jours)", widget: "number", required: false, value_type: "int", hint: "Affiché dans le bandeau de la fiche commune et sur les cartes des communes." }
       - { name: "video", label: "🖼️ Image (ou vidéo) de fond — haut de page", widget: "file", required: false, hint: "Sert UNIQUEMENT de fond au haut de page. Mets une image (.jpg/.png/.webp) pour une image d'intro, ou un .mp4 pour une vidéo de fond." }
       - { name: "hero_position", label: "Cadrage de l'image de fond (haut de page)", widget: "select", required: false, default: "center", options: [{ label: "Centré", value: "center" }, { label: "Haut", value: "top" }, { label: "Bas", value: "bottom" }], hint: "Quelle partie de l'image reste visible en haut de page si elle est recadrée." }
       - { name: "video_visite", label: "🎬 Vidéo verticale — rubrique « Visite vidéo »", widget: "file", required: false, hint: "Ta vidéo Instagram VERTICALE (format 9/16) de présentation de la commune, affichée dans la rubrique « Visite vidéo ». Laisse vide pour masquer cette rubrique." }
@@ -1122,9 +1125,11 @@ collections:
       - name: "evolution_prix"
         label: "Évolution des prix au m² (par année)"
         widget: "list"
+        hint: "Alimente le graphique « Évolution du marché ». Renseigne les deux séries pour que l'onglet Appartement affiche de vraies données."
         fields:
           - { name: "annee", label: "Année", widget: "number" }
-          - { name: "prixM2", label: "Prix m²", widget: "number" }
+          - { name: "prixM2", label: "Prix m² - maison (€)", widget: "number" }
+          - { name: "prix_appartement", label: "Prix m² - appartement (€)", widget: "number", required: false, hint: "Si vide, la courbe appartement est estimée à partir de la courbe maison." }
       - name: "video_insta"
         label: "Vidéo Instagram (placeholder)"
         widget: "object"
@@ -1148,6 +1153,8 @@ collections:
           - { name: "titre", label: "Titre / fonction", widget: "string" }
           - { name: "logo", label: "🖼️ Logo du site (en haut à gauche)", widget: "image", required: false, hint: "Idéalement un PNG à fond transparent. Il s'affiche dans l'en-tête de toutes les pages." }
           - { name: "logo_alt", label: "Logo - texte alternatif", widget: "string", required: false, hint: "Texte lu par Google et les lecteurs d'écran (ex. « iad Prestige Immobilier »)." }
+          - { name: "btn_sms_label", label: "Bouton SMS (haut de page)", widget: "string", required: false, hint: "Libellé du bouton SMS affiché dans les bannières. Ex. « Sms direct »." }
+          - { name: "btn_mail_label", label: "Bouton Email (haut de page)", widget: "string", required: false, hint: "Libellé du bouton email affiché dans les bannières. Ex. « Email »." }
           - { name: "telephone", label: "Téléphone affiché", widget: "string" }
           - { name: "telephone_lien", label: "Téléphone format international (+336…)", widget: "string" }
           - { name: "email", label: "Email", widget: "string" }
@@ -1213,7 +1220,14 @@ collections:
               - { name: "lien_actualites", label: "Colonne 1 · lien Actualités", widget: "string", required: false }
               - { name: "col_newsletter_titre", label: "Colonne 2 · titre (Newsletter)", widget: "string", required: false }
               - { name: "newsletter_texte", label: "Colonne 2 · texte d'accroche", widget: "text", required: false, hint: "Le segment ci-dessous (zone mise en or) doit apparaître à l'identique dans ce texte pour être surligné." }
-              - { name: "newsletter_zone_gold", label: "Colonne 2 · segment mis en valeur (or)", widget: "string", required: false }
+              - { name: "newsletter_zone_gold", label: "Colonne 2 · segment mis en valeur (or) - ancien champ", widget: "string", required: false, hint: "Laissé pour compatibilité. Utilise plutôt la liste ci-dessous." }
+              - name: "newsletter_zones_gold"
+                label: "Colonne 2 · segments mis en valeur (or)"
+                label_singular: "Segment"
+                widget: "list"
+                required: false
+                hint: "Chaque segment listé ici est affiché en or dans le texte de la newsletter. Le texte doit le contenir à l'identique (ex. « l'Ouest lyonnais », « la Plaine du Forez »)."
+                field: { name: "segment", label: "Segment", widget: "string" }
               - { name: "newsletter_placeholder", label: "Colonne 2 · placeholder du champ email", widget: "string", required: false }
               - { name: "newsletter_bouton", label: "Colonne 2 · bouton (S'abonner)", widget: "string", required: false }
               - { name: "col_joindre_titre", label: "Colonne 3 · titre (Me joindre)", widget: "string", required: false }

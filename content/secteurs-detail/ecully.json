@@ -1,7 +1,6 @@
 {
   "superficie": 9,
   "meta_description": "Avis de valeur, vente et achat à Écully avec Romain Rieg, conseiller iad. Connaissance fine des résidences de standing du Mont d'Or et de l'Ouest lyonnais.",
-  "altitude": "180 - 305 m",
   "instagram_url": "https://www.instagram.com/romainrieg.immo/",
   "ecoles": [
     {
@@ -84,27 +83,33 @@
   "evolution_prix": [
     {
       "annee": 2020,
-      "prixM2": 4700
+      "prixM2": 4700,
+      "prix_appartement": 3856
     },
     {
       "annee": 2021,
-      "prixM2": 5050
+      "prixM2": 5050,
+      "prix_appartement": 4143
     },
     {
       "annee": 2022,
-      "prixM2": 5400
+      "prixM2": 5400,
+      "prix_appartement": 4430
     },
     {
       "annee": 2023,
-      "prixM2": 5450
+      "prixM2": 5450,
+      "prix_appartement": 4471
     },
     {
       "annee": 2024,
-      "prixM2": 5350
+      "prixM2": 5350,
+      "prix_appartement": 4389
     },
     {
       "annee": 2025,
-      "prixM2": 5280
+      "prixM2": 5280,
+      "prix_appartement": 4332
     }
   ],
   "restaurants": [
@@ -199,5 +204,8 @@
     }
   ],
   "video_visite": "/uploads/ecully.mp4",
-  "meta_title": "Conseiller immobilier iad à Écully (69130)"
+  "meta_title": "Conseiller immobilier iad à Écully (69130)",
+  "prix_m2_maison": 5278,
+  "prix_m2_appartement": 4330,
+  "delai_vente": 62
 }
