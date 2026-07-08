@@ -53,6 +53,7 @@
   ],
   "population": 4012,
   "intercommunalite": "Métropole de Lyon",
+  "hero_position": "top",
   "associations": [
     {
       "nom": "FCLDSD - Football Club Limonest-Dardilly-Saint-Didier",
