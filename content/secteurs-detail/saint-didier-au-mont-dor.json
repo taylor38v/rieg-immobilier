@@ -147,6 +147,7 @@
     "duree": "2:10"
   },
   "galerie": [
+    "/uploads/saint-didier-au-mont-dor.jpeg",
     "/uploads/img_6587.jpeg",
     "/uploads/img_6989.jpeg",
     "/uploads/img_6996.jpeg",
@@ -159,7 +160,7 @@
     "/uploads/img_7600.jpeg",
     "/uploads/img_7621.jpeg"
   ],
-  "video": "/uploads/saint-didier-au-mont-dor.mp4",
+  "video": "/uploads/saint-didier.jpeg",
   "quartiers": [
     {
       "nom": "Centre village - Bourg",
@@ -192,5 +193,6 @@
       "nom": "Rocade - Pasteur - République"
     }
   ],
+  "video_visite": "/uploads/saint-didier-au-mont-dor.mp4",
   "meta_title": "Conseiller immobilier iad à Saint-Didier-au-Mont-d'Or"
 }
