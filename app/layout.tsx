@@ -21,14 +21,19 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "fr_FR",
-    url: "https://romainrieg-immobilier.fr",
+    // "./" = URL de la page courante (composée avec metadataBase).
+    // Une URL absolue ici serait héritée telle quelle par TOUTES les pages.
+    url: "./",
     siteName: "Romain Rieg Immobilier",
     title: "Romain Rieg - Conseiller immobilier Lyon Ouest & Mont d'Or",
     description: "Estimation, vente, acquisition et gestion locative sur le Mont d'Or et l'Ouest lyonnais.",
     images: [{ url: "/photos/Ville-de-saint-didier-au-mont-d-or_1920.jpg", width: 1920, height: 1280 }],
   },
   twitter: { card: "summary_large_image" },
-  alternates: { canonical: "https://romainrieg-immobilier.fr" },
+  // ⚠️ Canonical auto-référente : "./" se résout sur l'URL de chaque page.
+  // Avant, une URL absolue était héritée par les 42 pages -> toutes déclaraient
+  // l'accueil comme canonical (Google les aurait traitées comme des doublons).
+  alternates: { canonical: "./" },
   robots: { index: true, follow: true },
 };
 

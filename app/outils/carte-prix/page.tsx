@@ -45,8 +45,9 @@ export default function Page() {
   const data = useMemo(() => {
     return secteurs.map((s) => {
       const det = secteursDetails[s.slug];
-      const evol = det?.evolution_prix.find((e) => e.annee === annee);
-      const evolPrev = det?.evolution_prix.find((e) => e.annee === annee - 1);
+      // `?.` sur evolution_prix aussi : le CMS peut retirer entièrement la liste.
+      const evol = det?.evolution_prix?.find((e) => e.annee === annee);
+      const evolPrev = det?.evolution_prix?.find((e) => e.annee === annee - 1);
       // Repli : série appartement estimée depuis la maison si elle n'est pas saisie au CMS.
       const ratio = s.prixM2Maison > 0 ? s.prixM2Appart / s.prixM2Maison : 1;
       const valeur = (e?: { prixM2: number; prix_appartement?: number }) => {

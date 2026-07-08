@@ -5,6 +5,11 @@ import { articles } from "./lib/articles";
 export const dynamic = "force-static";
 const BASE = "https://romainrieg-immobilier.fr";
 
+// Le site est en `trailingSlash: true` : /vendre redirige (301) vers /vendre/.
+// Le sitemap doit donc déclarer les URL finales, sinon chaque URL soumise à Google
+// est une redirection (gaspillage de budget de crawl + avertissement Search Console).
+const url = (chemin: string) => `${BASE}${chemin}/`;
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
   const staticRoutes = [
@@ -17,8 +22,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/outils/rentabilite-locative", "/outils/acheter-vs-louer", "/outils/dpe-express",
   ];
   return [
-    ...staticRoutes.map((r) => ({ url: `${BASE}${r}`, lastModified: now, changeFrequency: "weekly" as const, priority: r === "" ? 1 : 0.7 })),
-    ...secteurs.map((s) => ({ url: `${BASE}/secteurs/${s.slug}`, lastModified: now, changeFrequency: "monthly" as const, priority: 0.7 })),
-    ...articles.map((a) => ({ url: `${BASE}/actualites/${a.slug}`, lastModified: new Date(a.date), changeFrequency: "monthly" as const, priority: 0.6 })),
+    ...staticRoutes.map((r) => ({ url: url(r), lastModified: now, changeFrequency: "weekly" as const, priority: r === "" ? 1 : 0.7 })),
+    ...secteurs.map((s) => ({ url: url(`/secteurs/${s.slug}`), lastModified: now, changeFrequency: "monthly" as const, priority: 0.7 })),
+    ...articles.map((a) => ({ url: url(`/actualites/${a.slug}`), lastModified: new Date(a.date), changeFrequency: "monthly" as const, priority: 0.6 })),
   ];
 }
