@@ -2,6 +2,8 @@
   "superficie": 9,
   "meta_description": "Avis de valeur, vente et achat à Écully avec Romain Rieg, conseiller iad. Connaissance fine des résidences de standing du Mont d'Or et de l'Ouest lyonnais.",
   "instagram_url": "https://www.instagram.com/romainrieg.immo/",
+  "delai_vente": 62,
+  "prix_m2_maison": 5278,
   "ecoles": [
     {
       "nom": "Écoles publiques d’Écully",
@@ -112,6 +114,7 @@
       "prix_appartement": 4332
     }
   ],
+  "prix_m2_appartement": 4330,
   "restaurants": [
     {
       "nom": "Saisons (Institut Paul Bocuse) -                 1 étoile michelin",
@@ -167,8 +170,7 @@
     "/uploads/img_7214.jpeg",
     "/uploads/img_7235.jpeg",
     "/uploads/img_8002.jpeg",
-    "/uploads/img_8005.jpeg",
-    "/uploads/img_7265.jpeg"
+    "/uploads/img_8005.jpeg"
   ],
   "video": "/uploads/ecully.jpeg",
   "quartiers": [
@@ -204,8 +206,5 @@
     }
   ],
   "video_visite": "/uploads/ecully.mp4",
-  "meta_title": "Conseiller immobilier iad à Écully (69130)",
-  "prix_m2_maison": 5278,
-  "prix_m2_appartement": 4330,
-  "delai_vente": 62
+  "meta_title": "Conseiller immobilier iad à Écully (69130)"
 }
