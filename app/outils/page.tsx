@@ -14,7 +14,8 @@ export const metadata: Metadata = {
 
 type Outil = { href: string; chiffre: string; sub: string; titre: string; desc: string };
 
-const groupes: { titre: string; outils: Outil[] }[] = [
+// Valeurs d'origine : servent de secours si la liste n'est pas renseignée dans le CMS.
+const GROUPES_DEFAUT: { titre: string; outils: Outil[] }[] = [
   {
     titre: "Visualiser le marché",
     outils: [
@@ -46,6 +47,13 @@ const groupes: { titre: string; outils: Outil[] }[] = [
 ];
 
 export default function Page() {
+  // Les rectangles (titre du groupe, sous-titre, titre et description de chaque outil) sont éditables au CMS.
+  const groupes: { titre: string; outils: Outil[] }[] =
+    (ol as { groupes?: readonly unknown[] }).groupes?.length
+      ? ((ol as any).groupes as { titre: string; outils: Outil[] }[])
+      : GROUPES_DEFAUT;
+  const lienLabel = (ol as any).outil_lien_label ?? "Ouvrir l'outil";
+
   return (
     <>
     <div className="max-w-7xl mx-auto px-6 py-16 md:py-24">
@@ -79,7 +87,7 @@ export default function Page() {
                     <h2 className="font-serif text-xl text-navy mt-1 group-hover:text-gold transition leading-tight">{o.titre}</h2>
                     <p className="text-sm text-muted mt-3 leading-relaxed">{o.desc}</p>
                     <span className="inline-flex items-center gap-1 text-xs text-navy group-hover:text-gold mt-4 font-semibold uppercase tracking-widest transition">
-                      Ouvrir l'outil
+                      {lienLabel}
                       <span className="inline-block transition-transform group-hover:translate-x-1">→</span>
                     </span>
                   </div>

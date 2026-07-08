@@ -763,6 +763,26 @@ collections:
           - { name: "intro", label: "Intro", widget: "text", hint: "Court paragraphe d'introduction sous le titre." }
           - { name: "intro_complement", label: "Paragraphe complémentaire (optionnel)", widget: "text", required: false }
           - { name: "disclaimer", label: "Disclaimer (italique)", widget: "text" }
+          - { name: "outil_lien_label", label: "Libellé du lien sous chaque outil", widget: "string", required: false, hint: "Ex. « Ouvrir l'outil »." }
+          - name: "groupes"
+            label: "Groupes d'outils (les rectangles)"
+            label_singular: "Groupe"
+            widget: "list"
+            collapsed: true
+            hint: "Chaque groupe a un titre, et contient les rectangles (outils) affichés dessous."
+            fields:
+              - { name: "titre", label: "Titre du groupe", widget: "string", hint: "Ex. « Pour décider d'acheter »." }
+              - name: "outils"
+                label: "Outils du groupe (rectangles)"
+                label_singular: "Outil"
+                widget: "list"
+                collapsed: true
+                fields:
+                  - { name: "chiffre", label: "Numéro affiché", widget: "string", hint: "Ex. « 01 »." }
+                  - { name: "sub", label: "Sous-titre (petit texte gris)", widget: "string" }
+                  - { name: "titre", label: "Titre de l'outil", widget: "string" }
+                  - { name: "desc", label: "Description", widget: "text" }
+                  - { name: "href", label: "Lien de l'outil", widget: "string", hint: "⚠️ Ne pas modifier sans raison : c'est l'adresse de la page de l'outil (ex. /outils/carte-prix)." }
           - { name: "cta_titre", label: "CTA - titre", widget: "string" }
           - { name: "cta_intro", label: "CTA - intro", widget: "text" }
           - { name: "cta_label", label: "CTA - bouton", widget: "string" }

@@ -58,7 +58,7 @@ export default function Page() {
                   0{i + 1}
                 </div>
                 <div className="font-serif text-2xl text-navy mt-4 font-semibold group-hover:text-gold transition" dangerouslySetInnerHTML={{ __html: inline(it.titre) }} />
-                <p className="text-sm text-muted mt-3 leading-relaxed" dangerouslySetInnerHTML={{ __html: inline(it.desc) }} />
+                <p className="text-muted mt-3 leading-relaxed" dangerouslySetInnerHTML={{ __html: inline(it.desc) }} />
               </div>
             </div>
           ))}
@@ -83,7 +83,7 @@ export default function Page() {
                       {e.num}
                     </div>
                     <div>
-                      <div className="font-serif text-2xl group-hover:text-gold transition" dangerouslySetInnerHTML={{ __html: inline(e.titre) }} />
+                      <div className="font-serif text-2xl font-semibold group-hover:text-gold transition" dangerouslySetInnerHTML={{ __html: inline(e.titre) }} />
                       <div className="text-ivory/75 mt-3 leading-relaxed" dangerouslySetInnerHTML={{ __html: inline(e.desc) }} />
                     </div>
                   </div>

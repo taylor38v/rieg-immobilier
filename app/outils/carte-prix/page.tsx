@@ -47,11 +47,21 @@ export default function Page() {
       const det = secteursDetails[s.slug];
       const evol = det?.evolution_prix.find((e) => e.annee === annee);
       const evolPrev = det?.evolution_prix.find((e) => e.annee === annee - 1);
-      const ratio = type === "maison" ? 1 : (s.prixM2Appart / s.prixM2Maison);
-      const prix = evol ? Math.round(evol.prixM2 * ratio) : (type === "maison" ? s.prixM2Maison : s.prixM2Appart);
-      const prixPrev = evolPrev ? Math.round(evolPrev.prixM2 * ratio) : prix;
+      // Repli : série appartement estimée depuis la maison si elle n'est pas saisie au CMS.
+      const ratio = s.prixM2Maison > 0 ? s.prixM2Appart / s.prixM2Maison : 1;
+      const valeur = (e?: { prixM2: number; prix_appartement?: number }) => {
+        if (!e) return undefined;
+        if (type === "maison") return e.prixM2;
+        return typeof e.prix_appartement === "number" && Number.isFinite(e.prix_appartement)
+          ? e.prix_appartement
+          : Math.round(e.prixM2 * ratio);
+      };
+      const prix = valeur(evol) ?? (type === "maison" ? s.prixM2Maison : s.prixM2Appart);
+      const prixPrev = valeur(evolPrev) ?? prix;
       const deltaYoY = prixPrev > 0 ? ((prix - prixPrev) / prixPrev) * 100 : 0;
-      return { ...s, prix, prixPrev, deltaYoY };
+      // Image de la commune éditable via la Galerie photos du CMS (1re photo), sinon image d'origine.
+      const image = det?.galerie?.[0] ?? s.image;
+      return { ...s, image, prix, prixPrev, deltaYoY };
     });
   }, [type, annee]);
 

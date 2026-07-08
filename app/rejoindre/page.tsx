@@ -64,11 +64,11 @@ export default function Page() {
           <h2 className="font-serif text-3xl md:text-4xl mt-3">{r.profils.titre}</h2>
           <div className="grid md:grid-cols-2 gap-6 mt-12">
             {r.profils.items.map((p) => (
-              <div key={p.titre} className="shine-hover rounded-xl p-6 bg-white border border-ink/5 flex gap-5">
+              <div key={p.titre} className="group shine-hover rounded-xl p-7 bg-white border border-ink/10 flex gap-5">
                 <span className="font-serif text-3xl text-gold leading-none">→</span>
                 <div>
-                  <div className="font-serif text-xl text-navy font-bold">{p.titre}</div>
-                  <p className="text-sm text-muted mt-2 leading-relaxed">{p.desc}</p>
+                  <div className="font-serif text-2xl text-navy font-semibold group-hover:text-gold transition">{p.titre}</div>
+                  <p className="text-muted mt-3 leading-relaxed">{p.desc}</p>
                 </div>
               </div>
             ))}
@@ -94,7 +94,7 @@ export default function Page() {
                       {e.num}
                     </div>
                     <div>
-                      <div className="font-serif text-2xl group-hover:text-gold transition">{e.titre}</div>
+                      <div className="font-serif text-2xl font-semibold group-hover:text-gold transition">{e.titre}</div>
                       <div className="text-ivory/75 mt-3 leading-relaxed" dangerouslySetInnerHTML={{ __html: inline(e.desc) }} />
                     </div>
                   </div>

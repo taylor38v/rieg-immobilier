@@ -42,13 +42,13 @@ export default function Page() {
           {v.pourquoi_moi.items.map((it, i) => (
             <div
               key={it.titre}
-              className="group relative rounded-2xl bg-white border border-ink/10 hover:border-gold transition-all duration-300 p-6 md:p-8 hover:shadow-xl hover:shadow-gold/10 flex flex-col md:flex-row gap-6 items-start"
+              className="group relative rounded-2xl bg-white border border-ink/10 hover:border-gold transition-all duration-300 p-7 hover:shadow-xl hover:shadow-gold/10 flex flex-col md:flex-row gap-6 items-start"
             >
               <div className="shrink-0 w-14 h-14 rounded-full bg-gradient-to-br from-gold to-gold-soft text-navy font-serif text-2xl font-bold grid place-items-center shadow-lg group-hover:scale-110 transition">
                 {String(i + 1).padStart(2, "0")}
               </div>
               <div className="flex-1">
-                <div className="font-serif text-2xl md:text-3xl text-navy font-semibold group-hover:text-gold transition" dangerouslySetInnerHTML={{ __html: inline(it.titre) }} />
+                <div className="font-serif text-2xl text-navy font-semibold group-hover:text-gold transition" dangerouslySetInnerHTML={{ __html: inline(it.titre) }} />
                 <p className="text-muted mt-3 leading-relaxed" dangerouslySetInnerHTML={{ __html: inline(it.desc) }} />
               </div>
             </div>
@@ -107,10 +107,10 @@ export default function Page() {
         <h2 className="font-serif text-3xl md:text-4xl mt-3" dangerouslySetInnerHTML={{ __html: inline(v.etapes.titre) }} />
         <div className="mt-16 grid md:grid-cols-2 gap-6">
           {v.etapes.items.map((e) => (
-            <div key={e.num} className="rounded-xl shine-hover bg-white border border-ink/10 p-7 grid grid-cols-[auto_1fr] gap-6">
-              <div className="font-serif text-5xl text-gold leading-none">{e.num}</div>
+            <div key={e.num} className="group rounded-xl shine-hover bg-white border border-ink/10 p-7 grid grid-cols-[auto_1fr] gap-6">
+              <div className="shrink-0 w-12 h-12 rounded-full bg-gold text-navy font-serif text-xl font-bold grid place-items-center shadow-lg group-hover:scale-110 transition">{e.num}</div>
               <div>
-                <div className="font-serif text-2xl text-navy" dangerouslySetInnerHTML={{ __html: inline(e.titre) }} />
+                <div className="font-serif text-2xl text-navy font-semibold group-hover:text-gold transition" dangerouslySetInnerHTML={{ __html: inline(e.titre) }} />
                 <div className="text-muted mt-3 leading-relaxed" dangerouslySetInnerHTML={{ __html: inline(e.desc) }} />
               </div>
             </div>

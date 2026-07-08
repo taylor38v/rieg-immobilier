@@ -38,7 +38,7 @@ export default function Page() {
         <div className="text-base md:text-lg uppercase tracking-[0.25em] text-gold font-medium" dangerouslySetInnerHTML={{ __html: inline(a.piliers.surtitre) }} />
         <h2 className="font-serif text-3xl md:text-4xl mt-3" dangerouslySetInnerHTML={{ __html: inline(a.piliers.titre) }} />
 
-        <div className="grid md:grid-cols-2 gap-5 mt-12">
+        <div className="grid md:grid-cols-2 gap-6 mt-12">
           {a.piliers.items.map((p, i) => (
             <div
               key={p.titre}
