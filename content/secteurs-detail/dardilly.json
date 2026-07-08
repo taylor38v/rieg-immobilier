@@ -175,6 +175,7 @@
     "duree": "1:15"
   },
   "galerie": [
+    "/uploads/dardilly.jpeg",
     "/uploads/img_6768.jpeg",
     "/uploads/img_6774.jpeg",
     "/uploads/img_6782.jpeg",
@@ -184,7 +185,7 @@
     "/uploads/img_6851.jpeg",
     "/uploads/img_6859.jpeg"
   ],
-  "video": "/uploads/dardilly.mp4",
+  "video": "/uploads/dardilly.jpeg",
   "quartiers": [
     {
       "nom": "Le Bourg - Esplanade",
@@ -217,5 +218,6 @@
       "nom": "Bois de Serres - Brochetière"
     }
   ],
+  "video_visite": "/uploads/dardilly.mp4",
   "meta_title": "Conseiller immobilier iad à Dardilly (69570)"
 }
