@@ -2,6 +2,8 @@
   "superficie": 9,
   "meta_description": "Avis de valeur, vente et achat à Limonest avec Romain Rieg, conseiller iad. Expertise du patrimoine en pierres dorées du Mont d'Or et de l'Ouest lyonnais.",
   "instagram_url": "https://www.instagram.com/romainrieg.immo/",
+  "delai_vente": 71,
+  "prix_m2_maison": 5184,
   "ecoles": [
     {
       "nom": "École publique Antoine Godard",
@@ -111,6 +113,7 @@
       "prix_appartement": 4722
     }
   ],
+  "prix_m2_appartement": 4726,
   "restaurants": [
     {
       "nom": "La Pièce du Boucher",
@@ -169,7 +172,6 @@
     "/uploads/limonest.jpeg",
     "/uploads/img_6898.jpeg",
     "/uploads/img_6908.jpeg",
-    "/uploads/img_6913.jpeg",
     "/uploads/img_6920.jpeg",
     "/uploads/img_6950.jpeg",
     "/uploads/img_6964.jpeg",
@@ -210,8 +212,5 @@
     }
   ],
   "video_visite": "/uploads/limonest.mp4",
-  "meta_title": "Conseiller immobilier iad à Limonest (69760)",
-  "prix_m2_maison": 5184,
-  "prix_m2_appartement": 4726,
-  "delai_vente": 71
+  "meta_title": "Conseiller immobilier iad à Limonest (69760)"
 }
