@@ -160,6 +160,7 @@
     "duree": "2:00"
   },
   "galerie": [
+    "/uploads/limonest.jpeg",
     "/uploads/img_6898.jpeg",
     "/uploads/img_6908.jpeg",
     "/uploads/img_6913.jpeg",
@@ -169,7 +170,7 @@
     "/uploads/img_6971.jpeg",
     "/uploads/img_6985.jpeg"
   ],
-  "video": "/uploads/limonest.mp4",
+  "video": "/uploads/limonest.jpeg",
   "quartiers": [
     {
       "nom": "Le Bourg - Place du Griffon",
@@ -202,5 +203,6 @@
       "prix_indicatif": "4 300 - 5 300 €/m²"
     }
   ],
+  "video_visite": "/uploads/limonest.mp4",
   "meta_title": "Conseiller immobilier iad à Limonest (69760)"
 }
