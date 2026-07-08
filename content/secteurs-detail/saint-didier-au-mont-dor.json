@@ -2,6 +2,8 @@
   "superficie": 8,
   "meta_description": "Avis de valeur, vente et achat à Saint-Didier-au-Mont-d'Or avec Romain Rieg, conseiller iad résident. Connaissance fine du marché du Mont d'Or et de l'Ouest lyonnais.",
   "instagram_url": "https://www.instagram.com/romainrieg.immo/",
+  "delai_vente": 58,
+  "prix_m2_maison": 6256,
   "ecoles": [
     {
       "nom": "École publique Ennat et Auguste Leger",
@@ -109,6 +111,7 @@
       "prix_appartement": 5325
     }
   ],
+  "prix_m2_appartement": 5330,
   "restaurants": [
     {
       "nom": "L'Éclat de Pierre",
@@ -162,8 +165,7 @@
     "/uploads/img_7061.jpeg",
     "/uploads/img_7070.jpeg",
     "/uploads/img_7577.jpeg",
-    "/uploads/img_7600.jpeg",
-    "/uploads/img_7621.jpeg"
+    "/uploads/img_7600.jpeg"
   ],
   "video": "/uploads/saint-didier.jpeg",
   "quartiers": [
@@ -199,8 +201,5 @@
     }
   ],
   "video_visite": "/uploads/saint-didier-au-mont-dor.mp4",
-  "meta_title": "Conseiller immobilier iad à Saint-Didier-au-Mont-d'Or",
-  "prix_m2_maison": 6256,
-  "prix_m2_appartement": 5330,
-  "delai_vente": 58
+  "meta_title": "Conseiller immobilier iad à Saint-Didier-au-Mont-d'Or"
 }
