@@ -2,6 +2,8 @@
   "superficie": 7.29,
   "meta_description": "Avis de valeur, vente et achat à Saint-Cyr-au-Mont-d'Or avec Romain Rieg, conseiller iad. Expertise des propriétés de prestige du Mont d'Or et de l'Ouest lyonnais.",
   "instagram_url": "https://www.instagram.com/romainrieg.immo/",
+  "delai_vente": 74,
+  "prix_m2_maison": 6230,
   "ecoles": [
     {
       "nom": "École maternelle du Bourg",
@@ -107,6 +109,7 @@
       "prix_appartement": 5133
     }
   ],
+  "prix_m2_appartement": 5133,
   "restaurants": [
     {
       "nom": "L'Ermitage Cuisine à Manger",
@@ -145,7 +148,6 @@
     "/uploads/img_7949.jpeg",
     "/uploads/img_7389.jpeg",
     "/uploads/img_7396.jpeg",
-    "/uploads/img_7398.jpeg",
     "/uploads/img_7425.jpeg"
   ],
   "video": "/uploads/st-cyr.jpeg",
@@ -177,8 +179,5 @@
     }
   ],
   "video_visite": "/uploads/saint-cyr-au-mont-dor.mp4",
-  "meta_title": "Conseiller immobilier iad à Saint-Cyr-au-Mont-d'Or",
-  "prix_m2_maison": 6230,
-  "prix_m2_appartement": 5133,
-  "delai_vente": 74
+  "meta_title": "Conseiller immobilier iad à Saint-Cyr-au-Mont-d'Or"
 }
