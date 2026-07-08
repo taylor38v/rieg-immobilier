@@ -36,7 +36,10 @@ collections:
     folder: "content/articles"
     preview_path: "actualites/{{slug}}"
     create: true
-    slug: "{{slug}}"
+    # Sans identifier_field, Decap ne trouve pas de champ "title" et génère un nom de
+    # fichier illisible (map-duree_lecture-4-auteur-...). On lui désigne "titre".
+    identifier_field: "titre"
+    slug: "{{titre}}"
     extension: "md"
     format: "frontmatter"
     summary: "{{titre}} · {{rubrique}} · {{date}}"
@@ -1143,6 +1146,8 @@ collections:
         fields:
           - { name: "nom", label: "Nom complet", widget: "string" }
           - { name: "titre", label: "Titre / fonction", widget: "string" }
+          - { name: "logo", label: "🖼️ Logo du site (en haut à gauche)", widget: "image", required: false, hint: "Idéalement un PNG à fond transparent. Il s'affiche dans l'en-tête de toutes les pages." }
+          - { name: "logo_alt", label: "Logo - texte alternatif", widget: "string", required: false, hint: "Texte lu par Google et les lecteurs d'écran (ex. « iad Prestige Immobilier »)." }
           - { name: "telephone", label: "Téléphone affiché", widget: "string" }
           - { name: "telephone_lien", label: "Téléphone format international (+336…)", widget: "string" }
           - { name: "email", label: "Email", widget: "string" }

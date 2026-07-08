@@ -34,6 +34,14 @@ function writeTs(name, code) {
   console.log(`✓ generated ${path.relative(ROOT, path.join(OUT, name))}`);
 }
 
+// YAML parse "date: 2026-06-03" en objet Date : String(date) donne "Wed Jun 03 2026...".
+// Comparer ces chaînes trierait par jour de la semaine -> on normalise en timestamp.
+function dateKey(d) {
+  if (!d) return 0;
+  const t = d instanceof Date ? d.getTime() : Date.parse(String(d));
+  return Number.isNaN(t) ? 0 : t;
+}
+
 // --- Articles ---
 const articles = readMdFolder("articles")
   .filter((a) => a.publie !== false)
@@ -41,7 +49,7 @@ const articles = readMdFolder("articles")
   .sort((a, b) => {
     const oa = a.ordre ?? Infinity, ob = b.ordre ?? Infinity;
     if (oa !== ob) return oa - ob;
-    return String(b.date || "").localeCompare(String(a.date || ""));
+    return dateKey(b.date) - dateKey(a.date);
   });
 
 writeTs(
@@ -70,7 +78,7 @@ export const articles: Article[] = ${JSON.stringify(articles, null, 2)};
 // --- Témoignages ---
 const temoignages = readMdFolder("temoignages")
   .filter((t) => t.publie !== false)
-  .sort((a, b) => String(b.date || "").localeCompare(String(a.date || "")));
+  .sort((a, b) => dateKey(b.date) - dateKey(a.date));
 
 writeTs(
   "temoignages.ts",
@@ -181,6 +189,8 @@ writeTs(
 export type Settings = {
   nom: string;
   titre: string;
+  logo?: string;
+  logo_alt?: string;
   telephone: string;
   telephone_lien: string;
   email: string;

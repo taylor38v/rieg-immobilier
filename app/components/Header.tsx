@@ -21,7 +21,12 @@ export default function Header() {
       <div className="sticky top-0 z-40 bg-ivory/95 backdrop-blur border-b border-ink/10">
         <div className="max-w-7xl mx-auto px-6 h-20 lg:h-24 flex items-center justify-between gap-4">
           <Link href="/" className="flex items-center shrink-0 min-w-0">
-            <img src="/photos/IAD_LOGO_FINAL-removebg-preview.png" alt="iad Prestige Immobilier" className="h-9 lg:h-11 w-auto" />
+            {/* no-round : le CSS global arrondit les images sauf opt-out (l'alt est éditable, on ne peut pas s'y fier). */}
+            <img
+              src={settings.logo ?? "/photos/IAD_LOGO_FINAL-removebg-preview.png"}
+              alt={settings.logo_alt ?? "iad Prestige Immobilier"}
+              className="no-round h-9 lg:h-11 w-auto"
+            />
           </Link>
           <nav className="hidden lg:flex items-center gap-4 xl:gap-5 text-[14px] xl:text-[15px]">
             {nav.map((n) => (
