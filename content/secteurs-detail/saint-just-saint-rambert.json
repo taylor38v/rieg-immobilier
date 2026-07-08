@@ -182,6 +182,7 @@
     "duree": "1:50"
   },
   "galerie": [
+    "/uploads/saint-just-saint-rambert.jpeg",
     "/uploads/dji_20260417_093002_288.jpg",
     "/uploads/dji_20260417_093419_368.jpg",
     "/uploads/img_8161.jpeg",
@@ -191,7 +192,7 @@
     "/uploads/img_8316.jpeg",
     "/uploads/img_8325.jpeg"
   ],
-  "video": "/uploads/saint-just-saint-rambert.mp4",
+  "video": "/uploads/st-just.jpeg",
   "quartiers": [
     {
       "nom": "Centre Saint-Just - Vieux Saint-Just",
@@ -224,5 +225,6 @@
       "prix_indicatif": "2 300 - 3 000 €/m²"
     }
   ],
+  "video_visite": "/uploads/saint-just-saint-rambert.mp4",
   "meta_title": "Conseiller immobilier iad à Saint-Just-Saint-Rambert"
 }

@@ -157,6 +157,7 @@
   },
   "galerie": [
     "/uploads/img_7187.jpeg",
+    "/uploads/ecully.jpeg",
     "/uploads/img_7205.jpeg",
     "/uploads/img_7214.jpeg",
     "/uploads/img_7235.jpeg",
@@ -164,7 +165,7 @@
     "/uploads/img_8005.jpeg",
     "/uploads/img_7265.jpeg"
   ],
-  "video": "/uploads/ecully.mp4",
+  "video": "/uploads/ecully.jpeg",
   "quartiers": [
     {
       "nom": "Centre-ville - Docteur Terver",
@@ -197,5 +198,6 @@
       "prix_indicatif": "4 100 - 5 200 €/m"
     }
   ],
+  "video_visite": "/uploads/ecully.mp4",
   "meta_title": "Conseiller immobilier iad à Écully (69130)"
 }

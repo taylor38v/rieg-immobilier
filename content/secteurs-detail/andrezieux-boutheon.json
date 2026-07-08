@@ -173,7 +173,7 @@
     "/uploads/img_8513.jpeg",
     "/uploads/img_8432.jpeg"
   ],
-  "video": "/uploads/andrezieux-boutheon.mp4",
+  "video": "/uploads/andrezieux.jpeg",
   "quartiers": [
     {
       "nom": "Bourg d’Andrézieux - Place du Forez - Gare",
@@ -206,5 +206,6 @@
       "description": "Secteurs plus diffus, appréciés pour les accès aux espaces extérieurs, la proximité de la Loire et certaines adresses plus calmes. Les maisons avec terrain ou environnement préservé peuvent se valoriser davantage."
     }
   ],
+  "video_visite": "/uploads/andrezieux-boutheon.mp4",
   "meta_title": "Conseiller immobilier iad à Andrézieux-Bouthéon"
 }

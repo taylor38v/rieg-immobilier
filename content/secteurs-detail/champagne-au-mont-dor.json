@@ -149,14 +149,14 @@
     "duree": "1:25"
   },
   "galerie": [
+    "/uploads/champagne-au-mont-d-or.jpeg",
     "/uploads/img_7134.jpeg",
     "/uploads/img_7143.jpeg",
     "/uploads/img_7147.jpeg",
-    "/uploads/img_7154.jpeg",
     "/uploads/img_7174.jpeg",
     "/uploads/img_7183.jpeg"
   ],
-  "video": "/uploads/champagne-au-mont-dor.mp4",
+  "video": "/uploads/champagne.jpeg",
   "quartiers": [
     {
       "nom": "Centre village - Lanessan",
@@ -179,5 +179,6 @@
       "nom": "Voutillière - Rochecardon"
     }
   ],
+  "video_visite": "/uploads/champagne-au-mont-dor.mp4",
   "meta_title": "Conseiller immobilier iad à Champagne-au-Mont-d'Or"
 }

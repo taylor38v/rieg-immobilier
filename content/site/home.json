@@ -78,8 +78,8 @@
     "citation": "Mon énergie au service de votre projet.",
     "cta_primary_label": "Me rencontrer",
     "photo": "/photos/IMG_6487_SnapseedCopy-1536x2048.jpg",
-    "photo_position": "center",
     "titre": "Passionné d'immobilier,\nancré dans les Monts d'Or.",
+    "photo_position": "center",
     "cta_primary_href": "/contact",
     "cta_secondary_label": "💬 SMS",
     "citation_auteur": "Romain Rieg · Conseiller immobilier iad",
@@ -170,6 +170,11 @@
         "nom": "Elem B. - Lyon 9ème",
         "contexte": "Avis de valeur · Local commercial",
         "texte": "Romain Rieg a été en mesure de répondre très rapidement concernant mon projet, avec toutes les explications et infos dont j'avais besoin. Réactivité et professionnalisme exemplaires, je ferai à nouveau appel à lui sans hésiter."
+      },
+      {
+        "nom": "Julien B.",
+        "contexte": "Location - Lyon 3",
+        "texte": "Professionnel, avenant et très sympathique.\nJulien, Tumpa et Evan."
       }
     ]
   }
