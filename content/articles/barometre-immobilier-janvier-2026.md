@@ -5,10 +5,10 @@ chapo: En janvier 2026, le marché immobilier retrouve progressivement de la
   lisibilité. Décryptage du baromètre Meilleurs Agents et conseils pour les
   propriétaires vendeurs dans les Monts d’Or et l’Ouest lyonnais.
 rubrique: Baromètre
-date: 2026-02-07
+date: 2026-02-06
 duree_lecture: 4
 auteur: Romain Rieg
-image: /uploads/janvier-2026.png
+image: /uploads/janvier-1.png
 publie: true
 ---
 Janvier marque traditionnellement une reprise d'activité sur le marché immobilier, après les semaines plus calmes de fin d'année. Ce début 2026 ne fait pas exception, avec un signal plutôt encourageant côté offre - même si la prudence reste de mise pour fixer un prix de vente.
