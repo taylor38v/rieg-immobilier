@@ -8,7 +8,7 @@ rubrique: Baromètre
 date: 2026-07-06
 duree_lecture: 4
 auteur: Romain Rieg
-image: /uploads/juin-2026.jpg
+image: /uploads/juin-1.png
 publie: true
 ---
 Le mois de juin confirme une tendance plus encourageante pour le marché immobilier, après plusieurs mois d’ajustement. La reprise existe, mais elle reste progressive, inégale et très dépendante des territoires.
