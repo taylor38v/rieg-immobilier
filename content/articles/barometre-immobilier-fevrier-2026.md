@@ -5,10 +5,10 @@ chapo: En février 2026, le marché immobilier confirme une forme de
   stabilisation. Les données Meilleurs Agents montrent un contexte plus lisible,
   mais toujours exigeant pour les vendeurs.
 rubrique: Baromètre
-date: 2026-03-10
+date: 2026-03-06
 duree_lecture: 4
 auteur: Romain Rieg
-image: /uploads/fevrier-2026.png
+image: /uploads/f2vrier.png
 publie: true
 ---
 Après un mois de janvier marqué par le retour de l'offre, février confirme une tendance : le marché se stabilise, sans embellie spectaculaire mais sans accroc majeur non plus.
