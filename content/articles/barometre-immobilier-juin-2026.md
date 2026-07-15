@@ -1,5 +1,6 @@
 ---
-titre: "Baromètre immobilier - Juin 2026 : une reprise visible, mais encore sélective"
+titre: "Baromètre immobilier Ouest Lyonnais - Juin 2026 : une reprise visible,
+  mais encore sélective"
 chapo: Le marché immobilier confirme une reprise progressive en juin 2026, mais
   celle-ci reste sélective selon les territoires. Dans les Monts d’Or et l’Ouest
   lyonnais, le bon positionnement prix reste essentiel pour vendre dans de
