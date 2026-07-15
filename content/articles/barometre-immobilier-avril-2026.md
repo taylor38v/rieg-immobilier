@@ -1,5 +1,6 @@
 ---
-titre: "Baromètre immobilier - Avril 2026 : une reprise plus timide que prévu"
+titre: "Baromètre immobilier Ouest Lyonnais - Avril 2026 : une reprise plus
+  timide que prévu"
 chapo: En avril 2026, la reprise immobilière reste mesurée et inégale selon les
   secteurs. Le bon positionnement prix demeure essentiel pour vendre dans de
   bonnes conditions.
