@@ -1,5 +1,6 @@
 ---
-titre: "Baromètre immobilier - Mars 2026 : un marché stable avant le printemps"
+titre: "Baromètre immobilier Ouest Lyonnais - Mars 2026 : un marché stable avant
+  le printemps"
 chapo: En mars 2026, le marché immobilier reste prudent malgré l’arrivée du
   printemps. Analyse des tendances Meilleurs Agents et des bons réflexes à
   adopter avant de vendre.
