@@ -1,6 +1,6 @@
 ---
-titre: "Baromètre immobilier Plaine du Forez, janvier 2026 : un marché prudent
-  mais plus lisible"
+titre: "Baromètre immobilier Plaine du Forez, janvier 2026 : le retour des
+  vendeurs profite aux acheteurs"
 chapo: En janvier 2026, le marché immobilier de la Plaine du Forez retrouve
   progressivement de la lisibilité. Décryptage du baromètre Meilleurs Agents et
   conseils aux propriétaires vendeurs à Saint-Just-Saint-Rambert et
