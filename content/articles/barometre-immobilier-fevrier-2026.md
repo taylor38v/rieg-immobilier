@@ -1,6 +1,6 @@
 ---
-titre: "Baromètre immobilier - Février 2026 : le retour progressif des vendeurs
-  sur le marché"
+titre: "Baromètre immobilier Ouest Lyonnais - Février 2026 : le retour
+  progressif des vendeurs sur le marché"
 chapo: En février 2026, le marché immobilier confirme une forme de
   stabilisation. Les données Meilleurs Agents montrent un contexte plus lisible,
   mais toujours exigeant pour les vendeurs.
