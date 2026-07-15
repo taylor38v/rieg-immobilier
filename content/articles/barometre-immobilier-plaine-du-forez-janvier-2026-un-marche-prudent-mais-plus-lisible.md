@@ -9,7 +9,7 @@ rubrique: Baromètre
 date: 2026-02-13
 duree_lecture: 4
 auteur: Romain Rieg
-image: /uploads/janvier-1.png
+image: /uploads/janvier.png
 publie: true
 ---
 Janvier marque traditionnellement une reprise d'activité sur le marché immobilier, après les semaines plus calmes de fin d'année. Ce début 2026 ne fait pas exception dans la Plaine du Forez, avec un signal plutôt encourageant côté offre, même si la prudence reste de mise pour fixer un prix de vente.
