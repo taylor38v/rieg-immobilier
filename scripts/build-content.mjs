@@ -191,6 +191,7 @@ export type Settings = {
   titre: string;
   logo?: string;
   logo_alt?: string;
+  justifier_textes?: boolean;
   btn_sms_label?: string;
   btn_mail_label?: string;
   telephone: string;

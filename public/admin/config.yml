@@ -1173,6 +1173,7 @@ collections:
           - { name: "titre", label: "Titre / fonction", widget: "string" }
           - { name: "logo", label: "🖼️ Logo du site (en haut à gauche)", widget: "image", required: false, hint: "Idéalement un PNG à fond transparent. Il s'affiche dans l'en-tête de toutes les pages." }
           - { name: "logo_alt", label: "Logo - texte alternatif", widget: "string", required: false, hint: "Texte lu par Google et les lecteurs d'écran (ex. « iad Prestige Immobilier »)." }
+          - { name: "justifier_textes", label: "Justifier les textes du site", widget: "boolean", default: true, required: false, hint: "Activé = paragraphes alignés des deux côtés (justifié). Désactivé = alignés à gauche. S'applique à tout le site." }
           - { name: "btn_sms_label", label: "Bouton SMS (haut de page)", widget: "string", required: false, hint: "Libellé du bouton SMS affiché dans les bannières. Ex. « Sms direct »." }
           - { name: "btn_mail_label", label: "Bouton Email (haut de page)", widget: "string", required: false, hint: "Libellé du bouton email affiché dans les bannières. Ex. « Email »." }
           - { name: "telephone", label: "Téléphone affiché", widget: "string" }

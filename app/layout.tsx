@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import WhatsApp from "./components/WhatsApp";
 import HiddenForms from "./components/HiddenForms";
 import RevealOnScroll from "./components/RevealOnScroll";
+import { settings } from "./lib/_generated/settings";
 
 const sans = Montserrat({ variable: "--font-sans", subsets: ["latin"], weight: ["300", "400", "500", "600", "700"] });
 const serif = Cormorant_Garamond({ variable: "--font-serif", subsets: ["latin"], weight: ["400", "500", "600", "700"] });
@@ -42,7 +43,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="fr" className={`${sans.variable} ${serif.variable} antialiased`}>
       <body className="min-h-screen flex flex-col bg-ivory text-ink">
         <Header />
-        <main className="flex-1">{children}</main>
+        <main className={`flex-1 ${settings.justifier_textes === false ? "text-gauche" : ""}`}>{children}</main>
         <Footer />
         <WhatsApp />
         <HiddenForms />

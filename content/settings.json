@@ -1,6 +1,7 @@
 {
   "logo": "/photos/IAD_LOGO_FINAL-removebg-preview.png",
   "logo_alt": "iad Prestige Immobilier",
+  "justifier_textes": true,
   "btn_sms_label": "Sms direct",
   "btn_mail_label": "Email",
   "telephone_lien": "+33679571473",

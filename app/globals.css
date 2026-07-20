@@ -47,6 +47,9 @@ main p:not(.text-center):not(.text-right):not(.no-justify):not(.text-xs):not(.te
   text-justify: inter-word;
 }
 
+/* Interrupteur CMS (Réglages → « Justifier les textes ») : si désactivé, tout repasse aligné à gauche */
+main.text-gauche p { text-align: left !important; text-justify: auto; }
+
 /* ─── Boutons et CTAs : bords arrondis par défaut (sauf opt-out) ─── */
 button:not(.no-round):not([class*="rounded-"]) { border-radius: 9999px; }
 a[class*="bg-gold"]:not(.no-round):not([class*="rounded-"]),
