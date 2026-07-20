@@ -1,13 +1,13 @@
 ---
-titre: "Baromètre immobilier - Mai 2026 : une reprise à deux vitesses"
+titre: "Baromètre immobilier Ouest Lyonnais - Mai 2026 : une reprise à deux vitesses"
 chapo: En mai 2026, le marché immobilier montre des signes de reprise, mais les
   écarts restent importants selon les villes. Dans les Monts d’Or, la justesse
   du prix reste décisive.
 rubrique: Baromètre
-date: 2026-06-03
+date: 2026-06-06
 duree_lecture: 4
 auteur: Romain Rieg
-image: /uploads/mai-2026.png
+image: /uploads/mai-1.png
 publie: true
 ---
 Le mois de mai confirme ce que les précédents baromètres laissaient présager : la reprise du marché immobilier existe, mais elle ne profite pas à toutes les villes de la même façon.

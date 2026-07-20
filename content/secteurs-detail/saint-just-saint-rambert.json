@@ -2,6 +2,8 @@
   "superficie": 40,
   "meta_description": "Avis de valeur, vente et achat à Saint-Just-Saint-Rambert avec Romain Rieg, conseiller iad. Marché dynamique de la Plaine du Forez, idéal primo-accédants.",
   "instagram_url": "https://www.instagram.com/romainrieg.immo/",
+  "delai_vente": 78,
+  "prix_m2_maison": 2730,
   "ecoles": [
     {
       "nom": "Écoles publiques côté Saint-Just : Les Érables - Les Peupliers - Les Tilleuls - Les Cèdres",
@@ -127,6 +129,7 @@
       "prix_appartement": 1967
     }
   ],
+  "prix_m2_appartement": 2254,
   "restaurants": [
     {
       "nom": "Le Minimaliste",
@@ -231,8 +234,5 @@
     }
   ],
   "video_visite": "/uploads/saint-just-saint-rambert.mp4",
-  "meta_title": "Conseiller immobilier iad à Saint-Just-Saint-Rambert",
-  "prix_m2_maison": 2933,
-  "prix_m2_appartement": 2254,
-  "delai_vente": 78
+  "meta_title": "Conseiller immobilier iad à Saint-Just-Saint-Rambert"
 }

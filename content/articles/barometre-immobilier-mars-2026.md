@@ -1,5 +1,6 @@
 ---
-titre: "Baromètre immobilier - Mars 2026 : un marché stable avant le printemps"
+titre: "Baromètre immobilier Ouest Lyonnais - Mars 2026 : un marché stable avant
+  le printemps"
 chapo: En mars 2026, le marché immobilier reste prudent malgré l’arrivée du
   printemps. Analyse des tendances Meilleurs Agents et des bons réflexes à
   adopter avant de vendre.
@@ -7,7 +8,7 @@ rubrique: Baromètre
 date: 2026-04-03
 duree_lecture: 4
 auteur: Romain Rieg
-image: /uploads/mars-2026.png
+image: /uploads/mars-1.png
 publie: true
 ---
 Le printemps approche, traditionnellement synonyme de regain d'intérêt pour l'immobilier. Le baromètre Meilleurs Agents de mars invite toutefois à la prudence : ce signal saisonnier habituel ne s'est pas pleinement matérialisé cette année.

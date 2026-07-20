@@ -17,7 +17,7 @@
     "intro": "30 minutes en visio ou par téléphone pour qualifier votre projet, répondre à vos questions et envisager une collaboration.",
     "puces": [
       "Pas d'inscription",
-      "pas de spam",
+      "Pas de spam",
       "Annulation ou report en un clic",
       "Rappel automatique avant le rendez-vous"
     ],
@@ -35,7 +35,7 @@
     "whatsapp_label": "Envoyer un SMS",
     "calcom_label": "Réserver 30 minutes",
     "formulaire_label": "Remplir un formulaire",
-    "titre": "Trois canaux, vous choisissez.",
+    "titre": "Quatre canaux, vous choisissez.",
     "email": "romain.rieg@iadfrance.fr"
   },
   "engagement": {
@@ -43,10 +43,10 @@
     "items": [
       "Je vous réponds personnellement (pas d'assistant ni d'IA)",
       "Sous 24h en semaine",
-      "sous 4h si urgent",
+      "Sous 4h si urgent",
       "Aucun ajout à une liste de prospection automatique",
       "Données strictement confidentielles",
-      "jamais revendues"
+      "Jamais revendues"
     ]
   },
   "footer_form_titre": "Pourquoi ce formulaire détaillé ?",
