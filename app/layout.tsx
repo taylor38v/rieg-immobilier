@@ -36,6 +36,9 @@ export const metadata: Metadata = {
   // l'accueil comme canonical (Google les aurait traitées comme des doublons).
   alternates: { canonical: "./" },
   robots: { index: true, follow: true },
+  // Vérification de propriété Google Search Console (méthode balise HTML).
+  // Ne pas retirer : Google revérifie périodiquement, sa suppression fait perdre l'accès.
+  verification: { google: "OtrZLNck105HqOgMuwQ_dFrVO6g2mkR6gosEvbSU5XE" },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

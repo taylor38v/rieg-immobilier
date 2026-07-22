@@ -51,3 +51,7 @@ next-env.d.ts
 
 # generated content (rebuilt by scripts/build-content.mjs)
 /app/lib/_generated/
+
+# documents de travail internes (retours client, notes)
+*.pdf
+doc.md
