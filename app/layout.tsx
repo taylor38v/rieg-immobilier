@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Montserrat, Cormorant_Garamond } from "next/font/google";
-import Script from "next/script";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -51,7 +50,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <WhatsApp />
         <HiddenForms />
         <RevealOnScroll />
-        <Script defer data-domain="romainrieg-immobilier.fr" src="https://plausible.io/js/script.js" strategy="afterInteractive" />
       </body>
     </html>
   );

@@ -12,7 +12,7 @@ Romain Rieg, agent commercial indépendant du réseau iad France, joignable à [
 
 Les seules données personnelles collectées sont celles que vous fournissez volontairement via les formulaires du site (contact, estimation, newsletter) : nom, prénom, email, téléphone, données qualifiant votre projet immobilier.
 
-Aucune donnée n'est collectée à votre insu. Aucun cookie tiers de tracking publicitaire n'est utilisé. La mesure d'audience est assurée par Plausible Analytics, un service respectueux du RGPD qui ne dépose pas de cookies et n'identifie pas les visiteurs.
+Aucune donnée n'est collectée à votre insu. Le site n'utilise aucun outil de mesure d'audience, aucun cookie de tracking publicitaire et aucun traceur tiers. Votre navigation n'est ni enregistrée ni analysée.
 
 ## Finalité du traitement
 

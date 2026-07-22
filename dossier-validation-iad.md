@@ -96,7 +96,7 @@ Mentions complètes accessibles via /mentions-legales et /confidentialite (polit
 ## 7. Engagements pris
 
 - ✅ **Aucune donnée personnelle conservée au-delà de 3 ans** à compter du dernier contact
-- ✅ **Cookies** : aucun cookie tiers de tracking. Mesure d'audience via Plausible Analytics (RGPD-friendly, sans cookies)
+- ✅ **Cookies** : aucun cookie de tracking, aucun traceur tiers, aucun outil de mesure d'audience. Le site ne nécessite donc pas de bandeau cookies
 - ✅ **Photos** : utilisées avec consentement (mes photos personnelles + photos prises par moi sur les communes du secteur) ou banques d'images libres de droits
 - ✅ **En cas de départ du réseau iad** : suppression de toute référence à iad dans un délai de 48 h, et changement éventuel de nom de domaine si "iad" y figure
 
