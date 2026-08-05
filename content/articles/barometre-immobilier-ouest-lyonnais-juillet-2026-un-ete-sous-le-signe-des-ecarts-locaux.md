@@ -8,6 +8,7 @@ rubrique: Baromètre
 date: 2026-08-05
 duree_lecture: 4
 auteur: Romain Rieg
+image: /uploads/juillet-ouestr.png
 publie: true
 ---
 En juillet, les niveaux de prix restent très différents d’une commune à l’autre. Au sein d’une même ville, les écarts peuvent aussi être importants selon l’adresse, le type de bien et la qualité des prestations.
