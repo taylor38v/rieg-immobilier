@@ -8,6 +8,7 @@ rubrique: Baromètre
 date: 2026-08-13
 duree_lecture: 4
 auteur: Romain Rieg
+image: /uploads/juillet-plaine.png
 publie: true
 ---
 Dans la Plaine du Forez, le mois de juillet s’inscrit dans la continuité des derniers mois. Le marché reste principalement porté par des projets de résidence principale, avec des acquéreurs attentifs au budget global, à l’état du logement et à la qualité de vie proposée.
