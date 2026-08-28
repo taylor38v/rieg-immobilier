@@ -5,7 +5,7 @@ chapo: "Forums, patrimoine, sport, musique et sorties en famille : découvrez le
   Plaine du Forez."
 rubrique: Actualité
 date: 2026-08-28
-duree_lecture: 6
+duree_lecture: 8
 auteur: Romain Rieg
 image: /uploads/que-faire-en-septembre.jpg
 publie: false
