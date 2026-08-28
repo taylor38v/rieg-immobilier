@@ -8,7 +8,7 @@ date: 2026-08-28
 duree_lecture: 8
 auteur: Romain Rieg
 image: /uploads/que-faire-en-septembre.jpg
-publie: false
+publie: true
 ---
 <h1>Que faire en septembre 2026 dans l'Ouest lyonnais et la Plaine du Forez ?</h1>
 
