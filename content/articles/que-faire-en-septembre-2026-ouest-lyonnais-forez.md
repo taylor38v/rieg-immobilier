@@ -34,7 +34,9 @@ publie: true
 
 
 
-<h2 style="color:#454D3C; font-weight:800; margin-top:70px; margin-bottom:30px;">
+
+
+<h2 style="color:#454D3C; font-weight:800; line-height:1.15; margin-top:55px; margin-bottom:24px;">
 
 <strong><big><big><big>Agenda de septembre 2026 dans l'Ouest lyonnais et les Monts d'Or</big></big></big></strong>
 
@@ -42,7 +44,7 @@ publie: true
 
 
 
-<div style="width:100%; overflow-x:auto; -webkit-overflow-scrolling:touch; margin:20px 0 45px 0;">
+<div style="width:100%; overflow-x:auto; -webkit-overflow-scrolling:touch; margin:18px 0 38px 0;">
 
 <table style="width:100%; min-width:720px; border-collapse:collapse; border-spacing:0;">
 
@@ -182,15 +184,15 @@ publie: true
 
 
 
-<h2 style="all:unset !important; display:block !important; font-family:inherit !important; font-size:54px !important; font-weight:800 !important; line-height:1.12 !important; color:#454D3C !important; margin-top:85px !important; margin-bottom:38px !important;">
+<h2 style="color:#454D3C; font-weight:800; line-height:1.15; margin-top:55px; margin-bottom:24px;">
 
-Agenda de septembre 2026 dans la Plaine du Forez
+<strong><big><big><big>Agenda de septembre 2026 dans la Plaine du Forez</big></big></big></strong>
 
 </h2>
 
 
 
-<div style="width:100%; overflow-x:auto; -webkit-overflow-scrolling:touch; margin:20px 0 45px 0;">
+<div style="width:100%; overflow-x:auto; -webkit-overflow-scrolling:touch; margin:18px 0 38px 0;">
 
 <table style="width:100%; min-width:650px; border-collapse:collapse; border-spacing:0;">
 
@@ -306,9 +308,9 @@ Agenda de septembre 2026 dans la Plaine du Forez
 
 
 
-<h2 style="all:unset !important; display:block !important; font-family:inherit !important; font-size:54px !important; font-weight:800 !important; line-height:1.12 !important; color:#454D3C !important; margin-top:90px !important; margin-bottom:38px !important;">
+<h2 style="color:#454D3C; font-weight:800; line-height:1.15; margin-top:58px; margin-bottom:25px;">
 
-Ouest lyonnais et Monts d'Or : les sorties à ne pas manquer en septembre
+<strong><big><big><big>Ouest lyonnais et Monts d'Or : les sorties à ne pas manquer en septembre</big></big></big></strong>
 
 </h2>
 
@@ -316,9 +318,9 @@ Ouest lyonnais et Monts d'Or : les sorties à ne pas manquer en septembre
 
 
 
-<h3 style="all:unset !important; display:block !important; box-sizing:border-box !important; font-family:inherit !important; font-size:30px !important; font-weight:800 !important; line-height:1.25 !important; color:#454D3C !important; margin-top:70px !important; margin-bottom:24px !important; padding-left:18px !important; border-left:5px solid #C88A2D !important;">
+<h3 style="color:#454D3C; font-weight:800; line-height:1.25; margin-top:48px; margin-bottom:17px; padding-left:16px; border-left:5px solid #C88A2D;">
 
-Forums des associations : le grand rendez-vous du samedi 5 septembre
+<strong><big>Forums des associations : le grand rendez-vous du samedi 5 septembre</big></strong>
 
 </h3>
 
@@ -328,7 +330,7 @@ Forums des associations : le grand rendez-vous du samedi 5 septembre
 
 
 
-<div style="width:100%; overflow-x:auto; -webkit-overflow-scrolling:touch; margin:24px 0 35px 0;">
+<div style="width:100%; overflow-x:auto; -webkit-overflow-scrolling:touch; margin:22px 0 30px 0;">
 
 <table style="width:100%; min-width:680px; border-collapse:collapse; border-spacing:0;">
 
@@ -440,9 +442,9 @@ Forums des associations : le grand rendez-vous du samedi 5 septembre
 
 
 
-<h3 style="all:unset !important; display:block !important; box-sizing:border-box !important; font-family:inherit !important; font-size:30px !important; font-weight:800 !important; line-height:1.25 !important; color:#454D3C !important; margin-top:70px !important; margin-bottom:24px !important; padding-left:18px !important; border-left:5px solid #C88A2D !important;">
+<h3 style="color:#454D3C; font-weight:800; line-height:1.25; margin-top:48px; margin-bottom:17px; padding-left:16px; border-left:5px solid #C88A2D;">
 
-Une soirée culturelle à Écully le 5 septembre
+<strong><big>Une soirée culturelle à Écully le 5 septembre</big></strong>
 
 </h3>
 
@@ -462,9 +464,9 @@ Une soirée culturelle à Écully le 5 septembre
 
 
 
-<h3 style="all:unset !important; display:block !important; box-sizing:border-box !important; font-family:inherit !important; font-size:30px !important; font-weight:800 !important; line-height:1.25 !important; color:#454D3C !important; margin-top:70px !important; margin-bottom:24px !important; padding-left:18px !important; border-left:5px solid #C88A2D !important;">
+<h3 style="color:#454D3C; font-weight:800; line-height:1.25; margin-top:48px; margin-bottom:17px; padding-left:16px; border-left:5px solid #C88A2D;">
 
-Chiner au grand vide-greniers d'Écully le dimanche 6 septembre
+<strong><big>Chiner au grand vide-greniers d'Écully le dimanche 6 septembre</big></strong>
 
 </h3>
 
@@ -488,9 +490,9 @@ Chiner au grand vide-greniers d'Écully le dimanche 6 septembre
 
 
 
-<h3 style="all:unset !important; display:block !important; box-sizing:border-box !important; font-family:inherit !important; font-size:30px !important; font-weight:800 !important; line-height:1.25 !important; color:#454D3C !important; margin-top:70px !important; margin-bottom:24px !important; padding-left:18px !important; border-left:5px solid #C88A2D !important;">
+<h3 style="color:#454D3C; font-weight:800; line-height:1.25; margin-top:48px; margin-bottom:17px; padding-left:16px; border-left:5px solid #C88A2D;">
 
-Découvrir la saison culturelle de Saint-Didier-au-Mont-d'Or le 10 septembre
+<strong><big>Découvrir la saison culturelle de Saint-Didier-au-Mont-d'Or le 10 septembre</big></strong>
 
 </h3>
 
@@ -510,9 +512,9 @@ Découvrir la saison culturelle de Saint-Didier-au-Mont-d'Or le 10 septembre
 
 
 
-<h3 style="all:unset !important; display:block !important; box-sizing:border-box !important; font-family:inherit !important; font-size:30px !important; font-weight:800 !important; line-height:1.25 !important; color:#454D3C !important; margin-top:70px !important; margin-bottom:24px !important; padding-left:18px !important; border-left:5px solid #C88A2D !important;">
+<h3 style="color:#454D3C; font-weight:800; line-height:1.25; margin-top:48px; margin-bottom:17px; padding-left:16px; border-left:5px solid #C88A2D;">
 
-Vivre la 100e Course de Côte Limonest Mont-Verdun du 11 au 13 septembre
+<strong><big>Vivre la 100e Course de Côte Limonest Mont-Verdun du 11 au 13 septembre</big></strong>
 
 </h3>
 
@@ -542,7 +544,7 @@ Vivre la 100e Course de Côte Limonest Mont-Verdun du 11 au 13 septembre
 
 
 
-<p style="margin-top:22px;">
+<p style="margin-top:20px;">
 
 → <a href="https://www.limonest.fr/evenements/course-de-cote-limonest-mont-verdun-100eme-edition/" target="_blank" rel="noopener"><strong>Consulter le programme officiel de la 100e Course de Côte</strong></a>
 
@@ -552,9 +554,9 @@ Vivre la 100e Course de Côte Limonest Mont-Verdun du 11 au 13 septembre
 
 
 
-<h3 style="all:unset !important; display:block !important; box-sizing:border-box !important; font-family:inherit !important; font-size:30px !important; font-weight:800 !important; line-height:1.25 !important; color:#454D3C !important; margin-top:70px !important; margin-bottom:24px !important; padding-left:18px !important; border-left:5px solid #C88A2D !important;">
+<h3 style="color:#454D3C; font-weight:800; line-height:1.25; margin-top:48px; margin-bottom:17px; padding-left:16px; border-left:5px solid #C88A2D;">
 
-Vide-greniers à Champagne-au-Mont-d'Or le 13 septembre
+<strong><big>Vide-greniers à Champagne-au-Mont-d'Or le 13 septembre</big></strong>
 
 </h3>
 
@@ -574,9 +576,9 @@ Vide-greniers à Champagne-au-Mont-d'Or le 13 septembre
 
 
 
-<h3 style="all:unset !important; display:block !important; box-sizing:border-box !important; font-family:inherit !important; font-size:30px !important; font-weight:800 !important; line-height:1.25 !important; color:#454D3C !important; margin-top:70px !important; margin-bottom:24px !important; padding-left:18px !important; border-left:5px solid #C88A2D !important;">
+<h3 style="color:#454D3C; font-weight:800; line-height:1.25; margin-top:48px; margin-bottom:17px; padding-left:16px; border-left:5px solid #C88A2D;">
 
-Trois jours de musique de chambre à Saint-Cyr-au-Mont-d'Or
+<strong><big>Trois jours de musique de chambre à Saint-Cyr-au-Mont-d'Or</big></strong>
 
 </h3>
 
@@ -600,9 +602,9 @@ Trois jours de musique de chambre à Saint-Cyr-au-Mont-d'Or
 
 
 
-<h3 style="all:unset !important; display:block !important; box-sizing:border-box !important; font-family:inherit !important; font-size:30px !important; font-weight:800 !important; line-height:1.25 !important; color:#454D3C !important; margin-top:70px !important; margin-bottom:24px !important; padding-left:18px !important; border-left:5px solid #C88A2D !important;">
+<h3 style="color:#454D3C; font-weight:800; line-height:1.25; margin-top:48px; margin-bottom:17px; padding-left:16px; border-left:5px solid #C88A2D;">
 
-Journées européennes du patrimoine les 19 et 20 septembre
+<strong><big>Journées européennes du patrimoine les 19 et 20 septembre</big></strong>
 
 </h3>
 
@@ -628,7 +630,7 @@ Journées européennes du patrimoine les 19 et 20 septembre
 
 
 
-<p style="margin-top:22px;">
+<p style="margin-top:20px;">
 
 → <a href="https://journeesdupatrimoine.culture.gouv.fr/" target="_blank" rel="noopener"><strong>Découvrir le programme officiel des Journées européennes du patrimoine 2026</strong></a>
 
@@ -638,9 +640,9 @@ Journées européennes du patrimoine les 19 et 20 septembre
 
 
 
-<h3 style="all:unset !important; display:block !important; box-sizing:border-box !important; font-family:inherit !important; font-size:30px !important; font-weight:800 !important; line-height:1.25 !important; color:#454D3C !important; margin-top:70px !important; margin-bottom:24px !important; padding-left:18px !important; border-left:5px solid #C88A2D !important;">
+<h3 style="color:#454D3C; font-weight:800; line-height:1.25; margin-top:48px; margin-bottom:17px; padding-left:16px; border-left:5px solid #C88A2D;">
 
-Une Fête de la Gastronomie gourmande à Tassin le 20 septembre
+<strong><big>Une Fête de la Gastronomie gourmande à Tassin le 20 septembre</big></strong>
 
 </h3>
 
@@ -660,9 +662,9 @@ Une Fête de la Gastronomie gourmande à Tassin le 20 septembre
 
 
 
-<h2 style="all:unset !important; display:block !important; font-family:inherit !important; font-size:54px !important; font-weight:800 !important; line-height:1.12 !important; color:#454D3C !important; margin-top:90px !important; margin-bottom:38px !important;">
+<h2 style="color:#454D3C; font-weight:800; line-height:1.15; margin-top:58px; margin-bottom:25px;">
 
-Plaine du Forez : patrimoine, associations et grand air en septembre
+<strong><big><big><big>Plaine du Forez : patrimoine, associations et grand air en septembre</big></big></big></strong>
 
 </h2>
 
@@ -670,9 +672,9 @@ Plaine du Forez : patrimoine, associations et grand air en septembre
 
 
 
-<h3 style="all:unset !important; display:block !important; box-sizing:border-box !important; font-family:inherit !important; font-size:30px !important; font-weight:800 !important; line-height:1.25 !important; color:#454D3C !important; margin-top:70px !important; margin-bottom:24px !important; padding-left:18px !important; border-left:5px solid #C88A2D !important;">
+<h3 style="color:#454D3C; font-weight:800; line-height:1.25; margin-top:48px; margin-bottom:17px; padding-left:16px; border-left:5px solid #C88A2D;">
 
-Asso's pour tous à Andrézieux-Bouthéon le 4 septembre
+<strong><big>Asso's pour tous à Andrézieux-Bouthéon le 4 septembre</big></strong>
 
 </h3>
 
@@ -692,9 +694,9 @@ Asso's pour tous à Andrézieux-Bouthéon le 4 septembre
 
 
 
-<h3 style="all:unset !important; display:block !important; box-sizing:border-box !important; font-family:inherit !important; font-size:30px !important; font-weight:800 !important; line-height:1.25 !important; color:#454D3C !important; margin-top:70px !important; margin-bottom:24px !important; padding-left:18px !important; border-left:5px solid #C88A2D !important;">
+<h3 style="color:#454D3C; font-weight:800; line-height:1.25; margin-top:48px; margin-bottom:17px; padding-left:16px; border-left:5px solid #C88A2D;">
 
-Forum des associations de Saint-Just-Saint-Rambert le 5 septembre
+<strong><big>Forum des associations de Saint-Just-Saint-Rambert le 5 septembre</big></strong>
 
 </h3>
 
@@ -714,9 +716,9 @@ Forum des associations de Saint-Just-Saint-Rambert le 5 septembre
 
 
 
-<h3 style="all:unset !important; display:block !important; box-sizing:border-box !important; font-family:inherit !important; font-size:30px !important; font-weight:800 !important; line-height:1.25 !important; color:#454D3C !important; margin-top:70px !important; margin-bottom:24px !important; padding-left:18px !important; border-left:5px solid #C88A2D !important;">
+<h3 style="color:#454D3C; font-weight:800; line-height:1.25; margin-top:48px; margin-bottom:17px; padding-left:16px; border-left:5px solid #C88A2D;">
 
-L'Été du Prieuré les 18 et 19 septembre
+<strong><big>L'Été du Prieuré les 18 et 19 septembre</big></strong>
 
 </h3>
 
@@ -740,9 +742,9 @@ L'Été du Prieuré les 18 et 19 septembre
 
 
 
-<h3 style="all:unset !important; display:block !important; box-sizing:border-box !important; font-family:inherit !important; font-size:30px !important; font-weight:800 !important; line-height:1.25 !important; color:#454D3C !important; margin-top:70px !important; margin-bottom:24px !important; padding-left:18px !important; border-left:5px solid #C88A2D !important;">
+<h3 style="color:#454D3C; font-weight:800; line-height:1.25; margin-top:48px; margin-bottom:17px; padding-left:16px; border-left:5px solid #C88A2D;">
 
-Journées du patrimoine : remonter aux origines du chemin de fer à Andrézieux-Bouthéon
+<strong><big>Journées du patrimoine : remonter aux origines du chemin de fer à Andrézieux-Bouthéon</big></strong>
 
 </h3>
 
@@ -766,9 +768,9 @@ Journées du patrimoine : remonter aux origines du chemin de fer à Andrézieux-
 
 
 
-<h3 style="all:unset !important; display:block !important; box-sizing:border-box !important; font-family:inherit !important; font-size:30px !important; font-weight:800 !important; line-height:1.25 !important; color:#454D3C !important; margin-top:70px !important; margin-bottom:24px !important; padding-left:18px !important; border-left:5px solid #C88A2D !important;">
+<h3 style="color:#454D3C; font-weight:800; line-height:1.25; margin-top:48px; margin-bottom:17px; padding-left:16px; border-left:5px solid #C88A2D;">
 
-Musée des Civilisations et archéologie à Saint-Just-Saint-Rambert
+<strong><big>Musée des Civilisations et archéologie à Saint-Just-Saint-Rambert</big></strong>
 
 </h3>
 
@@ -792,9 +794,9 @@ Musée des Civilisations et archéologie à Saint-Just-Saint-Rambert
 
 
 
-<h3 style="all:unset !important; display:block !important; box-sizing:border-box !important; font-family:inherit !important; font-size:30px !important; font-weight:800 !important; line-height:1.25 !important; color:#454D3C !important; margin-top:70px !important; margin-bottom:24px !important; padding-left:18px !important; border-left:5px solid #C88A2D !important;">
+<h3 style="color:#454D3C; font-weight:800; line-height:1.25; margin-top:48px; margin-bottom:17px; padding-left:16px; border-left:5px solid #C88A2D;">
 
-Randonnées de Grangent le samedi 19 septembre
+<strong><big>Randonnées de Grangent le samedi 19 septembre</big></strong>
 
 </h3>
 
@@ -820,7 +822,7 @@ Randonnées de Grangent le samedi 19 septembre
 
 
 
-<p style="margin-top:22px;">
+<p style="margin-top:20px;">
 
 → <a href="https://www.loire.fr/jcms/97606_DBEvenement/fr/randonnees-de-grangent-randonnee-pedestre-vtt-et-cyclo" target="_blank" rel="noopener"><strong>Voir les informations officielles des Randonnées de Grangent</strong></a>
 
@@ -830,9 +832,9 @@ Randonnées de Grangent le samedi 19 septembre
 
 
 
-<h3 style="all:unset !important; display:block !important; box-sizing:border-box !important; font-family:inherit !important; font-size:30px !important; font-weight:800 !important; line-height:1.25 !important; color:#454D3C !important; margin-top:70px !important; margin-bottom:24px !important; padding-left:18px !important; border-left:5px solid #C88A2D !important;">
+<h3 style="color:#454D3C; font-weight:800; line-height:1.25; margin-top:48px; margin-bottom:17px; padding-left:16px; border-left:5px solid #C88A2D;">
 
-Challenge Loire Nature le dimanche 20 septembre
+<strong><big>Challenge Loire Nature le dimanche 20 septembre</big></strong>
 
 </h3>
 
@@ -866,7 +868,7 @@ Challenge Loire Nature le dimanche 20 septembre
 
 
 
-<p style="margin-top:22px;">
+<p style="margin-top:20px;">
 
 → <a href="https://www.loire.fr/jcms/100284_DBEvenement/fr/11eme-edition-challenge-loire-nature-raid-multisports-vtt-canoe-course-nature/trail" target="_blank" rel="noopener"><strong>Consulter les informations et inscriptions du Challenge Loire Nature</strong></a>
 
@@ -876,9 +878,9 @@ Challenge Loire Nature le dimanche 20 septembre
 
 
 
-<h3 style="all:unset !important; display:block !important; box-sizing:border-box !important; font-family:inherit !important; font-size:30px !important; font-weight:800 !important; line-height:1.25 !important; color:#454D3C !important; margin-top:70px !important; margin-bottom:24px !important; padding-left:18px !important; border-left:5px solid #C88A2D !important;">
+<h3 style="color:#454D3C; font-weight:800; line-height:1.25; margin-top:48px; margin-bottom:17px; padding-left:16px; border-left:5px solid #C88A2D;">
 
-Les 10 ans du Family Cinéma au Cinépôle le 26 septembre
+<strong><big>Les 10 ans du Family Cinéma au Cinépôle le 26 septembre</big></strong>
 
 </h3>
 
@@ -906,9 +908,9 @@ Les 10 ans du Family Cinéma au Cinépôle le 26 septembre
 
 
 
-<h2 style="all:unset !important; display:block !important; font-family:inherit !important; font-size:54px !important; font-weight:800 !important; line-height:1.12 !important; color:#454D3C !important; margin-top:90px !important; margin-bottom:38px !important;">
+<h2 style="color:#454D3C; font-weight:800; line-height:1.15; margin-top:58px; margin-bottom:25px;">
 
-Septembre 2026 : une rentrée animée entre Lyon et le Forez
+<strong><big><big><big>Septembre 2026 : une rentrée animée entre Lyon et le Forez</big></big></big></strong>
 
 </h2>
 
@@ -926,7 +928,7 @@ Septembre 2026 : une rentrée animée entre Lyon et le Forez
 
 
 
-<p style="margin-top:35px;"><strong>Vous envisagez de vous installer, d'acheter ou de vendre dans l'une de ces communes ?</strong></p>
+<p style="margin-top:30px;"><strong>Vous envisagez de vous installer, d'acheter ou de vendre dans l'une de ces communes ?</strong></p>
 
 
 
@@ -938,7 +940,7 @@ Septembre 2026 : une rentrée animée entre Lyon et le Forez
 
 
 
-<div style="margin-top:45px; padding:20px 22px; background-color:#F8F4ED; border-left:5px solid #C88A2D;">
+<div style="margin-top:38px; padding:18px 20px; background-color:#F8F4ED; border-left:5px solid #C88A2D;">
 
 <em>Informations vérifiées le 28 août 2026. Les dates, horaires, tarifs et conditions d'accès peuvent être modifiés par les organisateurs. Il est recommandé de consulter les informations officielles avant chaque déplacement.</em>
 
