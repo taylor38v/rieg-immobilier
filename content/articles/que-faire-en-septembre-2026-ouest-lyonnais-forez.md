@@ -10,6 +10,52 @@ auteur: Romain Rieg
 image: /uploads/que-faire-en-septembre.jpg
 publie: true
 ---
+<style>
+
+.event-title {
+
+\    font-size: 30px !important;
+
+\    font-weight: 800 !important;
+
+\    line-height: 1.25 !important;
+
+\    color: #454D3C !important;
+
+\    margin-top: 46px !important;
+
+\    margin-bottom: 16px !important;
+
+\    padding-left: 15px !important;
+
+\    border-left: 4px solid #C88A2D !important;
+
+}
+
+
+
+@media (max-width: 768px) {
+
+\    .event-title {
+
+\    font-size: 24px !important;
+
+\    line-height: 1.3 !important;
+
+\    margin-top: 36px !important;
+
+\    margin-bottom: 14px !important;
+
+\    padding-left: 12px !important;
+
+\    }
+
+}
+
+</style>
+
+
+
 <h1>Que faire en septembre 2026 dans l'Ouest lyonnais et la Plaine du Forez ?</h1>
 
 
@@ -58,6 +104,8 @@ publie: true
 
 <tbody>
 
+
+
 <tr>
 
 <td style="padding:10px; border:1px solid #ddd;">5 septembre</td>
@@ -68,6 +116,8 @@ publie: true
 
 </tr>
 
+
+
 <tr>
 
 <td style="padding:10px; border:1px solid #ddd;">5 septembre</td>
@@ -77,6 +127,8 @@ publie: true
 <td style="padding:10px; border:1px solid #ddd;">Écully</td>
 
 </tr>
+
+
 
 <tr>
 
@@ -88,6 +140,8 @@ publie: true
 
 </tr>
 
+
+
 <tr>
 
 <td style="padding:10px; border:1px solid #ddd;">10 septembre</td>
@@ -97,6 +151,8 @@ publie: true
 <td style="padding:10px; border:1px solid #ddd;">Saint-Didier-au-Mont-d'Or</td>
 
 </tr>
+
+
 
 <tr>
 
@@ -108,6 +164,8 @@ publie: true
 
 </tr>
 
+
+
 <tr>
 
 <td style="padding:10px; border:1px solid #ddd;">13 septembre</td>
@@ -117,6 +175,8 @@ publie: true
 <td style="padding:10px; border:1px solid #ddd;">Champagne-au-Mont-d'Or</td>
 
 </tr>
+
+
 
 <tr>
 
@@ -128,6 +188,8 @@ publie: true
 
 </tr>
 
+
+
 <tr>
 
 <td style="padding:10px; border:1px solid #ddd;">19 et 20 septembre</td>
@@ -138,6 +200,8 @@ publie: true
 
 </tr>
 
+
+
 <tr>
 
 <td style="padding:10px; border:1px solid #ddd;">20 septembre</td>
@@ -147,6 +211,8 @@ publie: true
 <td style="padding:10px; border:1px solid #ddd;">Tassin-la-Demi-Lune</td>
 
 </tr>
+
+
 
 </tbody>
 
@@ -180,6 +246,8 @@ publie: true
 
 <tbody>
 
+
+
 <tr>
 
 <td style="padding:10px; border:1px solid #ddd;">4 septembre</td>
@@ -189,6 +257,8 @@ publie: true
 <td style="padding:10px; border:1px solid #ddd;">Andrézieux-Bouthéon</td>
 
 </tr>
+
+
 
 <tr>
 
@@ -200,6 +270,8 @@ publie: true
 
 </tr>
 
+
+
 <tr>
 
 <td style="padding:10px; border:1px solid #ddd;">18 et 19 septembre</td>
@@ -209,6 +281,8 @@ publie: true
 <td style="padding:10px; border:1px solid #ddd;">Saint-Just-Saint-Rambert</td>
 
 </tr>
+
+
 
 <tr>
 
@@ -220,6 +294,8 @@ publie: true
 
 </tr>
 
+
+
 <tr>
 
 <td style="padding:10px; border:1px solid #ddd;">19 septembre</td>
@@ -229,6 +305,8 @@ publie: true
 <td style="padding:10px; border:1px solid #ddd;">Saint-Just-Saint-Rambert</td>
 
 </tr>
+
+
 
 <tr>
 
@@ -240,6 +318,8 @@ publie: true
 
 </tr>
 
+
+
 <tr>
 
 <td style="padding:10px; border:1px solid #ddd;">26 septembre</td>
@@ -249,6 +329,8 @@ publie: true
 <td style="padding:10px; border:1px solid #ddd;">Saint-Just-Saint-Rambert</td>
 
 </tr>
+
+
 
 </tbody>
 
@@ -264,11 +346,7 @@ publie: true
 
 
 
-<h3 style="font-weight:700; font-size:1.25em; line-height:1.35; color:#454D3C; margin-top:32px; margin-bottom:12px;">
-
-Forums des associations : le grand rendez-vous du samedi 5 septembre
-
-</h3>
+<h3 class="event-title">Forums des associations : le grand rendez-vous du samedi 5 septembre</h3>
 
 
 
@@ -296,6 +374,8 @@ Forums des associations : le grand rendez-vous du samedi 5 septembre
 
 <tbody>
 
+
+
 <tr>
 
 <td style="padding:10px; border:1px solid #ddd;"><strong>Écully</strong></td>
@@ -305,6 +385,8 @@ Forums des associations : le grand rendez-vous du samedi 5 septembre
 <td style="padding:10px; border:1px solid #ddd;">Centre sportif et de loisirs, 4 rue Jean-Rigaud</td>
 
 </tr>
+
+
 
 <tr>
 
@@ -316,6 +398,8 @@ Forums des associations : le grand rendez-vous du samedi 5 septembre
 
 </tr>
 
+
+
 <tr>
 
 <td style="padding:10px; border:1px solid #ddd;"><strong>Champagne-au-Mont-d'Or</strong></td>
@@ -325,6 +409,8 @@ Forums des associations : le grand rendez-vous du samedi 5 septembre
 <td style="padding:10px; border:1px solid #ddd;">Espace Monts d'Or</td>
 
 </tr>
+
+
 
 <tr>
 
@@ -336,6 +422,8 @@ Forums des associations : le grand rendez-vous du samedi 5 septembre
 
 </tr>
 
+
+
 <tr>
 
 <td style="padding:10px; border:1px solid #ddd;"><strong>Saint-Didier-au-Mont-d'Or</strong></td>
@@ -346,6 +434,8 @@ Forums des associations : le grand rendez-vous du samedi 5 septembre
 
 </tr>
 
+
+
 <tr>
 
 <td style="padding:10px; border:1px solid #ddd;"><strong>Saint-Cyr-au-Mont-d'Or</strong></td>
@@ -355,6 +445,8 @@ Forums des associations : le grand rendez-vous du samedi 5 septembre
 <td style="padding:10px; border:1px solid #ddd;">12 rue Jean-et-Catherine-Reynier</td>
 
 </tr>
+
+
 
 </tbody>
 
@@ -374,11 +466,7 @@ Forums des associations : le grand rendez-vous du samedi 5 septembre
 
 
 
-<h3 style="font-weight:700; font-size:1.25em; line-height:1.35; color:#454D3C; margin-top:32px; margin-bottom:12px;">
-
-Une soirée culturelle à Écully le 5 septembre
-
-</h3>
+<h3 class="event-title">Une soirée culturelle à Écully le 5 septembre</h3>
 
 
 
@@ -396,11 +484,7 @@ Une soirée culturelle à Écully le 5 septembre
 
 
 
-<h3 style="font-weight:700; font-size:1.25em; line-height:1.35; color:#454D3C; margin-top:32px; margin-bottom:12px;">
-
-Chiner au grand vide-greniers d'Écully le dimanche 6 septembre
-
-</h3>
+<h3 class="event-title">Chiner au grand vide-greniers d'Écully le dimanche 6 septembre</h3>
 
 
 
@@ -422,11 +506,7 @@ Chiner au grand vide-greniers d'Écully le dimanche 6 septembre
 
 
 
-<h3 style="font-weight:700; font-size:1.25em; line-height:1.35; color:#454D3C; margin-top:32px; margin-bottom:12px;">
-
-Découvrir la saison culturelle de Saint-Didier-au-Mont-d'Or le 10 septembre
-
-</h3>
+<h3 class="event-title">Découvrir la saison culturelle de Saint-Didier-au-Mont-d'Or le 10 septembre</h3>
 
 
 
@@ -444,11 +524,7 @@ Découvrir la saison culturelle de Saint-Didier-au-Mont-d'Or le 10 septembre
 
 
 
-<h3 style="font-weight:700; font-size:1.25em; line-height:1.35; color:#454D3C; margin-top:32px; margin-bottom:12px;">
-
-Vivre la 100e Course de Côte Limonest Mont-Verdun du 11 au 13 septembre
-
-</h3>
+<h3 class="event-title">Vivre la 100e Course de Côte Limonest Mont-Verdun du 11 au 13 septembre</h3>
 
 
 
@@ -482,11 +558,7 @@ Vivre la 100e Course de Côte Limonest Mont-Verdun du 11 au 13 septembre
 
 
 
-<h3 style="font-weight:700; font-size:1.25em; line-height:1.35; color:#454D3C; margin-top:32px; margin-bottom:12px;">
-
-Vide-greniers à Champagne-au-Mont-d'Or le 13 septembre
-
-</h3>
+<h3 class="event-title">Vide-greniers à Champagne-au-Mont-d'Or le 13 septembre</h3>
 
 
 
@@ -504,11 +576,7 @@ Vide-greniers à Champagne-au-Mont-d'Or le 13 septembre
 
 
 
-<h3 style="font-weight:700; font-size:1.25em; line-height:1.35; color:#454D3C; margin-top:32px; margin-bottom:12px;">
-
-Trois jours de musique de chambre à Saint-Cyr-au-Mont-d'Or
-
-</h3>
+<h3 class="event-title">Trois jours de musique de chambre à Saint-Cyr-au-Mont-d'Or</h3>
 
 
 
@@ -530,11 +598,7 @@ Trois jours de musique de chambre à Saint-Cyr-au-Mont-d'Or
 
 
 
-<h3 style="font-weight:700; font-size:1.25em; line-height:1.35; color:#454D3C; margin-top:32px; margin-bottom:12px;">
-
-Journées européennes du patrimoine les 19 et 20 septembre
-
-</h3>
+<h3 class="event-title">Journées européennes du patrimoine les 19 et 20 septembre</h3>
 
 
 
@@ -564,11 +628,7 @@ Journées européennes du patrimoine les 19 et 20 septembre
 
 
 
-<h3 style="font-weight:700; font-size:1.25em; line-height:1.35; color:#454D3C; margin-top:32px; margin-bottom:12px;">
-
-Une Fête de la Gastronomie gourmande à Tassin le 20 septembre
-
-</h3>
+<h3 class="event-title">Une Fête de la Gastronomie gourmande à Tassin le 20 septembre</h3>
 
 
 
@@ -592,11 +652,7 @@ Une Fête de la Gastronomie gourmande à Tassin le 20 septembre
 
 
 
-<h3 style="font-weight:700; font-size:1.25em; line-height:1.35; color:#454D3C; margin-top:32px; margin-bottom:12px;">
-
-Asso's pour tous à Andrézieux-Bouthéon le 4 septembre
-
-</h3>
+<h3 class="event-title">Asso's pour tous à Andrézieux-Bouthéon le 4 septembre</h3>
 
 
 
@@ -614,11 +670,7 @@ Asso's pour tous à Andrézieux-Bouthéon le 4 septembre
 
 
 
-<h3 style="font-weight:700; font-size:1.25em; line-height:1.35; color:#454D3C; margin-top:32px; margin-bottom:12px;">
-
-Forum des associations de Saint-Just-Saint-Rambert le 5 septembre
-
-</h3>
+<h3 class="event-title">Forum des associations de Saint-Just-Saint-Rambert le 5 septembre</h3>
 
 
 
@@ -636,11 +688,7 @@ Forum des associations de Saint-Just-Saint-Rambert le 5 septembre
 
 
 
-<h3 style="font-weight:700; font-size:1.25em; line-height:1.35; color:#454D3C; margin-top:32px; margin-bottom:12px;">
-
-L'Été du Prieuré les 18 et 19 septembre
-
-</h3>
+<h3 class="event-title">L'Été du Prieuré les 18 et 19 septembre</h3>
 
 
 
@@ -662,11 +710,7 @@ L'Été du Prieuré les 18 et 19 septembre
 
 
 
-<h3 style="font-weight:700; font-size:1.25em; line-height:1.35; color:#454D3C; margin-top:32px; margin-bottom:12px;">
-
-Journées du patrimoine : remonter aux origines du chemin de fer à Andrézieux-Bouthéon
-
-</h3>
+<h3 class="event-title">Journées du patrimoine : remonter aux origines du chemin de fer à Andrézieux-Bouthéon</h3>
 
 
 
@@ -688,11 +732,7 @@ Journées du patrimoine : remonter aux origines du chemin de fer à Andrézieux-
 
 
 
-<h3 style="font-weight:700; font-size:1.25em; line-height:1.35; color:#454D3C; margin-top:32px; margin-bottom:12px;">
-
-Musée des Civilisations et archéologie à Saint-Just-Saint-Rambert
-
-</h3>
+<h3 class="event-title">Musée des Civilisations et archéologie à Saint-Just-Saint-Rambert</h3>
 
 
 
@@ -714,11 +754,7 @@ Musée des Civilisations et archéologie à Saint-Just-Saint-Rambert
 
 
 
-<h3 style="font-weight:700; font-size:1.25em; line-height:1.35; color:#454D3C; margin-top:32px; margin-bottom:12px;">
-
-Randonnées de Grangent le samedi 19 septembre
-
-</h3>
+<h3 class="event-title">Randonnées de Grangent le samedi 19 septembre</h3>
 
 
 
@@ -748,11 +784,7 @@ Randonnées de Grangent le samedi 19 septembre
 
 
 
-<h3 style="font-weight:700; font-size:1.25em; line-height:1.35; color:#454D3C; margin-top:32px; margin-bottom:12px;">
-
-Challenge Loire Nature le dimanche 20 septembre
-
-</h3>
+<h3 class="event-title">Challenge Loire Nature le dimanche 20 septembre</h3>
 
 
 
@@ -790,11 +822,7 @@ Challenge Loire Nature le dimanche 20 septembre
 
 
 
-<h3 style="font-weight:700; font-size:1.25em; line-height:1.35; color:#454D3C; margin-top:32px; margin-bottom:12px;">
-
-Les 10 ans du Family Cinéma au Cinépôle le 26 septembre
-
-</h3>
+<h3 class="event-title">Les 10 ans du Family Cinéma au Cinépôle le 26 septembre</h3>
 
 
 
