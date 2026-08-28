@@ -34,11 +34,9 @@ publie: true
 
 
 
+<h2 style="color:#454D3C; font-weight:800; margin-top:70px; margin-bottom:30px;">
 
-
-<h2 style="all:unset !important; display:block !important; font-family:inherit !important; font-size:54px !important; font-weight:800 !important; line-height:1.12 !important; color:#454D3C !important; margin-top:85px !important; margin-bottom:38px !important;">
-
-Agenda de septembre 2026 dans l'Ouest lyonnais et les Monts d'Or
+<strong><big><big><big>Agenda de septembre 2026 dans l'Ouest lyonnais et les Monts d'Or</big></big></big></strong>
 
 </h2>
 
