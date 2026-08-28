@@ -36,7 +36,7 @@ publie: true
 
 
 
-<h2 style="all:unset !important; display:block !important; font-family:inherit !important; font-size:40px !important; font-weight:800 !important; line-height:1.2 !important; color:#454D3C !important; margin-top:65px !important; margin-bottom:28px !important;">
+<h2 style="all:unset !important; display:block !important; font-family:inherit !important; font-size:54px !important; font-weight:800 !important; line-height:1.12 !important; color:#454D3C !important; margin-top:85px !important; margin-bottom:38px !important;">
 
 Agenda de septembre 2026 dans l'Ouest lyonnais et les Monts d'Or
 
@@ -184,7 +184,7 @@ Agenda de septembre 2026 dans l'Ouest lyonnais et les Monts d'Or
 
 
 
-<h2 style="all:unset !important; display:block !important; font-family:inherit !important; font-size:40px !important; font-weight:800 !important; line-height:1.2 !important; color:#454D3C !important; margin-top:65px !important; margin-bottom:28px !important;">
+<h2 style="all:unset !important; display:block !important; font-family:inherit !important; font-size:54px !important; font-weight:800 !important; line-height:1.12 !important; color:#454D3C !important; margin-top:85px !important; margin-bottom:38px !important;">
 
 Agenda de septembre 2026 dans la Plaine du Forez
 
@@ -308,7 +308,7 @@ Agenda de septembre 2026 dans la Plaine du Forez
 
 
 
-<h2 style="all:unset !important; display:block !important; font-family:inherit !important; font-size:40px !important; font-weight:800 !important; line-height:1.2 !important; color:#454D3C !important; margin-top:75px !important; margin-bottom:32px !important;">
+<h2 style="all:unset !important; display:block !important; font-family:inherit !important; font-size:54px !important; font-weight:800 !important; line-height:1.12 !important; color:#454D3C !important; margin-top:90px !important; margin-bottom:38px !important;">
 
 Ouest lyonnais et Monts d'Or : les sorties à ne pas manquer en septembre
 
@@ -662,7 +662,7 @@ Une Fête de la Gastronomie gourmande à Tassin le 20 septembre
 
 
 
-<h2 style="all:unset !important; display:block !important; font-family:inherit !important; font-size:40px !important; font-weight:800 !important; line-height:1.2 !important; color:#454D3C !important; margin-top:80px !important; margin-bottom:32px !important;">
+<h2 style="all:unset !important; display:block !important; font-family:inherit !important; font-size:54px !important; font-weight:800 !important; line-height:1.12 !important; color:#454D3C !important; margin-top:90px !important; margin-bottom:38px !important;">
 
 Plaine du Forez : patrimoine, associations et grand air en septembre
 
@@ -908,7 +908,7 @@ Les 10 ans du Family Cinéma au Cinépôle le 26 septembre
 
 
 
-<h2 style="all:unset !important; display:block !important; font-family:inherit !important; font-size:40px !important; font-weight:800 !important; line-height:1.2 !important; color:#454D3C !important; margin-top:80px !important; margin-bottom:32px !important;">
+<h2 style="all:unset !important; display:block !important; font-family:inherit !important; font-size:54px !important; font-weight:800 !important; line-height:1.12 !important; color:#454D3C !important; margin-top:90px !important; margin-bottom:38px !important;">
 
 Septembre 2026 : une rentrée animée entre Lyon et le Forez
 
