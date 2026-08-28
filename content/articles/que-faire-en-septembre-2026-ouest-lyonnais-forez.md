@@ -58,23 +58,95 @@ publie: true
 
 <tbody>
 
-<tr><td style="padding:10px; border:1px solid #ddd;">5 septembre</td><td style="padding:10px; border:1px solid #ddd;">Forums des associations</td><td style="padding:10px; border:1px solid #ddd;">Écully, Dardilly, Limonest, Champagne-au-Mont-d'Or, Saint-Didier-au-Mont-d'Or et Saint-Cyr-au-Mont-d'Or</td></tr>
+<tr>
 
-<tr><td style="padding:10px; border:1px solid #ddd;">5 septembre</td><td style="padding:10px; border:1px solid #ddd;">Lancement de la saison culturelle</td><td style="padding:10px; border:1px solid #ddd;">Écully</td></tr>
+<td style="padding:10px; border:1px solid #ddd;">5 septembre</td>
 
-<tr><td style="padding:10px; border:1px solid #ddd;">6 septembre</td><td style="padding:10px; border:1px solid #ddd;">Grand vide-greniers</td><td style="padding:10px; border:1px solid #ddd;">Écully</td></tr>
+<td style="padding:10px; border:1px solid #ddd;"><strong>Forums des associations</strong></td>
 
-<tr><td style="padding:10px; border:1px solid #ddd;">10 septembre</td><td style="padding:10px; border:1px solid #ddd;">Lancement de la saison culturelle</td><td style="padding:10px; border:1px solid #ddd;">Saint-Didier-au-Mont-d'Or</td></tr>
+<td style="padding:10px; border:1px solid #ddd;">Écully, Dardilly, Limonest, Champagne-au-Mont-d'Or, Saint-Didier-au-Mont-d'Or et Saint-Cyr-au-Mont-d'Or</td>
 
-<tr><td style="padding:10px; border:1px solid #ddd;">11 au 13 septembre</td><td style="padding:10px; border:1px solid #ddd;">100e Course de Côte Limonest Mont-Verdun</td><td style="padding:10px; border:1px solid #ddd;">Limonest</td></tr>
+</tr>
 
-<tr><td style="padding:10px; border:1px solid #ddd;">13 septembre</td><td style="padding:10px; border:1px solid #ddd;">Vide-greniers</td><td style="padding:10px; border:1px solid #ddd;">Champagne-au-Mont-d'Or</td></tr>
+<tr>
 
-<tr><td style="padding:10px; border:1px solid #ddd;">18 au 20 septembre</td><td style="padding:10px; border:1px solid #ddd;">Festival Musique de Chambre aux Monts d'Or</td><td style="padding:10px; border:1px solid #ddd;">Saint-Cyr-au-Mont-d'Or</td></tr>
+<td style="padding:10px; border:1px solid #ddd;">5 septembre</td>
 
-<tr><td style="padding:10px; border:1px solid #ddd;">19 et 20 septembre</td><td style="padding:10px; border:1px solid #ddd;">Journées européennes du patrimoine</td><td style="padding:10px; border:1px solid #ddd;">Métropole de Lyon et Ouest lyonnais</td></tr>
+<td style="padding:10px; border:1px solid #ddd;"><strong>Lancement de la saison culturelle</strong></td>
 
-<tr><td style="padding:10px; border:1px solid #ddd;">20 septembre</td><td style="padding:10px; border:1px solid #ddd;">Fête de la Gastronomie</td><td style="padding:10px; border:1px solid #ddd;">Tassin-la-Demi-Lune</td></tr>
+<td style="padding:10px; border:1px solid #ddd;">Écully</td>
+
+</tr>
+
+<tr>
+
+<td style="padding:10px; border:1px solid #ddd;">6 septembre</td>
+
+<td style="padding:10px; border:1px solid #ddd;"><strong>Grand vide-greniers</strong></td>
+
+<td style="padding:10px; border:1px solid #ddd;">Écully</td>
+
+</tr>
+
+<tr>
+
+<td style="padding:10px; border:1px solid #ddd;">10 septembre</td>
+
+<td style="padding:10px; border:1px solid #ddd;"><strong>Lancement de la saison culturelle</strong></td>
+
+<td style="padding:10px; border:1px solid #ddd;">Saint-Didier-au-Mont-d'Or</td>
+
+</tr>
+
+<tr>
+
+<td style="padding:10px; border:1px solid #ddd;">11 au 13 septembre</td>
+
+<td style="padding:10px; border:1px solid #ddd;"><strong>100e Course de Côte Limonest Mont-Verdun</strong></td>
+
+<td style="padding:10px; border:1px solid #ddd;">Limonest</td>
+
+</tr>
+
+<tr>
+
+<td style="padding:10px; border:1px solid #ddd;">13 septembre</td>
+
+<td style="padding:10px; border:1px solid #ddd;"><strong>Vide-greniers</strong></td>
+
+<td style="padding:10px; border:1px solid #ddd;">Champagne-au-Mont-d'Or</td>
+
+</tr>
+
+<tr>
+
+<td style="padding:10px; border:1px solid #ddd;">18 au 20 septembre</td>
+
+<td style="padding:10px; border:1px solid #ddd;"><strong>Festival Musique de Chambre aux Monts d'Or</strong></td>
+
+<td style="padding:10px; border:1px solid #ddd;">Saint-Cyr-au-Mont-d'Or</td>
+
+</tr>
+
+<tr>
+
+<td style="padding:10px; border:1px solid #ddd;">19 et 20 septembre</td>
+
+<td style="padding:10px; border:1px solid #ddd;"><strong>Journées européennes du patrimoine</strong></td>
+
+<td style="padding:10px; border:1px solid #ddd;">Métropole de Lyon et Ouest lyonnais</td>
+
+</tr>
+
+<tr>
+
+<td style="padding:10px; border:1px solid #ddd;">20 septembre</td>
+
+<td style="padding:10px; border:1px solid #ddd;"><strong>Fête de la Gastronomie</strong></td>
+
+<td style="padding:10px; border:1px solid #ddd;">Tassin-la-Demi-Lune</td>
+
+</tr>
 
 </tbody>
 
@@ -108,19 +180,75 @@ publie: true
 
 <tbody>
 
-<tr><td style="padding:10px; border:1px solid #ddd;">4 septembre</td><td style="padding:10px; border:1px solid #ddd;">Asso's pour tous</td><td style="padding:10px; border:1px solid #ddd;">Andrézieux-Bouthéon</td></tr>
+<tr>
 
-<tr><td style="padding:10px; border:1px solid #ddd;">5 septembre</td><td style="padding:10px; border:1px solid #ddd;">Forum des associations</td><td style="padding:10px; border:1px solid #ddd;">Saint-Just-Saint-Rambert</td></tr>
+<td style="padding:10px; border:1px solid #ddd;">4 septembre</td>
 
-<tr><td style="padding:10px; border:1px solid #ddd;">18 et 19 septembre</td><td style="padding:10px; border:1px solid #ddd;">L'Été du Prieuré</td><td style="padding:10px; border:1px solid #ddd;">Saint-Just-Saint-Rambert</td></tr>
+<td style="padding:10px; border:1px solid #ddd;"><strong>Asso's pour tous</strong></td>
 
-<tr><td style="padding:10px; border:1px solid #ddd;">19 et 20 septembre</td><td style="padding:10px; border:1px solid #ddd;">Journées européennes du patrimoine</td><td style="padding:10px; border:1px solid #ddd;">Andrézieux-Bouthéon et Saint-Just-Saint-Rambert</td></tr>
+<td style="padding:10px; border:1px solid #ddd;">Andrézieux-Bouthéon</td>
 
-<tr><td style="padding:10px; border:1px solid #ddd;">19 septembre</td><td style="padding:10px; border:1px solid #ddd;">Randonnées de Grangent</td><td style="padding:10px; border:1px solid #ddd;">Saint-Just-Saint-Rambert</td></tr>
+</tr>
 
-<tr><td style="padding:10px; border:1px solid #ddd;">20 septembre</td><td style="padding:10px; border:1px solid #ddd;">Challenge Loire Nature</td><td style="padding:10px; border:1px solid #ddd;">Saint-Just-Saint-Rambert</td></tr>
+<tr>
 
-<tr><td style="padding:10px; border:1px solid #ddd;">26 septembre</td><td style="padding:10px; border:1px solid #ddd;">Fête du Cinépôle</td><td style="padding:10px; border:1px solid #ddd;">Saint-Just-Saint-Rambert</td></tr>
+<td style="padding:10px; border:1px solid #ddd;">5 septembre</td>
+
+<td style="padding:10px; border:1px solid #ddd;"><strong>Forum des associations</strong></td>
+
+<td style="padding:10px; border:1px solid #ddd;">Saint-Just-Saint-Rambert</td>
+
+</tr>
+
+<tr>
+
+<td style="padding:10px; border:1px solid #ddd;">18 et 19 septembre</td>
+
+<td style="padding:10px; border:1px solid #ddd;"><strong>L'Été du Prieuré</strong></td>
+
+<td style="padding:10px; border:1px solid #ddd;">Saint-Just-Saint-Rambert</td>
+
+</tr>
+
+<tr>
+
+<td style="padding:10px; border:1px solid #ddd;">19 et 20 septembre</td>
+
+<td style="padding:10px; border:1px solid #ddd;"><strong>Journées européennes du patrimoine</strong></td>
+
+<td style="padding:10px; border:1px solid #ddd;">Andrézieux-Bouthéon et Saint-Just-Saint-Rambert</td>
+
+</tr>
+
+<tr>
+
+<td style="padding:10px; border:1px solid #ddd;">19 septembre</td>
+
+<td style="padding:10px; border:1px solid #ddd;"><strong>Randonnées de Grangent</strong></td>
+
+<td style="padding:10px; border:1px solid #ddd;">Saint-Just-Saint-Rambert</td>
+
+</tr>
+
+<tr>
+
+<td style="padding:10px; border:1px solid #ddd;">20 septembre</td>
+
+<td style="padding:10px; border:1px solid #ddd;"><strong>Challenge Loire Nature</strong></td>
+
+<td style="padding:10px; border:1px solid #ddd;">Saint-Just-Saint-Rambert</td>
+
+</tr>
+
+<tr>
+
+<td style="padding:10px; border:1px solid #ddd;">26 septembre</td>
+
+<td style="padding:10px; border:1px solid #ddd;"><strong>Fête du Cinépôle</strong></td>
+
+<td style="padding:10px; border:1px solid #ddd;">Saint-Just-Saint-Rambert</td>
+
+</tr>
 
 </tbody>
 
@@ -130,11 +258,17 @@ publie: true
 
 
 
+
+
 <h2>Ouest lyonnais et Monts d'Or : les sorties à ne pas manquer en septembre</h2>
 
 
 
-<h3>Forums des associations : le grand rendez-vous du samedi 5 septembre</h3>
+<h3 style="font-weight:700; font-size:1.25em; line-height:1.35; color:#454D3C; margin-top:32px; margin-bottom:12px;">
+
+Forums des associations : le grand rendez-vous du samedi 5 septembre
+
+</h3>
 
 
 
@@ -162,17 +296,65 @@ publie: true
 
 <tbody>
 
-<tr><td style="padding:10px; border:1px solid #ddd;">Écully</td><td style="padding:10px; border:1px solid #ddd;">8h30 à 12h30</td><td style="padding:10px; border:1px solid #ddd;">Centre sportif et de loisirs, 4 rue Jean-Rigaud</td></tr>
+<tr>
 
-<tr><td style="padding:10px; border:1px solid #ddd;">Dardilly</td><td style="padding:10px; border:1px solid #ddd;">9h à 13h</td><td style="padding:10px; border:1px solid #ddd;">Complexe sportif Moulin Carron</td></tr>
+<td style="padding:10px; border:1px solid #ddd;"><strong>Écully</strong></td>
 
-<tr><td style="padding:10px; border:1px solid #ddd;">Champagne-au-Mont-d'Or</td><td style="padding:10px; border:1px solid #ddd;">9h à 12h30</td><td style="padding:10px; border:1px solid #ddd;">Espace Monts d'Or</td></tr>
+<td style="padding:10px; border:1px solid #ddd;">8h30 à 12h30</td>
 
-<tr><td style="padding:10px; border:1px solid #ddd;">Limonest</td><td style="padding:10px; border:1px solid #ddd;">9h30 à 13h</td><td style="padding:10px; border:1px solid #ddd;">Maison des Familles, 9 rue Doncaster</td></tr>
+<td style="padding:10px; border:1px solid #ddd;">Centre sportif et de loisirs, 4 rue Jean-Rigaud</td>
 
-<tr><td style="padding:10px; border:1px solid #ddd;">Saint-Didier-au-Mont-d'Or</td><td style="padding:10px; border:1px solid #ddd;">13h30 à 17h30</td><td style="padding:10px; border:1px solid #ddd;">Centre Laurent Bonnevay</td></tr>
+</tr>
 
-<tr><td style="padding:10px; border:1px solid #ddd;">Saint-Cyr-au-Mont-d'Or</td><td style="padding:10px; border:1px solid #ddd;">14h à 18h</td><td style="padding:10px; border:1px solid #ddd;">12 rue Jean-et-Catherine-Reynier</td></tr>
+<tr>
+
+<td style="padding:10px; border:1px solid #ddd;"><strong>Dardilly</strong></td>
+
+<td style="padding:10px; border:1px solid #ddd;">9h à 13h</td>
+
+<td style="padding:10px; border:1px solid #ddd;">Complexe sportif Moulin Carron</td>
+
+</tr>
+
+<tr>
+
+<td style="padding:10px; border:1px solid #ddd;"><strong>Champagne-au-Mont-d'Or</strong></td>
+
+<td style="padding:10px; border:1px solid #ddd;">9h à 12h30</td>
+
+<td style="padding:10px; border:1px solid #ddd;">Espace Monts d'Or</td>
+
+</tr>
+
+<tr>
+
+<td style="padding:10px; border:1px solid #ddd;"><strong>Limonest</strong></td>
+
+<td style="padding:10px; border:1px solid #ddd;">9h30 à 13h</td>
+
+<td style="padding:10px; border:1px solid #ddd;">Maison des Familles, 9 rue Doncaster</td>
+
+</tr>
+
+<tr>
+
+<td style="padding:10px; border:1px solid #ddd;"><strong>Saint-Didier-au-Mont-d'Or</strong></td>
+
+<td style="padding:10px; border:1px solid #ddd;">13h30 à 17h30</td>
+
+<td style="padding:10px; border:1px solid #ddd;">Centre Laurent Bonnevay</td>
+
+</tr>
+
+<tr>
+
+<td style="padding:10px; border:1px solid #ddd;"><strong>Saint-Cyr-au-Mont-d'Or</strong></td>
+
+<td style="padding:10px; border:1px solid #ddd;">14h à 18h</td>
+
+<td style="padding:10px; border:1px solid #ddd;">12 rue Jean-et-Catherine-Reynier</td>
+
+</tr>
 
 </tbody>
 
@@ -190,7 +372,13 @@ publie: true
 
 
 
-<h3>Une soirée culturelle à Écully le 5 septembre</h3>
+
+
+<h3 style="font-weight:700; font-size:1.25em; line-height:1.35; color:#454D3C; margin-top:32px; margin-bottom:12px;">
+
+Une soirée culturelle à Écully le 5 septembre
+
+</h3>
 
 
 
@@ -206,7 +394,13 @@ publie: true
 
 
 
-<h3>Chiner au grand vide-greniers d'Écully le dimanche 6 septembre</h3>
+
+
+<h3 style="font-weight:700; font-size:1.25em; line-height:1.35; color:#454D3C; margin-top:32px; margin-bottom:12px;">
+
+Chiner au grand vide-greniers d'Écully le dimanche 6 septembre
+
+</h3>
 
 
 
@@ -226,7 +420,13 @@ publie: true
 
 
 
-<h3>Découvrir la saison culturelle de Saint-Didier-au-Mont-d'Or le 10 septembre</h3>
+
+
+<h3 style="font-weight:700; font-size:1.25em; line-height:1.35; color:#454D3C; margin-top:32px; margin-bottom:12px;">
+
+Découvrir la saison culturelle de Saint-Didier-au-Mont-d'Or le 10 septembre
+
+</h3>
 
 
 
@@ -242,7 +442,13 @@ publie: true
 
 
 
-<h3>Vivre la 100e Course de Côte Limonest Mont-Verdun du 11 au 13 septembre</h3>
+
+
+<h3 style="font-weight:700; font-size:1.25em; line-height:1.35; color:#454D3C; margin-top:32px; margin-bottom:12px;">
+
+Vivre la 100e Course de Côte Limonest Mont-Verdun du 11 au 13 septembre
+
+</h3>
 
 
 
@@ -274,7 +480,13 @@ publie: true
 
 
 
-<h3>Vide-greniers à Champagne-au-Mont-d'Or le 13 septembre</h3>
+
+
+<h3 style="font-weight:700; font-size:1.25em; line-height:1.35; color:#454D3C; margin-top:32px; margin-bottom:12px;">
+
+Vide-greniers à Champagne-au-Mont-d'Or le 13 septembre
+
+</h3>
 
 
 
@@ -290,7 +502,13 @@ publie: true
 
 
 
-<h3>Trois jours de musique de chambre à Saint-Cyr-au-Mont-d'Or</h3>
+
+
+<h3 style="font-weight:700; font-size:1.25em; line-height:1.35; color:#454D3C; margin-top:32px; margin-bottom:12px;">
+
+Trois jours de musique de chambre à Saint-Cyr-au-Mont-d'Or
+
+</h3>
 
 
 
@@ -310,7 +528,13 @@ publie: true
 
 
 
-<h3>Journées européennes du patrimoine les 19 et 20 septembre</h3>
+
+
+<h3 style="font-weight:700; font-size:1.25em; line-height:1.35; color:#454D3C; margin-top:32px; margin-bottom:12px;">
+
+Journées européennes du patrimoine les 19 et 20 septembre
+
+</h3>
 
 
 
@@ -338,7 +562,13 @@ publie: true
 
 
 
-<h3>Une Fête de la Gastronomie gourmande à Tassin le 20 septembre</h3>
+
+
+<h3 style="font-weight:700; font-size:1.25em; line-height:1.35; color:#454D3C; margin-top:32px; margin-bottom:12px;">
+
+Une Fête de la Gastronomie gourmande à Tassin le 20 septembre
+
+</h3>
 
 
 
@@ -354,11 +584,19 @@ publie: true
 
 
 
+
+
 <h2>Plaine du Forez : patrimoine, associations et grand air en septembre</h2>
 
 
 
-<h3>Asso's pour tous à Andrézieux-Bouthéon le 4 septembre</h3>
+
+
+<h3 style="font-weight:700; font-size:1.25em; line-height:1.35; color:#454D3C; margin-top:32px; margin-bottom:12px;">
+
+Asso's pour tous à Andrézieux-Bouthéon le 4 septembre
+
+</h3>
 
 
 
@@ -374,7 +612,13 @@ publie: true
 
 
 
-<h3>Forum des associations de Saint-Just-Saint-Rambert le 5 septembre</h3>
+
+
+<h3 style="font-weight:700; font-size:1.25em; line-height:1.35; color:#454D3C; margin-top:32px; margin-bottom:12px;">
+
+Forum des associations de Saint-Just-Saint-Rambert le 5 septembre
+
+</h3>
 
 
 
@@ -390,7 +634,13 @@ publie: true
 
 
 
-<h3>L'Été du Prieuré les 18 et 19 septembre</h3>
+
+
+<h3 style="font-weight:700; font-size:1.25em; line-height:1.35; color:#454D3C; margin-top:32px; margin-bottom:12px;">
+
+L'Été du Prieuré les 18 et 19 septembre
+
+</h3>
 
 
 
@@ -410,7 +660,13 @@ publie: true
 
 
 
-<h3>Journées du patrimoine : remonter aux origines du chemin de fer à Andrézieux-Bouthéon</h3>
+
+
+<h3 style="font-weight:700; font-size:1.25em; line-height:1.35; color:#454D3C; margin-top:32px; margin-bottom:12px;">
+
+Journées du patrimoine : remonter aux origines du chemin de fer à Andrézieux-Bouthéon
+
+</h3>
 
 
 
@@ -430,7 +686,13 @@ publie: true
 
 
 
-<h3>Musée des Civilisations et archéologie à Saint-Just-Saint-Rambert</h3>
+
+
+<h3 style="font-weight:700; font-size:1.25em; line-height:1.35; color:#454D3C; margin-top:32px; margin-bottom:12px;">
+
+Musée des Civilisations et archéologie à Saint-Just-Saint-Rambert
+
+</h3>
 
 
 
@@ -450,7 +712,13 @@ publie: true
 
 
 
-<h3>Randonnées de Grangent le samedi 19 septembre</h3>
+
+
+<h3 style="font-weight:700; font-size:1.25em; line-height:1.35; color:#454D3C; margin-top:32px; margin-bottom:12px;">
+
+Randonnées de Grangent le samedi 19 septembre
+
+</h3>
 
 
 
@@ -478,7 +746,13 @@ publie: true
 
 
 
-<h3>Challenge Loire Nature le dimanche 20 septembre</h3>
+
+
+<h3 style="font-weight:700; font-size:1.25em; line-height:1.35; color:#454D3C; margin-top:32px; margin-bottom:12px;">
+
+Challenge Loire Nature le dimanche 20 septembre
+
+</h3>
 
 
 
@@ -514,7 +788,13 @@ publie: true
 
 
 
-<h3>Les 10 ans du Family Cinéma au Cinépôle le 26 septembre</h3>
+
+
+<h3 style="font-weight:700; font-size:1.25em; line-height:1.35; color:#454D3C; margin-top:32px; margin-bottom:12px;">
+
+Les 10 ans du Family Cinéma au Cinépôle le 26 septembre
+
+</h3>
 
 
 
@@ -535,6 +815,8 @@ publie: true
 
 
 <p>Le pass est annoncé à 5 € pour les adultes et 4 € pour les enfants de moins de 14 ans. Le nombre de places est limité et les billets sont disponibles uniquement en prévente, avec une mise en vente annoncée au début du mois de septembre.</p>
+
+
 
 
 
@@ -566,4 +848,4 @@ publie: true
 
 
 
-<p><em>Informations vérifiées le 28 août 2026. Les dates, horaires, tarifs et conditions d'accès peuvent être modifiés par les organisateurs. Il est recommandé de consulter les informations officielles avant chaque déplacement.</em></p>
+<p style="margin-top:30px;"><em>Informations vérifiées le 28 août 2026. Les dates, horaires, tarifs et conditions d'accès peuvent être modifiés par les organisateurs. Il est recommandé de consulter les informations officielles avant chaque déplacement.</em></p>
